@@ -1,3 +1,7 @@
 requests>=2.31
 python-dotenv>=1.0
 PyMuPDF==1.26.6
+# pdfslice_py
+pypdfium2>=4.30
+pillow>=10.0
+click>=8.1
