@@ -110,6 +110,15 @@ details li { word-break: break-all; }
 .opt b { display: inline-block; min-width: 62px; }
 .opt span { color: var(--muted); }
 .dialog .foot { padding: 12px 18px; display: flex; justify-content: flex-end; gap: 8px; }
+.card .img { cursor: zoom-in; }
+.lightbox { position: fixed; inset: 0; background: rgba(0,0,0,.85); display: none; flex-direction: column; align-items: center; justify-content: center; padding: 16px; z-index: 15; }
+.lightbox.on { display: flex; }
+.lightbox .lb-img { max-width: 100%; max-height: calc(100vh - 80px); object-fit: contain; background: #fff; }
+.lightbox .lb-bar { display: flex; align-items: center; gap: 12px; margin-top: 10px; color: #fff; font-size: 14px; }
+.lightbox button { background: rgba(255,255,255,.15); color: #fff; border: 0; border-radius: 6px; padding: 6px 14px; font-size: 16px; cursor: pointer; }
+.lightbox button:hover:not(:disabled) { background: rgba(255,255,255,.3); }
+.lightbox button:disabled { opacity: .35; cursor: default; }
+.lightbox .lb-close { position: absolute; top: 12px; right: 16px; }
 .toast { position: fixed; right: 20px; bottom: 20px; padding: 10px 16px; border-radius: 8px; background: var(--text); color: var(--bg); display: none; z-index: 20; }
 .toast.on { display: block; }
 @media (max-width: 760px) { td.size, th.size { display: none; } }
@@ -208,6 +217,15 @@ details li { word-break: break-all; }
       <button id="cancelBtn">Hủy</button>
       <button class="primary" id="applyBtn">Áp dụng</button>
     </div>
+  </div>
+</div>
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Xem ảnh trang">
+  <button class="lb-close" id="lbClose" title="Đóng (Esc)">✕</button>
+  <img class="lb-img" id="lbImg" alt="">
+  <div class="lb-bar">
+    <button id="lbPrev" title="Trang trước (←)">‹</button>
+    <span id="lbCaption"></span>
+    <button id="lbNext" title="Trang sau (→)">›</button>
   </div>
 </div>
 <div class="toast" id="toast"></div>
@@ -484,6 +502,7 @@ function renderGrid() {
   const have = new Set(b.rendered);
   const filter = $("blankFilter").value;
   const pages = [];
+  visiblePages = pages;
   for (let p = 1; p <= total; p++) {
     const info = pageInfo(p);
     if (filter.startsWith("tag:") && (info.tag || UNKNOWN) !== filter.slice(4)) continue;
@@ -494,6 +513,8 @@ function renderGrid() {
     const info = pageInfo(p), tag = info.tag || UNKNOWN;
     const box = el("div", { className: "img" });
     if (have.has(p)) {
+      box.title = "Bấm để xem ảnh đầy đủ";
+      box.onclick = () => openLightbox(p);
       const img = el("img", { loading: "lazy", decoding: "async", alt: "Trang " + p,
         src: `/api/thumb?name=${encodeURIComponent(b.name)}&page=${p}` });
       img.onerror = () => box.replaceChildren("không có ảnh");
@@ -512,6 +533,40 @@ function renderGrid() {
     return card;
   }));
   updateBlankSummary();
+}
+
+// ---- xem ảnh đầy đủ của một trang (← → để chuyển trang, Esc để đóng)
+let visiblePages = [];    // các trang đang hiện trong lưới (theo bộ lọc)
+let lightboxPage = null;
+
+function lightboxOpen() { return $("lightbox").classList.contains("on"); }
+
+function openLightbox(page) {
+  const b = currentBook; if (!b) return;
+  const have = new Set(b.rendered);
+  lightboxPage = page;
+  const tag = pageInfo(page).tag || UNKNOWN;
+  const nav = visiblePages.filter(p => have.has(p));
+  const i = nav.indexOf(page);
+  $("lbImg").src = `/api/page?name=${encodeURIComponent(b.name)}&page=${page}`;
+  $("lbImg").alt = "Trang " + page;
+  $("lbCaption").textContent = `Trang ${pad3(page)} · ${tag}` + (nav.length ? ` · ${i + 1}/${nav.length}` : "");
+  $("lbPrev").disabled = i <= 0;
+  $("lbNext").disabled = i < 0 || i >= nav.length - 1;
+  $("lightbox").classList.add("on");
+}
+
+function stepLightbox(delta) {
+  const have = new Set(currentBook.rendered);
+  const nav = visiblePages.filter(p => have.has(p));
+  const j = nav.indexOf(lightboxPage) + delta;
+  if (j >= 0 && j < nav.length) openLightbox(nav[j]);
+}
+
+function closeLightbox() {
+  $("lightbox").classList.remove("on");
+  $("lbImg").removeAttribute("src");
+  lightboxPage = null;
 }
 
 function updateBlankSummary() {
@@ -659,6 +714,16 @@ $("rangeBtn").onclick = selectRange;
 $("rangeInput").onkeydown = e => { if (e.key === "Enter") selectRange(); };
 $("selAllBtn").onclick = selectVisible;
 $("selNoneBtn").onclick = () => { selected = new Set(); renderGrid(); };
+$("lbClose").onclick = closeLightbox;
+$("lbPrev").onclick = () => stepLightbox(-1);
+$("lbNext").onclick = () => stepLightbox(1);
+$("lightbox").onclick = e => { if (e.target === $("lightbox")) closeLightbox(); };
+addEventListener("keydown", e => {
+  if (!lightboxOpen()) return;
+  if (e.key === "Escape") closeLightbox();
+  else if (e.key === "ArrowLeft") stepLightbox(-1);
+  else if (e.key === "ArrowRight") stepLightbox(1);
+});
 $("overlay").onclick = e => { if (e.target === $("overlay")) closeDialog(); };
 $("opts").ondblclick = applyDialog;
 addEventListener("keydown", e => {

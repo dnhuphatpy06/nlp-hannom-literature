@@ -56,15 +56,51 @@ App mở trình duyệt tại `http://localhost:8766` (nếu cổng bận thì t
 
 App chỉ lắng nghe ở `127.0.0.1` (chỉ máy bạn truy cập được).
 
-### Chuẩn bị dữ liệu
+### Chuẩn bị dữ liệu: bỏ file PDF vào `data/`
 
-Chép các file PDF vào `data/`. Lần chạy đầu (và mỗi lần tải lại trang), PDF nằm lẻ trong `data/` được tự chuyển vào `data/<Tên sách>/<Tên sách>.pdf`, không ghi đè nếu đã có file cùng tên. Mỗi thư mục con của `data/` có chứa `<tên thư mục>.pdf` được coi là một sách.
+`data/` không được đưa lên git (trừ `data/cache/`), nên sau khi clone repo bạn tự chép PDF vào. Thư mục `data/` và `data/cache/` đã có sẵn trong repo; nếu thiếu thì app tự tạo.
+
+**Cách 1 (đơn giản nhất): chép thẳng file PDF vào `data/`**
+
+```
+data/
+├── Kim Vân Kiều tân truyện.pdf
+└── Tống Trân tân truyện.pdf
+```
+
+Chạy `python app.py` (hoặc tải lại trang web nếu app đang chạy), mỗi PDF tự được chuyển vào thư mục riêng cùng tên và app tạo sẵn các thư mục con:
+
+```
+data/
+├── cache/
+├── Kim Vân Kiều tân truyện/
+│   ├── Kim Vân Kiều tân truyện.pdf
+│   ├── ch/ vi/ intro/ ref/ toc/ blank/ misc/ cache/
+└── Tống Trân tân truyện/
+    └── ...
+```
+
+Console in dòng `Đã chuyển '<tên>.pdf' vào <tên>/` cho mỗi file được chuyển.
+
+**Cách 2: tự tạo thư mục sách**
+
+Tạo `data/<Tên sách>/` rồi bỏ file đúng tên `<Tên sách>.pdf` vào trong. Tên thư mục và tên file PDF phải trùng nhau (không phân biệt hoa thường), nếu không app không nhận ra đó là một sách.
+
+**Lưu ý**
+
+- Tên file PDF cũng là tên sách trong app và là khoá trong `type.json`, nên đặt tên rõ ràng và **đừng đổi tên sau khi đã gán loại** (đổi tên thì loại cũ thành mục "trong type.json không có PDF tương ứng" ở cuối danh sách).
+- Tiếng Việt có dấu, dấu cách và chữ Hán trong tên đều dùng được.
+- Không bao giờ ghi đè: nếu `data/<Tên sách>/` đã có PDF cùng tên thì file lẻ bị bỏ qua và app in `Bỏ qua '<tên>.pdf': ... đã có PDF cùng tên`. Hãy đổi tên hoặc xoá bản cũ rồi tải lại trang.
+- Tên `cache` và tên bắt đầu bằng dấu `.` không dùng được làm tên sách.
+- Chỉ nhận file `.pdf` nằm trực tiếp trong `data/` hoặc trong đúng một thư mục sách; PDF lồng sâu hơn không được nhận.
+- Muốn dùng thư mục khác: `python app.py --data <đường dẫn>`.
+- Sau khi chép thêm PDF khi app đang chạy, **tải lại trang (F5)** là thấy sách mới trong danh sách và app tự bắt đầu nhận diện trang trắng, gán nhãn.
 
 ### Quy trình dùng
 
 1. **Màn hình danh sách**: mỗi dòng là một sách. Dùng ô tìm kiếm và bộ lọc loại để lọc. Bấm vào nhãn loại hoặc nút **Chọn loại** để chọn loại sách (T1, T2, Tnom, ...; xem bảng bên dưới), nút **Xem PDF** mở file gốc ở tab mới. Chọn xong bấm **Save** để lưu vào `data/cache/type.json` (chưa lưu thì có chữ "Chưa lưu" và trình duyệt cảnh báo khi đóng tab).
 2. **Tách trang**: bấm **Trang** ở dòng của sách để vào màn hình trang, chọn DPI (150 / 200 / 300 / 400, mặc định 300), bấm **Tách trang**. Ảnh JPEG lưu ở `data/<Tên sách>/cache/pages/` (`<Tên sách>.001.jpg`, ...), thanh tiến trình hiện trong lúc chạy. Mặc định bỏ qua trang đã có ảnh hợp lệ; tích **Ghi đè** để tách lại tất cả. Mỗi lúc chỉ tách một sách, bấm thêm sẽ báo bận.
-3. **Xem và gán nhãn trang**: lưới ảnh thu nhỏ của mọi trang, mỗi trang có nhãn hiện tại. Lọc theo nhãn bằng ô **Lọc**. Chọn trang bằng ô tích ở góc ảnh, hoặc gõ khoảng vào ô **Trang** rồi bấm **Chọn** (`1-5, 8, 10-12`; `40-` là từ trang 40 đến hết; `a:b:c` có bước nhảy, ví dụ `2::2` là mọi trang chẵn), hoặc **Chọn tất cả** (theo bộ lọc đang hiển thị) / **Bỏ chọn**. Sau đó bấm **Gán nhãn ▾** và chọn nhãn cho các trang đã chọn. Nút **ⓘ** hiện mô tả từng nhãn.
+3. **Xem và gán nhãn trang**: lưới ảnh thu nhỏ của mọi trang, mỗi trang có nhãn hiện tại. Lọc theo nhãn bằng ô **Lọc**. Chọn trang bằng ô tích ở góc ảnh, hoặc gõ khoảng vào ô **Trang** rồi bấm **Chọn** (`1-5, 8, 10-12`; `40-` là từ trang 40 đến hết; `a:b:c` có bước nhảy, ví dụ `2::2` là mọi trang chẵn), hoặc **Chọn tất cả** (theo bộ lọc đang hiển thị) / **Bỏ chọn**. Sau đó bấm **Gán nhãn ▾** và chọn nhãn cho các trang đã chọn. Nút **ⓘ** hiện mô tả từng nhãn. Bấm vào ảnh một trang để xem ảnh đầy đủ (phím **←** **→** chuyển trang đang hiển thị, **Esc** hoặc bấm ra ngoài để đóng).
 4. Nhãn được lưu ngay vào `data/<Tên sách>/cache/phan_loai.json`, không cần bấm Save.
 
 Các nhãn trang: `ch` (Hán Nôm), `vi` (Quốc ngữ), `ch_vi` (cả hai, bố cục T2b), `intro`, `toc`, `ref`, `blank`, `misc`, `unknown` (chưa gán, mặc định).

@@ -8,3 +8,5 @@ data/*
 !data/cache/
 data/cache/*
 !data/cache/.gitkeep
+!data/cache/type.json
+!data/cache/uploads.json

@@ -141,6 +141,8 @@ def make_handler(data_dir: Path, type_file: Path):
                     self._send_file(book.pdf, "application/pdf")
             elif path == "/api/thumb":
                 self._send_thumb(name, query.get("page", [""])[0])
+            elif path == "/api/page":
+                self._send_page(name, query.get("page", [""])[0])
             else:
                 self.send_error(404)
 
@@ -158,6 +160,15 @@ def make_handler(data_dir: Path, type_file: Path):
                 self.send_error(404)
             else:
                 self._send_file(thumb, "image/jpeg", "private, max-age=3600")
+
+        def _send_page(self, name: str, page_str: str):
+            """Ảnh đầy đủ của một trang (file JPEG trong cache/pages/) để xem phóng to."""
+            book = library.find_book(data_dir, name)
+            image = library.find_page_image(book.pages_dir, book.stem, int(page_str))                 if book is not None and page_str.isdigit() else None
+            if image is None:
+                self.send_error(404)
+            else:
+                self._send_file(image, "image/jpeg", "private, max-age=3600")
 
         def do_POST(self):
             path = urllib.parse.urlparse(self.path).path
