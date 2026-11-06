@@ -4,4 +4,7 @@ __pycache__/
 ket_qua/
 .venv/
 /work/
-data/
+data/*
+!data/cache/
+data/cache/*
+!data/cache/.gitkeep

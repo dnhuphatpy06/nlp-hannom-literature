@@ -3,7 +3,7 @@
 Khác với sinonom_api.py (trả nguyên JSON), ở đây:
   - kiểm tra `is_success` / `code`, lỗi thì ném ApiError;
   - trả về phần `data` của response;
-  - mỗi lần upload được ghi vào file JSON (mặc định <gốc dự án>/uploads.json) và dùng lại
+  - mỗi lần upload được ghi vào file JSON (mặc định <gốc dự án>/data/cache/uploads.json) và dùng lại
     nếu ảnh có cùng nội dung đã được upload, khỏi upload lại.
 
     from sinonom_service import upload, ocr, transliterate
@@ -24,7 +24,7 @@ SUCCESS_CODE = "000000"
 FILE_NOT_FOUND_CODE = "000404"  # server không còn / không có file_name này
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
-UPLOADS_FILE = Path(os.getenv("UPLOADS_FILE") or PROJECT_ROOT / "uploads.json")
+UPLOADS_FILE = Path(os.getenv("UPLOADS_FILE") or PROJECT_ROOT / "data" / "cache" / "uploads.json")
 
 
 class ApiError(Exception):
@@ -65,6 +65,7 @@ def _save_upload(record: dict, uploads_file=None) -> None:
     path = Path(uploads_file or UPLOADS_FILE)
     records = load_uploads(path)
     records.append(record)
+    path.parent.mkdir(parents=True, exist_ok=True)  # data/cache/ có thể chưa tồn tại
     tmp = path.with_name(path.name + ".tmp")
     tmp.write_text(json.dumps(records, ensure_ascii=False, indent=2), encoding="utf-8")
     tmp.replace(path)  # ghi nguyên tử, lỡ dừng giữa chừng không hỏng file

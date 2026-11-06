@@ -1,0 +1,17 @@
+# Thư viện cho OCR/layout cục bộ: scripts/paddleocr_vl_viz.py, scripts/kraken_viz.py
+# (kimhannom_viz.py gọi API nên chỉ cần requirements.txt).
+# Cài: pip install -r requirements-ocr.txt   (đã gồm requirements.txt)
+
+-r requirements.txt
+
+# torch cài riêng theo máy (CPU/CUDA) trước khi cài file này: https://pytorch.org/get-started/locally/
+torch
+
+# PaddleOCR-VL (paddleocr_vl_viz.py)
+paddleocr[doc-parser]==3.7.0
+paddlex==3.7.2
+
+# Kraken (kraken_viz.py)
+kraken
+safetensors>=0.8.0   # tránh xung đột với transformers của hệ thống
+shapely==2.2.0

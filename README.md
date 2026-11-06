@@ -1,6 +1,9 @@
-# Hướng dẫn dùng API Kim Hán Nôm (CLC Sinonom)
+# Pipeline xử lý sách Hán Nôm
 
-Các hàm Python gọi API upload ảnh, OCR và dịch âm Hán-Nôm của `https://kimhannom.fit.hcmus.edu.vn/`, để dùng trong pipeline xử lý.
+Gồm hai phần:
+
+- **Web UI `app.py`**: gán loại sách, tách PDF thành ảnh từng trang, gán nhãn trang (`ch`, `vi`, `blank`, ...) để chuẩn bị dữ liệu nộp bài. Xem [mục Web UI](#web-ui-apppy). **Không cần token.**
+- **API Kim Hán Nôm** (`scripts/api/`): các hàm Python gọi API upload ảnh, OCR và dịch âm Hán-Nôm của `https://kimhannom.fit.hcmus.edu.vn/`, dùng trong pipeline xử lý. Xem [mục 2 trở đi](#2-lấy-token).
 
 ## Cấu trúc thư mục
 
@@ -8,21 +11,112 @@ Các hàm Python gọi API upload ảnh, OCR và dịch âm Hán-Nôm của `htt
 GK/
 ├── .env                  <- điền TOKEN vào đây
 ├── .env.example          <- file mẫu
-├── requirements.txt
-├── uploads.json          <- tự sinh: lịch sử các lần upload ảnh (không đưa lên git)
+├── requirements.txt      <- thư viện cơ bản
+├── requirements-ocr.txt  <- thêm cho OCR cục bộ (PaddleOCR-VL, Kraken)
+├── app.py                <- file chính: Web UI (gán loại sách, tách trang), chạy `python app.py`
+├── web/index.html        <- giao diện của app.py
+├── data/                 <- dữ liệu (không đưa lên git), cấu trúc giống thư mục nộp bài
+│   ├── cache/            <- cache dùng chung: type.json (loại sách), uploads.json (lịch sử upload ảnh)
+│   └── <Tên sách>/       <- <Tên sách>.pdf, ch/ vi/ intro/ ref/ toc/ blank/ misc/ và cache/ (không nộp)
 ├── img/                  <- ảnh dùng để test
 ├── scripts/
+│   ├── library.py            <- cấu trúc thư mục data/, đường dẫn dùng chung
+│   ├── book_types.py         <- loại sách (T1, T2, ...) và type.json
+│   ├── page_splitter.py      <- tách PDF thành ảnh JPEG (thư viện + dòng lệnh)
+│   ├── page_cache.py         <- cache nhãn từng trang (cache/phan_loai.json)
+│   ├── blank_detector.py     <- nhận diện nhanh trang blank từ PDF (numpy + OpenCV), có dòng lệnh
+│   ├── auto_tag.py           <- tự gán ch/vi/ch_vi theo loại sách (sau blank), có dòng lệnh
+│   ├── split_jobs.py         <- tách trang chạy nền, nhận diện trang blank, tự gán nhãn, ảnh thu nhỏ cho Web UI
+│   ├── page_classifier.py    <- phân loại từng trang vào ch/ vi/ ... (Web UI cũ + dòng lệnh)
+│   ├── pdfslice_split.py     <- tách PDF bằng pdfslice_py (công cụ cũ)
 │   └── api/
 │       ├── sinonom_api.py       <- 3 hàm gọi API, trả nguyên JSON server trả về
 │       ├── sinonom_service.py   <- hàm dùng cho pipeline: kiểm tra lỗi, trả `data`, lưu lịch sử upload
-│       └── main.py              <- file chạy thử các hàm service
+│       └── sinonom_demo.py      <- file chạy thử các hàm service
 └── docs/images/          <- ảnh tài liệu API
 ```
+
+## Web UI (`app.py`)
+
+### Chạy
+
+```bash
+pip install -r requirements.txt     # chỉ cần thư viện cơ bản, không cần requirements-ocr.txt
+python app.py
+```
+
+App mở trình duyệt tại `http://localhost:8766` (nếu cổng bận thì thử cổng kế tiếp, tối đa 20 cổng; địa chỉ thật được in ra console). Nhấn **Ctrl+C** ở console để dừng.
+
+| Tuỳ chọn | Ý nghĩa |
+|---|---|
+| `--data DIR` | Thư mục dữ liệu (mặc định `data/`) |
+| `--type-file FILE` | File JSON lưu loại sách (mặc định `<data>/cache/type.json`) |
+| `--port N` | Cổng bắt đầu (mặc định `8766`) |
+| `--no-browser` | Không tự mở trình duyệt |
+
+App chỉ lắng nghe ở `127.0.0.1` (chỉ máy bạn truy cập được).
+
+### Chuẩn bị dữ liệu
+
+Chép các file PDF vào `data/`. Lần chạy đầu (và mỗi lần tải lại trang), PDF nằm lẻ trong `data/` được tự chuyển vào `data/<Tên sách>/<Tên sách>.pdf`, không ghi đè nếu đã có file cùng tên. Mỗi thư mục con của `data/` có chứa `<tên thư mục>.pdf` được coi là một sách.
+
+### Quy trình dùng
+
+1. **Màn hình danh sách**: mỗi dòng là một sách. Dùng ô tìm kiếm và bộ lọc loại để lọc. Bấm vào nhãn loại hoặc nút **Chọn loại** để chọn loại sách (T1, T2, Tnom, ...; xem bảng bên dưới), nút **Xem PDF** mở file gốc ở tab mới. Chọn xong bấm **Save** để lưu vào `data/cache/type.json` (chưa lưu thì có chữ "Chưa lưu" và trình duyệt cảnh báo khi đóng tab).
+2. **Tách trang**: bấm **Trang** ở dòng của sách để vào màn hình trang, chọn DPI (150 / 200 / 300 / 400, mặc định 300), bấm **Tách trang**. Ảnh JPEG lưu ở `data/<Tên sách>/cache/pages/` (`<Tên sách>.001.jpg`, ...), thanh tiến trình hiện trong lúc chạy. Mặc định bỏ qua trang đã có ảnh hợp lệ; tích **Ghi đè** để tách lại tất cả. Mỗi lúc chỉ tách một sách, bấm thêm sẽ báo bận.
+3. **Xem và gán nhãn trang**: lưới ảnh thu nhỏ của mọi trang, mỗi trang có nhãn hiện tại. Lọc theo nhãn bằng ô **Lọc**. Chọn trang bằng ô tích ở góc ảnh, hoặc gõ khoảng vào ô **Trang** rồi bấm **Chọn** (`1-5, 8, 10-12`; `40-` là từ trang 40 đến hết; `a:b:c` có bước nhảy, ví dụ `2::2` là mọi trang chẵn), hoặc **Chọn tất cả** (theo bộ lọc đang hiển thị) / **Bỏ chọn**. Sau đó bấm **Gán nhãn ▾** và chọn nhãn cho các trang đã chọn. Nút **ⓘ** hiện mô tả từng nhãn.
+4. Nhãn được lưu ngay vào `data/<Tên sách>/cache/phan_loai.json`, không cần bấm Save.
+
+Các nhãn trang: `ch` (Hán Nôm), `vi` (Quốc ngữ), `ch_vi` (cả hai, bố cục T2b), `intro`, `toc`, `ref`, `blank`, `misc`, `unknown` (chưa gán, mặc định).
+
+### Loại sách
+
+| Loại | Ý nghĩa |
+|---|---|
+| T1 / T1w | Quốc ngữ ở phần đầu, Nôm ở phần cuối (w: viết tay) |
+| T2 / T2w | Xen kẽ, ví dụ phải Nôm, trái Quốc ngữ (w: viết tay) |
+| T2b | Quốc ngữ và Nôm chung trang |
+| Tnom / Tnomw | Chỉ có Nôm (w: viết tay) |
+| Tqn | Chỉ có Quốc ngữ |
+| Tref | Tham khảo |
+| Tx | Loại khác |
+| chưa phân loại | Mặc định |
+
+### Thư mục sinh ra
+
+```
+data/
+├── cache/type.json                 <- loại từng sách
+└── <Tên sách>/
+    ├── <Tên sách>.pdf
+    ├── ch/ vi/ intro/ ref/ toc/ blank/ misc/   <- cấu trúc nộp bài
+    └── cache/                      <- không nộp
+        ├── pages/                  <- ảnh JPEG đã tách
+        ├── thumbs/                 <- ảnh thu nhỏ cho Web UI
+        └── phan_loai.json          <- nhãn từng trang
+```
+
+### Tự gán nhãn trang
+
+Không cần bấm nút nào. Khi chạy `python app.py`, khi có PDF mới trong `data/` hoặc khi lưu loại sách mới, một luồng nền tự gán `blank` cho trang trắng rồi chia các trang `unknown` còn lại theo loại sách (tiến trình hiện ở dòng thống kê của sách). Sách đã xử lý và không đổi loại thì không chạy lại. Khi loại sách đổi, các nhãn `ch`/`vi`/`ch_vi` do máy gán được gán lại theo loại mới, nhãn gán tay giữ nguyên. Cũng chạy được bằng dòng lệnh: `python -m scripts.auto_tag [--book TÊN]`.
+
+| Loại sách | Nhãn |
+|---|---|
+| Tnom, Tnomw | tất cả `ch` |
+| Tqn | tất cả `vi` |
+| T2b | tất cả `ch_vi` |
+| T1, T1w | nửa đầu `vi`, nửa sau `ch` |
+| T2, T2w | xen kẽ `ch`, `vi`, `ch`, `vi`, ... (Nôm trước, bỏ qua blank) |
+| Tref, Tx, chưa phân loại | không gán, gán tay |
+
+Đây là giả định theo bố cục nên có thể sai (T2 thực tế có thể xen kẽ theo khối, ranh giới T1 hiếm khi đúng giữa). Chỉ trang `unknown` bị đổi và trang đã có nhãn không tính vào chuỗi xen kẽ/chia đôi. Vì máy tự gán ngay khi mở app, hãy duyệt lưới trang và sửa tay `intro`, `toc`, `ref`, `misc` cùng các trang gán sai; nhãn sửa tay không bị ghi đè. Kiểm tra quy tắc bằng `python tests/test_auto_tag.py`.
+
 
 ## 1. Cài đặt
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt        # cơ bản: app, tách trang, gọi API
+pip install -r requirements-ocr.txt    # tùy chọn: OCR/layout cục bộ (PaddleOCR-VL, Kraken); cài torch trước
 ```
 
 ## 2. Lấy token
@@ -68,7 +162,7 @@ TOKEN=eyJhbGciOi...đoạn-token-của-bạn...
 Có hai lớp, cả hai nằm trong `scripts/api/`:
 
 - **`sinonom_api.py`**: mỗi hàm gọi đúng một endpoint và trả về nguyên JSON server trả về (`is_success`, `code`, `message`, `data`), không kiểm tra hay xử lý gì.
-- **`sinonom_service.py`**: lớp dùng cho pipeline. Kiểm tra `is_success` / `code`, lỗi thì ném `ApiError`, thành công thì trả về phần `data`. Ghi lịch sử upload vào `uploads.json`.
+- **`sinonom_service.py`**: lớp dùng cho pipeline. Kiểm tra `is_success` / `code`, lỗi thì ném `ApiError`, thành công thì trả về phần `data`. Ghi lịch sử upload vào `data/cache/uploads.json`.
 
 ### Hàm service
 
@@ -94,11 +188,11 @@ load_uploads()                                       # các lần upload đã gh
 | `ocr_file(file_name, **params)` | `image-ocr` | OCR file đã có trên server. Trả về `data`: `result_ocr_text`, `result_bbox`, `result_file_name`. |
 | `ocr(image_path, **params)` | `image-upload` + `image-ocr` | Upload (nếu cần) rồi OCR. Nếu server báo `000404` (không còn file) thì tự upload lại một lần. |
 | `transliterate(text, font_type=1, lang_type=1)` | `sinonom-transliteration` | Dịch âm Hán-Nôm. Trả về `data`: `result_hannom_text`, `result_text_transcription`. |
-| `load_uploads()` | không gọi API | Đọc lịch sử upload từ `uploads.json`. |
+| `load_uploads()` | không gọi API | Đọc lịch sử upload từ `data/cache/uploads.json`. |
 
 `result_ocr_text` là list: mỗi phần tử là một dòng chữ server nhận ra trên ảnh (với chữ viết dọc thì là một cột). Một số ký tự Nôm chưa có mã Unicode chính thức được server trả về bằng mã trong vùng private use, nên có thể hiện thành ô trống tuỳ font.
 
-### Lịch sử upload (`uploads.json`)
+### Lịch sử upload (`data/cache/uploads.json`)
 
 Mỗi lần upload thật được ghi thêm một bản ghi, `image_path` tính tương đối từ gốc dự án (ảnh nằm ngoài dự án thì lưu đường dẫn tuyệt đối):
 
@@ -127,10 +221,10 @@ res = sinonom_api.transliterate("皇帝")
 
 ### Chạy thử
 
-`scripts/api/main.py` là nơi thử nhanh các hàm service. Sửa `IMAGE` và `TEXT` ở đầu file, bỏ comment dòng muốn thử rồi chạy:
+`scripts/api/sinonom_demo.py` là nơi thử nhanh các hàm service. Sửa `IMAGE` và `TEXT` ở đầu file, bỏ comment dòng muốn thử rồi chạy:
 
 ```bash
-python scripts/api/main.py
+python scripts/api/sinonom_demo.py
 ```
 
 ## 5. Tham số

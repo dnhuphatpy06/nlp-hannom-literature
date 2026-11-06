@@ -1,4 +1,7 @@
-"""Khảo sát và phân loại trang PDF thành các thư mục ch, vi, intro, ref, toc, blank, misc.
+"""Phân loại từng trang ảnh của sách thành các thư mục ch, vi, intro, ref, toc, blank, misc.
+
+Đọc ảnh từ data/<Tên sách>/cache/pages/ (tạo bởi app.py hoặc scripts/page_splitter.py), lưu nhãn vào
+data/<Tên sách>/cache/phan_loai.json và xuất ảnh vào data/<Tên sách>/{ch,vi,...}/.
 
 Hỗ trợ giao diện Web tương tác trực quan (mở bằng trình duyệt qua Python built-in server)
 và chế độ dòng lệnh (CLI) để gán nhãn theo khoảng trang, xoay ảnh và xuất PDF cập nhật.
@@ -18,6 +21,9 @@ from pathlib import Path
 
 import pymupdf
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # chạy trực tiếp được như script
+from scripts import library  # noqa: E402
+
 # Đảm bảo hiển thị đúng tiếng Việt / Unicode trên console Windows
 if sys.platform == "win32":
     if hasattr(sys.stdout, "reconfigure"):
@@ -35,7 +41,7 @@ VALID_TAGS = {
     "ref": "Chú thích / Tham khảo (ref/)",
     "blank": "Trang trắng (blank/)",
     "misc": "Trang bìa / Khác (misc/)",
-    "unclassified": "Chưa phân loại",
+    "unknown": "Chưa phân loại",
 }
 
 LAYOUT_CODES = {
@@ -86,31 +92,23 @@ def parse_page_ranges(range_str: str, max_pages: int) -> list[int]:
     return sorted(pages)
 
 
-def get_available_books(da_tach_dir: Path) -> list[dict]:
-    """Quét thư mục da_tach để tìm các sách đã được tách trang."""
+def get_available_books(data_dir: Path) -> list[dict]:
+    """Liệt kê các sách trong data/ đã được tách trang."""
     books = []
-    if not da_tach_dir.is_dir():
-        return books
-    for item in sorted(da_tach_dir.iterdir()):
-        if item.is_dir():
-            pages_dir = item / "pages"
-            if pages_dir.is_dir():
-                page_files = sorted(pages_dir.glob("*.jpg"))
-                if page_files:
-                    cfg_file = item / "phan_loai.json"
-                    is_classified = cfg_file.exists()
-                    books.append({
-                        "name": item.name,
-                        "path": str(item),
-                        "total_pages": len(page_files),
-                        "is_classified": is_classified,
-                    })
+    for book in library.list_books(data_dir):
+        if book.pages_dir.is_dir() and any(book.pages_dir.glob("*.jpg")):
+            books.append({
+                "name": book.dir.name,
+                "path": str(book.dir),
+                "total_pages": len(list(book.pages_dir.glob("*.jpg"))),
+                "is_classified": book.page_cache_file.exists(),
+            })
     return books
 
 
 def load_classification(book_dir: Path, total_pages: int) -> dict:
     """Đọc file phan_loai.json của sách hoặc khởi tạo cấu trúc mặc định nếu chưa có."""
-    cfg_file = book_dir / "phan_loai.json"
+    cfg_file = book_dir / "cache" / "phan_loai.json"
     if cfg_file.is_file():
         try:
             with open(cfg_file, "r", encoding="utf-8") as f:
@@ -120,7 +118,7 @@ def load_classification(book_dir: Path, total_pages: int) -> dict:
             for p in range(1, total_pages + 1):
                 sp = str(p)
                 if sp not in pages_data:
-                    pages_data[sp] = {"tag": "unclassified", "rotate": 0, "notes": ""}
+                    pages_data[sp] = {"tag": "unknown", "rotate": 0, "notes": ""}
             data["pages"] = pages_data
             data["total_pages"] = total_pages
             return data
@@ -129,7 +127,7 @@ def load_classification(book_dir: Path, total_pages: int) -> dict:
 
     pages_data = {}
     for p in range(1, total_pages + 1):
-        pages_data[str(p)] = {"tag": "unclassified", "rotate": 0, "notes": ""}
+        pages_data[str(p)] = {"tag": "unknown", "rotate": 0, "notes": ""}
 
     return {
         "book_name": book_dir.name,
@@ -144,23 +142,23 @@ def load_classification(book_dir: Path, total_pages: int) -> dict:
 def save_classification(book_dir: Path, data: dict):
     """Lưu dữ liệu phân loại vào file phan_loai.json an toàn (atomic write)."""
     data["last_updated"] = datetime.now().isoformat()
-    cfg_file = book_dir / "phan_loai.json"
-    temp_file = book_dir / f".tmp_phan_loai_{os.getpid()}.json"
+    cfg_file = book_dir / "cache" / "phan_loai.json"
+    cfg_file.parent.mkdir(parents=True, exist_ok=True)
+    temp_file = cfg_file.parent / f".tmp_phan_loai_{os.getpid()}.json"
     with open(temp_file, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     os.replace(temp_file, cfg_file)
 
 
-def apply_classification(book_dir: Path, repo_root: Path) -> dict:
+def apply_classification(book_dir: Path) -> dict:
     """
     Áp dụng phân loại:
     1. Copy hoặc cập nhật ảnh từ pages/ vào ch/, vi/, intro/, ref/, toc/, blank/, misc/.
     2. Nếu tag là ch_vi (chuẩn T2b): copy vào cả ch/ và vi/.
     3. Tự động xoay ảnh nếu rotate != 0 và xuất <Tên sách>_updated.pdf theo Quy định đồ án.
     4. Dọn dẹp ảnh ở thư mục cũ nếu đã đổi tag, tuyệt đối bảo toàn Label.txt, fileState.txt.
-    5. Đảm bảo copy <Tên sách>.pdf gốc vào thư mục nếu chưa có.
     """
-    pages_dir = book_dir / "pages"
+    pages_dir = book_dir / "cache" / "pages"
     if not pages_dir.is_dir():
         raise FileNotFoundError(f"Không tìm thấy thư mục ảnh gốc: {pages_dir}")
 
@@ -176,19 +174,8 @@ def apply_classification(book_dir: Path, repo_root: Path) -> dict:
     for folder in MANAGED_FOLDERS:
         (book_dir / folder).mkdir(parents=True, exist_ok=True)
 
-    # Đảm bảo file PDF gốc có trong thư mục sách
+    # File PDF gốc đã nằm sẵn trong thư mục sách: data/<Tên sách>/<Tên sách>.pdf
     target_orig_pdf = book_dir / f"{book_dir.name}.pdf"
-    if not target_orig_pdf.exists():
-        for cand in [
-            repo_root / "work" / "pdf" / f"{book_dir.name}.pdf",
-            repo_root / "pdf" / f"{book_dir.name}.pdf",
-        ]:
-            if cand.is_file():
-                try:
-                    shutil.copy2(cand, target_orig_pdf)
-                    break
-                except OSError as e:
-                    print(f"[CẢNH BÁO] Không thể copy PDF gốc: {e}")
 
     counts = {folder: 0 for folder in MANAGED_FOLDERS}
     has_rotations = False
@@ -205,8 +192,8 @@ def apply_classification(book_dir: Path, repo_root: Path) -> dict:
 
     for page_num in range(1, total_pages + 1):
         sp = str(page_num)
-        p_info = pages_cfg.get(sp, {"tag": "unclassified", "rotate": 0})
-        tag = p_info.get("tag", "unclassified")
+        p_info = pages_cfg.get(sp, {"tag": "unknown", "rotate": 0})
+        tag = p_info.get("tag", "unknown")
         rot = p_info.get("rotate", 0) % 360
         if rot != 0:
             has_rotations = True
@@ -321,7 +308,7 @@ HTML_PAGE = """<!DOCTYPE html>
   --tag-ref: #14b8a6;
   --tag-blank: #6b7280;
   --tag-misc: #f59e0b;
-  --tag-unclassified: #475569;
+  --tag-unknown: #475569;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
@@ -400,7 +387,7 @@ button:active { transform: translateY(0); }
 .bg-ref { background-color: var(--tag-ref); }
 .bg-blank { background-color: var(--tag-blank); }
 .bg-misc { background-color: var(--tag-misc); }
-.bg-unclassified { background-color: var(--tag-unclassified); }
+.bg-unknown { background-color: var(--tag-unknown); }
 
 .summary-bar {
   padding: 8px 24px;
@@ -591,7 +578,7 @@ main { flex: 1; padding: 20px 24px; overflow-y: auto; }
       <option value="ref">ref</option>
       <option value="blank">blank</option>
       <option value="misc">misc</option>
-      <option value="unclassified">Chưa phân loại</option>
+      <option value="unknown">Chưa phân loại</option>
     </select>
     <button onclick="rotateModal(90)">↻ Xoay 90°</button>
     <button onclick="nextPage()">Trang sau ➡</button>
@@ -641,14 +628,14 @@ function renderGrid() {
   const total = bookData.total_pages || 0;
   for (let p = 1; p <= total; p++) {
     const pStr = p.toString();
-    const info = bookData.pages[pStr] || { tag: "unclassified", rotate: 0 };
+    const info = bookData.pages[pStr] || { tag: "unknown", rotate: 0 };
     const card = document.createElement("div");
     card.className = "card" + (selectedPages.has(p) ? " selected" : "");
     card.id = "card-" + p;
     card.onclick = (e) => toggleSelect(p, e);
 
     const padNum = String(p).padStart(3, "0");
-    const tagClass = "bg-" + (info.tag || "unclassified");
+    const tagClass = "bg-" + (info.tag || "unknown");
 
     card.innerHTML = `
       <div class="card-header">
@@ -669,7 +656,7 @@ function renderGrid() {
           <option value="ref" ${info.tag==='ref'?'selected':''}>ref</option>
           <option value="blank" ${info.tag==='blank'?'selected':''}>blank</option>
           <option value="misc" ${info.tag==='misc'?'selected':''}>misc</option>
-          <option value="unclassified" ${info.tag==='unclassified'?'selected':''}>chưa gán</option>
+          <option value="unknown" ${info.tag==='unknown'?'selected':''}>chưa gán</option>
         </select>
         <button style="padding: 2px 6px; font-size: 0.75rem;" onclick="rotatePage(${p})">↻</button>
         <button style="padding: 2px 6px; font-size: 0.75rem;" onclick="openModal(${p})">🔍</button>
@@ -684,7 +671,7 @@ function updateStats() {
   let ch = 0, vi = 0, ch_vi = 0, rotated = 0, classified = 0;
   for (let p = 1; p <= total; p++) {
     const info = bookData.pages[p.toString()] || {};
-    if (info.tag && info.tag !== "unclassified") classified++;
+    if (info.tag && info.tag !== "unknown") classified++;
     if (info.tag === "ch") ch++;
     if (info.tag === "vi") vi++;
     if (info.tag === "ch_vi") ch_vi++;
@@ -770,7 +757,7 @@ function setTagSelected(tag) {
   }
   selectedPages.forEach(p => {
     const sp = p.toString();
-    if (!bookData.pages[sp]) bookData.pages[sp] = { tag: "unclassified", rotate: 0 };
+    if (!bookData.pages[sp]) bookData.pages[sp] = { tag: "unknown", rotate: 0 };
     bookData.pages[sp].tag = tag;
   });
   renderGrid();
@@ -785,7 +772,7 @@ function rotateSelected(deg) {
   }
   selectedPages.forEach(p => {
     const sp = p.toString();
-    if (!bookData.pages[sp]) bookData.pages[sp] = { tag: "unclassified", rotate: 0 };
+    if (!bookData.pages[sp]) bookData.pages[sp] = { tag: "unknown", rotate: 0 };
     bookData.pages[sp].rotate = deg;
   });
   renderGrid();
@@ -795,7 +782,7 @@ function rotateSelected(deg) {
 
 function changePageTag(p, tag) {
   const sp = p.toString();
-  if (!bookData.pages[sp]) bookData.pages[sp] = { tag: "unclassified", rotate: 0 };
+  if (!bookData.pages[sp]) bookData.pages[sp] = { tag: "unknown", rotate: 0 };
   bookData.pages[sp].tag = tag;
   renderGrid();
   updateStats();
@@ -804,7 +791,7 @@ function changePageTag(p, tag) {
 
 function rotatePage(p) {
   const sp = p.toString();
-  if (!bookData.pages[sp]) bookData.pages[sp] = { tag: "unclassified", rotate: 0 };
+  if (!bookData.pages[sp]) bookData.pages[sp] = { tag: "unknown", rotate: 0 };
   bookData.pages[sp].rotate = ((bookData.pages[sp].rotate || 0) + 90) % 360;
   renderGrid();
   updateStats();
@@ -845,9 +832,9 @@ async function applyClassification() {
 function openModal(p) {
   modalCurrentPage = p;
   const sp = p.toString();
-  const info = bookData.pages[sp] || { tag: "unclassified", rotate: 0 };
+  const info = bookData.pages[sp] || { tag: "unknown", rotate: 0 };
   document.getElementById("modalPageTitle").textContent = `Trang ${String(p).padStart(3, "0")} / ${bookData.total_pages}`;
-  document.getElementById("modalTagSelect").value = info.tag || "unclassified";
+  document.getElementById("modalTagSelect").value = info.tag || "unknown";
   const img = document.getElementById("modalImg");
   img.style.transform = `rotate(${info.rotate || 0}deg)`;
   img.src = `/api/image?book=${encodeURIComponent(currentBook)}&page=${p}`;
@@ -904,8 +891,7 @@ window.onload = init;
 
 
 class ClassificationHandler(http.server.BaseHTTPRequestHandler):
-    repo_root = Path(__file__).resolve().parent.parent
-    da_tach_dir = repo_root / "work" / "da_tach"
+    data_dir = library.DEFAULT_DATA_DIR
 
     def log_message(self, format, *args):
         # Tắt bớt log HTTP để terminal gọn gàng
@@ -924,7 +910,7 @@ class ClassificationHandler(http.server.BaseHTTPRequestHandler):
             return
 
         if path == "/api/books":
-            books = get_available_books(self.da_tach_dir)
+            books = get_available_books(self.data_dir)
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
             self.end_headers()
@@ -933,8 +919,8 @@ class ClassificationHandler(http.server.BaseHTTPRequestHandler):
 
         if path == "/api/book":
             book_name = query.get("name", [""])[0]
-            book_dir = self.da_tach_dir / book_name
-            pages = list((book_dir / "pages").glob("*.jpg"))
+            book_dir = self.data_dir / book_name
+            pages = list((book_dir / "cache" / "pages").glob("*.jpg"))
             data = load_classification(book_dir, len(pages))
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
@@ -950,7 +936,7 @@ class ClassificationHandler(http.server.BaseHTTPRequestHandler):
             except ValueError:
                 page_num = 1
 
-            pages_dir = self.da_tach_dir / book_name / "pages"
+            pages_dir = self.data_dir / book_name / "cache" / "pages"
             # Tìm file ảnh
             target = pages_dir / f"{book_name}.{page_num:03d}.jpg"
             if not target.exists():
@@ -988,7 +974,7 @@ class ClassificationHandler(http.server.BaseHTTPRequestHandler):
             try:
                 data = json.loads(body)
                 book_name = data.get("book_name")
-                book_dir = self.da_tach_dir / book_name
+                book_dir = self.data_dir / book_name
                 save_classification(book_dir, data)
                 self.send_response(200)
                 self.send_header("Content-Type", "application/json; charset=utf-8")
@@ -1003,9 +989,9 @@ class ClassificationHandler(http.server.BaseHTTPRequestHandler):
 
         if path == "/api/apply":
             book_name = query.get("name", [""])[0]
-            book_dir = self.da_tach_dir / book_name
+            book_dir = self.data_dir / book_name
             try:
-                res = apply_classification(book_dir, self.repo_root)
+                res = apply_classification(book_dir)
                 res["success"] = True
                 self.send_response(200)
                 self.send_header("Content-Type", "application/json; charset=utf-8")
@@ -1059,16 +1045,16 @@ def start_server(port: int = 8765, open_browser: bool = True):
 # ==============================================================================
 # XỬ LÝ CHẾ ĐỘ DÒNG LỆNH (CLI)
 # ==============================================================================
-def handle_cli(args, repo_root: Path, da_tach_dir: Path) -> int:
-    books = get_available_books(da_tach_dir)
+def handle_cli(args, data_dir: Path) -> int:
+    books = get_available_books(data_dir)
     if not books:
-        print(f"[CẢNH BÁO] Không tìm thấy sách nào trong {da_tach_dir}. Hãy chạy tach_trang.py trước.")
+        print(f"[CẢNH BÁO] Không tìm thấy sách nào trong {data_dir}. Hãy tách trang bằng app.py hoặc scripts/page_splitter.py trước.")
         return 0
 
     if args.list:
         print("=== DANH SÁCH SÁCH ĐÃ TÁCH TRANG ===")
         for idx, b in enumerate(books, 1):
-            cfg_file = Path(b["path"]) / "phan_loai.json"
+            cfg_file = Path(b["path"]) / "cache" / "phan_loai.json"
             status = "ĐÃ LƯU" if cfg_file.exists() else "CHƯA PHÂN LOẠI"
             print(f"  {idx}. {b['name']} ({b['total_pages']} trang) -> [{status}]")
         return 0
@@ -1092,7 +1078,7 @@ def handle_cli(args, repo_root: Path, da_tach_dir: Path) -> int:
 
     # 2. Khớp trực tiếp tên thư mục
     if not book_dir:
-        cand = da_tach_dir / target_book_name
+        cand = data_dir / target_book_name
         if cand.is_dir():
             book_dir = cand
 
@@ -1120,7 +1106,7 @@ def handle_cli(args, repo_root: Path, da_tach_dir: Path) -> int:
         print("Chạy 'python .\\scripts\\phan_loai.py --list' để xem danh sách.")
         return 1
 
-    pages_dir = book_dir / "pages"
+    pages_dir = book_dir / "cache" / "pages"
     total_pages = len(list(pages_dir.glob("*.jpg")))
     cfg = load_classification(book_dir, total_pages)
 
@@ -1148,7 +1134,7 @@ def handle_cli(args, repo_root: Path, da_tach_dir: Path) -> int:
             for p in pages:
                 sp = str(p)
                 if sp not in cfg["pages"]:
-                    cfg["pages"][sp] = {"tag": "unclassified", "rotate": 0}
+                    cfg["pages"][sp] = {"tag": "unknown", "rotate": 0}
                 cfg["pages"][sp]["tag"] = tag
             print(f"-> Đã gán {len(pages)} trang [{range_part}] thành nhãn: {tag}")
 
@@ -1169,12 +1155,12 @@ def handle_cli(args, repo_root: Path, da_tach_dir: Path) -> int:
             for p in pages:
                 sp = str(p)
                 if sp not in cfg["pages"]:
-                    cfg["pages"][sp] = {"tag": "unclassified", "rotate": 0}
+                    cfg["pages"][sp] = {"tag": "unknown", "rotate": 0}
                 cfg["pages"][sp]["rotate"] = deg
             print(f"-> Đã đặt góc xoay {deg}° cho {len(pages)} trang [{range_part}]")
 
     save_classification(book_dir, cfg)
-    print(f"-> Đã lưu cấu hình phân loại vào: {book_dir / 'phan_loai.json'}")
+    print(f"-> Đã lưu cấu hình phân loại vào: {book_dir / 'cache' / 'phan_loai.json'}")
 
     if args.status or (not args.apply and not args.set and not args.rotate and not args.layout):
         print("\n" + "=" * 50)
@@ -1185,7 +1171,7 @@ def handle_cli(args, repo_root: Path, da_tach_dir: Path) -> int:
         rot_count = 0
         for p in range(1, total_pages + 1):
             info = cfg["pages"].get(str(p), {})
-            t = info.get("tag", "unclassified")
+            t = info.get("tag", "unknown")
             stats[t] = stats.get(t, 0) + 1
             if info.get("rotate", 0) % 360 != 0:
                 rot_count += 1
@@ -1198,7 +1184,7 @@ def handle_cli(args, repo_root: Path, da_tach_dir: Path) -> int:
 
     if args.apply:
         print("\nĐang áp dụng phân loại và đồng bộ thư mục...")
-        res = apply_classification(book_dir, repo_root)
+        res = apply_classification(book_dir)
         print("Kết quả phân loại:")
         for k, v in res["counts"].items():
             if v > 0:
@@ -1224,12 +1210,11 @@ def main():
     parser.add_argument("--status", action="store_true", help="Xem trạng thái phân loại của sách")
     args = parser.parse_args()
 
-    repo_root = Path(__file__).resolve().parent.parent
-    da_tach_dir = repo_root / "work" / "da_tach"
+    data_dir = library.DEFAULT_DATA_DIR
 
     # Nếu có bất kỳ tham số CLI nào được truyền vào thì chạy CLI
     if args.cli or args.list or args.book or args.set or args.rotate or args.layout or args.apply or args.status:
-        return handle_cli(args, repo_root, da_tach_dir)
+        return handle_cli(args, data_dir)
 
     # Mặc định mở Web UI trực quan
     return start_server(port=args.port, open_browser=not args.no_browser)

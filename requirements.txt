@@ -1,7 +1,13 @@
-requests>=2.31
-python-dotenv>=1.0
+# Thư viện cơ bản: app, tách trang, nhận diện trang trắng, gọi API Kim Hán Nôm.
+# Cài: pip install -r requirements.txt
+# Muốn chạy thêm OCR/layout cục bộ (PaddleOCR-VL, Kraken): xem requirements-ocr.txt
+
+requests==2.34.2
+python-dotenv==1.2.4
 PyMuPDF==1.26.6
-# pdfslice_py
-pypdfium2>=4.30
-pillow>=10.0
-click>=8.1
+pypdfium2==5.14.0
+click==8.5.0
+numpy==2.3.5
+Pillow==13.0.0
+scipy==1.18.1
+opencv-python-headless==5.0.0.93

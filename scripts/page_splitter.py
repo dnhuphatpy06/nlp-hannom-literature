@@ -1,12 +1,20 @@
-"""Tách một PDF hoặc cả thư mục thành ảnh JPEG theo số trang gốc."""
+"""Tách PDF thành ảnh JPEG theo số trang gốc: data/<Tên sách>/cache/pages/<Tên sách>.<STT>.jpg.
+
+Dùng như thư viện (render_pdf, được Web UI gọi) hoặc dòng lệnh:
+    python scripts/page_splitter.py                      # mọi sách trong data/
+    python scripts/page_splitter.py "data/<sách>/<sách>.pdf" --first 1 --last 10 --dpi 200
+"""
 import argparse
 import os
 import sys
-import unicodedata
 import uuid
+from collections.abc import Callable
 from pathlib import Path
 
 import pymupdf
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # chạy trực tiếp được như script
+from scripts import library  # noqa: E402
 
 # Đảm bảo hiển thị đúng tiếng Việt / ký tự đặc biệt trên console Windows
 if sys.platform == "win32":
@@ -35,20 +43,6 @@ def is_valid_jpeg(path: Path) -> bool:
         return False
 
 
-def find_existing_page_file(destination: Path, stem: str, number: int) -> Path | None:
-    """Tìm file ảnh của trang, hỗ trợ cả hai dạng chuẩn hóa Unicode NFC và NFD."""
-    name_orig = f"{stem}.{number:03d}.jpg"
-    target = destination / name_orig
-    if target.exists():
-        return target
-    name_nfc = unicodedata.normalize("NFC", name_orig)
-    name_nfd = unicodedata.normalize("NFD", name_orig)
-    for candidate in (destination / name_nfc, destination / name_nfd):
-        if candidate.exists():
-            return candidate
-    return None
-
-
 def clean_temp_files(destination: Path):
     """Dọn dẹp các file tạm dở dang (.tmp_*) còn sót lại nếu tiến trình trước bị dừng đột ngột."""
     if not destination.is_dir():
@@ -68,10 +62,12 @@ def render_pdf(
     first: int = 1,
     last: int | None = None,
     force: bool = False,
+    on_progress: Callable[[int, int], None] | None = None,
 ) -> tuple[int, int, int]:
     """
     Tách các trang PDF thành ảnh JPEG theo chuẩn đồ án (<Tên sách>.<STT 3 số>.jpg).
     Hỗ trợ tách bù trang thiếu, bỏ qua trang đã có và ghi ảnh atomic an toàn khi dừng đột ngột.
+    on_progress(đã_xử_lý, cần_tách) được gọi sau mỗi trang (dùng cho Web UI).
     Trả về: (tổng số trang trong khoảng, số trang tách mới, số trang hợp lệ đã có sẵn).
     """
     try:
@@ -101,7 +97,7 @@ def render_pdf(
         pages_to_render = []
 
         for number in range(first, end + 1):
-            existing_file = find_existing_page_file(destination, pdf.stem, number)
+            existing_file = library.find_page_image(destination, pdf.stem, number)
             if force or existing_file is None or not is_valid_jpeg(existing_file):
                 pages_to_render.append(number)
 
@@ -145,6 +141,9 @@ def render_pdf(
                     except OSError:
                         pass
 
+            if on_progress:
+                on_progress(idx, len(pages_to_render))
+
         if sys.stdout.isatty():
             print()  # Xuống dòng sau tiến trình \r
 
@@ -154,43 +153,27 @@ def render_pdf(
         return total_range, rendered_count, already_done
 
 
-def prepare_workspace(repo: Path) -> Path:
-    """Tạo cấu trúc thư mục làm việc và đảm bảo .gitignore có /work/."""
-    ignore = repo / ".gitignore"
-    if ignore.exists():
-        lines = [line.strip() for line in ignore.read_text(encoding="utf-8").splitlines()]
-        if "/work/" not in lines and "work/" not in lines and "work" not in lines:
-            with ignore.open("a", encoding="utf-8") as stream:
-                stream.write("\n/work/\n")
-    work = repo / "work"
-    for folder in ("pdf", "da_tach"):
-        (work / folder).mkdir(parents=True, exist_ok=True)
-    return work
-
-
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("source", nargs="?", type=Path, help="File PDF hoặc thư mục chứa các PDF (mặc định: work/pdf)")
-    parser.add_argument("--out", type=Path, help="Thư mục gốc nhận ảnh (mặc định: work/da_tach)")
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("source", nargs="?", type=Path, help="File PDF hoặc thư mục chứa các sách (mặc định: data/)")
+    parser.add_argument("--out", type=Path, help="Thư mục data/ nhận ảnh (mặc định: data/)")
     parser.add_argument("--dpi", type=int, default=300, help="Độ phân giải DPI (mặc định: 300)")
     parser.add_argument("--first", type=int, default=1, help="Trang đầu (tính từ 1)")
     parser.add_argument("--last", type=int, help="Trang cuối (bao gồm trang này)")
     parser.add_argument("--force", action="store_true", help="Ghi đè/tách lại kể cả khi ảnh hợp lệ đã có sẵn")
     args = parser.parse_args()
 
-    repo = Path(__file__).resolve().parent.parent
-    work = prepare_workspace(repo)
-    source = args.source or work / "pdf"
-    output = args.out or work / "da_tach"
+    source = args.source or library.DEFAULT_DATA_DIR
+    out_root = args.out or library.DEFAULT_DATA_DIR
 
     if source.is_dir():
         if args.first != 1 or args.last is not None:
             parser.error("Hãy chọn một file PDF cụ thể khi chỉ xuất một khoảng trang (--first/--last).")
-        files = sorted(p for p in source.rglob("*") if p.is_file() and p.suffix.lower() == ".pdf")
-        root = source
+        for note in library.organize(source):
+            print(note)
+        files = [b.pdf for b in library.list_books(source)]
     else:
         files = [source] if source.is_file() and source.suffix.lower() == ".pdf" else []
-        root = source.parent
 
     if not files and args.source is None:
         print(f"Không tìm thấy file PDF nào trong '{source}'.")
@@ -206,7 +189,7 @@ def main():
 
     print("=== TIẾN TRÌNH TÁCH TRANG PDF SANG ẢNH JPEG ===")
     print(f"Nguồn: {source} ({len(files)} file PDF)")
-    print(f"Đích:  {output}")
+    print(f"Đích:  {out_root}/<Tên sách>/cache/pages")
     print(f"DPI:   {args.dpi}")
     print("-" * 50)
 
@@ -216,8 +199,7 @@ def main():
     errors = 0
 
     for idx, pdf in enumerate(files, 1):
-        rel_path = pdf.relative_to(root).with_suffix("")
-        destination = output / rel_path / "pages"
+        destination = library.Book(out_root / pdf.stem, pdf).pages_dir
         print(f"\n({idx}/{total_books}) Sách: {pdf.name}")
         total, rendered, skipped = render_pdf(
             pdf=pdf,

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Xử lý sách Hán Nôm</title>
+<style>
+:root {
+  --bg: #f6f7f9; --panel: #fff; --text: #1f2430; --muted: #6a7282; --line: #e2e5ea;
+  --accent: #2563eb; --accent-text: #fff; --warn-bg: #fff4e5; --warn-text: #8a4b00;
+  --unknown-bg: #fdecec; --unknown-text: #b42318; --ok-bg: #e8f1ff; --ok-text: #1d4ed8;
+  --done-text: #067647; --shadow: 0 10px 30px rgba(0,0,0,.18);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14171c; --panel: #1c2027; --text: #e7eaf0; --muted: #8f98a8; --line: #2d333d;
+    --accent: #5b8cff; --accent-text: #0b1020; --warn-bg: #3a2a12; --warn-text: #ffc778;
+    --unknown-bg: #3b1d1d; --unknown-text: #ff9a90; --ok-bg: #1b2a4a; --ok-text: #9db9ff;
+    --done-text: #6ce9a6; --shadow: 0 10px 30px rgba(0,0,0,.6);
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.45 system-ui, "Segoe UI", sans-serif; }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 20px 16px 60px; }
+h1 { font-size: 20px; margin: 0 0 4px; word-break: break-word; }
+.sub { color: var(--muted); font-size: 13px; margin-bottom: 16px; word-break: break-all; }
+.bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
+.bar .grow { flex: 1; }
+input[type=search], input[type=number], input[type=text], select { padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--text); font: inherit; }
+input[type=search] { min-width: 220px; }
+input[type=number] { width: 72px; }
+button { font: inherit; padding: 8px 14px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel); color: var(--text); cursor: pointer; }
+button:hover:not(:disabled) { border-color: var(--accent); }
+button.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); font-weight: 600; }
+button:disabled { opacity: .45; cursor: default; }
+.stats { color: var(--muted); font-size: 13px; }
+.dirty { color: var(--warn-text); background: var(--warn-bg); padding: 3px 9px; border-radius: 999px; font-size: 12px; display: none; }
+.dirty.on { display: inline-block; }
+.banner { padding: 10px 12px; border-radius: 8px; margin-bottom: 12px; background: var(--unknown-bg); color: var(--unknown-text); display: none; }
+.banner.on { display: block; }
+table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+th { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); background: var(--bg); }
+tr:last-child td { border-bottom: 0; }
+tbody tr.changed td:first-child { box-shadow: inset 3px 0 0 var(--accent); }
+td.num, td.size { color: var(--muted); white-space: nowrap; width: 1%; }
+td.name { word-break: break-word; }
+td.act { white-space: nowrap; width: 1%; text-align: right; }
+td.act a { color: var(--accent); margin-right: 12px; font-size: 14px; }
+td.act button { margin-left: 4px; }
+.badge { display: inline-block; padding: 2px 10px; border-radius: 999px; font-weight: 600; font-size: 13px; background: var(--ok-bg); color: var(--ok-text); border: 0; cursor: pointer; }
+.badge.unknown { background: var(--unknown-bg); color: var(--unknown-text); }
+span.badge { cursor: default; }
+.st { font-size: 13px; white-space: nowrap; color: var(--muted); }
+.st.done { color: var(--done-text); }
+.st.partial, .st.running { color: var(--warn-text); }
+.st.error { color: var(--unknown-text); }
+.note { font-size: 12px; color: var(--warn-text); margin-top: 3px; }
+.empty { padding: 28px; text-align: center; color: var(--muted); }
+details { margin-top: 18px; color: var(--muted); font-size: 13px; }
+details li { word-break: break-all; }
+/* màn hình sách */
+/* header của màn hình sách: dính ở đầu trang khi cuộn lưới trang */
+.book-head { position: sticky; top: 0; z-index: 8; margin: 0 -16px 14px; padding: 10px 16px 8px;
+  background: var(--panel); border-bottom: 1px solid var(--line); box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+.book-head .bar { margin-bottom: 0; gap: 8px; }
+.book-head .bar + .bar { margin-top: 8px; }
+.book-head button, .book-head select, .book-head input[type=text] { padding: 5px 10px; font-size: 14px; }
+.book-head label { font-size: 13px; display: inline-flex; gap: 5px; align-items: center; color: var(--muted); }
+.book-head label select, .book-head label input[type=text] { color: var(--text); }
+.head-title { flex: 1; min-width: 0; }
+.head-title h1 { font-size: 16px; margin: 0; line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.head-sub { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.head-sub .badge { font-size: 12px; padding: 0 8px; flex: none; }
+.head-sub > span:not(.badge):not(:empty) { overflow: hidden; text-overflow: ellipsis; }
+#blankSummary:not(:empty)::before { content: "· "; }
+.progress { height: 4px; background: var(--line); border-radius: 999px; overflow: hidden; margin-top: 8px; display: none; }
+.progress.on { display: block; }
+.progress > div { height: 100%; width: 0; background: var(--accent); transition: width .3s; }
+.progress-text { font-size: 12px; color: var(--muted); margin-top: 4px; display: none; }
+.progress-text.on { display: block; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.card .img { aspect-ratio: 3 / 4; background: var(--bg); display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 12px; }
+.card img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.card .cap { display: flex; justify-content: space-between; align-items: center; padding: 6px 8px; font-size: 13px; }
+.card { position: relative; }
+.card .pick { position: absolute; top: 6px; left: 6px; width: 18px; height: 18px; cursor: pointer; accent-color: var(--accent); }
+.cap .right { display: flex; gap: 5px; align-items: center; }
+.menu-wrap { position: relative; display: flex; gap: 6px; }
+.tag-menu { display: none; position: absolute; right: 0; top: calc(100% + 6px); z-index: 5; min-width: 150px; max-height: 70vh; overflow-y: auto;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px; box-shadow: var(--shadow); padding: 6px; }
+.tag-menu.on { display: block; }
+.tag-menu button { display: block; width: 100%; text-align: left; border: 0; border-radius: 8px; padding: 8px 10px; background: transparent; }
+.tag-menu button:hover:not(:disabled) { background: var(--ok-bg); }
+.tag-menu .tname { font-weight: 700; }
+.tag-menu .tdesc { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
+.tag-info { width: min(420px, 90vw); padding: 10px 12px; }
+.tag-info .tinfo-row + .tinfo-row { margin-top: 10px; }
+/* popup */
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: none; align-items: center; justify-content: center; padding: 16px; z-index: 10; }
+.overlay.on { display: flex; }
+.dialog { background: var(--panel); border-radius: 12px; box-shadow: var(--shadow); width: min(520px, 100%); max-height: 90vh; display: flex; flex-direction: column; }
+.dialog h2 { font-size: 16px; margin: 0; padding: 16px 18px 4px; }
+.dialog .file { padding: 0 18px 10px; color: var(--muted); font-size: 13px; word-break: break-word; }
+.opts { overflow-y: auto; padding: 4px 10px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.opt { display: flex; gap: 10px; align-items: flex-start; padding: 9px 8px; border-radius: 8px; cursor: pointer; }
+.opt:hover { background: var(--bg); }
+.opt input { margin-top: 4px; }
+.opt b { display: inline-block; min-width: 62px; }
+.opt span { color: var(--muted); }
+.dialog .foot { padding: 12px 18px; display: flex; justify-content: flex-end; gap: 8px; }
+.toast { position: fixed; right: 20px; bottom: 20px; padding: 10px 16px; border-radius: 8px; background: var(--text); color: var(--bg); display: none; z-index: 20; }
+.toast.on { display: block; }
+@media (max-width: 760px) { td.size, th.size { display: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="banner" id="errorBanner"></div>
+
+  <!-- Danh sách PDF + loại sách -->
+  <section id="listView">
+    <h1>Xử lý sách Hán Nôm</h1>
+    <div class="sub" id="pathInfo"></div>
+    <div class="bar">
+      <input type="search" id="search" placeholder="Tìm tên file…">
+      <select id="filter" aria-label="Lọc theo loại"></select>
+      <span class="stats" id="stats"></span>
+      <span class="grow"></span>
+      <span class="dirty" id="dirty">Chưa lưu</span>
+      <button class="primary" id="saveBtn" disabled>Save</button>
+    </div>
+
+    <table>
+      <thead><tr><th>#</th><th>File PDF</th><th class="size">Dung lượng</th><th>Loại sách</th><th>Tách trang</th><th></th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <div class="empty" id="empty" style="display:none"></div>
+
+    <details id="orphans" style="display:none">
+      <summary id="orphansTitle"></summary>
+      <ul id="orphanList"></ul>
+    </details>
+  </section>
+
+  <!-- Chi tiết một sách: tách trang + lưới trang -->
+  <section id="bookView" style="display:none">
+    <div class="book-head">
+      <div class="bar">
+        <button id="backBtn" title="Về danh sách">←</button>
+        <div class="head-title">
+          <h1 id="bookTitle"></h1>
+          <div class="head-sub"><span class="badge" id="bookType"></span><span id="bookSub"></span><span id="blankSummary"></span></div>
+        </div>
+        <label>DPI
+          <select id="dpi"><option>150</option><option>200</option><option selected>300</option><option>400</option></select>
+        </label>
+        <label title="Tách lại cả những trang đã có ảnh hợp lệ"><input type="checkbox" id="force"> Ghi đè</label>
+        <button class="primary" id="splitBtn">Tách trang</button>
+      </div>
+      <div class="progress" id="progress"><div id="progressBar"></div></div>
+      <div class="progress-text" id="progressText"></div>
+
+      <div class="bar" id="manualBar">
+        <label>Lọc
+          <select id="blankFilter">
+            <option value="all">Tất cả</option>
+            <option value="tag:blank">blank</option>
+            <option value="tag:intro">intro</option>
+            <option value="tag:ref">ref</option>
+            <option value="tag:toc">toc</option>
+            <option value="tag:misc">misc</option>
+            <option value="tag:ch">ch</option>
+            <option value="tag:vi">vi</option>
+            <option value="tag:ch_vi">ch_vi</option>
+            <option value="tag:unknown">unknown</option>
+          </select>
+        </label>
+        <label title="Ví dụ: 1-5, 8, 10-12 · bỏ trống đầu hoặc cuối để lấy từ trang đầu hoặc đến trang cuối (vd: 40-)&#10;Bước nhảy a:b:c = từ trang a đến b, cách c trang (vd: 1:40:2 là các trang lẻ đến 40; 2::2 là mọi trang chẵn; 3::5 là 3, 8, 13, ...)">Trang
+          <input type="text" id="rangeInput" placeholder="1-5, 8, 2:40:2" size="14" autocomplete="off">
+        </label>
+        <button id="rangeBtn" title="Chọn đúng các trang trong khoảng (thay lựa chọn hiện tại)">Chọn</button>
+        <button id="selAllBtn" title="Chọn mọi trang đang hiển thị theo bộ lọc">Chọn tất cả</button>
+        <button id="selNoneBtn">Bỏ chọn</button>
+        <span class="grow"></span>
+        <span class="stats" id="manualSummary"></span>
+        <div class="menu-wrap">
+          <button class="primary" id="tagMenuBtn" aria-haspopup="true" aria-expanded="false">Gán nhãn ▾</button>
+          <button id="tagInfoBtn" aria-haspopup="true" aria-expanded="false" aria-label="Xem mô tả các nhãn" title="Xem mô tả các nhãn (theo Quy định đồ án)">ⓘ</button>
+          <div class="tag-menu" id="tagMenu" role="menu"></div>
+          <div class="tag-menu tag-info" id="tagInfo"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="empty" id="gridEmpty" style="display:none">Sách này chưa được tách trang.</div>
+    <div class="grid" id="grid"></div>
+  </section>
+</div>
+
+<div class="overlay" id="overlay">
+  <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="dlgTitle">
+    <h2 id="dlgTitle">Chọn loại sách</h2>
+    <div class="file" id="dlgFile"></div>
+    <div class="opts" id="opts"></div>
+    <div class="foot">
+      <button id="cancelBtn">Hủy</button>
+      <button class="primary" id="applyBtn">Áp dụng</button>
+    </div>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const UNKNOWN = "unknown";
+// Nhãn trang và mô tả, theo mục "Quy định về dữ liệu nộp" trong docs/Quy_dinh_do_an.md
+const TAG_INFO = [
+  { tag: "blank", desc: "Thư mục chỉ chứa các trang trắng, các trang không có dữ liệu cần OCR (ví dụ: trang có khung khắc in Nôm nhưng không có chữ nào), nếu có." },
+  { tag: "misc", desc: "Thư mục chứa các trang còn lại, thường là trang bìa hoặc không liên quan." },
+  { tag: "intro", desc: "Thư mục chứa các trang giới thiệu, nếu có (không bắt buộc làm)." },
+  { tag: "ref", desc: "Thư mục chứa các trang chú thích, nếu có (không bắt buộc làm)." },
+  { tag: "toc", desc: "Thư mục chứa các trang mục lục, nếu có (không bắt buộc làm)." },
+  { tag: "ch", desc: "Thư mục chứa các trang Hán Nôm (bắt buộc có)." },
+  { tag: "vi", desc: "Thư mục chứa các trang Quốc ngữ (bắt buộc có)." },
+  { tag: "ch_vi", desc: "Trang có cả Nôm và Quốc ngữ (bố cục T2b): chép vào cả ch/ và vi/. (Quy ước của ứng dụng)" },
+  { tag: "unknown", desc: "Chưa gán nhãn. (Giá trị mặc định của ứng dụng)" },
+];
+let types = [];            // [{code, desc}]
+let files = [];            // [{name, size, type, split, invalid_value?}]
+let saved = {};            // name -> type đã lưu (để biết dòng nào thay đổi)
+let editing = null;        // file đang mở popup
+let splitDisabledReason = null;
+let currentBook = null;    // dữ liệu /api/book của sách đang mở
+let pollTimer = null;
+let autoState = {};        // tên sách (NFC) -> {status} của tác vụ tự nhận diện, chỉ có khi đang chờ/chạy/lỗi
+let autoTimer = null;
+let blankDisabledReason = null;
+let selected = new Set();   // trang đang được tick
+const $ = id => document.getElementById(id);
+
+function el(tag, props = {}, ...children) {
+  const node = document.createElement(tag);
+  Object.assign(node, props);
+  node.append(...children);
+  return node;
+}
+function fmtSize(b) {
+  return b >= 1048576 ? (b / 1048576).toFixed(1) + " MB" : Math.max(1, Math.round(b / 1024)) + " KB";
+}
+function pad3(n) { return String(n).padStart(3, "0"); }
+function isDirty() { return files.some(f => f.type !== saved[f.name] || f.invalid_value); }
+function fileByName(name) { return files.find(f => f.name === name); }
+function typeBadge(code) { return el("span", { className: "badge" + (code === UNKNOWN ? " unknown" : ""), textContent: code }); }
+
+function toast(msg) {
+  const t = $("toast"); t.textContent = msg; t.classList.add("on");
+  clearTimeout(toast.timer); toast.timer = setTimeout(() => t.classList.remove("on"), 2500);
+}
+function showError(msg) {
+  $("errorBanner").textContent = msg || "";
+  $("errorBanner").classList.toggle("on", !!msg);
+}
+async function api(url, body) {
+  const res = await fetch(url, body ? { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) } : undefined);
+  const data = await res.json();
+  if (!res.ok) throw new Error(data.error || res.statusText);
+  return data;
+}
+
+/* ---------- trạng thái tách trang ---------- */
+function splitInfo(s) {
+  switch (s && s.status) {
+    case "running": return { cls: "running", text: s.total ? `Đang tách ${s.done}/${s.total}` : "Đang chuẩn bị…" };
+    case "done": return { cls: "done", text: `Đã tách ${s.total_pages} trang` };
+    case "partial": return { cls: "partial", text: "Tách dở" };
+    case "error": return { cls: "error", text: "Lỗi tách trang", title: s.error };
+    default: return { cls: "", text: "Chưa tách" };
+  }
+}
+
+function ensurePolling() {
+  if (pollTimer) return;
+  pollTimer = setInterval(pollSplits, 1000);
+}
+async function pollSplits() {
+  let all;
+  try { all = await api("/api/splits"); } catch (e) { return; }
+  let running = false, finished = null;
+  for (const f of files) {
+    const before = f.split && f.split.status, now = all[f.name];
+    if (!now) continue;
+    if (before === "running" && now.status !== "running") finished = { name: f.name, status: now.status, error: now.error };
+    f.split = now;
+    if (now.status === "running") running = true;
+  }
+  if (!running) { clearInterval(pollTimer); pollTimer = null; }
+  if (finished) {
+    toast(finished.status === "error" ? "Tách trang lỗi: " + finished.error : "Đã tách xong: " + finished.name);
+    if (currentBook && currentBook.name === finished.name) { await openBook(finished.name, true); return; }
+  }
+  if (currentBook) renderBookStatus(); else render();
+}
+
+/* ---------- tự nhận diện blank + gán ch/vi (chạy nền trên server) ---------- */
+function autoOf(name) { return autoState[name.normalize("NFC")]; }
+const busyAuto = s => s && (s.status === "queued" || s.status === "running");
+
+async function pollAuto() {
+  let now;
+  try { now = await api("/api/autotag"); } catch (e) { return; }
+  const before = autoState;
+  autoState = now;
+  const stillBusy = Object.values(now).some(busyAuto);
+  if (!stillBusy) { clearInterval(autoTimer); autoTimer = null; }
+  else if (!autoTimer) autoTimer = setInterval(pollAuto, 1500);
+  // Sách đang mở vừa được xử lý xong: tải lại để lưới hiện nhãn mới
+  if (currentBook) {
+    const key = currentBook.name.normalize("NFC");
+    if (busyAuto(before[key]) && !busyAuto(now[key]) && !(now[key] && now[key].status === "error")) { await openBook(currentBook.name, true); return; }
+    updateBlankSummary();
+  }
+}
+
+/* ---------- tải dữ liệu ---------- */
+async function load() {
+  const s = await api("/api/state");
+  types = s.types; files = s.files;
+  saved = Object.fromEntries(files.map(f => [f.name, f.type]));
+  splitDisabledReason = s.split_error;
+  blankDisabledReason = s.blank_error;
+  $("pathInfo").textContent = "Lưu loại sách vào: " + s.type_file;
+  showError(s.error);
+
+  const f = $("filter");
+  f.replaceChildren(el("option", { value: "", textContent: "Tất cả loại" }),
+    ...types.map(t => el("option", { value: t.code, textContent: t.code === UNKNOWN ? "unknown (chưa gán)" : t.code })));
+
+  $("orphans").style.display = s.orphans.length ? "" : "none";
+  $("orphansTitle").textContent = `${s.orphans.length} mục trong type.json không có PDF tương ứng (được giữ nguyên khi lưu)`;
+  $("orphanList").replaceChildren(...s.orphans.map(o => el("li", { textContent: `${o.name} → ${o.type}` })));
+  if (files.some(x => x.split && x.split.status === "running")) ensurePolling();
+  render();
+  pollAuto();   // server vừa được kích hoạt tự nhận diện trong /api/state
+}
+
+/* ---------- danh sách ---------- */
+function render() {
+  if (currentBook) return;
+  const q = $("search").value.trim().toLowerCase();
+  const flt = $("filter").value;
+  const shown = files.filter(f => (!flt || f.type === flt) && f.name.toLowerCase().includes(q));
+  const idx = new Map(files.map((f, i) => [f, i + 1]));
+
+  $("rows").replaceChildren(...shown.map(f => {
+    const badge = el("button", { className: "badge" + (f.type === UNKNOWN ? " unknown" : ""), textContent: f.type, title: "Bấm để đổi loại" });
+    badge.onclick = () => openDialog(f);
+    const nameCell = el("td", { className: "name", textContent: f.name });
+    if (f.invalid_value) nameCell.append(el("div", { className: "note", textContent: `Giá trị cũ "${f.invalid_value}" không hợp lệ → đặt là unknown, hãy chọn lại.` }));
+    const si = splitInfo(f.split);
+    const view = el("a", { href: "/pdf?name=" + encodeURIComponent(f.name), target: "_blank", rel: "noopener", textContent: "Xem PDF" });
+    const edit = el("button", { textContent: "Chọn loại" });
+    edit.onclick = () => openDialog(f);
+    const open = el("button", { textContent: "Trang" , title: "Tách trang và xem các trang của sách" });
+    open.onclick = () => { location.hash = "#book=" + encodeURIComponent(f.name); };
+    return el("tr", { className: f.type !== saved[f.name] ? "changed" : "" },
+      el("td", { className: "num", textContent: idx.get(f) }), nameCell,
+      el("td", { className: "size", textContent: fmtSize(f.size) }),
+      el("td", {}, badge),
+      el("td", {}, el("span", { className: "st " + si.cls, textContent: si.text, title: si.title || "" })),
+      el("td", { className: "act" }, view, edit, open));
+  }));
+
+  const empty = $("empty");
+  empty.style.display = shown.length ? "none" : "";
+  empty.textContent = files.length ? "Không có file nào khớp bộ lọc." : "Không tìm thấy file PDF nào trong thư mục data/.";
+
+  const unknown = files.filter(f => f.type === UNKNOWN).length;
+  const splitDone = files.filter(f => f.split && f.split.status === "done").length;
+  $("stats").textContent = `${files.length} PDF · ${unknown} unknown · ${splitDone} đã tách trang`;
+  const dirty = isDirty();
+  $("dirty").classList.toggle("on", dirty);
+  $("saveBtn").disabled = !dirty || !files.length;
+}
+
+/* ---------- popup chọn loại ---------- */
+function openDialog(f) {
+  editing = f;
+  $("dlgFile").textContent = f.name;
+  $("opts").replaceChildren(...types.map(t => {
+    const radio = el("input", { type: "radio", name: "booktype", value: t.code, checked: t.code === f.type });
+    return el("label", { className: "opt" }, radio, el("div", {}, el("b", { textContent: t.code }), el("span", { textContent: t.desc })));
+  }));
+  $("overlay").classList.add("on");
+  const checked = $("opts").querySelector("input:checked");
+  if (checked) checked.focus();
+}
+function closeDialog() { $("overlay").classList.remove("on"); editing = null; }
+function applyDialog() {
+  const sel = $("opts").querySelector("input:checked");
+  if (editing && sel) { editing.type = sel.value; delete editing.invalid_value; }
+  closeDialog(); render();
+}
+
+async function save() {
+  $("saveBtn").disabled = true;
+  try {
+    const r = await api("/api/save", { types: Object.fromEntries(files.map(f => [f.name, f.type])) });
+    toast(`Đã lưu ${r.pdf_count} file vào type.json`);
+    await load();
+  } catch (e) {
+    alert("Lưu thất bại: " + e.message);
+    render();
+  }
+}
+
+/* ---------- màn hình sách ---------- */
+function route() {
+  const m = location.hash.match(/^#book=(.+)$/);
+  if (m) openBook(decodeURIComponent(m[1]));
+  else closeBook();
+}
+
+function closeBook() {
+  currentBook = null;
+  $("bookView").style.display = "none";
+  $("listView").style.display = "";
+  render();
+}
+
+async function openBook(name, silent) {
+  let b;
+  try { b = await api("/api/book?name=" + encodeURIComponent(name)); }
+  catch (e) { showError(e.message); location.hash = ""; return; }
+  showError(null);
+  currentBook = b;
+  const f = fileByName(b.name);
+  if (f) { f.split = b.split; b.type = f.type; }   // loại chưa lưu vẫn hiển thị đúng
+  $("listView").style.display = "none";
+  $("bookView").style.display = "";
+  $("bookTitle").textContent = $("bookTitle").title = b.name;
+  const t = $("bookType"); t.textContent = b.type; t.className = "badge" + (b.type === UNKNOWN ? " unknown" : "");
+  if (b.cache && b.cache.dpi) $("dpi").value = String(b.cache.dpi);
+  resetSelection();
+  renderGrid();
+  renderBookStatus();
+  if (b.split.status === "running") ensurePolling();
+  if (!silent) { window.scrollTo(0, 0); pollAuto(); }
+  else updateBlankSummary();
+}
+
+function renderBookStatus() {
+  const b = currentBook; if (!b) return;
+  const s = (fileByName(b.name) || b).split || b.split;
+  const running = s.status === "running";
+  $("progress").classList.toggle("on", running);
+  $("progressText").classList.toggle("on", running || s.status === "error");
+  if (running) {
+    const pct = s.total ? Math.round(s.done / s.total * 100) : 0;
+    $("progressBar").style.width = pct + "%";
+    $("progressText").textContent = s.total ? `Đang tách ${s.done}/${s.total} trang (${pct}%)…` : "Đang chuẩn bị…";
+    $("progressText").style.color = "";
+  } else if (s.status === "error") {
+    $("progressText").textContent = "Lỗi: " + s.error;
+    $("progressText").style.color = "var(--unknown-text)";
+  }
+  const label = { none: "Tách trang", partial: "Tách tiếp", done: "Tách lại", running: "Đang tách…", error: "Thử lại" }[s.status] || "Tách trang";
+  $("splitBtn").textContent = label;
+  $("splitBtn").disabled = running || !!splitDisabledReason;
+  $("splitBtn").title = splitDisabledReason || "";
+  $("dpi").disabled = $("force").disabled = running;
+
+  const rendered = b.rendered.length, total = b.cache ? b.cache.total_pages : 0;
+  $("bookSub").textContent = total ? `· ${total} trang, ${rendered} có ảnh` : "· chưa tách trang";
+}
+
+function pageInfo(p) { return (currentBook.cache && currentBook.cache.pages[String(p)]) || {}; }
+
+function resetSelection() { selected = new Set(); }
+
+function renderGrid() {
+  const b = currentBook;
+  const total = b.cache ? b.cache.total_pages : 0;
+  const have = new Set(b.rendered);
+  const filter = $("blankFilter").value;
+  const pages = [];
+  for (let p = 1; p <= total; p++) {
+    const info = pageInfo(p);
+    if (filter.startsWith("tag:") && (info.tag || UNKNOWN) !== filter.slice(4)) continue;
+    pages.push(p);
+  }
+  $("gridEmpty").style.display = total ? "none" : "";
+  $("grid").replaceChildren(...pages.map(p => {
+    const info = pageInfo(p), tag = info.tag || UNKNOWN;
+    const box = el("div", { className: "img" });
+    if (have.has(p)) {
+      const img = el("img", { loading: "lazy", decoding: "async", alt: "Trang " + p,
+        src: `/api/thumb?name=${encodeURIComponent(b.name)}&page=${p}` });
+      img.onerror = () => box.replaceChildren("không có ảnh");
+      box.append(img);
+    } else {
+      box.textContent = "chưa có ảnh";
+    }
+    const pick = el("input", { type: "checkbox", className: "pick", checked: selected.has(p), title: "Chọn trang này" });
+    pick.onchange = () => { if (pick.checked) selected.add(p); else selected.delete(p); updateBlankSummary(); };
+    const right = el("span", { className: "right" });
+    right.append(typeBadge(tag));
+    const card = el("div", { className: "card" }, pick, box,
+      el("div", { className: "cap" }, el("span", { textContent: "Trang " + pad3(p) }), right));
+    card.dataset.page = p;
+    if (info.blank) card.title = `${info.blank.components} thành phần chữ · ${Math.round(info.blank.active * 100)}% ô có chữ`;
+    return card;
+  }));
+  updateBlankSummary();
+}
+
+function updateBlankSummary() {
+  const b = currentBook; if (!b) return;
+  const total = b.cache ? b.cache.total_pages : 0;
+  let scanned = 0;
+  const counts = {};
+  for (let p = 1; p <= total; p++) {
+    const info = pageInfo(p);
+    if (info.blank) scanned++;
+    const t = info.tag || UNKNOWN;
+    counts[t] = (counts[t] || 0) + 1;
+  }
+  const auto = autoOf(b.name);
+  $("blankSummary").textContent =
+    auto && auto.status === "error" ? `Tự nhận diện lỗi: ${auto.error}`
+    : auto ? "Đang tự nhận diện blank và ch/vi…"
+    : blankDisabledReason ? `Không tự nhận diện được: ${blankDisabledReason}`
+    : scanned ? `Đã nhận diện ${scanned} trang` : "Chưa nhận diện";
+  // Số trang theo từng nhãn đã gán (bỏ unknown), cùng số trang đang chọn
+  const tagged = TAG_INFO.filter(i => i.tag !== UNKNOWN && counts[i.tag]).map(i => `${i.tag} ${counts[i.tag]}`);
+  $("manualSummary").textContent = [...tagged, `đang chọn ${selected.size}`].join(" · ");
+  $("tagMenuBtn").textContent = `Gán nhãn (${selected.size}) ▾`;
+  $("tagMenuBtn").disabled = selected.size === 0;
+  if (selected.size === 0) $("tagMenu").classList.remove("on");
+}
+
+async function applyTag(pages, tag, message) {
+  const name = currentBook.name;
+  try {
+    const r = await api("/api/pages/tag", { name, pages, tag });
+    toast(message(r.changed));
+    await openBook(name, true);
+  } catch (e) {
+    alert("Không gán được nhãn: " + e.message);
+  }
+}
+
+// Gán một nhãn cho tất cả trang đang tick
+async function tagSelected(tag) {
+  const pages = [...selected].sort((a, b) => a - b);
+  if (!pages.length) return;
+  await applyTag(pages, tag, n => `Đã gán ${tag} cho ${n} trang`);
+}
+
+function closeTagMenu() {
+  $("tagMenu").classList.remove("on");
+  $("tagInfo").classList.remove("on");
+  $("tagMenuBtn").setAttribute("aria-expanded", "false");
+  $("tagInfoBtn").setAttribute("aria-expanded", "false");
+}
+
+// Mở/đóng một trong hai popup (menu gán nhãn hoặc bảng mô tả nhãn); mở cái này thì đóng cái kia
+function togglePopup(popupId, buttonId) {
+  const open = !$(popupId).classList.contains("on");
+  closeTagMenu();
+  $(popupId).classList.toggle("on", open);
+  $(buttonId).setAttribute("aria-expanded", String(open));
+}
+
+function buildTagMenu() {
+  $("tagMenu").replaceChildren(...TAG_INFO.map(({ tag }) => {
+    const item = el("button", { type: "button", role: "menuitem" }, el("span", { className: "tname", textContent: tag }));
+    item.onclick = () => { closeTagMenu(); tagSelected(tag); };
+    return item;
+  }));
+  $("tagInfo").replaceChildren(...TAG_INFO.map(({ tag, desc }) =>
+    el("div", { className: "tinfo-row" },
+      el("span", { className: "tname", textContent: tag }), el("span", { className: "tdesc", textContent: desc }))));
+}
+
+// "1-5, 8, 10-, 2:40:2" -> Set trang; null nếu cú pháp sai
+// a:b:c = từ a đến b (gồm cả b), cách c trang; bỏ trống a/b/c thì lấy 1 / trang cuối / 1. Vd: 1::2 = trang lẻ, 2::2 = trang chẵn.
+function parseRange(text, total) {
+  const out = new Set();
+  for (const raw of text.split(",")) {
+    const part = raw.trim();
+    if (!part) continue;
+    const s = part.match(/^(\d*)\s*:\s*(\d*)\s*(?::\s*(\d*))?$/);
+    const m = part.match(/^(\d*)\s*-\s*(\d*)$/);
+    if (s) {
+      let lo = s[1] ? +s[1] : 1, hi = s[2] ? +s[2] : total;
+      const step = s[3] ? +s[3] : 1;
+      if (step < 1) return null;
+      if (lo > hi) [lo, hi] = [hi, lo];
+      for (let p = Math.max(1, lo); p <= Math.min(total, hi); p += step) out.add(p);
+    } else if (m && (m[1] || m[2])) {
+      let lo = m[1] ? +m[1] : 1, hi = m[2] ? +m[2] : total;
+      if (lo > hi) [lo, hi] = [hi, lo];
+      for (let p = Math.max(1, lo); p <= Math.min(total, hi); p++) out.add(p);
+    } else if (/^\d+$/.test(part)) {
+      if (+part >= 1 && +part <= total) out.add(+part);
+    } else {
+      return null;
+    }
+  }
+  return out;
+}
+
+function selectRange() {
+  const total = currentBook && currentBook.cache ? currentBook.cache.total_pages : 0;
+  if (!total) return;
+  const text = $("rangeInput").value.trim();
+  if (!text) return;
+  const pages = parseRange(text, total);
+  if (pages === null) { alert("Khoảng trang không hợp lệ. Ví dụ: 1-5, 8, 10-12, 1:40:2 (từ trang 1 đến 40, cách 2 trang)"); return; }
+  selected = pages;
+  renderGrid();
+}
+
+function selectVisible() {
+  selected = new Set([...$("grid").querySelectorAll(".card")].map(c => +c.dataset.page));
+  renderGrid();
+}
+
+async function startSplit() {
+  const b = currentBook;
+  try {
+    await api("/api/split", { name: b.name, dpi: parseInt($("dpi").value, 10), force: $("force").checked });
+  } catch (e) {
+    alert("Không bắt đầu được: " + e.message);
+    return;
+  }
+  const f = fileByName(b.name);
+  if (f) f.split = { status: "running", done: 0, total: 0 };
+  $("force").checked = false;
+  ensurePolling();
+  renderBookStatus();
+}
+
+$("search").oninput = render;
+$("filter").onchange = render;
+$("saveBtn").onclick = save;
+$("cancelBtn").onclick = closeDialog;
+$("applyBtn").onclick = applyDialog;
+$("backBtn").onclick = () => { location.hash = ""; };
+$("splitBtn").onclick = startSplit;
+$("blankFilter").onchange = renderGrid;
+buildTagMenu();
+$("tagMenuBtn").onclick = e => { e.stopPropagation(); togglePopup("tagMenu", "tagMenuBtn"); };
+$("tagInfoBtn").onclick = e => { e.stopPropagation(); togglePopup("tagInfo", "tagInfoBtn"); };
+document.addEventListener("click", e => { if (!$("tagMenu").contains(e.target) && !$("tagInfo").contains(e.target)) closeTagMenu(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeTagMenu(); });
+$("rangeBtn").onclick = selectRange;
+$("rangeInput").onkeydown = e => { if (e.key === "Enter") selectRange(); };
+$("selAllBtn").onclick = selectVisible;
+$("selNoneBtn").onclick = () => { selected = new Set(); renderGrid(); };
+$("overlay").onclick = e => { if (e.target === $("overlay")) closeDialog(); };
+$("opts").ondblclick = applyDialog;
+addEventListener("keydown", e => {
+  if (!$("overlay").classList.contains("on")) return;
+  if (e.key === "Escape") closeDialog();
+  if (e.key === "Enter") applyDialog();
+});
+addEventListener("hashchange", route);
+addEventListener("beforeunload", e => { if (isDirty()) { e.preventDefault(); e.returnValue = ""; } });
+load().then(route).catch(e => showError("Không tải được dữ liệu: " + e.message));
+</script>
+</body>
+</html>
