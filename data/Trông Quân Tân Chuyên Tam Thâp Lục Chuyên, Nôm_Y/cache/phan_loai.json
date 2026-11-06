@@ -1,0 +1,207 @@
+{
+  "book_name": "Trông Quân Tân Chuyên Tam Thâp Lục Chuyên, Nôm_Y",
+  "pdf": "Trông Quân Tân Chuyên Tam Thâp Lục Chuyên, Nôm_Y.pdf",
+  "layout_code": "T2b",
+  "dpi": null,
+  "split_complete": false,
+  "notes": "",
+  "total_pages": 17,
+  "pages": {
+    "1": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 101,
+        "active": 0.1343,
+        "ink": 0.0462
+      },
+      "auto": true
+    },
+    "2": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 48,
+        "active": 0.0694,
+        "ink": 0.0116
+      },
+      "auto": true
+    },
+    "3": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 33,
+        "active": 0.0509,
+        "ink": 0.0088
+      },
+      "auto": true
+    },
+    "4": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 11,
+        "active": 0.0208,
+        "ink": 0.0054
+      },
+      "auto": true
+    },
+    "5": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 19,
+        "active": 0.037,
+        "ink": 0.0071
+      },
+      "auto": true
+    },
+    "6": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 288,
+        "active": 0.3889,
+        "ink": 0.1157
+      },
+      "auto": true
+    },
+    "7": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 304,
+        "active": 0.4583,
+        "ink": 0.1138
+      },
+      "auto": true
+    },
+    "8": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 278,
+        "active": 0.3542,
+        "ink": 0.1028
+      },
+      "auto": true
+    },
+    "9": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 286,
+        "active": 0.3889,
+        "ink": 0.1107
+      },
+      "auto": true
+    },
+    "10": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 286,
+        "active": 0.4144,
+        "ink": 0.1017
+      },
+      "auto": true
+    },
+    "11": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 276,
+        "active": 0.4282,
+        "ink": 0.1081
+      },
+      "auto": true
+    },
+    "12": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 265,
+        "active": 0.3495,
+        "ink": 0.1022
+      },
+      "auto": true
+    },
+    "13": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 121,
+        "active": 0.1898,
+        "ink": 0.0471
+      },
+      "auto": true
+    },
+    "14": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 24,
+        "active": 0.0463,
+        "ink": 0.0079
+      },
+      "auto": true
+    },
+    "15": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 10,
+        "active": 0.0208,
+        "ink": 0.0058
+      },
+      "auto": true
+    },
+    "16": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 14,
+        "active": 0.0301,
+        "ink": 0.0079
+      },
+      "auto": true
+    },
+    "17": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 13,
+        "active": 0.0231,
+        "ink": 0.0069
+      },
+      "auto": true
+    }
+  },
+  "blank_scan": {
+    "at": "2026-11-07T00:44:45.881489",
+    "side": 640
+  },
+  "last_updated": "2026-11-07T00:44:45.923351",
+  "autotag": {
+    "type": "T2b",
+    "at": "2026-11-07T00:44:45.937780"
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "book_name": "Nhât Tỉnh Ngâm, Nôm_Y",
+  "pdf": "Nhât Tỉnh Ngâm, Nôm_Y.pdf",
+  "layout_code": "T2b",
+  "total_pages": 45,
+  "dpi": 300,
+  "split_started": true,
+  "split_complete": true,
+  "last_updated": "2026-11-07T00:44:03.903808",
+  "pages": {
+    "1": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 98,
+        "active": 0.1319,
+        "ink": 0.0436
+      },
+      "auto": true
+    },
+    "2": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 31,
+        "active": 0.0532,
+        "ink": 0.0091
+      }
+    },
+    "3": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 11,
+        "active": 0.0208,
+        "ink": 0.0073
+      }
+    },
+    "4": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 22,
+        "active": 0.044,
+        "ink": 0.0077
+      }
+    },
+    "5": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 20,
+        "active": 0.037,
+        "ink": 0.0077
+      }
+    },
+    "6": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 96,
+        "active": 0.1574,
+        "ink": 0.0194
+      },
+      "auto": true
+    },
+    "7": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 225,
+        "active": 0.3125,
+        "ink": 0.0561
+      },
+      "auto": true
+    },
+    "8": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 209,
+        "active": 0.2755,
+        "ink": 0.053
+      },
+      "auto": true
+    },
+    "9": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 228,
+        "active": 0.2986,
+        "ink": 0.0523
+      },
+      "auto": true
+    },
+    "10": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 222,
+        "active": 0.2824,
+        "ink": 0.0503
+      },
+      "auto": true
+    },
+    "11": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 248,
+        "active": 0.2986,
+        "ink": 0.0484
+      },
+      "auto": true
+    },
+    "12": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 236,
+        "active": 0.338,
+        "ink": 0.0509
+      },
+      "auto": true
+    },
+    "13": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 237,
+        "active": 0.3102,
+        "ink": 0.0459
+      },
+      "auto": true
+    },
+    "14": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 226,
+        "active": 0.3102,
+        "ink": 0.0464
+      },
+      "auto": true
+    },
+    "15": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 230,
+        "active": 0.3171,
+        "ink": 0.047
+      },
+      "auto": true
+    },
+    "16": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 220,
+        "active": 0.3056,
+        "ink": 0.0487
+      },
+      "auto": true
+    },
+    "17": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 234,
+        "active": 0.294,
+        "ink": 0.0472
+      },
+      "auto": true
+    },
+    "18": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 230,
+        "active": 0.3171,
+        "ink": 0.0483
+      },
+      "auto": true
+    },
+    "19": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 234,
+        "active": 0.3194,
+        "ink": 0.0476
+      },
+      "auto": true
+    },
+    "20": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 232,
+        "active": 0.3287,
+        "ink": 0.046
+      },
+      "auto": true
+    },
+    "21": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 259,
+        "active": 0.3403,
+        "ink": 0.0452
+      },
+      "auto": true
+    },
+    "22": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 229,
+        "active": 0.3079,
+        "ink": 0.0476
+      },
+      "auto": true
+    },
+    "23": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 235,
+        "active": 0.294,
+        "ink": 0.0468
+      },
+      "auto": true
+    },
+    "24": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 228,
+        "active": 0.3032,
+        "ink": 0.05
+      },
+      "auto": true
+    },
+    "25": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 217,
+        "active": 0.3032,
+        "ink": 0.0554
+      },
+      "auto": true
+    },
+    "26": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 205,
+        "active": 0.2778,
+        "ink": 0.0526
+      },
+      "auto": true
+    },
+    "27": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 229,
+        "active": 0.3218,
+        "ink": 0.0532
+      },
+      "auto": true
+    },
+    "28": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 245,
+        "active": 0.3241,
+        "ink": 0.0474
+      },
+      "auto": true
+    },
+    "29": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 238,
+        "active": 0.3287,
+        "ink": 0.0503
+      },
+      "auto": true
+    },
+    "30": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 234,
+        "active": 0.3032,
+        "ink": 0.0486
+      },
+      "auto": true
+    },
+    "31": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 220,
+        "active": 0.3079,
+        "ink": 0.0493
+      },
+      "auto": true
+    },
+    "32": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 231,
+        "active": 0.3056,
+        "ink": 0.0474
+      },
+      "auto": true
+    },
+    "33": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 245,
+        "active": 0.3333,
+        "ink": 0.0495
+      },
+      "auto": true
+    },
+    "34": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 236,
+        "active": 0.3102,
+        "ink": 0.0454
+      },
+      "auto": true
+    },
+    "35": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 242,
+        "active": 0.3287,
+        "ink": 0.0496
+      },
+      "auto": true
+    },
+    "36": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 220,
+        "active": 0.2986,
+        "ink": 0.0496
+      },
+      "auto": true
+    },
+    "37": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 227,
+        "active": 0.331,
+        "ink": 0.0477
+      },
+      "auto": true
+    },
+    "38": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 195,
+        "active": 0.2755,
+        "ink": 0.0492
+      },
+      "auto": true
+    },
+    "39": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 222,
+        "active": 0.3171,
+        "ink": 0.0504
+      },
+      "auto": true
+    },
+    "40": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 233,
+        "active": 0.3032,
+        "ink": 0.0465
+      },
+      "auto": true
+    },
+    "41": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 17,
+        "active": 0.0324,
+        "ink": 0.0078
+      }
+    },
+    "42": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 11,
+        "active": 0.0231,
+        "ink": 0.007
+      }
+    },
+    "43": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 31,
+        "active": 0.0625,
+        "ink": 0.008
+      }
+    },
+    "44": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 12,
+        "active": 0.0255,
+        "ink": 0.0072
+      }
+    },
+    "45": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 11,
+        "active": 0.0231,
+        "ink": 0.0068
+      }
+    }
+  },
+  "notes": "",
+  "blank_scan": {
+    "at": "2026-11-06T20:59:09.088954",
+    "side": 640
+  },
+  "autotag": {
+    "type": "T2b",
+    "at": "2026-11-07T00:44:03.921903"
+  }
+}

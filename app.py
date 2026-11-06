@@ -5,6 +5,9 @@ Hiện có các bước:
   2. Tách trang PDF thành ảnh JPEG, lưu vào data/<Tên sách>/cache/pages/ cùng cache nhãn từng trang.
   3. Tự động (nền) nhận diện blank rồi gán ch/vi/ch_vi theo loại sách (scripts/auto_tag.py) cho trang unknown,
      chạy khi mở app, khi có PDF mới và khi đổi loại sách. intro, toc, ref, misc và sửa sai gán tay hàng loạt.
+  4. Bước OCR (sau khi gán nhãn trang): chọn nguồn OCR theo nhãn (Kim Hán Nôm, PaddleOCR-VL, row_projection),
+     ghi <Tên sách>/<ch|vi|...>/Label.txt + fileState.txt theo chuẩn PPOCRLabel, rồi mở PPOCRLabel để kiểm tra
+     (scripts/ocr_jobs.py). Không OCR trang blank, misc.
 
 Cấu trúc data/ giống thư mục nộp bài, xem scripts/library.py. Các công cụ hỗ trợ nằm trong scripts/.
 """
@@ -17,7 +20,7 @@ import urllib.parse
 import webbrowser
 from pathlib import Path
 
-from scripts import book_types, library, page_cache, split_jobs
+from scripts import book_types, library, ocr_engines, ocr_jobs, page_cache, split_jobs
 from scripts.library import UNKNOWN
 
 if sys.platform == "win32":
@@ -139,6 +142,19 @@ def make_handler(data_dir: Path, type_file: Path):
                     self.send_error(404)
                 else:
                     self._send_file(book.pdf, "application/pdf")
+            elif path == "/api/ocr":
+                book = library.find_book(data_dir, name)
+                if book is None:
+                    self._send_json({"error": f"Không tìm thấy PDF: {name}"}, status=404)
+                else:
+                    self._send_json(ocr_jobs.plan(book))
+            elif path == "/api/ocr/status":
+                book = library.find_book(data_dir, name)
+                if book is None:
+                    self._send_json({"error": f"Không tìm thấy PDF: {name}"}, status=404)
+                else:
+                    self._send_json({"job": ocr_jobs.job_status(book), "paddle": ocr_engines.PADDLE.status(),
+                                     "folders": ocr_jobs.folder_status(book)})
             elif path == "/api/thumb":
                 self._send_thumb(name, query.get("page", [""])[0])
             elif path == "/api/page":
@@ -172,7 +188,8 @@ def make_handler(data_dir: Path, type_file: Path):
 
         def do_POST(self):
             path = urllib.parse.urlparse(self.path).path
-            if path not in ("/api/save", "/api/split", "/api/pages/tag"):
+            if path not in ("/api/save", "/api/split", "/api/pages/tag", "/api/ocr/preload", "/api/ocr/run",
+                            "/api/ppocrlabel/open"):
                 self.send_error(404)
                 return
             try:
@@ -186,6 +203,21 @@ def make_handler(data_dir: Path, type_file: Path):
                     result = book_types.save_types(names, type_file, assignments)
                     split_jobs.kick_autotag(data_dir, type_file)  # loại sách mới: gán lại ch/vi tự động
                     self._send_json({"success": True, **result})
+                elif path == "/api/ocr/preload":
+                    self._send_json({"success": True, "paddle": ocr_engines.PADDLE.preload()})
+                elif path in ("/api/ocr/run", "/api/ppocrlabel/open"):
+                    book = library.find_book(data_dir, str(payload.get("name", "")))
+                    if book is None:
+                        raise ValueError("Không tìm thấy PDF.")
+                    if path == "/api/ocr/run":
+                        engines = payload.get("engines") or {}
+                        if not isinstance(engines, dict):
+                            raise ValueError("Trường 'engines' phải là object {nhãn: engine}.")
+                        ocr_jobs.start_ocr(book, engines, bool(payload.get("overwrite", False)),
+                                           use_cache=bool(payload.get("use_cache", True)))
+                        self._send_json({"success": True})
+                    else:
+                        self._send_json({"success": True, **ocr_jobs.open_ppocrlabel(book, str(payload.get("folder", "")))})
                 elif path == "/api/pages/tag":
                     book = library.find_book(data_dir, str(payload.get("name", "")))
                     if book is None:
@@ -200,7 +232,7 @@ def make_handler(data_dir: Path, type_file: Path):
                                            int(payload.get("dpi", split_jobs.DEFAULT_DPI)),
                                            bool(payload.get("force", False)))
                     self._send_json({"success": True})
-            except split_jobs.SplitBusy as e:
+            except (split_jobs.SplitBusy, ocr_jobs.OcrBusy) as e:
                 self._send_json({"success": False, "error": str(e)}, status=409)
             except Exception as e:  # trả lỗi về UI thay vì làm sập server
                 self._send_json({"success": False, "error": str(e)}, status=400)

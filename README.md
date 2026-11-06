@@ -27,6 +27,9 @@ GK/
 │   ├── blank_detector.py     <- nhận diện nhanh trang blank từ PDF (numpy + OpenCV), có dòng lệnh
 │   ├── auto_tag.py           <- tự gán ch/vi/ch_vi theo loại sách (sau blank), có dòng lệnh
 │   ├── split_jobs.py         <- tách trang chạy nền, nhận diện trang blank, tự gán nhãn, ảnh thu nhỏ cho Web UI
+│   ├── ocr_engines.py        <- 3 nguồn OCR: Kim Hán Nôm, PaddleOCR-VL, row_projection; thứ tự box
+│   ├── ocr_jobs.py           <- bước OCR: chép ảnh theo nhãn, chạy nền, ghi Label.txt, mở PPOCRLabel
+│   ├── label_io.py           <- đọc/ghi/kiểm tra Label.txt và fileState.txt (chuẩn PPOCRLabel)
 │   ├── page_classifier.py    <- phân loại từng trang vào ch/ vi/ ... (Web UI cũ + dòng lệnh)
 │   ├── pdfslice_split.py     <- tách PDF bằng pdfslice_py (công cụ cũ)
 │   └── api/
@@ -102,6 +105,7 @@ Tạo `data/<Tên sách>/` rồi bỏ file đúng tên `<Tên sách>.pdf` vào t
 2. **Tách trang**: bấm **Trang** ở dòng của sách để vào màn hình trang, chọn DPI (150 / 200 / 300 / 400, mặc định 300), bấm **Tách trang**. Ảnh JPEG lưu ở `data/<Tên sách>/cache/pages/` (`<Tên sách>.001.jpg`, ...), thanh tiến trình hiện trong lúc chạy. Mặc định bỏ qua trang đã có ảnh hợp lệ; tích **Ghi đè** để tách lại tất cả. Mỗi lúc chỉ tách một sách, bấm thêm sẽ báo bận.
 3. **Xem và gán nhãn trang**: lưới ảnh thu nhỏ của mọi trang, mỗi trang có nhãn hiện tại. Lọc theo nhãn bằng ô **Lọc**. Chọn trang bằng ô tích ở góc ảnh, hoặc gõ khoảng vào ô **Trang** rồi bấm **Chọn** (`1-5, 8, 10-12`; `40-` là từ trang 40 đến hết; `a:b:c` có bước nhảy, ví dụ `2::2` là mọi trang chẵn), hoặc **Chọn tất cả** (theo bộ lọc đang hiển thị) / **Bỏ chọn**. Sau đó bấm **Gán nhãn ▾** và chọn nhãn cho các trang đã chọn. Nút **ⓘ** hiện mô tả từng nhãn. Bấm vào ảnh một trang để xem ảnh đầy đủ (phím **←** **→** chuyển trang đang hiển thị, **Esc** hoặc bấm ra ngoài để đóng).
 4. Nhãn được lưu ngay vào `data/<Tên sách>/cache/phan_loai.json`, không cần bấm Save.
+5. Gán nhãn xong thì sang bước OCR (bấm **2. OCR →**), xem mục [Bước 2: OCR](#bước-2-ocr).
 
 Các nhãn trang: `ch` (Hán Nôm), `vi` (Quốc ngữ), `ch_vi` (cả hai, bố cục T2b), `intro`, `toc`, `ref`, `blank`, `misc`, `unknown` (chưa gán, mặc định).
 
@@ -146,6 +150,56 @@ Không cần bấm nút nào. Khi chạy `python app.py`, khi có PDF mới tron
 | Tref, Tx, chưa phân loại | không gán, gán tay |
 
 Đây là giả định theo bố cục nên có thể sai (T2 thực tế có thể xen kẽ theo khối, ranh giới T1 hiếm khi đúng giữa). Chỉ trang `unknown` bị đổi và trang đã có nhãn không tính vào chuỗi xen kẽ/chia đôi. Vì máy tự gán ngay khi mở app, hãy duyệt lưới trang và sửa tay `intro`, `toc`, `ref`, `misc` cùng các trang gán sai; nhãn sửa tay không bị ghi đè. Kiểm tra quy tắc bằng `python tests/test_auto_tag.py`.
+
+
+### Bước 2: OCR
+
+Sau khi gán nhãn trang xong, bấm **2. OCR →** ở thanh đầu của màn hình sách. Khi vào bước này, app nạp sẵn mô hình PaddleOCR-VL ở nền (chỉ nạp một lần, hiện trạng thái ở đầu trang).
+
+Nguồn OCR được đề xuất theo nhãn trang, đổi được bằng ô chọn trên từng dòng:
+
+| Nhãn | Nguồn đề xuất | Cách làm |
+|---|---|---|
+| `ch` | Kim Hán Nôm (API) | Cần `TOKEN` trong `.env`. Box sắp từ phải sang trái, trên xuống dưới |
+| `vi` | PaddleOCR-VL | Chạy trên máy, cần `requirements-ocr.txt`. Box theo khối văn bản, đúng thứ tự đọc của mô hình |
+| `ch_vi` (bản chụp đẹp) | row_projection | Tách hàng chữ ngang bằng xử lý ảnh. Hàng lẻ ghi vào `ch/`, hàng chẵn vào `vi/` (hàng Hán xen hàng Quốc ngữ). **`transcription` để trống**, điền hoặc nhận dạng lại trong PPOCRLabel |
+| `intro`, `ref`, `toc` | PaddleOCR-VL | Như `vi` |
+| `blank`, `misc` | không OCR | Chỉ chép ảnh vào thư mục |
+| `unknown` | bỏ qua | Gán nhãn ở bước 1 trước |
+
+Với `ch_vi` mà chọn Kim Hán Nôm hoặc PaddleOCR-VL: box có chữ Hán/Nôm chiếm đa số thì vào `ch/`, còn lại vào `vi/` (Kim Hán Nôm chỉ ghi phần `ch/`).
+
+Bấm **Chạy OCR**. App làm lần lượt:
+
+1. Chép ảnh từ `cache/pages/` vào thư mục theo nhãn (`ch/`, `vi/`, `intro/`, ..., `blank/`, `misc/`; `ch_vi` vào cả `ch/` và `vi/`). Ảnh của trang đã đổi nhãn bị xoá khỏi thư mục cũ cùng dòng nhãn tương ứng.
+2. OCR từng ảnh và ghi vào `<thư mục>/Label.txt` và `<thư mục>/fileState.txt` theo đúng chuẩn PPOCRLabel (mỗi ảnh một dòng `ch/Tên sách.012.jpg` TAB mảng `{"transcription","points"}`, mỗi box đúng 4 điểm; `fileState.txt` ghi `0`: chưa hoàn thành, chờ duyệt). Ghi từng đợt 5 ảnh nên dừng giữa chừng không mất kết quả.
+3. Ghi thông số (nguồn dùng, số box, lấy từ cache hay không, ảnh lỗi) vào `cache/ocr_log.json`, không đưa vào `Label.txt`.
+
+Lưu ý:
+
+- Mặc định **không ghi đè** ảnh đã có dòng trong `Label.txt`, để giữ phần đã sửa tay. Tích **Ghi đè nhãn đã có** để OCR lại.
+- **Cache kết quả thô**: xem mục dưới.
+- Gặp 3 ảnh lỗi liên tiếp (ví dụ sai `TOKEN`) thì job dừng. Ảnh lỗi được liệt kê, chạy lại để thử lại.
+- Làm sạch văn bản ở đây chỉ gồm gom khoảng trắng, chuẩn hoá NFC và bỏ chỉ mục chú thích `[1]`, `(1)` với Quốc ngữ. Số trang, tiêu đề, chân trang, chính tả vẫn cần soát tay.
+- Kim Hán Nôm ghi thêm vào `data/cache/uploads.json` mỗi lần upload ảnh mới (file này đang được theo dõi bởi git).
+- Mỗi lúc chỉ chạy OCR một sách.
+
+#### Cache kết quả OCR
+
+Mỗi lần OCR một ảnh, app lưu kết quả thô của engine vào `data/<Tên sách>/cache/ocr/<engine>/<NNN>.json` (`kimhannom`, `paddleocr`, `row_projection`). Lần sau, ảnh nào đã chạy với **đúng engine đó** thì lấy kết quả từ file này, không gọi lại API Kim Hán Nôm hay chạy lại mô hình. Màn hình OCR hiện số ảnh đã cache và số ảnh lấy từ cache trong lần chạy.
+
+- Cache khớp khi **sha256 của ảnh** và **tham số engine** đều không đổi. Ảnh bị xoay/chỉnh sáng hoặc tham số đổi thì tự tính lại.
+- Cache lưu kết quả **chưa lọc, chưa sắp xếp, chưa làm sạch**, nên đổi cách lọc khối (số trang, đầu/chân trang), sắp thứ tự box hay làm sạch văn bản thì chỉ cần chạy lại (tích **Ghi đè nhãn đã có**), không tốn lượt API hay thời gian chạy mô hình.
+- Muốn gọi lại API hoặc mô hình: tích **Bỏ qua cache**. Muốn xoá hẳn: xoá thư mục `cache/ocr/<engine>/` (ảnh debug của row_projection nằm trong thư mục con của nó).
+- Kết quả rỗng và ảnh lỗi **không** được cache, nên lần sau sẽ thử lại. File cache hỏng được coi như chưa có.
+- Nguồn nào cũng có cache riêng: đổi nguồn OCR của một nhãn thì chạy engine mới, engine cũ vẫn còn cache.
+- Chỉ bước upload của Kim Hán Nôm có thêm cache riêng trong `data/cache/uploads.json`.
+
+#### Mở PPOCRLabel để kiểm tra
+
+Mỗi thư mục `ch/`, `vi/`, `intro/`, `ref/`, `toc/` có nút **Mở PPOCRLabel**, kèm số ảnh, số ảnh đã có nhãn và đã duyệt. PPOCRLabel không nhận thư mục ảnh qua dòng lệnh, nên sau khi nó mở, chọn **File → Open Dir** và mở thư mục được ghi trên màn hình.
+
+PPOCRLabel **chưa được cài** cùng dự án. Khi chưa có, nút vẫn hiện và báo cách cài. Sau khi cài (`pip install PPOCRLabel`), app tìm lệnh `PPOCRLabel` trong PATH; dùng cách khác thì đặt biến môi trường `PPOCRLABEL_CMD` là lệnh mở nó. Kiểm tra định dạng `Label.txt` bằng `python tests/test_ocr_jobs.py`.
 
 
 ## 1. Cài đặt

@@ -1,0 +1,740 @@
+{
+  "book_name": "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳",
+  "pdf": "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳.pdf",
+  "layout_code": "Tnom",
+  "total_pages": 72,
+  "dpi": 300,
+  "split_complete": true,
+  "last_updated": "2026-11-07T00:45:59.592146",
+  "pages": {
+    "1": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 172,
+        "active": 0.3241,
+        "ink": 0.1541
+      }
+    },
+    "2": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 492,
+        "active": 0.6551,
+        "ink": 0.2252
+      }
+    },
+    "3": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 484,
+        "active": 0.7106,
+        "ink": 0.2158
+      }
+    },
+    "4": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 498,
+        "active": 0.6898,
+        "ink": 0.187
+      }
+    },
+    "5": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 440,
+        "active": 0.6343,
+        "ink": 0.2106
+      }
+    },
+    "6": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 508,
+        "active": 0.6736,
+        "ink": 0.2004
+      }
+    },
+    "7": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 563,
+        "active": 0.6736,
+        "ink": 0.1905
+      }
+    },
+    "8": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 530,
+        "active": 0.6829,
+        "ink": 0.2006
+      }
+    },
+    "9": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 475,
+        "active": 0.6782,
+        "ink": 0.2073
+      }
+    },
+    "10": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 438,
+        "active": 0.6551,
+        "ink": 0.2159
+      }
+    },
+    "11": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 598,
+        "active": 0.6759,
+        "ink": 0.1907
+      }
+    },
+    "12": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 559,
+        "active": 0.6551,
+        "ink": 0.181
+      }
+    },
+    "13": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 513,
+        "active": 0.6806,
+        "ink": 0.2072
+      }
+    },
+    "14": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 467,
+        "active": 0.6389,
+        "ink": 0.2082
+      }
+    },
+    "15": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 467,
+        "active": 0.6505,
+        "ink": 0.2145
+      }
+    },
+    "16": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 475,
+        "active": 0.6343,
+        "ink": 0.2101
+      }
+    },
+    "17": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 451,
+        "active": 0.6597,
+        "ink": 0.2199
+      }
+    },
+    "18": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 468,
+        "active": 0.6898,
+        "ink": 0.2111
+      }
+    },
+    "19": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 468,
+        "active": 0.6736,
+        "ink": 0.2199
+      }
+    },
+    "20": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 555,
+        "active": 0.6944,
+        "ink": 0.1935
+      }
+    },
+    "21": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 691,
+        "active": 0.6944,
+        "ink": 0.1769
+      }
+    },
+    "22": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 465,
+        "active": 0.6366,
+        "ink": 0.2188
+      }
+    },
+    "23": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 487,
+        "active": 0.6366,
+        "ink": 0.2133
+      }
+    },
+    "24": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 523,
+        "active": 0.662,
+        "ink": 0.2141
+      }
+    },
+    "25": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 462,
+        "active": 0.6343,
+        "ink": 0.2046
+      }
+    },
+    "26": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 450,
+        "active": 0.6667,
+        "ink": 0.233
+      }
+    },
+    "27": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 509,
+        "active": 0.7037,
+        "ink": 0.2067
+      }
+    },
+    "28": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 448,
+        "active": 0.6829,
+        "ink": 0.2179
+      }
+    },
+    "29": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 464,
+        "active": 0.6991,
+        "ink": 0.2212
+      }
+    },
+    "30": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 503,
+        "active": 0.6898,
+        "ink": 0.1965
+      }
+    },
+    "31": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 509,
+        "active": 0.6759,
+        "ink": 0.2025
+      }
+    },
+    "32": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 490,
+        "active": 0.6389,
+        "ink": 0.2097
+      }
+    },
+    "33": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 524,
+        "active": 0.6134,
+        "ink": 0.1971
+      }
+    },
+    "34": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 493,
+        "active": 0.6528,
+        "ink": 0.1984
+      }
+    },
+    "35": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 503,
+        "active": 0.6782,
+        "ink": 0.198
+      }
+    },
+    "36": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 521,
+        "active": 0.6944,
+        "ink": 0.2108
+      }
+    },
+    "37": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 493,
+        "active": 0.6435,
+        "ink": 0.2137
+      }
+    },
+    "38": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 543,
+        "active": 0.6782,
+        "ink": 0.1867
+      }
+    },
+    "39": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 603,
+        "active": 0.6759,
+        "ink": 0.176
+      }
+    },
+    "40": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 460,
+        "active": 0.6458,
+        "ink": 0.2035
+      }
+    },
+    "41": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 436,
+        "active": 0.6458,
+        "ink": 0.2211
+      }
+    },
+    "42": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 492,
+        "active": 0.6644,
+        "ink": 0.1913
+      }
+    },
+    "43": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 468,
+        "active": 0.6458,
+        "ink": 0.1974
+      }
+    },
+    "44": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 449,
+        "active": 0.6551,
+        "ink": 0.2115
+      }
+    },
+    "45": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 481,
+        "active": 0.6667,
+        "ink": 0.2092
+      }
+    },
+    "46": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 543,
+        "active": 0.6713,
+        "ink": 0.2048
+      }
+    },
+    "47": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 469,
+        "active": 0.6968,
+        "ink": 0.2006
+      }
+    },
+    "48": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 527,
+        "active": 0.6944,
+        "ink": 0.2044
+      }
+    },
+    "49": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 478,
+        "active": 0.6505,
+        "ink": 0.2062
+      }
+    },
+    "50": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 587,
+        "active": 0.6782,
+        "ink": 0.1704
+      }
+    },
+    "51": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 577,
+        "active": 0.6968,
+        "ink": 0.1763
+      }
+    },
+    "52": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 462,
+        "active": 0.6736,
+        "ink": 0.2056
+      }
+    },
+    "53": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 422,
+        "active": 0.6551,
+        "ink": 0.2239
+      }
+    },
+    "54": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 471,
+        "active": 0.6829,
+        "ink": 0.2133
+      }
+    },
+    "55": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 492,
+        "active": 0.6782,
+        "ink": 0.1974
+      }
+    },
+    "56": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 607,
+        "active": 0.6644,
+        "ink": 0.1801
+      }
+    },
+    "57": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 651,
+        "active": 0.7222,
+        "ink": 0.1692
+      }
+    },
+    "58": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 554,
+        "active": 0.6782,
+        "ink": 0.1902
+      }
+    },
+    "59": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 493,
+        "active": 0.6435,
+        "ink": 0.2107
+      }
+    },
+    "60": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 483,
+        "active": 0.6713,
+        "ink": 0.2063
+      }
+    },
+    "61": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 488,
+        "active": 0.706,
+        "ink": 0.2053
+      }
+    },
+    "62": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 468,
+        "active": 0.6921,
+        "ink": 0.2343
+      }
+    },
+    "63": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 511,
+        "active": 0.6944,
+        "ink": 0.2188
+      }
+    },
+    "64": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 529,
+        "active": 0.6574,
+        "ink": 0.1824
+      }
+    },
+    "65": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 545,
+        "active": 0.6644,
+        "ink": 0.1727
+      }
+    },
+    "66": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 482,
+        "active": 0.6875,
+        "ink": 0.2192
+      }
+    },
+    "67": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 453,
+        "active": 0.6204,
+        "ink": 0.2097
+      }
+    },
+    "68": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 551,
+        "active": 0.6736,
+        "ink": 0.1818
+      }
+    },
+    "69": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 469,
+        "active": 0.6181,
+        "ink": 0.1619
+      }
+    },
+    "70": {
+      "tag": "misc",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 224,
+        "active": 0.3912,
+        "ink": 0.1187
+      }
+    },
+    "71": {
+      "tag": "misc",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 145,
+        "active": 0.2616,
+        "ink": 0.1263
+      }
+    },
+    "72": {
+      "tag": "misc",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 188,
+        "active": 0.3102,
+        "ink": 0.0485
+      }
+    }
+  },
+  "notes": "",
+  "blank_scan": {
+    "at": "2026-11-06T20:44:07.722165",
+    "side": 640
+  },
+  "autotag": {
+    "type": "Tnom",
+    "at": "2026-11-07T00:43:50.627334"
+  }
+}

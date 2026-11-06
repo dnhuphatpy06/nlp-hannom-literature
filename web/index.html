@@ -111,6 +111,27 @@ details li { word-break: break-all; }
 .opt span { color: var(--muted); }
 .dialog .foot { padding: 12px 18px; display: flex; justify-content: flex-end; gap: 8px; }
 .card .img { cursor: zoom-in; }
+/* bước OCR */
+.step-switch { display: inline-flex; }
+.step-switch button { border-radius: 0; }
+.step-switch button:first-child { border-radius: 8px 0 0 8px; }
+.step-switch button:last-child { border-radius: 0 8px 8px 0; border-left: 0; }
+.step-switch button.on { background: var(--accent); color: var(--accent-text); border-color: var(--accent); font-weight: 600; }
+.ocr-section { margin: 0 0 22px; }
+.ocr-section h2 { font-size: 15px; margin: 0 0 8px; }
+.ocr-note { color: var(--muted); font-size: 13px; margin: 6px 0; }
+.ocr-note.warn { color: var(--warn-text); background: var(--warn-bg); padding: 8px 10px; border-radius: 8px; }
+.ocr-note.bad { color: var(--unknown-text); }
+.ocr-table select { max-width: 100%; }
+.ocr-table td.sub { color: var(--muted); font-size: 13px; }
+.ocr-table tr.dim td { opacity: .5; }
+.ocr-table code { font-size: 12px; word-break: break-all; }
+.ocr-status { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; }
+.dot { width: 10px; height: 10px; border-radius: 50%; background: var(--muted); flex: none; }
+.dot.ready { background: var(--done-text); }
+.dot.loading { background: var(--accent); animation: blink 1s infinite; }
+.dot.error, .dot.unavailable { background: var(--unknown-text); }
+@keyframes blink { 50% { opacity: .25; } }
 .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,.85); display: none; flex-direction: column; align-items: center; justify-content: center; padding: 16px; z-index: 15; }
 .lightbox.on { display: flex; }
 .lightbox .lb-img { max-width: 100%; max-height: calc(100vh - 80px); object-fit: contain; background: #fff; }
@@ -167,6 +188,10 @@ details li { word-break: break-all; }
         </label>
         <label title="Tách lại cả những trang đã có ảnh hợp lệ"><input type="checkbox" id="force"> Ghi đè</label>
         <button class="primary" id="splitBtn">Tách trang</button>
+        <span class="step-switch" role="group" aria-label="Bước xử lý">
+          <button id="stepTagsBtn" class="on" title="Xem và gán nhãn các trang">1. Nhãn trang</button>
+          <button id="stepOcrBtn" title="Chọn nguồn OCR theo nhãn, chạy OCR, kiểm tra bằng PPOCRLabel">2. OCR →</button>
+        </span>
       </div>
       <div class="progress" id="progress"><div id="progressBar"></div></div>
       <div class="progress-text" id="progressText"></div>
@@ -205,6 +230,44 @@ details li { word-break: break-all; }
 
     <div class="empty" id="gridEmpty" style="display:none">Sách này chưa được tách trang.</div>
     <div class="grid" id="grid"></div>
+
+    <!-- Bước 2: OCR -->
+    <div id="ocrView" style="display:none">
+      <div class="ocr-section">
+        <h2>Mô hình PaddleOCR-VL</h2>
+        <div class="ocr-status"><span class="dot" id="paddleDot"></span><span id="paddleText"></span>
+          <button id="paddleRetry" style="display:none">Nạp lại</button></div>
+        <div class="ocr-note">Mô hình được nạp một lần khi vào bước này, các ảnh dùng chung nên không phải nạp lại.</div>
+      </div>
+
+      <div class="ocr-section">
+        <h2>Nguồn OCR theo loại trang</h2>
+        <table class="ocr-table">
+          <thead><tr><th>Nhãn</th><th>Số trang</th><th>Nguồn OCR</th><th>Ghi chú</th></tr></thead>
+          <tbody id="ocrRows"></tbody>
+        </table>
+        <div class="ocr-note" id="ocrNoOcr"></div>
+        <div class="bar" style="margin-top:10px">
+          <button class="primary" id="ocrRunBtn">Chạy OCR</button>
+          <label title="Mặc định chỉ OCR ảnh chưa có dòng trong Label.txt, để không mất phần đã sửa tay. Tích để OCR lại cả ảnh đã có (kể cả ảnh đã duyệt)."><input type="checkbox" id="ocrOverwrite"> Ghi đè nhãn đã có</label>
+          <label title="Mặc định ảnh đã chạy với đúng nguồn OCR đó (ảnh và tham số không đổi) thì lấy kết quả từ cache, không gọi lại API hay mô hình. Tích để gọi lại."><input type="checkbox" id="ocrNoCache"> Bỏ qua cache</label>
+        </div>
+        <div class="ocr-note" id="ocrCacheInfo"></div>
+        <div class="progress" id="ocrProgress"><div id="ocrProgressBar"></div></div>
+        <div class="progress-text" id="ocrProgressText"></div>
+        <details id="ocrFailedBox" style="display:none"><summary id="ocrFailedTitle"></summary><ul id="ocrFailedList"></ul></details>
+      </div>
+
+      <div class="ocr-section">
+        <h2>Kiểm tra và chỉnh sửa bằng PPOCRLabel</h2>
+        <div class="ocr-note" id="ppocrNote"></div>
+        <table class="ocr-table">
+          <thead><tr><th>Thư mục</th><th>Ảnh</th><th>Đã có nhãn</th><th>Đã duyệt</th><th></th></tr></thead>
+          <tbody id="folderRows"></tbody>
+        </table>
+        <div class="ocr-note">Label.txt và fileState.txt nằm trong từng thư mục. Ảnh mới OCR có trạng thái 0 (chưa hoàn thành); PPOCRLabel đổi sang 1 khi bạn xác nhận ảnh.</div>
+      </div>
+    </div>
   </section>
 </div>
 
@@ -441,6 +504,7 @@ function route() {
 
 function closeBook() {
   currentBook = null;
+  clearInterval(ocrTimer); ocrTimer = null;
   $("bookView").style.display = "none";
   $("listView").style.display = "";
   render();
@@ -463,8 +527,9 @@ async function openBook(name, silent) {
   renderGrid();
   renderBookStatus();
   if (b.split.status === "running") ensurePolling();
-  if (!silent) { window.scrollTo(0, 0); pollAuto(); }
+  if (!silent) { step = "tags"; ocrData = null; window.scrollTo(0, 0); pollAuto(); }
   else updateBlankSummary();
+  showStep(step);
 }
 
 function renderBookStatus() {
@@ -696,6 +761,182 @@ async function startSplit() {
   ensurePolling();
   renderBookStatus();
 }
+
+/* ---------- bước 2: OCR ---------- */
+let step = "tags";          // tags | ocr
+let ocrData = null;         // /api/ocr của sách đang mở
+let ocrChoice = {};         // nhãn -> engine đang chọn (mặc định: engine đề xuất)
+let ocrTimer = null;
+let ocrWasRunning = false;
+
+function showStep(next) {
+  step = next;
+  const ocr = next === "ocr";
+  const hasPages = !!(currentBook && currentBook.cache && currentBook.cache.total_pages);
+  $("stepTagsBtn").classList.toggle("on", !ocr);
+  $("stepOcrBtn").classList.toggle("on", ocr);
+  $("manualBar").style.display = ocr ? "none" : "";
+  $("grid").style.display = ocr ? "none" : "";
+  $("gridEmpty").style.display = ocr || hasPages ? "none" : "";
+  $("ocrView").style.display = ocr ? "" : "none";
+  if (ocr) { if (!ocrData) enterOcr(); else ensureOcrPolling(); }
+  else { clearInterval(ocrTimer); ocrTimer = null; }
+}
+
+async function enterOcr() {
+  const b = currentBook; if (!b) return;
+  ocrChoice = {};
+  try {
+    ocrData = await api("/api/ocr?name=" + encodeURIComponent(b.name));
+    if (ocrData.paddle.state === "idle") {   // nạp mô hình ngay khi vào bước OCR
+      await api("/api/ocr/preload", {});
+      ocrData.paddle = { state: "loading" };
+    }
+  } catch (e) { showError("Không tải được bước OCR: " + e.message); return; }
+  ocrWasRunning = ocrData.job.status === "running";
+  renderOcr();
+  ensureOcrPolling();
+}
+
+function ensureOcrPolling() {
+  if (ocrTimer) return;
+  ocrTimer = setInterval(pollOcr, 1000);
+}
+
+async function pollOcr() {
+  if (!currentBook || step !== "ocr" || !ocrData) { clearInterval(ocrTimer); ocrTimer = null; return; }
+  let st;
+  try { st = await api("/api/ocr/status?name=" + encodeURIComponent(currentBook.name)); } catch (e) { return; }
+  const running = st.job.status === "running";
+  ocrData.job = st.job; ocrData.paddle = st.paddle; ocrData.folders = st.folders;
+  if (ocrWasRunning && !running) {
+    toast(st.job.status === "error" ? "OCR dừng do lỗi" : "OCR xong");
+    try { ocrData = Object.assign(await api("/api/ocr?name=" + encodeURIComponent(currentBook.name)), { job: st.job }); } catch (e) { /* giữ dữ liệu cũ */ }
+  }
+  ocrWasRunning = running;
+  renderOcr();
+  if (!running && st.paddle.state !== "loading") { clearInterval(ocrTimer); ocrTimer = null; }
+}
+
+function paddleLine() {
+  const p = ocrData.paddle;
+  const map = {
+    idle: ["", "Chưa nạp"], loading: ["loading", "Đang nạp mô hình…"],
+    ready: ["ready", "Sẵn sàng" + (p.device ? ` (${p.device}${p.seconds ? ", nạp " + p.seconds + "s" : ""})` : "")],
+    error: ["error", "Nạp lỗi: " + p.error], unavailable: ["unavailable", p.error],
+  };
+  return map[p.state] || ["", p.state];
+}
+
+function renderOcr() {
+  const d = ocrData; if (!d) return;
+  const [cls, text] = paddleLine();
+  $("paddleDot").className = "dot " + cls;
+  $("paddleText").textContent = text;
+  $("paddleRetry").style.display = d.paddle.state === "error" ? "" : "none";
+
+  const job = d.job || { status: "none" };
+  const running = job.status === "running";
+
+  // bảng chọn nguồn OCR theo nhãn
+  $("ocrRows").replaceChildren(...d.tags.map(t => {
+    const choice = ocrChoice[t.tag] || t.recommended;
+    const select = el("select", { disabled: running || !t.pages });
+    for (const [key, info] of Object.entries(d.engines)) {
+      select.append(el("option", { value: key, textContent: info.label + (key === t.recommended ? " (đề xuất)" : "") + (info.available ? " ⚠" : "") }));
+    }
+    select.append(el("option", { value: "skip", textContent: "Không OCR" }));
+    select.value = choice;
+    select.onchange = () => { ocrChoice[t.tag] = select.value; renderOcr(); };
+    const info = d.engines[choice];
+    const note = choice === "skip" ? "Chỉ chép ảnh vào thư mục, không tạo Label.txt cho trang này." : info.desc;
+    const warn = choice !== "skip" && info.available ? info.available : "";
+    return el("tr", { className: t.pages ? "" : "dim" },
+      el("td", {}, typeBadge(t.tag)), el("td", { className: "num", textContent: String(t.pages) }),
+      el("td", {}, select),
+      el("td", { className: "sub" }, note, ...(warn ? [el("div", { className: "ocr-note bad", textContent: warn })] : [])));
+  }));
+  const n = d.no_ocr;
+  $("ocrNoOcr").textContent =
+    `Không OCR: blank ${n.blank} · misc ${n.misc} (chỉ chép ảnh vào thư mục blank/, misc/).` +
+    (n.unknown ? ` ${n.unknown} trang còn nhãn unknown sẽ bị bỏ qua, hãy gán nhãn ở bước 1.` : "");
+
+  // nút chạy + tiến trình
+  const usable = d.tags.some(t => t.pages && (ocrChoice[t.tag] || t.recommended) !== "skip");
+  $("ocrRunBtn").disabled = running || !usable;
+  $("ocrRunBtn").textContent = running ? "Đang chạy OCR…" : "Chạy OCR";
+  $("ocrOverwrite").disabled = $("ocrNoCache").disabled = running;
+  const cacheNames = { kimhannom: "Kim Hán Nôm", paddleocr: "PaddleOCR-VL", row_projection: "row_projection" };
+  const cached = Object.entries(d.cache || {}).filter(([, n]) => n).map(([k, n]) => `${cacheNames[k] || k} ${n} ảnh`);
+  $("ocrCacheInfo").textContent = cached.length
+    ? `Cache kết quả OCR (cache/ocr/): ${cached.join(" · ")}. Ảnh đã có trong cache được dùng lại, không gọi API hay mô hình.`
+    : "Chưa có cache kết quả OCR cho sách này.";
+  $("ocrProgress").classList.toggle("on", running);
+  $("ocrProgressText").classList.toggle("on", job.status !== "none");
+  if (running) {
+    const pct = job.total ? Math.round(job.done / job.total * 100) : 0;
+    $("ocrProgressBar").style.width = pct + "%";
+    $("ocrProgressText").style.color = "";
+    $("ocrProgressText").textContent = `${job.done}/${job.total} ảnh (${pct}%) · ${job.current}` + (job.cached ? ` · ${job.cached} từ cache` : "") + (job.failed.length ? ` · ${job.failed.length} lỗi` : "");
+  } else if (job.status === "error") {
+    $("ocrProgressText").style.color = "var(--unknown-text)";
+    $("ocrProgressText").textContent = "OCR dừng: " + job.error;
+  } else if (job.status === "done") {
+    $("ocrProgressText").style.color = "";
+    $("ocrProgressText").textContent = `Xong ${job.total} ảnh` + (job.cached ? `, ${job.cached} ảnh lấy từ cache` : "") + (job.skipped ? `, bỏ qua ${job.skipped} ảnh đã có nhãn` : "") + (job.failed.length ? `, ${job.failed.length} ảnh lỗi` : "") + ".";
+  }
+  const failed = Object.entries(d.failed || {});
+  $("ocrFailedBox").style.display = failed.length ? "" : "none";
+  $("ocrFailedTitle").textContent = `${failed.length} ảnh OCR lỗi (chạy lại để thử lại)`;
+  $("ocrFailedList").replaceChildren(...failed.map(([page, err]) => el("li", { textContent: `Trang ${pad3(page)}: ${err}` })));
+
+  // thư mục + PPOCRLabel
+  const pp = d.ppocrlabel;
+  $("ppocrNote").className = "ocr-note" + (pp.available ? "" : " warn");
+  $("ppocrNote").textContent = pp.available
+    ? "Bấm Mở PPOCRLabel, rồi trong ứng dụng chọn File → Open Dir và mở thư mục ghi bên dưới."
+    : pp.hint + " Nút vẫn hiển thị để dùng sau.";
+  $("folderRows").replaceChildren(...d.folders.map(f => {
+    const open = el("button", { textContent: "Mở PPOCRLabel", disabled: !f.images || running, title: f.images ? "" : "Thư mục chưa có ảnh" });
+    open.onclick = () => openPPOCRLabel(f.folder);
+    return el("tr", { className: f.images ? "" : "dim" },
+      el("td", {}, el("b", { textContent: f.folder + "/" }), el("div", {}, el("code", { textContent: f.path }))),
+      el("td", { className: "num", textContent: String(f.images) }),
+      el("td", { className: "num", textContent: f.images ? `${f.labeled}/${f.images}` : "-" }),
+      el("td", { className: "num", textContent: f.images ? `${f.done}/${f.images}` : "-" }),
+      el("td", { className: "act" }, open));
+  }));
+}
+
+async function runOcr() {
+  const engines = {};
+  for (const t of ocrData.tags) if (t.pages) engines[t.tag] = ocrChoice[t.tag] || t.recommended;
+  try {
+    await api("/api/ocr/run", { name: currentBook.name, engines, overwrite: $("ocrOverwrite").checked, use_cache: !$("ocrNoCache").checked });
+  } catch (e) { alert("Không bắt đầu được OCR: " + e.message); return; }
+  $("ocrOverwrite").checked = $("ocrNoCache").checked = false;
+  ocrData.job = { status: "running", done: 0, total: 0, cached: 0, current: "Đang chuẩn bị…", failed: [] };
+  ocrWasRunning = true;
+  renderOcr();
+  ensureOcrPolling();
+}
+
+async function openPPOCRLabel(folder) {
+  try {
+    const r = await api("/api/ppocrlabel/open", { name: currentBook.name, folder });
+    toast(`Đã mở PPOCRLabel. Chọn File → Open Dir: ${r.path}`);
+  } catch (e) { alert(e.message); }
+}
+
+$("stepTagsBtn").onclick = () => showStep("tags");
+$("stepOcrBtn").onclick = () => showStep("ocr");
+$("ocrRunBtn").onclick = runOcr;
+$("paddleRetry").onclick = async () => {
+  await api("/api/ocr/preload", {});
+  ocrData.paddle = { state: "loading" };
+  renderOcr();
+  ensureOcrPolling();
+};
 
 $("search").oninput = render;
 $("filter").onchange = render;

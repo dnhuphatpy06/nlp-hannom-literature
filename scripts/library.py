@@ -42,6 +42,15 @@ def write_json_atomic(path: Path, data) -> None:
     os.replace(tmp, path)
 
 
+def write_text_atomic(path: Path, text: str) -> None:
+    """Ghi file văn bản UTF-8, xuống dòng LF, qua file tạm rồi đổi tên."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_name(f".tmp_{path.name}_{os.getpid()}_{uuid.uuid4().hex[:6]}")
+    with open(tmp, "w", encoding="utf-8", newline="\n") as f:
+        f.write(text)
+    os.replace(tmp, path)
+
+
 def shared_cache_dir(data_dir: Path) -> Path:
     """data/cache/: nơi đặt type.json và uploads.json."""
     return data_dir / CACHE_NAME

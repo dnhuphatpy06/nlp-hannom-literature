@@ -1,0 +1,339 @@
+{
+  "book_name": "Tran vong tuong si van digcoll_13711_Y",
+  "pdf": "Tran vong tuong si van digcoll_13711_Y.pdf",
+  "layout_code": "T2b",
+  "dpi": null,
+  "split_complete": false,
+  "notes": "",
+  "total_pages": 29,
+  "pages": {
+    "1": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 59,
+        "active": 0.0718,
+        "ink": 0.0151
+      },
+      "auto": true
+    },
+    "2": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 0,
+        "active": 0.0,
+        "ink": 0.0
+      },
+      "auto": true
+    },
+    "3": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 1,
+        "active": 0.0023,
+        "ink": 0.0
+      },
+      "auto": true
+    },
+    "4": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 80,
+        "active": 0.1505,
+        "ink": 0.0489
+      },
+      "auto": true
+    },
+    "5": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 277,
+        "active": 0.3727,
+        "ink": 0.1237
+      },
+      "auto": true
+    },
+    "6": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 383,
+        "active": 0.4722,
+        "ink": 0.1221
+      },
+      "auto": true
+    },
+    "7": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 365,
+        "active": 0.4792,
+        "ink": 0.121
+      },
+      "auto": true
+    },
+    "8": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 405,
+        "active": 0.5255,
+        "ink": 0.1167
+      },
+      "auto": true
+    },
+    "9": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 321,
+        "active": 0.4699,
+        "ink": 0.1237
+      },
+      "auto": true
+    },
+    "10": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 351,
+        "active": 0.4907,
+        "ink": 0.113
+      },
+      "auto": true
+    },
+    "11": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 383,
+        "active": 0.5231,
+        "ink": 0.1244
+      },
+      "auto": true
+    },
+    "12": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 402,
+        "active": 0.5162,
+        "ink": 0.0944
+      },
+      "auto": true
+    },
+    "13": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 305,
+        "active": 0.412,
+        "ink": 0.0936
+      },
+      "auto": true
+    },
+    "14": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 443,
+        "active": 0.5347,
+        "ink": 0.0967
+      },
+      "auto": true
+    },
+    "15": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 421,
+        "active": 0.4861,
+        "ink": 0.0806
+      },
+      "auto": true
+    },
+    "16": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 160,
+        "active": 0.213,
+        "ink": 0.0425
+      },
+      "auto": true
+    },
+    "17": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 270,
+        "active": 0.3634,
+        "ink": 0.0766
+      },
+      "auto": true
+    },
+    "18": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 308,
+        "active": 0.3958,
+        "ink": 0.0963
+      },
+      "auto": true
+    },
+    "19": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 393,
+        "active": 0.4792,
+        "ink": 0.1056
+      },
+      "auto": true
+    },
+    "20": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 414,
+        "active": 0.4907,
+        "ink": 0.1044
+      },
+      "auto": true
+    },
+    "21": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 380,
+        "active": 0.4769,
+        "ink": 0.1
+      },
+      "auto": true
+    },
+    "22": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 136,
+        "active": 0.1574,
+        "ink": 0.0295
+      },
+      "auto": true
+    },
+    "23": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 0,
+        "active": 0.0,
+        "ink": 0.0
+      },
+      "auto": true
+    },
+    "24": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 0,
+        "active": 0.0,
+        "ink": 0.0
+      },
+      "auto": true
+    },
+    "25": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 0,
+        "active": 0.0,
+        "ink": 0.0
+      },
+      "auto": true
+    },
+    "26": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 1,
+        "active": 0.0023,
+        "ink": 0.0
+      },
+      "auto": true
+    },
+    "27": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 1,
+        "active": 0.0023,
+        "ink": 0.0
+      },
+      "auto": true
+    },
+    "28": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 4,
+        "active": 0.0093,
+        "ink": 0.0003
+      },
+      "auto": true
+    },
+    "29": {
+      "tag": "ch_vi",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 333,
+        "active": 0.4329,
+        "ink": 0.1369
+      },
+      "auto": true
+    }
+  },
+  "blank_scan": {
+    "at": "2026-11-07T00:44:13.936789",
+    "side": 640
+  },
+  "last_updated": "2026-11-07T00:44:13.958953",
+  "autotag": {
+    "type": "T2b",
+    "at": "2026-11-07T00:44:13.974695"
+  }
+}
