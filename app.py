@@ -154,7 +154,8 @@ def make_handler(data_dir: Path, type_file: Path):
                     self._send_json({"error": f"Không tìm thấy PDF: {name}"}, status=404)
                 else:
                     self._send_json({"job": ocr_jobs.job_status(book), "paddle": ocr_engines.PADDLE.status(),
-                                     "folders": ocr_jobs.folder_status(book)})
+                                     "folders": ocr_jobs.folder_status(book),
+                                     "ppocrlabel_running": ocr_jobs.ppocrlabel_running()})
             elif path == "/api/thumb":
                 self._send_thumb(name, query.get("page", [""])[0])
             elif path == "/api/page":

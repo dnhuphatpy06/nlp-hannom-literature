@@ -4,9 +4,22 @@ __pycache__/
 ket_qua/
 .venv/
 /work/
+# data/: bỏ qua mọi thứ (PDF, ảnh trang, ảnh trong ch/ vi/ ..., Label.txt), chỉ giữ các file cache .json
 data/*
-!data/cache/
-data/cache/*
+!data/*/
+data/*/*
+# Cache của từng sách: data/<Tên sách>/cache/*.json (phan_loai.json, ocr_log.json) và
+# data/<Tên sách>/cache/ocr/<engine>/<NNN>.json (kết quả OCR thô). KHÔNG lấy ảnh: cache/pages/, cache/thumbs/,
+# và ảnh debug của row_projection (cache/ocr/row_projection/<NNN>/).
+!data/*/cache/
+data/*/cache/*
+!data/*/cache/*.json
+!data/*/cache/ocr/
+data/*/cache/ocr/*
+!data/*/cache/ocr/*/
+data/*/cache/ocr/*/*
+!data/*/cache/ocr/*/*.json
+# Cache dùng chung: data/cache/ (giữ thư mục bằng .gitkeep)
 !data/cache/.gitkeep
 !data/cache/type.json
 !data/cache/uploads.json

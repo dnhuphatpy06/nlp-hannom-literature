@@ -233,11 +233,11 @@ details li { word-break: break-all; }
 
     <!-- Bước 2: OCR -->
     <div id="ocrView" style="display:none">
-      <div class="ocr-section">
+      <div class="ocr-section" id="paddleSection" style="display:none">
         <h2>Mô hình PaddleOCR-VL</h2>
         <div class="ocr-status"><span class="dot" id="paddleDot"></span><span id="paddleText"></span>
-          <button id="paddleRetry" style="display:none">Nạp lại</button></div>
-        <div class="ocr-note">Mô hình được nạp một lần khi vào bước này, các ảnh dùng chung nên không phải nạp lại.</div>
+          <button class="primary" id="paddleLoadBtn" style="display:none">Nạp mô hình</button></div>
+        <div class="ocr-note" id="paddleNote"></div>
       </div>
 
       <div class="ocr-section">
@@ -265,7 +265,7 @@ details li { word-break: break-all; }
           <thead><tr><th>Thư mục</th><th>Ảnh</th><th>Đã có nhãn</th><th>Đã duyệt</th><th></th></tr></thead>
           <tbody id="folderRows"></tbody>
         </table>
-        <div class="ocr-note">Label.txt và fileState.txt nằm trong từng thư mục. Ảnh mới OCR có trạng thái 0 (chưa hoàn thành); PPOCRLabel đổi sang 1 khi bạn xác nhận ảnh.</div>
+        <div class="ocr-note">Label.txt và fileState.txt nằm trong từng thư mục. Ảnh mới OCR ghi trạng thái 0 (chưa hoàn thành). Lưu ý: PPOCRLabel coi mọi ảnh có trong fileState.txt là đã hoàn thành (1) và ghi lại như vậy khi lưu, nên cột "Đã duyệt" chỉ đáng tin nếu bạn chỉ lưu sau khi đã kiểm tra hết ảnh.</div>
       </div>
     </div>
   </section>
@@ -334,9 +334,9 @@ function isDirty() { return files.some(f => f.type !== saved[f.name] || f.invali
 function fileByName(name) { return files.find(f => f.name === name); }
 function typeBadge(code) { return el("span", { className: "badge" + (code === UNKNOWN ? " unknown" : ""), textContent: code }); }
 
-function toast(msg) {
+function toast(msg, ms = 2500) {
   const t = $("toast"); t.textContent = msg; t.classList.add("on");
-  clearTimeout(toast.timer); toast.timer = setTimeout(() => t.classList.remove("on"), 2500);
+  clearTimeout(toast.timer); toast.timer = setTimeout(() => t.classList.remove("on"), ms);
 }
 function showError(msg) {
   $("errorBanner").textContent = msg || "";
@@ -787,11 +787,7 @@ async function enterOcr() {
   const b = currentBook; if (!b) return;
   ocrChoice = {};
   try {
-    ocrData = await api("/api/ocr?name=" + encodeURIComponent(b.name));
-    if (ocrData.paddle.state === "idle") {   // nạp mô hình ngay khi vào bước OCR
-      await api("/api/ocr/preload", {});
-      ocrData.paddle = { state: "loading" };
-    }
+    ocrData = await api("/api/ocr?name=" + encodeURIComponent(b.name));   // không tự nạp mô hình: người dùng bấm "Nạp mô hình"
   } catch (e) { showError("Không tải được bước OCR: " + e.message); return; }
   ocrWasRunning = ocrData.job.status === "running";
   renderOcr();
@@ -808,20 +804,24 @@ async function pollOcr() {
   let st;
   try { st = await api("/api/ocr/status?name=" + encodeURIComponent(currentBook.name)); } catch (e) { return; }
   const running = st.job.status === "running";
+  const wasLabeling = !!(ocrData.ppocrlabel && ocrData.ppocrlabel.running);
+  const labeling = !!(st.ppocrlabel_running && st.ppocrlabel_running.running);
   ocrData.job = st.job; ocrData.paddle = st.paddle; ocrData.folders = st.folders;
+  if (ocrData.ppocrlabel) Object.assign(ocrData.ppocrlabel, { running: labeling, folder: labeling ? st.ppocrlabel_running.folder : undefined });
+  if (wasLabeling && !labeling) toast("Đã đóng PPOCRLabel");
   if (ocrWasRunning && !running) {
     toast(st.job.status === "error" ? "OCR dừng do lỗi" : "OCR xong");
     try { ocrData = Object.assign(await api("/api/ocr?name=" + encodeURIComponent(currentBook.name)), { job: st.job }); } catch (e) { /* giữ dữ liệu cũ */ }
   }
   ocrWasRunning = running;
   renderOcr();
-  if (!running && st.paddle.state !== "loading") { clearInterval(ocrTimer); ocrTimer = null; }
+  if (!running && !labeling && st.paddle.state !== "loading") { clearInterval(ocrTimer); ocrTimer = null; }
 }
 
 function paddleLine() {
   const p = ocrData.paddle;
   const map = {
-    idle: ["", "Chưa nạp"], loading: ["loading", "Đang nạp mô hình…"],
+    idle: ["", "Chưa nạp mô hình"], loading: ["loading", "Đang nạp mô hình…"],
     ready: ["ready", "Sẵn sàng" + (p.device ? ` (${p.device}${p.seconds ? ", nạp " + p.seconds + "s" : ""})` : "")],
     error: ["error", "Nạp lỗi: " + p.error], unavailable: ["unavailable", p.error],
   };
@@ -830,10 +830,19 @@ function paddleLine() {
 
 function renderOcr() {
   const d = ocrData; if (!d) return;
+  // Mục mô hình chỉ hiện khi có nhãn đang chọn PaddleOCR-VL (hoặc mô hình đang nạp/đã nạp)
+  const usesPaddle = d.tags.some(t => t.pages && (ocrChoice[t.tag] || t.recommended) === "paddleocr");
+  const state = d.paddle.state;
+  $("paddleSection").style.display = usesPaddle || state === "loading" || state === "ready" ? "" : "none";
   const [cls, text] = paddleLine();
   $("paddleDot").className = "dot " + cls;
   $("paddleText").textContent = text;
-  $("paddleRetry").style.display = d.paddle.state === "error" ? "" : "none";
+  $("paddleLoadBtn").style.display = state === "idle" || state === "error" ? "" : "none";
+  $("paddleLoadBtn").textContent = state === "error" ? "Nạp lại" : "Nạp mô hình";
+  $("paddleNote").textContent =
+    state === "idle" || state === "error" ? "Bấm Nạp mô hình để nạp PaddleOCR-VL lên máy (nạp một lần, các ảnh dùng chung; lần đầu có thể phải tải mô hình). Chưa nạp thì chỉ ảnh đã có trong cache OCR chạy được, ảnh chưa có sẽ báo lỗi."
+    : state === "loading" ? "Đang nạp, có thể chạy OCR ngay: các ảnh sẽ đợi nạp xong."
+    : state === "ready" ? "Mô hình đã nạp, dùng chung cho mọi ảnh và mọi sách cho tới khi tắt app." : "";
 
   const job = d.job || { status: "none" };
   const running = job.status === "running";
@@ -892,12 +901,13 @@ function renderOcr() {
 
   // thư mục + PPOCRLabel
   const pp = d.ppocrlabel;
-  $("ppocrNote").className = "ocr-note" + (pp.available ? "" : " warn");
-  $("ppocrNote").textContent = pp.available
-    ? "Bấm Mở PPOCRLabel, rồi trong ứng dụng chọn File → Open Dir và mở thư mục ghi bên dưới."
-    : pp.hint + " Nút vẫn hiển thị để dùng sau.";
+  const problem = !pp.available || pp.ready === false;
+  $("ppocrNote").className = "ocr-note" + (problem ? " warn" : "");
+  $("ppocrNote").textContent = problem ? pp.hint
+    : pp.running ? `PPOCRLabel đang mở (thư mục ${pp.folder}/). Sửa xong thì lưu rồi đóng cửa sổ đó; số liệu bên dưới tự cập nhật.`
+    : "Bấm Mở PPOCRLabel: nó mở sẵn đúng thư mục ở dòng tương ứng (như đã chọn File → Open Dir).";
   $("folderRows").replaceChildren(...d.folders.map(f => {
-    const open = el("button", { textContent: "Mở PPOCRLabel", disabled: !f.images || running, title: f.images ? "" : "Thư mục chưa có ảnh" });
+    const open = el("button", { textContent: "Mở PPOCRLabel", disabled: !f.images || running || pp.running, title: f.images ? (pp.running ? "Đóng cửa sổ PPOCRLabel đang mở trước" : "") : "Thư mục chưa có ảnh" });
     open.onclick = () => openPPOCRLabel(f.folder);
     return el("tr", { className: f.images ? "" : "dim" },
       el("td", {}, el("b", { textContent: f.folder + "/" }), el("div", {}, el("code", { textContent: f.path }))),
@@ -924,16 +934,21 @@ async function runOcr() {
 async function openPPOCRLabel(folder) {
   try {
     const r = await api("/api/ppocrlabel/open", { name: currentBook.name, folder });
-    toast(`Đã mở PPOCRLabel. Chọn File → Open Dir: ${r.path}`);
+    toast(`Đã mở PPOCRLabel với thư mục ${folder}/`, 5000);
+    if (ocrData && ocrData.ppocrlabel) Object.assign(ocrData.ppocrlabel, { running: true, folder });
+    renderOcr();
+    ensureOcrPolling();
   } catch (e) { alert(e.message); }
 }
 
 $("stepTagsBtn").onclick = () => showStep("tags");
 $("stepOcrBtn").onclick = () => showStep("ocr");
 $("ocrRunBtn").onclick = runOcr;
-$("paddleRetry").onclick = async () => {
-  await api("/api/ocr/preload", {});
-  ocrData.paddle = { state: "loading" };
+$("paddleLoadBtn").onclick = async () => {
+  try {
+    const r = await api("/api/ocr/preload", {});
+    ocrData.paddle = r.paddle.state === "loading" ? { state: "loading" } : r.paddle;   // unavailable: báo lý do
+  } catch (e) { alert("Không nạp được mô hình: " + e.message); return; }
   renderOcr();
   ensureOcrPolling();
 };

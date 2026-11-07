@@ -1,6 +1,6 @@
-# Thư viện cơ bản: app, tách trang, nhận diện trang trắng, gọi API Kim Hán Nôm.
+# Thư viện cơ bản: app, tách trang, nhận diện trang trắng, gọi API Kim Hán Nôm, row_projection.
 # Cài: pip install -r requirements.txt
-# Muốn chạy thêm OCR/layout cục bộ (PaddleOCR-VL, Kraken): xem requirements-ocr.txt
+# Muốn chạy thêm OCR cục bộ (PaddleOCR-VL) và PPOCRLabel: xem requirements-ocr.txt
 
 requests==2.34.2
 python-dotenv==1.2.4
@@ -10,4 +10,7 @@ click==8.5.0
 numpy==2.3.5
 Pillow==13.0.0
 scipy==1.18.1
-opencv-python-headless==5.0.0.93
+
+# Chỉ MỘT gói OpenCV. Dùng bản contrib 4.10.0.84 vì đây đúng là bản paddlex (do PaddleOCR kéo vào) ghim; nếu cài thêm
+# các gói OpenCV khác (bản thường hoặc bản headless), chúng ghi đè lẫn nhau lên thư mục cv2/ và gỡ một gói sẽ làm hỏng cv2.
+opencv-contrib-python==4.10.0.84

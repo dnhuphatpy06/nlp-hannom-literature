@@ -111,7 +111,9 @@ def clamp_points(points, width: int, height: int) -> list[list[int]]:
 
 
 # ---------------------------------------------------------------- Kim Hán Nôm
-def run_kimhannom(image: Path, **params) -> list[dict]:
+def run_kimhannom(image: Path, uploads_file=None, **params) -> list[dict]:
+    """Gọi API Kim Hán Nôm cho một ảnh. `uploads_file`: file ghi lịch sử upload (mặc định data/cache/uploads.json);
+    ảnh cắt tạm (PPOCRLabel) dùng file riêng để không làm đầy file lịch sử chung."""
     api_dir = str(HERE / "api")
     if api_dir not in sys.path:
         sys.path.insert(0, api_dir)
@@ -122,7 +124,7 @@ def run_kimhannom(image: Path, **params) -> list[dict]:
     if not os.getenv("TOKEN") and not _env_has_token():
         raise EngineError("Chưa có TOKEN trong file .env (xem README, mục Lấy token).")
     try:
-        data = sinonom_service.ocr(image, **params)
+        data = sinonom_service.ocr(image, uploads_file=uploads_file, **params)
     except sinonom_service.ApiError as e:
         raise EngineError(f"API Kim Hán Nôm lỗi: {e}") from e
     boxes = []
@@ -207,22 +209,25 @@ class PaddleHolder:
             with self._lock:
                 self._state, self._error = "error", f"{type(e).__name__}: {e}"
 
-    def recognize(self, image: Path) -> list[dict]:
-        """Mọi khối của một ảnh theo thứ tự đọc của mô hình: {"text", "points", "label"} (chưa lọc theo nhãn khối)."""
+    def recognize(self, image) -> list[dict]:
+        """Mọi khối của một ảnh theo thứ tự đọc của mô hình: {"text", "points", "label"} (chưa lọc theo nhãn khối).
+        `image`: đường dẫn (Path/str) hoặc mảng ảnh numpy (BGR)."""
         reason = self.unavailable_reason()
         if reason:
             raise EngineError(reason)
-        self.preload()
-        while True:  # chờ nạp xong (nếu job bắt đầu ngay khi đang nạp)
+        while True:  # đang nạp thì chờ nạp xong; KHÔNG tự nạp: việc nạp do người dùng bấm nút "Nạp mô hình"
             with self._lock:
                 state, error = self._state, self._error
             if state == "ready":
                 break
+            if state == "idle":
+                raise EngineError('Chưa nạp mô hình PaddleOCR-VL. Bấm "Nạp mô hình" ở bước OCR rồi chạy lại.')
             if state == "error":
                 raise EngineError(f"Không nạp được PaddleOCR-VL: {error}")
             time.sleep(0.5)
         with self._infer_lock:
-            results = list(self._pipeline.predict(str(image)))
+            source = str(image) if isinstance(image, (str, os.PathLike)) else image
+            results = list(self._pipeline.predict(source))
         if not results:
             return []
         data = results[0].json
