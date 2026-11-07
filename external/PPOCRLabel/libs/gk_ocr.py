@@ -17,7 +17,7 @@ from PyQt5.QtCore import QThread
 from PyQt5.QtWidgets import QApplication, QMessageBox
 
 logger = logging.getLogger("PPOCRLabel")
-PROJECT_ROOT = Path(__file__).resolve().parents[3]   # third_party/PPOCRLabel/libs/gk_ocr.py -> thư mục gốc dự án
+PROJECT_ROOT = Path(__file__).resolve().parents[3]   # external/PPOCRLabel/libs/gk_ocr.py -> thư mục gốc dự án
 
 
 def bridge():

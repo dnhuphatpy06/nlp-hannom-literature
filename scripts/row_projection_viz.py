@@ -23,6 +23,11 @@ Các bước (mọi ngưỡng tính bằng pixel của ảnh gốc, trừ khi gh
        nhưng giữ dấu câu nhỏ (. ,) ngay sau chữ cuối hàng; xem clean_x và nhóm tham số --blob-*, --near-gap,
        --punct-*. Tắt bằng --no-clean-x (lúc đó dùng mọi pixel mực, cắt --x-trim % ngoài cùng mỗi phía).
        Box được nới --pad px mỗi phía.
+    8. Hậu xử lý ô nhỏ (postprocess_rows): mảnh MỎNG (cao < --sliver-ratio x chiều cao trung vị, thường là phần chữ cao/đuôi chữ
+       bị cắt rời thành một "hàng" riêng) được gộp vào hàng kề nếu chạm/chồng theo chiều dọc, trùm lên nhau theo chiều ngang và hàng
+       gộp không cao quá --sliver-max-height x trung vị; ô còn lại quá hẹp (rộng < --min-width-ratio x chiều rộng trung vị: nét
+       nguệch ngoạc, số thứ tự dòng, vết bẩn) hoặc quá mỏng thì bị bỏ. Nhờ vậy số hàng không bị thừa và thứ tự hàng (lẻ/chẵn = Hán/Quốc ngữ)
+       không bị lệch. Tắt bằng --no-post; ô bị bỏ/gộp được ghi trong _res.json ("post") và vẽ màu xám trong _boxes.png.
 
 Đầu ra trong <out-dir> (mặc định output/row_projection/<tên ảnh>/):
     <tên>_boxes.png    ảnh vẽ box từng hàng + số thứ tự
@@ -216,6 +221,59 @@ def clean_x(band: np.ndarray, row_h: int, args) -> np.ndarray:
     return ink & np.isin(labels, list(keep))
 
 
+def postprocess_rows(rows: list[list[int]], args) -> tuple[list[list[int]], dict]:
+    """Hậu xử lý các ô nhỏ của một trang (xem bước 8 ở đầu file). Trả về (các hàng sau xử lý, thông tin {"merged", "dropped"}).
+
+    Dùng trung vị chiều cao/chiều rộng của chính trang đó làm chuẩn nên không phụ thuộc kích thước ảnh. Trang ít hơn
+    --post-min-rows hàng thì giữ nguyên (trung vị không đáng tin)."""
+    info: dict = {"merged": [], "dropped": []}
+    if args.no_post or len(rows) < args.post_min_rows:
+        return rows, info
+    rows = sorted(([int(v) for v in r] for r in rows), key=lambda r: (r[1], r[0]))
+    med_h = float(np.median([r[3] - r[1] for r in rows]))
+    med_w = float(np.median([r[2] - r[0] for r in rows]))
+
+    # 1) mảnh mỏng -> gộp vào hàng kề (lặp lại tới khi không còn gộp được nữa)
+    merged_any = True
+    while merged_any:
+        merged_any = False
+        for i, r in enumerate(rows):
+            if r[3] - r[1] >= args.sliver_ratio * med_h:
+                continue
+            best = None
+            for j in (i - 1, i + 1):
+                if not 0 <= j < len(rows):
+                    continue
+                o = rows[j]
+                gap = max(r[1], o[1]) - min(r[3], o[3])               # < 0: chồng nhau theo chiều dọc
+                x_overlap = min(r[2], o[2]) - max(r[0], o[0])
+                merged_h = max(r[3], o[3]) - min(r[1], o[1])
+                if gap > args.sliver_gap * med_h or x_overlap < args.sliver_x_overlap * (r[2] - r[0]):
+                    continue
+                if merged_h > args.sliver_max_height * med_h:          # gộp ra quá cao = gộp nhầm hai dòng
+                    continue
+                score = abs(merged_h - med_h)                           # hàng gộp càng gần chiều cao thường càng đúng
+                if best is None or score < best[0]:
+                    best = (score, j)
+            if best is not None:
+                o = rows[best[1]]
+                union = [min(r[0], o[0]), min(r[1], o[1]), max(r[2], o[2]), max(r[3], o[3])]
+                info["merged"].append({"sliver": r, "into": o, "result": union})
+                rows[best[1]] = union
+                del rows[i]
+                merged_any = True
+                break
+
+    # 2) ô còn lại quá hẹp (nét nguệch ngoạc, số dòng, vết bẩn) hoặc quá mỏng mà không gộp được -> bỏ
+    kept = []
+    for r in rows:
+        if r[2] - r[0] < args.min_width_ratio * med_w or r[3] - r[1] < args.sliver_ratio * med_h:
+            info["dropped"].append(r)
+        else:
+            kept.append(r)
+    return kept, info
+
+
 def draw_profile(image: Image.Image, prof: np.ndarray, thr: float, segs: list[list[int]],
                  crop: tuple[int, int, int, int]) -> Image.Image:
     """Ảnh gốc ghép biểu đồ profile (thanh ngang) bên phải; vạch đỏ = ngưỡng, nền vàng = đoạn được chọn."""
@@ -273,6 +331,20 @@ def build_parser() -> argparse.ArgumentParser:
                    help="PHÍA PHẢI: dấu câu được giữ nếu cách thân hàng <= tỉ lệ này x chiều cao hàng (mặc định 2.0)")
     g.add_argument("--punct-size", type=float, default=0.45,
                    help="khối là dấu câu khi cả rộng lẫn cao <= tỉ lệ này x chiều cao hàng (mặc định 0.45)")
+    p = ap.add_argument_group("hậu xử lý ô nhỏ (gộp mảnh mỏng, bỏ ô quá hẹp)")
+    p.add_argument("--no-post", action="store_true", help="tắt hậu xử lý ô nhỏ (hành vi cũ)")
+    p.add_argument("--post-min-rows", type=int, default=4,
+                   help="chỉ hậu xử lý trang có ít nhất bấy nhiêu hàng, vì trung vị mới đáng tin (mặc định 4)")
+    p.add_argument("--sliver-ratio", type=float, default=0.45,
+                   help="hàng cao < tỉ lệ này x chiều cao trung vị là mảnh mỏng, gộp vào hàng kề hoặc bỏ (mặc định 0.45)")
+    p.add_argument("--sliver-gap", type=float, default=0.15,
+                   help="chỉ gộp mảnh mỏng với hàng kề cách nó <= tỉ lệ này x chiều cao trung vị (chồng nhau thì tính 0) (mặc định 0.15)")
+    p.add_argument("--sliver-x-overlap", type=float, default=0.5,
+                   help="chỉ gộp khi hàng kề trùm lên >= tỉ lệ này của chiều rộng mảnh theo chiều ngang (mặc định 0.5)")
+    p.add_argument("--sliver-max-height", type=float, default=1.35,
+                   help="không gộp nếu hàng gộp cao hơn tỉ lệ này x chiều cao trung vị: tránh gộp nhầm hai dòng (mặc định 1.35)")
+    p.add_argument("--min-width-ratio", type=float, default=0.4,
+                   help="ô rộng < tỉ lệ này x chiều rộng trung vị bị bỏ: nét nguệch ngoạc, số thứ tự dòng, vết bẩn (mặc định 0.4)")
     ap.add_argument("--save-crops", action="store_true", help="cắt từng hàng ra <out-dir>/crops/")
     return ap
 
@@ -332,6 +404,8 @@ def process(args, image_path: Path, out_dir: Path, stem: str | None = None, verb
         bx1, bx2 = x0 + int(lo) - args.pad, x0 + int(hi) + args.pad
         by1, by2 = y0 + s - args.pad, y0 + e + args.pad
         rows.append([max(0, bx1), max(0, by1), min(W, bx2), min(H, by2)])
+    rows_before = len(rows)
+    rows, post = postprocess_rows(rows, args)       # bước 8: gộp mảnh mỏng, bỏ ô nhỏ
     n = len(rows)
 
     mask_full = np.zeros((H, W), np.uint8)
@@ -341,6 +415,8 @@ def process(args, image_path: Path, out_dir: Path, stem: str | None = None, verb
 
     items = [{"label": "row", "bbox": b, "polygon": None, "tag": str(i), "content": "",
               "color": (210, 40, 40) if i % 2 else (30, 110, 200)} for i, b in enumerate(rows, 1)]
+    items += [{"label": "dropped", "bbox": b, "polygon": None, "tag": "x", "content": "", "color": (130, 130, 130)}
+              for b in post["dropped"]]                          # ô bị bỏ: màu xám
     draw_boxes(pil, items, 0).save(out_dir / f"{stem}_boxes.png")
 
     (out_dir / f"{stem}_res.json").write_text(json.dumps({
@@ -348,6 +424,7 @@ def process(args, image_path: Path, out_dir: Path, stem: str | None = None, verb
         "params": {k: v for k, v in vars(args).items() if k not in ("image", "out_dir")},
         "ink_threshold": otsu, "profile_threshold": thr,
         "rows": [{"order": i, "bbox": b, "height": b[3] - b[1]} for i, b in enumerate(rows, 1)],
+        "post": post,
     }, ensure_ascii=False, indent=2), encoding="utf-8")
     (out_dir / f"{stem}.txt").write_text(
         "\n".join(f"[{i}] bbox={b} cao={b[3] - b[1]}" for i, b in enumerate(rows, 1)) + "\n", encoding="utf-8")
@@ -360,7 +437,9 @@ def process(args, image_path: Path, out_dir: Path, stem: str | None = None, verb
         for i, b in enumerate(rows, 1):
             pil.crop(tuple(b)).save(crop_dir / f"{stem}_{i:03d}.png")
 
-    log(f"\n{n} hàng (ngưỡng profile {thr:.1f}px, max {prof.max():.0f}px)")
+    log(f"\n{n} hàng (ngưỡng profile {thr:.1f}px, max {prof.max():.0f}px)"
+        + (f"; hậu xử lý: {rows_before} -> {n} (gộp {len(post['merged'])} mảnh, bỏ {len(post['dropped'])} ô nhỏ)"
+           if rows_before != n or post["merged"] else ""))
     log(f"{'#':>3}  {'bbox':<26} {'cao':>4} {'rộng':>5}")
     for i, b in enumerate(rows, 1):
         log(f"{i:>3}  {str(b):<26} {b[3] - b[1]:>4} {b[2] - b[0]:>5}")

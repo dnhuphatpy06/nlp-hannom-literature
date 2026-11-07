@@ -19,7 +19,7 @@ GK/
 ├── data/                 <- dữ liệu, cấu trúc giống thư mục nộp bài (git chỉ theo dõi các file cache .json, xem bên dưới)
 │   ├── cache/            <- cache dùng chung: type.json (loại sách), uploads.json (lịch sử upload ảnh)
 │   └── <Tên sách>/       <- <Tên sách>.pdf, ch/ vi/ intro/ ref/ toc/ blank/ misc/ và cache/ (không nộp)
-├── third_party/PPOCRLabel/ <- bản PPOCRLabel chép vào dự án để sửa trực tiếp (xem CHANGES_GK.md)
+├── external/PPOCRLabel/ <- bản PPOCRLabel chép vào dự án để sửa trực tiếp (xem CHANGES_GK.md)
 ├── img/                  <- ảnh dùng để test
 ├── scripts/
 │   ├── library.py            <- cấu trúc thư mục data/, đường dẫn dùng chung
@@ -173,7 +173,7 @@ Nguồn OCR được đề xuất theo nhãn trang, đổi được bằng ô ch
 |---|---|---|
 | `ch` | Kim Hán Nôm (API) | Cần `TOKEN` trong `.env`. Box sắp từ phải sang trái, trên xuống dưới |
 | `vi` | PaddleOCR-VL | Chạy trên máy, cần `paddleocr[doc-parser]` (xem `requirements-ocr.txt`). Box theo khối văn bản, đúng thứ tự đọc của mô hình |
-| `ch_vi` (bản chụp đẹp) | row_projection | Tách hàng chữ ngang bằng xử lý ảnh. Hàng lẻ ghi vào `ch/`, hàng chẵn vào `vi/` (hàng Hán xen hàng Quốc ngữ). **`transcription` để trống**, điền hoặc nhận dạng lại trong PPOCRLabel |
+| `ch_vi` (bản chụp đẹp) | row_projection | Tách hàng chữ ngang bằng xử lý ảnh. Hàng lẻ ghi vào `ch/`, hàng chẵn vào `vi/` (hàng Hán xen hàng Quốc ngữ). Trước khi chia, **hậu xử lý ô nhỏ** gộp mảnh mỏng (phần chữ cao/đuôi chữ bị cắt rời) vào hàng kề và bỏ ô quá hẹp (nét nguệch ngoạc, số kho lưu, vết bẩn), để số hàng không bị thừa và thứ tự lẻ/chẵn không bị lệch (trên vở "Nhật Tỉnh Ngâm": số hàng bị chia sai ngôn ngữ giảm từ 10,5% xuống ~0%); chỉnh bằng `--sliver-ratio`, `--min-width-ratio`... hoặc tắt bằng `--no-post` ở `scripts/row_projection_viz.py`. **`transcription` để trống**, điền hoặc nhận dạng lại trong PPOCRLabel |
 | `intro`, `ref`, `toc` | PaddleOCR-VL | Như `vi` |
 | `blank`, `misc` | không OCR | Chỉ chép ảnh vào thư mục |
 | `unknown` | bỏ qua | Gán nhãn ở bước 1 trước |
@@ -210,7 +210,7 @@ Mỗi lần OCR một ảnh, app lưu kết quả thô của engine vào `data/<
 
 Mỗi thư mục `ch/`, `vi/`, `intro/`, `ref/`, `toc/` có nút **Mở PPOCRLabel**, kèm số ảnh, số ảnh đã có nhãn và đã duyệt. Bấm nút thì PPOCRLabel mở lên **với đúng thư mục của dòng đó đã được mở sẵn** (app truyền `--image_dir`, tương đương File → Open Dir): ảnh, `Label.txt` và `fileState.txt` được nạp, ảnh đầu tiên hiện luôn trên màn hình. Mở bằng `open_ppocrlabel.bat` thì thêm `--image_dir "data\Tên sách\ch"`, không thêm thì chọn File → Open Dir.
 
-**Không cần `pip install PPOCRLabel`.** Mã PPOCRLabel đã chép sẵn trong dự án ([third_party/PPOCRLabel/](third_party/PPOCRLabel/), kèm `LICENSE` Apache-2.0; các chỗ sửa riêng đánh dấu `[GK]` và liệt kê ở [CHANGES_GK.md](third_party/PPOCRLabel/CHANGES_GK.md)). Chỉ cần thư viện giao diện `PyQt5` (có trong `requirements-ocr.txt`): `pip install -r requirements-ocr.txt`. PPOCRLabel **không còn cần `paddlepaddle`/`paddleocr`** (xem mục nối 3 engine bên dưới). Bấm **Mở PPOCRLabel** là app chạy `scripts/ppocrlabel_boot.py` bằng Python đang chạy app (nếu thiếu thư viện thì thử `.venv` của dự án); thiếu thư viện thì màn hình OCR hiện cảnh báo kèm lệnh cài. Chỉ mở được một cửa sổ PPOCRLabel tại một thời điểm; trong lúc nó mở, các số liệu bên dưới tự cập nhật sau khi bạn lưu. Cấu hình tùy chọn trong `.env` (xem `.env.example`): `PPOCRLABEL_LANG` (`en` mặc định = giao diện tiếng Anh, `ch` = tiếng Trung, hoặc mã khác như `vi`) và `PPOCRLABEL_PYTHON` (Python khác có cài `requirements-ocr.txt`, đường dẫn tương đối tính từ thư mục gốc dự án). PPOCRLabel chỉ có giao diện tiếng Trung và tiếng Anh, không có tiếng Việt.
+**Không cần `pip install PPOCRLabel`.** Mã PPOCRLabel đã chép sẵn trong dự án ([external/PPOCRLabel/](external/PPOCRLabel/), kèm `LICENSE` Apache-2.0; các chỗ sửa riêng đánh dấu `[GK]` và liệt kê ở [CHANGES_GK.md](external/PPOCRLabel/CHANGES_GK.md)). Chỉ cần thư viện giao diện `PyQt5` (có trong `requirements-ocr.txt`): `pip install -r requirements-ocr.txt`. PPOCRLabel **không còn cần `paddlepaddle`/`paddleocr`** (xem mục nối 3 engine bên dưới). Bấm **Mở PPOCRLabel** là app chạy `scripts/ppocrlabel_boot.py` bằng Python đang chạy app (nếu thiếu thư viện thì thử `.venv` của dự án); thiếu thư viện thì màn hình OCR hiện cảnh báo kèm lệnh cài. Chỉ mở được một cửa sổ PPOCRLabel tại một thời điểm; trong lúc nó mở, các số liệu bên dưới tự cập nhật sau khi bạn lưu. Cấu hình tùy chọn trong `.env` (xem `.env.example`): `PPOCRLABEL_LANG` (`en` mặc định = giao diện tiếng Anh, `ch` = tiếng Trung, hoặc mã khác như `vi`) và `PPOCRLABEL_PYTHON` (Python khác có cài `requirements-ocr.txt`, đường dẫn tương đối tính từ thư mục gốc dự án). PPOCRLabel chỉ có giao diện tiếng Trung và tiếng Anh, không có tiếng Việt.
 
 **Nhận dạng trong PPOCRLabel đi qua 3 engine của dự án** (thay cho 11 mô hình PP-OCR của nó): **Auto Recognition** (cả trang) dùng engine mặc định theo thư mục, `ch` → Kim Hán Nôm, `vi`/`intro`/`ref`/`toc` → PaddleOCR-VL, trang `ch_vi` → row_projection, và **dùng chung cache `cache/ocr/` với bước OCR của app** (trang đã OCR thì trả ngay, không gọi lại API/mô hình); **Re-recognition** (`Ctrl+R` một box, `Ctrl+Shift+R` cả ảnh) dùng engine chữ của thư mục (`ch` → Kim Hán Nôm, còn lại → PaddleOCR-VL); **Choose OCR model** (`Ctrl+M`, menu PaddleOCR) đổi giữa Tự động / Kim Hán Nôm / PaddleOCR-VL / row_projection và, nếu tích ô **Recognize the current image now** (mặc định bật khi đang mở ảnh), **nhận dạng luôn ảnh đang mở** bằng engine vừa chọn, thay các box hiện có (row_projection chỉ tách hàng nên khi nhận dạng một box nó dùng engine chữ mặc định). Nếu không tích thì chỉ lưu lựa chọn, rồi bấm Auto Recognition: nút này **bỏ qua ảnh đã có trong `fileState.txt`** (tức mọi ảnh app đã OCR); còn Re-recognition chỉ nhận dạng lại các box đang có, ảnh chưa có box nào thì không làm gì. PaddleOCR-VL chỉ nạp lúc bạn bấm nhận dạng lần đầu; Kim Hán Nôm cần `TOKEN` trong `.env`; lỗi engine hiện hộp thoại thay vì làm sập PPOCRLabel. Nhận dạng bảng đã tắt (quy định đồ án bỏ qua bảng, tranh).
 
@@ -237,7 +237,7 @@ pip install -r requirements-ocr.txt    # PaddleOCR-VL (paddleocr, transformers),
 ```
 
 - Chỉ **một** gói OpenCV (`opencv-contrib-python`, đúng bản paddlex ghim). Đừng cài thêm `opencv-python` hay bản headless: chúng ghi đè lẫn nhau lên thư mục `cv2/` và gỡ một gói sẽ làm hỏng `cv2`.
-- Không cần `pip install PPOCRLabel` (mã đã có trong `third_party/`).
+- Không cần `pip install PPOCRLabel` (mã đã có trong `external/`).
 - `kraken`, `shapely` chỉ dành cho `scripts/kraken_viz.py` (thử nghiệm), app không dùng nên đã bỏ khỏi requirements.
 - Kiểm tra môi trường khớp requirements: `pip install --dry-run -r requirements-ocr.txt` (không có dòng "Would install" nghĩa là khớp) và `pip check`.
 

@@ -378,10 +378,10 @@ def _run(book: Book, chosen: dict[str, str], overwrite: bool, use_cache: bool = 
 
 # ---------------------------------------------------------------- PPOCRLabel
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
-# PPOCRLabel chạy từ mã đã chép vào dự án (third_party/PPOCRLabel), không cần `pip install PPOCRLabel`.
+# PPOCRLabel chạy từ mã đã chép vào dự án (external/PPOCRLabel), không cần `pip install PPOCRLabel`.
 # Chỉ cần PyQt5 (giao diện) cùng numpy/cv2; nhận dạng chạy qua 3 engine của dự án (scripts/engine_bridge.py), nên PPOCRLabel
 # không còn cần paddle/paddleocr (PaddleOCR-VL chỉ cần khi bạn chọn engine đó).
-VENDORED = PROJECT_ROOT / "third_party" / "PPOCRLabel" / "PPOCRLabel.py"
+VENDORED = PROJECT_ROOT / "external" / "PPOCRLabel" / "PPOCRLabel.py"
 REQUIRED_MODULES = ("PyQt5", "cv2", "numpy")
 INSTALL_HINT = "Chạy: pip install -r requirements-ocr.txt (trong môi trường chạy app)."
 _ppocr_lock = threading.Lock()
@@ -408,7 +408,7 @@ def _project_path(value: str) -> str:
     return str(path if path.is_absolute() else (PROJECT_ROOT / path).resolve())
 
 
-# PPOCRLabel được mở qua scripts/ppocrlabel_boot.py (nạp torch trước để tránh WinError 1114, rồi chạy bản trong third_party/).
+# PPOCRLabel được mở qua scripts/ppocrlabel_boot.py (nạp torch trước để tránh WinError 1114, rồi chạy bản trong external/).
 BOOT_FILE = Path(__file__).resolve().parent / "ppocrlabel_boot.py"
 
 
@@ -457,7 +457,7 @@ def _ppocrlabel_lang() -> str:
 
 
 def _ppocrlabel_command() -> list[str] | None:
-    """Lệnh mở PPOCRLabel: [python, ppocrlabel_boot.py, --lang <ngôn ngữ giao diện>]. None nếu thiếu mã trong third_party/.
+    """Lệnh mở PPOCRLabel: [python, ppocrlabel_boot.py, --lang <ngôn ngữ giao diện>]. None nếu thiếu mã trong external/.
 
     Python: ứng viên đầu tiên có đủ thư viện; không có ứng viên nào đủ thì dùng ứng viên đầu để báo thiếu gì.
     Giao diện: PPOCRLabel chỉ có tiếng Trung (ch, mặc định của chính nó) và tiếng Anh (en); mặc định en, xem _ppocrlabel_lang().

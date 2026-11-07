@@ -1,4 +1,4 @@
-"""Cầu nối giữa PPOCRLabel (third_party/PPOCRLabel) và 3 engine OCR của dự án: Kim Hán Nôm, PaddleOCR-VL, row_projection.
+"""Cầu nối giữa PPOCRLabel (external/PPOCRLabel) và 3 engine OCR của dự án: Kim Hán Nôm, PaddleOCR-VL, row_projection.
 
 PPOCRLabel gốc nạp 11 mô hình PP-OCR của riêng nó khi khởi động. Bản trong dự án bỏ hết, và mọi chức năng nhận dạng của PPOCRLabel
 (Auto Recognition, Re-recognition, Cell Re-Recognition) gọi các hàm dưới đây, tức là dùng đúng các engine của bước OCR trong app:

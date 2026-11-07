@@ -5,7 +5,7 @@ Thư mục này là bản chép của **PPOCRLabel 3.1.6** (https://github.com/P
 Dự án chạy bản này (qua `scripts/ppocrlabel_boot.py`), **không cần `pip install PPOCRLabel`**: chỉ cần các thư viện của nó,
 đã có trong `requirements-ocr.txt` (chủ yếu `PyQt5`; PaddleOCR-VL chỉ cần nếu bạn chọn engine đó). **Không cần `paddlepaddle`, `paddleocr`** cho chính PPOCRLabel.
 
-Mọi chỗ đã sửa so với bản gốc được đánh dấu `[GK]` trong mã: `grep -rn "\[GK\]" third_party/PPOCRLabel`.
+Mọi chỗ đã sửa so với bản gốc được đánh dấu `[GK]` trong mã: `grep -rn "\[GK\]" external/PPOCRLabel`.
 
 | File | Thay đổi |
 |---|---|

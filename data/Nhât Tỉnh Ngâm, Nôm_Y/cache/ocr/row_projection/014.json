@@ -1,7 +1,7 @@
 {
   "engine": "row_projection",
   "page": 14,
-  "saved": "2026-11-07T11:43:37.143553",
+  "saved": "2026-11-07T19:11:11.475551",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.014.jpg",
     "sha256": "3b68e321a285bdfb4a59f868d433c102e466f2fd556a9ef2c6e0166412063952",
@@ -17,15 +17,22 @@
     "margin": 6,
     "merge_gap": 2,
     "min_height": 8,
+    "min_width_ratio": 0.4,
     "near_gap": 0.35,
     "no_auto_crop": false,
     "no_clean_x": false,
+    "no_post": false,
     "pad": 2,
     "peak_prom": 0.2,
+    "post_min_rows": 4,
     "punct_gap": 2.0,
     "punct_size": 0.45,
     "roi": null,
     "save_crops": false,
+    "sliver_gap": 0.15,
+    "sliver_max_height": 1.35,
+    "sliver_ratio": 0.45,
+    "sliver_x_overlap": 0.5,
     "smooth": 2.5,
     "thr_ratio": 0.012,
     "valley_ratio": 0.6,
@@ -225,36 +232,15 @@
       "text": "",
       "points": [
         [
-          1172,
-          1660
-        ],
-        [
-          2062,
-          1660
-        ],
-        [
-          2062,
-          1685
-        ],
-        [
-          1172,
-          1685
-        ]
-      ]
-    },
-    {
-      "text": "",
-      "points": [
-        [
           429,
-          1681
+          1660
         ],
         [
-          1997,
-          1681
+          2062,
+          1660
         ],
         [
-          1997,
+          2062,
           1734
         ],
         [

@@ -1,7 +1,7 @@
 # OCR chạy trên máy và PPOCRLabel: scripts/paddleocr_vl_viz.py, bước OCR của app.py, open_ppocrlabel.bat.
 # Cài: pip install -r requirements-ocr.txt   (đã gồm requirements.txt)
 #
-# KHÔNG cần `pip install PPOCRLabel`: mã PPOCRLabel đã nằm trong dự án (third_party/PPOCRLabel, có sửa riêng);
+# KHÔNG cần `pip install PPOCRLabel`: mã PPOCRLabel đã nằm trong dự án (external/PPOCRLabel, có sửa riêng);
 # chỉ cần các thư viện của nó bên dưới (PyQt5, và PaddleOCR-VL nếu dùng). Python 3.12.
 
 -r requirements.txt
