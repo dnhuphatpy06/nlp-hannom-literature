@@ -1,6 +1,6 @@
-# Thư viện cơ bản: app, tách trang, nhận diện trang trắng, gọi API Kim Hán Nôm, row_projection.
-# Cài: pip install -r requirements.txt
-# Muốn chạy thêm OCR cục bộ (PaddleOCR-VL) và PPOCRLabel: xem requirements-ocr.txt
+# Thu vien co ban: app, tach trang, nhan dien trang trang, goi API Kim Han Nom, row_projection.
+# Cai: pip install -r requirements.txt
+# Muon chay them OCR cuc bo (PaddleOCR-VL) va PPOCRLabel: xem requirements-ocr.txt
 
 requests==2.34.2
 python-dotenv==1.2.4
@@ -11,6 +11,6 @@ numpy==2.3.5
 Pillow==13.0.0
 scipy==1.18.1
 
-# Chỉ MỘT gói OpenCV. Dùng bản contrib 4.10.0.84 vì đây đúng là bản paddlex (do PaddleOCR kéo vào) ghim; nếu cài thêm
-# các gói OpenCV khác (bản thường hoặc bản headless), chúng ghi đè lẫn nhau lên thư mục cv2/ và gỡ một gói sẽ làm hỏng cv2.
+# Chi MOT goi OpenCV. Dung ban contrib 4.10.0.84 vi day dung la ban paddlex (do PaddleOCR keo vao) ghim; neu cai them
+# cac goi OpenCV khac (ban thuong hoac ban headless), chung ghi de lan nhau len thu muc cv2/ va go mot goi se lam hong cv2.
 opencv-contrib-python==4.10.0.84
