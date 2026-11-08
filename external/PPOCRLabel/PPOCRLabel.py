@@ -3803,7 +3803,7 @@ class MainWindow(QMainWindow):
 
     def recognizeCurrentImage(self):
         b = bridge()
-        with self.ocrRun("Nhận dạng ảnh %s: %s" % (os.path.basename(self.filePath or ""), b.describe(self.engine_state.engine)), 0, busy=False):
+        with self.ocrRun("Nhận dạng ảnh %s: %s" % (os.path.basename(self.filePath or ""), b.describe(self.engine_state.engine)), 1):
             self._recognizeCurrentImage()
 
     def _recognizeCurrentImage(self):
@@ -3811,17 +3811,32 @@ class MainWindow(QMainWindow):
         có trong fileState.txt, vì ảnh app đã OCR trước đều nằm trong đó)."""
         if not self.filePath:
             return
-        self.statusBar().showMessage(
-            "Recognizing %s ... the first PaddleOCR-VL run loads the model, please wait" % os.path.basename(self.filePath)
-        )
-        self.autoDialog = AutoDialog(parent=self, ocr=self.ocr, image_list=[self.filePath], len_bar=1)
-        self.autoDialog.popUp()
-        self.engine_state.flush_error(self)
+        # [GK] Chạy thẳng trong luồng giao diện và ghi vào khung OCR log (như đọc lại chữ), không mở hộp thoại AutoDialog
+        # (hộp thoại đó chỉ liệt kê vị trí box rồi bắt bấm OK).
+        path = self.filePath
+        self.statusBar().showMessage("Đang nhận dạng %s ..." % os.path.basename(path))
+        gk_events().check_cancel()
+        img = cv2.imdecode(np.fromfile(path, dtype=np.uint8), cv2.IMREAD_COLOR)
+        if img is None or min(img.shape[:2]) <= 32:
+            gk_events().log("Không đọc được ảnh hoặc ảnh quá nhỏ: %s" % os.path.basename(path), "warn")
+            return
+        result = self.ocr.predict(img, image_path=path)[0]
+        dic = [[poly.tolist() if hasattr(poly, "tolist") else poly, (text, score)]
+               for poly, text, score in zip(result["rec_polys"], result["rec_texts"], result["rec_scores"])]
+        self.engine_state.flush_error(self)   # lỗi engine (thiếu TOKEN, chưa nạp mô hình, ...) báo một lần
+        if not dic:
+            gk_events().log("Không tìm thấy box nào, giữ nguyên các box hiện có.", "warn")
+            return
+        self.result_dic = dic
+        self.saveFile(mode="Auto")
+        self.result_dic = []   # tránh rò sang ảnh khác
         self.haveAutoReced = True
         self.filePath = self.mImgList[self.currIndex]
         self.loadFile(self.filePath, isAdjustScale=False)
         self.saveCacheLabel()
         self.init_key_list(self.Cachelabel)
+        gk_events().log("Đã đặt %d box lên ảnh." % len(self.canvas.shapes), "ok")
+        self.statusBar().showMessage("Đã nhận dạng %s: %d box" % (os.path.basename(path), len(self.canvas.shapes)), 6000)
 
     def cancel(self):
         self.dialog.close()
