@@ -1,0 +1,500 @@
+{
+  "engine": "row_text",
+  "page": 9,
+  "saved": "2026-11-07T20:22:33.534845",
+  "image": {
+    "name": "Nhât Tỉnh Ngâm, Nôm_Y.009.jpg",
+    "sha256": "cb01c8576591b8778e7daa73fb6c8770212567009d5f15840860c745b8463705",
+    "size": 933273
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    },
+    "paddleocr": {
+      "engine": "transformers",
+      "pipeline_version": "v1",
+      "prompt_label": "ocr",
+      "use_doc_orientation_classify": false,
+      "use_doc_unwarping": false,
+      "use_layout_detection": false
+    },
+    "row_projection": {
+      "bg_kernel": 25,
+      "blob_dilate": 0.3,
+      "blob_mass": 0.35,
+      "edge_ratio": 0.05,
+      "ink_thresh": null,
+      "line_len": null,
+      "margin": 6,
+      "merge_gap": 2,
+      "min_height": 8,
+      "min_width_ratio": 0.4,
+      "near_gap": 0.35,
+      "no_auto_crop": false,
+      "no_clean_x": false,
+      "no_post": false,
+      "pad": 2,
+      "peak_prom": 0.2,
+      "post_min_rows": 4,
+      "punct_gap": 2.0,
+      "punct_size": 0.45,
+      "roi": null,
+      "save_crops": false,
+      "sliver_gap": 0.15,
+      "sliver_max_height": 1.35,
+      "sliver_ratio": 0.45,
+      "sliver_x_overlap": 0.5,
+      "smooth": 2.5,
+      "thr_ratio": 0.012,
+      "valley_ratio": 0.6,
+      "x_trim": 0.5
+    },
+    "tag": "ch_vi"
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "欺𠻵𠰚𠤆𪬡恨世",
+      "points": [
+        [
+          468,
+          682
+        ],
+        [
+          1902,
+          682
+        ],
+        [
+          1902,
+          785
+        ],
+        [
+          468,
+          785
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "調磊㕵𢧚仕戈",
+      "points": [
+        [
+          473,
+          915
+        ],
+        [
+          1904,
+          915
+        ],
+        [
+          1904,
+          1012
+        ],
+        [
+          473,
+          1012
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "𠳒咹呐朱和",
+      "points": [
+        [
+          474,
+          1142
+        ],
+        [
+          1678,
+          1142
+        ],
+        [
+          1678,
+          1239
+        ],
+        [
+          474,
+          1239
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "𠸓𫳵𦖑丕買道𡥵",
+      "points": [
+        [
+          469,
+          1363
+        ],
+        [
+          2137,
+          1363
+        ],
+        [
+          2137,
+          1470
+        ],
+        [
+          469,
+          1470
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "㭲於妬麻源於妬",
+      "points": [
+        [
+          457,
+          1595
+        ],
+        [
+          1902,
+          1595
+        ],
+        [
+          1902,
+          1695
+        ],
+        [
+          457,
+          1695
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "腰𡞕𡥵停浦𠄩親",
+      "points": [
+        [
+          459,
+          1817
+        ],
+        [
+          1920,
+          1817
+        ],
+        [
+          1920,
+          1918
+        ],
+        [
+          459,
+          1918
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "要𤴬痗藻仍吝",
+      "points": [
+        [
+          466,
+          2037
+        ],
+        [
+          1685,
+          2037
+        ],
+        [
+          1685,
+          2145
+        ],
+        [
+          466,
+          2145
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "𢪀算粓藥𣌋𣌉",
+      "points": [
+        [
+          470,
+          2251
+        ],
+        [
+          2111,
+          2251
+        ],
+        [
+          2111,
+          2367
+        ],
+        [
+          470,
+          2367
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "仰人𥪝𤾓固欺𫅷奇",
+      "points": [
+        [
+          285,
+          2480
+        ],
+        [
+          1889,
+          2480
+        ],
+        [
+          1889,
+          2587
+        ],
+        [
+          285,
+          2587
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "役衾拯可糊塗",
+      "points": [
+        [
+          454,
+          2704
+        ],
+        [
+          1899,
+          2704
+        ],
+        [
+          1899,
+          2805
+        ],
+        [
+          454,
+          2805
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "The mng bao ch' hon qian th'",
+      "points": [
+        [
+          438,
+          782
+        ],
+        [
+          1953,
+          782
+        ],
+        [
+          1953,
+          884
+        ],
+        [
+          438,
+          884
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Deu livi nham nên se ngan qua,",
+      "points": [
+        [
+          449,
+          1017
+        ],
+        [
+          1963,
+          1017
+        ],
+        [
+          1963,
+          1112
+        ],
+        [
+          449,
+          1112
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Nhi đn nét nho cho hoa,",
+      "points": [
+        [
+          448,
+          1235
+        ],
+        [
+          1718,
+          1235
+        ],
+        [
+          1718,
+          1312
+        ],
+        [
+          448,
+          1312
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Bao Sao nghe vay may la dao con,",
+      "points": [
+        [
+          435,
+          1474
+        ],
+        [
+          2162,
+          1474
+        ],
+        [
+          2162,
+          1569
+        ],
+        [
+          435,
+          1569
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Gòc à do mã người à do, - 25",
+      "points": [
+        [
+          443,
+          1696
+        ],
+        [
+          2179,
+          1696
+        ],
+        [
+          2179,
+          1799
+        ],
+        [
+          443,
+          1799
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "yu w? con dung bo' hai' thên .",
+      "points": [
+        [
+          457,
+          1928
+        ],
+        [
+          1963,
+          1928
+        ],
+        [
+          1963,
+          2003
+        ],
+        [
+          457,
+          2003
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "yeü dau mü mê nhing lan,",
+      "points": [
+        [
+          466,
+          2150
+        ],
+        [
+          1730,
+          2150
+        ],
+        [
+          1730,
+          2225
+        ],
+        [
+          466,
+          2225
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Lo toan cim thue cim cain sim khaya,",
+      "points": [
+        [
+          455,
+          2367
+        ],
+        [
+          2181,
+          2367
+        ],
+        [
+          2181,
+          2434
+        ],
+        [
+          455,
+          2434
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Erung Ström Twiö co’ khi’ gia ca’",
+      "points": [
+        [
+          431,
+          2584
+        ],
+        [
+          1919,
+          2584
+        ],
+        [
+          1919,
+          2670
+        ],
+        [
+          431,
+          2670
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Wei guan zhà chù zhà hǎo",
+      "points": [
+        [
+          440,
+          2801
+        ],
+        [
+          2138,
+          2801
+        ],
+        [
+          2138,
+          2876
+        ],
+        [
+          440,
+          2876
+        ]
+      ]
+    }
+  ]
+}

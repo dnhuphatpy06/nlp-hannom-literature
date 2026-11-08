@@ -16,6 +16,7 @@
 import argparse
 import ast
 import codecs
+import contextlib
 import json
 import os
 import platform
@@ -83,7 +84,8 @@ __dir__ = os.path.dirname(__file__)
 sys.path.append(os.path.join(__dir__, ""))
 
 # [GK] Không còn import paddle/paddleocr: nhận dạng chạy qua 3 engine của dự án (libs/gk_ocr.py)
-from libs.gk_ocr import EngineState, EngineOCR, EngineTextRecognition, EngineTextDetection, bridge
+from libs.gk_ocr import EngineState, EngineOCR, EngineTextRecognition, EngineTextDetection, bridge, events as gk_events
+from libs.gk_ocr_log import OcrLogDock, set_ui_busy   # [GK] khung OCR log
 import libs.resources
 from libs.constants import (
     SETTING_ADVANCE_MODE,
@@ -520,6 +522,11 @@ class MainWindow(QMainWindow):
 
         self.setCentralWidget(centerContainer)
         self.addDockWidget(Qt.RightDockWidgetArea, self.dock)
+        # [GK] Khung OCR log (dưới cùng): việc đang chạy, tiến độ, log từng bước, trạng thái và nút nạp các mô hình, nút Dừng. Hiện tự động khi bắt đầu
+        # nhận dạng; bật/tắt bằng View -> OCR log (Ctrl+Alt+L).
+        self.ocrLog = OcrLogDock(self)
+        self.addDockWidget(Qt.BottomDockWidgetArea, self.ocrLog)
+        self.ocrLog.hide()
 
         self.dock.setFeatures(
             QDockWidget.DockWidgetClosable | QDockWidget.DockWidgetFloatable
@@ -1182,8 +1189,11 @@ class MainWindow(QMainWindow):
                 None,
                 fitWindow,
                 fitWidth,
+                None,
+                self.ocrLog.toggleViewAction(),
             ),
         )
+        self.ocrLog.toggleViewAction().setShortcut("Ctrl+Alt+L")
 
         addActions(self.menus.autolabel, (AutoRec, reRec, cellreRec, alcm, None, help))
 
@@ -3067,7 +3077,44 @@ class MainWindow(QMainWindow):
             self.auto_recognition_num = min(value, remain_num)
         self.AutoRecognitionNum.setValue(self.auto_recognition_num)
 
+    @contextlib.contextmanager
+    def ocrRun(self, title, total=0, busy=True):
+        """[GK] Bọc một lượt nhận dạng: mở khung OCR log (tiến độ, log), khoá phần còn lại của giao diện nếu chạy ngay trong luồng giao diện
+        (busy), cho nút Dừng huỷ giữa các box, và báo lỗi engine MỘT lần khi xong thay vì hộp thoại từng box."""
+        self.engine_state.quiet = True
+        self.ocrLog.begin(title, total, pump_ui=busy)
+        if busy:
+            set_ui_busy(self, self.ocrLog, True)
+        status = "done"
+        try:
+            yield
+        except gk_events().Cancelled:
+            status = "cancelled"
+        except BaseException:
+            status = "error"
+            raise
+        finally:
+            if busy:
+                set_ui_busy(self, self.ocrLog, False)
+            self.engine_state.quiet = False
+            self.ocrLog.end(status)
+            self.engine_state.flush_error(self)
+
+    def gkStep(self, index, total):
+        """[GK] Đầu mỗi box: kiểm tra người dùng có bấm Dừng không, rồi báo tiến độ cho khung OCR log."""
+        events = gk_events()
+        events.check_cancel()
+        events.progress(index, total, "box %d/%d" % (index + 1, total))
+
+    def gkTextEngineName(self):
+        b = bridge()
+        return b.eng.PIPELINE_NAMES.get(b.text_engine(self.engine_state.engine, self.engine_state.folder()), "")
+
     def autoRecognition(self):
+        with self.ocrRun("Auto Recognition: %d ảnh từ ảnh hiện tại" % max(0, len(self.mImgList) - self.currIndex), 0, busy=False):
+            self._autoRecognition()
+
+    def _autoRecognition(self):
         assert self.mImgList is not None
         logger.info("Using model from %s", self.model)
 
@@ -3103,6 +3150,11 @@ class MainWindow(QMainWindow):
         self.init_key_list(self.Cachelabel)
 
     def reRecognition(self):
+        n = len(self.canvas.shapes)
+        with self.ocrRun("Đọc lại chữ của %d box trong ảnh (%s)" % (n, self.gkTextEngineName()), n):
+            self._reRecognition()
+
+    def _reRecognition(self):
         img = cv2.imdecode(np.fromfile(self.filePath, dtype=np.uint8), cv2.IMREAD_COLOR)
         if self.canvas.shapes:
             self.result_dic = []
@@ -3110,7 +3162,8 @@ class MainWindow(QMainWindow):
                 []
             )  # result_dic_locked stores the ocr result of self.canvas.lockedShapes
             rec_flag = 0
-            for shape in self.canvas.shapes:
+            for _gk_i, shape in enumerate(self.canvas.shapes):
+                self.gkStep(_gk_i, len(self.canvas.shapes))
                 box = [[int(p.x()), int(p.y())] for p in shape.points]
                 kie_cls = shape.key_cls
 
@@ -3187,8 +3240,14 @@ class MainWindow(QMainWindow):
             QMessageBox.information(self, "Information", "Draw a box!")
 
     def singleRerecognition(self):
+        n = len(self.canvas.selectedShapes)
+        with self.ocrRun("Đọc lại chữ của %d box đã chọn (%s)" % (n, self.gkTextEngineName()), n):
+            self._singleRerecognition()
+
+    def _singleRerecognition(self):
         img = cv2.imdecode(np.fromfile(self.filePath, dtype=np.uint8), cv2.IMREAD_COLOR)
-        for shape in self.canvas.selectedShapes:
+        for _gk_i, shape in enumerate(list(self.canvas.selectedShapes)):
+            self.gkStep(_gk_i, len(self.canvas.selectedShapes))
             box = [[int(p.x()), int(p.y())] for p in shape.points]
             if len(box) > 4:
                 box = self.gen_quad_from_poly(np.array(box))
@@ -3375,11 +3434,17 @@ class MainWindow(QMainWindow):
         logger.info("Table recognition time cost: %s", time.time() - start)
 
     def cellreRecognition(self):
+        n = len(self.canvas.selectedShapes)
+        with self.ocrRun("Cell Re-Recognition: %d box đã chọn (%s)" % (n, self.gkTextEngineName()), n):
+            self._cellreRecognition()
+
+    def _cellreRecognition(self):
         """
         re-recognise text in a cell
         """
         img = cv2.imdecode(np.fromfile(self.filePath, dtype=np.uint8), cv2.IMREAD_COLOR)
-        for shape in self.canvas.selectedShapes:
+        for _gk_i, shape in enumerate(list(self.canvas.selectedShapes)):
+            self.gkStep(_gk_i, len(self.canvas.selectedShapes))
             box = [[int(p.x()), int(p.y())] for p in shape.points]
 
             if len(box) > 4:
@@ -3508,37 +3573,114 @@ class MainWindow(QMainWindow):
         QMessageBox.information(self, "Information", msg)
 
     def autolcm(self):
-        # [GK] Chọn nguồn OCR: Kim Hán Nôm / PaddleOCR-VL / row_projection (bản gốc chọn ngôn ngữ của mô hình PP-OCR)
+        # [GK] Hộp thoại chọn việc cần làm và mô hình cho thư mục đang mở, giống popup "OCR thư mục này" của app web: VIỆC CẦN LÀM (phát hiện box và đọc
+        # chữ | chỉ phát hiện box | đọc lại chữ của tất cả box | đọc lại chữ của các box đã chọn), MÔ HÌNH phát hiện box, MÔ HÌNH đọc chữ. Bản gốc
+        # chọn ngôn ngữ của mô hình PP-OCR.
+        b = bridge()
+        folder = self.engine_state.folder()
+        options = b.engine_options(folder)
         vbox = QVBoxLayout()
         hbox = QHBoxLayout()
-        self.panel = QLabel()
-        self.panel.setText(self.stringBundle.getString("choseModelLg"))
-        self.panel.setAlignment(Qt.AlignLeft)
-        self.comboBox = QComboBox()
-        self.comboBox.setObjectName("comboBox")
-        for key, label in bridge().ENGINE_CHOICES:
-            self.comboBox.addItem(label, key)
-        self.comboBox.setCurrentIndex(max(0, self.comboBox.findData(self.engine_state.engine)))
-        vbox.addWidget(self.panel)
-        vbox.addWidget(self.comboBox)
-        # [GK] Chọn mô hình xong thì chạy nhận dạng ngay trang đang mở (bản gốc chỉ lưu lựa chọn, người dùng tưởng "không có kết quả")
-        self.runNowCheck = QCheckBox("Recognize the current image now (replaces its boxes)")
+
+        def caption(text):
+            label = QLabel(text)
+            label.setAlignment(Qt.AlignLeft)
+            return label
+
+        def note(color=None):
+            label = QLabel()
+            label.setWordWrap(True)
+            if color:
+                label.setStyleSheet("color: %s;" % color)
+            return label
+
+        self.panel = caption("OCR cho thư mục %s/: chọn việc cần làm và mô hình" % folder)
+        self.taskLabel = caption("Việc cần làm")
+        self.taskBox = QComboBox()
+        self.taskBox.setObjectName("taskBox")
+        for key, label in options["tasks"]:
+            self.taskBox.addItem(label, key)
+        self.taskHelp = note("gray")
+        self.boxLabel = caption("Phát hiện box bằng")
+        self.boxBox = QComboBox()
+        self.boxBox.setObjectName("boxBox")
+        for option in options["boxes"]:
+            self.boxBox.addItem(option["label"], option["key"])
+            self.boxBox.setItemData(self.boxBox.count() - 1, option["text"], Qt.UserRole + 1)   # engine đọc chữ đi kèm (None nếu chọn được)
+        self.textLabel = caption("Đọc chữ bằng")
+        self.textBox = QComboBox()
+        self.textBox.setObjectName("textBox")
+        for option in options["texts"]:
+            self.textBox.addItem(option["label"], option["key"])
+        self.dialogNote = note("#b42318")
+
+        # chọn sẵn theo lựa chọn đã lưu (khoá "box+chữ" và việc đã chọn); chưa chọn thì "phát hiện box và đọc chữ" với engine đề xuất của thư mục
+        parsed = b.eng.parse_pipeline(self.engine_state.engine)
+        if parsed:
+            box, text = parsed
+            task = self.engine_state.task
+            if task not in ("both", "detect", "read", "selected"):
+                task = "read" if box == b.eng.BOX_EXISTING else "detect" if text == b.eng.TEXT_NONE else "both"
+            self.taskBox.setCurrentIndex(max(0, self.taskBox.findData(task)))
+            self.boxBox.setCurrentIndex(max(0, self.boxBox.findData(box)))
+            self.textBox.setCurrentIndex(max(0, self.textBox.findData(text)))
+
+        for widget in (self.panel, self.taskLabel, self.taskBox, self.taskHelp, self.boxLabel, self.boxBox, self.textLabel, self.textBox, self.dialogNote):
+            vbox.addWidget(widget)
+        # [GK] Chạy ngay trên ảnh đang mở (bản gốc chỉ lưu lựa chọn, người dùng tưởng "không có kết quả"); bỏ tích thì chỉ lưu lựa chọn cho Auto Recognition
+        self.runNowCheck = QCheckBox("Chạy ngay trên ảnh đang mở")
         self.runNowCheck.setChecked(bool(self.filePath))
         self.runNowCheck.setEnabled(bool(self.filePath))
         vbox.addWidget(self.runNowCheck)
+
         self.dialog = QDialog()
-        self.dialog.resize(520, 100)
-        self.okBtn = QPushButton(self.stringBundle.getString("ok"))
-        self.cancelBtn = QPushButton(self.stringBundle.getString("cancel"))
+        self.dialog.resize(620, 100)
+        self.okBtn = QPushButton("Chạy")
+        self.cancelBtn = QPushButton("Hủy")
+
+        def refreshChoices(*_):
+            task = self.taskBox.currentData()
+            detects = task in ("both", "detect")                     # có phát hiện box mới
+            reads = task in ("both", "read", "selected")             # có đọc chữ
+            self.boxLabel.setVisible(detects)
+            self.boxBox.setVisible(detects)
+            fixed = self.boxBox.currentData(Qt.UserRole + 1) if task == "both" else None
+            if fixed:                                                # Kim Hán Nôm / PaddleOCR-VL đọc chữ cùng lúc với box: chữ do chính nó
+                self.textBox.setCurrentIndex(max(0, self.textBox.findData(fixed)))
+            self.textLabel.setVisible(reads)
+            self.textBox.setVisible(reads)
+            self.textBox.setEnabled(not fixed)
+            self.taskHelp.setText(options["task_help"].get(task, ""))
+            n_selected = len(self.canvas.selectedShapes)
+            run_now = self.runNowCheck.isChecked()
+            self.runNowCheck.setText({
+                "both": "Chạy ngay trên ảnh đang mở (thay các box hiện có)",
+                "detect": "Chạy ngay trên ảnh đang mở (thay các box hiện có, chữ để trống)",
+                "read": "Chạy ngay: đọc lại chữ của tất cả box trong ảnh đang mở (giữ box)",
+                "selected": "Chạy ngay: đọc lại chữ của %d box đang chọn (giữ box)" % n_selected,
+            }[task])
+            reasons = b.unavailable_reasons(task, self.boxBox.currentData(), self.textBox.currentData())
+            problems = list(reasons)
+            if run_now and task == "selected" and not n_selected:
+                problems.append("Chưa chọn box nào trên ảnh: hãy đóng hộp thoại, chọn box (hoặc Ctrl+Shift+A để chọn tất cả) rồi mở lại.")
+            self.dialogNote.setText("\n".join(problems))
+            # chỉ chặn khi định chạy ngay mà engine chưa dùng được hoặc chưa chọn box; chỉ lưu lựa chọn thì luôn cho phép
+            self.okBtn.setEnabled(not (run_now and problems))
+            self.okBtn.setText("Chạy" if run_now else "Lưu lựa chọn")
+
+        self.taskBox.currentIndexChanged.connect(refreshChoices)
+        self.boxBox.currentIndexChanged.connect(refreshChoices)
+        self.textBox.currentIndexChanged.connect(refreshChoices)
+        self.runNowCheck.toggled.connect(refreshChoices)
+        refreshChoices()
 
         self.okBtn.clicked.connect(self.modelChoose)
         self.cancelBtn.clicked.connect(self.cancel)
-        self.dialog.setWindowTitle(self.stringBundle.getString("choseModelLg"))
+        self.dialog.setWindowTitle("OCR: chọn việc cần làm và mô hình")
 
         hbox.addWidget(self.okBtn)
         hbox.addWidget(self.cancelBtn)
 
-        vbox.addWidget(self.panel)
         vbox.addLayout(hbox)
         self.dialog.setLayout(vbox)
         self.dialog.setWindowModality(Qt.ApplicationModal)
@@ -3548,18 +3690,37 @@ class MainWindow(QMainWindow):
             self.actions.AutoRec.setEnabled(True)
 
     def modelChoose(self):
-        # [GK] Lưu engine đã chọn; Auto Recognition và Re-recognition dùng nó từ lần bấm sau
-        key = self.comboBox.currentData()
-        label = self.comboBox.currentText()
-        logger.debug("Engine selected: %s", key)
-        self.engine_state.engine = key
-        self.statusBar().showMessage("OCR: " + label, 8000)
+        # [GK] Lưu lựa chọn thành khoá engine "box+chữ" (Auto Recognition và Re-recognition dùng nó từ lần bấm sau), rồi chạy ngay nếu được tích
+        task = self.taskBox.currentData()
+        key = bridge().build_engine(task, self.boxBox.currentData(), self.textBox.currentData())
+        label = self.taskBox.currentText()
+        if task in ("both", "detect"):
+            label += " | " + self.boxBox.currentText()
+        if task != "detect":
+            label += " | " + self.textBox.currentText()
         run_now = getattr(self, "runNowCheck", None) is not None and self.runNowCheck.isChecked() and bool(self.filePath)
+        if run_now and task == "selected" and not self.canvas.selectedShapes:
+            QMessageBox.information(self, "Information", "Chưa chọn box nào trên ảnh.")
+            return
+        logger.debug("Engine selected: %s (%s)", key, task)
+        self.engine_state.engine = key
+        self.engine_state.task = task
+        self.statusBar().showMessage("OCR: " + label, 8000)
         self.dialog.close()
         if run_now:
-            self.recognizeCurrentImage()
+            if task == "selected":
+                self.singleRerecognition()  # [GK] chỉ các box đang chọn: giữ box, chỉ thay chữ
+            elif task == "read":
+                self.reRecognition()        # [GK] mọi box của ảnh (kể cả box vừa sửa chưa lưu): giữ box, chỉ thay chữ
+            else:
+                self.recognizeCurrentImage()    # tìm box mới (kèm chữ nếu việc là both): thay các box hiện có
 
     def recognizeCurrentImage(self):
+        b = bridge()
+        with self.ocrRun("Nhận dạng ảnh %s: %s" % (os.path.basename(self.filePath or ""), b.describe(self.engine_state.engine)), 0, busy=False):
+            self._recognizeCurrentImage()
+
+    def _recognizeCurrentImage(self):
         """[GK] Nhận dạng NGAY ảnh đang mở bằng engine đã chọn, thay các box hiện có (khác Auto Recognition: không bỏ qua ảnh đã
         có trong fileState.txt, vì ảnh app đã OCR trước đều nằm trong đó)."""
         if not self.filePath:

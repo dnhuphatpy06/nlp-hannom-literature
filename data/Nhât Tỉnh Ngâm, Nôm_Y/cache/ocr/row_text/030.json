@@ -1,0 +1,520 @@
+{
+  "engine": "row_text",
+  "page": 30,
+  "saved": "2026-11-07T21:44:21.278960",
+  "image": {
+    "name": "Nhât Tỉnh Ngâm, Nôm_Y.030.jpg",
+    "sha256": "5b4a49a1014e2e9368b92190fabbbfc0c8bd2eecbf82c21668bf0db130a1f264",
+    "size": 915659
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    },
+    "paddleocr": {
+      "engine": "transformers",
+      "pipeline_version": "v1",
+      "prompt_label": "ocr",
+      "use_doc_orientation_classify": false,
+      "use_doc_unwarping": false,
+      "use_layout_detection": false
+    },
+    "row_projection": {
+      "bg_kernel": 25,
+      "blob_dilate": 0.3,
+      "blob_mass": 0.35,
+      "edge_ratio": 0.05,
+      "ink_thresh": null,
+      "line_len": null,
+      "margin": 6,
+      "merge_gap": 2,
+      "min_height": 8,
+      "min_width_ratio": 0.4,
+      "near_gap": 0.35,
+      "no_auto_crop": false,
+      "no_clean_x": false,
+      "no_post": false,
+      "pad": 2,
+      "peak_prom": 0.2,
+      "post_min_rows": 4,
+      "punct_gap": 2.0,
+      "punct_size": 0.45,
+      "roi": null,
+      "save_crops": false,
+      "sliver_gap": 0.15,
+      "sliver_max_height": 1.35,
+      "sliver_ratio": 0.45,
+      "sliver_x_overlap": 0.5,
+      "smooth": 2.5,
+      "thr_ratio": 0.012,
+      "valley_ratio": 0.6,
+      "x_trim": 0.5
+    },
+    "tag": "ch_vi"
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "𢝙史：𡨸安貪",
+      "points": [
+        [
+          453,
+          663
+        ],
+        [
+          1659,
+          663
+        ],
+        [
+          1659,
+          768
+        ],
+        [
+          453,
+          768
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "能秦便𨇜分廕𩛂",
+      "points": [
+        [
+          442,
+          882
+        ],
+        [
+          2112,
+          882
+        ],
+        [
+          2112,
+          994
+        ],
+        [
+          442,
+          994
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "於𢀭固停折世",
+      "points": [
+        [
+          448,
+          1112
+        ],
+        [
+          1876,
+          1112
+        ],
+        [
+          1876,
+          1216
+        ],
+        [
+          448,
+          1216
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "役𢧚鄭利仕每塘",
+      "points": [
+        [
+          440,
+          1335
+        ],
+        [
+          1868,
+          1335
+        ],
+        [
+          1868,
+          1439
+        ],
+        [
+          440,
+          1439
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "橋欺一旦無常",
+      "points": [
+        [
+          443,
+          1559
+        ],
+        [
+          1644,
+          1559
+        ],
+        [
+          1644,
+          1663
+        ],
+        [
+          443,
+          1663
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "添朱𡥵𡥙荒沫驕春",
+      "points": [
+        [
+          438,
+          1775
+        ],
+        [
+          2105,
+          1775
+        ],
+        [
+          2105,
+          1885
+        ],
+        [
+          438,
+          1885
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "仉欢固消坡固",
+      "points": [
+        [
+          432,
+          2009
+        ],
+        [
+          1862,
+          2009
+        ],
+        [
+          1862,
+          2112
+        ],
+        [
+          432,
+          2112
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "𠊛分空潙辣強空",
+      "points": [
+        [
+          422,
+          2233
+        ],
+        [
+          1869,
+          2233
+        ],
+        [
+          1869,
+          2332
+        ],
+        [
+          422,
+          2332
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "不貪巧店唷鍾",
+      "points": [
+        [
+          440,
+          2454
+        ],
+        [
+          1650,
+          2454
+        ],
+        [
+          1650,
+          2566
+        ],
+        [
+          440,
+          2566
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "鐄箕藩𢬭𢚸空仕",
+      "points": [
+        [
+          428,
+          2677
+        ],
+        [
+          2267,
+          2677
+        ],
+        [
+          2267,
+          2791
+        ],
+        [
+          428,
+          2791
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "We're that that chu an ban.",
+      "points": [
+        [
+          433,
+          781
+        ],
+        [
+          1700,
+          781
+        ],
+        [
+          1700,
+          850
+        ],
+        [
+          433,
+          850
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Sieng nang tan tien du phân 0m no.",
+      "points": [
+        [
+          416,
+          1006
+        ],
+        [
+          2107,
+          1006
+        ],
+        [
+          2107,
+          1088
+        ],
+        [
+          416,
+          1088
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Nha gi�n co' dung bô chid thê.",
+      "points": [
+        [
+          425,
+          1221
+        ],
+        [
+          1909,
+          1221
+        ],
+        [
+          1909,
+          1302
+        ],
+        [
+          425,
+          1302
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Wie nen sie san se mei stüng.",
+      "points": [
+        [
+          436,
+          1455
+        ],
+        [
+          1954,
+          1455
+        ],
+        [
+          1954,
+          1518
+        ],
+        [
+          436,
+          1518
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Je' ve-",
+      "points": [
+        [
+          416,
+          1664
+        ],
+        [
+          2114,
+          1664
+        ],
+        [
+          2114,
+          1743
+        ],
+        [
+          416,
+          1743
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Chên cho con chau hoang t long kiên xa,",
+      "points": [
+        [
+          425,
+          1897
+        ],
+        [
+          2110,
+          1897
+        ],
+        [
+          2110,
+          1961
+        ],
+        [
+          425,
+          1961
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Je s'enfoue. Je s'enfoue.",
+      "points": [
+        [
+          427,
+          2122
+        ],
+        [
+          1889,
+          2122
+        ],
+        [
+          1889,
+          2185
+        ],
+        [
+          427,
+          2185
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Nguyen phận không bàn bò càng không.",
+      "points": [
+        [
+          388,
+          2348
+        ],
+        [
+          1943,
+          2348
+        ],
+        [
+          1943,
+          2420
+        ],
+        [
+          388,
+          2420
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Bai tham la cai bai chung,",
+      "points": [
+        [
+          415,
+          2571
+        ],
+        [
+          1698,
+          2571
+        ],
+        [
+          1698,
+          2638
+        ],
+        [
+          415,
+          2638
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Wang Kia do' chie long hlong den Si.",
+      "points": [
+        [
+          413,
+          2796
+        ],
+        [
+          2098,
+          2796
+        ],
+        [
+          2098,
+          2875
+        ],
+        [
+          413,
+          2875
+        ]
+      ],
+      "status": "ok"
+    }
+  ]
+}

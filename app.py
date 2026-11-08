@@ -154,6 +154,7 @@ def make_handler(data_dir: Path, type_file: Path):
                     self._send_json({"error": f"Không tìm thấy PDF: {name}"}, status=404)
                 else:
                     self._send_json({"job": ocr_jobs.job_status(book), "paddle": ocr_engines.PADDLE.status(),
+                                     "vintern": ocr_engines.VINTERN_WORKER.status(),
                                      "folders": ocr_jobs.folder_status(book),
                                      "ppocrlabel_running": ocr_jobs.ppocrlabel_running()})
             elif path == "/api/thumb":
@@ -189,8 +190,8 @@ def make_handler(data_dir: Path, type_file: Path):
 
         def do_POST(self):
             path = urllib.parse.urlparse(self.path).path
-            if path not in ("/api/save", "/api/split", "/api/pages/tag", "/api/ocr/preload", "/api/ocr/run",
-                            "/api/ppocrlabel/open"):
+            if path not in ("/api/save", "/api/split", "/api/pages/tag", "/api/pages/spread", "/api/ocr/preload",
+                            "/api/ocr/run", "/api/ocr/folder", "/api/ppocrlabel/open"):
                 self.send_error(404)
                 return
             try:
@@ -205,7 +206,21 @@ def make_handler(data_dir: Path, type_file: Path):
                     split_jobs.kick_autotag(data_dir, type_file)  # loại sách mới: gán lại ch/vi tự động
                     self._send_json({"success": True, **result})
                 elif path == "/api/ocr/preload":
-                    self._send_json({"success": True, "paddle": ocr_engines.PADDLE.preload()})
+                    model = str(payload.get("model", "paddle"))   # mô hình cần nạp: paddle (mặc định) hoặc vintern
+                    if model not in ("paddle", "vintern"):
+                        raise ValueError(f"Mô hình không hợp lệ: {model!r}")
+                    holder = ocr_engines.VINTERN_WORKER if model == "vintern" else ocr_engines.PADDLE
+                    holder.preload()
+                    self._send_json({"success": True, "paddle": ocr_engines.PADDLE.status(),
+                                     "vintern": ocr_engines.VINTERN_WORKER.status()})
+                elif path == "/api/ocr/folder":
+                    # OCR riêng một thư mục: box = kimhannom | paddleocr | row_projection | existing, text = kimhannom | paddleocr | vintern | none
+                    book = library.find_book(data_dir, str(payload.get("name", "")))
+                    if book is None:
+                        raise ValueError("Không tìm thấy PDF.")
+                    ocr_jobs.start_pipeline(book, str(payload.get("folder", "")), str(payload.get("box", "")), str(payload.get("text", "")),
+                                            overwrite=bool(payload.get("overwrite", False)), use_cache=bool(payload.get("use_cache", True)))
+                    self._send_json({"success": True})
                 elif path in ("/api/ocr/run", "/api/ppocrlabel/open"):
                     book = library.find_book(data_dir, str(payload.get("name", "")))
                     if book is None:
@@ -215,7 +230,9 @@ def make_handler(data_dir: Path, type_file: Path):
                         if not isinstance(engines, dict):
                             raise ValueError("Trường 'engines' phải là object {nhãn: engine}.")
                         ocr_jobs.start_ocr(book, engines, bool(payload.get("overwrite", False)),
-                                           use_cache=bool(payload.get("use_cache", True)))
+                                           use_cache=bool(payload.get("use_cache", True)),
+                                           read_text=bool(payload.get("read_text", True)),
+                                           folders=payload.get("folders"))
                         self._send_json({"success": True})
                     else:
                         self._send_json({"success": True, **ocr_jobs.open_ppocrlabel(book, str(payload.get("folder", "")))})
@@ -227,6 +244,16 @@ def make_handler(data_dir: Path, type_file: Path):
                     if not isinstance(pages, list):
                         raise ValueError("Thiếu trường 'pages'.")
                     changed = page_cache.set_tags(book, pages, str(payload.get("tag", "")))
+                    self._send_json({"success": True, "changed": changed})
+                elif path == "/api/pages/spread":
+                    book = library.find_book(data_dir, str(payload.get("name", "")))
+                    if book is None:
+                        raise ValueError("Không tìm thấy PDF.")
+                    pages = payload.get("pages")
+                    if not isinstance(pages, list):
+                        raise ValueError("Thiếu trường 'pages'.")
+                    spread = payload.get("spread")   # 1, 2 hoặc null (tự đoán theo tỉ lệ ảnh)
+                    changed = page_cache.set_spread(book, pages, int(spread) if spread is not None else None)
                     self._send_json({"success": True, "changed": changed})
                 else:
                     split_jobs.start_split(data_dir, type_file, str(payload.get("name", "")),

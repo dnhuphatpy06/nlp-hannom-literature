@@ -1,0 +1,500 @@
+{
+  "engine": "row_text",
+  "page": 8,
+  "saved": "2026-11-07T20:21:52.499425",
+  "image": {
+    "name": "Nhât Tỉnh Ngâm, Nôm_Y.008.jpg",
+    "sha256": "c170be15debecfd520e748285854a8c697f5004583c449c8a32b38d51bb876b3",
+    "size": 958652
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    },
+    "paddleocr": {
+      "engine": "transformers",
+      "pipeline_version": "v1",
+      "prompt_label": "ocr",
+      "use_doc_orientation_classify": false,
+      "use_doc_unwarping": false,
+      "use_layout_detection": false
+    },
+    "row_projection": {
+      "bg_kernel": 25,
+      "blob_dilate": 0.3,
+      "blob_mass": 0.35,
+      "edge_ratio": 0.05,
+      "ink_thresh": null,
+      "line_len": null,
+      "margin": 6,
+      "merge_gap": 2,
+      "min_height": 8,
+      "min_width_ratio": 0.4,
+      "near_gap": 0.35,
+      "no_auto_crop": false,
+      "no_clean_x": false,
+      "no_post": false,
+      "pad": 2,
+      "peak_prom": 0.2,
+      "post_min_rows": 4,
+      "punct_gap": 2.0,
+      "punct_size": 0.45,
+      "roi": null,
+      "save_crops": false,
+      "sliver_gap": 0.15,
+      "sliver_max_height": 1.35,
+      "sliver_ratio": 0.45,
+      "sliver_x_overlap": 0.5,
+      "smooth": 2.5,
+      "thr_ratio": 0.012,
+      "valley_ratio": 0.6,
+      "x_trim": 0.5
+    },
+    "tag": "ch_vi"
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "傷喂𠃩𡦂𥾽勞",
+      "points": [
+        [
+          531,
+          688
+        ],
+        [
+          1722,
+          688
+        ],
+        [
+          1722,
+          792
+        ],
+        [
+          531,
+          792
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "𡖵𣈜餒𠰺别包功程",
+      "points": [
+        [
+          526,
+          911
+        ],
+        [
+          2168,
+          911
+        ],
+        [
+          2168,
+          1005
+        ],
+        [
+          526,
+          1005
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "恩溇世麻情𥗾世",
+      "points": [
+        [
+          527,
+          1129
+        ],
+        [
+          1947,
+          1129
+        ],
+        [
+          1947,
+          1232
+        ],
+        [
+          527,
+          1232
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "道爫𡥵𢧚𢪀報壈",
+      "points": [
+        [
+          524,
+          1359
+        ],
+        [
+          1956,
+          1359
+        ],
+        [
+          1956,
+          1457
+        ],
+        [
+          524,
+          1457
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "晨昏：𣇜空巾",
+      "points": [
+        [
+          517,
+          1578
+        ],
+        [
+          1719,
+          1578
+        ],
+        [
+          1719,
+          1684
+        ],
+        [
+          517,
+          1684
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "㐌咍朝𠰘吏𢧚朝𢚸",
+      "points": [
+        [
+          515,
+          1807
+        ],
+        [
+          2169,
+          1807
+        ],
+        [
+          2169,
+          1906
+        ],
+        [
+          515,
+          1906
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "𢀭𢀨怒婦𠽓羅孝",
+      "points": [
+        [
+          517,
+          2020
+        ],
+        [
+          1951,
+          2020
+        ],
+        [
+          1951,
+          2137
+        ],
+        [
+          517,
+          2137
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "𪬡尼葵共𢝙",
+      "points": [
+        [
+          505,
+          2254
+        ],
+        [
+          1958,
+          2254
+        ],
+        [
+          1958,
+          2361
+        ],
+        [
+          505,
+          2361
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "𬌥孫𣅶无𧋆",
+      "points": [
+        [
+          509,
+          2484
+        ],
+        [
+          1734,
+          2484
+        ],
+        [
+          1734,
+          2591
+        ],
+        [
+          509,
+          2591
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "朋𣅶群𤮿裴羅欣",
+      "points": [
+        [
+          506,
+          2716
+        ],
+        [
+          2174,
+          2716
+        ],
+        [
+          2174,
+          2815
+        ],
+        [
+          506,
+          2815
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Chuong oi chin chu cu lao,",
+      "points": [
+        [
+          497,
+          797
+        ],
+        [
+          1754,
+          797
+        ],
+        [
+          1754,
+          891
+        ],
+        [
+          497,
+          891
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Dem ngay nuai glay biel lao cong think",
+      "points": [
+        [
+          502,
+          1018
+        ],
+        [
+          2179,
+          1018
+        ],
+        [
+          2179,
+          1114
+        ],
+        [
+          502,
+          1114
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "an sau thé ma tinh naig thé,",
+      "points": [
+        [
+          521,
+          1238
+        ],
+        [
+          1968,
+          1238
+        ],
+        [
+          1968,
+          1329
+        ],
+        [
+          521,
+          1329
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Qao lam con nên nghè báo oెn,",
+      "points": [
+        [
+          493,
+          1459
+        ],
+        [
+          1997,
+          1459
+        ],
+        [
+          1997,
+          1562
+        ],
+        [
+          493,
+          1562
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "15 - Chân hôn hải l以为 thông quản",
+      "points": [
+        [
+          303,
+          1688
+        ],
+        [
+          1812,
+          1688
+        ],
+        [
+          1812,
+          1769
+        ],
+        [
+          303,
+          1769
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Da hay chüe miéng lai nén chüe long,",
+      "points": [
+        [
+          488,
+          1913
+        ],
+        [
+          2193,
+          1913
+        ],
+        [
+          2193,
+          2021
+        ],
+        [
+          488,
+          2021
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Giàu sang no đinh chung là hใu.",
+      "points": [
+        [
+          486,
+          2144
+        ],
+        [
+          1994,
+          2144
+        ],
+        [
+          1994,
+          2234
+        ],
+        [
+          486,
+          2234
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Nghèo hēn này nàu chào càng nèi,",
+      "points": [
+        [
+          480,
+          2366
+        ],
+        [
+          1980,
+          2366
+        ],
+        [
+          1980,
+          2467
+        ],
+        [
+          480,
+          2467
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Era, gié du chêté nuivé,",
+      "points": [
+        [
+          486,
+          2587
+        ],
+        [
+          1781,
+          2587
+        ],
+        [
+          1781,
+          2682
+        ],
+        [
+          486,
+          2682
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "20. Sao bâng lué sông ngol lui là hàn.",
+      "points": [
+        [
+          291,
+          2811
+        ],
+        [
+          2170,
+          2811
+        ],
+        [
+          2170,
+          2914
+        ],
+        [
+          291,
+          2914
+        ]
+      ]
+    }
+  ]
+}

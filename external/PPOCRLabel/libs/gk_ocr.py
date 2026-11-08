@@ -1,4 +1,4 @@
-# [GK] Thay mô hình PP-OCR của PPOCRLabel bằng 3 engine OCR của dự án (Kim Hán Nôm, PaddleOCR-VL, row_projection).
+# [GK] Thay mô hình PP-OCR của PPOCRLabel bằng các chế độ OCR của dự án (Kim Hán Nôm, PaddleOCR-VL, tách hàng row_projection + Kim Hán Nôm/PaddleOCR-VL/Vintern).
 #
 # PPOCRLabel gốc nạp 11 mô hình (PaddleOCR, TextRecognition, TextDetection, PPStructureV3) ngay khi khởi động, mất 1-2 phút. Bản này không nạp
 # gì cả: các lớp dưới đây giữ đúng giao diện `predict(...)` mà PPOCRLabel gọi, nhưng chuyển việc cho scripts/engine_bridge.py của dự án.
@@ -29,12 +29,23 @@ def bridge():
     return engine_bridge
 
 
+def events():
+    """scripts/ocr_events.py: log, tiến độ và lệnh Dừng của các engine (lấy trực tiếp, không qua cầu nối)."""
+    if str(PROJECT_ROOT) not in sys.path:
+        sys.path.insert(0, str(PROJECT_ROOT))
+    from scripts import ocr_events
+
+    return ocr_events
+
+
 class EngineState:
     """Engine đang chọn và thư mục ảnh đang mở, dùng chung cho các lớp bên dưới."""
 
     def __init__(self, folder_getter):
-        self.engine = "auto"            # auto | kimhannom | paddleocr | row_projection
+        self.engine = "auto"            # auto | khoá "box+chữ" (vd. row_projection+vintern, kimhannom+none, existing+paddleocr), xem engine_bridge
         self.folder_getter = folder_getter
+        self.quiet = False              # đang chạy hàng loạt (khung OCR log): lỗi chỉ ghi vào log, báo một lần khi xong thay vì hộp thoại từng box
+        self.task = None                # both | detect | read | selected (nhớ để mở lại hộp thoại đúng lựa chọn); None = chưa chọn
         self.last_error = None
 
     def folder(self):
@@ -48,6 +59,9 @@ class EngineState:
         message = str(error) or type(error).__name__
         logger.error("OCR engine: %s", message)
         self.last_error = message
+        events().log(message, "error")
+        if self.quiet:
+            return
         app = QApplication.instance()
         if app is not None and QThread.currentThread() == app.thread():
             QMessageBox.warning(None, "OCR", message)
@@ -72,6 +86,8 @@ class EngineOCR:
                 raise RuntimeError("Thiếu đường dẫn ảnh để nhận dạng cả trang.")
             boxes, engine, cached = bridge().recognize_page(image_path, self.state.engine)
             logger.info("OCR trang %s bằng %s%s: %d box", Path(image_path).name, engine, " (cache)" if cached else "", len(boxes))
+        except events().Cancelled:   # người dùng bấm Dừng ở khung OCR log
+            events().log("Đã dừng.", "warn")
         except Exception as e:  # một ảnh lỗi không được làm sập vòng nhận dạng hàng loạt
             self.state.fail(e)
         return [{

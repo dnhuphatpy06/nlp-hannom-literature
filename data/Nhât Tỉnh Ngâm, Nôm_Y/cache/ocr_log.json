@@ -3,57 +3,72 @@
     "6": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:10:56.753454",
-      "cached": false,
+      "at": "2026-11-07T21:30:32.402554",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
-        "ch": 3,
-        "vi": 3
+        "ch": 3
       }
     },
     "7": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:10:58.371743",
-      "cached": false,
+      "at": "2026-11-07T21:30:32.432619",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
-        "ch": 10,
-        "vi": 10
+        "ch": 10
       }
     },
     "8": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:00.140065",
-      "cached": false,
+      "at": "2026-11-07T21:30:32.464003",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
-        "ch": 10,
-        "vi": 10
+        "ch": 10
       }
     },
     "9": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:02.239138",
-      "cached": false,
+      "at": "2026-11-07T21:30:32.493907",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
-        "ch": 10,
-        "vi": 10
+        "ch": 10
       }
     },
     "10": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:04.241014",
-      "cached": false,
+      "at": "2026-11-07T21:30:32.518939",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
-        "ch": 10,
-        "vi": 10
+        "ch": 10
       }
     },
     "11": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:06.315405",
+      "at": "2026-11-07T20:23:45.840157",
       "cached": false,
       "boxes": {
         "ch": 10,
@@ -63,7 +78,7 @@
     "12": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:07.994343",
+      "at": "2026-11-07T20:24:21.903575",
       "cached": false,
       "boxes": {
         "ch": 10,
@@ -73,7 +88,7 @@
     "13": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:09.509441",
+      "at": "2026-11-07T20:24:58.601935",
       "cached": false,
       "boxes": {
         "ch": 10,
@@ -83,7 +98,7 @@
     "14": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:11.480581",
+      "at": "2026-11-07T20:25:35.601719",
       "cached": false,
       "boxes": {
         "ch": 10,
@@ -93,7 +108,7 @@
     "15": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:13.291832",
+      "at": "2026-11-07T20:27:55.868390",
       "cached": false,
       "boxes": {
         "ch": 10,
@@ -103,7 +118,7 @@
     "16": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:14.933180",
+      "at": "2026-11-07T20:28:29.941495",
       "cached": false,
       "boxes": {
         "ch": 10,
@@ -113,7 +128,7 @@
     "17": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:16.645015",
+      "at": "2026-11-07T20:29:03.948262",
       "cached": false,
       "boxes": {
         "ch": 10,
@@ -123,7 +138,7 @@
     "18": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:18.340862",
+      "at": "2026-11-07T20:29:37.748640",
       "cached": false,
       "boxes": {
         "ch": 10,
@@ -133,8 +148,12 @@
     "19": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:20.130380",
+      "at": "2026-11-07T21:31:05.333899",
       "cached": false,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -143,8 +162,12 @@
     "20": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:21.689531",
+      "at": "2026-11-07T21:31:36.636279",
       "cached": false,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -153,8 +176,12 @@
     "21": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:23.514564",
+      "at": "2026-11-07T21:32:09.260705",
       "cached": false,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -163,8 +190,12 @@
     "22": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:25.293874",
+      "at": "2026-11-07T21:34:23.948530",
       "cached": false,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -173,8 +204,12 @@
     "23": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:27.081199",
+      "at": "2026-11-07T21:34:56.633808",
       "cached": false,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -183,8 +218,12 @@
     "24": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:28.604182",
+      "at": "2026-11-07T21:35:29.727453",
       "cached": false,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -193,8 +232,12 @@
     "25": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:29.824012",
+      "at": "2026-11-07T21:36:02.531051",
       "cached": false,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -203,8 +246,12 @@
     "26": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:31.175939",
+      "at": "2026-11-07T21:38:23.114037",
       "cached": false,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -213,8 +260,12 @@
     "27": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:32.797058",
+      "at": "2026-11-07T21:40:54.699053",
       "cached": false,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -223,8 +274,12 @@
     "28": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:34.301482",
+      "at": "2026-11-07T21:41:28.098207",
       "cached": false,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -233,8 +288,12 @@
     "29": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:35.970438",
+      "at": "2026-11-07T21:42:05.218681",
       "cached": false,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -243,8 +302,12 @@
     "30": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:37.647436",
+      "at": "2026-11-07T21:44:21.287330",
       "cached": false,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -253,8 +316,12 @@
     "31": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:39.193880",
+      "at": "2026-11-07T21:44:54.848006",
       "cached": false,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 0,
+      "errors": [],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -263,8 +330,49 @@
     "32": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:40.912096",
+      "at": "2026-11-07T21:46:57.211451",
       "cached": false,
+      "status": "partial",
+      "attempts": 3,
+      "empty_boxes": 6,
+      "errors": [
+        {
+          "folder": "ch",
+          "box": 5,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 6,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 7,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 8,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 9,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 10,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        }
+      ],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -273,8 +381,73 @@
     "33": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:43.126135",
+      "at": "2026-11-07T21:47:18.474999",
       "cached": false,
+      "status": "partial",
+      "attempts": 3,
+      "empty_boxes": 10,
+      "errors": [
+        {
+          "folder": "ch",
+          "box": 1,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 2,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 3,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 4,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 5,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 6,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 7,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 8,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 9,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 10,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        }
+      ],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -283,8 +456,73 @@
     "34": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:44.872921",
+      "at": "2026-11-07T21:47:49.308503",
       "cached": false,
+      "status": "partial",
+      "attempts": 3,
+      "empty_boxes": 10,
+      "errors": [
+        {
+          "folder": "ch",
+          "box": 1,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 2,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 3,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 4,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 5,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 6,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 7,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 8,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 9,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 10,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        }
+      ],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -293,8 +531,73 @@
     "35": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:46.581629",
+      "at": "2026-11-07T21:48:15.726312",
       "cached": false,
+      "status": "partial",
+      "attempts": 3,
+      "empty_boxes": 10,
+      "errors": [
+        {
+          "folder": "ch",
+          "box": 1,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 2,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 3,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 4,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 5,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 6,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 7,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 8,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 9,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 10,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        }
+      ],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -303,8 +606,73 @@
     "36": {
       "tag": "ch_vi",
       "engine": "row_projection",
-      "at": "2026-11-07T19:11:48.232806",
+      "at": "2026-11-07T21:48:41.043624",
       "cached": false,
+      "status": "partial",
+      "attempts": 3,
+      "empty_boxes": 10,
+      "errors": [
+        {
+          "folder": "ch",
+          "box": 1,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 2,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 3,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 4,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 5,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 6,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 7,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 8,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 9,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        },
+        {
+          "folder": "ch",
+          "box": 10,
+          "message": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+          "code": "000403"
+        }
+      ],
       "boxes": {
         "ch": 10,
         "vi": 10
@@ -351,6 +719,32 @@
       }
     }
   },
-  "updated": "2026-11-07T19:11:55.449246",
-  "failed": {}
+  "updated": "2026-11-07T21:48:41.051101",
+  "failed": {
+    "32": {
+      "status": "partial",
+      "attempts": 3,
+      "message": "ch/box 5: API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied (+5 lỗi khác)"
+    },
+    "33": {
+      "status": "partial",
+      "attempts": 3,
+      "message": "ch/box 1: API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied (+9 lỗi khác)"
+    },
+    "34": {
+      "status": "partial",
+      "attempts": 3,
+      "message": "ch/box 1: API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied (+9 lỗi khác)"
+    },
+    "35": {
+      "status": "partial",
+      "attempts": 3,
+      "message": "ch/box 1: API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied (+9 lỗi khác)"
+    },
+    "36": {
+      "status": "partial",
+      "attempts": 3,
+      "message": "ch/box 1: API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied (+9 lỗi khác)"
+    }
+  }
 }

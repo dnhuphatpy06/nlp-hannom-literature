@@ -1,0 +1,500 @@
+{
+  "engine": "row_text",
+  "page": 18,
+  "saved": "2026-11-07T20:29:37.741597",
+  "image": {
+    "name": "Nhât Tỉnh Ngâm, Nôm_Y.018.jpg",
+    "sha256": "c02dba852061cdf3e0994c38e861e41c6972a8a6a0e1de4eab18609743a8f845",
+    "size": 926089
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    },
+    "paddleocr": {
+      "engine": "transformers",
+      "pipeline_version": "v1",
+      "prompt_label": "ocr",
+      "use_doc_orientation_classify": false,
+      "use_doc_unwarping": false,
+      "use_layout_detection": false
+    },
+    "row_projection": {
+      "bg_kernel": 25,
+      "blob_dilate": 0.3,
+      "blob_mass": 0.35,
+      "edge_ratio": 0.05,
+      "ink_thresh": null,
+      "line_len": null,
+      "margin": 6,
+      "merge_gap": 2,
+      "min_height": 8,
+      "min_width_ratio": 0.4,
+      "near_gap": 0.35,
+      "no_auto_crop": false,
+      "no_clean_x": false,
+      "no_post": false,
+      "pad": 2,
+      "peak_prom": 0.2,
+      "post_min_rows": 4,
+      "punct_gap": 2.0,
+      "punct_size": 0.45,
+      "roi": null,
+      "save_crops": false,
+      "sliver_gap": 0.15,
+      "sliver_max_height": 1.35,
+      "sliver_ratio": 0.45,
+      "sliver_x_overlap": 0.5,
+      "smooth": 2.5,
+      "thr_ratio": 0.012,
+      "valley_ratio": 0.6,
+      "x_trim": 0.5
+    },
+    "tag": "ch_vi"
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "掣餒不平",
+      "points": [
+        [
+          447,
+          656
+        ],
+        [
+          1635,
+          656
+        ],
+        [
+          1635,
+          764
+        ],
+        [
+          447,
+          764
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "怨𠊛𦼔共責𨉟買衙",
+      "points": [
+        [
+          440,
+          872
+        ],
+        [
+          2094,
+          872
+        ],
+        [
+          2094,
+          986
+        ],
+        [
+          440,
+          986
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "役忠孝仍矇報吏",
+      "points": [
+        [
+          432,
+          1096
+        ],
+        [
+          1877,
+          1096
+        ],
+        [
+          1877,
+          1203
+        ],
+        [
+          432,
+          1203
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "調柳然𠃣沛𠫾",
+      "points": [
+        [
+          437,
+          1329
+        ],
+        [
+          1858,
+          1329
+        ],
+        [
+          1858,
+          1434
+        ],
+        [
+          437,
+          1434
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "仰十我坤芇固𫥨之",
+      "points": [
+        [
+          288,
+          1546
+        ],
+        [
+          1643,
+          1546
+        ],
+        [
+          1643,
+          1650
+        ],
+        [
+          288,
+          1650
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "𤉚浪𠹾𤵺𡗋欺安𢢆",
+      "points": [
+        [
+          428,
+          1770
+        ],
+        [
+          2099,
+          1770
+        ],
+        [
+          2099,
+          1889
+        ],
+        [
+          428,
+          1889
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "音行伶惡",
+      "points": [
+        [
+          432,
+          1998
+        ],
+        [
+          1864,
+          1998
+        ],
+        [
+          1864,
+          2103
+        ],
+        [
+          432,
+          2103
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "𢖵𥙩勾次鵑制強",
+      "points": [
+        [
+          427,
+          2225
+        ],
+        [
+          1862,
+          2225
+        ],
+        [
+          1862,
+          2321
+        ],
+        [
+          427,
+          2321
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "忍箕鐄",
+      "points": [
+        [
+          441,
+          2447
+        ],
+        [
+          1634,
+          2447
+        ],
+        [
+          1634,
+          2548
+        ],
+        [
+          441,
+          2548
+        ]
+      ]
+    },
+    {
+      "folder": "ch",
+      "text": "𠬠𢚸底𤾓塘調咍一",
+      "points": [
+        [
+          429,
+          2673
+        ],
+        [
+          2267,
+          2673
+        ],
+        [
+          2267,
+          2798
+        ],
+        [
+          429,
+          2798
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Ke' sao aid mi bal binh.",
+      "points": [
+        [
+          447,
+          766
+        ],
+        [
+          1685,
+          766
+        ],
+        [
+          1685,
+          836
+        ],
+        [
+          447,
+          836
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Chu ngui mng mng mng mng mng",
+      "points": [
+        [
+          414,
+          994
+        ],
+        [
+          2125,
+          994
+        ],
+        [
+          2125,
+          1061
+        ],
+        [
+          414,
+          1061
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Wee Trung hièi nhèng meng bà lái,",
+      "points": [
+        [
+          428,
+          1213
+        ],
+        [
+          1882,
+          1213
+        ],
+        [
+          1882,
+          1290
+        ],
+        [
+          428,
+          1290
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Deu nho nhn al fhaí nhin di",
+      "points": [
+        [
+          420,
+          1432
+        ],
+        [
+          1874,
+          1432
+        ],
+        [
+          1874,
+          1507
+        ],
+        [
+          420,
+          1507
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Giant khin nao eo ro gi, - 115",
+      "points": [
+        [
+          404,
+          1661
+        ],
+        [
+          2111,
+          1661
+        ],
+        [
+          2111,
+          1742
+        ],
+        [
+          404,
+          1742
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Cha roing chu da' la' th' y en laih,",
+      "points": [
+        [
+          415,
+          1885
+        ],
+        [
+          2145,
+          1885
+        ],
+        [
+          2145,
+          1961
+        ],
+        [
+          415,
+          1961
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Nhin la thien trank lank la ac",
+      "points": [
+        [
+          408,
+          2106
+        ],
+        [
+          1904,
+          2106
+        ],
+        [
+          1904,
+          2179
+        ],
+        [
+          408,
+          2179
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Nhi' lây cải di nhuyె chê eung,",
+      "points": [
+        [
+          405,
+          2330
+        ],
+        [
+          1936,
+          2330
+        ],
+        [
+          1936,
+          2405
+        ],
+        [
+          405,
+          2405
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "Nhaim feia La chu tung vang.",
+      "points": [
+        [
+          399,
+          2556
+        ],
+        [
+          1704,
+          2556
+        ],
+        [
+          1704,
+          2622
+        ],
+        [
+          399,
+          2622
+        ]
+      ]
+    },
+    {
+      "folder": "vi",
+      "text": "bôt long de tinh Vn",
+      "points": [
+        [
+          400,
+          2794
+        ],
+        [
+          2124,
+          2794
+        ],
+        [
+          2124,
+          2897
+        ],
+        [
+          400,
+          2897
+        ]
+      ]
+    }
+  ]
+}

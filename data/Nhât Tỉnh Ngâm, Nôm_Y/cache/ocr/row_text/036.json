@@ -1,0 +1,550 @@
+{
+  "engine": "row_text",
+  "page": 36,
+  "saved": "2026-11-07T21:48:41.038374",
+  "image": {
+    "name": "Nhât Tỉnh Ngâm, Nôm_Y.036.jpg",
+    "sha256": "342583fac1a29c4d842f6cf0765c9a074c31fd91ee78d90d71491249bdf75f6b",
+    "size": 915043
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    },
+    "paddleocr": {
+      "engine": "transformers",
+      "pipeline_version": "v1",
+      "prompt_label": "ocr",
+      "use_doc_orientation_classify": false,
+      "use_doc_unwarping": false,
+      "use_layout_detection": false
+    },
+    "row_projection": {
+      "bg_kernel": 25,
+      "blob_dilate": 0.3,
+      "blob_mass": 0.35,
+      "edge_ratio": 0.05,
+      "ink_thresh": null,
+      "line_len": null,
+      "margin": 6,
+      "merge_gap": 2,
+      "min_height": 8,
+      "min_width_ratio": 0.4,
+      "near_gap": 0.35,
+      "no_auto_crop": false,
+      "no_clean_x": false,
+      "no_post": false,
+      "pad": 2,
+      "peak_prom": 0.2,
+      "post_min_rows": 4,
+      "punct_gap": 2.0,
+      "punct_size": 0.45,
+      "roi": null,
+      "save_crops": false,
+      "sliver_gap": 0.15,
+      "sliver_max_height": 1.35,
+      "sliver_ratio": 0.45,
+      "sliver_x_overlap": 0.5,
+      "smooth": 2.5,
+      "thr_ratio": 0.012,
+      "valley_ratio": 0.6,
+      "x_trim": 0.5
+    },
+    "tag": "ch_vi"
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          440,
+          672
+        ],
+        [
+          1657,
+          672
+        ],
+        [
+          1657,
+          781
+        ],
+        [
+          440,
+          781
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          439,
+          888
+        ],
+        [
+          2097,
+          888
+        ],
+        [
+          2097,
+          992
+        ],
+        [
+          439,
+          992
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          425,
+          1115
+        ],
+        [
+          1869,
+          1115
+        ],
+        [
+          1869,
+          1212
+        ],
+        [
+          425,
+          1212
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          437,
+          1336
+        ],
+        [
+          1865,
+          1336
+        ],
+        [
+          1865,
+          1441
+        ],
+        [
+          437,
+          1441
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          427,
+          1556
+        ],
+        [
+          1649,
+          1556
+        ],
+        [
+          1649,
+          1660
+        ],
+        [
+          427,
+          1660
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          435,
+          1781
+        ],
+        [
+          2081,
+          1781
+        ],
+        [
+          2081,
+          1884
+        ],
+        [
+          435,
+          1884
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          428,
+          2007
+        ],
+        [
+          1853,
+          2007
+        ],
+        [
+          1853,
+          2109
+        ],
+        [
+          428,
+          2109
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          412,
+          2235
+        ],
+        [
+          1861,
+          2235
+        ],
+        [
+          1861,
+          2335
+        ],
+        [
+          412,
+          2335
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          406,
+          2451
+        ],
+        [
+          1614,
+          2451
+        ],
+        [
+          1614,
+          2567
+        ],
+        [
+          406,
+          2567
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          412,
+          2678
+        ],
+        [
+          2258,
+          2678
+        ],
+        [
+          2258,
+          2793
+        ],
+        [
+          412,
+          2793
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+    },
+    {
+      "folder": "vi",
+      "text": "Ding gài tìn chǒn kě phòng,",
+      "points": [
+        [
+          415,
+          777
+        ],
+        [
+          1703,
+          777
+        ],
+        [
+          1703,
+          883
+        ],
+        [
+          415,
+          883
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "clui doi da ben thoi khong ra gi,",
+      "points": [
+        [
+          405,
+          1003
+        ],
+        [
+          2096,
+          1003
+        ],
+        [
+          2096,
+          1097
+        ],
+        [
+          405,
+          1097
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Lang choi mói dài zhì thái dài.",
+      "points": [
+        [
+          422,
+          1217
+        ],
+        [
+          1912,
+          1217
+        ],
+        [
+          1912,
+          1310
+        ],
+        [
+          422,
+          1310
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Ciu ngay ci kuo doi may doi",
+      "points": [
+        [
+          437,
+          1447
+        ],
+        [
+          1911,
+          1447
+        ],
+        [
+          1911,
+          1527
+        ],
+        [
+          437,
+          1527
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Eung gi co baung dai, 295",
+      "points": [
+        [
+          416,
+          1661
+        ],
+        [
+          2129,
+          1661
+        ],
+        [
+          2129,
+          1770
+        ],
+        [
+          416,
+          1770
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "A' ai choi b' na ngivi than ng",
+      "points": [
+        [
+          420,
+          1891
+        ],
+        [
+          2126,
+          1891
+        ],
+        [
+          2126,
+          1980
+        ],
+        [
+          420,
+          1980
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Da duïe mâl àl tha muïi do'",
+      "points": [
+        [
+          403,
+          2115
+        ],
+        [
+          1904,
+          2115
+        ],
+        [
+          1904,
+          2193
+        ],
+        [
+          403,
+          2193
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Laim an nuii thong bo nuii an",
+      "points": [
+        [
+          397,
+          2343
+        ],
+        [
+          1901,
+          2343
+        ],
+        [
+          1901,
+          2423
+        ],
+        [
+          397,
+          2423
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Nha gi� nên nèi khó khàn,",
+      "points": [
+        [
+          401,
+          2572
+        ],
+        [
+          1706,
+          2572
+        ],
+        [
+          1706,
+          2652
+        ],
+        [
+          401,
+          2652
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "He sang for a long time than giving him",
+      "points": [
+        [
+          396,
+          2789
+        ],
+        [
+          2115,
+          2789
+        ],
+        [
+          2115,
+          2886
+        ],
+        [
+          396,
+          2886
+        ]
+      ],
+      "status": "ok"
+    }
+  ]
+}

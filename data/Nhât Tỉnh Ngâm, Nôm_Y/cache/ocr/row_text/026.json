@@ -1,0 +1,520 @@
+{
+  "engine": "row_text",
+  "page": 26,
+  "saved": "2026-11-07T21:38:23.108542",
+  "image": {
+    "name": "Nhât Tỉnh Ngâm, Nôm_Y.026.jpg",
+    "sha256": "f1009e3778636de1458c3ffdeb29768a622e69eed2fe61fc2a0d668e772c6fb8",
+    "size": 946733
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    },
+    "paddleocr": {
+      "engine": "transformers",
+      "pipeline_version": "v1",
+      "prompt_label": "ocr",
+      "use_doc_orientation_classify": false,
+      "use_doc_unwarping": false,
+      "use_layout_detection": false
+    },
+    "row_projection": {
+      "bg_kernel": 25,
+      "blob_dilate": 0.3,
+      "blob_mass": 0.35,
+      "edge_ratio": 0.05,
+      "ink_thresh": null,
+      "line_len": null,
+      "margin": 6,
+      "merge_gap": 2,
+      "min_height": 8,
+      "min_width_ratio": 0.4,
+      "near_gap": 0.35,
+      "no_auto_crop": false,
+      "no_clean_x": false,
+      "no_post": false,
+      "pad": 2,
+      "peak_prom": 0.2,
+      "post_min_rows": 4,
+      "punct_gap": 2.0,
+      "punct_size": 0.45,
+      "roi": null,
+      "save_crops": false,
+      "sliver_gap": 0.15,
+      "sliver_max_height": 1.35,
+      "sliver_ratio": 0.45,
+      "sliver_x_overlap": 0.5,
+      "smooth": 2.5,
+      "thr_ratio": 0.012,
+      "valley_ratio": 0.6,
+      "x_trim": 0.5
+    },
+    "tag": "ch_vi"
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "仍勾勸善尼",
+      "points": [
+        [
+          424,
+          662
+        ],
+        [
+          1625,
+          662
+        ],
+        [
+          1625,
+          776
+        ],
+        [
+          424,
+          776
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "心𥱬𢚸胣𠤆𣈜芇𠅻",
+      "points": [
+        [
+          415,
+          888
+        ],
+        [
+          2057,
+          888
+        ],
+        [
+          2057,
+          998
+        ],
+        [
+          415,
+          998
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "𢬭調惡強𢧚勇𣵶",
+      "points": [
+        [
+          404,
+          1113
+        ],
+        [
+          1849,
+          1113
+        ],
+        [
+          1849,
+          1224
+        ],
+        [
+          404,
+          1224
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "𪧚之爫王因猶",
+      "points": [
+        [
+          411,
+          1342
+        ],
+        [
+          1834,
+          1342
+        ],
+        [
+          1834,
+          1449
+        ],
+        [
+          411,
+          1449
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "𪽝為動心神",
+      "points": [
+        [
+          411,
+          1567
+        ],
+        [
+          1614,
+          1567
+        ],
+        [
+          1614,
+          1667
+        ],
+        [
+          411,
+          1667
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "㐌居處𡄎吏𠴑呐味",
+      "points": [
+        [
+          414,
+          1784
+        ],
+        [
+          2083,
+          1784
+        ],
+        [
+          2083,
+          1884
+        ],
+        [
+          414,
+          1884
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "悴空沛𠹾浪空流",
+      "points": [
+        [
+          388,
+          2015
+        ],
+        [
+          1835,
+          2015
+        ],
+        [
+          1835,
+          2119
+        ],
+        [
+          388,
+          2119
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "爫𠊚𦼔别𥒃时坤",
+      "points": [
+        [
+          409,
+          2235
+        ],
+        [
+          1836,
+          2235
+        ],
+        [
+          1836,
+          2343
+        ],
+        [
+          409,
+          2343
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "玉箕窖𢯢时𧷺",
+      "points": [
+        [
+          405,
+          2462
+        ],
+        [
+          1631,
+          2462
+        ],
+        [
+          1631,
+          2570
+        ],
+        [
+          405,
+          2570
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "𤷱尼𥕄買共𤷱沛庄",
+      "points": [
+        [
+          390,
+          2687
+        ],
+        [
+          2262,
+          2687
+        ],
+        [
+          2262,
+          2794
+        ],
+        [
+          390,
+          2794
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Ning cào shuǐn thǒn duōi",
+      "points": [
+        [
+          368,
+          784
+        ],
+        [
+          1669,
+          784
+        ],
+        [
+          1669,
+          854
+        ],
+        [
+          368,
+          854
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Ghi long te gia cho ngay mao quem.",
+      "points": [
+        [
+          410,
+          1012
+        ],
+        [
+          2108,
+          1012
+        ],
+        [
+          2108,
+          1087
+        ],
+        [
+          410,
+          1087
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Dòi teü dé cang nên dung quyê",
+      "points": [
+        [
+          385,
+          1224
+        ],
+        [
+          1910,
+          1224
+        ],
+        [
+          1910,
+          1312
+        ],
+        [
+          385,
+          1312
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Cui chi lam cai néi nhan Tuan.",
+      "points": [
+        [
+          405,
+          1451
+        ],
+        [
+          1904,
+          1451
+        ],
+        [
+          1904,
+          1521
+        ],
+        [
+          405,
+          1521
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "B",
+      "points": [
+        [
+          385,
+          1673
+        ],
+        [
+          2097,
+          1673
+        ],
+        [
+          2097,
+          1751
+        ],
+        [
+          385,
+          1751
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Da cu xu biy lai an nvi xang.",
+      "points": [
+        [
+          387,
+          1899
+        ],
+        [
+          2116,
+          1899
+        ],
+        [
+          2116,
+          1975
+        ],
+        [
+          387,
+          1975
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Chief thong phai chue rang thong phai.",
+      "points": [
+        [
+          389,
+          2126
+        ],
+        [
+          1885,
+          2126
+        ],
+        [
+          1885,
+          2215
+        ],
+        [
+          389,
+          2215
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Lam ngivi ma bié dai phi khon.",
+      "points": [
+        [
+          397,
+          2350
+        ],
+        [
+          1898,
+          2350
+        ],
+        [
+          1898,
+          2445
+        ],
+        [
+          397,
+          2445
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Nge kié kheó suà théi rén.",
+      "points": [
+        [
+          369,
+          2576
+        ],
+        [
+          1662,
+          2576
+        ],
+        [
+          1662,
+          2644
+        ],
+        [
+          369,
+          2644
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "WELLY may may may",
+      "points": [
+        [
+          383,
+          2798
+        ],
+        [
+          2135,
+          2798
+        ],
+        [
+          2135,
+          2910
+        ],
+        [
+          383,
+          2910
+        ]
+      ],
+      "status": "ok"
+    }
+  ]
+}

@@ -460,5 +460,11 @@
     "sha256": "c3023331a2b3ac3cf62a6a0fc947d9c3314e20c0fed54efd9c17974e80bc4cfd",
     "file_name": "upload_cd2422cf24ed41e7bf39a41ee6a7998e.jpg",
     "uploaded_at": "2026-11-06T18:53:53+00:00"
+  },
+  {
+    "image_path": "img/test_ocr_1.png",
+    "sha256": "22f05d25a433b89e586ff534c79dc0a2a685fbe1be15fde68fdc721fd7911a88",
+    "file_name": "upload_d1ac0c083e50471caf2b586b44aeade5.png",
+    "uploaded_at": "2026-11-07T14:13:17+00:00"
   }
 ]

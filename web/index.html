@@ -122,6 +122,9 @@ details li { word-break: break-all; }
 .ocr-note { color: var(--muted); font-size: 13px; margin: 6px 0; }
 .ocr-note.warn { color: var(--warn-text); background: var(--warn-bg); padding: 8px 10px; border-radius: 8px; }
 .ocr-note.bad { color: var(--unknown-text); }
+.ocr-log { max-height: 220px; overflow: auto; font-size: 12px; white-space: pre-wrap; background: var(--warn-bg); color: var(--warn-text); padding: 8px 10px; border-radius: 8px; margin: 6px 0; }
+#ocrFailedList li { margin: 3px 0; }
+#ocrFailedList .badge.partial { background: var(--warn-bg); color: var(--warn-text); }
 .ocr-table select { max-width: 100%; }
 .ocr-table td.sub { color: var(--muted); font-size: 13px; }
 .ocr-table tr.dim td { opacity: .5; }
@@ -249,20 +252,22 @@ details li { word-break: break-all; }
         <div class="ocr-note" id="ocrNoOcr"></div>
         <div class="bar" style="margin-top:10px">
           <button class="primary" id="ocrRunBtn">Chạy OCR</button>
-          <label title="Mặc định chỉ OCR ảnh chưa có dòng trong Label.txt, để không mất phần đã sửa tay. Tích để OCR lại cả ảnh đã có (kể cả ảnh đã duyệt)."><input type="checkbox" id="ocrOverwrite"> Ghi đè nhãn đã có</label>
-          <label title="Mặc định ảnh đã chạy với đúng nguồn OCR đó (ảnh và tham số không đổi) thì lấy kết quả từ cache, không gọi lại API hay mô hình. Tích để gọi lại."><input type="checkbox" id="ocrNoCache"> Bỏ qua cache</label>
+          <label title="Mặc định: ảnh chưa có dòng trong Label.txt thì OCR; riêng row_projection có đọc chữ thì ảnh đã có dòng nhưng còn box chữ rỗng cũng được chạy, chỉ đọc các box rỗng đó, giữ nguyên box đã có chữ (kể cả đã sửa tay). Tích để thay toàn bộ box và chữ của mọi ảnh bằng kết quả máy (ảnh đã đọc nằm trong cache nên không tốn thời gian đọc lại, chỉ phần chưa đọc hoặc lỗi mới gọi API/mô hình)."><input type="checkbox" id="ocrOverwrite"> Ghi đè nhãn đã có</label>
+          <label title="Mặc định ảnh/box đã đọc với đúng nguồn OCR đó (ảnh và tham số không đổi) thì lấy kết quả từ cache, không gọi lại API hay mô hình. Tích để gọi lại tất cả."><input type="checkbox" id="ocrNoCache"> Bỏ qua cache</label>
+          <label title="Chỉ áp dụng cho nguồn row_projection: sau khi tách hàng, đọc chữ trong từng box (hàng Nôm: Kim Hán Nôm, cần TOKEN; hàng Quốc ngữ: PaddleOCR-VL, cần Nạp mô hình). Chỉ lấy chữ, không dùng box của hai engine này. Bỏ tích để chỉ tách hàng, chữ để trống."><input type="checkbox" id="ocrReadText" checked> Đọc chữ trong box (row_projection)</label>
         </div>
         <div class="ocr-note" id="ocrCacheInfo"></div>
         <div class="progress" id="ocrProgress"><div id="ocrProgressBar"></div></div>
         <div class="progress-text" id="ocrProgressText"></div>
         <details id="ocrFailedBox" style="display:none"><summary id="ocrFailedTitle"></summary><ul id="ocrFailedList"></ul></details>
+        <details id="ocrLogBox" style="display:none"><summary id="ocrLogTitle">Log chạy</summary><pre class="ocr-log" id="ocrLog"></pre></details>
       </div>
 
       <div class="ocr-section">
         <h2>Kiểm tra và chỉnh sửa bằng PPOCRLabel</h2>
         <div class="ocr-note" id="ppocrNote"></div>
         <table class="ocr-table">
-          <thead><tr><th>Thư mục</th><th>Ảnh</th><th>Đã có nhãn</th><th>Đã duyệt</th><th></th></tr></thead>
+          <thead><tr><th>Thư mục</th><th>Ảnh</th><th>Đã có nhãn</th><th title="Số ảnh còn ít nhất một box có chữ rỗng; chạy OCR (không ghi đè) sẽ điền các box này">Còn box trống</th><th>Đã duyệt</th><th></th></tr></thead>
           <tbody id="folderRows"></tbody>
         </table>
         <div class="ocr-note">Label.txt và fileState.txt nằm trong từng thư mục. Ảnh mới OCR ghi trạng thái 0 (chưa hoàn thành). Lưu ý: PPOCRLabel coi mọi ảnh có trong fileState.txt là đã hoàn thành (1) và ghi lại như vậy khi lưu, nên cột "Đã duyệt" chỉ đáng tin nếu bạn chỉ lưu sau khi đã kiểm tra hết ảnh.</div>
@@ -874,8 +879,8 @@ function renderOcr() {
   const usable = d.tags.some(t => t.pages && (ocrChoice[t.tag] || t.recommended) !== "skip");
   $("ocrRunBtn").disabled = running || !usable;
   $("ocrRunBtn").textContent = running ? "Đang chạy OCR…" : "Chạy OCR";
-  $("ocrOverwrite").disabled = $("ocrNoCache").disabled = running;
-  const cacheNames = { kimhannom: "Kim Hán Nôm", paddleocr: "PaddleOCR-VL", row_projection: "row_projection" };
+  $("ocrOverwrite").disabled = $("ocrNoCache").disabled = $("ocrReadText").disabled = running;
+  const cacheNames = { kimhannom: "Kim Hán Nôm", paddleocr: "PaddleOCR-VL", row_projection: "row_projection", row_text: "chữ trong box row_projection" };
   const cached = Object.entries(d.cache || {}).filter(([, n]) => n).map(([k, n]) => `${cacheNames[k] || k} ${n} ảnh`);
   $("ocrCacheInfo").textContent = cached.length
     ? `Cache kết quả OCR (cache/ocr/): ${cached.join(" · ")}. Ảnh đã có trong cache được dùng lại, không gọi API hay mô hình.`
@@ -892,12 +897,22 @@ function renderOcr() {
     $("ocrProgressText").textContent = "OCR dừng: " + job.error;
   } else if (job.status === "done") {
     $("ocrProgressText").style.color = "";
-    $("ocrProgressText").textContent = `Xong ${job.total} ảnh` + (job.cached ? `, ${job.cached} ảnh lấy từ cache` : "") + (job.skipped ? `, bỏ qua ${job.skipped} ảnh đã có nhãn` : "") + (job.failed.length ? `, ${job.failed.length} ảnh lỗi` : "") + ".";
+    const bad = job.failed.filter(f => f.status === "failed").length, partial = job.failed.length - bad;
+    $("ocrProgressText").textContent = `Xong ${job.total} ảnh: ${job.ok || 0} đủ` + (partial ? `, ${partial} chỉ đọc được một phần` : "") + (bad ? `, ${bad} lỗi (đã bỏ qua)` : "")
+      + (job.cached ? `, ${job.cached} ảnh lấy từ cache` : "") + (job.skipped ? `. Bỏ qua ${job.skipped} ảnh đã đủ chữ` : "") + ".";
   }
+  // ảnh lỗi: trạng thái lưu trong cache/ocr_log.json (failed = không đọc được gì, partial = một phần box lỗi), giữ tới khi OCR được
   const failed = Object.entries(d.failed || {});
+  const nFailed = failed.filter(([, f]) => f.status === "failed").length;
   $("ocrFailedBox").style.display = failed.length ? "" : "none";
-  $("ocrFailedTitle").textContent = `${failed.length} ảnh OCR lỗi (chạy lại để thử lại)`;
-  $("ocrFailedList").replaceChildren(...failed.map(([page, err]) => el("li", { textContent: `Trang ${pad3(page)}: ${err}` })));
+  $("ocrFailedTitle").textContent = `${failed.length} ảnh OCR lỗi` + (failed.length ? ` (${nFailed} lỗi hoàn toàn, ${failed.length - nFailed} một phần). Chạy lại để thử lại phần còn lỗi` : "");
+  $("ocrFailedList").replaceChildren(...failed.map(([page, f]) => el("li", {},
+    el("span", { className: "badge " + (f.status === "failed" ? "unknown" : "partial"), textContent: f.status === "failed" ? "lỗi" : "một phần" }),
+    ` Trang ${pad3(page)}` + (f.attempts ? ` · ${f.attempts} lần thử` : "") + `: ${f.message}`)));
+  const logLines = job.log || [];
+  $("ocrLogBox").style.display = logLines.length ? "" : "none";
+  $("ocrLogTitle").textContent = `Log chạy (${logLines.length} dòng gần nhất)`;
+  if (logLines.length) $("ocrLog").textContent = logLines.join("\n");
 
   // thư mục + PPOCRLabel
   const pp = d.ppocrlabel;
@@ -913,6 +928,7 @@ function renderOcr() {
       el("td", {}, el("b", { textContent: f.folder + "/" }), el("div", {}, el("code", { textContent: f.path }))),
       el("td", { className: "num", textContent: String(f.images) }),
       el("td", { className: "num", textContent: f.images ? `${f.labeled}/${f.images}` : "-" }),
+      el("td", { className: "num", textContent: f.images ? String(f.empty || 0) : "-" }),
       el("td", { className: "num", textContent: f.images ? `${f.done}/${f.images}` : "-" }),
       el("td", { className: "act" }, open));
   }));
@@ -922,7 +938,7 @@ async function runOcr() {
   const engines = {};
   for (const t of ocrData.tags) if (t.pages) engines[t.tag] = ocrChoice[t.tag] || t.recommended;
   try {
-    await api("/api/ocr/run", { name: currentBook.name, engines, overwrite: $("ocrOverwrite").checked, use_cache: !$("ocrNoCache").checked });
+    await api("/api/ocr/run", { name: currentBook.name, engines, overwrite: $("ocrOverwrite").checked, use_cache: !$("ocrNoCache").checked, read_text: $("ocrReadText").checked });
   } catch (e) { alert("Không bắt đầu được OCR: " + e.message); return; }
   $("ocrOverwrite").checked = $("ocrNoCache").checked = false;
   ocrData.job = { status: "running", done: 0, total: 0, cached: 0, current: "Đang chuẩn bị…", failed: [] };

@@ -4,6 +4,7 @@ Mỗi trang: {"tag": "unknown", "rotate": 0, "notes": "", "blank": {...}}.
   - Mọi trang mặc định có tag "unknown"; nhãn đã sửa được giữ nguyên khi tách trang lại.
   - "blank" là điểm của scripts/blank_detector.py; sau khi nhận diện, trang unknown bị coi là blank được gán tag "blank"
     (xem tag_unknown), trang đã có nhãn khác thì giữ nguyên.
+  - "spread": 1 | 2 (không bắt buộc) là bản chụp 1 trang hay 2 trang của trang ch; không có thì OCR tự đoán theo tỉ lệ ảnh.
   - "auto": true đánh dấu nhãn do máy tự gán (blank, ch/vi theo loại sách); gán tay (set_tags) xóa dấu này.
     Mục "autotag" ở cấp sách ghi loại sách đã dùng cho lần tự gán gần nhất.
 """
@@ -17,6 +18,7 @@ from .library import UNKNOWN, Book, norm, write_json_atomic
 DEFAULT_PAGE = {"tag": UNKNOWN, "rotate": 0, "notes": ""}
 # Nhãn trang hợp lệ: các thư mục trong "Quy định về dữ liệu nộp" (ch_vi = chép vào cả ch/ và vi/)
 PAGE_TAGS = {"ch", "vi", "ch_vi", "intro", "ref", "toc", "blank", "misc", UNKNOWN}
+SPREADS = (1, 2)   # "spread": số trang sách trong một ảnh (bản chụp 1 trang hay 2 trang), chỉ dùng cho trang ch
 
 _cache_lock = threading.Lock()  # đọc-sửa-ghi phan_loai.json phải tuần tự
 
@@ -113,6 +115,41 @@ def set_tags(book: Book, pages: list[int], tag: str) -> int:
         cache["last_updated"] = datetime.now().isoformat()
         write_json_atomic(book.page_cache_file, cache)
         return changed
+
+
+def set_spread(book: Book, pages: list[int], spread: int | None) -> int:
+    """Gán số trang trong một ảnh (1 hoặc 2) cho các trang; None xoá nhãn gán tay để OCR tự đoán theo tỉ lệ ảnh.
+
+    Dùng cho trang ch: bản chụp 2 trang được lọc nhiễu ở giữa và đánh số trang trái trước, trang phải sau
+    (ocr_engines.filter_spread_noise, order_boxes_spread). Trả về số trang đã đổi."""
+    if spread is not None and spread not in SPREADS:
+        raise ValueError(f"Số trang trong ảnh không hợp lệ: {spread!r}. Hợp lệ: 1, 2, hoặc bỏ trống để tự đoán.")
+    with _cache_lock:
+        cache = read_cache(book)
+        if cache is None:
+            raise ValueError("Sách chưa có cache trang. Hãy nhận diện hoặc tách trang trước.")
+        total = int(cache.get("total_pages", 0))
+        changed = 0
+        for number in {int(p) for p in pages}:
+            if not 1 <= number <= total:
+                raise ValueError(f"Trang {number} nằm ngoài khoảng 1–{total}.")
+            page = cache["pages"].setdefault(str(number), dict(DEFAULT_PAGE))
+            if page.get("spread") != spread:
+                changed += 1
+            if spread is None:
+                page.pop("spread", None)
+            else:
+                page["spread"] = spread
+        cache["last_updated"] = datetime.now().isoformat()
+        write_json_atomic(book.page_cache_file, cache)
+        return changed
+
+
+def page_spreads(book: Book) -> dict[int, int]:
+    """{số trang: 1 | 2} của các trang đã được gán tay; trang chưa gán không có mặt (OCR sẽ tự đoán)."""
+    cache = read_cache(book) or {}
+    return {int(n): p["spread"] for n, p in cache.get("pages", {}).items()
+            if isinstance(p, dict) and p.get("spread") in SPREADS}
 
 
 def tag_unknown(book: Book, pages: list[int], tag: str) -> int:

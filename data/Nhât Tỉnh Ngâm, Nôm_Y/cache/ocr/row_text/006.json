@@ -1,0 +1,198 @@
+{
+  "engine": "row_text",
+  "page": 6,
+  "saved": "2026-11-07T21:29:47.672739",
+  "image": {
+    "name": "Nhât Tỉnh Ngâm, Nôm_Y.006.jpg",
+    "sha256": "0fce3e38dee31c16e7f794813837b32c0f72abd0ec884266dd29cc9416963618",
+    "size": 831342
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    },
+    "paddleocr": {
+      "engine": "transformers",
+      "pipeline_version": "v1",
+      "prompt_label": "ocr",
+      "use_doc_orientation_classify": false,
+      "use_doc_unwarping": false,
+      "use_layout_detection": false
+    },
+    "row_projection": {
+      "bg_kernel": 25,
+      "blob_dilate": 0.3,
+      "blob_mass": 0.35,
+      "edge_ratio": 0.05,
+      "ink_thresh": null,
+      "line_len": null,
+      "margin": 6,
+      "merge_gap": 2,
+      "min_height": 8,
+      "min_width_ratio": 0.4,
+      "near_gap": 0.35,
+      "no_auto_crop": false,
+      "no_clean_x": false,
+      "no_post": false,
+      "pad": 2,
+      "peak_prom": 0.2,
+      "post_min_rows": 4,
+      "punct_gap": 2.0,
+      "punct_size": 0.45,
+      "roi": null,
+      "save_crops": false,
+      "sliver_gap": 0.15,
+      "sliver_max_height": 1.35,
+      "sliver_ratio": 0.45,
+      "sliver_x_overlap": 0.5,
+      "smooth": 2.5,
+      "thr_ratio": 0.012,
+      "valley_ratio": 0.6,
+      "x_trim": 0.5
+    },
+    "tag": "ch_vi"
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "日省吟",
+      "points": [
+        [
+          886,
+          817
+        ],
+        [
+          1571,
+          817
+        ],
+        [
+          1571,
+          948
+        ],
+        [
+          886,
+          948
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "敬岌三年新",
+      "points": [
+        [
+          638,
+          1396
+        ],
+        [
+          1862,
+          1396
+        ],
+        [
+          1862,
+          1500
+        ],
+        [
+          638,
+          1500
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "福文堂藏梭",
+      "points": [
+        [
+          751,
+          1671
+        ],
+        [
+          1749,
+          1671
+        ],
+        [
+          1749,
+          1775
+        ],
+        [
+          751,
+          1775
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Nôel Tinh ngam",
+      "points": [
+        [
+          734,
+          968
+        ],
+        [
+          1617,
+          968
+        ],
+        [
+          1617,
+          1074
+        ],
+        [
+          734,
+          1074
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Khai dinh tarn miin tain thuyen.",
+      "points": [
+        [
+          610,
+          1515
+        ],
+        [
+          1936,
+          1515
+        ],
+        [
+          1936,
+          1605
+        ],
+        [
+          610,
+          1605
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "vi",
+      "text": "Shué ván duìng tóng bàn",
+      "points": [
+        [
+          728,
+          1788
+        ],
+        [
+          1728,
+          1788
+        ],
+        [
+          1728,
+          1875
+        ],
+        [
+          728,
+          1875
+        ]
+      ],
+      "status": "ok"
+    }
+  ]
+}
