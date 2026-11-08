@@ -23,3 +23,7 @@ data/*/cache/ocr/*/*
 !data/cache/.gitkeep
 !data/cache/type.json
 !data/cache/uploads.json
+# Từ điển dựng từ Unihan (scripts/nom_dict.py build): giữ file .json, bỏ file zip tải về
+!data/cache/dict/
+data/cache/dict/*
+!data/cache/dict/*.json

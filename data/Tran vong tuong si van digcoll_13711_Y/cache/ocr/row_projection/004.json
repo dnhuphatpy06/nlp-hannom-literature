@@ -1,0 +1,232 @@
+{
+  "engine": "row_projection",
+  "page": 4,
+  "saved": "2026-11-08T21:39:00.899441",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.004.jpg",
+    "sha256": "1c344fbeef25b261875e5c31531728673aa4c83bf428ac2f3bd012528151f5ac",
+    "size": 767477
+  },
+  "params": {
+    "bg_kernel": 25,
+    "blob_dilate": 0.3,
+    "blob_mass": 0.35,
+    "edge_ratio": 0.05,
+    "ink_thresh": null,
+    "line_len": null,
+    "margin": 6,
+    "merge_gap": 2,
+    "min_height": 8,
+    "min_width_ratio": 0.4,
+    "near_gap": 0.35,
+    "no_auto_crop": false,
+    "no_clean_x": false,
+    "no_post": false,
+    "pad": 2,
+    "peak_prom": 0.2,
+    "post_min_rows": 4,
+    "punct_gap": 2.0,
+    "punct_size": 0.45,
+    "roi": null,
+    "save_crops": false,
+    "sliver_gap": 0.15,
+    "sliver_max_height": 1.35,
+    "sliver_ratio": 0.45,
+    "sliver_x_overlap": 0.5,
+    "smooth": 2.5,
+    "thr_ratio": 0.012,
+    "valley_ratio": 0.6,
+    "x_trim": 0.5
+  },
+  "boxes": [
+    {
+      "text": "",
+      "points": [
+        [
+          416,
+          312
+        ],
+        [
+          1328,
+          312
+        ],
+        [
+          1328,
+          499
+        ],
+        [
+          416,
+          499
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          367,
+          495
+        ],
+        [
+          1351,
+          495
+        ],
+        [
+          1351,
+          624
+        ],
+        [
+          367,
+          624
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          574,
+          627
+        ],
+        [
+          1166,
+          627
+        ],
+        [
+          1166,
+          750
+        ],
+        [
+          574,
+          750
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          506,
+          802
+        ],
+        [
+          1195,
+          802
+        ],
+        [
+          1195,
+          926
+        ],
+        [
+          506,
+          926
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          499,
+          922
+        ],
+        [
+          1264,
+          922
+        ],
+        [
+          1264,
+          1014
+        ],
+        [
+          499,
+          1014
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          423,
+          1010
+        ],
+        [
+          1305,
+          1010
+        ],
+        [
+          1305,
+          1136
+        ],
+        [
+          423,
+          1136
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          392,
+          1132
+        ],
+        [
+          1352,
+          1132
+        ],
+        [
+          1352,
+          1226
+        ],
+        [
+          392,
+          1226
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          335,
+          1222
+        ],
+        [
+          1424,
+          1222
+        ],
+        [
+          1424,
+          1369
+        ],
+        [
+          335,
+          1369
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          299,
+          1365
+        ],
+        [
+          1446,
+          1365
+        ],
+        [
+          1446,
+          1500
+        ],
+        [
+          299,
+          1500
+        ]
+      ]
+    }
+  ]
+}

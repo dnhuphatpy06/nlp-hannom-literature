@@ -128,7 +128,16 @@ def read_log(book: Book) -> dict:
 
 
 def plan(book: Book) -> dict:
-    """Dữ liệu cho màn hình OCR: số trang theo nhãn, engine đề xuất, trạng thái thư mục."""
+    """Dữ liệu cho màn hình OCR: số trang theo nhãn, engine đề xuất, trạng thái thư mục.
+
+    Vào màn hình này thì chép ảnh trang vào ch/ vi/ ... theo nhãn (sync_folders) nếu chưa chép: nếu không, sách mới có thư mục
+    rỗng và hai nút "OCR thư mục này" / "Mở PPOCRLabel" bị khoá (chúng cần ảnh trong thư mục), mà trước đây ảnh chỉ được chép
+    khi một job OCR bắt đầu. Bỏ qua khi đang có job OCR hoặc PPOCRLabel đang mở (sync có thể xoá ảnh của trang đã đổi nhãn)."""
+    if job_status(book)["status"] != "running" and not ppocrlabel_running()["running"]:
+        try:
+            sync_folders(book)
+        except OSError:
+            pass   # không chép được thì vẫn trả dữ liệu hiện có; nút sẽ báo "chưa có ảnh"
     counts: dict[str, int] = {}
     for tag in page_tags(book).values():
         counts[tag] = counts.get(tag, 0) + 1
@@ -230,9 +239,10 @@ def row_text_engines(tag: str, engine: str = eng.ROW_PROJECTION, only: set[str] 
     return [eng.KIMHANNOM if f == "ch" else eng.row_reader(engine) for f in folders if only is None or f in only]
 
 
-def _row_split(raw: list[dict], tag: str) -> dict[str, list[dict]]:
-    """Box của row_projection chia về các thư mục: ch_vi lẻ/chẵn -> ch/vi, nhãn khác tất cả vào thư mục của nhãn."""
-    return eng.rows_to_scripts(raw) if tag == "ch_vi" else {folders_for(tag)[0]: raw}
+def _row_split(raw: list[dict], tag: str, alternate: bool = True) -> dict[str, list[dict]]:
+    """Box của row_projection chia về các thư mục: ch_vi lẻ/chẵn -> ch/vi (`alternate` False: mỗi thư mục nhận mọi hàng),
+    nhãn khác tất cả vào thư mục của nhãn."""
+    return eng.rows_to_scripts(raw, alternate=alternate) if tag == "ch_vi" else {folders_for(tag)[0]: raw}
 
 
 def _pkey(points) -> tuple:
@@ -277,7 +287,8 @@ def _load_row_records(book: Book, number: int, info: dict, params: dict, size: t
 
 
 def row_text_pass(book: Book, number: int, tag: str, image: Path, use_cache: bool = True, first: bool = True,
-                  wanted: dict | None = None, attempt: int = 1, reader: str = eng.VINTERN) -> tuple[dict[str, list[dict]], dict]:
+                  wanted: dict | None = None, attempt: int = 1, reader: str = eng.VINTERN,
+                  alternate: bool = True) -> tuple[dict[str, list[dict]], dict]:
     """MỘT lượt đọc chữ trong các box của row_projection (Kim Hán Nôm cho ch, Vintern-1B cho box còn lại). Chỉ đọc chữ,
     toạ độ box là của row_projection.
 
@@ -307,7 +318,7 @@ def row_text_pass(book: Book, number: int, tag: str, image: Path, use_cache: boo
     page = None
     reads, errors = 0, []
     out: dict[str, list[dict]] = {}
-    split = _row_split(raw, tag)
+    split = _row_split(raw, tag, alternate)
     total_boxes = sum(len(v) for f, v in split.items() if wanted is None or wanted.get(f, "skip") != "skip")
     done_boxes = 0
     for folder, boxes in split.items():
@@ -368,7 +379,7 @@ def effective_spread(book: Book, number: int, tag: str, width: int, height: int,
 
 def _ocr_page_once(book: Book, number: int, tag: str, engine: str, image: Path, use_cache: bool, read_text: bool,
                    wanted: dict | None, first: bool = True, attempt: int = 1,
-                   spread: int | None = None) -> tuple[dict[str, list[dict]], bool, dict]:
+                   spread: int | None = None, alternate: bool = True) -> tuple[dict[str, list[dict]], bool, dict]:
     """Một lượt OCR một ảnh: ({thư mục: [box PPOCRLabel]}, lấy_từ_cache, báo cáo). Lỗi của cả trang (engine cả trang, ảnh hỏng) được ném lên;
     lỗi từng box của row_projection nằm trong báo cáo `errors` (box lỗi để chữ rỗng). Báo cáo còn có `spread` (số trang trong ảnh) và
     `noise_removed` (số box nhiễu ở giữa đã xoá khỏi bản chụp 2 trang). `spread`: ghi đè nhãn trong cache (chủ yếu để kiểm thử)."""
@@ -379,7 +390,7 @@ def _ocr_page_once(book: Book, number: int, tag: str, engine: str, image: Path, 
     if engine in (eng.VINTERN, eng.ROW_PADDLEOCR):   # tách hàng bằng row_projection rồi đọc chữ từng hàng: đúng đường row_projection có đọc chữ
         engine, read_text = eng.ROW_PROJECTION, True
     if engine == eng.ROW_PROJECTION and read_text:
-        split, stats = row_text_pass(book, number, tag, image, use_cache, first, wanted, attempt, reader)
+        split, stats = row_text_pass(book, number, tag, image, use_cache, first, wanted, attempt, reader, alternate)
         cached = stats["reads"] == 0 and stats["raw_cached"]
         report["errors"] = stats["errors"]
         rows = [r for boxes in split.values() for r in boxes]
@@ -393,7 +404,7 @@ def _ocr_page_once(book: Book, number: int, tag: str, engine: str, image: Path, 
             raw = [b for b in raw if b.get("label") not in eng.PADDLE_SKIP_LABELS]
 
         if engine == eng.ROW_PROJECTION:
-            split = _row_split(raw, tag)
+            split = _row_split(raw, tag, alternate)
         elif tag == "ch_vi":
             split = {"ch": [b for b in raw if eng.is_han_text(b["text"])],
                      "vi": [b for b in raw if not eng.is_han_text(b["text"])]}
@@ -435,13 +446,15 @@ def _ocr_page_once(book: Book, number: int, tag: str, engine: str, image: Path, 
 
 
 def ocr_page(book: Book, number: int, tag: str, engine: str, image: Path,
-             use_cache: bool = True, read_text: bool = True, wanted: dict | None = None) -> tuple[dict[str, list[dict]], bool]:
+             use_cache: bool = True, read_text: bool = True, wanted: dict | None = None,
+             alternate: bool = True) -> tuple[dict[str, list[dict]], bool]:
     """Chạy (hoặc lấy từ cache) engine trên một ảnh, MỘT lượt, không thử lại. Trả về ({thư mục: [box PPOCRLabel]}, lấy_từ_cache).
 
     `read_text` chỉ có tác dụng với row_projection: đọc chữ trong từng box đã tách (xem row_text_pass); tắt thì box có chữ rỗng.
     Với row_projection mà mọi box đã đọc đều lỗi thì ném EngineError (đọc được một phần thì trả phần đó); dùng cho PPOCRLabel,
     còn bước OCR của app dùng ocr_page_report (thử lại, báo cáo từng box)."""
-    result, cached, report = _ocr_page_once(book, number, tag, engine, image, use_cache, read_text, wanted)
+    result, cached, report = _ocr_page_once(book, number, tag, engine, image, use_cache, read_text, wanted,
+                                                  alternate=alternate)
     if report["status"] == "failed":
         first_error = report["errors"][0]
         raise eng.EngineError(first_error["message"], code=first_error.get("code"))
@@ -449,7 +462,8 @@ def ocr_page(book: Book, number: int, tag: str, engine: str, image: Path,
 
 
 def ocr_page_report(book: Book, number: int, tag: str, engine: str, image: Path, use_cache: bool = True, read_text: bool = True,
-                    wanted: dict | None = None, attempts: int = MAX_PAGE_ATTEMPTS, on_event=None) -> tuple[dict, bool, dict]:
+                    wanted: dict | None = None, attempts: int = MAX_PAGE_ATTEMPTS, on_event=None,
+                    alternate: bool = True) -> tuple[dict, bool, dict]:
     """OCR một ảnh, tối đa `attempts` lượt: lỗi (cả trang hoặc từng box) thì nghỉ rồi thử lại; lượt sau chỉ đọc lại phần còn lỗi.
 
     Hết lượt vẫn lỗi thì KHÔNG ném lỗi: trả phần đọc được kèm báo cáo để nơi gọi bỏ qua trang này và chạy tiếp.
@@ -460,7 +474,8 @@ def ocr_page_report(book: Book, number: int, tag: str, engine: str, image: Path,
     for attempt in range(1, attempts + 1):
         try:
             result, cached, report = _ocr_page_once(book, number, tag, engine, image, use_cache if attempt == 1 else True,
-                                                    read_text, wanted, first=(attempt == 1), attempt=attempt)
+                                                    read_text, wanted, first=(attempt == 1), attempt=attempt,
+                                                    alternate=alternate)
             errors = report["errors"]
         except eng.EngineConfigError:
             raise
@@ -541,9 +556,10 @@ def validate_folders(folders) -> set[str] | None:
 
 
 def start_ocr(book: Book, engines: dict, overwrite: bool, use_cache: bool = True, read_text: bool = True,
-              folders=None, boxes_only: bool = False) -> None:
+              folders=None, boxes_only: bool = False, alternate: bool = True) -> None:
     """Chạy OCR nền. `folders`: chỉ OCR các thư mục này (vd. ["ch"]), không nhất thiết chạy hết; None = tất cả thư mục có trang.
-    `boxes_only`: chỉ lấy box, mọi chữ để trống (kể cả khi engine đọc luôn chữ như Kim Hán Nôm, PaddleOCR-VL)."""
+    `boxes_only`: chỉ lấy box, mọi chữ để trống (kể cả khi engine đọc luôn chữ như Kim Hán Nôm, PaddleOCR-VL).
+    `alternate`: trang ch_vi tách hàng bằng row_projection có lọc xen kẽ lẻ/chẵn về ch/vi (mặc định); False thì ch/ và vi/ đều nhận mọi hàng."""
     global _job
     chosen = validate_choices(engines)
     only = validate_folders(folders)
@@ -561,7 +577,7 @@ def start_ocr(book: Book, engines: dict, overwrite: bool, use_cache: bool = True
                              if name != engine and engine == eng.ROW_PROJECTION else " (đọc chữ trong box)" if name != engine else "")
                     raise ValueError(f"Engine {eng.ENGINE_LABELS[name]} (nhãn {tag}) chưa dùng được{extra}: {reason}")
     _begin_job(book)
-    threading.Thread(target=_run, args=(book, chosen, overwrite, use_cache, read_text, only, boxes_only), daemon=True).start()
+    threading.Thread(target=_run, args=(book, chosen, overwrite, use_cache, read_text, only, boxes_only, alternate), daemon=True).start()
 
 
 def _begin_job(book: Book) -> None:
@@ -579,7 +595,8 @@ def folder_tags(folder: str) -> list[str]:
     return [t for t in eng.OCR_TAGS if folder in folders_for(t)]
 
 
-def start_pipeline(book: Book, folder: str, box: str, text: str, overwrite: bool = False, use_cache: bool = True) -> None:
+def start_pipeline(book: Book, folder: str, box: str, text: str, overwrite: bool = False, use_cache: bool = True,
+                   alternate: bool = True) -> None:
     """OCR RIÊNG một thư mục với tổ hợp chọn riêng "ai tìm box" và "ai đọc chữ" (xem ocr_engines.pipeline_problem):
 
       box = kimhannom | paddleocr | row_projection   tìm box (kimhannom, paddleocr đọc luôn chữ; row_projection chỉ tách hàng)
@@ -604,7 +621,8 @@ def start_pipeline(book: Book, folder: str, box: str, text: str, overwrite: bool
     for tag in chosen:
         if engine not in eng.engines_for_tag(tag):
             raise ValueError(f"Nguồn {eng.ENGINE_LABELS[engine]} không dùng được cho trang nhãn {tag}.")
-    start_ocr(book, chosen, overwrite, use_cache, read_text=text != eng.TEXT_NONE, folders=[folder], boxes_only=text == eng.TEXT_NONE)
+    start_ocr(book, chosen, overwrite, use_cache, read_text=text != eng.TEXT_NONE, folders=[folder], boxes_only=text == eng.TEXT_NONE,
+              alternate=alternate)
 
 
 def _failed_entry(value) -> dict:
@@ -669,7 +687,7 @@ def _build_tasks(book: Book, chosen: dict[str, str], overwrite: bool,
 
 
 def _run(book: Book, chosen: dict[str, str], overwrite: bool, use_cache: bool = True, read_text: bool = True,
-         folders: set[str] | None = None, boxes_only: bool = False) -> None:
+         folders: set[str] | None = None, boxes_only: bool = False, alternate: bool = True) -> None:
     pending: dict[str, dict[str, list[dict]]] = {}
     log = read_log(book)
     log_pages = log.setdefault("pages", {})
@@ -695,7 +713,7 @@ def _run(book: Book, chosen: dict[str, str], overwrite: bool, use_cache: bool = 
                 _job.update(done=i - 1, current=f"Trang {number:03d} ({tag}, {eng.ENGINES[engine]['label']})")
             # lỗi cấu hình (thiếu TOKEN, chưa nạp mô hình) được ném lên và dừng job; lỗi khác nằm trong báo cáo
             result, from_cache, report = ocr_page_report(book, number, tag, engine, image, use_cache, read_text, wanted,
-                                                         on_event=_job_log)
+                                                         on_event=_job_log, alternate=alternate)
             status, errors = report["status"], report["errors"]
             if report.get("spread") == 2 and report.get("noise_removed"):
                 _job_log(f"Trang {number:03d}: bản chụp 2 trang, đã xoá {report['noise_removed']} box nhiễu ở giữa")

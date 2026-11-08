@@ -742,8 +742,11 @@ def run_row_projection(image: Path, debug_dir: Path) -> list[dict]:
     return boxes
 
 
-def rows_to_scripts(boxes: list[dict], first: str = "ch") -> dict[str, list[dict]]:
-    """Chia các hàng của trang chép tay (hàng Hán xen hàng Quốc ngữ) về ch và vi: hàng lẻ là `first`, hàng chẵn là phần còn lại."""
+def rows_to_scripts(boxes: list[dict], first: str = "ch", alternate: bool = True) -> dict[str, list[dict]]:
+    """Chia các hàng của trang chép tay (hàng Hán xen hàng Quốc ngữ) về ch và vi: hàng lẻ là `first`, hàng chẵn là phần còn lại.
+    `alternate` False: không lọc xen kẽ, mỗi thư mục nhận MỌI hàng (người dùng tự xoá hàng thừa)."""
+    if not alternate:
+        return {"ch": list(boxes), "vi": list(boxes)}
     other = "vi" if first == "ch" else "ch"
     return {first: boxes[0::2], other: boxes[1::2]}
 

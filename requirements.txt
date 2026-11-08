@@ -10,6 +10,7 @@ click==8.5.0
 numpy==2.3.5
 Pillow==13.0.0
 scipy==1.18.1
+openpyxl==3.1.5
 
 # Chỉ MỘT gói OpenCV. Dùng bản contrib 4.10.0.84 vì đây đúng là bản paddlex (do PaddleOCR kéo vào) ghim; nếu cài thêm
 # các gói OpenCV khác (bản thường hoặc bản headless), chúng ghi đè lẫn nhau lên thư mục cv2/ và gỡ một gói sẽ làm hỏng cv2.

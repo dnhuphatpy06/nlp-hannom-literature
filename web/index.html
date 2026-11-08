@@ -5,6 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Xử lý sách Hán Nôm</title>
 <style>
+/* Font Hán Nôm: nạp từ thư mục font/ qua route /font/ của app.py. Tên viết tắt "HN …" tránh trùng font hệ thống.
+   Trình duyệt chỉ tải một font khi có ký tự mà các font đứng trước trong danh sách chưa có. */
+@font-face { font-family: "HN HAN NOM A"; src: url("/font/HAN%20NOM%20A.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "HN HAN NOM B"; src: url("/font/HAN%20NOM%20B.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "HN Han-Nom Minh"; src: url("/font/Han-Nom%20Minh%20Regular%202022%2005%2031.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "HN Han-Nom Gothic"; src: url("/font/Han-Nom%20Gothic%20Regular%202022%2005%2031.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "HN Han-Nom Khai"; src: url("/font/Han-Nom%20Khai%20Regular%20050323.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "HN Han-Nom Kai"; src: url("/font/Han-Nom%20Kai%201.00.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "HN Nom Na Tong"; src: url("/font/NomNaTong-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "HN Nom Na Tong Light"; src: url("/font/NomNaTongLight.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "HN HanaMinA"; src: url("/font/HanaMinA.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "HN HanaMinB"; src: url("/font/HanaMinB.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "HN Han Nom 3.1"; src: url("/font/Han_nom.TTF") format("truetype"); font-display: swap; }
+@font-face { font-family: "HN Han-Nom Minh 1.42"; src: url("/font/Han-nom%20Minh%201.42.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "HN Han-Nom Khai 2023"; src: url("/font/Han-Nom-Khai-Regular-300623.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "HN Nom Na Tong 2"; src: url("/font/NomNaTong-Regular2.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "HN Nom Na Tong Light 2"; src: url("/font/NomNaTongLight2.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "HN Nom Na Tong OTF"; src: url("/font/NomNaTong-Regular.otf") format("opentype"); font-display: swap; }
 :root {
   --bg: #f6f7f9; --panel: #fff; --text: #1f2430; --muted: #6a7282; --line: #e2e5ea;
   --accent: #2563eb; --accent-text: #fff; --warn-bg: #fff4e5; --warn-text: #8a4b00;
@@ -20,7 +38,7 @@
   }
 }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.45 system-ui, "Segoe UI", sans-serif; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.45 system-ui, "Segoe UI", "HN HAN NOM A", "HN HAN NOM B", "HN Han-Nom Minh", "HN Han-Nom Gothic", "HN Han-Nom Khai", "HN Han-Nom Kai", "HN Nom Na Tong", "HN Nom Na Tong Light", "HN HanaMinA", "HN HanaMinB", "HN Han Nom 3.1", "HN Han-Nom Minh 1.42", "HN Han-Nom Khai 2023", "HN Nom Na Tong 2", "HN Nom Na Tong Light 2", "HN Nom Na Tong OTF", sans-serif; }
 .wrap { max-width: 1200px; margin: 0 auto; padding: 20px 16px 60px; }
 h1 { font-size: 20px; margin: 0 0 4px; word-break: break-word; }
 .sub { color: var(--muted); font-size: 13px; margin-bottom: 16px; word-break: break-all; }
@@ -94,6 +112,7 @@ details li { word-break: break-all; }
 .tag-menu button { display: block; width: 100%; text-align: left; border: 0; border-radius: 8px; padding: 8px 10px; background: transparent; }
 .tag-menu button:hover:not(:disabled) { background: var(--ok-bg); }
 .tag-menu .tname { font-weight: 700; }
+.tag-menu .menu-sep { border-top: 1px solid var(--line); border-radius: 0; margin-top: 4px; padding-top: 10px; }
 .tag-menu .tdesc { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
 .tag-info { width: min(420px, 90vw); padding: 10px 12px; }
 .tag-info .tinfo-row + .tinfo-row { margin-top: 10px; }
@@ -111,6 +130,10 @@ details li { word-break: break-all; }
 .opt span { color: var(--muted); }
 .dialog .foot { padding: 12px 18px; display: flex; justify-content: flex-end; gap: 8px; }
 .card .img { cursor: zoom-in; }
+.ocr-field { display: flex; flex-direction: column; gap: 4px; padding: 8px 10px 0; }
+.ocr-field label { font-size: 13px; color: var(--muted); }
+.ocr-field select { max-width: 100%; }
+#ocrDlgNote { padding: 8px 10px; }
 /* bước OCR */
 .step-switch { display: inline-flex; }
 .step-switch button { border-radius: 0; }
@@ -243,19 +266,16 @@ details li { word-break: break-all; }
         <div class="ocr-note" id="paddleNote"></div>
       </div>
 
+      <div class="ocr-section" id="vinternSection" style="display:none">
+        <h2>Mô hình Vintern-1B</h2>
+        <div class="ocr-status"><span class="dot" id="vinternDot"></span><span id="vinternText"></span>
+          <button class="primary" id="vinternLoadBtn" style="display:none">Nạp mô hình</button></div>
+        <div class="ocr-note" id="vinternNote"></div>
+      </div>
+
       <div class="ocr-section">
-        <h2>Nguồn OCR theo loại trang</h2>
-        <table class="ocr-table">
-          <thead><tr><th>Nhãn</th><th>Số trang</th><th>Nguồn OCR</th><th>Ghi chú</th></tr></thead>
-          <tbody id="ocrRows"></tbody>
-        </table>
-        <div class="ocr-note" id="ocrNoOcr"></div>
-        <div class="bar" style="margin-top:10px">
-          <button class="primary" id="ocrRunBtn">Chạy OCR</button>
-          <label title="Mặc định: ảnh chưa có dòng trong Label.txt thì OCR; riêng row_projection có đọc chữ thì ảnh đã có dòng nhưng còn box chữ rỗng cũng được chạy, chỉ đọc các box rỗng đó, giữ nguyên box đã có chữ (kể cả đã sửa tay). Tích để thay toàn bộ box và chữ của mọi ảnh bằng kết quả máy (ảnh đã đọc nằm trong cache nên không tốn thời gian đọc lại, chỉ phần chưa đọc hoặc lỗi mới gọi API/mô hình)."><input type="checkbox" id="ocrOverwrite"> Ghi đè nhãn đã có</label>
-          <label title="Mặc định ảnh/box đã đọc với đúng nguồn OCR đó (ảnh và tham số không đổi) thì lấy kết quả từ cache, không gọi lại API hay mô hình. Tích để gọi lại tất cả."><input type="checkbox" id="ocrNoCache"> Bỏ qua cache</label>
-          <label title="Chỉ áp dụng cho nguồn row_projection: sau khi tách hàng, đọc chữ trong từng box (hàng Nôm: Kim Hán Nôm, cần TOKEN; hàng Quốc ngữ: PaddleOCR-VL, cần Nạp mô hình). Chỉ lấy chữ, không dùng box của hai engine này. Bỏ tích để chỉ tách hàng, chữ để trống."><input type="checkbox" id="ocrReadText" checked> Đọc chữ trong box (row_projection)</label>
-        </div>
+        <h2>Tiến trình OCR</h2>
+        <div class="ocr-note" id="ocrHint">Chọn thư mục ở bảng bên dưới rồi bấm <b>OCR thư mục này</b>: một cửa sổ cho bạn chọn phát hiện box và/hoặc đọc chữ, và dùng engine nào.</div>
         <div class="ocr-note" id="ocrCacheInfo"></div>
         <div class="progress" id="ocrProgress"><div id="ocrProgressBar"></div></div>
         <div class="progress-text" id="ocrProgressText"></div>
@@ -264,16 +284,36 @@ details li { word-break: break-all; }
       </div>
 
       <div class="ocr-section">
-        <h2>Kiểm tra và chỉnh sửa bằng PPOCRLabel</h2>
+        <h2>OCR riêng từng thư mục và kiểm tra bằng PPOCRLabel</h2>
         <div class="ocr-note" id="ppocrNote"></div>
         <table class="ocr-table">
           <thead><tr><th>Thư mục</th><th>Ảnh</th><th>Đã có nhãn</th><th title="Số ảnh còn ít nhất một box có chữ rỗng; chạy OCR (không ghi đè) sẽ điền các box này">Còn box trống</th><th>Đã duyệt</th><th></th></tr></thead>
           <tbody id="folderRows"></tbody>
         </table>
-        <div class="ocr-note">Label.txt và fileState.txt nằm trong từng thư mục. Ảnh mới OCR ghi trạng thái 0 (chưa hoàn thành). Lưu ý: PPOCRLabel coi mọi ảnh có trong fileState.txt là đã hoàn thành (1) và ghi lại như vậy khi lưu, nên cột "Đã duyệt" chỉ đáng tin nếu bạn chỉ lưu sau khi đã kiểm tra hết ảnh.</div>
+        <div class="ocr-note">Bấm <b>OCR thư mục này</b> để chỉ OCR một thư mục (không cần chạy hết) bằng nguồn đang chọn ở bảng trên. Label.txt và fileState.txt nằm trong từng thư mục. Ảnh mới OCR ghi trạng thái 0 (chưa hoàn thành). Lưu ý: PPOCRLabel coi mọi ảnh có trong fileState.txt là đã hoàn thành (1) và ghi lại như vậy khi lưu, nên cột "Đã duyệt" chỉ đáng tin nếu bạn chỉ lưu sau khi đã kiểm tra hết ảnh.</div>
       </div>
     </div>
   </section>
+</div>
+
+<div class="overlay" id="ocrOverlay">
+  <div class="dialog" role="dialog" aria-modal="true" aria-labelledby="ocrDlgTitle">
+    <h2 id="ocrDlgTitle">OCR thư mục</h2>
+    <div class="file" id="ocrDlgInfo"></div>
+    <div class="opts">
+      <div id="ocrTaskOpts"></div>
+      <div class="ocr-field" id="ocrBoxField"><label for="ocrBoxSel">Phát hiện box bằng</label><select id="ocrBoxSel"></select></div>
+      <div class="ocr-field" id="ocrTextField"><label for="ocrTextSel">Đọc chữ bằng</label><select id="ocrTextSel"></select></div>
+      <div class="ocr-note" id="ocrDlgNote"></div>
+      <label class="opt" id="ocrAltRow"><input type="checkbox" id="ocrDlgAlternate"><div><b>Lọc xen kẽ hàng ch/vi</b><span id="ocrAltText"></span></div></label>
+      <label class="opt"><input type="checkbox" id="ocrDlgOverwrite"><div><b id="ocrDlgOverwriteTitle"></b><span id="ocrDlgOverwriteText"></span></div></label>
+      <label class="opt"><input type="checkbox" id="ocrDlgNoCache"><div><b>Bỏ qua cache</b><span>Gọi lại API hoặc mô hình thay vì dùng kết quả đã lưu trong cache/ocr/.</span></div></label>
+    </div>
+    <div class="foot">
+      <button id="ocrDlgCancel">Hủy</button>
+      <button class="primary" id="ocrDlgRun">Chạy OCR</button>
+    </div>
+  </div>
 </div>
 
 <div class="overlay" id="overlay">
@@ -595,6 +635,7 @@ function renderGrid() {
     const pick = el("input", { type: "checkbox", className: "pick", checked: selected.has(p), title: "Chọn trang này" });
     pick.onchange = () => { if (pick.checked) selected.add(p); else selected.delete(p); updateBlankSummary(); };
     const right = el("span", { className: "right" });
+    if (tag === "ch" && info.spread) right.append(el("span", { className: "badge", textContent: info.spread + " trang", title: "Bản chụp " + info.spread + " trang (gán tay)" }));
     right.append(typeBadge(tag));
     const card = el("div", { className: "card" }, pick, box,
       el("div", { className: "cap" }, el("span", { textContent: "Trang " + pad3(p) }), right));
@@ -697,10 +738,33 @@ function togglePopup(popupId, buttonId) {
   $(buttonId).setAttribute("aria-expanded", String(open));
 }
 
+// Bản chụp 1 trang hay 2 trang của trang ch: 2 trang thì OCR xoá box nhiễu ở giữa và đánh số trang trái trước, trang phải sau.
+// null = bỏ gán tay, OCR tự đoán theo tỉ lệ ảnh (ảnh nằm ngang là 2 trang).
+const SPREAD_CHOICES = [[1, "Bản chụp 1 trang"], [2, "Bản chụp 2 trang"], [null, "Bản chụp: tự đoán"]];
+
+async function spreadSelected(spread) {
+  const name = currentBook.name;
+  const pages = [...selected].sort((a, b) => a - b);
+  if (!pages.length) return;
+  try {
+    const r = await api("/api/pages/spread", { name, pages, spread });
+    toast(`Đã đặt ${spread === null ? "tự đoán" : spread + " trang/ảnh"} cho ${r.changed} trang`);
+    await openBook(name, true);
+  } catch (e) {
+    alert("Không đặt được số trang trong ảnh: " + e.message);
+  }
+}
+
 function buildTagMenu() {
   $("tagMenu").replaceChildren(...TAG_INFO.map(({ tag }) => {
     const item = el("button", { type: "button", role: "menuitem" }, el("span", { className: "tname", textContent: tag }));
     item.onclick = () => { closeTagMenu(); tagSelected(tag); };
+    return item;
+  }), ...SPREAD_CHOICES.map(([spread, label], i) => {
+    const item = el("button", { type: "button", role: "menuitem", className: i === 0 ? "menu-sep" : "" },
+      el("span", { className: "tname", textContent: label }),
+      el("span", { className: "tdesc", textContent: "Cho trang ch đang chọn" }));
+    item.onclick = () => { closeTagMenu(); spreadSelected(spread); };
     return item;
   }));
   $("tagInfo").replaceChildren(...TAG_INFO.map(({ tag, desc }) =>
@@ -811,7 +875,8 @@ async function pollOcr() {
   const running = st.job.status === "running";
   const wasLabeling = !!(ocrData.ppocrlabel && ocrData.ppocrlabel.running);
   const labeling = !!(st.ppocrlabel_running && st.ppocrlabel_running.running);
-  ocrData.job = st.job; ocrData.paddle = st.paddle; ocrData.folders = st.folders;
+  ocrData.job = st.job; ocrData.paddle = st.paddle; ocrData.vintern = st.vintern;
+  ocrData.folders = st.folders.map(f => ({ ...(ocrData.folders || []).find(o => o.folder === f.folder), ...f }));
   if (ocrData.ppocrlabel) Object.assign(ocrData.ppocrlabel, { running: labeling, folder: labeling ? st.ppocrlabel_running.folder : undefined });
   if (wasLabeling && !labeling) toast("Đã đóng PPOCRLabel");
   if (ocrWasRunning && !running) {
@@ -820,11 +885,10 @@ async function pollOcr() {
   }
   ocrWasRunning = running;
   renderOcr();
-  if (!running && !labeling && st.paddle.state !== "loading") { clearInterval(ocrTimer); ocrTimer = null; }
+  if (!running && !labeling && st.paddle.state !== "loading" && (!st.vintern || st.vintern.state !== "loading")) { clearInterval(ocrTimer); ocrTimer = null; }
 }
 
-function paddleLine() {
-  const p = ocrData.paddle;
+function modelLine(p) {
   const map = {
     idle: ["", "Chưa nạp mô hình"], loading: ["loading", "Đang nạp mô hình…"],
     ready: ["ready", "Sẵn sàng" + (p.device ? ` (${p.device}${p.seconds ? ", nạp " + p.seconds + "s" : ""})` : "")],
@@ -836,10 +900,10 @@ function paddleLine() {
 function renderOcr() {
   const d = ocrData; if (!d) return;
   // Mục mô hình chỉ hiện khi có nhãn đang chọn PaddleOCR-VL (hoặc mô hình đang nạp/đã nạp)
-  const usesPaddle = d.tags.some(t => t.pages && (ocrChoice[t.tag] || t.recommended) === "paddleocr");
+  const usesPaddle = true;   // trạng thái hai mô hình luôn hiện để nạp trước khi chạy
   const state = d.paddle.state;
   $("paddleSection").style.display = usesPaddle || state === "loading" || state === "ready" ? "" : "none";
-  const [cls, text] = paddleLine();
+  const [cls, text] = modelLine(d.paddle);
   $("paddleDot").className = "dot " + cls;
   $("paddleText").textContent = text;
   $("paddleLoadBtn").style.display = state === "idle" || state === "error" ? "" : "none";
@@ -849,37 +913,23 @@ function renderOcr() {
     : state === "loading" ? "Đang nạp, có thể chạy OCR ngay: các ảnh sẽ đợi nạp xong."
     : state === "ready" ? "Mô hình đã nạp, dùng chung cho mọi ảnh và mọi sách cho tới khi tắt app." : "";
 
+  // Vintern-1B: dùng khi có nhãn chọn nguồn Vintern, hoặc ch_vi chọn row_projection có đọc chữ (hàng Quốc ngữ đọc bằng Vintern)
+  const vt = d.vintern || { state: "idle" };
+  const usesVintern = true;
+  $("vinternSection").style.display = usesVintern || vt.state === "loading" || vt.state === "ready" ? "" : "none";
+  const [vcls, vtext] = modelLine(vt);
+  $("vinternDot").className = "dot " + vcls;
+  $("vinternText").textContent = vtext;
+  $("vinternLoadBtn").style.display = vt.state === "idle" || vt.state === "error" ? "" : "none";
+  $("vinternLoadBtn").textContent = vt.state === "error" ? "Nạp lại" : "Nạp mô hình";
+  $("vinternNote").textContent =
+    vt.state === "idle" || vt.state === "error" ? "Vintern chạy ở tiến trình Python riêng (VINTERN_PYTHON). Bấm Nạp mô hình để nạp trước (lần đầu có thể phải tải ~2 GB); không bấm thì nó tự nạp ở lần đọc chữ đầu tiên."
+    : vt.state === "loading" ? "Đang nạp, có thể chạy OCR ngay: các hàng sẽ đợi nạp xong."
+    : vt.state === "ready" ? "Mô hình đã nạp, dùng chung cho mọi ảnh và mọi sách cho tới khi tắt app." : "";
+
   const job = d.job || { status: "none" };
   const running = job.status === "running";
 
-  // bảng chọn nguồn OCR theo nhãn
-  $("ocrRows").replaceChildren(...d.tags.map(t => {
-    const choice = ocrChoice[t.tag] || t.recommended;
-    const select = el("select", { disabled: running || !t.pages });
-    for (const [key, info] of Object.entries(d.engines)) {
-      select.append(el("option", { value: key, textContent: info.label + (key === t.recommended ? " (đề xuất)" : "") + (info.available ? " ⚠" : "") }));
-    }
-    select.append(el("option", { value: "skip", textContent: "Không OCR" }));
-    select.value = choice;
-    select.onchange = () => { ocrChoice[t.tag] = select.value; renderOcr(); };
-    const info = d.engines[choice];
-    const note = choice === "skip" ? "Chỉ chép ảnh vào thư mục, không tạo Label.txt cho trang này." : info.desc;
-    const warn = choice !== "skip" && info.available ? info.available : "";
-    return el("tr", { className: t.pages ? "" : "dim" },
-      el("td", {}, typeBadge(t.tag)), el("td", { className: "num", textContent: String(t.pages) }),
-      el("td", {}, select),
-      el("td", { className: "sub" }, note, ...(warn ? [el("div", { className: "ocr-note bad", textContent: warn })] : [])));
-  }));
-  const n = d.no_ocr;
-  $("ocrNoOcr").textContent =
-    `Không OCR: blank ${n.blank} · misc ${n.misc} (chỉ chép ảnh vào thư mục blank/, misc/).` +
-    (n.unknown ? ` ${n.unknown} trang còn nhãn unknown sẽ bị bỏ qua, hãy gán nhãn ở bước 1.` : "");
-
-  // nút chạy + tiến trình
-  const usable = d.tags.some(t => t.pages && (ocrChoice[t.tag] || t.recommended) !== "skip");
-  $("ocrRunBtn").disabled = running || !usable;
-  $("ocrRunBtn").textContent = running ? "Đang chạy OCR…" : "Chạy OCR";
-  $("ocrOverwrite").disabled = $("ocrNoCache").disabled = $("ocrReadText").disabled = running;
   const cacheNames = { kimhannom: "Kim Hán Nôm", paddleocr: "PaddleOCR-VL", row_projection: "row_projection", row_text: "chữ trong box row_projection" };
   const cached = Object.entries(d.cache || {}).filter(([, n]) => n).map(([k, n]) => `${cacheNames[k] || k} ${n} ảnh`);
   $("ocrCacheInfo").textContent = cached.length
@@ -924,23 +974,111 @@ function renderOcr() {
   $("folderRows").replaceChildren(...d.folders.map(f => {
     const open = el("button", { textContent: "Mở PPOCRLabel", disabled: !f.images || running || pp.running, title: f.images ? (pp.running ? "Đóng cửa sổ PPOCRLabel đang mở trước" : "") : "Thư mục chưa có ảnh" });
     open.onclick = () => openPPOCRLabel(f.folder);
+    const run = el("button", { textContent: "OCR thư mục này", disabled: !f.images || running || pp.running,
+      title: f.images ? "Chọn cách phát hiện box và đọc chữ cho thư mục " + f.folder + "/" : "Thư mục chưa có ảnh" });
+    run.onclick = () => openOcrDialog(f);
     return el("tr", { className: f.images ? "" : "dim" },
       el("td", {}, el("b", { textContent: f.folder + "/" }), el("div", {}, el("code", { textContent: f.path }))),
       el("td", { className: "num", textContent: String(f.images) }),
       el("td", { className: "num", textContent: f.images ? `${f.labeled}/${f.images}` : "-" }),
       el("td", { className: "num", textContent: f.images ? String(f.empty || 0) : "-" }),
       el("td", { className: "num", textContent: f.images ? `${f.done}/${f.images}` : "-" }),
-      el("td", { className: "act" }, open));
+      el("td", { className: "act" }, run, open));
   }));
 }
 
-async function runOcr() {
-  const engines = {};
-  for (const t of ocrData.tags) if (t.pages) engines[t.tag] = ocrChoice[t.tag] || t.recommended;
+// ---- popup "OCR thư mục này": chọn VIỆC CẦN LÀM, engine phát hiện box và engine đọc chữ
+const OCR_TASKS = [
+  ["both", "Phát hiện box và đọc chữ", "Tìm box mới rồi đọc chữ trong từng box."],
+  ["detect", "Chỉ phát hiện box", "Chỉ tìm box, chữ để trống (đọc chữ sau bằng \"Chỉ đọc chữ trên box đã có\" hoặc trong PPOCRLabel)."],
+  ["read", "Chỉ đọc chữ trên box đã có", "Không tìm box mới: giữ nguyên các box đang có trong Label.txt, chỉ điền chữ."],
+];
+let ocrDlgFolder = null;
+
+function ocrDlgChoice() {
+  const f = ocrDlgFolder;
+  const task = ($("ocrTaskOpts").querySelector("input:checked") || {}).value || "both";
+  const boxOpt = f.options.boxes.find(b => b.key === $("ocrBoxSel").value) || f.options.boxes[0];
+  const fixed = task === "both" ? boxOpt.text : null;   // Kim Hán Nôm / PaddleOCR-VL đọc chữ cùng lúc với box
+  const textKey = fixed || $("ocrTextSel").value;
+  return { task, boxOpt, fixed, box: task === "read" ? "existing" : boxOpt.key, text: task === "detect" ? "none" : textKey };
+}
+
+function refreshOcrDialog() {
+  const f = ocrDlgFolder, d = ocrData;
+  const { task, fixed, box, text } = ocrDlgChoice();
+  const detects = task !== "read", reads = task !== "detect";
+  $("ocrBoxField").style.display = detects ? "" : "none";
+  $("ocrTextField").style.display = reads ? "" : "none";
+  if (fixed) $("ocrTextSel").value = fixed;
+  $("ocrTextSel").disabled = !!fixed;
+  // trang có cả chữ Hán và Quốc ngữ (ch_vi) tách hàng bằng row_projection: lọc xen kẽ lẻ/chẵn về ch/vi hay mỗi thư mục nhận mọi hàng
+  const chVi = ((d.tags || []).find(t => t.tag === "ch_vi") || {}).pages || 0;
+  const altShown = detects && box === "row_projection" && ["ch", "vi"].includes(f.folder) && chVi > 0;
+  $("ocrAltRow").style.display = altShown ? "" : "none";
+  $("ocrAltText").textContent = f.folder === "ch"
+    ? `Tích: ch/ chỉ nhận hàng lẻ (hàng chữ Hán), hàng chẵn dành cho vi/. Bỏ tích: ch/ nhận mọi hàng của ${chVi} trang có cả hai loại chữ, tự xoá hàng thừa trong PPOCRLabel.`
+    : `Tích: vi/ chỉ nhận hàng chẵn (hàng Quốc ngữ), hàng lẻ dành cho ch/. Bỏ tích: vi/ nhận mọi hàng của ${chVi} trang có cả hai loại chữ, tự xoá hàng thừa trong PPOCRLabel.`;
+  const altOff = altShown && !$("ocrDlgAlternate").checked;
+  $("ocrDlgOverwriteTitle").textContent = task === "read" ? "Đọc lại cả box đã có chữ" : "Ghi đè ảnh đã có box";
+  $("ocrDlgOverwriteText").textContent = task === "read"
+    ? "Mặc định chỉ đọc các box còn trống, giữ nguyên chữ đã có (kể cả đã sửa tay). Tích để đọc lại mọi box."
+    : "Mặc định bỏ qua ảnh đã có dòng trong Label.txt (giữ phần đã sửa tay). Tích để thay toàn bộ box và chữ của mọi ảnh.";
+  // engine dùng trong lần chạy này: chưa dùng được thì báo lý do và không cho chạy
+  const used = task === "read" ? [text] : task === "detect" ? [box] : [box, text];
+  const reasons = [...new Set(used.map(k => (d.availability || {})[k]).filter(Boolean))];
+  const notes = [];
+  if (altOff && reads) notes.push("Không lọc xen kẽ mà vẫn đọc chữ: hàng không đúng loại chữ của thư mục sẽ bị đọc bằng engine của thư mục này (ra chữ rác); nên chọn \"Chỉ phát hiện box\".");
+  if (task === "read" && !f.labeled) notes.push("Thư mục này chưa có ảnh nào có box trong Label.txt: hãy phát hiện box trước.");
+  if (task === "read" && f.labeled && !(f.empty || 0)) notes.push("Mọi box đã có chữ: tích \"Đọc lại cả box đã có chữ\" nếu muốn đọc lại.");
+  $("ocrDlgNote").className = "ocr-note" + (reasons.length ? " bad" : "");
+  $("ocrDlgNote").textContent = [...reasons, ...notes].join(" ");
+  $("ocrDlgRun").disabled = reasons.length > 0 || (task === "read" && !f.labeled);
+}
+
+function openOcrDialog(f) {
+  ocrDlgFolder = f;
+  $("ocrDlgTitle").textContent = `OCR thư mục ${f.folder}/`;
+  $("ocrDlgInfo").textContent = `${f.images} ảnh · ${f.labeled}/${f.images} đã có box · ${f.empty || 0} ảnh còn box trống`;
+  $("ocrTaskOpts").replaceChildren(...OCR_TASKS.map(([key, label, desc], i) => {
+    const radio = el("input", { type: "radio", name: "ocrtask", value: key, checked: i === 0 });
+    radio.onchange = refreshOcrDialog;
+    return el("label", { className: "opt" }, radio, el("div", {}, el("b", { textContent: label }), el("span", { textContent: desc })));
+  }));
+  $("ocrBoxSel").replaceChildren(...f.options.boxes.map(b => el("option", { value: b.key, textContent: b.label })));
+  $("ocrTextSel").replaceChildren(...f.options.texts.map(t => el("option", { value: t.key, textContent: t.label })));
+  $("ocrBoxSel").onchange = refreshOcrDialog;
+  $("ocrDlgOverwrite").checked = $("ocrDlgNoCache").checked = false;
+  $("ocrDlgAlternate").checked = loadAlternate();
+  $("ocrDlgAlternate").onchange = () => { saveAlternate($("ocrDlgAlternate").checked); refreshOcrDialog(); };
+  $("ocrOverlay").classList.add("on");
+  refreshOcrDialog();
+}
+
+// Lựa chọn "lọc xen kẽ ch/vi" nhớ theo trình duyệt (mặc định: lọc)
+function loadAlternate() {
+  try { return localStorage.getItem("gk.ocr.alternate") !== "0"; } catch (e) { return true; }
+}
+function saveAlternate(on) {
+  try { localStorage.setItem("gk.ocr.alternate", on ? "1" : "0"); } catch (e) { /* không lưu được thì thôi */ }
+}
+
+function closeOcrDialog() { $("ocrOverlay").classList.remove("on"); ocrDlgFolder = null; }
+
+async function runOcrDialog() {
+  const f = ocrDlgFolder; if (!f) return;
+  const { box, text } = ocrDlgChoice();
+  const overwrite = $("ocrDlgOverwrite").checked, noCache = $("ocrDlgNoCache").checked;
   try {
-    await api("/api/ocr/run", { name: currentBook.name, engines, overwrite: $("ocrOverwrite").checked, use_cache: !$("ocrNoCache").checked, read_text: $("ocrReadText").checked });
+    // PaddleOCR-VL phải nạp trước (job chờ nạp xong): tự nạp nếu chưa
+    if ((box === "paddleocr" || text === "paddleocr") && ["idle", "error"].includes((ocrData.paddle || {}).state)) {
+      const r = await api("/api/ocr/preload", {});
+      ocrData.paddle = r.paddle.state === "loading" ? { state: "loading" } : r.paddle;
+    }
+    const alternate = $("ocrAltRow").style.display === "none" ? true : $("ocrDlgAlternate").checked;   // ô ẩn = không áp dụng: giữ lọc như cũ
+    await api("/api/ocr/folder", { name: currentBook.name, folder: f.folder, box, text, overwrite, use_cache: !noCache, alternate });
   } catch (e) { alert("Không bắt đầu được OCR: " + e.message); return; }
-  $("ocrOverwrite").checked = $("ocrNoCache").checked = false;
+  closeOcrDialog();
   ocrData.job = { status: "running", done: 0, total: 0, cached: 0, current: "Đang chuẩn bị…", failed: [] };
   ocrWasRunning = true;
   renderOcr();
@@ -959,7 +1097,9 @@ async function openPPOCRLabel(folder) {
 
 $("stepTagsBtn").onclick = () => showStep("tags");
 $("stepOcrBtn").onclick = () => showStep("ocr");
-$("ocrRunBtn").onclick = runOcr;
+$("ocrDlgCancel").onclick = closeOcrDialog;
+$("ocrDlgRun").onclick = runOcrDialog;
+$("ocrOverlay").addEventListener("click", e => { if (e.target === $("ocrOverlay")) closeOcrDialog(); });
 $("paddleLoadBtn").onclick = async () => {
   try {
     const r = await api("/api/ocr/preload", {});
@@ -968,6 +1108,15 @@ $("paddleLoadBtn").onclick = async () => {
   renderOcr();
   ensureOcrPolling();
 };
+$("vinternLoadBtn").onclick = async () => {
+  try {
+    const r = await api("/api/ocr/preload", { model: "vintern" });
+    ocrData.vintern = r.vintern.state === "loading" ? { state: "loading" } : r.vintern;   // unavailable: báo lý do
+  } catch (e) { alert("Không nạp được mô hình: " + e.message); return; }
+  renderOcr();
+  ensureOcrPolling();
+};
+
 
 $("search").oninput = render;
 $("filter").onchange = render;

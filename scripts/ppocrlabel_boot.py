@@ -26,6 +26,24 @@ def main() -> int:
     except Exception:
         pass
     sys.path.insert(0, str(EXTERNAL))
+    preload_vintern = "--preload-vintern" in sys.argv   # chỉ open_ppocrlabel.bat truyền cờ này
+    if preload_vintern:
+        sys.argv.remove("--preload-vintern")
+    if not any(a == "--lang" or a.startswith("--lang=") for a in sys.argv[1:]):
+        # Không truyền --lang: dùng đúng giá trị mà web truyền khi mở PPOCRLabel (PPOCRLABEL_LANG / PPOCRLABEL_CMD trong .env)
+        try:
+            sys.path.insert(0, str(EXTERNAL.parent))
+            from scripts import ocr_jobs
+            sys.argv[1:1] = ["--lang", ocr_jobs._ppocrlabel_lang()]
+        except Exception:
+            pass
+    if preload_vintern:
+        # Giống bấm "Nạp" Vintern-1B trong khung OCR log: nạp ở nền (worker riêng, VINTERN_PYTHON), cửa sổ hiện ngay, không chờ.
+        try:
+            from scripts import engine_bridge   # cùng module (cùng VINTERN_WORKER) mà PPOCRLabel dùng qua libs/gk_ocr.bridge()
+            engine_bridge.preload_model("vintern")
+        except Exception as e:
+            print(f"[canh bao] Khong nap truoc duoc Vintern: {e}", file=sys.stderr)
     from PPOCRLabel.PPOCRLabel import main as ppocrlabel_main
 
     return ppocrlabel_main()

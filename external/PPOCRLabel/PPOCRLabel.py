@@ -86,6 +86,9 @@ sys.path.append(os.path.join(__dir__, ""))
 # [GK] Không còn import paddle/paddleocr: nhận dạng chạy qua 3 engine của dự án (libs/gk_ocr.py)
 from libs.gk_ocr import EngineState, EngineOCR, EngineTextRecognition, EngineTextDetection, bridge, events as gk_events
 from libs.gk_ocr_log import OcrLogDock, set_ui_busy   # [GK] khung OCR log
+from libs import gk_fonts   # [GK] font Hán Nôm trong font/
+
+GK_SETTING_ALTERNATE = "gk_alternate"   # [GK] khoá trong cài đặt: lọc xen kẽ hàng ch/vi khi tách hàng trang có cả hai loại chữ
 import libs.resources
 from libs.constants import (
     SETTING_ADVANCE_MODE,
@@ -206,6 +209,7 @@ class MainWindow(QMainWindow):
         # [GK] Bản gốc nạp 11 mô hình PP-OCR ở đây (PaddleOCR, TextRecognition, TextDetection, PPStructureV3), mất 1-2 phút.
         # Giờ không nạp gì: nhận dạng đi qua 3 engine của dự án (Kim Hán Nôm, PaddleOCR-VL, row_projection), xem libs/gk_ocr.py.
         self.engine_state = EngineState(lambda: os.path.basename(os.path.normpath(self.lastOpenDir or "")))
+        self.engine_state.alternate = bool(self.settings.get(GK_SETTING_ALTERNATE, False))   # [GK] nhớ lựa chọn lọc xen kẽ ch/vi giữa các lần mở
         self.ocr = EngineOCR(self.engine_state)
         self.text_recognizer = EngineTextRecognition(self.engine_state)
         self.text_detector = EngineTextDetection()
@@ -327,6 +331,13 @@ class MainWindow(QMainWindow):
         self.DelButton.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
         self.ResortButton = QToolButton()
         self.ResortButton.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        # [GK] đổi thứ tự box: đảo ngược cả danh sách, đưa box đang chọn lên/xuống một vị trí
+        self.ReverseButton = QToolButton()
+        self.ReverseButton.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.MoveUpButton = QToolButton()
+        self.MoveUpButton.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.MoveDownButton = QToolButton()
+        self.MoveDownButton.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
 
         leftTopToolBox = QGridLayout()
         leftTopToolBox.addWidget(self.newButton, 0, 0, 1, 1)
@@ -422,6 +433,13 @@ class MainWindow(QMainWindow):
         leftbtmtoolboxcontainer = QWidget()
         leftbtmtoolboxcontainer.setLayout(leftbtmtoolbox)
         listLayout.addWidget(leftbtmtoolboxcontainer)
+        orderToolbox = QHBoxLayout()   # [GK] hàng nút đổi thứ tự box
+        orderToolbox.addWidget(self.ReverseButton)
+        orderToolbox.addWidget(self.MoveUpButton)
+        orderToolbox.addWidget(self.MoveDownButton)
+        orderToolboxContainer = QWidget()
+        orderToolboxContainer.setLayout(orderToolbox)
+        listLayout.addWidget(orderToolboxContainer)
 
         self.dock = QDockWidget(get_str("boxLabelText"), self)
         self.dock.setObjectName(get_str("labels"))
@@ -921,6 +939,32 @@ class MainWindow(QMainWindow):
             enabled=True,
         )
 
+        # [GK] Đổi thứ tự box (thứ tự trong danh sách = thứ tự dòng trong Label.txt)
+        reverseOrder = action(
+            "Đảo thứ tự box",
+            self.reverseBoxOrder,
+            "Ctrl+Shift+B",
+            "resort",
+            "Đảo ngược thứ tự mọi box của ảnh (box đầu thành box cuối)",
+            enabled=True,
+        )
+        moveBoxUp = action(
+            "Đưa box lên",
+            self.moveBoxUp,
+            "Alt+Up",
+            "prev",
+            "Đưa box đang chọn lên trước một vị trí trong danh sách",
+            enabled=True,
+        )
+        moveBoxDown = action(
+            "Đưa box xuống",
+            self.moveBoxDown,
+            "Alt+Down",
+            "next",
+            "Đưa box đang chọn xuống sau một vị trí trong danh sách",
+            enabled=True,
+        )
+
         settings_action = action(
             get_str("settings"),
             self.showSettingsDialog,
@@ -939,6 +983,9 @@ class MainWindow(QMainWindow):
         self.reRecogButton.setDefaultAction(reRec)
         self.tableRecButton.setDefaultAction(tableRec)
         self.ResortButton.setDefaultAction(resort)
+        self.ReverseButton.setDefaultAction(reverseOrder)
+        self.MoveUpButton.setDefaultAction(moveBoxUp)
+        self.MoveDownButton.setDefaultAction(moveBoxDown)
         # self.preButton.setDefaultAction(openPrevImg)
         # self.nextButton.setDefaultAction(openNextImg)
 
@@ -1032,6 +1079,9 @@ class MainWindow(QMainWindow):
             exportJSON=exportJSON,
             expand=expand,
             resort=resort,
+            reverseOrder=reverseOrder,
+            moveBoxUp=moveBoxUp,
+            moveBoxDown=moveBoxDown,
             fileMenuActions=(
                 opendir,
                 open_dataset_dir,
@@ -1053,6 +1103,9 @@ class MainWindow(QMainWindow):
                 singleRere,
                 cellreRec,
                 resort,
+                reverseOrder,
+                moveBoxUp,
+                moveBoxDown,
                 None,
                 undo,
                 undoLastPoint,
@@ -1283,6 +1336,10 @@ class MainWindow(QMainWindow):
                 self.label_font_family = QFontDatabase.applicationFontFamilies(
                     label_font_id
                 )[0]
+        if self.label_font_family is None:  # [GK] không chỉ định --label_font_path: dùng font Hán Nôm đầu tiên của dự án
+            gk_families = gk_fonts.load_project_fonts()
+            if gk_families:
+                self.label_font_family = gk_families[0]
 
         # selected shape color
         self.selected_shape_color = selected_shape_color
@@ -1928,6 +1985,14 @@ class MainWindow(QMainWindow):
             string.setTextAlignment(Qt.AlignHCenter | Qt.AlignVCenter)
             self.indexList.addItem(string)
 
+    def gkDetectOnly(self):
+        """[GK] Đang chạy "chỉ phát hiện box" (chữ để trống có chủ ý). Bản gốc bỏ mọi box có chữ rỗng khi lưu kết quả Auto
+        (coi là nhận dạng không ra chữ), nên chế độ này mất hết box: hộp thoại báo đủ vị trí nhưng ảnh không hiện box nào."""
+        if self.engine_state.task == "detect":
+            return True
+        parsed = bridge().eng.parse_pipeline(self.engine_state.engine)
+        return bool(parsed) and parsed[1] == bridge().eng.TEXT_NONE
+
     def saveLabels(self, annotationFilePath, mode="Auto"):
         # Mode is Auto means that labels will be loaded from self.result_dic totally, which is the output of ocr model
         annotationFilePath = annotationFilePath
@@ -1958,7 +2023,7 @@ class MainWindow(QMainWindow):
                     trans_dic.update({"key_cls": box[2]})
                 else:
                     trans_dic.update({"key_cls": "None"})
-            if trans_dic["label"] == "" and mode == "Auto":
+            if trans_dic["label"] == "" and mode == "Auto" and not self.gkDetectOnly():
                 continue
             shapes.append(trans_dic)
 
@@ -3628,6 +3693,13 @@ class MainWindow(QMainWindow):
         for widget in (self.panel, self.taskLabel, self.taskBox, self.taskHelp, self.boxLabel, self.boxBox, self.textLabel, self.textBox, self.dialogNote):
             vbox.addWidget(widget)
         # [GK] Chạy ngay trên ảnh đang mở (bản gốc chỉ lưu lựa chọn, người dùng tưởng "không có kết quả"); bỏ tích thì chỉ lưu lựa chọn cho Auto Recognition
+        # [GK] Trang có cả chữ Hán và Quốc ngữ (ch_vi) tách hàng bằng row_projection: lọc xen kẽ lẻ/chẵn hay thư mục này nhận mọi hàng (lưu lại)
+        self.alternateCheck = QCheckBox("Lọc xen kẽ hàng ch/vi (trang có cả hai loại chữ)")
+        self.alternateCheck.setObjectName("alternateCheck")
+        self.alternateCheck.setChecked(self.engine_state.alternate)
+        self.alternateNote = note("gray")
+        vbox.addWidget(self.alternateCheck)
+        vbox.addWidget(self.alternateNote)
         self.runNowCheck = QCheckBox("Chạy ngay trên ảnh đang mở")
         self.runNowCheck.setChecked(bool(self.filePath))
         self.runNowCheck.setEnabled(bool(self.filePath))
@@ -3664,6 +3736,15 @@ class MainWindow(QMainWindow):
             if run_now and task == "selected" and not n_selected:
                 problems.append("Chưa chọn box nào trên ảnh: hãy đóng hộp thoại, chọn box (hoặc Ctrl+Shift+A để chọn tất cả) rồi mở lại.")
             self.dialogNote.setText("\n".join(problems))
+            alt_shown = detects and folder in ("ch", "vi") and self.boxBox.currentData() == "row_projection"
+            self.alternateCheck.setVisible(alt_shown)
+            self.alternateNote.setVisible(alt_shown)
+            if alt_shown:
+                self.alternateNote.setText(
+                    ("Tích: %s/ chỉ nhận %s (hàng xen kẽ)." % (folder, "hàng lẻ" if folder == "ch" else "hàng chẵn"))
+                    + " Bỏ tích: %s/ nhận mọi hàng, tự xoá hàng thừa." % folder
+                    + ("" if self.alternateCheck.isChecked() or not reads else
+                       " Đang đọc chữ mà không lọc: hàng sai loại chữ sẽ ra chữ rác, nên chọn 'Chỉ phát hiện box'."))
             # chỉ chặn khi định chạy ngay mà engine chưa dùng được hoặc chưa chọn box; chỉ lưu lựa chọn thì luôn cho phép
             self.okBtn.setEnabled(not (run_now and problems))
             self.okBtn.setText("Chạy" if run_now else "Lưu lựa chọn")
@@ -3672,6 +3753,7 @@ class MainWindow(QMainWindow):
         self.boxBox.currentIndexChanged.connect(refreshChoices)
         self.textBox.currentIndexChanged.connect(refreshChoices)
         self.runNowCheck.toggled.connect(refreshChoices)
+        self.alternateCheck.toggled.connect(refreshChoices)
         refreshChoices()
 
         self.okBtn.clicked.connect(self.modelChoose)
@@ -3705,6 +3787,10 @@ class MainWindow(QMainWindow):
         logger.debug("Engine selected: %s (%s)", key, task)
         self.engine_state.engine = key
         self.engine_state.task = task
+        if not self.alternateCheck.isHidden():   # chỉ ghi nhận khi ô đang áp dụng (ẩn = giữ lựa chọn đã lưu)
+            self.engine_state.alternate = self.alternateCheck.isChecked()
+            self.settings[GK_SETTING_ALTERNATE] = self.engine_state.alternate
+            self.settings.save()
         self.statusBar().showMessage("OCR: " + label, 8000)
         self.dialog.close()
         if run_now:
@@ -4027,6 +4113,56 @@ class MainWindow(QMainWindow):
             sorted_indices.extend([i for i, _ in row])
         return sorted_indices
 
+    def gkReorderShapes(self, index_map, select=None):
+        """[GK] Sắp lại danh sách box theo `index_map` (vị trí mới i lấy box cũ index_map[i]): BoxList, labelList, canvas.shapes cùng đổi,
+        số thứ tự cập nhật, ảnh chuyển sang trạng thái chưa lưu. `select`: box cần chọn lại sau khi đổi chỗ."""
+        shapes = list(self.canvas.shapes)
+        if sorted(index_map) != list(range(len(shapes))):
+            logger.error("Reorder failed: index map does not match the shapes")
+            return False
+        items_box = [self.BoxList.takeItem(0) for _ in range(self.BoxList.count())]
+        items_label = [self.labelList.takeItem(0) for _ in range(self.labelList.count())]
+        self.canvas.shapes = []
+        for new_idx, old_idx in enumerate(index_map):
+            self.BoxList.insertItem(new_idx, items_box[old_idx])
+            self.labelList.insertItem(new_idx, items_label[old_idx])
+            self.canvas.shapes.append(shapes[old_idx])
+        self.updateIndexList()
+        self.canvas.updateShapeIndex()
+        if select is not None:
+            self.shapeSelectionChanged([select])
+        self.canvas.update()
+        self.setDirty()
+        return True
+
+    def reverseBoxOrder(self):
+        """[GK] Đảo ngược thứ tự mọi box của ảnh đang mở."""
+        n = len(self.canvas.shapes)
+        if n < 2:
+            return
+        selected = self.canvas.selectedShapes[0] if len(self.canvas.selectedShapes) == 1 else None
+        self.gkReorderShapes(list(range(n - 1, -1, -1)), select=selected)
+
+    def moveBoxUp(self):
+        self.gkMoveSelectedBox(-1)
+
+    def moveBoxDown(self):
+        self.gkMoveSelectedBox(1)
+
+    def gkMoveSelectedBox(self, step):
+        """[GK] Đưa box đang chọn lên (step = -1) hoặc xuống (step = 1) một vị trí; box ở đầu/cuối danh sách thì đứng yên."""
+        if len(self.canvas.selectedShapes) != 1:
+            self.statusBar().showMessage("Chọn đúng một box để đổi vị trí", 4000)
+            return
+        shape = self.canvas.selectedShapes[0]
+        old = self.canvas.shapes.index(shape)
+        new = old + step
+        if not 0 <= new < len(self.canvas.shapes):
+            return
+        order = list(range(len(self.canvas.shapes)))
+        order[old], order[new] = order[new], order[old]
+        self.gkReorderShapes(order, select=shape)
+
     def resortBoxPosition(self):
         # get coordinate points from shapes directly to be more reliable
         rectangles = []
@@ -4149,6 +4285,7 @@ def get_main_app(argv=[]):
     app = QApplication(argv)
     app.setApplicationName(__appname__)
     app.setWindowIcon(newIcon("app"))
+    gk_fonts.install_fallbacks(app.font().family())  # [GK] nạp font Hán Nôm trong font/ trước khi dựng cửa sổ
     # Tzutalin 201705+: Accept extra arguments to change predefined class file
     arg_parser = argparse.ArgumentParser()
     arg_parser.add_argument("--lang", type=str, default="ch", nargs="?")
