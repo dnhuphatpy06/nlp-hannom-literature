@@ -2,21 +2,20 @@
   "book_name": "Trông Quân Tân Chuyên Tam Thâp Lục Chuyên, Nôm_Y",
   "pdf": "Trông Quân Tân Chuyên Tam Thâp Lục Chuyên, Nôm_Y.pdf",
   "layout_code": "T2b",
-  "dpi": null,
-  "split_complete": false,
+  "dpi": 300,
+  "split_complete": true,
   "notes": "",
   "total_pages": 17,
   "pages": {
     "1": {
-      "tag": "ch_vi",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 101,
         "active": 0.1343,
         "ink": 0.0462
-      },
-      "auto": true
+      }
     },
     "2": {
       "tag": "blank",
@@ -199,9 +198,10 @@
     "at": "2026-11-07T00:44:45.881489",
     "side": 640
   },
-  "last_updated": "2026-11-07T00:44:45.923351",
+  "last_updated": "2026-11-08T19:48:10.988066",
   "autotag": {
     "type": "T2b",
     "at": "2026-11-07T00:44:45.937780"
-  }
+  },
+  "split_started": true
 }

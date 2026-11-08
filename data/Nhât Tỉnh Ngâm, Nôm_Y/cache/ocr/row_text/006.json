@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 6,
-  "saved": "2026-11-07T21:29:47.672739",
+  "saved": "2026-11-08T07:25:32.264209",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.006.jpg",
     "sha256": "0fce3e38dee31c16e7f794813837b32c0f72abd0ec884266dd29cc9416963618",
@@ -13,14 +13,6 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
     },
     "row_projection": {
       "bg_kernel": 25,
@@ -127,7 +119,7 @@
     },
     {
       "folder": "vi",
-      "text": "Nôel Tinh ngam",
+      "text": "Nhật tỉnh ngâm",
       "points": [
         [
           734,
@@ -146,11 +138,12 @@
           1074
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
     },
     {
       "folder": "vi",
-      "text": "Khai dinh tarn miin tain thuyen.",
+      "text": "Khải định làm niềm tan thuyền.",
       "points": [
         [
           610,
@@ -169,11 +162,12 @@
           1605
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
     },
     {
       "folder": "vi",
-      "text": "Shué ván duìng tóng bàn",
+      "text": "Phúc văn đường tăng bản",
       "points": [
         [
           728,
@@ -192,7 +186,8 @@
           1875
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
     }
   ]
 }

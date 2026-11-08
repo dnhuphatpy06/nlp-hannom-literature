@@ -2,21 +2,20 @@
   "book_name": "Tran vong tuong si van digcoll_13711_Y",
   "pdf": "Tran vong tuong si van digcoll_13711_Y.pdf",
   "layout_code": "T2b",
-  "dpi": null,
-  "split_complete": false,
+  "dpi": 300,
+  "split_complete": true,
   "notes": "",
   "total_pages": 29,
   "pages": {
     "1": {
-      "tag": "blank",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 59,
         "active": 0.0718,
         "ink": 0.0151
-      },
-      "auto": true
+      }
     },
     "2": {
       "tag": "blank",
@@ -316,24 +315,24 @@
       "auto": true
     },
     "29": {
-      "tag": "ch_vi",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 333,
         "active": 0.4329,
         "ink": 0.1369
-      },
-      "auto": true
+      }
     }
   },
   "blank_scan": {
     "at": "2026-11-07T00:44:13.936789",
     "side": 640
   },
-  "last_updated": "2026-11-07T00:44:13.958953",
+  "last_updated": "2026-11-08T20:14:18.137102",
   "autotag": {
     "type": "T2b",
     "at": "2026-11-07T00:44:13.974695"
-  }
+  },
+  "split_started": true
 }

@@ -5,7 +5,7 @@
   "total_pages": 72,
   "dpi": 300,
   "split_complete": true,
-  "last_updated": "2026-11-07T00:45:59.592146",
+  "last_updated": "2026-11-08T06:57:03.089254",
   "pages": {
     "1": {
       "tag": "ch",
@@ -15,7 +15,8 @@
         "components": 172,
         "active": 0.3241,
         "ink": 0.1541
-      }
+      },
+      "spread": 2
     },
     "2": {
       "tag": "ch",
@@ -25,7 +26,8 @@
         "components": 492,
         "active": 0.6551,
         "ink": 0.2252
-      }
+      },
+      "spread": 2
     },
     "3": {
       "tag": "ch",
@@ -35,7 +37,8 @@
         "components": 484,
         "active": 0.7106,
         "ink": 0.2158
-      }
+      },
+      "spread": 2
     },
     "4": {
       "tag": "ch",
@@ -45,7 +48,8 @@
         "components": 498,
         "active": 0.6898,
         "ink": 0.187
-      }
+      },
+      "spread": 2
     },
     "5": {
       "tag": "ch",
@@ -55,7 +59,8 @@
         "components": 440,
         "active": 0.6343,
         "ink": 0.2106
-      }
+      },
+      "spread": 2
     },
     "6": {
       "tag": "ch",
@@ -65,7 +70,8 @@
         "components": 508,
         "active": 0.6736,
         "ink": 0.2004
-      }
+      },
+      "spread": 2
     },
     "7": {
       "tag": "ch",
@@ -75,7 +81,8 @@
         "components": 563,
         "active": 0.6736,
         "ink": 0.1905
-      }
+      },
+      "spread": 2
     },
     "8": {
       "tag": "ch",
@@ -85,7 +92,8 @@
         "components": 530,
         "active": 0.6829,
         "ink": 0.2006
-      }
+      },
+      "spread": 2
     },
     "9": {
       "tag": "ch",
@@ -95,7 +103,8 @@
         "components": 475,
         "active": 0.6782,
         "ink": 0.2073
-      }
+      },
+      "spread": 2
     },
     "10": {
       "tag": "ch",
@@ -105,7 +114,8 @@
         "components": 438,
         "active": 0.6551,
         "ink": 0.2159
-      }
+      },
+      "spread": 2
     },
     "11": {
       "tag": "ch",
@@ -115,7 +125,8 @@
         "components": 598,
         "active": 0.6759,
         "ink": 0.1907
-      }
+      },
+      "spread": 2
     },
     "12": {
       "tag": "ch",
@@ -125,7 +136,8 @@
         "components": 559,
         "active": 0.6551,
         "ink": 0.181
-      }
+      },
+      "spread": 2
     },
     "13": {
       "tag": "ch",
@@ -135,7 +147,8 @@
         "components": 513,
         "active": 0.6806,
         "ink": 0.2072
-      }
+      },
+      "spread": 2
     },
     "14": {
       "tag": "ch",
@@ -145,7 +158,8 @@
         "components": 467,
         "active": 0.6389,
         "ink": 0.2082
-      }
+      },
+      "spread": 2
     },
     "15": {
       "tag": "ch",
@@ -155,7 +169,8 @@
         "components": 467,
         "active": 0.6505,
         "ink": 0.2145
-      }
+      },
+      "spread": 2
     },
     "16": {
       "tag": "ch",
@@ -165,7 +180,8 @@
         "components": 475,
         "active": 0.6343,
         "ink": 0.2101
-      }
+      },
+      "spread": 2
     },
     "17": {
       "tag": "ch",
@@ -175,7 +191,8 @@
         "components": 451,
         "active": 0.6597,
         "ink": 0.2199
-      }
+      },
+      "spread": 2
     },
     "18": {
       "tag": "ch",
@@ -185,7 +202,8 @@
         "components": 468,
         "active": 0.6898,
         "ink": 0.2111
-      }
+      },
+      "spread": 2
     },
     "19": {
       "tag": "ch",
@@ -195,7 +213,8 @@
         "components": 468,
         "active": 0.6736,
         "ink": 0.2199
-      }
+      },
+      "spread": 2
     },
     "20": {
       "tag": "ch",
@@ -205,7 +224,8 @@
         "components": 555,
         "active": 0.6944,
         "ink": 0.1935
-      }
+      },
+      "spread": 2
     },
     "21": {
       "tag": "ch",
@@ -215,7 +235,8 @@
         "components": 691,
         "active": 0.6944,
         "ink": 0.1769
-      }
+      },
+      "spread": 2
     },
     "22": {
       "tag": "ch",
@@ -225,7 +246,8 @@
         "components": 465,
         "active": 0.6366,
         "ink": 0.2188
-      }
+      },
+      "spread": 2
     },
     "23": {
       "tag": "ch",
@@ -235,7 +257,8 @@
         "components": 487,
         "active": 0.6366,
         "ink": 0.2133
-      }
+      },
+      "spread": 2
     },
     "24": {
       "tag": "ch",
@@ -245,7 +268,8 @@
         "components": 523,
         "active": 0.662,
         "ink": 0.2141
-      }
+      },
+      "spread": 2
     },
     "25": {
       "tag": "ch",
@@ -255,7 +279,8 @@
         "components": 462,
         "active": 0.6343,
         "ink": 0.2046
-      }
+      },
+      "spread": 2
     },
     "26": {
       "tag": "ch",
@@ -265,7 +290,8 @@
         "components": 450,
         "active": 0.6667,
         "ink": 0.233
-      }
+      },
+      "spread": 2
     },
     "27": {
       "tag": "ch",
@@ -275,7 +301,8 @@
         "components": 509,
         "active": 0.7037,
         "ink": 0.2067
-      }
+      },
+      "spread": 2
     },
     "28": {
       "tag": "ch",
@@ -285,7 +312,8 @@
         "components": 448,
         "active": 0.6829,
         "ink": 0.2179
-      }
+      },
+      "spread": 2
     },
     "29": {
       "tag": "ch",
@@ -295,7 +323,8 @@
         "components": 464,
         "active": 0.6991,
         "ink": 0.2212
-      }
+      },
+      "spread": 2
     },
     "30": {
       "tag": "ch",
@@ -305,7 +334,8 @@
         "components": 503,
         "active": 0.6898,
         "ink": 0.1965
-      }
+      },
+      "spread": 2
     },
     "31": {
       "tag": "ch",
@@ -315,7 +345,8 @@
         "components": 509,
         "active": 0.6759,
         "ink": 0.2025
-      }
+      },
+      "spread": 2
     },
     "32": {
       "tag": "ch",
@@ -325,7 +356,8 @@
         "components": 490,
         "active": 0.6389,
         "ink": 0.2097
-      }
+      },
+      "spread": 2
     },
     "33": {
       "tag": "ch",
@@ -335,7 +367,8 @@
         "components": 524,
         "active": 0.6134,
         "ink": 0.1971
-      }
+      },
+      "spread": 2
     },
     "34": {
       "tag": "ch",
@@ -345,7 +378,8 @@
         "components": 493,
         "active": 0.6528,
         "ink": 0.1984
-      }
+      },
+      "spread": 2
     },
     "35": {
       "tag": "ch",
@@ -355,7 +389,8 @@
         "components": 503,
         "active": 0.6782,
         "ink": 0.198
-      }
+      },
+      "spread": 2
     },
     "36": {
       "tag": "ch",
@@ -365,7 +400,8 @@
         "components": 521,
         "active": 0.6944,
         "ink": 0.2108
-      }
+      },
+      "spread": 2
     },
     "37": {
       "tag": "ch",
@@ -375,7 +411,8 @@
         "components": 493,
         "active": 0.6435,
         "ink": 0.2137
-      }
+      },
+      "spread": 2
     },
     "38": {
       "tag": "ch",
@@ -385,7 +422,8 @@
         "components": 543,
         "active": 0.6782,
         "ink": 0.1867
-      }
+      },
+      "spread": 2
     },
     "39": {
       "tag": "ch",
@@ -395,7 +433,8 @@
         "components": 603,
         "active": 0.6759,
         "ink": 0.176
-      }
+      },
+      "spread": 2
     },
     "40": {
       "tag": "ch",
@@ -405,7 +444,8 @@
         "components": 460,
         "active": 0.6458,
         "ink": 0.2035
-      }
+      },
+      "spread": 2
     },
     "41": {
       "tag": "ch",
@@ -415,7 +455,8 @@
         "components": 436,
         "active": 0.6458,
         "ink": 0.2211
-      }
+      },
+      "spread": 2
     },
     "42": {
       "tag": "ch",
@@ -425,7 +466,8 @@
         "components": 492,
         "active": 0.6644,
         "ink": 0.1913
-      }
+      },
+      "spread": 2
     },
     "43": {
       "tag": "ch",
@@ -435,7 +477,8 @@
         "components": 468,
         "active": 0.6458,
         "ink": 0.1974
-      }
+      },
+      "spread": 2
     },
     "44": {
       "tag": "ch",
@@ -445,7 +488,8 @@
         "components": 449,
         "active": 0.6551,
         "ink": 0.2115
-      }
+      },
+      "spread": 2
     },
     "45": {
       "tag": "ch",
@@ -455,7 +499,8 @@
         "components": 481,
         "active": 0.6667,
         "ink": 0.2092
-      }
+      },
+      "spread": 2
     },
     "46": {
       "tag": "ch",
@@ -465,7 +510,8 @@
         "components": 543,
         "active": 0.6713,
         "ink": 0.2048
-      }
+      },
+      "spread": 2
     },
     "47": {
       "tag": "ch",
@@ -475,7 +521,8 @@
         "components": 469,
         "active": 0.6968,
         "ink": 0.2006
-      }
+      },
+      "spread": 2
     },
     "48": {
       "tag": "ch",
@@ -485,7 +532,8 @@
         "components": 527,
         "active": 0.6944,
         "ink": 0.2044
-      }
+      },
+      "spread": 2
     },
     "49": {
       "tag": "ch",
@@ -495,7 +543,8 @@
         "components": 478,
         "active": 0.6505,
         "ink": 0.2062
-      }
+      },
+      "spread": 2
     },
     "50": {
       "tag": "ch",
@@ -505,7 +554,8 @@
         "components": 587,
         "active": 0.6782,
         "ink": 0.1704
-      }
+      },
+      "spread": 2
     },
     "51": {
       "tag": "ch",
@@ -515,7 +565,8 @@
         "components": 577,
         "active": 0.6968,
         "ink": 0.1763
-      }
+      },
+      "spread": 2
     },
     "52": {
       "tag": "ch",
@@ -525,7 +576,8 @@
         "components": 462,
         "active": 0.6736,
         "ink": 0.2056
-      }
+      },
+      "spread": 2
     },
     "53": {
       "tag": "ch",
@@ -535,7 +587,8 @@
         "components": 422,
         "active": 0.6551,
         "ink": 0.2239
-      }
+      },
+      "spread": 2
     },
     "54": {
       "tag": "ch",
@@ -545,7 +598,8 @@
         "components": 471,
         "active": 0.6829,
         "ink": 0.2133
-      }
+      },
+      "spread": 2
     },
     "55": {
       "tag": "ch",
@@ -555,7 +609,8 @@
         "components": 492,
         "active": 0.6782,
         "ink": 0.1974
-      }
+      },
+      "spread": 2
     },
     "56": {
       "tag": "ch",
@@ -565,7 +620,8 @@
         "components": 607,
         "active": 0.6644,
         "ink": 0.1801
-      }
+      },
+      "spread": 2
     },
     "57": {
       "tag": "ch",
@@ -575,7 +631,8 @@
         "components": 651,
         "active": 0.7222,
         "ink": 0.1692
-      }
+      },
+      "spread": 2
     },
     "58": {
       "tag": "ch",
@@ -585,7 +642,8 @@
         "components": 554,
         "active": 0.6782,
         "ink": 0.1902
-      }
+      },
+      "spread": 2
     },
     "59": {
       "tag": "ch",
@@ -595,7 +653,8 @@
         "components": 493,
         "active": 0.6435,
         "ink": 0.2107
-      }
+      },
+      "spread": 2
     },
     "60": {
       "tag": "ch",
@@ -605,7 +664,8 @@
         "components": 483,
         "active": 0.6713,
         "ink": 0.2063
-      }
+      },
+      "spread": 2
     },
     "61": {
       "tag": "ch",
@@ -615,7 +675,8 @@
         "components": 488,
         "active": 0.706,
         "ink": 0.2053
-      }
+      },
+      "spread": 2
     },
     "62": {
       "tag": "ch",
@@ -625,7 +686,8 @@
         "components": 468,
         "active": 0.6921,
         "ink": 0.2343
-      }
+      },
+      "spread": 2
     },
     "63": {
       "tag": "ch",
@@ -635,7 +697,8 @@
         "components": 511,
         "active": 0.6944,
         "ink": 0.2188
-      }
+      },
+      "spread": 2
     },
     "64": {
       "tag": "ch",
@@ -645,7 +708,8 @@
         "components": 529,
         "active": 0.6574,
         "ink": 0.1824
-      }
+      },
+      "spread": 2
     },
     "65": {
       "tag": "ch",
@@ -655,7 +719,8 @@
         "components": 545,
         "active": 0.6644,
         "ink": 0.1727
-      }
+      },
+      "spread": 2
     },
     "66": {
       "tag": "ch",
@@ -665,7 +730,8 @@
         "components": 482,
         "active": 0.6875,
         "ink": 0.2192
-      }
+      },
+      "spread": 2
     },
     "67": {
       "tag": "ch",
@@ -675,7 +741,8 @@
         "components": 453,
         "active": 0.6204,
         "ink": 0.2097
-      }
+      },
+      "spread": 2
     },
     "68": {
       "tag": "ch",
@@ -685,7 +752,8 @@
         "components": 551,
         "active": 0.6736,
         "ink": 0.1818
-      }
+      },
+      "spread": 2
     },
     "69": {
       "tag": "ch",
@@ -695,7 +763,8 @@
         "components": 469,
         "active": 0.6181,
         "ink": 0.1619
-      }
+      },
+      "spread": 2
     },
     "70": {
       "tag": "misc",

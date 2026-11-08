@@ -2,21 +2,20 @@
   "book_name": "Tông Trân Tân Truyên, Nôm_Y",
   "pdf": "Tông Trân Tân Truyên, Nôm_Y.pdf",
   "layout_code": "T2b",
-  "dpi": null,
-  "split_complete": false,
+  "dpi": 300,
+  "split_complete": true,
   "notes": "",
   "total_pages": 193,
   "pages": {
     "1": {
-      "tag": "ch_vi",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 97,
         "active": 0.1296,
         "ink": 0.0444
-      },
-      "auto": true
+      }
     },
     "2": {
       "tag": "blank",
@@ -2135,9 +2134,10 @@
     "at": "2026-11-07T00:45:03.533348",
     "side": 640
   },
-  "last_updated": "2026-11-07T00:45:03.576011",
+  "last_updated": "2026-11-08T19:47:06.988436",
   "autotag": {
     "type": "T2b",
     "at": "2026-11-07T00:45:03.592594"
-  }
+  },
+  "split_started": true
 }

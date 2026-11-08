@@ -1,0 +1,244 @@
+{
+  "engine": "row_text",
+  "page": 37,
+  "saved": "2026-11-08T07:22:37.577046",
+  "image": {
+    "name": "Nhât Tỉnh Ngâm, Nôm_Y.037.jpg",
+    "sha256": "4bfad3998796d6e4f9529cb3878e4df8b92b2fdca69514a9e1c370d89290ab5c",
+    "size": 923592
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    },
+    "row_projection": {
+      "bg_kernel": 25,
+      "blob_dilate": 0.3,
+      "blob_mass": 0.35,
+      "edge_ratio": 0.05,
+      "ink_thresh": null,
+      "line_len": null,
+      "margin": 6,
+      "merge_gap": 2,
+      "min_height": 8,
+      "min_width_ratio": 0.4,
+      "near_gap": 0.35,
+      "no_auto_crop": false,
+      "no_clean_x": false,
+      "no_post": false,
+      "pad": 2,
+      "peak_prom": 0.2,
+      "post_min_rows": 4,
+      "punct_gap": 2.0,
+      "punct_size": 0.45,
+      "roi": null,
+      "save_crops": false,
+      "sliver_gap": 0.15,
+      "sliver_max_height": 1.35,
+      "sliver_ratio": 0.45,
+      "sliver_x_overlap": 0.5,
+      "smooth": 2.5,
+      "thr_ratio": 0.012,
+      "valley_ratio": 0.6,
+      "x_trim": 0.5
+    },
+    "tag": "ch_vi"
+  },
+  "boxes": [
+    {
+      "folder": "vi",
+      "text": "Bây cùng nọ gây nên từ ý.",
+      "points": [
+        [
+          431,
+          783
+        ],
+        [
+          1896,
+          783
+        ],
+        [
+          1896,
+          886
+        ],
+        [
+          431,
+          886
+        ]
+      ],
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
+    },
+    {
+      "folder": "vi",
+      "text": "Khác thang liều đừng lấy làm chửi.",
+      "points": [
+        [
+          420,
+          1008
+        ],
+        [
+          1936,
+          1008
+        ],
+        [
+          1936,
+          1090
+        ],
+        [
+          420,
+          1090
+        ]
+      ],
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
+    },
+    {
+      "folder": "vi",
+      "text": "Ra gì những thời tranh lợi.",
+      "points": [
+        [
+          431,
+          1233
+        ],
+        [
+          1707,
+          1233
+        ],
+        [
+          1707,
+          1321
+        ],
+        [
+          431,
+          1321
+        ]
+      ],
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
+    },
+    {
+      "folder": "vi",
+      "text": "Theo từng và phúc tác nói trong đỉnh.",
+      "points": [
+        [
+          417,
+          1460
+        ],
+        [
+          2164,
+          1460
+        ],
+        [
+          2164,
+          1575
+        ],
+        [
+          417,
+          1575
+        ]
+      ],
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
+    },
+    {
+      "folder": "vi",
+      "text": "Người kia đã đánh mất của. 305",
+      "points": [
+        [
+          409,
+          1679
+        ],
+        [
+          2204,
+          1679
+        ],
+        [
+          2204,
+          1750
+        ],
+        [
+          409,
+          1750
+        ]
+      ],
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
+    },
+    {
+      "folder": "vi",
+      "text": "Le đưa hỏi cũng khá rồi,",
+      "points": [
+        [
+          431,
+          1908
+        ],
+        [
+          1926,
+          1908
+        ],
+        [
+          1926,
+          1983
+        ],
+        [
+          431,
+          1983
+        ]
+      ],
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
+    },
+    {
+      "folder": "vi",
+      "text": "Được Thưa hai người,",
+      "points": [
+        [
+          430,
+          2130
+        ],
+        [
+          1739,
+          2130
+        ],
+        [
+          1739,
+          2219
+        ],
+        [
+          430,
+          2219
+        ]
+      ],
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
+    },
+    {
+      "folder": "vi",
+      "text": "Chấp đã đi hiện ba đi thế nhau.",
+      "points": [
+        [
+          434,
+          2359
+        ],
+        [
+          2147,
+          2359
+        ],
+        [
+          2147,
+          2433
+        ],
+        [
+          434,
+          2433
+        ]
+      ],
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
+    }
+  ]
+}
