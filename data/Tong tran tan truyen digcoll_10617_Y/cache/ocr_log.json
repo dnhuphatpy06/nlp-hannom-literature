@@ -1,0 +1,253 @@
+{
+  "pages": {
+    "4": {
+      "tag": "intro",
+      "engine": "row_projection",
+      "at": "2026-11-09T11:54:12.403356",
+      "cached": false,
+      "status": "partial",
+      "attempts": 3,
+      "empty_boxes": 1,
+      "errors": [
+        {
+          "folder": "intro",
+          "box": 3,
+          "message": "Vintern không phản hồi sau 180 giây",
+          "code": null
+        }
+      ],
+      "boxes": {
+        "intro": 6
+      }
+    },
+    "1": {
+      "tag": "intro",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:05:50.326014",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 3,
+      "errors": [],
+      "boxes": {
+        "intro": 3
+      }
+    },
+    "5": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.170157",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 10,
+      "errors": [],
+      "boxes": {
+        "vi": 10
+      }
+    },
+    "6": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.229582",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 10,
+      "errors": [],
+      "boxes": {
+        "vi": 10
+      }
+    },
+    "7": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.255898",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 10,
+      "errors": [],
+      "boxes": {
+        "vi": 10
+      }
+    },
+    "8": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.286849",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 10,
+      "errors": [],
+      "boxes": {
+        "vi": 10
+      }
+    },
+    "9": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.324810",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 10,
+      "errors": [],
+      "boxes": {
+        "vi": 10
+      }
+    },
+    "10": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.373548",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 10,
+      "errors": [],
+      "boxes": {
+        "vi": 10
+      }
+    },
+    "11": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.409097",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 10,
+      "errors": [],
+      "boxes": {
+        "vi": 10
+      }
+    },
+    "12": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.443149",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 9,
+      "errors": [],
+      "boxes": {
+        "vi": 9
+      }
+    },
+    "13": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.477302",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 10,
+      "errors": [],
+      "boxes": {
+        "vi": 10
+      }
+    },
+    "14": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.513430",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 10,
+      "errors": [],
+      "boxes": {
+        "vi": 10
+      }
+    },
+    "15": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.588500",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 10,
+      "errors": [],
+      "boxes": {
+        "vi": 10
+      }
+    },
+    "16": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.614770",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 10,
+      "errors": [],
+      "boxes": {
+        "vi": 10
+      }
+    },
+    "17": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.645341",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 10,
+      "errors": [],
+      "boxes": {
+        "vi": 10
+      }
+    },
+    "18": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.675855",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 10,
+      "errors": [],
+      "boxes": {
+        "vi": 10
+      }
+    },
+    "19": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.718717",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 10,
+      "errors": [],
+      "boxes": {
+        "vi": 10
+      }
+    },
+    "20": {
+      "tag": "ch_vi",
+      "engine": "row_projection",
+      "at": "2026-11-09T15:08:13.824615",
+      "cached": true,
+      "status": "ok",
+      "attempts": 1,
+      "empty_boxes": 10,
+      "errors": [],
+      "boxes": {
+        "vi": 10
+      }
+    }
+  },
+  "updated": "2026-11-09T15:08:13.887582",
+  "failed": {
+    "4": {
+      "status": "partial",
+      "attempts": 3,
+      "message": "intro/box 3: Vintern không phản hồi sau 180 giây"
+    }
+  }
+}

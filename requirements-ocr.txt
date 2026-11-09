@@ -1,20 +1,20 @@
-# OCR chạy trên máy và PPOCRLabel: scripts/paddleocr_vl_viz.py, bước OCR của app.py, open_ppocrlabel.bat.
-# Cài: pip install -r requirements-ocr.txt   (đã gồm requirements.txt)
+# OCR chay tren may va PPOCRLabel: scripts/paddleocr_vl_viz.py, buoc OCR cua app.py, open_ppocrlabel.bat.
+# Cai: pip install -r requirements-ocr.txt   (da gom requirements.txt)
 #
-# KHÔNG cần `pip install PPOCRLabel`: mã PPOCRLabel đã nằm trong dự án (external/PPOCRLabel, có sửa riêng);
-# chỉ cần các thư viện của nó bên dưới (PyQt5, và PaddleOCR-VL nếu dùng). Python 3.12.
+# KHONG can `pip install PPOCRLabel`: ma PPOCRLabel da nam trong du an (external/PPOCRLabel, co sua rieng);
+# chi can cac thu vien cua no ben duoi (PyQt5, va PaddleOCR-VL neu dung). Python 3.12.
 
 -r requirements.txt
 
-# torch/torchvision cài riêng theo máy (CPU hoặc CUDA) trước khi cài file này: https://pytorch.org/get-started/locally/
-# torchvision bắt buộc: transformers nạp nó trong bộ xử lý ảnh của PaddleOCR-VL.
+# torch/torchvision cai rieng theo may (CPU hoac CUDA) truoc khi cai file nay: https://pytorch.org/get-started/locally/
+# torchvision bat buoc: transformers nap no trong bo xu ly anh cua PaddleOCR-VL.
 torch
 torchvision
 transformers>=5.10
 
-# PaddleOCR-VL, chạy bằng PyTorch (engine=transformers), KHÔNG cần paddlepaddle. Kéo theo paddlex.
+# PaddleOCR-VL, chay bang PyTorch (engine=transformers), KHONG can paddlepaddle. Keo theo paddlex.
 paddleocr[doc-parser]==3.7.0
-# Giao diện PPOCRLabel. PPOCRLabel không còn cần paddle/paddleocr: nhận dạng đi qua 3 engine của dự án.
+# Giao dien PPOCRLabel. PPOCRLabel khong con can paddle/paddleocr: nhan dang di qua 3 engine cua du an.
 PyQt5==5.15.11
 
-# Tùy chọn, chỉ cho scripts/kraken_viz.py (thử nghiệm, app không dùng): cài thêm hai gói kraken và shapely bằng pip.
+# Tuy chon, chi cho scripts/kraken_viz.py (thu nghiem, app khong dung): cai them hai goi kraken va shapely bang pip.

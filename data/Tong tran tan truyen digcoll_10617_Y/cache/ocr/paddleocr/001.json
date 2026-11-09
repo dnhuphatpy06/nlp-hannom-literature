@@ -1,0 +1,104 @@
+{
+  "engine": "paddleocr",
+  "page": 1,
+  "saved": "2026-11-09T11:12:45.188239",
+  "image": {
+    "name": "Tong tran tan truyen digcoll_10617_Y.001.jpg",
+    "sha256": "889ed41c76a0106e96d436bd2ee7640c9ff7ddaee59426e64f02a5466f912aa0",
+    "size": 912542
+  },
+  "params": {
+    "engine": "transformers",
+    "pipeline_version": "v1"
+  },
+  "boxes": [
+    {
+      "text": "e N118\nTông Trần Tên T姬yên\nAB217",
+      "points": [
+        [
+          5,
+          72
+        ],
+        [
+          472,
+          72
+        ],
+        [
+          472,
+          266
+        ],
+        [
+          5,
+          266
+        ]
+      ],
+      "label": "text"
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          494,
+          230
+        ],
+        [
+          1258,
+          230
+        ],
+        [
+          1258,
+          387
+        ],
+        [
+          494,
+          387
+        ]
+      ],
+      "label": "text"
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          1355,
+          210
+        ],
+        [
+          1651,
+          210
+        ],
+        [
+          1651,
+          306
+        ],
+        [
+          1355,
+          306
+        ]
+      ],
+      "label": "text"
+    },
+    {
+      "text": "宋珍新傳",
+      "points": [
+        [
+          576,
+          378
+        ],
+        [
+          1225,
+          378
+        ],
+        [
+          1225,
+          513
+        ],
+        [
+          576,
+          513
+        ]
+      ],
+      "label": "text"
+    }
+  ]
+}

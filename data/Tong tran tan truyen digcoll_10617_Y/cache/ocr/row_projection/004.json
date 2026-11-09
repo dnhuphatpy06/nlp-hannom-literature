@@ -1,0 +1,169 @@
+{
+  "engine": "row_projection",
+  "page": 4,
+  "saved": "2026-11-09T11:35:55.810793",
+  "image": {
+    "name": "Tong tran tan truyen digcoll_10617_Y.004.jpg",
+    "sha256": "2bd340d2ecbf3dfe7a854d933174798b6ac6a5f7eaddaa4b0d26088db60af8ad",
+    "size": 550917
+  },
+  "params": {
+    "bg_kernel": 25,
+    "blob_dilate": 0.3,
+    "blob_mass": 0.35,
+    "edge_ratio": 0.05,
+    "ink_thresh": null,
+    "line_len": null,
+    "margin": 6,
+    "merge_gap": 2,
+    "min_height": 8,
+    "min_width_ratio": 0.4,
+    "near_gap": 0.35,
+    "no_auto_crop": false,
+    "no_clean_x": false,
+    "no_post": false,
+    "pad": 2,
+    "peak_prom": 0.2,
+    "post_min_rows": 4,
+    "punct_gap": 2.0,
+    "punct_size": 0.45,
+    "roi": null,
+    "save_crops": false,
+    "sliver_gap": 0.15,
+    "sliver_max_height": 1.35,
+    "sliver_ratio": 0.45,
+    "sliver_x_overlap": 0.5,
+    "smooth": 2.5,
+    "thr_ratio": 0.012,
+    "valley_ratio": 0.6,
+    "x_trim": 0.5
+  },
+  "boxes": [
+    {
+      "text": "",
+      "points": [
+        [
+          521,
+          410
+        ],
+        [
+          1138,
+          410
+        ],
+        [
+          1138,
+          566
+        ],
+        [
+          521,
+          566
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          407,
+          571
+        ],
+        [
+          1274,
+          571
+        ],
+        [
+          1274,
+          725
+        ],
+        [
+          407,
+          725
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          538,
+          732
+        ],
+        [
+          1347,
+          732
+        ],
+        [
+          1347,
+          841
+        ],
+        [
+          538,
+          841
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          398,
+          876
+        ],
+        [
+          1287,
+          876
+        ],
+        [
+          1287,
+          1012
+        ],
+        [
+          398,
+          1012
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          499,
+          1008
+        ],
+        [
+          1207,
+          1008
+        ],
+        [
+          1207,
+          1134
+        ],
+        [
+          499,
+          1134
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          388,
+          1165
+        ],
+        [
+          1415,
+          1165
+        ],
+        [
+          1415,
+          1329
+        ],
+        [
+          388,
+          1329
+        ]
+      ]
+    }
+  ]
+}

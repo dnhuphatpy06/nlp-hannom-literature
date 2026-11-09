@@ -1,0 +1,60 @@
+{
+  "engine": "paddleocr",
+  "page": 4,
+  "saved": "2026-11-09T11:15:18.592882",
+  "image": {
+    "name": "Tong tran tan truyen digcoll_10617_Y.004.jpg",
+    "sha256": "2bd340d2ecbf3dfe7a854d933174798b6ac6a5f7eaddaa4b0d26088db60af8ad",
+    "size": 550917
+  },
+  "params": {
+    "engine": "transformers",
+    "pipeline_version": "v1"
+  },
+  "boxes": [
+    {
+      "text": "AB.217",
+      "points": [
+        [
+          764,
+          276
+        ],
+        [
+          1100,
+          276
+        ],
+        [
+          1100,
+          388
+        ],
+        [
+          764,
+          388
+        ]
+      ],
+      "label": "paragraph_title"
+    },
+    {
+      "text": "宋珍新傳\nGōng-Erán làn tǔyěn\n維新捌年春\nDuq-tàn bǎi wèn xuán\n廣盛堂藏本\nQuáng thìn shūng táng bàn",
+      "points": [
+        [
+          361,
+          436
+        ],
+        [
+          1400,
+          436
+        ],
+        [
+          1400,
+          1314
+        ],
+        [
+          361,
+          1314
+        ]
+      ],
+      "label": "text"
+    }
+  ]
+}

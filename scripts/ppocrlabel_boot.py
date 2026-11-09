@@ -25,6 +25,23 @@ def main() -> int:
         import torch  # noqa: F401  (phải nạp trước paddle/PyQt5, xem ghi chú đầu file)
     except Exception:
         pass
+    try:
+        import os
+        import PyQt5
+        from PyQt5.QtCore import QCoreApplication
+        plugin_dir = os.path.join(os.path.dirname(PyQt5.__file__), "Qt5", "plugins")
+        if os.path.isdir(plugin_dir):
+            QCoreApplication.addLibraryPath(plugin_dir)
+        qt_bin = os.path.join(os.path.dirname(PyQt5.__file__), "Qt5", "bin")
+        if os.path.isdir(qt_bin):
+            os.environ["PATH"] = qt_bin + os.pathsep + os.environ.get("PATH", "")
+            if hasattr(os, "add_dll_directory"):
+                try:
+                    os.add_dll_directory(qt_bin)
+                except OSError:
+                    pass
+    except Exception:
+        pass
     sys.path.insert(0, str(EXTERNAL))
     preload_vintern = "--preload-vintern" in sys.argv   # chỉ open_ppocrlabel.bat truyền cờ này
     if preload_vintern:

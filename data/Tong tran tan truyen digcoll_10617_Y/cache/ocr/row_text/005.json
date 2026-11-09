@@ -1,0 +1,282 @@
+{
+  "engine": "row_text",
+  "page": 5,
+  "saved": "2026-11-09T11:15:42.152930",
+  "image": {
+    "name": "Tong tran tan truyen digcoll_10617_Y.005.jpg",
+    "sha256": "7c3e1c7d95c47c7404b57d2a47593df07612d4e2c238518f2b9f304760c1fe1b",
+    "size": 764855
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    },
+    "row_projection": {
+      "bg_kernel": 25,
+      "blob_dilate": 0.3,
+      "blob_mass": 0.35,
+      "edge_ratio": 0.05,
+      "ink_thresh": null,
+      "line_len": null,
+      "margin": 6,
+      "merge_gap": 2,
+      "min_height": 8,
+      "min_width_ratio": 0.4,
+      "near_gap": 0.35,
+      "no_auto_crop": false,
+      "no_clean_x": false,
+      "no_post": false,
+      "pad": 2,
+      "peak_prom": 0.2,
+      "post_min_rows": 4,
+      "punct_gap": 2.0,
+      "punct_size": 0.45,
+      "roi": null,
+      "save_crops": false,
+      "sliver_gap": 0.15,
+      "sliver_max_height": 1.35,
+      "sliver_ratio": 0.45,
+      "sliver_x_overlap": 0.5,
+      "smooth": 2.5,
+      "thr_ratio": 0.012,
+      "valley_ratio": 0.6,
+      "x_trim": 0.5
+    },
+    "tag": "ch_vi"
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "𫏾𠁀𤤰唐太兵",
+      "points": [
+        [
+          369,
+          175
+        ],
+        [
+          1421,
+          175
+        ],
+        [
+          1421,
+          291
+        ],
+        [
+          369,
+          291
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "𣻃位天下西東順和",
+      "points": [
+        [
+          164,
+          388
+        ],
+        [
+          1625,
+          388
+        ],
+        [
+          1625,
+          495
+        ],
+        [
+          164,
+          495
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "固𠊛於縣芙花",
+      "points": [
+        [
+          371,
+          600
+        ],
+        [
+          1446,
+          600
+        ],
+        [
+          1446,
+          714
+        ],
+        [
+          371,
+          714
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "𧵆尼𨷶祿帝󰑼京慶一生",
+      "points": [
+        [
+          162,
+          820
+        ],
+        [
+          1756,
+          820
+        ],
+        [
+          1756,
+          934
+        ],
+        [
+          162,
+          934
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "凝𢀭富爫双",
+      "points": [
+        [
+          366,
+          1018
+        ],
+        [
+          1602,
+          1018
+        ],
+        [
+          1602,
+          1141
+        ],
+        [
+          366,
+          1141
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "𡥵𤳇渚固群矇庒芇",
+      "points": [
+        [
+          155,
+          1232
+        ],
+        [
+          1609,
+          1232
+        ],
+        [
+          1609,
+          1364
+        ],
+        [
+          155,
+          1364
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "媄𦒹𨑮歲髙",
+      "points": [
+        [
+          339,
+          1452
+        ],
+        [
+          1421,
+          1452
+        ],
+        [
+          1421,
+          1570
+        ],
+        [
+          339,
+          1570
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "胎生拯固軍芇朱能",
+      "points": [
+        [
+          151,
+          1669
+        ],
+        [
+          1707,
+          1669
+        ],
+        [
+          1707,
+          1790
+        ],
+        [
+          151,
+          1790
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "𡗶連差遣𣦍",
+      "points": [
+        [
+          343,
+          1883
+        ],
+        [
+          1425,
+          1883
+        ],
+        [
+          1425,
+          2002
+        ],
+        [
+          343,
+          2002
+        ]
+      ],
+      "status": "ok"
+    },
+    {
+      "folder": "ch",
+      "text": "𠊛㛪欺意﨤𣈗胎",
+      "points": [
+        [
+          147,
+          2090
+        ],
+        [
+          1607,
+          2090
+        ],
+        [
+          1607,
+          2213
+        ],
+        [
+          147,
+          2213
+        ]
+      ],
+      "status": "ok"
+    }
+  ]
+}

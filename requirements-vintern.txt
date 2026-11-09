@@ -1,13 +1,13 @@
-# Môi trường Python RIÊNG cho Vintern-1B-v3.5 (scripts/vintern_worker.py, scripts/vintern_viz.py).
-# Không cài chung với requirements-ocr.txt: PaddleOCR-VL cần transformers>=5.10 còn mã của Vintern (trust_remote_code) chỉ chạy với transformers 4.x
-# (5.x lỗi "AttributeError: ... all_tied_weights_keys").
+# Moi truong Python RIENG cho Vintern-1B-v3.5 (scripts/vintern_worker.py, scripts/vintern_viz.py).
+# Khong cai chung voi requirements-ocr.txt: PaddleOCR-VL can transformers>=5.10 con ma cua Vintern (trust_remote_code) chi chay voi transformers 4.x
+# (5.x loi "AttributeError: ... all_tied_weights_keys").
 #
-#   python -m venv C:\vintern                       # đường dẫn NGẮN, tránh lỗi đường dẫn dài trên Windows
+#   python -m venv C:\vintern                       # duong dan NGAN, tranh loi duong dan dai tren Windows
 #   C:\vintern\Scripts\activate
-#   pip install torch torchvision                   # đúng bản CUDA/CPU của máy: https://pytorch.org/get-started/locally/
+#   pip install torch torchvision                   # dung ban CUDA/CPU cua may: https://pytorch.org/get-started/locally/
 #   pip install -r requirements-vintern.txt
 #
-# Rồi đặt VINTERN_PYTHON=C:\vintern\Scripts\python.exe trong .env (hoặc để đúng chỗ mặc định C:\vintern). Lần chạy đầu tải mô hình ~2 GB.
+# Roi dat VINTERN_PYTHON=C:\vintern\Scripts\python.exe trong .env (hoac de dung cho mac dinh C:\vintern). Lan chay dau tai mo hinh ~2 GB.
 transformers>=4.44,<5
 timm
 einops
