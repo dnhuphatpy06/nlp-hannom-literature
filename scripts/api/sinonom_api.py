@@ -50,11 +50,18 @@ def _throttle() -> None:
         time.sleep(start - now)
 
 
+def _get_token() -> str:
+    env_path = Path(__file__).resolve().parents[2] / ".env"
+    if env_path.is_file():
+        load_dotenv(env_path, override=True)
+    return os.getenv("TOKEN", "")
+
+
 def _post(endpoint: str, **kwargs) -> dict:
     _throttle()
     resp = requests.post(
         f"{BASE_URL}/api/{PLATFORM}/clc-sinonom/{endpoint}",
-        headers={"User-Agent": USER_AGENT, "Authorization": f"Bearer {os.getenv('TOKEN', '')}"},
+        headers={"User-Agent": USER_AGENT, "Authorization": f"Bearer {_get_token()}"},
         timeout=TIMEOUT,
         **kwargs,
     )
