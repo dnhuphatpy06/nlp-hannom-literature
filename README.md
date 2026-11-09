@@ -32,6 +32,10 @@ GK/
 │   ├── ocr_engines.py        <- 3 nguồn OCR: Kim Hán Nôm, PaddleOCR-VL, row_projection; thứ tự box
 │   ├── engine_bridge.py      <- nối PPOCRLabel với 3 engine OCR (nhận dạng cả trang/một box, dùng chung cache)
 │   ├── ocr_jobs.py           <- bước OCR: chép ảnh theo nhãn, chạy nền, ghi Label.txt, mở PPOCRLabel
+│   ├── box_check.py          <- đối chiếu chữ Nôm API với số chữ (projection) của box, gắn cờ "chưa check"
+│   ├── box_review.py         <- kiểm tra từng box trong PPOCRLabel: phân tích cờ, dấu "đã check", tính lại fileState
+│   ├── char_projection.py    <- đếm chữ trong ảnh một hàng bằng chiếu dọc
+│   ├── import_kimhannom_csv.py <- nhập CSV Kim Hán Nôm đã đọc sẵn vào cache chữ trong box
 │   ├── label_io.py           <- đọc/ghi/kiểm tra Label.txt và fileState.txt (chuẩn PPOCRLabel)
 │   ├── page_classifier.py    <- phân loại từng trang vào ch/ vi/ ... (Web UI cũ + dòng lệnh)
 │   ├── pdfslice_split.py     <- tách PDF bằng pdfslice_py (công cụ cũ)
@@ -256,6 +260,35 @@ Mỗi lần OCR một ảnh, app lưu kết quả thô của engine vào `data/<
 - Kết quả rỗng và ảnh lỗi của engine cả trang **không** được cache, nên lần sau sẽ thử lại. File cache hỏng được coi như chưa có.
 - Nguồn nào cũng có cache riêng: đổi nguồn OCR của một nhãn thì chạy engine mới, engine cũ vẫn còn cache.
 - Chỉ bước upload của Kim Hán Nôm có thêm cache riêng trong `data/cache/uploads.json`.
+- **Chữ trong box theo 4 toạ độ** (`cache/ocr/row_text/`): bản ghi của một box có khoá là (thư mục, 4 điểm của box) trên một ảnh trang nhất định (sha256). Box nào ra **đúng 4 toạ độ cũ** thì dùng lại chữ đã đọc, kể cả khi `row_projection` đã chạy lại với tham số khác hay đổi nhãn trang; chỉ box đổi toạ độ mới gọi lại API.
+
+#### Kiểm tra chữ Nôm: đếm chữ bằng projection, cờ "chưa check"
+
+Khi OCR trang có hàng Nôm bằng **row_projection + Kim Hán Nôm** (nhãn `ch_vi`, hoặc chọn `row_projection` + `kimhannom` cho thư mục `ch`), mỗi box trong `ch/` được đối chiếu với chính ảnh của nó (`scripts/box_check.py`, `scripts/char_projection.py`):
+
+| Cờ | Điều kiện |
+|---|---|
+| `count_mismatch` | số chữ API trả về khác số chữ **đếm bằng chiếu dọc** (mỗi cột pixel đếm mực, đoạn liên tiếp là một chữ) |
+| `no_text` | API không đọc ra chữ hoặc lỗi |
+
+- Trang mà **mọi** box Nôm đều sạch thì ghi `fileState.txt` = **1** (đã check). Chỉ cần một box dính cờ (hoặc trang chỉ đọc được một phần) thì giữ **0** (chưa check) để người xem lại bằng PPOCRLabel. Trang không đi qua bước này (engine cả trang, thư mục `vi/`...) vẫn là 0. Đặt `AUTO_CHECK = False` trong `scripts/ocr_jobs.py` để luôn ghi 0 như trước.
+- Cờ không đổi nội dung `Label.txt`. Box nào bị cờ, vì sao: dòng log của lượt chạy (`Trang 005: 3/10 box ch/ cần kiểm tra: box 2: số chữ API 8 ≠ projection 7; ...`) và `cache/ocr_log.json` (`pages[<trang>].review`, `state`). Màn hình OCR báo số ảnh tự đánh dấu đã check và số ảnh chưa check.
+- Số chữ đếm bằng projection được **cache cùng bản ghi chữ của box** (`proj`, `check_v` trong `cache/ocr/row_text/<NNN>.json`, khoá 4 toạ độ như chữ): box giữ nguyên toạ độ không bị đo lại. Đổi thuật toán đo thì tăng `VERSION` trong `scripts/box_check.py` để đo lại (không gọi lại API). Ngưỡng đếm chữ ở đầu `scripts/char_projection.py`. Xem thử: `python scripts/char_projection.py <thư mục ảnh hàng chữ>` (in số chữ từng ảnh).
+- **Kiểm tra trong PPOCRLabel**: bấm nút **Kiểm tra box** (hoặc `Ctrl+Shift+K`) khi mở ảnh trong `ch/`. Hộp thoại chỉ hiện **ảnh cắt từng box, chữ (sửa được) và cảnh báo**; tick **Đã check** cho từng box có cảnh báo rồi **Lưu**. Khi **mọi box đã check** thì ảnh được đặt là đã check (`fileState` = 1, biểu tượng ✔ trong danh sách ảnh); còn box chưa check thì ảnh giữ 0. **Lưu và sang ảnh chưa check kế tiếp** nhảy sang ảnh có fileState 0 tiếp theo. Dấu check của người lưu ở `cache/box_review.json` theo 4 toạ độ box (box bị dời thì phải check lại). PPOCRLabel giờ giữ nguyên 0/1 trong `fileState.txt` (bản gốc ép thành 1 mỗi lần mở).
+- Tính lại `fileState.txt` cả sách từ `Label.txt` và dấu check (vd. khi file bị ghi đè bởi bản PPOCRLabel cũ): `python scripts/box_review.py "<tên sách>"` (thêm `--dry-run` để chỉ báo cáo).
+- Cờ chỉ lọc ra những box đáng ngờ, không đảm bảo box còn lại đúng: trang tự đánh dấu đã check vẫn có thể sai chữ.
+
+#### Nhập kết quả Kim Hán Nôm đã đọc sẵn vào cache
+
+`scripts/ocr_folder_kimhannom.py` đọc cả thư mục ảnh hàng chữ (đã cắt từ trang, kèm `manifest.csv` ghi toạ độ trong ảnh trang) và ghi `ocr_kimhannom.csv`. Để bước OCR dùng lại kết quả đó thay vì gọi API:
+
+```bash
+python scripts/import_kimhannom_csv.py img/tran_vong_tuong_si_van/ch            # thêm --dry-run để chỉ báo cáo, --book "<tên sách>" nếu không tự nhận ra
+```
+
+Mỗi dòng thành một bản ghi `ch` (`status: ok`, kèm `proj`) trong `data/<Tên sách>/cache/ocr/row_text/<NNN>.json`, khoá theo 4 toạ độ box trong `manifest.csv`. Bản ghi `ok` đã có được giữ (thêm `--force` để ghi đè).
+
+Đồng thời script **điền chữ vào `ch/Label.txt`**: box có 4 điểm trùng toạ độ trong manifest và đang rỗng được điền chữ; box đã có chữ (kể cả sửa tay) và các trường khác như `difficult` giữ nguyên. `fileState` của ảnh là 1 nếu mọi box đều có chữ và không box nào dính cờ, ngược lại 0. `Label.txt` và `fileState.txt` được sao lưu sang `*.bak` (nếu chưa có) trước khi ghi. `--no-label` chỉ nhập cache, `--dry-run` chỉ báo cáo.
 
 #### Mở PPOCRLabel để kiểm tra
 

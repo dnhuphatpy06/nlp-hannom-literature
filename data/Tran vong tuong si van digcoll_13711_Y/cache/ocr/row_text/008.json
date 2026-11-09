@@ -1,0 +1,228 @@
+{
+  "engine": "row_text",
+  "page": 8,
+  "saved": "2026-11-09T06:40:52.640270",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.008.jpg",
+    "sha256": "8c442dc54014780aef3d057336ebbd4c0cdfd69de5884e59ce478b853a852c03",
+    "size": 1018875
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "分追隨𡄎吏拱机縁",
+      "points": [
+        [
+          134,
+          614
+        ],
+        [
+          1629,
+          614
+        ],
+        [
+          1629,
+          727
+        ],
+        [
+          134,
+          727
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "場戦閉別兜命裊",
+      "points": [
+        [
+          117,
+          817
+        ],
+        [
+          1625,
+          817
+        ],
+        [
+          1625,
+          934
+        ],
+        [
+          117,
+          934
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "固八几長漨万馭决迭旗𥪝",
+      "points": [
+        [
+          149,
+          1043
+        ],
+        [
+          1624,
+          1043
+        ],
+        [
+          1624,
+          1142
+        ],
+        [
+          149,
+          1142
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 9,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "陣㤕𠰚肝鐄麻命萡",
+      "points": [
+        [
+          141,
+          1138
+        ],
+        [
+          1627,
+          1138
+        ],
+        [
+          1627,
+          1263
+        ],
+        [
+          141,
+          1263
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "念鴻彈落𩂁𠖤人",
+      "points": [
+        [
+          125,
+          1249
+        ],
+        [
+          1641,
+          1249
+        ],
+        [
+          1641,
+          1373
+        ],
+        [
+          125,
+          1373
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "固阻几几蛤長扒从𪖫船算刼槊𡧲",
+      "points": [
+        [
+          156,
+          1649
+        ],
+        [
+          1604,
+          1649
+        ],
+        [
+          1604,
+          1757
+        ],
+        [
+          156,
+          1757
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 9,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𣳔傷𠳙法重底身輕",
+      "points": [
+        [
+          141,
+          1753
+        ],
+        [
+          1629,
+          1753
+        ],
+        [
+          1629,
+          1868
+        ],
+        [
+          141,
+          1868
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "封䏧馭默䕯㵢㳥撫",
+      "points": [
+        [
+          148,
+          1864
+        ],
+        [
+          1639,
+          1864
+        ],
+        [
+          1639,
+          1978
+        ],
+        [
+          148,
+          1978
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    }
+  ]
+}

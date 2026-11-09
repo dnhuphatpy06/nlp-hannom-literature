@@ -1,0 +1,306 @@
+{
+  "engine": "row_text",
+  "page": 7,
+  "saved": "2026-11-09T06:40:52.532473",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.007.jpg",
+    "sha256": "ea247465cbe60ddd1efe157f686632aa12f3989f52f4995b4e262ac568b66ee5",
+    "size": 930594
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "𬂙𡎝兆决收𧗱坦𡢐",
+      "points": [
+        [
+          209,
+          197
+        ],
+        [
+          1651,
+          197
+        ],
+        [
+          1651,
+          307
+        ],
+        [
+          209,
+          307
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 9,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𦣰妾唸窖終餒恩佩",
+      "points": [
+        [
+          201,
+          597
+        ],
+        [
+          1655,
+          597
+        ],
+        [
+          1655,
+          734
+        ],
+        [
+          201,
+          734
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𨷑𤂬窻北梂𥢆分𡶀苦",
+      "points": [
+        [
+          197,
+          793
+        ],
+        [
+          1656,
+          793
+        ],
+        [
+          1656,
+          932
+        ],
+        [
+          197,
+          932
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𫏾曾𣦆逞羅高歸淅",
+      "points": [
+        [
+          197,
+          1021
+        ],
+        [
+          1667,
+          1021
+        ],
+        [
+          1667,
+          1134
+        ],
+        [
+          197,
+          1134
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "嘉民闌寅𦋦康川壇㐌五本",
+      "points": [
+        [
+          179,
+          1130
+        ],
+        [
+          1723,
+          1130
+        ],
+        [
+          1723,
+          1243
+        ],
+        [
+          179,
+          1243
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "特伶日𣇜山風海皇𡗶高山去",
+      "points": [
+        [
+          203,
+          1239
+        ],
+        [
+          1652,
+          1239
+        ],
+        [
+          1652,
+          1343
+        ],
+        [
+          203,
+          1343
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "光𤐝貉餒报台辛貞素",
+      "points": [
+        [
+          209,
+          1339
+        ],
+        [
+          1384,
+          1339
+        ],
+        [
+          1384,
+          1451
+        ],
+        [
+          209,
+          1451
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 6,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "耒吏徐闌藥廣南𥙩",
+      "points": [
+        [
+          218,
+          1850
+        ],
+        [
+          1683,
+          1850
+        ],
+        [
+          1683,
+          1965
+        ],
+        [
+          218,
+          1965
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "富春麻𣦎細𡲤龍别",
+      "points": [
+        [
+          212,
+          1961
+        ],
+        [
+          1648,
+          1961
+        ],
+        [
+          1648,
+          2071
+        ],
+        [
+          212,
+          2071
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "󰋇吝當雨雲楼坦滝",
+      "points": [
+        [
+          206,
+          2067
+        ],
+        [
+          1687,
+          2067
+        ],
+        [
+          1687,
+          2175
+        ],
+        [
+          206,
+          2175
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "蜀𨁮𠓨尼險固",
+      "points": [
+        [
+          223,
+          2171
+        ],
+        [
+          1312,
+          2171
+        ],
+        [
+          1312,
+          2287
+        ],
+        [
+          223,
+          2287
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 6,
+      "check_v": 3
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "engine": "row_text",
+  "page": 6,
+  "saved": "2026-11-09T06:40:52.407220",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.006.jpg",
+    "sha256": "6f8160867efda609971b126e1e0e84cea01f0d1cb82040bcd4f61627f33711dc",
+    "size": 1005118
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "𠀧𠦳終𡥵㛪坦沛",
+      "points": [
+        [
+          230,
+          196
+        ],
+        [
+          1519,
+          196
+        ],
+        [
+          1519,
+          310
+        ],
+        [
+          230,
+          310
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "弓昂育志男兜",
+      "points": [
+        [
+          259,
+          306
+        ],
+        [
+          1509,
+          306
+        ],
+        [
+          1509,
+          416
+        ],
+        [
+          259,
+          416
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "色二一𤾓圍坡𡎝𡽫岐",
+      "points": [
+        [
+          230,
+          615
+        ],
+        [
+          1510,
+          615
+        ],
+        [
+          1510,
+          726
+        ],
+        [
+          230,
+          726
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "粓襖𥗾𠫅恩故前圭",
+      "points": [
+        [
+          219,
+          724
+        ],
+        [
+          1495,
+          724
+        ],
+        [
+          1495,
+          838
+        ],
+        [
+          219,
+          838
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "仍料身朱渃鐄吝𥒥𨤮𠬠𢚸",
+      "points": [
+        [
+          134,
+          1019
+        ],
+        [
+          1593,
+          1019
+        ],
+        [
+          1593,
+          1157
+        ],
+        [
+          134,
+          1157
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𨁡義貝同紫雪霜某度",
+      "points": [
+        [
+          132,
+          1237
+        ],
+        [
+          1591,
+          1237
+        ],
+        [
+          1591,
+          1364
+        ],
+        [
+          132,
+          1364
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "八時蹺囊勃𨀈𨖅沔",
+      "points": [
+        [
+          147,
+          1441
+        ],
+        [
+          1588,
+          1441
+        ],
+        [
+          1588,
+          1556
+        ],
+        [
+          147,
+          1556
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "客地歌𠼯𥓄𠸜𡓇𣖢",
+      "points": [
+        [
+          136,
+          1539
+        ],
+        [
+          1610,
+          1539
+        ],
+        [
+          1610,
+          1666
+        ],
+        [
+          136,
+          1666
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "指𡽫西拯隊𡗶終",
+      "points": [
+        [
+          124,
+          1662
+        ],
+        [
+          1616,
+          1662
+        ],
+        [
+          1616,
+          1778
+        ],
+        [
+          124,
+          1778
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "八時追銊𣃱踷吏准十月",
+      "points": [
+        [
+          159,
+          2059
+        ],
+        [
+          1590,
+          2059
+        ],
+        [
+          1590,
+          2178
+        ],
+        [
+          159,
+          2178
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "刀基習迢𢬣𦑃損𠨪才为",
+      "points": [
+        [
+          120,
+          2176
+        ],
+        [
+          1623,
+          2176
+        ],
+        [
+          1623,
+          2286
+        ],
+        [
+          120,
+          2286
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    }
+  ]
+}

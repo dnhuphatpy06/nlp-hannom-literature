@@ -949,7 +949,9 @@ function renderOcr() {
     $("ocrProgressText").style.color = "";
     const bad = job.failed.filter(f => f.status === "failed").length, partial = job.failed.length - bad;
     $("ocrProgressText").textContent = `Xong ${job.total} ảnh: ${job.ok || 0} đủ` + (partial ? `, ${partial} chỉ đọc được một phần` : "") + (bad ? `, ${bad} lỗi (đã bỏ qua)` : "")
-      + (job.cached ? `, ${job.cached} ảnh lấy từ cache` : "") + (job.skipped ? `. Bỏ qua ${job.skipped} ảnh đã đủ chữ` : "") + ".";
+      + (job.cached ? `, ${job.cached} ảnh lấy từ cache` : "")
+      + (job.checked ? `, ${job.checked} ảnh Nôm tự đánh dấu đã check` : "") + (job.flagged ? `, ${job.flagged} ảnh Nôm CHƯA check (box lệch số chữ, xem log)` : "")
+      + (job.skipped ? `. Bỏ qua ${job.skipped} ảnh đã đủ chữ` : "") + ".";
   }
   // ảnh lỗi: trạng thái lưu trong cache/ocr_log.json (failed = không đọc được gì, partial = một phần box lỗi), giữ tới khi OCR được
   const failed = Object.entries(d.failed || {});

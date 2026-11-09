@@ -1,0 +1,150 @@
+{
+  "engine": "row_text",
+  "page": 16,
+  "saved": "2026-11-09T06:40:53.498824",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.016.jpg",
+    "sha256": "3b331b8779b1655777b3b54dc5515490a2bca92c04d2eeef6c3744f60a2177fb",
+    "size": 706754
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "念身親𠱋生死拯渚",
+      "points": [
+        [
+          218,
+          190
+        ],
+        [
+          1540,
+          190
+        ],
+        [
+          1540,
+          311
+        ],
+        [
+          218,
+          311
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "悁餞𤍌時𫉚𠢞皇朝朱",
+      "points": [
+        [
+          220,
+          307
+        ],
+        [
+          1478,
+          307
+        ],
+        [
+          1478,
+          421
+        ],
+        [
+          220,
+          421
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𣷭𣼽滝謝唯閉艮紀",
+      "points": [
+        [
+          205,
+          417
+        ],
+        [
+          1496,
+          417
+        ],
+        [
+          1496,
+          531
+        ],
+        [
+          205,
+          531
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "極淶移𡾵宝作",
+      "points": [
+        [
+          205,
+          527
+        ],
+        [
+          1144,
+          527
+        ],
+        [
+          1144,
+          636
+        ],
+        [
+          205,
+          636
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 5,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𡶀",
+      "points": [
+        [
+          705,
+          1037
+        ],
+        [
+          1034,
+          1037
+        ],
+        [
+          1034,
+          1159
+        ],
+        [
+          705,
+          1159
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 2,
+      "check_v": 3
+    }
+  ]
+}

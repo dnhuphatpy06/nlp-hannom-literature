@@ -1,0 +1,124 @@
+{
+  "engine": "row_text",
+  "page": 4,
+  "saved": "2026-11-09T06:40:52.189663",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.004.jpg",
+    "sha256": "1c344fbeef25b261875e5c31531728673aa4c83bf428ac2f3bd012528151f5ac",
+    "size": 767477
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "陣七將士文",
+      "points": [
+        [
+          416,
+          312
+        ],
+        [
+          1328,
+          312
+        ],
+        [
+          1328,
+          499
+        ],
+        [
+          416,
+          499
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 5,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "嘉隆元年",
+      "points": [
+        [
+          506,
+          802
+        ],
+        [
+          1195,
+          802
+        ],
+        [
+          1195,
+          926
+        ],
+        [
+          506,
+          926
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 4,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "䀡翁武量爫",
+      "points": [
+        [
+          423,
+          1010
+        ],
+        [
+          1305,
+          1010
+        ],
+        [
+          1305,
+          1136
+        ],
+        [
+          423,
+          1136
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 5,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "翁𦰟文誠主察",
+      "points": [
+        [
+          335,
+          1222
+        ],
+        [
+          1424,
+          1222
+        ],
+        [
+          1424,
+          1352
+        ],
+        [
+          335,
+          1352
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 6,
+      "check_v": 3
+    }
+  ]
+}

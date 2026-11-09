@@ -76,6 +76,7 @@ from PyQt5.QtWidgets import (
     QAction,
     QPushButton,
     QCheckBox,  # [GK]
+    QSizePolicy,  # [GK]
 )
 
 __dir__ = os.path.dirname(__file__)
@@ -87,6 +88,7 @@ sys.path.append(os.path.join(__dir__, ""))
 from libs.gk_ocr import EngineState, EngineOCR, EngineTextRecognition, EngineTextDetection, bridge, events as gk_events
 from libs.gk_ocr_log import OcrLogDock, set_ui_busy   # [GK] khung OCR log
 from libs import gk_fonts   # [GK] font Hán Nôm trong font/
+from libs.gk_review import ReviewDialog, review_module   # [GK] hộp thoại "Kiểm tra box"
 
 GK_SETTING_ALTERNATE = "gk_alternate"   # [GK] khoá trong cài đặt: lọc xen kẽ hàng ch/vi khi tách hàng trang có cả hai loại chữ
 import libs.resources
@@ -338,6 +340,11 @@ class MainWindow(QMainWindow):
         self.MoveUpButton.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
         self.MoveDownButton = QToolButton()
         self.MoveDownButton.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        # [GK] nút "Kiểm tra box": hộp thoại chỉ hiện ảnh cắt từng box, chữ và cảnh báo; mọi box đã check thì ảnh được đặt là đã check
+        self.ReviewButton = QToolButton()
+        self.ReviewButton.setToolButtonStyle(Qt.ToolButtonTextBesideIcon)
+        self.ReviewButton.setStyleSheet("font-weight:bold;")
+        self.ReviewButton.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Fixed)
 
         leftTopToolBox = QGridLayout()
         leftTopToolBox.addWidget(self.newButton, 0, 0, 1, 1)
@@ -348,6 +355,7 @@ class MainWindow(QMainWindow):
         leftTopToolBoxContainer = QWidget()
         leftTopToolBoxContainer.setLayout(leftTopToolBox)
         listLayout.addWidget(leftTopToolBoxContainer)
+        listLayout.addWidget(self.ReviewButton)   # [GK]
 
         #  ================== Label List  ==================
         labelIndexListlBox = QHBoxLayout()
@@ -965,6 +973,16 @@ class MainWindow(QMainWindow):
             enabled=True,
         )
 
+        # [GK] Kiểm tra box của ảnh đang mở (xem libs/gk_review.py, scripts/box_review.py)
+        review = action(
+            "Kiểm tra box",
+            self.gkReview,
+            "Ctrl+Shift+K",
+            "done",
+            "Xem ảnh cắt, chữ và cảnh báo (lệch số chữ) của từng box; mọi box đã check thì ảnh được đặt là đã check",
+            enabled=True,
+        )
+
         settings_action = action(
             get_str("settings"),
             self.showSettingsDialog,
@@ -986,6 +1004,7 @@ class MainWindow(QMainWindow):
         self.ReverseButton.setDefaultAction(reverseOrder)
         self.MoveUpButton.setDefaultAction(moveBoxUp)
         self.MoveDownButton.setDefaultAction(moveBoxDown)
+        self.ReviewButton.setDefaultAction(review)
         # self.preButton.setDefaultAction(openPrevImg)
         # self.nextButton.setDefaultAction(openNextImg)
 
@@ -1082,6 +1101,7 @@ class MainWindow(QMainWindow):
             reverseOrder=reverseOrder,
             moveBoxUp=moveBoxUp,
             moveBoxDown=moveBoxDown,
+            review=review,
             fileMenuActions=(
                 opendir,
                 open_dataset_dir,
@@ -1106,6 +1126,7 @@ class MainWindow(QMainWindow):
                 reverseOrder,
                 moveBoxUp,
                 moveBoxDown,
+                review,
                 None,
                 undo,
                 undoLastPoint,
@@ -2848,10 +2869,15 @@ class MainWindow(QMainWindow):
                 self.statusBar().show()
                 currIndex = self.mImgList.index(self.filePath)
                 item = self.fileListWidget.item(currIndex)
-                item.setIcon(newIcon("done"))
 
-                self.fileStatedict[self.getImglabelidx(self.filePath)] = 1
-                if len(self.fileStatedict) % self.autoSaveNum == 0:
+                # [GK] Bản gốc: lưu = ảnh đã check. Giờ ảnh chỉ là đã check (1) khi MỌI box đã check: box sạch, hoặc box có cảnh báo mà người đã bấm
+                # "Đã check" trong hộp thoại Kiểm tra box (scripts/box_review.py); còn box chưa check thì ảnh giữ 0.
+                idx = self.getImglabelidx(self.filePath)
+                state = self.gkPageState()
+                changed = self.fileStatedict.get(idx) != state
+                self.fileStatedict[idx] = state
+                item.setIcon(newIcon("done" if state else "close"))
+                if changed or len(self.fileStatedict) % self.autoSaveNum == 0:
                     self.saveFilestate()
                     self.savePPlabel(mode="Auto")
 
@@ -3187,11 +3213,8 @@ class MainWindow(QMainWindow):
         end_index = min(self.currIndex + self.auto_recognition_num, len(self.mImgList))
         images_to_check = self.mImgList[start_index:end_index]
 
-        recorded_basenames = [
-            os.path.basename(path)
-            for path in self.fileStatedict.keys()
-            if self.fileStatedict[path] == 1
-        ]
+        # [GK] Ảnh đã có dòng trong fileState.txt (kể cả 0 = chưa check) đã được OCR rồi: bỏ qua như trước, không nhận dạng đè lên chữ đã có.
+        recorded_basenames = [os.path.basename(path) for path in self.fileStatedict.keys()]
 
         uncheckedList = []
         for image_path in images_to_check:
@@ -3851,7 +3874,8 @@ class MainWindow(QMainWindow):
                 states = f.readlines()
                 for each in states:
                     file, state = each.split("\t")
-                    self.fileStatedict[self.getImglabelidx(file)] = 1
+                    # [GK] Bản gốc coi mọi dòng là đã check (ghi đè giá trị trong file). Giữ nguyên 0/1 để cờ "chưa check" của bước OCR còn nguyên.
+                    self.fileStatedict[self.getImglabelidx(file)] = 1 if state.strip() == "1" else 0
                 self.actions.saveLabel.setEnabled(True)
                 self.actions.saveRec.setEnabled(True)
                 self.actions.exportJSON.setEnabled(True)
@@ -3920,6 +3944,8 @@ class MainWindow(QMainWindow):
 
         with open(rec_gt_dir, "w", encoding="utf-8") as f:
             for key in self.fileStatedict:
+                if self.fileStatedict[key] != 1:   # [GK] chỉ xuất ảnh đã check
+                    continue
                 idx = self.getImglabelidx(key)
                 try:
                     img_path = os.path.dirname(base_dir) + "/" + key
@@ -4222,6 +4248,67 @@ class MainWindow(QMainWindow):
             "Information",
             "resort success!",
         )
+
+    # ------------------------------------------------------------------ [GK] Kiểm tra box
+    def gkAnalyze(self):
+        """([shape], phân tích box_review) của các box đang hiện trên ảnh đang mở (kể cả chữ mới sửa chưa lưu); bỏ box đã khoá."""
+        shapes = [s for s in self.canvas.shapes if s.line_color != DEFAULT_LOCK_COLOR]
+        boxes = [{"transcription": s.label, "points": [(int(p.x()), int(p.y())) for p in s.points]} for s in shapes]
+        return shapes, review_module().analyze(self.filePath, boxes)
+
+    def gkPageState(self):
+        """fileState của ảnh đang mở: 1 nếu mọi box đã check (box sạch hoặc người đã bấm 'Đã check'), ngược lại 0. Lỗi khi kiểm tra thì giữ như
+        bản gốc (1) để không chặn việc lưu."""
+        try:
+            return 1 if review_module().page_checked(self.gkAnalyze()[1]) else 0
+        except Exception as e:
+            logger.warning("Không kiểm tra được box của %s: %s", self.filePath, e)
+            return 1
+
+    def gkReview(self):
+        """Nút "Kiểm tra box": hộp thoại ảnh cắt + chữ + cảnh báo của từng box trong ảnh đang mở."""
+        if not self.filePath or not self.canvas.shapes:
+            QMessageBox.information(self, "Kiểm tra box", "Hãy mở một ảnh có box trước.")
+            return
+        try:
+            shapes, analysis = self.gkAnalyze()
+        except Exception as e:
+            QMessageBox.warning(self, "Kiểm tra box", "Không phân tích được các box của ảnh này:\n%s" % e)
+            return
+        if not analysis["checked_folder"]:
+            QMessageBox.information(
+                self, "Kiểm tra box",
+                "Chỉ ảnh trong thư mục ch/ có cảnh báo (đối chiếu số chữ). Ảnh này vẫn xem và sửa chữ được; "
+                "lưu thì ảnh được đặt là đã check.")
+        ReviewDialog(self, analysis, self.label_font_family).exec_()
+
+    def gkReviewSave(self, analysis, edits, checked_keys):
+        """Áp chữ đã sửa lên các box, lưu dấu 'Đã check', lưu ảnh (tính lại fileState). Trả về True nếu ảnh giờ là đã check."""
+        shapes = [s for s in self.canvas.shapes if s.line_color != DEFAULT_LOCK_COLOR]   # lấy lại mỗi lần: lưu ảnh có thể dựng lại các shape
+        for index, text in edits.items():
+            shapes[index].label = text
+            self.singleLabel(shapes[index])
+        if edits:
+            self.setDirty()
+        review_module().mark_page(analysis, checked_keys)
+        self.saveFile()   # Manual: ghi Label, tính fileState từ dấu check, lưu fileState.txt
+        state = self.fileStatedict.get(self.getImglabelidx(self.filePath)) == 1
+        self.statusBar().showMessage(
+            "Đã lưu: ảnh %s." % ("ĐÃ CHECK" if state else "vẫn CHƯA CHECK (còn box chưa check)"), 6000)
+        return state
+
+    def gkReviewNext(self):
+        """Mở ảnh chưa check kế tiếp (vòng quanh danh sách) rồi mở lại hộp thoại Kiểm tra box."""
+        if not self.mImgList or self.filePath not in self.mImgList:
+            return
+        start, total = self.mImgList.index(self.filePath), len(self.mImgList)
+        for step in range(1, total + 1):
+            path = self.mImgList[(start + step) % total]
+            if not self.validFilestate(path):
+                self.loadFile(path)
+                QTimer.singleShot(0, self.gkReview)
+                return
+        QMessageBox.information(self, "Kiểm tra box", "Mọi ảnh trong thư mục đã check.")
 
     def selectAllBoxes(self):
         """[GK] Chọn tất cả box đang hiện (bỏ qua box bị ẩn bằng Ctrl+H)."""

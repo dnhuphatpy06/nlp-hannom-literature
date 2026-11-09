@@ -1,0 +1,254 @@
+{
+  "engine": "row_text",
+  "page": 10,
+  "saved": "2026-11-09T06:40:52.877648",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.010.jpg",
+    "sha256": "8707a1554ba7c77d28bc47941042e63bfc7b020928e580b1bc530f471fd5fe38",
+    "size": 1004394
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "廕楼𩛂沛者旦形骸糟",
+      "points": [
+        [
+          112,
+          201
+        ],
+        [
+          1442,
+          201
+        ],
+        [
+          1442,
+          328
+        ],
+        [
+          112,
+          328
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "仍麻𠸦月干𪀄鉄𢚸𣘈𢙇",
+      "points": [
+        [
+          124,
+          619
+        ],
+        [
+          1597,
+          619
+        ],
+        [
+          1597,
+          742
+        ],
+        [
+          124,
+          742
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "白𧷺䀡阻姅如空月寃",
+      "points": [
+        [
+          143,
+          738
+        ],
+        [
+          1588,
+          738
+        ],
+        [
+          1588,
+          849
+        ],
+        [
+          143,
+          849
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𨃐隊共甘𥪝䀡腑",
+      "points": [
+        [
+          137,
+          845
+        ],
+        [
+          1468,
+          845
+        ],
+        [
+          1468,
+          954
+        ],
+        [
+          137,
+          954
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "方油空閣𤐡臺𩄲",
+      "points": [
+        [
+          234,
+          1238
+        ],
+        [
+          1490,
+          1238
+        ],
+        [
+          1490,
+          1361
+        ],
+        [
+          234,
+          1361
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "名㐌𢯞棱𣘃内𦹵",
+      "points": [
+        [
+          242,
+          1452
+        ],
+        [
+          1488,
+          1452
+        ],
+        [
+          1488,
+          1569
+        ],
+        [
+          242,
+          1569
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "右閉𠰚旗𫏾",
+      "points": [
+        [
+          145,
+          1652
+        ],
+        [
+          1611,
+          1652
+        ],
+        [
+          1611,
+          1771
+        ],
+        [
+          145,
+          1771
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "身拯管幔霜樓這仍",
+      "points": [
+        [
+          162,
+          1767
+        ],
+        [
+          1578,
+          1767
+        ],
+        [
+          1578,
+          1873
+        ],
+        [
+          162,
+          1873
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "徐䀡高湿祈忠常傷",
+      "points": [
+        [
+          147,
+          1869
+        ],
+        [
+          1494,
+          1869
+        ],
+        [
+          1494,
+          1994
+        ],
+        [
+          147,
+          1994
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    }
+  ]
+}
