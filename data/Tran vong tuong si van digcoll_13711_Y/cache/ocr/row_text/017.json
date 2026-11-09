@@ -1,0 +1,254 @@
+{
+  "engine": "row_text",
+  "page": 17,
+  "saved": "2026-11-09T06:40:53.591047",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.017.jpg",
+    "sha256": "6ba8bbc90ebde1316bd19c41ff01773e059dc012b3f5babfdbac6f1caaebb85f",
+    "size": 855963
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "文徐",
+      "points": [
+        [
+          781,
+          189
+        ],
+        [
+          1091,
+          189
+        ],
+        [
+          1091,
+          299
+        ],
+        [
+          781,
+          299
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 2,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "馬武聲性",
+      "points": [
+        [
+          479,
+          296
+        ],
+        [
+          1370,
+          296
+        ],
+        [
+          1370,
+          414
+        ],
+        [
+          479,
+          414
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 5,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𡶀書吳從周",
+      "points": [
+        [
+          482,
+          412
+        ],
+        [
+          1353,
+          412
+        ],
+        [
+          1353,
+          523
+        ],
+        [
+          482,
+          523
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 5,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "鄧德超",
+      "points": [
+        [
+          660,
+          934
+        ],
+        [
+          1302,
+          934
+        ],
+        [
+          1302,
+          1046
+        ],
+        [
+          660,
+          1046
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 3,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "嘆浪",
+      "points": [
+        [
+          752,
+          1234
+        ],
+        [
+          1084,
+          1234
+        ],
+        [
+          1084,
+          1342
+        ],
+        [
+          752,
+          1342
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 3,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "道子點𢚸主",
+      "points": [
+        [
+          291,
+          1432
+        ],
+        [
+          1550,
+          1432
+        ],
+        [
+          1550,
+          1551
+        ],
+        [
+          291,
+          1551
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "槊難曾𤋵胣忠誠",
+      "points": [
+        [
+          277,
+          1547
+        ],
+        [
+          1568,
+          1547
+        ],
+        [
+          1568,
+          1676
+        ],
+        [
+          277,
+          1676
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𥪸𦬑雄为渃腦",
+      "points": [
+        [
+          278,
+          1851
+        ],
+        [
+          1578,
+          1851
+        ],
+        [
+          1578,
+          1972
+        ],
+        [
+          278,
+          1972
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "枚落還𢬗𢚸節義",
+      "points": [
+        [
+          275,
+          1968
+        ],
+        [
+          1605,
+          1968
+        ],
+        [
+          1605,
+          2099
+        ],
+        [
+          275,
+          2099
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    }
+  ]
+}

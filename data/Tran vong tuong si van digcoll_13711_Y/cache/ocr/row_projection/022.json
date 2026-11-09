@@ -1,0 +1,169 @@
+{
+  "engine": "row_projection",
+  "page": 22,
+  "saved": "2026-11-08T21:39:40.469480",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.022.jpg",
+    "sha256": "ee7c356641c49403300a96d098e08f4b6f01a3bce20356d9817e029dff44fba9",
+    "size": 676653
+  },
+  "params": {
+    "bg_kernel": 25,
+    "blob_dilate": 0.3,
+    "blob_mass": 0.35,
+    "edge_ratio": 0.05,
+    "ink_thresh": null,
+    "line_len": null,
+    "margin": 6,
+    "merge_gap": 2,
+    "min_height": 8,
+    "min_width_ratio": 0.4,
+    "near_gap": 0.35,
+    "no_auto_crop": false,
+    "no_clean_x": false,
+    "no_post": false,
+    "pad": 2,
+    "peak_prom": 0.2,
+    "post_min_rows": 4,
+    "punct_gap": 2.0,
+    "punct_size": 0.45,
+    "roi": null,
+    "save_crops": false,
+    "sliver_gap": 0.15,
+    "sliver_max_height": 1.35,
+    "sliver_ratio": 0.45,
+    "sliver_x_overlap": 0.5,
+    "smooth": 2.5,
+    "thr_ratio": 0.012,
+    "valley_ratio": 0.6,
+    "x_trim": 0.5
+  },
+  "boxes": [
+    {
+      "text": "",
+      "points": [
+        [
+          223,
+          217
+        ],
+        [
+          1474,
+          217
+        ],
+        [
+          1474,
+          293
+        ],
+        [
+          223,
+          293
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          249,
+          313
+        ],
+        [
+          1544,
+          313
+        ],
+        [
+          1544,
+          386
+        ],
+        [
+          249,
+          386
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          236,
+          411
+        ],
+        [
+          1518,
+          411
+        ],
+        [
+          1518,
+          519
+        ],
+        [
+          236,
+          519
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          231,
+          526
+        ],
+        [
+          1507,
+          526
+        ],
+        [
+          1507,
+          654
+        ],
+        [
+          231,
+          654
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          207,
+          650
+        ],
+        [
+          1515,
+          650
+        ],
+        [
+          1515,
+          725
+        ],
+        [
+          207,
+          725
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          244,
+          721
+        ],
+        [
+          1492,
+          721
+        ],
+        [
+          1492,
+          816
+        ],
+        [
+          244,
+          816
+        ]
+      ]
+    }
+  ]
+}

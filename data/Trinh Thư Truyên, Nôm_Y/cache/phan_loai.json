@@ -2,21 +2,20 @@
   "book_name": "Trinh Thư Truyên, Nôm_Y",
   "pdf": "Trinh Thư Truyên, Nôm_Y.pdf",
   "layout_code": "T2b",
-  "dpi": null,
-  "split_complete": false,
+  "dpi": 300,
+  "split_complete": true,
   "notes": "",
   "total_pages": 85,
   "pages": {
     "1": {
-      "tag": "ch_vi",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 96,
         "active": 0.1296,
         "ink": 0.0441
-      },
-      "auto": true
+      }
     },
     "2": {
       "tag": "blank",
@@ -947,9 +946,10 @@
     "at": "2026-11-07T00:44:18.144590",
     "side": 640
   },
-  "last_updated": "2026-11-07T00:44:18.188454",
+  "last_updated": "2026-11-08T20:19:03.986002",
   "autotag": {
     "type": "T2b",
     "at": "2026-11-07T00:44:18.204379"
-  }
+  },
+  "split_started": true
 }

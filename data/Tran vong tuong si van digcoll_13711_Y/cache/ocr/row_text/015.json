@@ -1,0 +1,280 @@
+{
+  "engine": "row_text",
+  "page": 15,
+  "saved": "2026-11-09T06:40:53.415471",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.015.jpg",
+    "sha256": "a7fe0397d85599bfbe0425d5ce36d295a09bf698210764e713bb225534f292ba",
+    "size": 920067
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "會平停𢪀浪",
+      "points": [
+        [
+          349,
+          206
+        ],
+        [
+          1570,
+          206
+        ],
+        [
+          1570,
+          308
+        ],
+        [
+          349,
+          308
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "空申埃碧半无丈",
+      "points": [
+        [
+          340,
+          317
+        ],
+        [
+          1566,
+          317
+        ],
+        [
+          1566,
+          411
+        ],
+        [
+          340,
+          411
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "因女代子尼鳥",
+      "points": [
+        [
+          323,
+          415
+        ],
+        [
+          1570,
+          415
+        ],
+        [
+          1570,
+          512
+        ],
+        [
+          323,
+          512
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "歇共心月存切槾",
+      "points": [
+        [
+          330,
+          516
+        ],
+        [
+          1425,
+          516
+        ],
+        [
+          1425,
+          624
+        ],
+        [
+          330,
+          624
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 6,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𩲉魄𦄵調𣈜𣎃𦰤秀",
+      "points": [
+        [
+          209,
+          1027
+        ],
+        [
+          1682,
+          1027
+        ],
+        [
+          1682,
+          1152
+        ],
+        [
+          209,
+          1152
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "鼓骨帝渃共渃𡽫湯武",
+      "points": [
+        [
+          204,
+          1240
+        ],
+        [
+          1691,
+          1240
+        ],
+        [
+          1691,
+          1371
+        ],
+        [
+          204,
+          1371
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𣛠玄机或升𠖰渚十",
+      "points": [
+        [
+          309,
+          1454
+        ],
+        [
+          1575,
+          1454
+        ],
+        [
+          1575,
+          1561
+        ],
+        [
+          309,
+          1561
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𢢆坤𡗉辰𠉟故払本五",
+      "points": [
+        [
+          306,
+          1557
+        ],
+        [
+          1589,
+          1557
+        ],
+        [
+          1589,
+          1668
+        ],
+        [
+          306,
+          1668
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "香𦹳兴𤎜刼再生",
+      "points": [
+        [
+          324,
+          1664
+        ],
+        [
+          1572,
+          1664
+        ],
+        [
+          1572,
+          1772
+        ],
+        [
+          324,
+          1772
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "吏認和前营軍",
+      "points": [
+        [
+          319,
+          1768
+        ],
+        [
+          1276,
+          1768
+        ],
+        [
+          1276,
+          1881
+        ],
+        [
+          319,
+          1881
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 5,
+      "check_v": 3
+    }
+  ]
+}

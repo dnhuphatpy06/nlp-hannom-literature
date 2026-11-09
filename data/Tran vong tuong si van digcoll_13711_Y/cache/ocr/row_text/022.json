@@ -1,0 +1,98 @@
+{
+  "engine": "row_text",
+  "page": 22,
+  "saved": "2026-11-09T06:40:54.107021",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.022.jpg",
+    "sha256": "ee7c356641c49403300a96d098e08f4b6f01a3bce20356d9817e029dff44fba9",
+    "size": 676653
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "𠦳秋光妾庄氣𤍌想",
+      "points": [
+        [
+          236,
+          411
+        ],
+        [
+          1518,
+          411
+        ],
+        [
+          1518,
+          519
+        ],
+        [
+          236,
+          519
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "旄銊底𨷑𡋂平治",
+      "points": [
+        [
+          231,
+          526
+        ],
+        [
+          1507,
+          526
+        ],
+        [
+          1507,
+          654
+        ],
+        [
+          231,
+          654
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𡶀",
+      "points": [
+        [
+          731,
+          837
+        ],
+        [
+          1069,
+          837
+        ],
+        [
+          1069,
+          951
+        ],
+        [
+          731,
+          951
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 2,
+      "check_v": 3
+    }
+  ]
+}

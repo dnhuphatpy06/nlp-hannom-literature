@@ -1,9 +1,11 @@
 """Các hàm gọi API Kim Hán Nôm (CLC Sinonom). Chỉ gọi API và trả về nguyên JSON server trả về.
 
-Cấu hình đọc từ file .env ở thư mục gốc dự án: TOKEN (bắt buộc), BASE_URL, PLATFORM, USER_AGENT.
+Cấu hình đọc từ file .env ở thư mục gốc dự án: TOKEN (bắt buộc), BASE_URL, PLATFORM, USER_AGENT, MIN_REQUEST_GAP (giây giữa 2 request, mặc định 1).
 """
 import mimetypes
 import os
+import threading
+import time
 from pathlib import Path
 
 import requests
@@ -21,7 +23,35 @@ USER_AGENT = os.getenv("USER_AGENT") or (
 TIMEOUT = 120
 
 
+def _read_gap() -> float:
+    try:
+        return max(0.0, float(os.getenv("MIN_REQUEST_GAP") or 1.0))
+    except ValueError:
+        return 1.0
+
+
+# Giới hạn tốc độ: hai request liên tiếp (upload, OCR, dịch âm, từ mọi luồng) cách nhau ít nhất ngần này giây.
+# Mặc định 1 s; đổi bằng MIN_REQUEST_GAP trong .env (0 = không giới hạn).
+MIN_REQUEST_GAP = _read_gap()
+_throttle_lock = threading.Lock()
+_next_slot = 0.0   # thời điểm sớm nhất (time.monotonic) được gửi request kế tiếp
+
+
+def _throttle() -> None:
+    """Chờ đến lượt gửi: mỗi luồng giữ một khe riêng nên nhiều luồng gọi cùng lúc vẫn cách nhau đủ MIN_REQUEST_GAP."""
+    global _next_slot
+    if MIN_REQUEST_GAP <= 0:
+        return
+    with _throttle_lock:
+        now = time.monotonic()
+        start = max(now, _next_slot)
+        _next_slot = start + MIN_REQUEST_GAP
+    if start > now:
+        time.sleep(start - now)
+
+
 def _post(endpoint: str, **kwargs) -> dict:
+    _throttle()
     resp = requests.post(
         f"{BASE_URL}/api/{PLATFORM}/clc-sinonom/{endpoint}",
         headers={"User-Agent": USER_AGENT, "Authorization": f"Bearer {os.getenv('TOKEN', '')}"},

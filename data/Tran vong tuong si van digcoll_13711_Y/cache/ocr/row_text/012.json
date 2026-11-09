@@ -1,0 +1,280 @@
+{
+  "engine": "row_text",
+  "page": 12,
+  "saved": "2026-11-09T06:40:53.098806",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.012.jpg",
+    "sha256": "0bac1f92cf9c87e41f0dea6f06889afddcab246ff4ee8eb7e62459c9c6dec463",
+    "size": 963350
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "𩂁𠿯促月尼糟尼山𢞂",
+      "points": [
+        [
+          236,
+          399
+        ],
+        [
+          1593,
+          399
+        ],
+        [
+          1593,
+          515
+        ],
+        [
+          236,
+          515
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "才欺𪔠𢭸花准鮮𢜝塢",
+      "points": [
+        [
+          214,
+          616
+        ],
+        [
+          1567,
+          616
+        ],
+        [
+          1567,
+          717
+        ],
+        [
+          214,
+          717
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "蓮尼意共固𣋀霄",
+      "points": [
+        [
+          221,
+          825
+        ],
+        [
+          1517,
+          825
+        ],
+        [
+          1517,
+          937
+        ],
+        [
+          221,
+          937
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "課意朋冢𥢆𢢆虎",
+      "points": [
+        [
+          209,
+          1021
+        ],
+        [
+          1504,
+          1021
+        ],
+        [
+          1504,
+          1139
+        ],
+        [
+          209,
+          1139
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "㐌別几英雄時欺不屈以十仰不",
+      "points": [
+        [
+          213,
+          1238
+        ],
+        [
+          1626,
+          1238
+        ],
+        [
+          1626,
+          1347
+        ],
+        [
+          213,
+          1347
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "閉𤾓陣𠬠揚𨖲烈乃",
+      "points": [
+        [
+          222,
+          1343
+        ],
+        [
+          1476,
+          1343
+        ],
+        [
+          1476,
+          1454
+        ],
+        [
+          222,
+          1454
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "生空色死點罗空",
+      "points": [
+        [
+          221,
+          1450
+        ],
+        [
+          1533,
+          1450
+        ],
+        [
+          1533,
+          1550
+        ],
+        [
+          221,
+          1550
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "仍責𡥵造化窖無情",
+      "points": [
+        [
+          204,
+          1845
+        ],
+        [
+          1518,
+          1845
+        ],
+        [
+          1518,
+          1962
+        ],
+        [
+          204,
+          1962
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𠊛𢆥𠇍乱會邅進分始汝",
+      "points": [
+        [
+          211,
+          1966
+        ],
+        [
+          1511,
+          1966
+        ],
+        [
+          1511,
+          2076
+        ],
+        [
+          211,
+          2076
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "固冬𫳵極固",
+      "points": [
+        [
+          235,
+          2075
+        ],
+        [
+          1420,
+          2075
+        ],
+        [
+          1420,
+          2179
+        ],
+        [
+          235,
+          2179
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 6,
+      "check_v": 3
+    }
+  ]
+}

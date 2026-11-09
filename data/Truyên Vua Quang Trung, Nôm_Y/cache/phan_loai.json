@@ -2,21 +2,20 @@
   "book_name": "Truyên Vua Quang Trung, Nôm_Y",
   "pdf": "Truyên Vua Quang Trung, Nôm_Y.pdf",
   "layout_code": "T2b",
-  "dpi": null,
-  "split_complete": false,
+  "dpi": 300,
+  "split_complete": true,
   "notes": "",
   "total_pages": 93,
   "pages": {
     "1": {
-      "tag": "ch_vi",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 97,
         "active": 0.1273,
         "ink": 0.0447
-      },
-      "auto": true
+      }
     },
     "2": {
       "tag": "blank",
@@ -63,15 +62,14 @@
       "auto": true
     },
     "6": {
-      "tag": "blank",
+      "tag": "ch_vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 58,
         "active": 0.0856,
         "ink": 0.0196
-      },
-      "auto": true
+      }
     },
     "7": {
       "tag": "ch_vi",
@@ -1035,9 +1033,10 @@
     "at": "2026-11-07T00:44:44.984732",
     "side": 640
   },
-  "last_updated": "2026-11-07T00:44:45.025518",
+  "last_updated": "2026-11-08T19:54:04.064478",
   "autotag": {
     "type": "T2b",
     "at": "2026-11-07T00:44:45.045191"
-  }
+  },
+  "split_started": true
 }

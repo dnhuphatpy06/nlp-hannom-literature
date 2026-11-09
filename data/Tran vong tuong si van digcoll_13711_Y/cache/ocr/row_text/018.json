@@ -1,0 +1,306 @@
+{
+  "engine": "row_text",
+  "page": 18,
+  "saved": "2026-11-09T06:40:53.699097",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.018.jpg",
+    "sha256": "0c0f5f35d2d6c91e782a9d07442bda1605bbcd1372d79d7e16d8046d84d46acd",
+    "size": 874445
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "油散麻𤽸芇沙",
+      "points": [
+        [
+          254,
+          195
+        ],
+        [
+          1556,
+          195
+        ],
+        [
+          1556,
+          313
+        ],
+        [
+          254,
+          313
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "竹唒大至節𣦍𢏑底",
+      "points": [
+        [
+          245,
+          408
+        ],
+        [
+          1519,
+          408
+        ],
+        [
+          1519,
+          529
+        ],
+        [
+          245,
+          529
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𢖵白二𠸗",
+      "points": [
+        [
+          535,
+          618
+        ],
+        [
+          1237,
+          618
+        ],
+        [
+          1237,
+          725
+        ],
+        [
+          535,
+          725
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 4,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "韜恩意才",
+      "points": [
+        [
+          519,
+          819
+        ],
+        [
+          1218,
+          819
+        ],
+        [
+          1218,
+          939
+        ],
+        [
+          519,
+          939
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 4,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "經綸羅志",
+      "points": [
+        [
+          535,
+          1028
+        ],
+        [
+          1227,
+          1028
+        ],
+        [
+          1227,
+          1145
+        ],
+        [
+          535,
+          1145
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 4,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "扶鼎漢暖𡾵𡗶隻",
+      "points": [
+        [
+          240,
+          1238
+        ],
+        [
+          1514,
+          1238
+        ],
+        [
+          1514,
+          1353
+        ],
+        [
+          240,
+          1353
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "㓠𦬑𨔿𠎪凶殘",
+      "points": [
+        [
+          235,
+          1349
+        ],
+        [
+          1557,
+          1349
+        ],
+        [
+          1557,
+          1480
+        ],
+        [
+          235,
+          1480
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "帆車唐欺势渃終",
+      "points": [
+        [
+          238,
+          1650
+        ],
+        [
+          1532,
+          1650
+        ],
+        [
+          1532,
+          1774
+        ],
+        [
+          238,
+          1774
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "征扲筆𦋦𢬣經濟",
+      "points": [
+        [
+          242,
+          1770
+        ],
+        [
+          1539,
+          1770
+        ],
+        [
+          1539,
+          1890
+        ],
+        [
+          242,
+          1890
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "䋦義聘堆緣閣𤍊𨀈",
+      "points": [
+        [
+          246,
+          2065
+        ],
+        [
+          1547,
+          2065
+        ],
+        [
+          1547,
+          2185
+        ],
+        [
+          246,
+          2185
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "浪屯曾𢚁胣扶",
+      "points": [
+        [
+          247,
+          2181
+        ],
+        [
+          1563,
+          2181
+        ],
+        [
+          1563,
+          2286
+        ],
+        [
+          247,
+          2286
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    }
+  ]
+}

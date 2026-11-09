@@ -108,13 +108,36 @@ def preload_model(name: str) -> dict:
     raise ValueError(f"Không có mô hình nào tên {name!r}.")
 
 
+GOLD_DIR, GOLD_FOLDER = "gold_dataset", "raw"   # gold_dataset/raw/<Tên sách>.<NNN>.jpg: ảnh trang lấy từ nhiều sách (scripts/make_gold_set.py)
+
+
+def is_gold(path: Path) -> bool:
+    return path.parent.name == GOLD_FOLDER and path.parent.parent.name == GOLD_DIR
+
+
 def locate(image_path) -> tuple[library.Book, int, str, Path]:
-    """Ảnh `<…>/<Tên sách>/<thư mục>/<Tên sách>.<NNN>.jpg` -> (sách, số trang, tên thư mục, đường dẫn tuyệt đối)."""
+    """Ảnh `<…>/<Tên sách>/<thư mục>/<Tên sách>.<NNN>.jpg` -> (sách, số trang, tên thư mục, đường dẫn tuyệt đối).
+
+    Ảnh trong gold_dataset/raw/ được tra ngược về sách gốc trong data/ (theo tên file), nên dùng chung cache/ và nhãn trang của sách đó
+    (cache/ocr/<engine>/<NNN>.json, cache/phan_loai.json): chạy hoặc đọc cache ở đâu cũng ra cùng kết quả, không có bản cache thứ hai."""
     path = Path(image_path).resolve()
-    book_dir = path.parent.parent
-    tail = path.stem.rsplit(".", 1)[-1]
+    stem, _, tail = path.stem.rpartition(".")
     number = int(tail) if tail.isdigit() else 0
+    if is_gold(path):
+        book = gold_book(stem)
+        if book is not None:
+            return book, number, path.parent.name, path
+    book_dir = path.parent.parent
     return library.Book(book_dir, book_dir / f"{book_dir.name}.pdf"), number, path.parent.name, path
+
+
+def gold_book(stem: str) -> library.Book | None:
+    """Sách trong data/ có tên thư mục trùng `stem` (so khớp NFC, không phân biệt hoa thường); None nếu không có."""
+    wanted = library.norm(stem).casefold()
+    for book in library.list_books(library.DEFAULT_DATA_DIR):
+        if library.norm(book.dir.name).casefold() == wanted:
+            return book
+    return None
 
 
 def page_tag(book: library.Book, number: int, folder: str) -> str:
@@ -142,13 +165,20 @@ def ensure_ready(engine: str) -> None:
             raise eng.EngineError(reason)
 
 
-def recognize_page(image_path, engine: str | None = None, use_cache: bool = True) -> tuple[list[dict], str, bool]:
+def recognize_page(image_path, engine: str | None = None, use_cache: bool = True,
+                   alternate: bool = True) -> tuple[list[dict], str, bool]:
     """Nhận dạng cả trang. Trả về (các box {"transcription", "points"} của thư mục đang mở, engine đã dùng, lấy từ cache?).
 
     `engine`: auto, một engine đơn, hoặc khoá "box+chữ" (xem đầu file). Đi qua ocr_jobs.ocr_page nên giống hệt bước OCR của app: ảnh đã OCR
-    bằng engine đó thì lấy từ cache, không gọi lại API/mô hình. "existing+chữ" không phát hiện box: đọc lại chữ trên box đang có trong Label.txt."""
+    bằng engine đó thì lấy từ cache, không gọi lại API/mô hình. "existing+chữ" không phát hiện box: đọc lại chữ trên box đang có trong Label.txt.
+    `alternate`: trang ch_vi tách hàng bằng row_projection thì lọc xen kẽ lẻ/chẵn (ch nhận hàng lẻ, vi nhận hàng chẵn); False thì thư mục
+    đang mở nhận MỌI hàng (người dùng tự xoá hàng thừa). Ảnh mẫu (gold) luôn lọc rồi ghép lại cả trang."""
     book, number, folder, path = locate(image_path)
     tag = page_tag(book, number, folder)
+    gold = is_gold(path)
+    alternate = alternate or gold
+    if gold:   # thư mục raw/ không phải ch/vi: coi như thư mục theo nhãn trang của sách gốc (ch -> ch, còn lại -> vi) khi chọn engine
+        folder = "ch" if tag == "ch" else "vi"
     read_text, boxes_only = True, False
     events.log(f"Nhận dạng ảnh {path.name} ({folder}/): {describe(engine)}")
     started = time.perf_counter()
@@ -170,18 +200,28 @@ def recognize_page(image_path, engine: str | None = None, use_cache: bool = True
     if engine not in eng.engines_for_tag(tag):
         raise eng.EngineError(f"Chế độ \"{eng.ENGINES[engine]['label']}\" không dùng được cho trang nhãn {tag}.")
     ensure_ready(engine)
-    wanted = {folder: None} if engine in eng.ROW_ENGINES else None   # trang ch_vi: chỉ đọc chữ của thư mục đang mở
+    wanted = {folder: None} if engine in eng.ROW_ENGINES and not gold else None   # trang ch_vi: chỉ đọc chữ của thư mục đang mở (gold: cả hai)
     if engine in eng.ROW_ENGINES and read_text:   # tách hàng rồi đọc chữ trong từng box bằng Kim Hán Nôm (ch) / Vintern-1B hoặc PaddleOCR-VL
         for text_engine_name in ocr_jobs.row_text_engines(tag, engine, {folder}):
             ensure_ready(text_engine_name)
-    result, cached = ocr_jobs.ocr_page(book, number, tag, engine, path, use_cache, read_text, wanted)
+    result, cached = ocr_jobs.ocr_page(book, number, tag, engine, path, use_cache, read_text, wanted, alternate)
     boxes = result.get(folder)
+    if gold and tag == "ch_vi" and len(result) == 2:   # ảnh mẫu giữ nguyên cả trang: ghép lại hàng Hán/Quốc ngữ xen kẽ theo thứ tự gốc
+        boxes = merge_rows(result.get("ch", []), result.get("vi", []))
     if boxes is None:                      # thư mục mở không trùng nhãn nào: lấy phần đầu tiên
         boxes = next(iter(result.values()), [])
     if boxes_only:                         # chỉ lấy box: bỏ chữ engine đã đọc luôn
         boxes = [label_io.make_box(b["points"], "") for b in boxes]
     events.log(f"Xong {path.name}: {len(boxes)} box ({time.perf_counter() - started:.1f}s{', từ cache' if cached else ''})", "ok")
     return boxes, used_key or engine, cached
+
+
+def merge_rows(ch: list[dict], vi: list[dict]) -> list[dict]:
+    """Ngược của eng.rows_to_scripts: hàng lẻ (ch) xen hàng chẵn (vi) về thứ tự từ trên xuống."""
+    out = []
+    for i in range(max(len(ch), len(vi))):
+        out += ch[i:i + 1] + vi[i:i + 1]
+    return out
 
 
 def read_existing_boxes(path: Path, folder: str, reader: str) -> list[dict]:
@@ -191,7 +231,7 @@ def read_existing_boxes(path: Path, folder: str, reader: str) -> list[dict]:
     problem = eng.pipeline_problem(folder, eng.BOX_EXISTING, reader)
     if problem:
         raise eng.EngineError(problem)
-    payload = label_io.read_labels(path.parent / label_io.LABEL_NAME).get(label_io.image_key(folder, path.name))
+    payload = label_io.read_labels(path.parent / label_io.LABEL_NAME).get(label_io.image_key(path.parent.name, path.name))
     boxes = json.loads(payload) if payload else []
     if not boxes:
         raise eng.EngineError(f"Ảnh {path.name} chưa có box nào trong {folder}/Label.txt để đọc lại chữ. "

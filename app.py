@@ -30,6 +30,8 @@ if sys.platform == "win32":
         sys.stderr.reconfigure(encoding="utf-8", errors="backslashreplace")
 
 HTML_FILE = Path(__file__).resolve().parent / "web" / "index.html"
+FONT_DIR = Path(__file__).resolve().parent / "font"  # font Hán Nôm, web nạp qua @font-face
+FONT_TYPES = {".ttf": "font/ttf", ".otf": "font/otf", ".woff": "font/woff", ".woff2": "font/woff2"}
 
 
 # ==============================================================================
@@ -122,6 +124,13 @@ def make_handler(data_dir: Path, type_file: Path):
                     self.send_error(500, "Thiếu file giao diện web/index.html")
                     return
                 self._send_file(HTML_FILE, "text/html; charset=utf-8")
+            elif path.startswith("/font/"):
+                fname = urllib.parse.unquote(path[len("/font/"):])
+                font = FONT_DIR / fname if "/" not in fname and "\\" not in fname else None
+                if font is None or font.suffix.lower() not in FONT_TYPES or not font.is_file():
+                    self.send_error(404)
+                else:
+                    self._send_file(font, FONT_TYPES[font.suffix.lower()], "public, max-age=86400")
             elif path == "/api/state":
                 for note in library.organize(data_dir):  # nhận PDF mới chép vào data/
                     print(note)
@@ -219,7 +228,8 @@ def make_handler(data_dir: Path, type_file: Path):
                     if book is None:
                         raise ValueError("Không tìm thấy PDF.")
                     ocr_jobs.start_pipeline(book, str(payload.get("folder", "")), str(payload.get("box", "")), str(payload.get("text", "")),
-                                            overwrite=bool(payload.get("overwrite", False)), use_cache=bool(payload.get("use_cache", True)))
+                                            overwrite=bool(payload.get("overwrite", False)), use_cache=bool(payload.get("use_cache", True)),
+                                            alternate=bool(payload.get("alternate", True)))
                     self._send_json({"success": True})
                 elif path in ("/api/ocr/run", "/api/ppocrlabel/open"):
                     book = library.find_book(data_dir, str(payload.get("name", "")))

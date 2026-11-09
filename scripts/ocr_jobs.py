@@ -21,7 +21,7 @@ import re
 from datetime import datetime
 from pathlib import Path
 
-from . import label_io, ocr_cache, ocr_engines as eng, ocr_events as events, page_cache
+from . import box_check, label_io, ocr_cache, ocr_engines as eng, ocr_events as events, page_cache
 from .library import SUBMISSION_FOLDERS, UNKNOWN, Book, find_page_image, norm, write_json_atomic
 
 # nhãn trang -> các thư mục nhận ảnh (ch_vi vào cả hai)
@@ -35,6 +35,8 @@ MAX_PAGE_ATTEMPTS = 3      # số lượt thử mỗi trang; hết lượt vẫn
 RETRY_BACKOFF_SECONDS = 2  # nghỉ giữa các lượt thử: 2 s sau lượt 1, 4 s sau lượt 2
 MAX_AUTH_FAIL_STREAK = 5   # ngần này trang liên tiếp còn lỗi xác thực (TOKEN sai/hết hạn) thì dừng job, không gọi tiếp hàng trăm lần
 JOB_LOG_LINES = 200        # số dòng log chạy giữ lại để hiện trên giao diện
+AUTO_CHECK = True          # trang mà mọi box Nôm đều sạch (scripts/box_check.py) tự ghi fileState = 1; False: luôn 0 như trước
+REVIEW_LOG_BOXES = 3       # tối đa bấy nhiêu box cần kiểm tra được nêu tên trong một dòng log
 _EMPTY_BOX_RE = re.compile(r'"transcription"\s*:\s*""')
 
 
@@ -128,7 +130,16 @@ def read_log(book: Book) -> dict:
 
 
 def plan(book: Book) -> dict:
-    """Dữ liệu cho màn hình OCR: số trang theo nhãn, engine đề xuất, trạng thái thư mục."""
+    """Dữ liệu cho màn hình OCR: số trang theo nhãn, engine đề xuất, trạng thái thư mục.
+
+    Vào màn hình này thì chép ảnh trang vào ch/ vi/ ... theo nhãn (sync_folders) nếu chưa chép: nếu không, sách mới có thư mục
+    rỗng và hai nút "OCR thư mục này" / "Mở PPOCRLabel" bị khoá (chúng cần ảnh trong thư mục), mà trước đây ảnh chỉ được chép
+    khi một job OCR bắt đầu. Bỏ qua khi đang có job OCR hoặc PPOCRLabel đang mở (sync có thể xoá ảnh của trang đã đổi nhãn)."""
+    if job_status(book)["status"] != "running" and not ppocrlabel_running()["running"]:
+        try:
+            sync_folders(book)
+        except OSError:
+            pass   # không chép được thì vẫn trả dữ liệu hiện có; nút sẽ báo "chưa có ảnh"
     counts: dict[str, int] = {}
     for tag in page_tags(book).values():
         counts[tag] = counts.get(tag, 0) + 1
@@ -230,9 +241,10 @@ def row_text_engines(tag: str, engine: str = eng.ROW_PROJECTION, only: set[str] 
     return [eng.KIMHANNOM if f == "ch" else eng.row_reader(engine) for f in folders if only is None or f in only]
 
 
-def _row_split(raw: list[dict], tag: str) -> dict[str, list[dict]]:
-    """Box của row_projection chia về các thư mục: ch_vi lẻ/chẵn -> ch/vi, nhãn khác tất cả vào thư mục của nhãn."""
-    return eng.rows_to_scripts(raw) if tag == "ch_vi" else {folders_for(tag)[0]: raw}
+def _row_split(raw: list[dict], tag: str, alternate: bool = True) -> dict[str, list[dict]]:
+    """Box của row_projection chia về các thư mục: ch_vi lẻ/chẵn -> ch/vi (`alternate` False: mỗi thư mục nhận mọi hàng),
+    nhãn khác tất cả vào thư mục của nhãn."""
+    return eng.rows_to_scripts(raw, alternate=alternate) if tag == "ch_vi" else {folders_for(tag)[0]: raw}
 
 
 def _pkey(points) -> tuple:
@@ -244,10 +256,13 @@ def _text_status(text: str) -> str:
     return "ok" if text.strip() else "empty"
 
 
-def _row_text_params(tag: str) -> dict:
-    """Khoá cache chữ trong box. KHÔNG gồm engine đọc chữ Quốc ngữ: bản ghi của box ngoài ch có trường `reader` riêng (reader_key), để
-    đổi giữa PaddleOCR-VL và Vintern chỉ đọc lại phần Quốc ngữ, không gọi lại API Kim Hán Nôm cho hàng Nôm."""
-    return {"tag": tag, "row_projection": eng.row_projection_params(), "kimhannom": eng.KIMHANNOM_CROP_PARAMS}
+def _row_text_params(tag: str | None = None) -> dict:
+    """Khoá cache chữ trong box: chỉ tham số API Kim Hán Nôm khi cắt box. Chữ của một box được dùng lại khi ảnh trang không đổi (sha256) và
+    4 toạ độ của box không đổi (khoá từng bản ghi là (thư mục, 4 điểm), xem _load_row_records), dù row_projection đã chạy lại với tham số khác
+    hay nhãn trang đổi (vì thế `tag` và tham số row_projection KHÔNG nằm trong khoá: sửa thuật toán tách hàng không làm mất chữ đã đọc của
+    những box vẫn ra đúng toạ độ cũ). Cũng KHÔNG gồm engine đọc chữ Quốc ngữ: bản ghi của box ngoài ch có trường `reader` riêng (reader_key),
+    để đổi giữa PaddleOCR-VL và Vintern chỉ đọc lại phần Quốc ngữ, không gọi lại API Kim Hán Nôm cho hàng Nôm."""
+    return {"kimhannom": eng.KIMHANNOM_CROP_PARAMS}
 
 
 def reader_key(reader: str) -> str:
@@ -277,7 +292,8 @@ def _load_row_records(book: Book, number: int, info: dict, params: dict, size: t
 
 
 def row_text_pass(book: Book, number: int, tag: str, image: Path, use_cache: bool = True, first: bool = True,
-                  wanted: dict | None = None, attempt: int = 1, reader: str = eng.VINTERN) -> tuple[dict[str, list[dict]], dict]:
+                  wanted: dict | None = None, attempt: int = 1, reader: str = eng.VINTERN,
+                  alternate: bool = True) -> tuple[dict[str, list[dict]], dict]:
     """MỘT lượt đọc chữ trong các box của row_projection (Kim Hán Nôm cho ch, Vintern-1B cho box còn lại). Chỉ đọc chữ,
     toạ độ box là của row_projection.
 
@@ -288,7 +304,9 @@ def row_text_pass(book: Book, number: int, tag: str, image: Path, use_cache: boo
     Cache được ghi sau từng box nên dừng giữa chừng không mất phần đã đọc, và lỗi của một box không chặn các box còn lại.
     `first` False (lượt thử lại) luôn dùng cache. `wanted`: {thư mục: tập khoá điểm cần đọc | None = tất cả}; thư mục hoặc box
     không nằm trong đó không bị đọc (đã có chữ). EngineConfigError (thiếu TOKEN, chưa nạp mô hình) được ném lên ngay.
-    Trả về ({thư mục: [{text, points, status, error?, code?}]}, {reads, raw_cached, errors})."""
+    Mỗi box của ch (đã đọc, kể cả lấy từ cache) có thêm `check` = box_check.judge: số chữ đếm bằng projection so với số chữ API.
+    Số đo từ ảnh (`proj`, `check_v`) lưu cùng bản ghi chữ của box nên box giữ nguyên 4 toạ độ không bị đo lại.
+    Trả về ({thư mục: [{text, points, status, check?, error?, code?}]}, {reads, raw_cached, errors})."""
     from PIL import Image
 
     info = ocr_cache.image_info(image)
@@ -307,7 +325,29 @@ def row_text_pass(book: Book, number: int, tag: str, image: Path, use_cache: boo
     page = None
     reads, errors = 0, []
     out: dict[str, list[dict]] = {}
-    split = _row_split(raw, tag)
+
+    def reviewed(folder: str, row: dict) -> dict:
+        """Gắn `check` (đối chiếu số chữ API với số chữ projection) vào box Nôm đã xử lý; box ngoài ch hoặc box bỏ qua giữ nguyên. Số chữ projection
+        cache trong bản ghi của box, cùng khoá 4 toạ độ với chữ; chỉ cần đo lại khi bản ghi chưa có hoặc box_check.VERSION đổi."""
+        nonlocal page
+        if folder != "ch" or row["status"] == "skipped":
+            return row
+        if row["status"] != "ok":
+            return {**row, "check": {"proj": None, "api": 0, "reasons": [box_check.NO_TEXT]}}
+        rec = stored.get((folder, _pkey(row["points"])))
+        if rec is None or rec.get("check_v") != box_check.VERSION or "proj" not in rec:   # chưa đo (hoặc đo bằng thuật toán cũ): đo rồi cache cùng bản ghi
+            if page is None:
+                page = eng.load_page_image(image)
+            measure = box_check.measure_crop(eng.crop_box(page, row["points"], pad=0))
+            if rec is not None:
+                rec.pop("two_inks", None)   # cờ 2 màu mực đã bỏ: dọn trường của cache cũ
+                rec.update(measure)
+                save()
+        else:
+            measure = {k: rec[k] for k in ("proj", "check_v")}
+        return {**row, "check": box_check.judge(row["text"], measure)}
+
+    split = _row_split(raw, tag, alternate)
     total_boxes = sum(len(v) for f, v in split.items() if wanted is None or wanted.get(f, "skip") != "skip")
     done_boxes = 0
     for folder, boxes in split.items():
@@ -326,7 +366,7 @@ def row_text_pass(book: Book, number: int, tag: str, image: Path, use_cache: boo
                 continue
             if rec is not None and not (first and not use_cache) and (
                     rec["status"] == "ok" or (not first and rec["status"] == "empty")):
-                rows.append({"text": str(rec.get("text", "")), "points": points, "status": rec["status"]})
+                rows.append(reviewed(folder, {"text": str(rec.get("text", "")), "points": points, "status": rec["status"]}))
                 continue
             if page is None:
                 page = eng.load_page_image(image)
@@ -348,9 +388,32 @@ def row_text_pass(book: Book, number: int, tag: str, image: Path, use_cache: boo
                 errors.append({"folder": folder, "box": index, "message": message, "code": code})
             stored[(folder, pk)] = {"folder": folder, **row, **({} if folder == "ch" else {"reader": reader_key(reader)})}
             save()
-            rows.append(row)
+            rows.append(reviewed(folder, row))
         out[folder] = rows
     return out, {"reads": reads, "raw_cached": raw_cached, "errors": errors}
+
+
+def review_summary(split: dict[str, list[dict]]) -> dict[str, dict]:
+    """Kết quả box_check theo thư mục (chỉ thư mục có box được kiểm, tức ch): {thư mục: {"total", "flagged", "clean"}}.
+
+    `flagged`: [{"box": số thứ tự 1-based trong Label.txt, "proj", "api", "reasons": [mã cờ]}] của các box dính cờ. `clean`: có box, mọi box đã
+    được kiểm (không bị bỏ qua) và không box nào dính cờ."""
+    out: dict[str, dict] = {}
+    for folder, rows in split.items():
+        if not any("check" in r for r in rows):
+            continue
+        flagged = [{"box": i, "proj": r["check"]["proj"], "api": r["check"]["api"], "reasons": r["check"]["reasons"]}
+                   for i, r in enumerate(rows, 1) if r.get("check", {}).get("reasons")]
+        out[folder] = {"total": len(rows), "flagged": flagged,
+                       "clean": bool(rows) and all("check" in r for r in rows) and not flagged}
+    return out
+
+
+def auto_state(report: dict, folder: str, boxes_only: bool = False) -> int:
+    """fileState tự gán cho thư mục `folder` của trang vừa OCR: 1 (đã hoàn thành) khi mọi box Nôm đều sạch (đã có chữ, số chữ API khớp
+    số chữ projection); 0 (chưa check, chờ người xem lại bằng PPOCRLabel) trong mọi trường hợp khác, kể cả trang không đi qua bước kiểm tra."""
+    review = (report.get("review") or {}).get(folder)
+    return 1 if AUTO_CHECK and not boxes_only and review and review["clean"] and report.get("status") == "ok" else 0
 
 
 def effective_spread(book: Book, number: int, tag: str, width: int, height: int, spread: int | None = None) -> int:
@@ -368,7 +431,7 @@ def effective_spread(book: Book, number: int, tag: str, width: int, height: int,
 
 def _ocr_page_once(book: Book, number: int, tag: str, engine: str, image: Path, use_cache: bool, read_text: bool,
                    wanted: dict | None, first: bool = True, attempt: int = 1,
-                   spread: int | None = None) -> tuple[dict[str, list[dict]], bool, dict]:
+                   spread: int | None = None, alternate: bool = True) -> tuple[dict[str, list[dict]], bool, dict]:
     """Một lượt OCR một ảnh: ({thư mục: [box PPOCRLabel]}, lấy_từ_cache, báo cáo). Lỗi của cả trang (engine cả trang, ảnh hỏng) được ném lên;
     lỗi từng box của row_projection nằm trong báo cáo `errors` (box lỗi để chữ rỗng). Báo cáo còn có `spread` (số trang trong ảnh) và
     `noise_removed` (số box nhiễu ở giữa đã xoá khỏi bản chụp 2 trang). `spread`: ghi đè nhãn trong cache (chủ yếu để kiểm thử)."""
@@ -379,12 +442,13 @@ def _ocr_page_once(book: Book, number: int, tag: str, engine: str, image: Path, 
     if engine in (eng.VINTERN, eng.ROW_PADDLEOCR):   # tách hàng bằng row_projection rồi đọc chữ từng hàng: đúng đường row_projection có đọc chữ
         engine, read_text = eng.ROW_PROJECTION, True
     if engine == eng.ROW_PROJECTION and read_text:
-        split, stats = row_text_pass(book, number, tag, image, use_cache, first, wanted, attempt, reader)
+        split, stats = row_text_pass(book, number, tag, image, use_cache, first, wanted, attempt, reader, alternate)
         cached = stats["reads"] == 0 and stats["raw_cached"]
         report["errors"] = stats["errors"]
         rows = [r for boxes in split.values() for r in boxes]
         report["ok_boxes"] = sum(r["status"] == "ok" for r in rows)
         report["empty_boxes"] = sum(r["status"] == "empty" for r in rows)
+        report["review"] = review_summary(split)
         if stats["errors"]:
             report["status"] = "partial" if report["ok_boxes"] or report["empty_boxes"] else "failed"
     else:
@@ -393,7 +457,7 @@ def _ocr_page_once(book: Book, number: int, tag: str, engine: str, image: Path, 
             raw = [b for b in raw if b.get("label") not in eng.PADDLE_SKIP_LABELS]
 
         if engine == eng.ROW_PROJECTION:
-            split = _row_split(raw, tag)
+            split = _row_split(raw, tag, alternate)
         elif tag == "ch_vi":
             split = {"ch": [b for b in raw if eng.is_han_text(b["text"])],
                      "vi": [b for b in raw if not eng.is_han_text(b["text"])]}
@@ -435,13 +499,15 @@ def _ocr_page_once(book: Book, number: int, tag: str, engine: str, image: Path, 
 
 
 def ocr_page(book: Book, number: int, tag: str, engine: str, image: Path,
-             use_cache: bool = True, read_text: bool = True, wanted: dict | None = None) -> tuple[dict[str, list[dict]], bool]:
+             use_cache: bool = True, read_text: bool = True, wanted: dict | None = None,
+             alternate: bool = True) -> tuple[dict[str, list[dict]], bool]:
     """Chạy (hoặc lấy từ cache) engine trên một ảnh, MỘT lượt, không thử lại. Trả về ({thư mục: [box PPOCRLabel]}, lấy_từ_cache).
 
     `read_text` chỉ có tác dụng với row_projection: đọc chữ trong từng box đã tách (xem row_text_pass); tắt thì box có chữ rỗng.
     Với row_projection mà mọi box đã đọc đều lỗi thì ném EngineError (đọc được một phần thì trả phần đó); dùng cho PPOCRLabel,
     còn bước OCR của app dùng ocr_page_report (thử lại, báo cáo từng box)."""
-    result, cached, report = _ocr_page_once(book, number, tag, engine, image, use_cache, read_text, wanted)
+    result, cached, report = _ocr_page_once(book, number, tag, engine, image, use_cache, read_text, wanted,
+                                                  alternate=alternate)
     if report["status"] == "failed":
         first_error = report["errors"][0]
         raise eng.EngineError(first_error["message"], code=first_error.get("code"))
@@ -449,7 +515,8 @@ def ocr_page(book: Book, number: int, tag: str, engine: str, image: Path,
 
 
 def ocr_page_report(book: Book, number: int, tag: str, engine: str, image: Path, use_cache: bool = True, read_text: bool = True,
-                    wanted: dict | None = None, attempts: int = MAX_PAGE_ATTEMPTS, on_event=None) -> tuple[dict, bool, dict]:
+                    wanted: dict | None = None, attempts: int = MAX_PAGE_ATTEMPTS, on_event=None,
+                    alternate: bool = True) -> tuple[dict, bool, dict]:
     """OCR một ảnh, tối đa `attempts` lượt: lỗi (cả trang hoặc từng box) thì nghỉ rồi thử lại; lượt sau chỉ đọc lại phần còn lỗi.
 
     Hết lượt vẫn lỗi thì KHÔNG ném lỗi: trả phần đọc được kèm báo cáo để nơi gọi bỏ qua trang này và chạy tiếp.
@@ -460,7 +527,8 @@ def ocr_page_report(book: Book, number: int, tag: str, engine: str, image: Path,
     for attempt in range(1, attempts + 1):
         try:
             result, cached, report = _ocr_page_once(book, number, tag, engine, image, use_cache if attempt == 1 else True,
-                                                    read_text, wanted, first=(attempt == 1), attempt=attempt)
+                                                    read_text, wanted, first=(attempt == 1), attempt=attempt,
+                                                    alternate=alternate)
             errors = report["errors"]
         except eng.EngineConfigError:
             raise
@@ -541,9 +609,10 @@ def validate_folders(folders) -> set[str] | None:
 
 
 def start_ocr(book: Book, engines: dict, overwrite: bool, use_cache: bool = True, read_text: bool = True,
-              folders=None, boxes_only: bool = False) -> None:
+              folders=None, boxes_only: bool = False, alternate: bool = True) -> None:
     """Chạy OCR nền. `folders`: chỉ OCR các thư mục này (vd. ["ch"]), không nhất thiết chạy hết; None = tất cả thư mục có trang.
-    `boxes_only`: chỉ lấy box, mọi chữ để trống (kể cả khi engine đọc luôn chữ như Kim Hán Nôm, PaddleOCR-VL)."""
+    `boxes_only`: chỉ lấy box, mọi chữ để trống (kể cả khi engine đọc luôn chữ như Kim Hán Nôm, PaddleOCR-VL).
+    `alternate`: trang ch_vi tách hàng bằng row_projection có lọc xen kẽ lẻ/chẵn về ch/vi (mặc định); False thì ch/ và vi/ đều nhận mọi hàng."""
     global _job
     chosen = validate_choices(engines)
     only = validate_folders(folders)
@@ -561,7 +630,7 @@ def start_ocr(book: Book, engines: dict, overwrite: bool, use_cache: bool = True
                              if name != engine and engine == eng.ROW_PROJECTION else " (đọc chữ trong box)" if name != engine else "")
                     raise ValueError(f"Engine {eng.ENGINE_LABELS[name]} (nhãn {tag}) chưa dùng được{extra}: {reason}")
     _begin_job(book)
-    threading.Thread(target=_run, args=(book, chosen, overwrite, use_cache, read_text, only, boxes_only), daemon=True).start()
+    threading.Thread(target=_run, args=(book, chosen, overwrite, use_cache, read_text, only, boxes_only, alternate), daemon=True).start()
 
 
 def _begin_job(book: Book) -> None:
@@ -571,7 +640,8 @@ def _begin_job(book: Book) -> None:
         if _job is not None and _job["status"] == "running":
             raise OcrBusy("Đang chạy OCR một sách, hãy đợi xong rồi thử lại.")
         _job = {"book": norm(book.name), "status": "running", "done": 0, "total": 0, "skipped": 0, "cached": 0,
-                "current": "Đang chuẩn bị…", "failed": [], "ok": 0, "log": [], "error": None, "started": time.time()}
+                "current": "Đang chuẩn bị…", "failed": [], "ok": 0, "checked": 0, "flagged": 0, "log": [], "error": None,
+                "started": time.time()}
 
 
 def folder_tags(folder: str) -> list[str]:
@@ -579,7 +649,8 @@ def folder_tags(folder: str) -> list[str]:
     return [t for t in eng.OCR_TAGS if folder in folders_for(t)]
 
 
-def start_pipeline(book: Book, folder: str, box: str, text: str, overwrite: bool = False, use_cache: bool = True) -> None:
+def start_pipeline(book: Book, folder: str, box: str, text: str, overwrite: bool = False, use_cache: bool = True,
+                   alternate: bool = True) -> None:
     """OCR RIÊNG một thư mục với tổ hợp chọn riêng "ai tìm box" và "ai đọc chữ" (xem ocr_engines.pipeline_problem):
 
       box = kimhannom | paddleocr | row_projection   tìm box (kimhannom, paddleocr đọc luôn chữ; row_projection chỉ tách hàng)
@@ -604,7 +675,8 @@ def start_pipeline(book: Book, folder: str, box: str, text: str, overwrite: bool
     for tag in chosen:
         if engine not in eng.engines_for_tag(tag):
             raise ValueError(f"Nguồn {eng.ENGINE_LABELS[engine]} không dùng được cho trang nhãn {tag}.")
-    start_ocr(book, chosen, overwrite, use_cache, read_text=text != eng.TEXT_NONE, folders=[folder], boxes_only=text == eng.TEXT_NONE)
+    start_ocr(book, chosen, overwrite, use_cache, read_text=text != eng.TEXT_NONE, folders=[folder], boxes_only=text == eng.TEXT_NONE,
+              alternate=alternate)
 
 
 def _failed_entry(value) -> dict:
@@ -669,8 +741,9 @@ def _build_tasks(book: Book, chosen: dict[str, str], overwrite: bool,
 
 
 def _run(book: Book, chosen: dict[str, str], overwrite: bool, use_cache: bool = True, read_text: bool = True,
-         folders: set[str] | None = None, boxes_only: bool = False) -> None:
+         folders: set[str] | None = None, boxes_only: bool = False, alternate: bool = True) -> None:
     pending: dict[str, dict[str, list[dict]]] = {}
+    pending_states: dict[str, dict[str, int]] = {}   # fileState tự gán (box_check) của các dòng trong `pending`: {thư mục: {khoá ảnh: 1}}; còn lại 0
     log = read_log(book)
     log_pages = log.setdefault("pages", {})
     failed = {k: _failed_entry(v) for k, v in (log.get("failed") or {}).items()}   # giữ trang lỗi từ các lần chạy trước tới khi OCR được
@@ -685,8 +758,9 @@ def _run(book: Book, chosen: dict[str, str], overwrite: bool, use_cache: bool = 
         def flush():
             for folder, labels in pending.items():
                 if labels:
-                    label_io.update_folder(book.dir / folder, labels, state=0)
+                    label_io.update_folder(book.dir / folder, labels, state=0, state_by_key=pending_states.get(folder))
             pending.clear()
+            pending_states.clear()
             log.update(updated=datetime.now().isoformat(), failed=failed)
             write_json_atomic(book.cache_dir / "ocr_log.json", log)
 
@@ -695,7 +769,7 @@ def _run(book: Book, chosen: dict[str, str], overwrite: bool, use_cache: bool = 
                 _job.update(done=i - 1, current=f"Trang {number:03d} ({tag}, {eng.ENGINES[engine]['label']})")
             # lỗi cấu hình (thiếu TOKEN, chưa nạp mô hình) được ném lên và dừng job; lỗi khác nằm trong báo cáo
             result, from_cache, report = ocr_page_report(book, number, tag, engine, image, use_cache, read_text, wanted,
-                                                         on_event=_job_log)
+                                                         on_event=_job_log, alternate=alternate)
             status, errors = report["status"], report["errors"]
             if report.get("spread") == 2 and report.get("noise_removed"):
                 _job_log(f"Trang {number:03d}: bản chụp 2 trang, đã xoá {report['noise_removed']} box nhiễu ở giữa")
@@ -713,6 +787,8 @@ def _run(book: Book, chosen: dict[str, str], overwrite: bool, use_cache: bool = 
             auth_streak = auth_streak + 1 if errors and report["auth"] else 0
 
             empty_boxes = 0
+            states: dict[str, int] = {}
+            review: dict[str, dict] = {}
             if status != "failed":   # trang lỗi hoàn toàn: không ghi gì để lần sau làm lại
                 for folder in need:
                     key = label_io.image_key(folder, _image_name(book, number))
@@ -731,6 +807,19 @@ def _run(book: Book, chosen: dict[str, str], overwrite: bool, use_cache: bool = 
                     else:
                         empty_boxes += sum(1 for b in boxes if not b["transcription"].strip())
                         pending.setdefault(folder, {})[key] = boxes
+                        states[folder] = auto_state(report, folder, boxes_only)
+                        if states[folder]:
+                            pending_states.setdefault(folder, {})[key] = 1
+                review = {f: rv for f, rv in (report.get("review") or {}).items() if f in states}
+                for folder, rv in review.items():   # box dính cờ: nêu rõ để người kiểm tra biết nhìn vào đâu
+                    if rv["flagged"]:
+                        shown = "; ".join(box_check.describe(e) for e in rv["flagged"][:REVIEW_LOG_BOXES])
+                        more = len(rv["flagged"]) - REVIEW_LOG_BOXES
+                        _job_log(f"Trang {number:03d}: {len(rv['flagged'])}/{rv['total']} box {folder}/ cần kiểm tra: {shown}"
+                                 + (f" (+{more} box khác)" if more > 0 else ""))
+                with _job_lock:
+                    _job["checked"] += sum(states.values())
+                    _job["flagged"] += sum(1 for f in states if not states[f] and review.get(f, {}).get("flagged"))
                 if empty_boxes and not errors:
                     _job_log(f"Trang {number:03d}: còn {empty_boxes} box chưa có chữ (engine không đọc ra chữ)")
             if from_cache:
@@ -739,6 +828,11 @@ def _run(book: Book, chosen: dict[str, str], overwrite: bool, use_cache: bool = 
             log_pages[str(number)] = {"tag": tag, "engine": engine, "at": datetime.now().isoformat(), "cached": from_cache,
                                       "status": status, "attempts": report["attempts"], "empty_boxes": empty_boxes,
                                       "errors": errors, "boxes": {f: len(result.get(f, [])) for f in need}}
+            if status != "failed" and review:   # fileState tự gán và các box dính cờ (để người kiểm tra tìm lại sau khi đóng app)
+                log_pages[str(number)]["state"] = {f: states[f] for f in review}
+                flagged = {f: rv["flagged"] for f, rv in review.items() if rv["flagged"]}
+                if flagged:
+                    log_pages[str(number)]["review"] = flagged
             if auth_streak >= MAX_AUTH_FAIL_STREAK:
                 raise RuntimeError(f"Dừng vì {auth_streak} trang liên tiếp lỗi xác thực Kim Hán Nôm ({message}). Kiểm tra TOKEN trong "
                                    "file .env (còn hạn không, đã dán đúng chưa), rồi chạy lại: phần đã đọc được đã được lưu.")
@@ -751,7 +845,7 @@ def _run(book: Book, chosen: dict[str, str], overwrite: bool, use_cache: bool = 
         try:
             for folder, labels in pending.items():
                 if labels:
-                    label_io.update_folder(book.dir / folder, labels, state=0)
+                    label_io.update_folder(book.dir / folder, labels, state=0, state_by_key=pending_states.get(folder))
             log.update(updated=datetime.now().isoformat(), failed=failed)
             write_json_atomic(book.cache_dir / "ocr_log.json", log)
         except Exception:

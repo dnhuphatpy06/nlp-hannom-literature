@@ -2,8 +2,8 @@
   "book_name": "Truyên Vua Lê Thai Tô, Nôm_Y",
   "pdf": "Truyên Vua Lê Thai Tô, Nôm_Y.pdf",
   "layout_code": "T2b",
-  "dpi": null,
-  "split_complete": false,
+  "dpi": 300,
+  "split_complete": true,
   "notes": "",
   "total_pages": 105,
   "pages": {
@@ -1167,9 +1167,10 @@
     "at": "2026-11-07T00:44:40.928181",
     "side": 640
   },
-  "last_updated": "2026-11-07T00:44:40.941683",
+  "last_updated": "2026-11-08T19:55:40.343473",
   "autotag": {
     "type": "T2b",
     "at": "2026-11-07T00:44:40.957519"
-  }
+  },
+  "split_started": true
 }

@@ -1,0 +1,306 @@
+{
+  "engine": "row_text",
+  "page": 11,
+  "saved": "2026-11-09T06:40:52.999721",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.011.jpg",
+    "sha256": "d1f8a6a02afdc2ab0a7167194bd80f8df02e855b130e643b265edf9fb8dcfac6",
+    "size": 988323
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "惜朱台欺女𨀈𡧲𣳔",
+      "points": [
+        [
+          306,
+          202
+        ],
+        [
+          1661,
+          202
+        ],
+        [
+          1661,
+          304
+        ],
+        [
+          306,
+          304
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "刼㐌淅𡎝𤂬牢𩄲芇及",
+      "points": [
+        [
+          308,
+          306
+        ],
+        [
+          1678,
+          306
+        ],
+        [
+          1678,
+          419
+        ],
+        [
+          308,
+          419
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 9,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𧡊𠃣𠫾唏空雨只",
+      "points": [
+        [
+          305,
+          415
+        ],
+        [
+          1426,
+          415
+        ],
+        [
+          1426,
+          536
+        ],
+        [
+          305,
+          536
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 6,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "徘徊𣙩𪔠𣇜斜湘",
+      "points": [
+        [
+          311,
+          823
+        ],
+        [
+          1569,
+          823
+        ],
+        [
+          1569,
+          938
+        ],
+        [
+          311,
+          938
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "吹𪮀𧥇𣋀𢞂兒",
+      "points": [
+        [
+          317,
+          1034
+        ],
+        [
+          1590,
+          1034
+        ],
+        [
+          1590,
+          1145
+        ],
+        [
+          317,
+          1145
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 6,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𠳐御魚𢚸買回鵉㨋𫏾團",
+      "points": [
+        [
+          135,
+          1240
+        ],
+        [
+          1679,
+          1240
+        ],
+        [
+          1679,
+          1357
+        ],
+        [
+          135,
+          1357
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 9,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "應義唒广順人清拱丕",
+      "points": [
+        [
+          120,
+          1353
+        ],
+        [
+          1699,
+          1353
+        ],
+        [
+          1699,
+          1470
+        ],
+        [
+          120,
+          1470
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 9,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "曲隊清恩平光嘹撩咦𠁑𡮇昂仰十八",
+      "points": [
+        [
+          147,
+          1466
+        ],
+        [
+          1522,
+          1466
+        ],
+        [
+          1522,
+          1578
+        ],
+        [
+          147,
+          1578
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "感仍𠊛曾上𠍵陣閉𣈜𥹰臘咹仰位仰不",
+      "points": [
+        [
+          132,
+          1838
+        ],
+        [
+          1747,
+          1838
+        ],
+        [
+          1747,
+          1968
+        ],
+        [
+          132,
+          1968
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 9,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "情春功白多千年仰耒申高細𠳚𠉞𣉹",
+      "points": [
+        [
+          131,
+          1964
+        ],
+        [
+          1744,
+          1964
+        ],
+        [
+          1744,
+          2079
+        ],
+        [
+          131,
+          2079
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 9,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𣳔𢲣姑字群春撩𨍦𦲿終𫷜",
+      "points": [
+        [
+          131,
+          2075
+        ],
+        [
+          1547,
+          2075
+        ],
+        [
+          1547,
+          2184
+        ],
+        [
+          131,
+          2184
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    }
+  ]
+}

@@ -2,8 +2,8 @@
   "book_name": "Truyen Sai vai - Vinh Kieu tap tu  digcoll_197092_Y",
   "pdf": "Truyen Sai vai - Vinh Kieu tap tu  digcoll_197092_Y.pdf",
   "layout_code": "T2b",
-  "dpi": null,
-  "split_complete": false,
+  "dpi": 300,
+  "split_complete": true,
   "notes": "",
   "total_pages": 89,
   "pages": {
@@ -52,15 +52,14 @@
       "auto": true
     },
     "5": {
-      "tag": "ch_vi",
+      "tag": "toc",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 93,
         "active": 0.1343,
         "ink": 0.0248
-      },
-      "auto": true
+      }
     },
     "6": {
       "tag": "ch_vi",
@@ -976,24 +975,24 @@
       "auto": true
     },
     "89": {
-      "tag": "ch_vi",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 333,
         "active": 0.4329,
         "ink": 0.1369
-      },
-      "auto": true
+      }
     }
   },
   "blank_scan": {
     "at": "2026-11-07T00:44:29.573973",
     "side": 640
   },
-  "last_updated": "2026-11-07T00:44:29.624670",
+  "last_updated": "2026-11-08T20:02:32.704322",
   "autotag": {
     "type": "T2b",
     "at": "2026-11-07T00:44:29.648958"
-  }
+  },
+  "split_started": true
 }

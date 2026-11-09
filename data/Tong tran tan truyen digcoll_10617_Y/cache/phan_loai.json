@@ -2,8 +2,8 @@
   "book_name": "Tong tran tan truyen digcoll_10617_Y",
   "pdf": "Tong tran tan truyen digcoll_10617_Y.pdf",
   "layout_code": "T2b",
-  "dpi": null,
-  "split_complete": false,
+  "dpi": 300,
+  "split_complete": true,
   "notes": "",
   "total_pages": 193,
   "pages": {
@@ -2135,9 +2135,10 @@
     "at": "2026-11-07T00:44:12.590425",
     "side": 640
   },
-  "last_updated": "2026-11-07T00:44:12.653509",
+  "last_updated": "2026-11-08T20:10:42.348200",
   "autotag": {
     "type": "T2b",
     "at": "2026-11-07T00:44:12.682479"
-  }
+  },
+  "split_started": true
 }

@@ -2,32 +2,30 @@
   "book_name": "Nguyêt Lịnh Quôc Âm Ca, Nôm_Y",
   "pdf": "Nguyêt Lịnh Quôc Âm Ca, Nôm_Y.pdf",
   "layout_code": "T2w",
-  "dpi": null,
-  "split_complete": false,
+  "dpi": 300,
+  "split_complete": true,
   "notes": "",
   "total_pages": 37,
   "pages": {
     "1": {
-      "tag": "ch",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 102,
         "active": 0.1319,
         "ink": 0.0442
-      },
-      "auto": true
+      }
     },
     "2": {
-      "tag": "blank",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 41,
         "active": 0.0671,
         "ink": 0.0221
-      },
-      "auto": true
+      }
     },
     "3": {
       "tag": "blank",
@@ -41,301 +39,274 @@
       "auto": true
     },
     "4": {
-      "tag": "blank",
+      "tag": "ch_vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 57,
         "active": 0.0972,
         "ink": 0.02
-      },
-      "auto": true
+      }
     },
     "5": {
-      "tag": "vi",
+      "tag": "ch",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 126,
         "active": 0.2454,
         "ink": 0.067
-      },
-      "auto": true
+      }
     },
     "6": {
-      "tag": "ch",
+      "tag": "vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 301,
         "active": 0.412,
         "ink": 0.0532
-      },
-      "auto": true
+      }
     },
     "7": {
-      "tag": "vi",
+      "tag": "ch",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 129,
         "active": 0.2569,
         "ink": 0.0712
-      },
-      "auto": true
+      }
     },
     "8": {
-      "tag": "ch",
+      "tag": "vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 313,
         "active": 0.3935,
         "ink": 0.0444
-      },
-      "auto": true
+      }
     },
     "9": {
-      "tag": "vi",
+      "tag": "ch",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 120,
         "active": 0.25,
         "ink": 0.0833
-      },
-      "auto": true
+      }
     },
     "10": {
-      "tag": "ch",
+      "tag": "vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 378,
         "active": 0.4745,
         "ink": 0.0481
-      },
-      "auto": true
+      }
     },
     "11": {
-      "tag": "vi",
+      "tag": "ch",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 129,
         "active": 0.2593,
         "ink": 0.0735
-      },
-      "auto": true
+      }
     },
     "12": {
-      "tag": "ch",
+      "tag": "vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 400,
         "active": 0.4838,
         "ink": 0.0639
-      },
-      "auto": true
+      }
     },
     "13": {
-      "tag": "vi",
+      "tag": "ch",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 133,
         "active": 0.2569,
         "ink": 0.0807
-      },
-      "auto": true
+      }
     },
     "14": {
-      "tag": "ch",
+      "tag": "vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 365,
         "active": 0.4769,
         "ink": 0.0637
-      },
-      "auto": true
+      }
     },
     "15": {
-      "tag": "vi",
+      "tag": "ch",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 134,
         "active": 0.2731,
         "ink": 0.0885
-      },
-      "auto": true
+      }
     },
     "16": {
-      "tag": "ch",
+      "tag": "vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 395,
         "active": 0.4722,
         "ink": 0.0562
-      },
-      "auto": true
+      }
     },
     "17": {
-      "tag": "vi",
+      "tag": "ch",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 128,
         "active": 0.2616,
         "ink": 0.0856
-      },
-      "auto": true
+      }
     },
     "18": {
-      "tag": "ch",
+      "tag": "vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 390,
         "active": 0.4745,
         "ink": 0.0606
-      },
-      "auto": true
+      }
     },
     "19": {
-      "tag": "vi",
+      "tag": "ch",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 128,
         "active": 0.2569,
         "ink": 0.0829
-      },
-      "auto": true
+      }
     },
     "20": {
-      "tag": "ch",
+      "tag": "vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 406,
         "active": 0.4954,
         "ink": 0.0807
-      },
-      "auto": true
+      }
     },
     "21": {
-      "tag": "vi",
+      "tag": "ch",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 134,
         "active": 0.2685,
         "ink": 0.0868
-      },
-      "auto": true
+      }
     },
     "22": {
-      "tag": "ch",
+      "tag": "vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 324,
         "active": 0.4491,
         "ink": 0.093
-      },
-      "auto": true
+      }
     },
     "23": {
-      "tag": "vi",
+      "tag": "ch",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 129,
         "active": 0.2384,
         "ink": 0.0895
-      },
-      "auto": true
+      }
     },
     "24": {
-      "tag": "ch",
+      "tag": "vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 266,
         "active": 0.4144,
         "ink": 0.0937
-      },
-      "auto": true
+      }
     },
     "25": {
-      "tag": "vi",
+      "tag": "ch",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 150,
         "active": 0.2894,
         "ink": 0.0822
-      },
-      "auto": true
+      }
     },
     "26": {
-      "tag": "ch",
+      "tag": "vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 332,
         "active": 0.4745,
         "ink": 0.0812
-      },
-      "auto": true
+      }
     },
     "27": {
-      "tag": "vi",
+      "tag": "ch",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 130,
         "active": 0.2569,
         "ink": 0.0783
-      },
-      "auto": true
+      }
     },
     "28": {
-      "tag": "ch",
+      "tag": "vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 262,
         "active": 0.4074,
         "ink": 0.0913
-      },
-      "auto": true
+      }
     },
     "29": {
-      "tag": "vi",
+      "tag": "ch",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 79,
         "active": 0.162,
         "ink": 0.0456
-      },
-      "auto": true
+      }
     },
     "30": {
-      "tag": "ch",
+      "tag": "vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 151,
         "active": 0.2454,
         "ink": 0.0455
-      },
-      "auto": true
+      }
     },
     "31": {
       "tag": "blank",
@@ -419,9 +390,10 @@
     "at": "2026-11-07T00:44:03.846716",
     "side": 640
   },
-  "last_updated": "2026-11-07T00:44:03.870153",
+  "last_updated": "2026-11-08T20:13:07.289829",
   "autotag": {
     "type": "T2w",
     "at": "2026-11-07T00:44:03.885528"
-  }
+  },
+  "split_started": true
 }

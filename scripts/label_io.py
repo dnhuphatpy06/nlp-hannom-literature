@@ -87,11 +87,12 @@ def write_states(path: Path, states: dict[str, int]) -> None:
 
 
 def update_folder(folder_dir: Path, new_labels: dict[str, list[dict]], state: int = 0,
-                  drop_keys=()) -> None:
+                  drop_keys=(), state_by_key: dict[str, int] | None = None) -> None:
     """Gộp nhãn mới vào <folder>/Label.txt và <folder>/fileState.txt.
 
     new_labels: {khóa ảnh: [box, ...]}; ảnh đã có dòng thì bị thay, ảnh khác giữ nguyên.
     state: trạng thái ghi cho các ảnh mới (0 = chưa hoàn thành, chờ kiểm tra bằng PPOCRLabel).
+    state_by_key: {khóa ảnh: trạng thái} ghi đè `state` cho từng ảnh (ảnh không có trong đó dùng `state`).
     drop_keys: các khóa cần xóa khỏi cả hai file (ảnh đã bị chuyển khỏi thư mục này).
     """
     label_file, state_file = folder_dir / LABEL_NAME, folder_dir / STATE_NAME
@@ -102,6 +103,9 @@ def update_folder(folder_dir: Path, new_labels: dict[str, list[dict]], state: in
     for key, boxes in new_labels.items():
         labels[key] = dumps_boxes(boxes)
         states[key] = state
+    for key, value in (state_by_key or {}).items():
+        if key in new_labels:
+            states[key] = 1 if value else 0
     if labels or label_file.exists():
         write_labels(label_file, labels)
     if states or state_file.exists():

@@ -34,7 +34,9 @@ os.environ.setdefault("PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK", "True")  # bỏ b
 
 from PIL import Image, ImageDraw, ImageFont
 
+FONT_DIR = Path(__file__).resolve().parent.parent / "font"  # font Hán Nôm của dự án
 FONT_CANDIDATES = [
+    str(FONT_DIR / "HAN NOM A.ttf"), str(FONT_DIR / "Han-Nom Minh Regular 2022 05 31.ttf"), str(FONT_DIR / "HanaMinA.ttf"),
     "C:/Windows/Fonts/msyh.ttc", "C:/Windows/Fonts/msjh.ttc", "C:/Windows/Fonts/simsun.ttc",
     "C:/Windows/Fonts/mingliu.ttc", "C:/Windows/Fonts/YuGothR.ttc",
     "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",

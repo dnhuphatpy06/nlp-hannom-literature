@@ -2,21 +2,20 @@
   "book_name": "Truyen Dong Thien Vuong (AB.648)_",
   "pdf": "Truyen Dong Thien Vuong (AB.648)_.pdf",
   "layout_code": "T2b",
-  "dpi": null,
-  "split_complete": false,
+  "dpi": 300,
+  "split_complete": true,
   "notes": "",
   "total_pages": 100,
   "pages": {
     "1": {
-      "tag": "ch_vi",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 89,
         "active": 0.1181,
         "ink": 0.0469
-      },
-      "auto": true
+      }
     },
     "2": {
       "tag": "blank",
@@ -52,15 +51,14 @@
       "auto": true
     },
     "5": {
-      "tag": "ch_vi",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 76,
         "active": 0.1343,
         "ink": 0.0252
-      },
-      "auto": true
+      }
     },
     "6": {
       "tag": "ch_vi",
@@ -613,15 +611,14 @@
       "auto": true
     },
     "56": {
-      "tag": "blank",
+      "tag": "ch_vi",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 40,
         "active": 0.0579,
         "ink": 0.0125
-      },
-      "auto": true
+      }
     },
     "57": {
       "tag": "ch_vi",
@@ -1042,15 +1039,14 @@
       "auto": true
     },
     "95": {
-      "tag": "ch_vi",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 312,
         "active": 0.4028,
         "ink": 0.1045
-      },
-      "auto": true
+      }
     },
     "96": {
       "tag": "blank",
@@ -1112,9 +1108,10 @@
     "at": "2026-11-07T00:44:24.738423",
     "side": 640
   },
-  "last_updated": "2026-11-07T00:44:24.796659",
+  "last_updated": "2026-11-08T20:21:24.911469",
   "autotag": {
     "type": "T2b",
     "at": "2026-11-07T00:44:24.811681"
-  }
+  },
+  "split_started": true
 }

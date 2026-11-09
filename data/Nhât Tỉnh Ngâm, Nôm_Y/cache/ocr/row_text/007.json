@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 7,
-  "saved": "2026-11-07T20:21:17.588664",
+  "saved": "2026-11-08T07:26:54.348252",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.007.jpg",
     "sha256": "fbfc47db36ff017f1d4f3626a18479603b2c70eb96cf78ac30a48814438dd00c",
@@ -13,14 +13,6 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
     },
     "row_projection": {
       "bg_kernel": 25,
@@ -76,7 +68,8 @@
           475,
           781
         ]
-      ]
+      ],
+      "status": "ok"
     },
     {
       "folder": "ch",
@@ -98,7 +91,8 @@
           475,
           1008
         ]
-      ]
+      ],
+      "status": "ok"
     },
     {
       "folder": "ch",
@@ -120,7 +114,8 @@
           473,
           1243
         ]
-      ]
+      ],
+      "status": "ok"
     },
     {
       "folder": "ch",
@@ -142,7 +137,8 @@
           469,
           1463
         ]
-      ]
+      ],
+      "status": "ok"
     },
     {
       "folder": "ch",
@@ -164,7 +160,8 @@
           471,
           1690
         ]
-      ]
+      ],
+      "status": "ok"
     },
     {
       "folder": "ch",
@@ -186,7 +183,8 @@
           475,
           1915
         ]
-      ]
+      ],
+      "status": "ok"
     },
     {
       "folder": "ch",
@@ -208,7 +206,8 @@
           467,
           2131
         ]
-      ]
+      ],
+      "status": "ok"
     },
     {
       "folder": "ch",
@@ -230,7 +229,8 @@
           464,
           2359
         ]
-      ]
+      ],
+      "status": "ok"
     },
     {
       "folder": "ch",
@@ -252,7 +252,8 @@
           466,
           2580
         ]
-      ]
+      ],
+      "status": "ok"
     },
     {
       "folder": "ch",
@@ -274,11 +275,12 @@
           463,
           2802
         ]
-      ]
+      ],
+      "status": "ok"
     },
     {
       "folder": "vi",
-      "text": "Düng hay gio' xa nhau miê",
+      "text": "Đường hay giờ xa nhau một vì",
       "points": [
         [
           415,
@@ -296,11 +298,13 @@
           415,
           893
         ]
-      ]
+      ],
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
     },
     {
       "folder": "vi",
-      "text": "Hè làn nǔi biè nǐn",
+      "text": "Hè làm người biết nghĩ thôi nên.",
       "points": [
         [
           446,
@@ -318,11 +322,13 @@
           446,
           1116
         ]
-      ]
+      ],
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
     },
     {
       "folder": "vi",
-      "text": "He's ch'in kh'in dai sang hen.",
+      "text": "Số chi khôn đại sang hơn.",
       "points": [
         [
           451,
@@ -340,11 +346,13 @@
           451,
           1348
         ]
-      ]
+      ],
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
     },
     {
       "folder": "vi",
-      "text": "Einh. laßt a’ cung von Tugén tu’ xia.",
+      "text": "Cảnh lành ai cũng vội vã tuyên truyền.",
       "points": [
         [
           438,
@@ -362,11 +370,13 @@
           438,
           1571
         ]
-      ]
+      ],
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
     },
     {
       "folder": "vi",
-      "text": "We whiim Sue nen hi Strn néi, 5",
+      "text": "Vì nhiễm lệ nên hư hoàn nét, 5",
       "points": [
         [
           458,
@@ -384,117 +394,9 @@
           458,
           1772
         ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Thai think than cho hèi mǔ zhǒi",
-      "points": [
-        [
-          423,
-          1914
-        ],
-        [
-          1960,
-          1914
-        ],
-        [
-          1960,
-          1998
-        ],
-        [
-          423,
-          1998
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Echa con nay thie thie thie gie",
-      "points": [
-        [
-          448,
-          2136
-        ],
-        [
-          1728,
-          2136
-        ],
-        [
-          1728,
-          2245
-        ],
-        [
-          448,
-          2245
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Nghìn the linh nghìn mún đది",
-      "points": [
-        [
-          419,
-          2363
-        ],
-        [
-          2161,
-          2363
-        ],
-        [
-          2161,
-          2474
-        ],
-        [
-          419,
-          2474
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Công thatn Sản không ngân bè rông.",
-      "points": [
-        [
-          435,
-          2580
-        ],
-        [
-          1942,
-          2580
-        ],
-        [
-          1942,
-          2693
-        ],
-        [
-          435,
-          2693
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "D'oe sink thank xem giung mon eao. 10",
-      "points": [
-        [
-          420,
-          2798
-        ],
-        [
-          2118,
-          2798
-        ],
-        [
-          2118,
-          2897
-        ],
-        [
-          420,
-          2897
-        ]
-      ]
+      ],
+      "status": "ok",
+      "reader": "vintern:ecdbdbd9"
     }
   ]
 }
