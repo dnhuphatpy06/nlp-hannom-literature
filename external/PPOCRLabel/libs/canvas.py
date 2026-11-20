@@ -334,7 +334,13 @@ class Canvas(QWidget):
         if self.movingShape and self.hShape:
             if self.hShape in self.shapes:
                 index = self.shapes.index(self.hShape)
-                if self.shapesBackups[-1][index].points != self.shapes[index].points:
+                has_changed = False
+                if self.shapesBackups and index < len(self.shapesBackups[-1]):
+                    has_changed = (self.shapesBackups[-1][index].points != self.shapes[index].points)
+                else:
+                    has_changed = True
+
+                if has_changed:
                     self.storeShapes()
                     self.shapeMoved.emit()  # connect to updateBoxlist in PPOCRLabel.py
 

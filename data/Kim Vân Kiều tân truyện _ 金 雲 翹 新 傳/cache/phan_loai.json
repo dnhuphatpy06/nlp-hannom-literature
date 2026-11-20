@@ -5,7 +5,7 @@
   "total_pages": 72,
   "dpi": 300,
   "split_complete": true,
-  "last_updated": "2026-11-08T06:57:03.089254",
+  "last_updated": "2026-11-09T14:55:59.332871",
   "pages": {
     "1": {
       "tag": "ch",
@@ -805,5 +805,6 @@
   "autotag": {
     "type": "Tnom",
     "at": "2026-11-07T00:43:50.627334"
-  }
+  },
+  "split_started": true
 }

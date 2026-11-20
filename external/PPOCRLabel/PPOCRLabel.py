@@ -804,6 +804,15 @@ class MainWindow(QMainWindow):
             enabled=False,
         )
 
+        splitRegion = action(
+            "Tách box theo cột trong vùng chọn",
+            self.splitSelectedRegion,
+            "Ctrl+Shift+D",
+            "splitRegion",
+            "Tách box theo cột trong vùng chọn",
+            enabled=False,
+        )
+
         createpoly = action(
             get_str("creatPolygon"),
             self.createPolygon,
@@ -925,6 +934,14 @@ class MainWindow(QMainWindow):
             "Ctrl+B",
             "resort",
             get_str("resortpositiondetail"),
+            enabled=True,
+        )
+        resortAll = action(
+            "Resort all images",
+            self.resortAllImages,
+            "Ctrl+Alt+B",
+            "resort",
+            "Sắp xếp lại thứ tự box của TẤT CẢ các ảnh trong thư mục theo quy định đồ án",
             enabled=True,
         )
 
@@ -1073,6 +1090,7 @@ class MainWindow(QMainWindow):
             copy=copy,
             saveRec=saveRec,
             singleRere=singleRere,
+            splitRegion=splitRegion,
             AutoRec=AutoRec,
             reRec=reRec,
             cellreRec=cellreRec,
@@ -1098,6 +1116,7 @@ class MainWindow(QMainWindow):
             exportJSON=exportJSON,
             expand=expand,
             resort=resort,
+            resortAll=resortAll,
             reverseOrder=reverseOrder,
             moveBoxUp=moveBoxUp,
             moveBoxDown=moveBoxDown,
@@ -1121,8 +1140,10 @@ class MainWindow(QMainWindow):
                 copy,
                 delete,
                 singleRere,
+                splitRegion,
                 cellreRec,
                 resort,
+                resortAll,
                 reverseOrder,
                 moveBoxUp,
                 moveBoxDown,
@@ -1150,6 +1171,7 @@ class MainWindow(QMainWindow):
                 copy,
                 delete,
                 singleRere,
+                splitRegion,
                 cellreRec,
                 rotateLeft,
                 rotateRight,
@@ -1879,6 +1901,7 @@ class MainWindow(QMainWindow):
         self._noSelectionSlot = False
         n_selected = len(selected_shapes)
         self.actions.singleRere.setEnabled(n_selected)
+        self.actions.splitRegion.setEnabled(n_selected)
         self.actions.cellreRec.setEnabled(n_selected)
         self.actions.delete.setEnabled(n_selected)
         self.actions.copy.setEnabled(n_selected)
@@ -3238,6 +3261,9 @@ class MainWindow(QMainWindow):
         self.init_key_list(self.Cachelabel)
 
     def reRecognition(self):
+        if self.canvas.selectedShapes:
+            self.singleRerecognition()
+            return
         n = len(self.canvas.shapes)
         with self.ocrRun("Đọc lại chữ của %d box trong ảnh (%s)" % (n, self.gkTextEngineName()), n):
             self._reRecognition()
@@ -3271,8 +3297,8 @@ class MainWindow(QMainWindow):
                 result = self.text_recognizer.predict(img_crop)[0]
                 storage = [(result["rec_text"], result["rec_score"])]
                 if result["rec_text"] != "":
+                    shape.label = result["rec_text"]
                     if shape.line_color == DEFAULT_LOCK_COLOR:
-                        shape.label = result["rec_text"]
                         storage.insert(0, box)
                         if self.kie_mode:
                             storage.append(kie_cls)
@@ -3327,48 +3353,160 @@ class MainWindow(QMainWindow):
         else:
             QMessageBox.information(self, "Information", "Draw a box!")
 
+    def splitSelectedRegion(self):
+        """[GK] Tách vùng box đang chọn thành các box từng cột/dòng và đọc chữ."""
+        n = len(self.canvas.selectedShapes)
+        if n == 0:
+            self.statusBar().showMessage("Hãy chọn ít nhất một box để tách cột/dòng", 4000)
+            return
+        with self.ocrRun("Tách cột trong %d box đã chọn (%s)" % (n, self.gkTextEngineName()), n):
+            self._singleRerecognition(force_split=True)
+
     def singleRerecognition(self):
         n = len(self.canvas.selectedShapes)
         with self.ocrRun("Đọc lại chữ của %d box đã chọn (%s)" % (n, self.gkTextEngineName()), n):
             self._singleRerecognition()
 
-    def _singleRerecognition(self):
+    def _singleRerecognition(self, force_split=False):
         img = cv2.imdecode(np.fromfile(self.filePath, dtype=np.uint8), cv2.IMREAD_COLOR)
+        if img is None:
+            return
+        folder = self.engine_state.folder()
+        split_occurred = False
+        new_shapes_added = 0
+
         for _gk_i, shape in enumerate(list(self.canvas.selectedShapes)):
             self.gkStep(_gk_i, len(self.canvas.selectedShapes))
             box = [[int(p.x()), int(p.y())] for p in shape.points]
             if len(box) > 4:
                 box = self.gen_quad_from_poly(np.array(box))
             assert len(box) == 4
-            img_crop = get_rotate_crop_image(img, np.array(box, np.float32))
-            if img_crop is None:
-                msg = (
-                    "Can not recognise the detection box in "
-                    + self.filePath
-                    + ". Please change manually"
+
+            box_np = np.array(box, dtype=np.float32)
+            d = 0.0
+            for index in range(-1, 3):
+                d += (
+                    -0.5
+                    * (box_np[index + 1][1] + box_np[index][1])
+                    * (box_np[index + 1][0] - box_np[index][0])
                 )
-                QMessageBox.information(self, "Information", msg)
-                return
-            result = self.text_recognizer.predict(img_crop)[0]
-            storage = [(result["rec_text"], result["rec_score"])]
-            if result["rec_text"] != "":
-                storage.insert(0, box)
-                storage.append(result["rec_text"])
-                if self.kie_mode:
-                    storage.append(shape.key_cls)
-                logger.debug("result in reRec is %s", result)
-                if result["rec_text"] == shape.label:
-                    logger.debug("label no change")
-                else:
-                    shape.label = result["rec_text"]
+            if d < 0:
+                box_np[1], box_np[3] = box_np[3].copy(), box_np[1].copy()
+
+            crop_w = int(
+                max(
+                    np.linalg.norm(box_np[0] - box_np[1]),
+                    np.linalg.norm(box_np[2] - box_np[3]),
+                )
+            )
+            crop_h = int(
+                max(
+                    np.linalg.norm(box_np[0] - box_np[3]),
+                    np.linalg.norm(box_np[1] - box_np[2]),
+                )
+            )
+            if crop_w <= 0 or crop_h <= 0:
+                continue
+
+            pts_std = np.float32([[0, 0], [crop_w, 0], [crop_w, crop_h], [0, crop_h]])
+            M = cv2.getPerspectiveTransform(box_np, pts_std)
+            img_crop = cv2.warpPerspective(
+                img,
+                M,
+                (crop_w, crop_h),
+                borderMode=cv2.BORDER_REPLICATE,
+                flags=cv2.INTER_CUBIC,
+            )
+            if img_crop is None:
+                continue
+
+            # Kiểm tra xem có phải là vùng chứa nhiều cột (ch) hoặc nhiều dòng (vi)
+            is_multi = force_split or (
+                folder == "ch" and crop_w / max(crop_h, 1) >= 0.35
+            ) or (
+                folder != "ch" and crop_h / max(crop_w, 1) >= 0.35
+            )
+
+            sub_boxes = []
+            if is_multi:
+                try:
+                    sub_boxes = bridge().detect_crop_boxes(
+                        img_crop, self.engine_state.engine, folder
+                    )
+                except Exception as e:
+                    logger.warning("Không thể tách cột trong box: %s", e)
+                    sub_boxes = []
+
+            if len(sub_boxes) >= 2:
+                # Tách thành các cột/dòng con
+                self.canvas.storeShapes()
+                M_inv = cv2.getPerspectiveTransform(pts_std, box_np)
+
+                # Xoá box bao quanh lớn
+                self.remLabels([shape])
+                if shape in self.canvas.shapes:
+                    self.canvas.shapes.remove(shape)
+                if shape in self.canvas.selectedShapes:
+                    self.canvas.selectedShapes.remove(shape)
+                if self.canvas.hShape == shape:
+                    self.canvas.hShape = None
+                    self.canvas.hVertex = None
+
+                # Thêm từng box cột mới với chữ đã nhận dạng
+                for col in sub_boxes:
+                    col_pts = np.array(col["points"], dtype=np.float32).reshape(-1, 1, 2)
+                    mapped = cv2.perspectiveTransform(col_pts, M_inv).reshape(-1, 2)
+
+                    new_shape = Shape(
+                        label=col.get("text", "").strip() or self.noLabelText,
+                        line_color=self.lineColor,
+                        font_family=self.label_font_family,
+                    )
+                    for pt in mapped:
+                        x, y, _ = self.canvas.snapPointToCanvas(pt[0], pt[1])
+                        new_shape.addPoint(QPointF(x, y))
+                    new_shape.close()
+                    self._update_shape_color(new_shape)
+                    self.addLabel(new_shape)
+                    self.canvas.shapes.append(new_shape)
+                    new_shapes_added += 1
+
+                split_occurred = True
+                self.actions.undo.setEnabled(True)
             else:
-                logger.warning("Can not recognise the box")
-                if self.noLabelText == shape.label:
-                    logger.debug("label no change")
+                # Nhận dạng 1 dòng/cột thông thường
+                result = self.text_recognizer.predict(img_crop)[0]
+                storage = [(result["rec_text"], result["rec_score"])]
+                if result["rec_text"] != "":
+                    storage.insert(0, box)
+                    storage.append(result["rec_text"])
+                    if self.kie_mode:
+                        storage.append(shape.key_cls)
+                    logger.debug("result in reRec is %s", result)
+                    if result["rec_text"] == shape.label:
+                        logger.debug("label no change")
+                    else:
+                        shape.label = result["rec_text"]
                 else:
-                    shape.label = self.noLabelText
-            self.singleLabel(shape)
+                    logger.warning("Can not recognise the box")
+                    if self.noLabelText == shape.label:
+                        logger.debug("label no change")
+                    else:
+                        shape.label = self.noLabelText
+                self.singleLabel(shape)
+                self.setDirty()
+
+        if split_occurred:
+            self.resortBoxPosition(quiet=True)
+            self.canvas.deSelectShape()
+            self.canvas.storeShapes()
+            self.actions.undo.setEnabled(True)
             self.setDirty()
+            self.canvas.update()
+            self.statusBar().showMessage(
+                f"Đã tự động tách vùng thành {new_shapes_added} box cột và nhận dạng chữ!",
+                8000,
+            )
 
     def TableRecognition(self):
         """
@@ -4116,9 +4254,42 @@ class MainWindow(QMainWindow):
             self.setDirty()
 
     def sort_rectangles(self, rectangles, row_height_threshold=0.5):
+        """[GK] Sắp xếp lại thứ tự box theo quy định đồ án:
+        - Bản chụp 2 trang: trang trái trước, trang phải sau.
+        - Chữ Nôm (thư mục ch): cột từ phải sang trái, trong mỗi cột từ trên xuống dưới.
+          (Nếu có tiêu đề ngang nằm phía trên thì xếp trước). Nếu Nôm viết ngang thì như Quốc ngữ.
+        - Chữ Quốc ngữ (vi, intro, ref, toc): hàng từ trên xuống dưới, trong hàng từ trái sang phải.
+        """
         if not rectangles:
             return []
+        try:
+            from statistics import median
+            from external.PPOCRLabel.libs.gk_ocr import bridge
+            b = bridge()
+            eng = b.eng
+            folder = self.engine_state.folder() if hasattr(self, "engine_state") else "vi"
+            width = self.image.width() if (hasattr(self, "image") and self.image and not self.image.isNull()) else 0
+            height = self.image.height() if (hasattr(self, "image") and self.image and not self.image.isNull()) else 0
+            if width <= 0 or height <= 0:
+                width = max(max(p[0] for p in rect) for rect in rectangles) + 1
+                height = max(max(p[1] for p in rect) for rect in rectangles) + 1
+            pages_in_image = eng.guess_spread(width, height) if folder == "ch" else 1
+            boxes = [{"orig_idx": i, "points": rect} for i, rect in enumerate(rectangles)]
+            if folder == "ch":
+                med_h = median(max(1, eng._size(bx)[1]) for bx in boxes)
+                med_w = median(max(1, eng._size(bx)[0]) for bx in boxes)
+                vertical_rtl = med_h >= med_w
+            else:
+                vertical_rtl = False
+            if pages_in_image == 2:
+                ordered = eng.order_boxes_spread(boxes, vertical_rtl=vertical_rtl, width=width)
+            else:
+                ordered = eng.order_boxes(boxes, vertical_rtl=vertical_rtl)
+            return [bx["orig_idx"] for bx in ordered]
+        except Exception as e:
+            logger.warning("sort_rectangles fallback error: %s", e)
 
+        # Fallback gốc nếu lỗi
         def get_top_left(rect):
             xs = [p[0] for p in rect]
             ys = [p[1] for p in rect]
@@ -4129,7 +4300,6 @@ class MainWindow(QMainWindow):
         ) / len(rectangles)
         threshold = avg_height * row_height_threshold
 
-        # Keep track of original indices to handle duplicates correctly
         indexed_rects = [(i, get_top_left(rect)) for i, rect in enumerate(rectangles)]
         indexed_rects.sort(key=lambda x: x[1][1])
 
@@ -4204,7 +4374,7 @@ class MainWindow(QMainWindow):
         order[old], order[new] = order[new], order[old]
         self.gkReorderShapes(order, select=shape)
 
-    def resortBoxPosition(self):
+    def resortBoxPosition(self, quiet=False):
         # get coordinate points from shapes directly to be more reliable
         rectangles = []
         for shape in self.canvas.shapes:
@@ -4217,36 +4387,94 @@ class MainWindow(QMainWindow):
         # start resort - now returns indices
         index_map = self.sort_rectangles(rectangles, row_height_threshold=0.5)
 
-        if len(index_map) != len(self.canvas.shapes):
+        if not self.gkReorderShapes(index_map):
             logger.error("Resort failed: index map size mismatch")
             return
 
-        # resort BoxList, labelList, and canvas.shapes
-        # Take all items out first
-        items_box = [self.BoxList.takeItem(0) for _ in range(self.BoxList.count())]
-        items_label = [
-            self.labelList.takeItem(0) for _ in range(self.labelList.count())
-        ]
-        shapes = list(self.canvas.shapes)
+        if not quiet:
+            QMessageBox.information(
+                self,
+                "Information",
+                "resort success!",
+            )
 
-        self.canvas.shapes = []
-        for new_idx, old_idx in enumerate(index_map):
-            self.BoxList.insertItem(new_idx, items_box[old_idx])
-            self.labelList.insertItem(new_idx, items_label[old_idx])
-            self.canvas.shapes.append(shapes[old_idx])
+    def resortAllImages(self):
+        """[GK] Sắp xếp lại thứ tự box của TẤT CẢ các ảnh trong thư mục đang mở theo quy định đồ án và lưu vào Label.txt."""
+        if not self.defaultSaveDir or not hasattr(self, "PPlabel") or not self.PPlabel:
+            QMessageBox.information(self, "Information", "Chưa mở thư mục nào hoặc chưa có nhãn.")
+            return
 
-        # Update internal indices and refresh UI
-        self.updateIndexList()
-        for i, shape in enumerate(self.canvas.shapes):
-            shape.idx = i
+        from statistics import median
+        from PIL import Image
+        from external.PPOCRLabel.libs.gk_ocr import bridge
+        b = bridge()
+        eng = b.eng
 
-        self.canvas.update()
-        self.setDirty()
+        folder = self.engine_state.folder() if hasattr(self, "engine_state") else "ch"
+        total_reordered = 0
+
+        # Nếu ảnh đang mở có box trên canvas, đồng bộ vào PPlabel trước
+        if self.filePath:
+            curr_idx = self.getImglabelidx(self.filePath)
+            curr_shapes = [{"transcription": s.label, "points": [[int(p.x()), int(p.y())] for p in s.points], "difficult": False}
+                           for s in self.canvas.shapes]
+            if curr_shapes:
+                self.PPlabel[curr_idx] = curr_shapes
+
+        for key, boxes in list(self.PPlabel.items()):
+            if not boxes or len(boxes) < 2:
+                continue
+
+            # Tìm file ảnh để lấy width, height
+            img_path = os.path.join(self.defaultSaveDir, os.path.basename(key))
+            if not os.path.exists(img_path):
+                img_path = os.path.join(os.path.dirname(self.defaultSaveDir), key)
+
+            if os.path.exists(img_path):
+                try:
+                    with Image.open(img_path) as im:
+                        width, height = im.size
+                except Exception:
+                    width = max(max(p[0] for p in b["points"]) for b in boxes) + 1
+                    height = max(max(p[1] for p in b["points"]) for b in boxes) + 1
+            else:
+                width = max(max(p[0] for p in b["points"]) for b in boxes) + 1
+                height = max(max(p[1] for p in b["points"]) for b in boxes) + 1
+
+            pages_in_image = eng.guess_spread(width, height) if folder == "ch" else 1
+
+            boxes_with_idx = [{"orig_idx": i, "points": b["points"], "raw": b} for i, b in enumerate(boxes)]
+            if folder == "ch":
+                med_h = median(max(1, eng._size(bx)[1]) for bx in boxes_with_idx)
+                med_w = median(max(1, eng._size(bx)[0]) for bx in boxes_with_idx)
+                vertical_rtl = med_h >= med_w
+            else:
+                vertical_rtl = False
+
+            if pages_in_image == 2:
+                ordered = eng.order_boxes_spread(boxes_with_idx, vertical_rtl=vertical_rtl, width=width)
+            else:
+                ordered = eng.order_boxes(boxes_with_idx, vertical_rtl=vertical_rtl)
+
+            new_order = [bx["orig_idx"] for bx in ordered]
+            if new_order != list(range(len(boxes))):
+                self.PPlabel[key] = [bx["raw"] for bx in ordered]
+                total_reordered += 1
+
+        # Lưu lại Label.txt
+        self.savePPlabel()
+
+        # Nếu ảnh đang mở được sắp xếp lại, load lại shapes lên canvas
+        if self.filePath:
+            curr_idx = self.getImglabelidx(self.filePath)
+            if curr_idx in self.PPlabel:
+                self.loadBoxList(self.PPlabel[curr_idx])
+                self.canvas.update()
 
         QMessageBox.information(
             self,
             "Information",
-            "resort success!",
+            f"Đã kiểm tra và sắp xếp lại {len(self.PPlabel)} ảnh!\n(Trong đó có {total_reordered} ảnh được đổi lại thứ tự).",
         )
 
     # ------------------------------------------------------------------ [GK] Kiểm tra box

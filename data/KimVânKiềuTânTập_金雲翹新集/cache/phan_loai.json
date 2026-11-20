@@ -2,8 +2,8 @@
   "book_name": "KimVânKiềuTânTập_金雲翹新集",
   "pdf": "KimVânKiềuTânTập_金雲翹新集.pdf",
   "layout_code": "Tnom",
-  "dpi": null,
-  "split_complete": false,
+  "dpi": 300,
+  "split_complete": true,
   "notes": "",
   "total_pages": 104,
   "pages": {
@@ -1156,9 +1156,10 @@
     "at": "2026-11-07T00:44:02.165943",
     "side": 640
   },
-  "last_updated": "2026-11-07T00:44:02.199706",
+  "last_updated": "2026-11-20T11:33:00.424487",
   "autotag": {
     "type": "Tnom",
     "at": "2026-11-07T00:44:02.219544"
-  }
+  },
+  "split_started": true
 }

@@ -240,12 +240,28 @@ def order_boxes(boxes: list[dict], vertical_rtl: bool) -> list[dict]:
     """Sắp thứ tự đọc theo "Quy định về việc đánh bounding box".
 
     vertical_rtl=True (Nôm viết dọc): cột từ phải sang trái, trong mỗi cột từ trên xuống.
+    (Nếu có tiêu đề/hoành phi ngang nằm hẳn phía trên các cột dọc, tiêu đề ngang được xếp trước).
     vertical_rtl=False (Quốc ngữ, Nôm ngang): hàng từ trên xuống, trong mỗi hàng từ trái sang phải.
     Các box được gom vào cùng cột/hàng khi tâm cách nhau không quá 0.6 lần độ rộng/cao trung vị.
     """
     if len(boxes) < 2:
         return list(boxes)
     if vertical_rtl:
+        # Nếu có box ngang nằm hẳn phía trên các cột dọc (tiêu đề/hoành phi trên cùng)
+        col_boxes = [b for b in boxes if _size(b)[1] >= _size(b)[0]]
+        if col_boxes:
+            med_col_top = median(min(p[1] for p in b["points"]) for b in col_boxes)
+            top_banners, rest = [], []
+            for b in boxes:
+                w, h = _size(b)
+                if w >= 1.4 * h and max(p[1] for p in b["points"]) <= med_col_top + 50:
+                    top_banners.append(b)
+                else:
+                    rest.append(b)
+            if top_banners and rest:
+                sorted_banners = sorted(top_banners, key=lambda b: (_center(b)[1], -_center(b)[0]))
+                return sorted_banners + order_boxes(rest, vertical_rtl=True)
+
         tol = 0.6 * median(max(1, _size(b)[0]) for b in boxes)
         major, minor, sign = (lambda b: _center(b)[0]), (lambda b: _center(b)[1]), -1
     else:
@@ -378,20 +394,47 @@ def read_crop_kimhannom(crop, params: dict | None = None, vertical: bool | None 
     quyết định. Lịch sử upload ghi vào file riêng để không làm đầy data/cache/uploads.json."""
     import cv2
 
+    if vertical is None:
+        vertical = crop.shape[0] > crop.shape[1]
+
+    # Kim Hán Nôm detector được huấn luyện trên trang sách kích thước chuẩn (~50-80px mỗi chữ).
+    # Với ảnh crop từ trang scan 4K (>1000px một dòng), chữ quá lớn khiến detector trả rỗng.
+    # Co ảnh về kích thước tối đa ~600-700px để detector nhận diện chuẩn xác.
+    h, w = crop.shape[:2]
+    max_dim = max(h, w)
+    if max_dim > 700:
+        scale = 600.0 / max_dim
+        crop = cv2.resize(crop, (max(1, int(w * scale)), max(1, int(h * scale))), interpolation=cv2.INTER_AREA)
+
     tmp = _crop_temp_dir() / f"crop_{uuid.uuid4().hex[:10]}.jpg"
     ok, encoded = cv2.imencode(".jpg", crop)
     if not ok:
         return ""
     encoded.tofile(str(tmp))
+    run_params = dict(params or KIMHANNOM_PARAMS)
+    if not vertical:
+        run_params["reading_direction"] = 2
+        run_params["ocr_id"] = 4
+    else:
+        run_params.setdefault("reading_direction", 1)
     try:
-        boxes = run_kimhannom(tmp, uploads_file=_crop_temp_dir() / "crop_uploads.json", **(params or KIMHANNOM_PARAMS))
+        boxes = run_kimhannom(tmp, uploads_file=_crop_temp_dir() / "crop_uploads.json", **run_params)
+        # Nếu là ảnh ngang mà chưa ra chữ, thử reading_direction=2 nếu chưa thử
+        if not vertical and not any(b.get("text", "").strip() for b in boxes) and run_params.get("reading_direction") != 2:
+            retry_p = dict(run_params)
+            retry_p["reading_direction"] = 2
+            boxes = run_kimhannom(tmp, uploads_file=_crop_temp_dir() / "crop_uploads.json", **retry_p)
+        # Nếu là ảnh dọc mà chưa ra chữ với ocr_id hiện tại, thử lại với ocr_id=1 (thường dọc)
+        elif vertical and not any(b.get("text", "").strip() for b in boxes) and run_params.get("ocr_id") != 1:
+            retry_p = dict(run_params)
+            retry_p["ocr_id"] = 1
+            retry_p["reading_direction"] = 1
+            boxes = run_kimhannom(tmp, uploads_file=_crop_temp_dir() / "crop_uploads.json", **retry_p)
     finally:
         tmp.unlink(missing_ok=True)
     boxes = [b for b in boxes if b["text"].strip()]
     if not boxes:
         return ""
-    if vertical is None:
-        vertical = crop.shape[0] > crop.shape[1]
     return "".join(b["text"].strip() for b in order_boxes(boxes, vertical_rtl=vertical))   # chữ Hán Nôm viết liền
 
 
@@ -518,6 +561,83 @@ class PaddleHolder:
 
 
 PADDLE = PaddleHolder()
+
+
+def detect_crop_boxes(crop, engine: str | None = None, folder: str = "ch") -> list[dict]:
+    """Phát hiện các box cột/dòng và đọc chữ trong một vùng ảnh crop (mảng BGR).
+    Trả về danh sách [{'text': str, 'points': [[x1, y1], [x2, y1], [x2, y2], [x1, y2]]}, ...].
+    Toạ độ points nằm trong hệ toạ độ của mảng `crop`.
+
+    - Thư mục 'ch' (chữ Hán Nôm):
+        Gọi API Kim Hán Nôm (ocr_id=1, lang_type=2, reading_direction=1).
+        Tự động co kích thước tối đa về ~1600px để API nhận dạng tối ưu cấu trúc cột, rồi quy đổi toạ độ về ảnh gốc.
+        Sắp xếp các cột theo thứ tự từ phải sang trái (RTL) theo đúng quy định.
+    - Thư mục khác ('vi', 'intro', 'toc', 'ref' - Quốc ngữ):
+        Gọi PaddleOCR-VL nhận dạng các khối dòng chữ.
+        Sắp xếp từ trên xuống dưới, trái sang phải (LTR).
+    """
+    import cv2
+
+    if crop is None or crop.size == 0:
+        return []
+
+    h, w = crop.shape[:2]
+
+    # Kiểm tra thư mục hoặc engine
+    if folder == "ch" or (engine and "kimhannom" in engine):
+        reason = kimhannom_available()
+        if reason:
+            raise EngineError(reason)
+
+        scale = 1.0
+        if max(h, w) > 1600:
+            scale = 1600.0 / max(h, w)
+            crop_in = cv2.resize(
+                crop,
+                (max(1, int(round(w * scale))), max(1, int(round(h * scale)))),
+                interpolation=cv2.INTER_AREA,
+            )
+        else:
+            crop_in = crop
+
+        tmp = _crop_temp_dir() / f"crop_det_{uuid.uuid4().hex[:10]}.jpg"
+        ok, encoded = cv2.imencode(".jpg", crop_in)
+        if not ok:
+            return []
+        encoded.tofile(str(tmp))
+        try:
+            raw_boxes = run_kimhannom(
+                tmp,
+                uploads_file=_crop_temp_dir() / "crop_uploads.json",
+                ocr_id=1,
+                lang_type=2,
+                reading_direction=1,
+            )
+        finally:
+            tmp.unlink(missing_ok=True)
+
+        boxes = []
+        for b in raw_boxes:
+            pts = [[int(round(x / scale)), int(round(y / scale))] for x, y in b["points"]]
+            boxes.append({"text": b.get("text", "").strip(), "points": clamp_points(pts, w, h)})
+        return order_boxes(boxes, vertical_rtl=True)
+
+    # Thư mục Quốc ngữ: dùng PaddleOCR-VL
+    reason = PADDLE.unavailable_reason()
+    if reason:
+        raise EngineError(reason)
+    PADDLE.preload()
+    raw_blocks = PADDLE.recognize(crop)
+    boxes = []
+    for b in raw_blocks:
+        label = str(b.get("label", "")).lower()
+        if label in ("figure", "table", "seal"):
+            continue
+        text = str(b.get("text", "")).strip()
+        pts = clamp_points(b.get("points", []), w, h)
+        if pts and len(pts) == 4:
+            boxes.append({"text": text, "points": pts})
+    return order_boxes(boxes, vertical_rtl=False)
 
 
 # ---------------------------------------------------------------- Vintern (đọc chữ Quốc ngữ trong box đã có)

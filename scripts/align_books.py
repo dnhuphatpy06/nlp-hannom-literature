@@ -63,6 +63,9 @@ def fold(text: str) -> str:
 
 def find_book(data_dir: Path, query: str) -> library.Book:
     books = library.list_books(data_dir)
+    exact = [b for b in books if b.stem == query or b.stem == query.removesuffix(".pdf")]
+    if len(exact) == 1:
+        return exact[0]
     key = fold(query.removesuffix(".pdf"))
     hits = [b for b in books if fold(b.stem) == key] or [b for b in books if key and key in fold(b.stem)]
     if len(hits) == 1:
@@ -78,17 +81,8 @@ def page_boxes(payload: str) -> list[dict]:
         text = norm(str(b.get("transcription", ""))).strip()
         pts = b.get("points") or []
         if text and pts:
-            xs, ys = [p[0] for p in pts], [p[1] for p in pts]
-            boxes.append({"text": text, "x": min(xs), "top": min(ys), "cy": (min(ys) + max(ys)) / 2, "h": max(ys) - min(ys),
-                          "points": pts})
-    boxes.sort(key=lambda b: b["cy"])
-    rows: list[list[dict]] = []   # gom các box cùng hàng rồi đọc từ trái sang
-    for b in boxes:
-        if rows and abs(b["cy"] - rows[-1][-1]["cy"]) < ROW_TOLERANCE * min(b["h"], rows[-1][-1]["h"]):
-            rows[-1].append(b)
-        else:
-            rows.append([b])
-    return [b for row in rows for b in sorted(row, key=lambda b: b["x"])]
+            boxes.append({"text": text, "points": pts})
+    return boxes
 
 
 def load_pages(book: library.Book, folder: str) -> dict[int, tuple[str, list[dict]]]:
@@ -102,20 +96,34 @@ def load_pages(book: library.Book, folder: str) -> dict[int, tuple[str, list[dic
 
 
 # ---------------------------------------------------------------- dóng hàng
-def align(book: library.Book, n_pages: int) -> tuple[list[Pair], list[str]]:
-    """Dóng 1-1 N trang đầu. Trả về (các cặp, ghi chú cho align_report)."""
+def align(book: library.Book, n_pages: int = 0) -> tuple[list[Pair], list[str]]:
+    """Dóng 1-1 N trang đầu (hoặc tất cả nếu n_pages <= 0). Trả về (các cặp, ghi chú cho align_report)."""
     ch, vi = load_pages(book, "ch"), load_pages(book, "vi")
-    shared = [n for n in sorted(ch) if n in vi][:n_pages]
+    shared = [n for n in sorted(ch) if n in vi]
+    if n_pages > 0:
+        shared = shared[:n_pages]
     notes: list[str] = []
-    if len(shared) < n_pages:
-        notes.append(f"Chỉ có {len(shared)}/{n_pages} trang có cả Nôm lẫn Quốc ngữ.")
+
+    if shared:
+        page_pairs = [(ch[n], vi[n]) for n in shared]
+        if n_pages > 0 and len(shared) < n_pages:
+            notes.append(f"Chỉ có {len(shared)}/{n_pages} trang có cả Nôm lẫn Quốc ngữ cùng số.")
+    else:
+        # Sách xen kẽ T2: ghép trang Nôm thứ k với trang Quốc ngữ thứ k
+        ch_list = [ch[n] for n in sorted(ch)]
+        vi_list = [vi[n] for n in sorted(vi)]
+        total_available = min(len(ch_list), len(vi_list))
+        n_match = total_available if n_pages <= 0 else min(total_available, n_pages)
+        page_pairs = [(ch_list[i], vi_list[i]) for i in range(n_match)]
+        notes.append(f"Dóng theo thứ tự trang xen kẽ: {n_match} cặp trang Nôm - Quốc ngữ.")
+
     pairs: list[Pair] = []
-    for n in shared:
-        img_id = ch[n][0]
-        nom_lines = [b["text"].replace(" ", "") for b in ch[n][1]]
-        qn_lines = [" ".join(b["text"].split()) for b in vi[n][1]]
+    for (ch_info, vi_info) in page_pairs:
+        img_id = ch_info[0]
+        nom_lines = [b["text"].replace(" ", "") for b in ch_info[1]]
+        qn_lines = [" ".join(b["text"].split()) for b in vi_info[1]]
         if len(nom_lines) != len(qn_lines):
-            notes.append(f"Trang {n:03d} ({img_id}): {len(nom_lines)} dòng Nôm nhưng {len(qn_lines)} dòng Quốc ngữ; "
+            notes.append(f"Trang {img_id}: {len(nom_lines)} dòng Nôm nhưng {len(qn_lines)} dòng Quốc ngữ; "
                          f"ghép theo thứ tự, {abs(len(nom_lines) - len(qn_lines))} dòng cuối chỉ có một vế.")
         for i in range(max(len(nom_lines), len(qn_lines))):
             pairs.append(Pair(img_id, i + 1, nom_lines[i] if i < len(nom_lines) else "", qn_lines[i] if i < len(qn_lines) else ""))
@@ -186,7 +194,7 @@ def write_xlsx(path: Path, pairs: list[Pair]) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--book", help="Tên sách (thư mục trong data/), gõ không dấu cũng được")
-    ap.add_argument("--pages", type=int, default=5, help="Số trang Nôm đầu tiên cần dóng (mặc định 5)")
+    ap.add_argument("--pages", type=int, default=0, help="Số trang Nôm đầu tiên cần dóng (mặc định 0 = toàn bộ sách)")
     ap.add_argument("--data", type=Path, default=library.DEFAULT_DATA_DIR, help="Thư mục data/")
     ap.add_argument("--out-dir", type=Path, help="Thư mục ghi kết quả (mặc định: thư mục của sách)")
     args = ap.parse_args()

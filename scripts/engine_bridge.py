@@ -286,3 +286,8 @@ def recognize_crop(crop, engine: str | None = None, folder: str = "vi") -> str:
     seconds = time.perf_counter() - started
     events.log(f"{name} ({seconds:.1f}s): {text[:60]}" if text else f"{name} ({seconds:.1f}s): không đọc ra chữ", "info" if text else "warn")
     return text
+
+
+def detect_crop_boxes(crop, engine: str | None = None, folder: str = "ch") -> list[dict]:
+    """Phát hiện các box cột/dòng và đọc chữ trong một vùng ảnh crop (mảng BGR)."""
+    return eng.detect_crop_boxes(crop, engine=engine, folder=folder)

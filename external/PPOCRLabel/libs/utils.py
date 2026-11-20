@@ -183,8 +183,13 @@ def get_rotate_crop_image(img, points):
             flags=cv2.INTER_CUBIC,
         )
         dst_img_height, dst_img_width = dst_img.shape[0:2]
-        if dst_img_height * 1.0 / dst_img_width >= 1.5:
-            dst_img = np.rot90(dst_img)
+        # [GK] KHÔNG xoay 90 độ cho ảnh dọc:
+        # PP-OCR gốc xoay ngang vì mô hình nhận dạng chữ PP-OCR chỉ đọc dòng ngang.
+        # Nhưng dự án này dùng Kim Hán Nôm (có mô hình nhận dạng chữ dọc reading_direction=1 cho chữ Hán Nôm)
+        # và Vintern/PaddleOCR-VL cho Quốc ngữ. Xoay 90 độ làm chữ Hán Nôm bị nằm nghiêng 90 độ,
+        # khiến Kim Hán Nôm nhận dạng ra chữ rác (vd: '佳人不是到錢塘' bị đọc thành '人长𠽔宿㩫𢹇').
+        # if dst_img_height * 1.0 / dst_img_width >= 1.5:
+        #     dst_img = np.rot90(dst_img)
         return dst_img
     except Exception as e:
         logger.error("Error in image processing: %s", e)

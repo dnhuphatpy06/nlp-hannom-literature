@@ -2,8 +2,8 @@
   "book_name": "KimVânKiềuTânTruyện_金雲翹新傳_2",
   "pdf": "KimVânKiềuTânTruyện_金雲翹新傳_2.pdf",
   "layout_code": "Tnom",
-  "dpi": null,
-  "split_complete": false,
+  "dpi": 300,
+  "split_complete": true,
   "notes": "",
   "total_pages": 70,
   "pages": {
@@ -782,9 +782,10 @@
     "at": "2026-11-07T00:43:59.117779",
     "side": 640
   },
-  "last_updated": "2026-11-07T00:43:59.145770",
+  "last_updated": "2026-11-20T03:06:42.023278",
   "autotag": {
     "type": "Tnom",
     "at": "2026-11-07T00:43:59.166172"
-  }
+  },
+  "split_started": true
 }
