@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 18,
-  "saved": "2026-11-07T20:29:37.741597",
+  "saved": "2026-11-09T17:10:19.086079",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.018.jpg",
     "sha256": "c02dba852061cdf3e0994c38e861e41c6972a8a6a0e1de4eab18609743a8f845",
@@ -13,47 +13,7 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
-    },
-    "row_projection": {
-      "bg_kernel": 25,
-      "blob_dilate": 0.3,
-      "blob_mass": 0.35,
-      "edge_ratio": 0.05,
-      "ink_thresh": null,
-      "line_len": null,
-      "margin": 6,
-      "merge_gap": 2,
-      "min_height": 8,
-      "min_width_ratio": 0.4,
-      "near_gap": 0.35,
-      "no_auto_crop": false,
-      "no_clean_x": false,
-      "no_post": false,
-      "pad": 2,
-      "peak_prom": 0.2,
-      "post_min_rows": 4,
-      "punct_gap": 2.0,
-      "punct_size": 0.45,
-      "roi": null,
-      "save_crops": false,
-      "sliver_gap": 0.15,
-      "sliver_max_height": 1.35,
-      "sliver_ratio": 0.45,
-      "sliver_x_overlap": 0.5,
-      "smooth": 2.5,
-      "thr_ratio": 0.012,
-      "valley_ratio": 0.6,
-      "x_trim": 0.5
-    },
-    "tag": "ch_vi"
+    }
   },
   "boxes": [
     {
@@ -76,7 +36,10 @@
           447,
           764
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -98,7 +61,10 @@
           440,
           986
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -120,7 +86,10 @@
           432,
           1203
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -142,7 +111,10 @@
           437,
           1434
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -164,7 +136,10 @@
           288,
           1650
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -186,7 +161,10 @@
           428,
           1889
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -208,7 +186,10 @@
           432,
           2103
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -230,7 +211,10 @@
           427,
           2321
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -252,7 +236,10 @@
           441,
           2548
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -274,227 +261,10 @@
           429,
           2798
         ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Ke' sao aid mi bal binh.",
-      "points": [
-        [
-          447,
-          766
-        ],
-        [
-          1685,
-          766
-        ],
-        [
-          1685,
-          836
-        ],
-        [
-          447,
-          836
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Chu ngui mng mng mng mng mng",
-      "points": [
-        [
-          414,
-          994
-        ],
-        [
-          2125,
-          994
-        ],
-        [
-          2125,
-          1061
-        ],
-        [
-          414,
-          1061
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Wee Trung hièi nhèng meng bà lái,",
-      "points": [
-        [
-          428,
-          1213
-        ],
-        [
-          1882,
-          1213
-        ],
-        [
-          1882,
-          1290
-        ],
-        [
-          428,
-          1290
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Deu nho nhn al fhaí nhin di",
-      "points": [
-        [
-          420,
-          1432
-        ],
-        [
-          1874,
-          1432
-        ],
-        [
-          1874,
-          1507
-        ],
-        [
-          420,
-          1507
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Giant khin nao eo ro gi, - 115",
-      "points": [
-        [
-          404,
-          1661
-        ],
-        [
-          2111,
-          1661
-        ],
-        [
-          2111,
-          1742
-        ],
-        [
-          404,
-          1742
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Cha roing chu da' la' th' y en laih,",
-      "points": [
-        [
-          415,
-          1885
-        ],
-        [
-          2145,
-          1885
-        ],
-        [
-          2145,
-          1961
-        ],
-        [
-          415,
-          1961
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Nhin la thien trank lank la ac",
-      "points": [
-        [
-          408,
-          2106
-        ],
-        [
-          1904,
-          2106
-        ],
-        [
-          1904,
-          2179
-        ],
-        [
-          408,
-          2179
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Nhi' lây cải di nhuyె chê eung,",
-      "points": [
-        [
-          405,
-          2330
-        ],
-        [
-          1936,
-          2330
-        ],
-        [
-          1936,
-          2405
-        ],
-        [
-          405,
-          2405
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Nhaim feia La chu tung vang.",
-      "points": [
-        [
-          399,
-          2556
-        ],
-        [
-          1704,
-          2556
-        ],
-        [
-          1704,
-          2622
-        ],
-        [
-          399,
-          2622
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "bôt long de tinh Vn",
-      "points": [
-        [
-          400,
-          2794
-        ],
-        [
-          2124,
-          2794
-        ],
-        [
-          2124,
-          2897
-        ],
-        [
-          400,
-          2897
-        ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 9,
+      "check_v": 3
     }
   ]
 }

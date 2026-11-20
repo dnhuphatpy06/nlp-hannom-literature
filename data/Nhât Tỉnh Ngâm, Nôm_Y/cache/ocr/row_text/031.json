@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 31,
-  "saved": "2026-11-07T21:44:54.839995",
+  "saved": "2026-11-09T17:18:38.454728",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.031.jpg",
     "sha256": "a78e70bc25196b70e9b287ebc29f79bdd3affbc63b3086e4537a3a42de1ba6a7",
@@ -13,47 +13,7 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
-    },
-    "row_projection": {
-      "bg_kernel": 25,
-      "blob_dilate": 0.3,
-      "blob_mass": 0.35,
-      "edge_ratio": 0.05,
-      "ink_thresh": null,
-      "line_len": null,
-      "margin": 6,
-      "merge_gap": 2,
-      "min_height": 8,
-      "min_width_ratio": 0.4,
-      "near_gap": 0.35,
-      "no_auto_crop": false,
-      "no_clean_x": false,
-      "no_post": false,
-      "pad": 2,
-      "peak_prom": 0.2,
-      "post_min_rows": 4,
-      "punct_gap": 2.0,
-      "punct_size": 0.45,
-      "roi": null,
-      "save_crops": false,
-      "sliver_gap": 0.15,
-      "sliver_max_height": 1.35,
-      "sliver_ratio": 0.45,
-      "sliver_x_overlap": 0.5,
-      "smooth": 2.5,
-      "thr_ratio": 0.012,
-      "valley_ratio": 0.6,
-      "x_trim": 0.5
-    },
-    "tag": "ch_vi"
+    }
   },
   "boxes": [
     {
@@ -77,7 +37,9 @@
           763
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -100,7 +62,9 @@
           987
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -123,7 +87,9 @@
           1208
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -146,7 +112,9 @@
           1437
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -169,7 +137,9 @@
           1654
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -192,7 +162,9 @@
           1885
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -215,7 +187,9 @@
           2113
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -238,7 +212,9 @@
           2332
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -261,7 +237,9 @@
           2558
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -284,237 +262,9 @@
           2774
         ]
       ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Nguyen vui Suong cung nui biid du,",
-      "points": [
-        [
-          405,
-          769
-        ],
-        [
-          1912,
-          769
-        ],
-        [
-          1912,
-          867
-        ],
-        [
-          405,
-          867
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Cham lam chi cho khó cai thân.",
-      "points": [
-        [
-          418,
-          992
-        ],
-        [
-          1955,
-          992
-        ],
-        [
-          1955,
-          1058
-        ],
-        [
-          418,
-          1058
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Sa' k'a la' ch'ng n'n g'an ,",
-      "points": [
-        [
-          432,
-          1216
-        ],
-        [
-          1721,
-          1216
-        ],
-        [
-          1721,
-          1311
-        ],
-        [
-          432,
-          1311
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Ngân cơ giữ đ 所示 Soay vân mã kinh,",
-      "points": [
-        [
-          410,
-          1447
-        ],
-        [
-          2148,
-          1447
-        ],
-        [
-          2148,
-          1540
-        ],
-        [
-          410,
-          1540
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Kia ai ay yang tansh halung lu",
-      "points": [
-        [
-          425,
-          1670
-        ],
-        [
-          2204,
-          1670
-        ],
-        [
-          2204,
-          1771
-        ],
-        [
-          425,
-          1771
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Niuing guo neng gai no jiang hua,",
-      "points": [
-        [
-          406,
-          1902
-        ],
-        [
-          1946,
-          1902
-        ],
-        [
-          1946,
-          1990
-        ],
-        [
-          406,
-          1990
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Hei danh hai ti",
-      "points": [
-        [
-          426,
-          2124
-        ],
-        [
-          1674,
-          2124
-        ],
-        [
-          1674,
-          2202
-        ],
-        [
-          426,
-          2202
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Cai chai uô ich lam ra toi tinh.",
-      "points": [
-        [
-          440,
-          2340
-        ],
-        [
-          2170,
-          2340
-        ],
-        [
-          2170,
-          2415
-        ],
-        [
-          440,
-          2415
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "'t ' thai giei buing minh cho thang,",
-      "points": [
-        [
-          440,
-          2563
-        ],
-        [
-          1951,
-          2563
-        ],
-        [
-          1951,
-          2650
-        ],
-        [
-          440,
-          2650
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Phi lé kia mail chung nên tung. 250",
-      "points": [
-        [
-          437,
-          2770
-        ],
-        [
-          2174,
-          2770
-        ],
-        [
-          2174,
-          2863
-        ],
-        [
-          437,
-          2863
-        ]
-      ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     }
   ]
 }

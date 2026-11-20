@@ -1,0 +1,98 @@
+{
+  "engine": "row_text",
+  "page": 6,
+  "saved": "2026-11-12T08:05:46.240812",
+  "image": {
+    "name": "Truyen Sai vai - Vinh Kieu tap tu  digcoll_197092_Y.006.jpg",
+    "sha256": "6075814423792b91a68d06aadeba1ad0a9f626c5efa0c9b02fad7b7c9a2d4955",
+    "size": 804662
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          962,
+          310
+        ],
+        [
+          1278,
+          310
+        ],
+        [
+          1278,
+          392
+        ],
+        [
+          962,
+          392
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: Không gọi được API: HTTPSConnectionPool(host='kimhannom.fit.hcmus.edu.vn', port=443): Max retries exceeded with url: /api/web/clc-sinonom/image-upload (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)')))",
+      "code": null,
+      "attempts": 1
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          642,
+          529
+        ],
+        [
+          1306,
+          529
+        ],
+        [
+          1306,
+          596
+        ],
+        [
+          642,
+          596
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: Không gọi được API: HTTPSConnectionPool(host='kimhannom.fit.hcmus.edu.vn', port=443): Max retries exceeded with url: /api/web/clc-sinonom/image-upload (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)')))",
+      "code": null,
+      "attempts": 1
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          620,
+          788
+        ],
+        [
+          1595,
+          788
+        ],
+        [
+          1595,
+          895
+        ],
+        [
+          620,
+          895
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: Không gọi được API: HTTPSConnectionPool(host='kimhannom.fit.hcmus.edu.vn', port=443): Max retries exceeded with url: /api/web/clc-sinonom/image-upload (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)')))",
+      "code": null,
+      "attempts": 1
+    }
+  ]
+}

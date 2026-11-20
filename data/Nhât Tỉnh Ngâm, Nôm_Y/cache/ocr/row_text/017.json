@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 17,
-  "saved": "2026-11-07T20:29:03.943411",
+  "saved": "2026-11-09T17:09:42.666351",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.017.jpg",
     "sha256": "1959cb8bc3edde42a0a9c4290682fc1272cb8c10b3e665798fd0c4b27f5b7f6a",
@@ -13,47 +13,7 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
-    },
-    "row_projection": {
-      "bg_kernel": 25,
-      "blob_dilate": 0.3,
-      "blob_mass": 0.35,
-      "edge_ratio": 0.05,
-      "ink_thresh": null,
-      "line_len": null,
-      "margin": 6,
-      "merge_gap": 2,
-      "min_height": 8,
-      "min_width_ratio": 0.4,
-      "near_gap": 0.35,
-      "no_auto_crop": false,
-      "no_clean_x": false,
-      "no_post": false,
-      "pad": 2,
-      "peak_prom": 0.2,
-      "post_min_rows": 4,
-      "punct_gap": 2.0,
-      "punct_size": 0.45,
-      "roi": null,
-      "save_crops": false,
-      "sliver_gap": 0.15,
-      "sliver_max_height": 1.35,
-      "sliver_ratio": 0.45,
-      "sliver_x_overlap": 0.5,
-      "smooth": 2.5,
-      "thr_ratio": 0.012,
-      "valley_ratio": 0.6,
-      "x_trim": 0.5
-    },
-    "tag": "ch_vi"
+    }
   },
   "boxes": [
     {
@@ -76,7 +36,10 @@
           438,
           795
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -98,7 +61,10 @@
           437,
           1019
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -120,7 +86,10 @@
           440,
           1244
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -142,7 +111,10 @@
           441,
           1462
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -164,7 +136,10 @@
           446,
           1698
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -186,7 +161,10 @@
           443,
           1927
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -208,7 +186,10 @@
           450,
           2141
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -230,7 +211,10 @@
           440,
           2363
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -252,7 +236,10 @@
           451,
           2590
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -274,227 +261,10 @@
           453,
           2810
         ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Viêe chua tên chò đâu bung ngh",
-      "points": [
-        [
-          438,
-          799
-        ],
-        [
-          1918,
-          799
-        ],
-        [
-          1918,
-          869
-        ],
-        [
-          438,
-          869
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Qêu da qua điang đi vao long,",
-      "points": [
-        [
-          416,
-          1030
-        ],
-        [
-          1913,
-          1030
-        ],
-        [
-          1913,
-          1095
-        ],
-        [
-          416,
-          1095
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Bên muon ho a khi xuan phung,",
-      "points": [
-        [
-          404,
-          1265
-        ],
-        [
-          1741,
-          1265
-        ],
-        [
-          1741,
-          1324
-        ],
-        [
-          404,
-          1324
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Lià Tàn chàng dòng àl zhōng chǎy cān.",
-      "points": [
-        [
-          429,
-          1472
-        ],
-        [
-          2128,
-          1472
-        ],
-        [
-          2128,
-          1555
-        ],
-        [
-          429,
-          1555
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "é toi cho câu soan qui le",
-      "points": [
-        [
-          451,
-          1694
-        ],
-        [
-          2169,
-          1694
-        ],
-        [
-          2169,
-          1770
-        ],
-        [
-          451,
-          1770
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Qu'il se méthode,",
-      "points": [
-        [
-          424,
-          1923
-        ],
-        [
-          1926,
-          1923
-        ],
-        [
-          1926,
-          1996
-        ],
-        [
-          424,
-          1996
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Phân t� giri t� tinh",
-      "points": [
-        [
-          427,
-          2149
-        ],
-        [
-          1687,
-          2149
-        ],
-        [
-          1687,
-          2233
-        ],
-        [
-          427,
-          2233
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Khi ân nguc lúc dùng ngôi cho钦.",
-      "points": [
-        [
-          437,
-          2368
-        ],
-        [
-          2146,
-          2368
-        ],
-        [
-          2146,
-          2450
-        ],
-        [
-          437,
-          2450
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "yêu kê no xel liên diên",
-      "points": [
-        [
-          436,
-          2586
-        ],
-        [
-          1895,
-          2586
-        ],
-        [
-          1895,
-          2681
-        ],
-        [
-          436,
-          2681
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Ghel ngui kia bié dué cai bank, 110",
-      "points": [
-        [
-          425,
-          2806
-        ],
-        [
-          2177,
-          2806
-        ],
-        [
-          2177,
-          2922
-        ],
-        [
-          425,
-          2922
-        ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     }
   ]
 }

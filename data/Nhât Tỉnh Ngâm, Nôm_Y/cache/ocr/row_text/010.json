@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 10,
-  "saved": "2026-11-07T20:23:10.625981",
+  "saved": "2026-11-09T17:34:46.940348",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.010.jpg",
     "sha256": "1cc3a5cee4af16295ff752dc41e1af2fe04cf98dd26515b17bbff2f9cf209e0e",
@@ -13,52 +13,12 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
-    },
-    "row_projection": {
-      "bg_kernel": 25,
-      "blob_dilate": 0.3,
-      "blob_mass": 0.35,
-      "edge_ratio": 0.05,
-      "ink_thresh": null,
-      "line_len": null,
-      "margin": 6,
-      "merge_gap": 2,
-      "min_height": 8,
-      "min_width_ratio": 0.4,
-      "near_gap": 0.35,
-      "no_auto_crop": false,
-      "no_clean_x": false,
-      "no_post": false,
-      "pad": 2,
-      "peak_prom": 0.2,
-      "post_min_rows": 4,
-      "punct_gap": 2.0,
-      "punct_size": 0.45,
-      "roi": null,
-      "save_crops": false,
-      "sliver_gap": 0.15,
-      "sliver_max_height": 1.35,
-      "sliver_ratio": 0.45,
-      "sliver_x_overlap": 0.5,
-      "smooth": 2.5,
-      "thr_ratio": 0.012,
-      "valley_ratio": 0.6,
-      "x_trim": 0.5
-    },
-    "tag": "ch_vi"
+    }
   },
   "boxes": [
     {
       "folder": "ch",
-      "text": "悶朱𫅠𡏢𫅠",
+      "text": "",
       "points": [
         [
           455,
@@ -76,11 +36,15 @@
           455,
           814
         ]
-      ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
     },
     {
       "folder": "ch",
-      "text": "准演昌妬𠳨𠻀𦼔博",
+      "text": "",
       "points": [
         [
           451,
@@ -98,11 +62,15 @@
           451,
           1044
         ]
-      ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
     },
     {
       "folder": "ch",
-      "text": "蜍𣅶𫪹𤮿敬𢜝",
+      "text": "",
       "points": [
         [
           438,
@@ -120,11 +88,15 @@
           438,
           1264
         ]
-      ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
     },
     {
       "folder": "ch",
-      "text": "㐌𣩂耒傷𢖵掣包",
+      "text": "",
       "points": [
         [
           439,
@@ -142,11 +114,15 @@
           439,
           1493
         ]
-      ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
     },
     {
       "folder": "ch",
-      "text": "𢚸𡥵院奇每調",
+      "text": "",
       "points": [
         [
           429,
@@ -164,11 +140,15 @@
           429,
           1715
         ]
-      ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
     },
     {
       "folder": "ch",
-      "text": "唒餒媄𤴪如朝媄些",
+      "text": "",
       "points": [
         [
           436,
@@ -186,11 +166,15 @@
           436,
           1936
         ]
-      ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
     },
     {
       "folder": "ch",
-      "text": "𠴑於買媄吒𨻫孝",
+      "text": "",
       "points": [
         [
           431,
@@ -208,11 +192,15 @@
           431,
           2171
         ]
-      ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
     },
     {
       "folder": "ch",
-      "text": "福𡗶朱拯少咦兜",
+      "text": "",
       "points": [
         [
           426,
@@ -230,11 +218,15 @@
           426,
           2390
         ]
-      ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
     },
     {
       "folder": "ch",
-      "text": "孝𦼔空固叨𡢐",
+      "text": "",
       "points": [
         [
           432,
@@ -252,11 +244,15 @@
           432,
           2603
         ]
-      ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
     },
     {
       "folder": "ch",
-      "text": "群矇享𠬠𨱽𥹰特芇",
+      "text": "",
       "points": [
         [
           421,
@@ -274,227 +270,11 @@
           421,
           2843
         ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "cluôm cho đp ma stp mo",
-      "points": [
-        [
-          401,
-          818
-        ],
-        [
-          1649,
-          818
-        ],
-        [
-          1649,
-          907
-        ],
-        [
-          401,
-          907
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Chân lãnh xửng c后台 hại gió mà chân.",
-      "points": [
-        [
-          402,
-          1041
-        ],
-        [
-          2132,
-          1041
-        ],
-        [
-          2132,
-          1132
-        ],
-        [
-          402,
-          1132
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Ech lué sòng ngot ngon kinh so,",
-      "points": [
-        [
-          418,
-          1260
-        ],
-        [
-          1897,
-          1260
-        ],
-        [
-          1897,
-          1371
-        ],
-        [
-          418,
-          1371
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Da chêi nài thìng who xiět lèo.",
-      "points": [
-        [
-          417,
-          1489
-        ],
-        [
-          1898,
-          1489
-        ],
-        [
-          1898,
-          1570
-        ],
-        [
-          417,
-          1570
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Long con ven ca' mue' deu' 35",
-      "points": [
-        [
-          408,
-          1719
-        ],
-        [
-          2102,
-          1719
-        ],
-        [
-          2102,
-          1798
-        ],
-        [
-          408,
-          1798
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Dau nuui me ghi nhi chiui me ta.",
-      "points": [
-        [
-          420,
-          1932
-        ],
-        [
-          2105,
-          1932
-        ],
-        [
-          2105,
-          2029
-        ],
-        [
-          420,
-          2029
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "den d' may me cha ma hiè.",
-      "points": [
-        [
-          431,
-          2167
-        ],
-        [
-          1920,
-          2167
-        ],
-        [
-          1920,
-          2239
-        ],
-        [
-          431,
-          2239
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Shue gii cho chung thie gi dau",
-      "points": [
-        [
-          401,
-          2387
-        ],
-        [
-          1915,
-          2387
-        ],
-        [
-          1915,
-          2495
-        ],
-        [
-          401,
-          2495
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Hie, ma thung e' tuic sau,",
-      "points": [
-        [
-          405,
-          2605
-        ],
-        [
-          1688,
-          2605
-        ],
-        [
-          1688,
-          2683
-        ],
-        [
-          405,
-          2683
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Con mng liung thn dai lau duie nao?",
-      "points": [
-        [
-          400,
-          2839
-        ],
-        [
-          2267,
-          2839
-        ],
-        [
-          2267,
-          2929
-        ],
-        [
-          400,
-          2929
-        ]
-      ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
     }
   ]
 }

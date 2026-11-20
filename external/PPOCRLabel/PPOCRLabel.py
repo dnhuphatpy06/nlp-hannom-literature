@@ -24,6 +24,7 @@ import signal
 import subprocess
 import sys
 from functools import partial
+from pathlib import Path
 
 import openpyxl
 import cv2
@@ -76,6 +77,11 @@ from PyQt5.QtWidgets import (
     QAction,
     QPushButton,
     QCheckBox,  # [GK]
+<<<<<<< Updated upstream
+=======
+    QLineEdit,  # [GK]
+    QSizePolicy,  # [GK]
+>>>>>>> Stashed changes
 )
 
 __dir__ = os.path.dirname(__file__)
@@ -84,7 +90,10 @@ __dir__ = os.path.dirname(__file__)
 sys.path.append(os.path.join(__dir__, ""))
 
 # [GK] Không còn import paddle/paddleocr: nhận dạng chạy qua 3 engine của dự án (libs/gk_ocr.py)
-from libs.gk_ocr import EngineState, EngineOCR, EngineTextRecognition, EngineTextDetection, bridge, events as gk_events
+from libs.gk_ocr import (
+    EngineState, EngineOCR, EngineTextRecognition, EngineTextDetection,
+    bridge, events as gk_events, select_page_images,
+)
 from libs.gk_ocr_log import OcrLogDock, set_ui_busy   # [GK] khung OCR log
 import libs.resources
 from libs.constants import (
@@ -3607,6 +3616,23 @@ class MainWindow(QMainWindow):
         for option in options["boxes"]:
             self.boxBox.addItem(option["label"], option["key"])
             self.boxBox.setItemData(self.boxBox.count() - 1, option["text"], Qt.UserRole + 1)   # engine đọc chữ đi kèm (None nếu chọn được)
+        detectEngine = caption(b.eng.PIPELINE_NAMES[b.eng.ROW_PROJECTION])
+        rowScopeLabel = caption("Hàng cần gắn bbox")
+        self.rowScopeBox = QComboBox()
+        self.rowScopeBox.setObjectName("rowScopeBox")
+        for key, label in (("default", "Theo thư mục"), ("ch", "Chỉ hàng CH (hàng lẻ)"),
+                           ("vi", "Chỉ hàng VI (hàng chẵn)")):
+            self.rowScopeBox.addItem(label, key)
+        self.rowScopeBox.setCurrentIndex(self.rowScopeBox.findData(self.engine_state.detect_rows or "default"))
+        rowScopeNote = note("gray")
+        rowScopeNote.setText("Chọn CH hoặc VI cho trang có hai loại chữ xen kẽ. Bbox được gắn lên ảnh trong thư mục đang mở.")
+        pageLabel = caption("Trang cần gắn bbox")
+        self.detectPageInput = QLineEdit()
+        self.detectPageInput.setObjectName("detectPageInput")
+        self.detectPageInput.setPlaceholderText("Ví dụ: 6, 8-12  ·  * để chọn tất cả")
+        pageNote = note("gray")
+        pageNote.setText("Dùng số cuối tên ảnh (hoặc vị trí trong danh sách nếu ảnh không đánh số). Để trống để chạy ảnh đang mở.")
+        self.detectOverwrite = QCheckBox("Ghi đè các trang đã có box (xoá chữ cũ trên các trang đó)")
         self.textLabel = caption("Đọc chữ bằng")
         self.textBox = QComboBox()
         self.textBox.setObjectName("textBox")
@@ -3625,7 +3651,10 @@ class MainWindow(QMainWindow):
             self.boxBox.setCurrentIndex(max(0, self.boxBox.findData(box)))
             self.textBox.setCurrentIndex(max(0, self.textBox.findData(text)))
 
-        for widget in (self.panel, self.taskLabel, self.taskBox, self.taskHelp, self.boxLabel, self.boxBox, self.textLabel, self.textBox, self.dialogNote):
+        for widget in (self.panel, self.taskLabel, self.taskBox, self.taskHelp, self.boxLabel, self.boxBox,
+                       detectEngine, rowScopeLabel, self.rowScopeBox, rowScopeNote,
+                       pageLabel, self.detectPageInput, pageNote, self.detectOverwrite,
+                       self.textLabel, self.textBox, self.dialogNote):
             vbox.addWidget(widget)
         # [GK] Chạy ngay trên ảnh đang mở (bản gốc chỉ lưu lựa chọn, người dùng tưởng "không có kết quả"); bỏ tích thì chỉ lưu lựa chọn cho Auto Recognition
         self.runNowCheck = QCheckBox("Chạy ngay trên ảnh đang mở")
@@ -3640,10 +3669,22 @@ class MainWindow(QMainWindow):
 
         def refreshChoices(*_):
             task = self.taskBox.currentData()
-            detects = task in ("both", "detect")                     # có phát hiện box mới
+            detect_only = task == "detect"
             reads = task in ("both", "read", "selected")             # có đọc chữ
-            self.boxLabel.setVisible(detects)
-            self.boxBox.setVisible(detects)
+            self.boxLabel.setVisible(task == "both" or detect_only)
+            self.boxBox.setVisible(task == "both")
+            detectEngine.setVisible(detect_only)
+            rowScopeLabel.setVisible(detect_only)
+            self.rowScopeBox.setVisible(detect_only)
+            rowScopeNote.setVisible(detect_only)
+            page_picker = detect_only and bool(self.mImgList)
+            run_now = self.runNowCheck.isChecked()
+            batch = page_picker and bool(self.detectPageInput.text().strip())
+            for widget in (pageLabel, self.detectPageInput, pageNote):
+                widget.setVisible(page_picker)
+                widget.setEnabled(run_now)
+            self.detectOverwrite.setVisible(batch)
+            self.detectOverwrite.setEnabled(run_now)
             fixed = self.boxBox.currentData(Qt.UserRole + 1) if task == "both" else None
             if fixed:                                                # Kim Hán Nôm / PaddleOCR-VL đọc chữ cùng lúc với box: chữ do chính nó
                 self.textBox.setCurrentIndex(max(0, self.textBox.findData(fixed)))
@@ -3652,24 +3693,49 @@ class MainWindow(QMainWindow):
             self.textBox.setEnabled(not fixed)
             self.taskHelp.setText(options["task_help"].get(task, ""))
             n_selected = len(self.canvas.selectedShapes)
-            run_now = self.runNowCheck.isChecked()
             self.runNowCheck.setText({
                 "both": "Chạy ngay trên ảnh đang mở (thay các box hiện có)",
-                "detect": "Chạy ngay trên ảnh đang mở (thay các box hiện có, chữ để trống)",
+                "detect": ("Chạy ngay trên các trang đã chọn (chữ để trống)" if batch else
+                           "Chạy ngay trên ảnh đang mở (thay các box hiện có, chữ để trống)"),
                 "read": "Chạy ngay: đọc lại chữ của tất cả box trong ảnh đang mở (giữ box)",
                 "selected": "Chạy ngay: đọc lại chữ của %d box đang chọn (giữ box)" % n_selected,
             }[task])
             reasons = b.unavailable_reasons(task, self.boxBox.currentData(), self.textBox.currentData())
             problems = list(reasons)
+            selected_count = 0
+            if run_now and batch:
+                try:
+                    selected_count = len(select_page_images(self.mImgList, self.detectPageInput.text()))
+                except ValueError as error:
+                    problems.append(str(error))
             if run_now and task == "selected" and not n_selected:
                 problems.append("Chưa chọn box nào trên ảnh: hãy đóng hộp thoại, chọn box (hoặc Ctrl+Shift+A để chọn tất cả) rồi mở lại.")
             self.dialogNote.setText("\n".join(problems))
+<<<<<<< Updated upstream
+=======
+            uses_folder_rows = ((detect_only and self.rowScopeBox.currentData() == "default")
+                                or (task == "both" and self.boxBox.currentData() == b.eng.ROW_PROJECTION))
+            alt_shown = uses_folder_rows and folder in ("ch", "vi")
+            self.alternateCheck.setVisible(alt_shown)
+            self.alternateNote.setVisible(alt_shown)
+            if alt_shown:
+                self.alternateNote.setText(
+                    ("Tích: %s/ chỉ nhận %s (hàng xen kẽ)." % (folder, "hàng lẻ" if folder == "ch" else "hàng chẵn"))
+                    + " Bỏ tích: %s/ nhận mọi hàng, tự xoá hàng thừa." % folder
+                    + ("" if self.alternateCheck.isChecked() or not reads else
+                       " Đang đọc chữ mà không lọc: hàng sai loại chữ sẽ ra chữ rác, nên chọn 'Chỉ phát hiện box'."))
+>>>>>>> Stashed changes
             # chỉ chặn khi định chạy ngay mà engine chưa dùng được hoặc chưa chọn box; chỉ lưu lựa chọn thì luôn cho phép
             self.okBtn.setEnabled(not (run_now and problems))
-            self.okBtn.setText("Chạy" if run_now else "Lưu lựa chọn")
+            self.okBtn.setText(
+                "Gắn bbox cho %d ảnh" % selected_count if selected_count else
+                "Chạy" if run_now else "Lưu lựa chọn"
+            )
 
         self.taskBox.currentIndexChanged.connect(refreshChoices)
         self.boxBox.currentIndexChanged.connect(refreshChoices)
+        self.rowScopeBox.currentIndexChanged.connect(refreshChoices)
+        self.detectPageInput.textChanged.connect(refreshChoices)
         self.textBox.currentIndexChanged.connect(refreshChoices)
         self.runNowCheck.toggled.connect(refreshChoices)
         refreshChoices()
@@ -3691,29 +3757,103 @@ class MainWindow(QMainWindow):
 
     def modelChoose(self):
         # [GK] Lưu lựa chọn thành khoá engine "box+chữ" (Auto Recognition và Re-recognition dùng nó từ lần bấm sau), rồi chạy ngay nếu được tích
+        b = bridge()
         task = self.taskBox.currentData()
-        key = bridge().build_engine(task, self.boxBox.currentData(), self.textBox.currentData())
+        key = b.build_engine(task, self.boxBox.currentData(), self.textBox.currentData())
         label = self.taskBox.currentText()
-        if task in ("both", "detect"):
+        if task == "detect":
+            label += " | " + b.eng.PIPELINE_NAMES[b.eng.ROW_PROJECTION]
+            label += " | " + self.rowScopeBox.currentText()
+        elif task == "both":
             label += " | " + self.boxBox.currentText()
         if task != "detect":
             label += " | " + self.textBox.currentText()
         run_now = getattr(self, "runNowCheck", None) is not None and self.runNowCheck.isChecked() and bool(self.filePath)
+        pages = None
+        if run_now and task == "detect" and self.detectPageInput.text().strip() and self.mImgList:
+            pages = select_page_images(self.mImgList, self.detectPageInput.text())
         if run_now and task == "selected" and not self.canvas.selectedShapes:
             QMessageBox.information(self, "Information", "Chưa chọn box nào trên ảnh.")
             return
         logger.debug("Engine selected: %s (%s)", key, task)
         self.engine_state.engine = key
         self.engine_state.task = task
+<<<<<<< Updated upstream
+=======
+        if task == "detect":
+            scope = self.rowScopeBox.currentData()
+            self.engine_state.detect_rows = scope if scope in ("ch", "vi") else None
+        if not self.alternateCheck.isHidden():   # chỉ ghi nhận khi ô đang áp dụng (ẩn = giữ lựa chọn đã lưu)
+            self.engine_state.alternate = self.alternateCheck.isChecked()
+            self.settings[GK_SETTING_ALTERNATE] = self.engine_state.alternate
+            self.settings.save()
+>>>>>>> Stashed changes
         self.statusBar().showMessage("OCR: " + label, 8000)
         self.dialog.close()
         if run_now:
-            if task == "selected":
+            if pages:
+                self.detectPageImages(pages, self.detectOverwrite.isChecked())
+            elif task == "selected":
                 self.singleRerecognition()  # [GK] chỉ các box đang chọn: giữ box, chỉ thay chữ
             elif task == "read":
                 self.reRecognition()        # [GK] mọi box của ảnh (kể cả box vừa sửa chưa lưu): giữ box, chỉ thay chữ
             else:
                 self.recognizeCurrentImage()    # tìm box mới (kèm chữ nếu việc là both): thay các box hiện có
+
+    def detectPageImages(self, images, overwrite=False):
+        """Gắn bbox cho các ảnh đã chọn, lưu những ảnh hoàn tất kể cả khi bấm Dừng."""
+        b, events = bridge(), gk_events()
+        current = self.filePath
+        updates, skipped, failed = {}, 0, 0
+        total = len(images)
+        with self.ocrRun("Gắn bbox cho %d ảnh đã chọn" % total, total):
+            try:
+                for i, path in enumerate(images):
+                    events.progress(i, total, os.path.basename(path))
+                    events.check_cancel()
+                    key = self.getImglabelidx(path)
+                    if (path == current and self.dirty) or (not overwrite and self.PPlabel.get(key)):
+                        skipped += 1
+                        reason = "có chỉnh sửa chưa lưu" if path == current and self.dirty else "đã có box"
+                        events.log("Bỏ qua %s: %s." % (os.path.basename(path), reason), "warn")
+                        continue
+                    try:
+                        boxes, _, _ = b.recognize_page(
+                            path, self.engine_state.engine, alternate=self.engine_state.alternate,
+                            detect_rows=self.engine_state.detect_rows,
+                        )
+                    except Exception as error:
+                        failed += 1
+                        events.log("%s: %s" % (os.path.basename(path), error), "error")
+                        continue
+                    if boxes:
+                        updates[key] = boxes
+                    else:
+                        skipped += 1
+                        events.log("Không tìm thấy box trên %s." % os.path.basename(path), "warn")
+                events.progress(total, total, "Đã xử lý các ảnh đã chọn")
+            finally:
+                if updates:
+                    try:
+                        b.label_io.update_folder(Path(self.defaultSaveDir), updates, state=0)
+                        self.PPlabel.update(updates)
+                        self.Cachelabel.update(updates)
+                        self.fileStatedict.update(dict.fromkeys(updates, 0))
+                        self.saveCacheLabel()
+                    except OSError as error:
+                        self.engine_state.fail("Không lưu được bbox: %s" % error)
+                    else:
+                        self.haveAutoReced = True
+                        for index, path in enumerate(self.mImgList):
+                            if self.getImglabelidx(path) in updates:
+                                self.fileListWidget.item(index).setIcon(newIcon("close"))
+                        for action in (self.actions.saveLabel, self.actions.saveRec, self.actions.exportJSON):
+                            action.setEnabled(True)
+                        if current and self.getImglabelidx(current) in updates:
+                            self.loadFile(current, isAdjustScale=False)
+                        events.log("Đã lưu bbox cho %d ảnh." % len(updates), "ok")
+                if skipped or failed:
+                    events.log("Bỏ qua %d ảnh · lỗi %d ảnh." % (skipped, failed), "warn")
 
     def recognizeCurrentImage(self):
         b = bridge()

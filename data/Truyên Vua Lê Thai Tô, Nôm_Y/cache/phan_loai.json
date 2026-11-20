@@ -8,15 +8,14 @@
   "total_pages": 105,
   "pages": {
     "1": {
-      "tag": "ch_vi",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 98,
         "active": 0.1296,
         "ink": 0.0444
-      },
-      "auto": true
+      }
     },
     "2": {
       "tag": "blank",
@@ -1167,7 +1166,11 @@
     "at": "2026-11-07T00:44:40.928181",
     "side": 640
   },
+<<<<<<< Updated upstream
   "last_updated": "2026-11-07T00:44:40.941683",
+=======
+  "last_updated": "2026-11-10T10:39:04.377120",
+>>>>>>> Stashed changes
   "autotag": {
     "type": "T2b",
     "at": "2026-11-07T00:44:40.957519"

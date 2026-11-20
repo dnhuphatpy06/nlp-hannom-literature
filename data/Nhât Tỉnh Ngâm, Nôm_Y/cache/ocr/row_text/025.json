@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 25,
-  "saved": "2026-11-07T21:36:02.526043",
+  "saved": "2026-11-09T17:14:35.769847",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.025.jpg",
     "sha256": "16d7b190e9a9957953157cd480f374869e285466a8848bd74a543a00fc5b121a",
@@ -13,47 +13,7 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
-    },
-    "row_projection": {
-      "bg_kernel": 25,
-      "blob_dilate": 0.3,
-      "blob_mass": 0.35,
-      "edge_ratio": 0.05,
-      "ink_thresh": null,
-      "line_len": null,
-      "margin": 6,
-      "merge_gap": 2,
-      "min_height": 8,
-      "min_width_ratio": 0.4,
-      "near_gap": 0.35,
-      "no_auto_crop": false,
-      "no_clean_x": false,
-      "no_post": false,
-      "pad": 2,
-      "peak_prom": 0.2,
-      "post_min_rows": 4,
-      "punct_gap": 2.0,
-      "punct_size": 0.45,
-      "roi": null,
-      "save_crops": false,
-      "sliver_gap": 0.15,
-      "sliver_max_height": 1.35,
-      "sliver_ratio": 0.45,
-      "sliver_x_overlap": 0.5,
-      "smooth": 2.5,
-      "thr_ratio": 0.012,
-      "valley_ratio": 0.6,
-      "x_trim": 0.5
-    },
-    "tag": "ch_vi"
+    }
   },
   "boxes": [
     {
@@ -77,7 +37,9 @@
           796
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -100,7 +62,9 @@
           1025
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -123,7 +87,9 @@
           1251
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -146,7 +112,9 @@
           1481
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -169,7 +137,9 @@
           1700
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -192,7 +162,9 @@
           1928
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -215,7 +187,9 @@
           2140
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -238,7 +212,9 @@
           2369
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -261,7 +237,9 @@
           2578
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -284,237 +262,9 @@
           2813
         ]
       ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Kia nhtng kè gùi qin tàn tién.",
-      "points": [
-        [
-          415,
-          798
-        ],
-        [
-          1928,
-          798
-        ],
-        [
-          1928,
-          899
-        ],
-        [
-          415,
-          899
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Dài zhōng qiān chǎng dān nǐ",
-      "points": [
-        [
-          408,
-          1021
-        ],
-        [
-          1935,
-          1021
-        ],
-        [
-          1935,
-          1128
-        ],
-        [
-          408,
-          1128
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "We have to learn the art of life",
-      "points": [
-        [
-          433,
-          1247
-        ],
-        [
-          1718,
-          1247
-        ],
-        [
-          1718,
-          1319
-        ],
-        [
-          433,
-          1319
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "So lhi cung quân có tei than lam,",
-      "points": [
-        [
-          426,
-          1477
-        ],
-        [
-          2123,
-          1477
-        ],
-        [
-          2123,
-          1574
-        ],
-        [
-          426,
-          1574
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "° doi lay dank thim lam Tung. -185",
-      "points": [
-        [
-          443,
-          1696
-        ],
-        [
-          2178,
-          1696
-        ],
-        [
-          2178,
-          1782
-        ],
-        [
-          443,
-          1782
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "A' khen ngui moe rong an ho ang,",
-      "points": [
-        [
-          426,
-          1924
-        ],
-        [
-          1935,
-          1924
-        ],
-        [
-          1935,
-          2023
-        ],
-        [
-          426,
-          2023
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Sia cai thank giay ro lang.",
-      "points": [
-        [
-          401,
-          2152
-        ],
-        [
-          1708,
-          2152
-        ],
-        [
-          1708,
-          2222
-        ],
-        [
-          401,
-          2222
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Khi khíng có jiè chàng thương đal sinh,",
-      "points": [
-        [
-          429,
-          2381
-        ],
-        [
-          2129,
-          2381
-        ],
-        [
-          2129,
-          2450
-        ],
-        [
-          429,
-          2450
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Nê àn nhin te gianh nhi thê,",
-      "points": [
-        [
-          412,
-          2589
-        ],
-        [
-          1868,
-          2589
-        ],
-        [
-          1868,
-          2667
-        ],
-        [
-          412,
-          2667
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Khaich Luin taü chia re hün tay. 190",
-      "points": [
-        [
-          403,
-          2812
-        ],
-        [
-          2164,
-          2812
-        ],
-        [
-          2164,
-          2896
-        ],
-        [
-          403,
-          2896
-        ]
-      ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 27,
-  "saved": "2026-11-07T21:40:54.696490",
+  "saved": "2026-11-09T17:15:48.166189",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.027.jpg",
     "sha256": "76d083e593a7c6d274f9b794d354198774f4adf031a21578a7366d5b58ed57ac",
@@ -13,47 +13,7 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
-    },
-    "row_projection": {
-      "bg_kernel": 25,
-      "blob_dilate": 0.3,
-      "blob_mass": 0.35,
-      "edge_ratio": 0.05,
-      "ink_thresh": null,
-      "line_len": null,
-      "margin": 6,
-      "merge_gap": 2,
-      "min_height": 8,
-      "min_width_ratio": 0.4,
-      "near_gap": 0.35,
-      "no_auto_crop": false,
-      "no_clean_x": false,
-      "no_post": false,
-      "pad": 2,
-      "peak_prom": 0.2,
-      "post_min_rows": 4,
-      "punct_gap": 2.0,
-      "punct_size": 0.45,
-      "roi": null,
-      "save_crops": false,
-      "sliver_gap": 0.15,
-      "sliver_max_height": 1.35,
-      "sliver_ratio": 0.45,
-      "sliver_x_overlap": 0.5,
-      "smooth": 2.5,
-      "thr_ratio": 0.012,
-      "valley_ratio": 0.6,
-      "x_trim": 0.5
-    },
-    "tag": "ch_vi"
+    }
   },
   "boxes": [
     {
@@ -77,7 +37,9 @@
           793
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 5,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -100,7 +62,9 @@
           1021
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -123,7 +87,9 @@
           1237
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -146,7 +112,9 @@
           1465
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -169,7 +137,9 @@
           1688
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -192,7 +162,9 @@
           1913
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -215,7 +187,9 @@
           2146
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -238,7 +212,9 @@
           2365
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -261,7 +237,9 @@
           2588
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -284,237 +262,9 @@
           2810
         ]
       ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Düng zhuc he ho hong ho",
-      "points": [
-        [
-          470,
-          789
-        ],
-        [
-          1967,
-          789
-        ],
-        [
-          1967,
-          897
-        ],
-        [
-          470,
-          897
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Dung khinh người khơn khỏ e có bản.",
-      "points": [
-        [
-          464,
-          1017
-        ],
-        [
-          1987,
-          1017
-        ],
-        [
-          1987,
-          1123
-        ],
-        [
-          464,
-          1123
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Düng tēu ich ky hai nhân.",
-      "points": [
-        [
-          469,
-          1247
-        ],
-        [
-          1787,
-          1247
-        ],
-        [
-          1787,
-          1321
-        ],
-        [
-          469,
-          1321
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Düng so th' t'ng ma th'n ch'ng nhin,",
-      "points": [
-        [
-          464,
-          1468
-        ],
-        [
-          2172,
-          1468
-        ],
-        [
-          2172,
-          1560
-        ],
-        [
-          464,
-          1560
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Chay' ngui' kh' khung men mung 205",
-      "points": [
-        [
-          443,
-          1694
-        ],
-        [
-          2207,
-          1694
-        ],
-        [
-          2207,
-          1798
-        ],
-        [
-          443,
-          1798
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "chà cà cà",
-      "points": [
-        [
-          462,
-          1931
-        ],
-        [
-          1989,
-          1931
-        ],
-        [
-          1989,
-          1994
-        ],
-        [
-          462,
-          1994
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "on ai con de strong Stam.",
-      "points": [
-        [
-          489,
-          2153
-        ],
-        [
-          1757,
-          2153
-        ],
-        [
-          1757,
-          2215
-        ],
-        [
-          489,
-          2215
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Giup ai chi sto stung choim mong tien.",
-      "points": [
-        [
-          463,
-          2371
-        ],
-        [
-          2168,
-          2371
-        ],
-        [
-          2168,
-          2476
-        ],
-        [
-          463,
-          2476
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Düng eó chuung tiéng then ma khün,",
-      "points": [
-        [
-          436,
-          2584
-        ],
-        [
-          1976,
-          2584
-        ],
-        [
-          1976,
-          2682
-        ],
-        [
-          436,
-          2682
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "When bad night the day when",
-      "points": [
-        [
-          451,
-          2806
-        ],
-        [
-          2171,
-          2806
-        ],
-        [
-          2171,
-          2893
-        ],
-        [
-          451,
-          2893
-        ]
-      ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     }
   ]
 }

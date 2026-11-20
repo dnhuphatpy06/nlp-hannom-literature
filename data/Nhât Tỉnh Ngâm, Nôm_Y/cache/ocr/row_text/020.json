@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 20,
-  "saved": "2026-11-07T21:31:36.631876",
+  "saved": "2026-11-09T17:11:33.131034",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.020.jpg",
     "sha256": "8926dd7eac596b7c29da428baf3c3c7b5a26f2b9eb51a5d8a7cdeebd25d0a6e7",
@@ -13,47 +13,7 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
-    },
-    "row_projection": {
-      "bg_kernel": 25,
-      "blob_dilate": 0.3,
-      "blob_mass": 0.35,
-      "edge_ratio": 0.05,
-      "ink_thresh": null,
-      "line_len": null,
-      "margin": 6,
-      "merge_gap": 2,
-      "min_height": 8,
-      "min_width_ratio": 0.4,
-      "near_gap": 0.35,
-      "no_auto_crop": false,
-      "no_clean_x": false,
-      "no_post": false,
-      "pad": 2,
-      "peak_prom": 0.2,
-      "post_min_rows": 4,
-      "punct_gap": 2.0,
-      "punct_size": 0.45,
-      "roi": null,
-      "save_crops": false,
-      "sliver_gap": 0.15,
-      "sliver_max_height": 1.35,
-      "sliver_ratio": 0.45,
-      "sliver_x_overlap": 0.5,
-      "smooth": 2.5,
-      "thr_ratio": 0.012,
-      "valley_ratio": 0.6,
-      "x_trim": 0.5
-    },
-    "tag": "ch_vi"
+    }
   },
   "boxes": [
     {
@@ -77,7 +37,9 @@
           735
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -100,7 +62,9 @@
           957
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -123,7 +87,9 @@
           1186
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -146,7 +112,9 @@
           1404
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -169,7 +137,9 @@
           1619
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -192,7 +162,9 @@
           1848
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -215,7 +187,9 @@
           2075
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -238,7 +212,9 @@
           2296
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -261,7 +237,9 @@
           2526
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -284,237 +262,9 @@
           2774
         ]
       ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Sim khuya minh xel toe minh,",
-      "points": [
-        [
-          409,
-          743
-        ],
-        [
-          1691,
-          743
-        ],
-        [
-          1691,
-          817
-        ],
-        [
-          409,
-          817
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Ong,ve mieng ay ch'i thn ch'am ai,",
-      "points": [
-        [
-          418,
-          955
-        ],
-        [
-          2077,
-          955
-        ],
-        [
-          2077,
-          1034
-        ],
-        [
-          418,
-          1034
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Pham nhèi nèi là ngìn đai ca",
-      "points": [
-        [
-          398,
-          1188
-        ],
-        [
-          1848,
-          1188
-        ],
-        [
-          1848,
-          1257
-        ],
-        [
-          398,
-          1257
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Chu da ngon da qua' sang rank.",
-      "points": [
-        [
-          398,
-          1414
-        ],
-        [
-          1902,
-          1414
-        ],
-        [
-          1902,
-          1473
-        ],
-        [
-          398,
-          1473
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "clot càu nhin chin càu lanh. 135",
-      "points": [
-        [
-          381,
-          1634
-        ],
-        [
-          2107,
-          1634
-        ],
-        [
-          2107,
-          1701
-        ],
-        [
-          381,
-          1701
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Choi thoi bung kin miang binh cho xing,",
-      "points": [
-        [
-          391,
-          1855
-        ],
-        [
-          2116,
-          1855
-        ],
-        [
-          2116,
-          1934
-        ],
-        [
-          391,
-          1934
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Lam vie c thien thiy chung m'y phai,",
-      "points": [
-        [
-          396,
-          2071
-        ],
-        [
-          1891,
-          2071
-        ],
-        [
-          1891,
-          2179
-        ],
-        [
-          396,
-          2179
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Na phn chn nri ngoai cho rank",
-      "points": [
-        [
-          412,
-          2300
-        ],
-        [
-          1906,
-          2300
-        ],
-        [
-          1906,
-          2381
-        ],
-        [
-          412,
-          2381
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Phué nay lam tu, what minh,",
-      "points": [
-        [
-          388,
-          2525
-        ],
-        [
-          1687,
-          2525
-        ],
-        [
-          1687,
-          2604
-        ],
-        [
-          388,
-          2604
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Chia sa mie duie tien vanh ngoi kie.",
-      "points": [
-        [
-          377,
-          2770
-        ],
-        [
-          2215,
-          2770
-        ],
-        [
-          2215,
-          2834
-        ],
-        [
-          377,
-          2834
-        ]
-      ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     }
   ]
 }

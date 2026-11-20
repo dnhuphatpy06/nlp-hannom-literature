@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 24,
-  "saved": "2026-11-07T21:35:29.717658",
+  "saved": "2026-11-09T17:14:00.827240",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.024.jpg",
     "sha256": "b9dacb34b312d3f77cdb895b3c42ff07e67c4a018359e6854254997181206213",
@@ -13,47 +13,7 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
-    },
-    "row_projection": {
-      "bg_kernel": 25,
-      "blob_dilate": 0.3,
-      "blob_mass": 0.35,
-      "edge_ratio": 0.05,
-      "ink_thresh": null,
-      "line_len": null,
-      "margin": 6,
-      "merge_gap": 2,
-      "min_height": 8,
-      "min_width_ratio": 0.4,
-      "near_gap": 0.35,
-      "no_auto_crop": false,
-      "no_clean_x": false,
-      "no_post": false,
-      "pad": 2,
-      "peak_prom": 0.2,
-      "post_min_rows": 4,
-      "punct_gap": 2.0,
-      "punct_size": 0.45,
-      "roi": null,
-      "save_crops": false,
-      "sliver_gap": 0.15,
-      "sliver_max_height": 1.35,
-      "sliver_ratio": 0.45,
-      "sliver_x_overlap": 0.5,
-      "smooth": 2.5,
-      "thr_ratio": 0.012,
-      "valley_ratio": 0.6,
-      "x_trim": 0.5
-    },
-    "tag": "ch_vi"
+    }
   },
   "boxes": [
     {
@@ -77,7 +37,9 @@
           791
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -100,7 +62,9 @@
           1026
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -123,7 +87,9 @@
           1235
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -146,7 +112,9 @@
           1458
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -169,7 +137,9 @@
           1707
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -192,7 +162,9 @@
           1902
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -215,7 +187,9 @@
           2135
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -238,7 +212,9 @@
           2366
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -261,7 +237,9 @@
           2590
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 4,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -284,237 +262,9 @@
           2821
         ]
       ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Nung mung nui doi gia tinh.",
-      "points": [
-        [
-          410,
-          805
-        ],
-        [
-          1699,
-          805
-        ],
-        [
-          1699,
-          867
-        ],
-        [
-          410,
-          867
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Be không vinh cæ gây canh lam sao,",
-      "points": [
-        [
-          424,
-          1032
-        ],
-        [
-          2107,
-          1032
-        ],
-        [
-          2107,
-          1094
-        ],
-        [
-          424,
-          1094
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Ngi",
-      "points": [
-        [
-          410,
-          1236
-        ],
-        [
-          1886,
-          1236
-        ],
-        [
-          1886,
-          1320
-        ],
-        [
-          410,
-          1320
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "te nhãt pinh s",
-      "points": [
-        [
-          454,
-          1473
-        ],
-        [
-          1911,
-          1473
-        ],
-        [
-          1911,
-          1533
-        ],
-        [
-          454,
-          1533
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Rui ruiing ruiing tù bè bè",
-      "points": [
-        [
-          410,
-          1703
-        ],
-        [
-          1671,
-          1703
-        ],
-        [
-          1671,
-          1767
-        ],
-        [
-          410,
-          1767
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Cung không b형 kè có nghệ t�ng Tay.",
-      "points": [
-        [
-          415,
-          1913
-        ],
-        [
-          2138,
-          1913
-        ],
-        [
-          2138,
-          1987
-        ],
-        [
-          415,
-          1987
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Zhuya Chia ngi Som ngay ta đ",
-      "points": [
-        [
-          418,
-          2143
-        ],
-        [
-          1864,
-          2143
-        ],
-        [
-          1864,
-          2203
-        ],
-        [
-          418,
-          2203
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Công nitee minh lam lay cho tinh,",
-      "points": [
-        [
-          407,
-          2362
-        ],
-        [
-          1945,
-          2362
-        ],
-        [
-          1945,
-          2434
-        ],
-        [
-          407,
-          2434
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "What ugh? I think what them with.",
-      "points": [
-        [
-          399,
-          2602
-        ],
-        [
-          1730,
-          2602
-        ],
-        [
-          1730,
-          2664
-        ],
-        [
-          399,
-          2664
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Nhiuc bang luic buing al sink hto hen",
-      "points": [
-        [
-          397,
-          2817
-        ],
-        [
-          2143,
-          2817
-        ],
-        [
-          2143,
-          2896
-        ],
-        [
-          397,
-          2896
-        ]
-      ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 9,
+      "check_v": 3
     }
   ]
 }

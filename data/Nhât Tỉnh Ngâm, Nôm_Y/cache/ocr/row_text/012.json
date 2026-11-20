@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 12,
-  "saved": "2026-11-07T20:24:21.878739",
+  "saved": "2026-11-09T17:06:42.012358",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.012.jpg",
     "sha256": "8a4d66a8de1b1a2d107fe32cd99c4afa9e90eca4b1990b28abbefce542f436f2",
@@ -13,47 +13,7 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
-    },
-    "row_projection": {
-      "bg_kernel": 25,
-      "blob_dilate": 0.3,
-      "blob_mass": 0.35,
-      "edge_ratio": 0.05,
-      "ink_thresh": null,
-      "line_len": null,
-      "margin": 6,
-      "merge_gap": 2,
-      "min_height": 8,
-      "min_width_ratio": 0.4,
-      "near_gap": 0.35,
-      "no_auto_crop": false,
-      "no_clean_x": false,
-      "no_post": false,
-      "pad": 2,
-      "peak_prom": 0.2,
-      "post_min_rows": 4,
-      "punct_gap": 2.0,
-      "punct_size": 0.45,
-      "roi": null,
-      "save_crops": false,
-      "sliver_gap": 0.15,
-      "sliver_max_height": 1.35,
-      "sliver_ratio": 0.45,
-      "sliver_x_overlap": 0.5,
-      "smooth": 2.5,
-      "thr_ratio": 0.012,
-      "valley_ratio": 0.6,
-      "x_trim": 0.5
-    },
-    "tag": "ch_vi"
+    }
   },
   "boxes": [
     {
@@ -76,7 +36,10 @@
           461,
           762
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -98,7 +61,10 @@
           470,
           991
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -120,7 +86,10 @@
           460,
           1211
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -142,7 +111,10 @@
           442,
           1434
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -164,7 +136,10 @@
           456,
           1655
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -186,7 +161,10 @@
           455,
           1893
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -208,7 +186,10 @@
           453,
           2103
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -230,7 +211,10 @@
           292,
           2332
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -252,7 +236,10 @@
           455,
           2552
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -274,227 +261,10 @@
           458,
           2798
         ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "We ching ken chon cho lanh.",
-      "points": [
-        [
-          468,
-          773
-        ],
-        [
-          1710,
-          773
-        ],
-        [
-          1710,
-          847
-        ],
-        [
-          468,
-          847
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Cim nguii tinh nê hiên lnh mi",
-      "points": [
-        [
-          454,
-          991
-        ],
-        [
-          2151,
-          991
-        ],
-        [
-          2151,
-          1067
-        ],
-        [
-          454,
-          1067
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Hoi kiri Nui's rang duyen hay no",
-      "points": [
-        [
-          437,
-          1209
-        ],
-        [
-          1868,
-          1209
-        ],
-        [
-          1868,
-          1302
-        ],
-        [
-          437,
-          1302
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "No, may duyen cung tire giri xe,",
-      "points": [
-        [
-          440,
-          1442
-        ],
-        [
-          1902,
-          1442
-        ],
-        [
-          1902,
-          1529
-        ],
-        [
-          440,
-          1529
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Düng fkhh xàu xi wung vê, 55",
-      "points": [
-        [
-          434,
-          1656
-        ],
-        [
-          2114,
-          1656
-        ],
-        [
-          2114,
-          1740
-        ],
-        [
-          434,
-          1740
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Quang hiem hen ha dueng chê khó ugheo.",
-      "points": [
-        [
-          434,
-          1889
-        ],
-        [
-          2170,
-          1889
-        ],
-        [
-          2170,
-          1994
-        ],
-        [
-          434,
-          1994
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Ding ni noi hoo yeu nguyel who",
-      "points": [
-        [
-          439,
-          2113
-        ],
-        [
-          1925,
-          2113
-        ],
-        [
-          1925,
-          2195
-        ],
-        [
-          439,
-          2195
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Ning qián hàn nǎng guò guò céng zhà",
-      "points": [
-        [
-          432,
-          2342
-        ],
-        [
-          1945,
-          2342
-        ],
-        [
-          1945,
-          2439
-        ],
-        [
-          432,
-          2439
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Dàu ràng nán thie",
-      "points": [
-        [
-          440,
-          2558
-        ],
-        [
-          1740,
-          2558
-        ],
-        [
-          1740,
-          2653
-        ],
-        [
-          440,
-          2653
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Nghìn Tao Chang đơn bác t� không quên.",
-      "points": [
-        [
-          437,
-          2794
-        ],
-        [
-          2178,
-          2794
-        ],
-        [
-          2178,
-          2891
-        ],
-        [
-          437,
-          2891
-        ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 9,
+      "check_v": 3
     }
   ]
 }

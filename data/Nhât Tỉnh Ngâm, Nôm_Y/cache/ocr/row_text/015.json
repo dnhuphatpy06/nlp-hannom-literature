@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 15,
-  "saved": "2026-11-07T20:27:55.856921",
+  "saved": "2026-11-09T17:08:31.023022",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.015.jpg",
     "sha256": "83939723422236245333745a6703e5b89519c27b05d4f8e3fec37ce9ffb7ab35",
@@ -13,47 +13,7 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
-    },
-    "row_projection": {
-      "bg_kernel": 25,
-      "blob_dilate": 0.3,
-      "blob_mass": 0.35,
-      "edge_ratio": 0.05,
-      "ink_thresh": null,
-      "line_len": null,
-      "margin": 6,
-      "merge_gap": 2,
-      "min_height": 8,
-      "min_width_ratio": 0.4,
-      "near_gap": 0.35,
-      "no_auto_crop": false,
-      "no_clean_x": false,
-      "no_post": false,
-      "pad": 2,
-      "peak_prom": 0.2,
-      "post_min_rows": 4,
-      "punct_gap": 2.0,
-      "punct_size": 0.45,
-      "roi": null,
-      "save_crops": false,
-      "sliver_gap": 0.15,
-      "sliver_max_height": 1.35,
-      "sliver_ratio": 0.45,
-      "sliver_x_overlap": 0.5,
-      "smooth": 2.5,
-      "thr_ratio": 0.012,
-      "valley_ratio": 0.6,
-      "x_trim": 0.5
-    },
-    "tag": "ch_vi"
+    }
   },
   "boxes": [
     {
@@ -76,7 +36,10 @@
           452,
           779
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -98,7 +61,10 @@
           444,
           1013
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -120,7 +86,10 @@
           446,
           1239
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -142,7 +111,10 @@
           458,
           1456
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -164,7 +136,10 @@
           446,
           1697
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -186,7 +161,10 @@
           453,
           1911
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -208,7 +186,10 @@
           285,
           2144
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -230,7 +211,10 @@
           456,
           2360
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -252,7 +236,10 @@
           453,
           2576
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -274,227 +261,10 @@
           447,
           2793
         ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Long yeü kinh mièi phân Trn ven.",
-      "points": [
-        [
-          442,
-          795
-        ],
-        [
-          1926,
-          795
-        ],
-        [
-          1926,
-          868
-        ],
-        [
-          442,
-          868
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Erong cuà nha loim truyên nui yên.",
-      "points": [
-        [
-          419,
-          1017
-        ],
-        [
-          1925,
-          1017
-        ],
-        [
-          1925,
-          1110
-        ],
-        [
-          419,
-          1110
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Ban be gip go la duyen.",
-      "points": [
-        [
-          423,
-          1235
-        ],
-        [
-          1722,
-          1235
-        ],
-        [
-          1722,
-          1334
-        ],
-        [
-          423,
-          1334
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Mê",
-      "points": [
-        [
-          412,
-          1465
-        ],
-        [
-          2152,
-          1465
-        ],
-        [
-          2152,
-          1544
-        ],
-        [
-          412,
-          1544
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Long gain lo' changing thuring koe eay. - 85",
-      "points": [
-        [
-          440,
-          1693
-        ],
-        [
-          2147,
-          1693
-        ],
-        [
-          2147,
-          1758
-        ],
-        [
-          440,
-          1758
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Beup truic sau sas lai doi nii.",
-      "points": [
-        [
-          436,
-          1912
-        ],
-        [
-          1910,
-          1912
-        ],
-        [
-          1910,
-          1979
-        ],
-        [
-          436,
-          1979
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Qiuing hay gio vi choi lui",
-      "points": [
-        [
-          285,
-          2140
-        ],
-        [
-          1657,
-          2140
-        ],
-        [
-          1657,
-          2228
-        ],
-        [
-          285,
-          2228
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Gân người thiên 基金会 người các kia.",
-      "points": [
-        [
-          445,
-          2356
-        ],
-        [
-          2127,
-          2356
-        ],
-        [
-          2127,
-          2456
-        ],
-        [
-          445,
-          2456
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Ding nay rüe mai che lam thiel.",
-      "points": [
-        [
-          416,
-          2572
-        ],
-        [
-          1914,
-          2572
-        ],
-        [
-          1914,
-          2689
-        ],
-        [
-          416,
-          2689
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Yên Bao zhèi zhèi zhèi zhèi",
-      "points": [
-        [
-          428,
-          2789
-        ],
-        [
-          2159,
-          2789
-        ],
-        [
-          2159,
-          2904
-        ],
-        [
-          428,
-          2904
-        ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     }
   ]
 }

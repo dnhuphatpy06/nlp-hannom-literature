@@ -1,7 +1,11 @@
 {
   "engine": "row_text",
   "page": 7,
+<<<<<<< Updated upstream
   "saved": "2026-11-07T20:21:17.588664",
+=======
+  "saved": "2026-11-09T17:32:52.318317",
+>>>>>>> Stashed changes
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.007.jpg",
     "sha256": "fbfc47db36ff017f1d4f3626a18479603b2c70eb96cf78ac30a48814438dd00c",
@@ -13,6 +17,7 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
+<<<<<<< Updated upstream
     },
     "paddleocr": {
       "engine": "transformers",
@@ -54,11 +59,14 @@
       "x_trim": 0.5
     },
     "tag": "ch_vi"
+=======
+    }
+>>>>>>> Stashed changes
   },
   "boxes": [
     {
       "folder": "ch",
-      "text": "塘咍𢷣賖饒没",
+      "text": "",
       "points": [
         [
           475,
@@ -76,11 +84,19 @@
           475,
           781
         ]
+<<<<<<< Updated upstream
       ]
+=======
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+>>>>>>> Stashed changes
     },
     {
       "folder": "ch",
-      "text": "條𠊛别擬时𢧚",
+      "text": "",
       "points": [
         [
           475,
@@ -98,11 +114,19 @@
           475,
           1008
         ]
+<<<<<<< Updated upstream
       ]
+=======
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+>>>>>>> Stashed changes
     },
     {
       "folder": "ch",
-      "text": "計之坤𤵺𢀨𠍦",
+      "text": "",
       "points": [
         [
           473,
@@ -120,11 +144,19 @@
           473,
           1243
         ]
+<<<<<<< Updated upstream
       ]
+=======
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+>>>>>>> Stashed changes
     },
     {
       "folder": "ch",
-      "text": "性𫅜共共院全徐𠸗",
+      "text": "",
       "points": [
         [
           469,
@@ -142,11 +174,19 @@
           469,
           1463
         ]
+<<<<<<< Updated upstream
       ]
+=======
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+>>>>>>> Stashed changes
     },
     {
       "folder": "ch",
-      "text": "為染俗𢧚虚𤾓",
+      "text": "",
       "points": [
         [
           471,
@@ -164,11 +204,19 @@
           471,
           1690
         ]
+<<<<<<< Updated upstream
       ]
+=======
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+>>>>>>> Stashed changes
     },
     {
       "folder": "ch",
-      "text": "沛省身朱𤽸歇每𠳒",
+      "text": "",
       "points": [
         [
           475,
@@ -186,11 +234,19 @@
           475,
           1915
         ]
+<<<<<<< Updated upstream
       ]
+=======
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+>>>>>>> Stashed changes
     },
     {
       "folder": "ch",
-      "text": "吒𡥵尼買性𡗶",
+      "text": "",
       "points": [
         [
           467,
@@ -208,11 +264,19 @@
           467,
           2131
         ]
+<<<<<<< Updated upstream
       ]
+=======
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+>>>>>>> Stashed changes
     },
     {
       "folder": "ch",
-      "text": "𠦳秋經義𫔮𠁀𠑕倫",
+      "text": "",
       "points": [
         [
           464,
@@ -230,11 +294,19 @@
           464,
           2359
         ]
+<<<<<<< Updated upstream
       ]
+=======
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+>>>>>>> Stashed changes
     },
     {
       "folder": "ch",
-      "text": "功貽藿空垠𣷭𢌌",
+      "text": "",
       "points": [
         [
           466,
@@ -252,11 +324,19 @@
           466,
           2580
         ]
+<<<<<<< Updated upstream
       ]
+=======
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+>>>>>>> Stashed changes
     },
     {
       "folder": "ch",
-      "text": "德生成䀡蘇𡽫高",
+      "text": "",
       "points": [
         [
           463,
@@ -274,6 +354,7 @@
           463,
           2802
         ]
+<<<<<<< Updated upstream
       ]
     },
     {
@@ -495,6 +576,13 @@
           2897
         ]
       ]
+=======
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+>>>>>>> Stashed changes
     }
   ]
 }

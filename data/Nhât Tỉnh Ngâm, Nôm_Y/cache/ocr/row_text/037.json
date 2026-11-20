@@ -1,0 +1,275 @@
+{
+  "engine": "row_text",
+  "page": 37,
+  "saved": "2026-11-09T17:22:18.579985",
+  "image": {
+    "name": "Nhât Tỉnh Ngâm, Nôm_Y.037.jpg",
+    "sha256": "4bfad3998796d6e4f9529cb3878e4df8b92b2fdca69514a9e1c370d89290ab5c",
+    "size": 923592
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "穷𡢻𨢟𢧚徐意",
+      "points": [
+        [
+          456,
+          673
+        ],
+        [
+          1887,
+          673
+        ],
+        [
+          1887,
+          775
+        ],
+        [
+          456,
+          775
+        ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "客風流停𥙩𨔈",
+      "points": [
+        [
+          453,
+          898
+        ],
+        [
+          1898,
+          898
+        ],
+        [
+          1898,
+          994
+        ],
+        [
+          453,
+          994
+        ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𫥨咦仍𠺙角𠸟",
+      "points": [
+        [
+          446,
+          1121
+        ],
+        [
+          1671,
+          1121
+        ],
+        [
+          1671,
+          1223
+        ],
+        [
+          446,
+          1223
+        ]
+      ],
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "從無福細尼訟庭",
+      "points": [
+        [
+          454,
+          1347
+        ],
+        [
+          2113,
+          1347
+        ],
+        [
+          2113,
+          1442
+        ],
+        [
+          454,
+          1442
+        ]
+      ],
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𠊛白𧵑㐌停𠅎䀡",
+      "points": [
+        [
+          454,
+          1575
+        ],
+        [
+          1887,
+          1575
+        ],
+        [
+          1887,
+          1675
+        ],
+        [
+          454,
+          1675
+        ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          453,
+          1795
+        ],
+        [
+          1885,
+          1795
+        ],
+        [
+          1885,
+          1909
+        ],
+        [
+          453,
+          1909
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          459,
+          2020
+        ],
+        [
+          1684,
+          2020
+        ],
+        [
+          1684,
+          2134
+        ],
+        [
+          459,
+          2134
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          470,
+          2237
+        ],
+        [
+          2134,
+          2237
+        ],
+        [
+          2134,
+          2349
+        ],
+        [
+          470,
+          2349
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          457,
+          2469
+        ],
+        [
+          1913,
+          2469
+        ],
+        [
+          1913,
+          2573
+        ],
+        [
+          457,
+          2573
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+    },
+    {
+      "folder": "ch",
+      "text": "",
+      "points": [
+        [
+          463,
+          2687
+        ],
+        [
+          1884,
+          2687
+        ],
+        [
+          1884,
+          2794
+        ],
+        [
+          463,
+          2794
+        ]
+      ],
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+    }
+  ]
+}

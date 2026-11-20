@@ -1,7 +1,11 @@
 {
   "engine": "row_text",
   "page": 6,
+<<<<<<< Updated upstream
   "saved": "2026-11-07T21:29:47.672739",
+=======
+  "saved": "2026-11-09T17:32:14.309597",
+>>>>>>> Stashed changes
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.006.jpg",
     "sha256": "0fce3e38dee31c16e7f794813837b32c0f72abd0ec884266dd29cc9416963618",
@@ -13,6 +17,7 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
+<<<<<<< Updated upstream
     },
     "paddleocr": {
       "engine": "transformers",
@@ -54,11 +59,14 @@
       "x_trim": 0.5
     },
     "tag": "ch_vi"
+=======
+    }
+>>>>>>> Stashed changes
   },
   "boxes": [
     {
       "folder": "ch",
-      "text": "日省吟",
+      "text": "",
       "points": [
         [
           886,
@@ -77,11 +85,14 @@
           948
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
     },
     {
       "folder": "ch",
-      "text": "敬岌三年新",
+      "text": "",
       "points": [
         [
           638,
@@ -100,11 +111,14 @@
           1500
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
     },
     {
       "folder": "ch",
-      "text": "福文堂藏梭",
+      "text": "",
       "points": [
         [
           751,
@@ -123,6 +137,7 @@
           1775
         ]
       ],
+<<<<<<< Updated upstream
       "status": "ok"
     },
     {
@@ -193,6 +208,12 @@
         ]
       ],
       "status": "ok"
+=======
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 3
+>>>>>>> Stashed changes
     }
   ]
 }

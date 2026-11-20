@@ -1,0 +1,371 @@
+{
+  "engine": "row_text",
+  "page": 6,
+  "saved": "2026-11-11T20:30:48.301053",
+  "image": {
+    "name": "Nguyêt Lịnh Quôc Âm Ca, Nôm_Y.006.jpg",
+    "sha256": "c139f429c109b57f25352aac9341afb8d07f3b78e14cc77c2eca7e8acea12eee",
+    "size": 1097120
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "vi",
+      "text": "",
+      "points": [
+        [
+          735,
+          588
+        ],
+        [
+          1802,
+          588
+        ],
+        [
+          1802,
+          756
+        ],
+        [
+          735,
+          756
+        ]
+      ],
+      "status": "error",
+      "error": "RuntimeError: Exception from the 'vlm' worker: apply_chat_template requires jinja2>=3.1.6 to be installed. Your version is 3.1.4. You can upgrade it with `pip install -U jinja2`.",
+      "code": null,
+      "attempts": 1,
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "",
+      "points": [
+        [
+          600,
+          752
+        ],
+        [
+          2018,
+          752
+        ],
+        [
+          2018,
+          948
+        ],
+        [
+          600,
+          948
+        ]
+      ],
+      "status": "error",
+      "error": "RuntimeError: Exception from the 'vlm' worker: apply_chat_template requires jinja2>=3.1.6 to be installed. Your version is 3.1.4. You can upgrade it with `pip install -U jinja2`.",
+      "code": null,
+      "attempts": 1,
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "",
+      "points": [
+        [
+          408,
+          944
+        ],
+        [
+          2010,
+          944
+        ],
+        [
+          2010,
+          1127
+        ],
+        [
+          408,
+          1127
+        ]
+      ],
+      "status": "error",
+      "error": "RuntimeError: Exception from the 'vlm' worker: apply_chat_template requires jinja2>=3.1.6 to be installed. Your version is 3.1.4. You can upgrade it with `pip install -U jinja2`.",
+      "code": null,
+      "attempts": 1,
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "",
+      "points": [
+        [
+          444,
+          1123
+        ],
+        [
+          2019,
+          1123
+        ],
+        [
+          2019,
+          1315
+        ],
+        [
+          444,
+          1315
+        ]
+      ],
+      "status": "error",
+      "error": "RuntimeError: Exception from the 'vlm' worker: apply_chat_template requires jinja2>=3.1.6 to be installed. Your version is 3.1.4. You can upgrade it with `pip install -U jinja2`.",
+      "code": null,
+      "attempts": 1,
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "",
+      "points": [
+        [
+          426,
+          1311
+        ],
+        [
+          2031,
+          1311
+        ],
+        [
+          2031,
+          1493
+        ],
+        [
+          426,
+          1493
+        ]
+      ],
+      "status": "error",
+      "error": "RuntimeError: Exception from the 'vlm' worker: apply_chat_template requires jinja2>=3.1.6 to be installed. Your version is 3.1.4. You can upgrade it with `pip install -U jinja2`.",
+      "code": null,
+      "attempts": 1,
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "",
+      "points": [
+        [
+          515,
+          1489
+        ],
+        [
+          2224,
+          1489
+        ],
+        [
+          2224,
+          1673
+        ],
+        [
+          515,
+          1673
+        ]
+      ],
+      "status": "error",
+      "error": "RuntimeError: Exception from the 'vlm' worker: apply_chat_template requires jinja2>=3.1.6 to be installed. Your version is 3.1.4. You can upgrade it with `pip install -U jinja2`.",
+      "code": null,
+      "attempts": 1,
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "",
+      "points": [
+        [
+          431,
+          1669
+        ],
+        [
+          2067,
+          1669
+        ],
+        [
+          2067,
+          1824
+        ],
+        [
+          431,
+          1824
+        ]
+      ],
+      "status": "error",
+      "error": "RuntimeError: Exception from the 'vlm' worker: apply_chat_template requires jinja2>=3.1.6 to be installed. Your version is 3.1.4. You can upgrade it with `pip install -U jinja2`.",
+      "code": null,
+      "attempts": 1,
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "",
+      "points": [
+        [
+          475,
+          1820
+        ],
+        [
+          2027,
+          1820
+        ],
+        [
+          2027,
+          1980
+        ],
+        [
+          475,
+          1980
+        ]
+      ],
+      "status": "error",
+      "error": "RuntimeError: Exception from the 'vlm' worker: apply_chat_template requires jinja2>=3.1.6 to be installed. Your version is 3.1.4. You can upgrade it with `pip install -U jinja2`.",
+      "code": null,
+      "attempts": 1,
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "",
+      "points": [
+        [
+          421,
+          1976
+        ],
+        [
+          2180,
+          1976
+        ],
+        [
+          2180,
+          2159
+        ],
+        [
+          421,
+          2159
+        ]
+      ],
+      "status": "error",
+      "error": "RuntimeError: Exception from the 'vlm' worker: apply_chat_template requires jinja2>=3.1.6 to be installed. Your version is 3.1.4. You can upgrade it with `pip install -U jinja2`.",
+      "code": null,
+      "attempts": 1,
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "",
+      "points": [
+        [
+          643,
+          2155
+        ],
+        [
+          2141,
+          2155
+        ],
+        [
+          2141,
+          2326
+        ],
+        [
+          643,
+          2326
+        ]
+      ],
+      "status": "error",
+      "error": "RuntimeError: Exception from the 'vlm' worker: apply_chat_template requires jinja2>=3.1.6 to be installed. Your version is 3.1.4. You can upgrade it with `pip install -U jinja2`.",
+      "code": null,
+      "attempts": 1,
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "",
+      "points": [
+        [
+          448,
+          2322
+        ],
+        [
+          2100,
+          2322
+        ],
+        [
+          2100,
+          2490
+        ],
+        [
+          448,
+          2490
+        ]
+      ],
+      "status": "error",
+      "error": "RuntimeError: Exception from the 'vlm' worker: apply_chat_template requires jinja2>=3.1.6 to be installed. Your version is 3.1.4. You can upgrade it with `pip install -U jinja2`.",
+      "code": null,
+      "attempts": 1,
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "",
+      "points": [
+        [
+          434,
+          2486
+        ],
+        [
+          2114,
+          2486
+        ],
+        [
+          2114,
+          2664
+        ],
+        [
+          434,
+          2664
+        ]
+      ],
+      "status": "error",
+      "error": "RuntimeError: Exception from the 'vlm' worker: apply_chat_template requires jinja2>=3.1.6 to be installed. Your version is 3.1.4. You can upgrade it with `pip install -U jinja2`.",
+      "code": null,
+      "attempts": 1,
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "",
+      "points": [
+        [
+          402,
+          2660
+        ],
+        [
+          2188,
+          2660
+        ],
+        [
+          2188,
+          2929
+        ],
+        [
+          402,
+          2929
+        ]
+      ],
+      "status": "error",
+      "error": "RuntimeError: Exception from the 'vlm' worker: apply_chat_template requires jinja2>=3.1.6 to be installed. Your version is 3.1.4. You can upgrade it with `pip install -U jinja2`.",
+      "code": null,
+      "attempts": 1,
+      "reader": "paddleocr:83122e12"
+    }
+  ]
+}

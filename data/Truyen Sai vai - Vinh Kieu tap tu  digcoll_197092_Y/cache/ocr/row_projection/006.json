@@ -1,0 +1,150 @@
+{
+  "engine": "row_projection",
+  "page": 6,
+  "saved": "2026-11-12T08:01:55.895623",
+  "image": {
+    "name": "Truyen Sai vai - Vinh Kieu tap tu  digcoll_197092_Y.006.jpg",
+    "sha256": "6075814423792b91a68d06aadeba1ad0a9f626c5efa0c9b02fad7b7c9a2d4955",
+    "size": 804662
+  },
+  "params": {
+    "bg_kernel": 25,
+    "blob_dilate": 0.3,
+    "blob_mass": 0.35,
+    "edge_ratio": 0.05,
+    "ink_thresh": null,
+    "line_len": null,
+    "margin": 6,
+    "merge_gap": 2,
+    "min_height": 8,
+    "min_width_ratio": 0.4,
+    "near_gap": 0.35,
+    "no_auto_crop": false,
+    "no_clean_x": false,
+    "no_post": false,
+    "pad": 2,
+    "peak_prom": 0.2,
+    "post_min_rows": 4,
+    "punct_gap": 2.0,
+    "punct_size": 0.45,
+    "roi": null,
+    "save_crops": false,
+    "sliver_gap": 0.15,
+    "sliver_max_height": 1.35,
+    "sliver_ratio": 0.45,
+    "sliver_x_overlap": 0.5,
+    "smooth": 2.5,
+    "thr_ratio": 0.012,
+    "valley_ratio": 0.6,
+    "vline_ratio": 0.25,
+    "vline_tilt": 3.0,
+    "x_trim": 0.5
+  },
+  "boxes": [
+    {
+      "text": "",
+      "points": [
+        [
+          962,
+          310
+        ],
+        [
+          1278,
+          310
+        ],
+        [
+          1278,
+          392
+        ],
+        [
+          962,
+          392
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          452,
+          388
+        ],
+        [
+          1558,
+          388
+        ],
+        [
+          1558,
+          523
+        ],
+        [
+          452,
+          523
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          642,
+          529
+        ],
+        [
+          1306,
+          529
+        ],
+        [
+          1306,
+          596
+        ],
+        [
+          642,
+          596
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          688,
+          690
+        ],
+        [
+          1588,
+          690
+        ],
+        [
+          1588,
+          785
+        ],
+        [
+          688,
+          785
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          620,
+          788
+        ],
+        [
+          1595,
+          788
+        ],
+        [
+          1595,
+          895
+        ],
+        [
+          620,
+          895
+        ]
+      ]
+    }
+  ]
+}

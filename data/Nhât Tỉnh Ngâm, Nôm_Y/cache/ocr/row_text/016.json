@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 16,
-  "saved": "2026-11-07T20:28:29.936433",
+  "saved": "2026-11-09T17:09:06.872904",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.016.jpg",
     "sha256": "2b0f8c47fdea83c1b324461fc32cb47ec0dc07f6e5016258fd80ca272f2b6a32",
@@ -13,47 +13,7 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
-    },
-    "row_projection": {
-      "bg_kernel": 25,
-      "blob_dilate": 0.3,
-      "blob_mass": 0.35,
-      "edge_ratio": 0.05,
-      "ink_thresh": null,
-      "line_len": null,
-      "margin": 6,
-      "merge_gap": 2,
-      "min_height": 8,
-      "min_width_ratio": 0.4,
-      "near_gap": 0.35,
-      "no_auto_crop": false,
-      "no_clean_x": false,
-      "no_post": false,
-      "pad": 2,
-      "peak_prom": 0.2,
-      "post_min_rows": 4,
-      "punct_gap": 2.0,
-      "punct_size": 0.45,
-      "roi": null,
-      "save_crops": false,
-      "sliver_gap": 0.15,
-      "sliver_max_height": 1.35,
-      "sliver_ratio": 0.45,
-      "sliver_x_overlap": 0.5,
-      "smooth": 2.5,
-      "thr_ratio": 0.012,
-      "valley_ratio": 0.6,
-      "x_trim": 0.5
-    },
-    "tag": "ch_vi"
+    }
   },
   "boxes": [
     {
@@ -76,7 +36,10 @@
           461,
           760
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -98,7 +61,10 @@
           442,
           983
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -120,7 +86,10 @@
           454,
           1206
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -142,7 +111,10 @@
           447,
           1433
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -164,7 +136,10 @@
           440,
           1659
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -186,7 +161,10 @@
           435,
           1888
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -208,7 +186,10 @@
           440,
           2104
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -230,7 +211,10 @@
           438,
           2327
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -252,7 +236,10 @@
           433,
           2552
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -274,227 +261,10 @@
           437,
           2799
         ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Giao du la nghia thi nao",
-      "points": [
-        [
-          442,
-          773
-        ],
-        [
-          1681,
-          773
-        ],
-        [
-          1681,
-          866
-        ],
-        [
-          442,
-          866
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Zhuyén cǎu Tù Tè rù gǎn diè cān gōng",
-      "points": [
-        [
-          417,
-          995
-        ],
-        [
-          2130,
-          995
-        ],
-        [
-          2130,
-          1072
-        ],
-        [
-          417,
-          1072
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Da moi phai ma không nghc th￥c.",
-      "points": [
-        [
-          435,
-          1208
-        ],
-        [
-          1933,
-          1208
-        ],
-        [
-          1933,
-          1289
-        ],
-        [
-          435,
-          1289
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Echí thoi oí kto mál long ngi",
-      "points": [
-        [
-          413,
-          1436
-        ],
-        [
-          1946,
-          1436
-        ],
-        [
-          1946,
-          1512
-        ],
-        [
-          413,
-          1512
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "elbuin cho oi lai lai dai. - 95",
-      "points": [
-        [
-          410,
-          1655
-        ],
-        [
-          2087,
-          1655
-        ],
-        [
-          2087,
-          1730
-        ],
-        [
-          410,
-          1730
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Ding quen bung kinh ch'e n'i long tin,",
-      "points": [
-        [
-          413,
-          1884
-        ],
-        [
-          2135,
-          1884
-        ],
-        [
-          2135,
-          1962
-        ],
-        [
-          413,
-          1962
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Erung bung ngi' khong nin man mu",
-      "points": [
-        [
-          409,
-          2111
-        ],
-        [
-          1948,
-          2111
-        ],
-        [
-          1948,
-          2201
-        ],
-        [
-          409,
-          2201
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Già duce ngài khân gi� duire gi�",
-      "points": [
-        [
-          428,
-          2323
-        ],
-        [
-          1921,
-          2323
-        ],
-        [
-          1921,
-          2433
-        ],
-        [
-          428,
-          2433
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Chic doing bae beo may doi",
-      "points": [
-        [
-          413,
-          2565
-        ],
-        [
-          1693,
-          2565
-        ],
-        [
-          1693,
-          2635
-        ],
-        [
-          413,
-          2635
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Long ma kung hàe phué thoi dai lù.",
-      "points": [
-        [
-          420,
-          2795
-        ],
-        [
-          2130,
-          2795
-        ],
-        [
-          2130,
-          2877
-        ],
-        [
-          420,
-          2877
-        ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 9,
+      "check_v": 3
     }
   ]
 }

@@ -9,6 +9,7 @@
 #   self.text_detector     EngineTextDetection       Cell re-recognition: coi cả vùng cắt là một dòng chữ
 #   (nhận dạng bảng không còn: quy định đồ án bỏ qua bảng, tranh)
 import logging
+import re
 import sys
 from pathlib import Path
 
@@ -18,6 +19,33 @@ from PyQt5.QtWidgets import QApplication, QMessageBox
 
 logger = logging.getLogger("PPOCRLabel")
 PROJECT_ROOT = Path(__file__).resolve().parents[3]   # external/PPOCRLabel/libs/gk_ocr.py -> thư mục gốc dự án
+
+
+def select_page_images(images, spec):
+    """Chọn theo số ở cuối tên ảnh; nếu cả thư mục không đánh số, dùng vị trí 1-based."""
+    if spec.strip() == "*":
+        return list(images)
+    spans = []
+    for part in spec.split(","):
+        match = re.fullmatch(r"\s*([0-9]{1,9})(?:\s*-\s*([0-9]{1,9}))?\s*", part)
+        if not match:
+            raise ValueError("Nhập số trang hoặc khoảng trang, ví dụ: 6, 8-12.")
+        start = int(match[1])
+        end = int(match[2]) if match[2] else start
+        if start < 1 or end < start:
+            raise ValueError("Số trang phải lớn hơn 0 và khoảng trang phải theo thứ tự tăng dần.")
+        spans.append((start, end))
+
+    numbered = []
+    for path in images:
+        match = re.search(r"([0-9]+)$", Path(path).stem)
+        if match:
+            numbered.append((int(match[1]), path))
+    selected = [path for number, path in numbered or enumerate(images, 1)
+                if any(start <= number <= end for start, end in spans)]
+    if not selected:
+        raise ValueError("Không có ảnh nào khớp với số trang đã nhập trong thư mục này.")
+    return selected
 
 
 def bridge():
@@ -46,6 +74,7 @@ class EngineState:
         self.folder_getter = folder_getter
         self.quiet = False              # đang chạy hàng loạt (khung OCR log): lỗi chỉ ghi vào log, báo một lần khi xong thay vì hộp thoại từng box
         self.task = None                # both | detect | read | selected (nhớ để mở lại hộp thoại đúng lựa chọn); None = chưa chọn
+        self.detect_rows = None         # chỉ phát hiện box: ch = hàng lẻ, vi = hàng chẵn, None = theo thư mục
         self.last_error = None
 
     def folder(self):
@@ -84,7 +113,14 @@ class EngineOCR:
         try:
             if not image_path:
                 raise RuntimeError("Thiếu đường dẫn ảnh để nhận dạng cả trang.")
+<<<<<<< Updated upstream
             boxes, engine, cached = bridge().recognize_page(image_path, self.state.engine)
+=======
+            rows = self.state.detect_rows if self.state.task == "detect" else None
+            boxes, engine, cached = bridge().recognize_page(
+                image_path, self.state.engine, alternate=self.state.alternate, detect_rows=rows
+            )
+>>>>>>> Stashed changes
             logger.info("OCR trang %s bằng %s%s: %d box", Path(image_path).name, engine, " (cache)" if cached else "", len(boxes))
         except events().Cancelled:   # người dùng bấm Dừng ở khung OCR log
             events().log("Đã dừng.", "warn")

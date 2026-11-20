@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 30,
-  "saved": "2026-11-07T21:44:21.278960",
+  "saved": "2026-11-09T17:31:06.127411",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.030.jpg",
     "sha256": "5b4a49a1014e2e9368b92190fabbbfc0c8bd2eecbf82c21668bf0db130a1f264",
@@ -13,52 +13,12 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
-    },
-    "row_projection": {
-      "bg_kernel": 25,
-      "blob_dilate": 0.3,
-      "blob_mass": 0.35,
-      "edge_ratio": 0.05,
-      "ink_thresh": null,
-      "line_len": null,
-      "margin": 6,
-      "merge_gap": 2,
-      "min_height": 8,
-      "min_width_ratio": 0.4,
-      "near_gap": 0.35,
-      "no_auto_crop": false,
-      "no_clean_x": false,
-      "no_post": false,
-      "pad": 2,
-      "peak_prom": 0.2,
-      "post_min_rows": 4,
-      "punct_gap": 2.0,
-      "punct_size": 0.45,
-      "roi": null,
-      "save_crops": false,
-      "sliver_gap": 0.15,
-      "sliver_max_height": 1.35,
-      "sliver_ratio": 0.45,
-      "sliver_x_overlap": 0.5,
-      "smooth": 2.5,
-      "thr_ratio": 0.012,
-      "valley_ratio": 0.6,
-      "x_trim": 0.5
-    },
-    "tag": "ch_vi"
+    }
   },
   "boxes": [
     {
       "folder": "ch",
-      "text": "𢝙史：𡨸安貪",
+      "text": "",
       "points": [
         [
           453,
@@ -77,11 +37,14 @@
           768
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
       "folder": "ch",
-      "text": "能秦便𨇜分廕𩛂",
+      "text": "",
       "points": [
         [
           442,
@@ -100,11 +63,14 @@
           994
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
       "folder": "ch",
-      "text": "於𢀭固停折世",
+      "text": "",
       "points": [
         [
           448,
@@ -123,11 +89,14 @@
           1216
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
       "folder": "ch",
-      "text": "役𢧚鄭利仕每塘",
+      "text": "",
       "points": [
         [
           440,
@@ -146,11 +115,14 @@
           1439
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
       "folder": "ch",
-      "text": "橋欺一旦無常",
+      "text": "",
       "points": [
         [
           443,
@@ -169,11 +141,14 @@
           1663
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
       "folder": "ch",
-      "text": "添朱𡥵𡥙荒沫驕春",
+      "text": "",
       "points": [
         [
           438,
@@ -192,11 +167,14 @@
           1885
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
       "folder": "ch",
-      "text": "仉欢固消坡固",
+      "text": "",
       "points": [
         [
           432,
@@ -215,11 +193,14 @@
           2112
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
       "folder": "ch",
-      "text": "𠊛分空潙辣強空",
+      "text": "",
       "points": [
         [
           422,
@@ -238,11 +219,14 @@
           2332
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
       "folder": "ch",
-      "text": "不貪巧店唷鍾",
+      "text": "",
       "points": [
         [
           440,
@@ -261,11 +245,14 @@
           2566
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
       "folder": "ch",
-      "text": "鐄箕藩𢬭𢚸空仕",
+      "text": "",
       "points": [
         [
           428,
@@ -284,11 +271,14 @@
           2791
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
-      "folder": "vi",
-      "text": "We're that that chu an ban.",
+      "folder": "ch",
+      "text": "",
       "points": [
         [
           433,
@@ -307,11 +297,14 @@
           850
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
-      "folder": "vi",
-      "text": "Sieng nang tan tien du phân 0m no.",
+      "folder": "ch",
+      "text": "",
       "points": [
         [
           416,
@@ -330,11 +323,14 @@
           1088
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
-      "folder": "vi",
-      "text": "Nha gi�n co' dung bô chid thê.",
+      "folder": "ch",
+      "text": "",
       "points": [
         [
           425,
@@ -353,11 +349,14 @@
           1302
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
-      "folder": "vi",
-      "text": "Wie nen sie san se mei stüng.",
+      "folder": "ch",
+      "text": "",
       "points": [
         [
           436,
@@ -376,11 +375,14 @@
           1518
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
-      "folder": "vi",
-      "text": "Je' ve-",
+      "folder": "ch",
+      "text": "",
       "points": [
         [
           416,
@@ -399,11 +401,14 @@
           1743
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
-      "folder": "vi",
-      "text": "Chên cho con chau hoang t long kiên xa,",
+      "folder": "ch",
+      "text": "",
       "points": [
         [
           425,
@@ -422,11 +427,14 @@
           1961
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
-      "folder": "vi",
-      "text": "Je s'enfoue. Je s'enfoue.",
+      "folder": "ch",
+      "text": "",
       "points": [
         [
           427,
@@ -445,11 +453,14 @@
           2185
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
-      "folder": "vi",
-      "text": "Nguyen phận không bàn bò càng không.",
+      "folder": "ch",
+      "text": "",
       "points": [
         [
           388,
@@ -468,11 +479,14 @@
           2420
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
-      "folder": "vi",
-      "text": "Bai tham la cai bai chung,",
+      "folder": "ch",
+      "text": "",
       "points": [
         [
           415,
@@ -491,11 +505,14 @@
           2638
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     },
     {
-      "folder": "vi",
-      "text": "Wang Kia do' chie long hlong den Si.",
+      "folder": "ch",
+      "text": "",
       "points": [
         [
           413,
@@ -514,7 +531,10 @@
           2875
         ]
       ],
-      "status": "ok"
+      "status": "error",
+      "error": "API Kim Hán Nôm lỗi: [000403] t_access_denied - m_access_denied",
+      "code": "000403",
+      "attempts": 1
     }
   ]
 }

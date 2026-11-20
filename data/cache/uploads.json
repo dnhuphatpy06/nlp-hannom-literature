@@ -466,5 +466,17 @@
     "sha256": "22f05d25a433b89e586ff534c79dc0a2a685fbe1be15fde68fdc721fd7911a88",
     "file_name": "upload_d1ac0c083e50471caf2b586b44aeade5.png",
     "uploaded_at": "2026-11-07T14:13:17+00:00"
+  },
+  {
+    "image_path": "data/Truyen Dong Thien Vuong (AB.648)_/ch/Truyen Dong Thien Vuong (AB.648)_.006.jpg",
+    "sha256": "94092b5a3db0f77fba26b076b34ff853a992d41088ff78af6eb3262c1f6149a4",
+    "file_name": "upload_4f92848cab994d54908b7b460fb3219a.jpg",
+    "uploaded_at": "2026-11-10T05:15:00+00:00"
+  },
+  {
+    "image_path": "data/Nguyêt Lịnh Quôc Âm Ca, Nôm_Y/ch/Nguyêt Lịnh Quôc Âm Ca, Nôm_Y.004.jpg",
+    "sha256": "ec60679f8df252b0a1c5f42536dde5ab8a98185120d46b684c093da16d3f472b",
+    "file_name": "upload_9029a32965304f0eb0d7b5cfd3ab8f6d.jpg",
+    "uploaded_at": "2026-11-11T11:50:38+00:00"
   }
 ]

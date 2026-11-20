@@ -1,0 +1,950 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiểm tra nhãn OCR</title>
+<style>
+  :root {
+    --bg: #f4f5f7; --panel: #ffffff; --ink: #1c2330; --muted: #667085; --line: #d9dde5;
+    --accent: #2457d6; --accent-soft: #e6edfc; --warn: #b54708; --warn-soft: #fff1e0;
+    --ok: #067647; --box: #e5484d; --box-sel: #2457d6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #12151b; --panel: #1b2029; --ink: #e8ebf1; --muted: #98a2b3; --line: #2c3340;
+      --accent: #7ba2ff; --accent-soft: #1f2c4d; --warn: #fdb022; --warn-soft: #3a2a0c;
+      --ok: #47cd89; --box: #f97066; --box-sel: #7ba2ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body { background: var(--bg); color: var(--ink); font: 15px/1.45 system-ui, "Segoe UI", Roboto, sans-serif; display: flex; flex-direction: column; }
+  button, select, input { font: inherit; color: inherit; }
+  button, select { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+  button:hover:not(:disabled) { border-color: var(--accent); }
+  button:disabled { opacity: .45; cursor: default; }
+  button.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+  header { background: var(--panel); border-bottom: 1px solid var(--line); padding: 10px 16px; display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; }
+  header h1 { font-size: 16px; margin: 0; font-weight: 650; }
+  .grp { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .spacer { flex: 1; }
+  .stat { color: var(--muted); font-size: 13px; }
+  .stat b { color: var(--ink); }
+  #bookSel { max-width: 360px; }
+  #saveState { font-size: 13px; padding: 2px 8px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); }
+  #saveState.dirty { background: var(--warn-soft); color: var(--warn); }
+
+  #tabs { background: var(--panel); border-bottom: 1px solid var(--line); padding: 6px 16px 0; display: flex; gap: 4px; flex-wrap: wrap; }
+  #tabs[hidden] { display: none; }
+  .tab { border-bottom-left-radius: 0; border-bottom-right-radius: 0; border-bottom: 2px solid transparent; background: var(--bg); padding: 6px 14px; }
+  .tab.active { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); font-weight: 650; }
+  .tab .n { font-size: 12px; color: var(--muted); font-weight: 400; margin-left: 4px; }
+  .tab .dot { color: var(--warn); margin-left: 4px; }
+
+  details.help { background: var(--panel); border-bottom: 1px solid var(--line); padding: 6px 16px; font-size: 13px; color: var(--muted); }
+  details.help summary { cursor: pointer; color: var(--ink); }
+  details.help ul { margin: 6px 0 4px; padding-left: 20px; }
+  kbd { background: var(--bg); border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 0 5px; font-size: 12px; }
+
+  main { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 12px; padding: 12px 16px 16px; }
+  .pane { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; min-height: 0; display: flex; flex-direction: column; overflow: hidden; }
+  .pane-head { padding: 8px 12px; border-bottom: 1px solid var(--line); display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 13px; color: var(--muted); }
+  .pane-head .name { color: var(--ink); font-weight: 600; word-break: break-all; }
+  #imgScroll { flex: 1; overflow: auto; background: #7a8190; }
+  #imgWrap { position: relative; line-height: 0; margin: 0 auto; }
+  #imgWrap img { width: 100%; display: block; user-select: none; }
+  #imgWrap svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .bx { fill: rgba(229,72,77,.06); stroke: var(--box); stroke-width: 2.2; vector-effect: non-scaling-stroke; cursor: pointer; }
+  .bx:hover { fill: rgba(229,72,77,.22); }
+  .bx.edited { stroke: #12b76a; }
+  .bx.sel { fill: rgba(36,87,214,.20); stroke: var(--box-sel); stroke-width: 3.5; }
+  .bn { font-weight: 700; fill: var(--box); paint-order: stroke; stroke: #fff; stroke-width: 6px; pointer-events: none; }
+  .bn.sel { fill: var(--box-sel); }
+
+  #list { flex: 1; overflow: auto; padding: 8px; display: flex; flex-direction: column; gap: 8px; }
+  .empty { color: var(--muted); padding: 24px 12px; text-align: center; }
+  .row { border: 1px solid var(--line); border-radius: 8px; padding: 8px; display: grid; grid-template-columns: 34px 1fr; gap: 4px 8px; background: var(--panel); }
+  .row.sel { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); background: color-mix(in srgb, var(--accent-soft) 40%, var(--panel)); }
+  .row .idx { grid-row: 1 / span 2; align-self: start; font-weight: 700; color: var(--muted); padding-top: 2px; }
+  .row.sel .idx { color: var(--accent); }
+  .row canvas { width: 100%; max-height: 120px; background: #fff; border: 1px solid var(--line); border-radius: 4px; display: block; object-fit: contain; }
+  .row .edit { display: flex; gap: 8px; align-items: center; }
+  .row input[type=text] { flex: 1; min-width: 0; padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); font-size: 16px; }
+  .row input[type=text]:focus { background: var(--panel); border-color: var(--accent); outline: none; box-shadow: 0 0 0 2px var(--accent-soft); }
+  .row.edited input[type=text] { border-color: #12b76a; }
+  .badge { font-size: 11px; padding: 1px 7px; border-radius: 99px; background: #d1fadf; color: #05603a; white-space: nowrap; }
+  .row .undo { padding: 2px 8px; font-size: 12px; }
+  .orig { grid-column: 2; font-size: 12px; color: var(--muted); }
+  .orig s { color: var(--warn); }
+
+  #toast { position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%); background: #1c2330; color: #fff; padding: 9px 16px; border-radius: 8px; font-size: 14px; opacity: 0; pointer-events: none; transition: opacity .2s; max-width: 90vw; z-index: 10; }
+  #toast.show { opacity: .96; }
+
+  [hidden] { display: none !important; }
+  .tab.align { margin-left: auto; }
+  body.align main, body.align #pageGrp, body.align #boxStat { display: none; }
+  #alignView { flex: 1; min-height: 0; margin: 12px 16px 16px; }
+  .al-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 8px 12px; border-bottom: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+  .al-tools input[type=number], dialog input[type=number] { width: 84px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); }
+  .al-anchor { display: inline-flex; align-items: center; gap: 6px; padding: 2px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+  .al-anchor select { padding: 3px 8px; max-width: 110px; }
+  .al-warn { color: var(--warn); background: var(--warn-soft); border-radius: 99px; padding: 1px 9px; font-size: 12px; }
+  #alScroll { flex: 1; overflow: auto; padding: 0 8px 8px; }
+  .arow { display: grid; grid-template-columns: 92px minmax(0,1.2fr) minmax(0,1.2fr) minmax(0,1fr) minmax(0,1fr); gap: 8px; align-items: center; padding: 6px 4px; border-bottom: 1px solid var(--line); }
+  .arow.head { position: sticky; top: 0; z-index: 1; background: var(--panel); font-weight: 650; font-size: 13px; color: var(--muted); border-bottom: 2px solid var(--line); }
+  .arow { scroll-margin-top: 42px; }
+  .arow .aid { font-weight: 650; color: var(--muted); font-size: 13px; word-break: break-all; }
+  .arow .aid small { display: block; font-weight: 400; font-size: 11px; line-height: 1.35; margin-top: 2px; }
+  .arow .aid .no { font-weight: 400; font-size: 11px; opacity: .8; }
+  .arow canvas { width: 100%; max-height: 90px; background: #fff; border: 1px solid var(--line); border-radius: 4px; display: block; object-fit: contain; }
+  .arow .none { color: var(--muted); font-size: 12px; text-align: center; border: 1px dashed var(--line); border-radius: 4px; padding: 14px 4px; }
+  .arow .nom { font: 24px/1.3 "Han-Nom Gothic", "Nom Na Tong", "HanaMinB", "SimSun-ExtB", "MingLiU-ExtB", "Noto Serif CJK TC", "Noto Serif TC", serif; word-break: break-all; }
+  .arow .qn { font-size: 16px; word-break: break-word; }
+  .arow .miss { color: var(--warn); }
+  dialog { background: var(--panel); color: var(--ink); border: 1px solid var(--line); border-radius: 10px; padding: 16px 18px; max-width: min(460px, 92vw); }
+  dialog::backdrop { background: rgba(0,0,0,.4); }
+  dialog h2 { margin: 0 0 10px; font-size: 16px; }
+  dialog label.f { display: block; margin: 10px 0 4px; font-size: 13px; color: var(--muted); }
+  dialog input[type=number] { padding: 7px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--bg); }
+  dialog .rng { display: flex; align-items: center; gap: 8px; }
+  dialog .sum { margin-top: 10px; font-size: 13px; }
+  dialog .bar { display: flex; justify-content: flex-end; gap: 8px; margin-top: 14px; }
+  @media (max-width: 900px) {
+    html, body { height: auto; }
+    .arow { grid-template-columns: 70px 1fr 1fr; }
+    .arow .nom, .arow .qn { grid-column: span 3; }
+    main { grid-template-columns: 1fr; }
+    #imgScroll { height: 55vh; flex: none; }
+    #list { max-height: none; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Kiểm tra nhãn OCR · <span id="bookName">chọn sách trong data/</span></h1>
+  <div class="grp">
+    <button id="btnOpen" title="Chọn thư mục data/&lt;tên-sách&gt; (hoặc cả thư mục data/ để chọn sách trong danh sách)">📂 Mở thư mục sách…</button>
+    <select id="bookSel" aria-label="Chọn sách" hidden></select>
+  </div>
+  <div class="grp" id="pageGrp">
+    <button id="prevPage" title="Trang trước (Alt+←)">◀</button>
+    <select id="pageSel" aria-label="Chọn trang"></select>
+    <button id="nextPage" title="Trang sau (Alt+→)">▶</button>
+  </div>
+  <div class="stat" id="boxStat">Box <b id="boxPos">–</b> · Đã sửa <b id="editedCount">0</b>/<b id="totalCount">0</b></div>
+  <span class="spacer"></span>
+  <span id="saveState">Chưa có thay đổi</span>
+  <div class="grp">
+    <button id="btnSave" class="primary">💾 Lưu vào Label.txt</button>
+    <button id="btnDownload" hidden title="Tải Label.txt về máy">⬇ Tải Label.txt</button>
+    <label id="loadLbl" class="stat" hidden style="cursor:pointer" title="Nạp một Label.txt đã lưu trước đó">
+      <input id="fileLoad" type="file" accept=".txt" hidden><span style="text-decoration:underline">Nạp Label.txt…</span>
+    </label>
+  </div>
+</header>
+
+<nav id="tabs" role="tablist" aria-label="Thư mục nhãn của sách" hidden></nav>
+
+<details class="help">
+  <summary>Hướng dẫn</summary>
+  <ul>
+    <li>Mỗi dòng bên phải là một bounding box (khung đỏ trên ảnh) cùng chữ đã nhận dạng. So ảnh cắt với chữ, sửa nếu sai.</li>
+    <li><kbd>Enter</kbd>/<kbd>↓</kbd> sang box kế tiếp, <kbd>Shift+Enter</kbd>/<kbd>↑</kbd> về box trước; <kbd>Alt+←/→</kbd> đổi trang; <kbd>Alt+1…9</kbd> đổi tab; <kbd>Ctrl+S</kbd> lưu. Click vào khung trên ảnh để chọn box.</li>
+    <li><b>Kết nối sách:</b> bấm “Mở thư mục sách…” rồi chọn <code>data/&lt;tên-sách&gt;</code> (hoặc cả <code>data/</code>, khi đó chọn sách trong danh sách). Mỗi thư mục con có <code>Label.txt</code> (<code>ch/</code>, <code>vi/</code>, …) là một tab; ảnh và nhãn đọc thẳng từ thư mục đó. Cần Chrome/Edge và cho phép ghi khi trình duyệt hỏi.</li>
+    <li><b>Lưu:</b> “Lưu vào Label.txt” (hoặc <kbd>Ctrl+S</kbd>) ghi vào <code>Label.txt</code> của tab đang mở; tab khác giữ nguyên chỉnh sửa chưa lưu của nó (dấu ● trên tab). Trang gold có sẵn dữ liệu: lần lưu đầu trình duyệt hỏi thư mục chứa <code>index.html</code> này. Trình duyệt không hỗ trợ ghi trực tiếp thì dùng “Tải Label.txt” rồi chép đè.</li>
+    <li>Dòng đã sửa viền xanh lục; có nút ↶ để hoàn tác từng dòng.</li>
+    <li><b>⇄ Dóng hàng:</b> tab cuối thanh tab, cần sách có cả <code>ch/</code> và <code>vi/</code>. Gộp mọi box của <code>ch/Label.txt</code> và <code>vi/Label.txt</code> (mỗi file xếp theo số trang rồi theo thứ tự box) thành một danh sách, ghép box thứ <i>k</i> bên Nôm với box thứ <i>k</i> bên Quốc ngữ, không phụ thuộc hai bên có cùng số trang hay không. Mỗi dòng hiện ảnh cắt và chữ tương ứng, ghi rõ trang nguồn để dễ thấy chỗ lệch. <b>Mốc bắt đầu và kết thúc</b>: chọn riêng cho Nôm và Quốc ngữ trang (hoặc số thứ tự box trong cả sách) mà bên đó bắt đầu và kết thúc ghép, các box ngoài phạm vi bị bỏ qua (mốc kết thúc mặc định là box cuối cùng); ví dụ muốn so box 10 đến 20 thì đặt hai ô bắt đầu là 10 và hai ô kết thúc là 20 (bảng còn 11 dòng, dòng 1 là hai box số 10). “Đến dòng” để nhảy tới một dòng; “⬇ Xuất CSV…” chọn khoảng dòng cần xuất và nơi lưu file. Sửa chữ hoặc box ở tab <code>ch</code>/<code>vi</code>, quay lại tab này bảng tự cập nhật.</li>
+  </ul>
+</details>
+
+<main>
+  <section class="pane">
+    <div class="pane-head">
+      <span class="name" id="imgName"></span>
+      <span class="spacer"></span>
+      <button id="zoomOut" title="Thu nhỏ">−</button>
+      <span id="zoomVal">100%</span>
+      <button id="zoomIn" title="Phóng to">+</button>
+      <button id="zoomFit">Vừa khung</button>
+    </div>
+    <div id="imgScroll">
+      <div id="imgWrap"><img id="pageImg" alt="Trang sách"><svg id="overlay"></svg></div>
+    </div>
+  </section>
+  <section class="pane">
+    <div class="pane-head"><span>Danh sách box và nội dung</span></div>
+    <div id="list"></div>
+  </section>
+</main>
+<section class="pane" id="alignView" hidden>
+  <div class="al-tools">
+    <span id="alInfo"></span>
+    <span class="al-anchor" title="Phạm vi box của bên Nôm: bỏ các box trước mốc bắt đầu và sau mốc kết thúc; box tại mốc bắt đầu là dòng 1 của bảng">Nôm: từ trang
+      <select id="alChPage" aria-label="Nôm bắt đầu từ trang"></select> box
+      <input id="alChStart" type="number" min="1" step="1" value="1" aria-label="Nôm bắt đầu từ box số">
+      đến trang <select id="alChEndPage" aria-label="Nôm kết thúc ở trang"></select> box
+      <input id="alChEnd" type="number" min="1" step="1" aria-label="Nôm kết thúc ở box số"></span>
+    <span class="al-anchor" title="Phạm vi box của bên Quốc ngữ: bỏ các box trước mốc bắt đầu và sau mốc kết thúc; box tại mốc bắt đầu là dòng 1 của bảng">Quốc ngữ: từ trang
+      <select id="alViPage" aria-label="Quốc ngữ bắt đầu từ trang"></select> box
+      <input id="alViStart" type="number" min="1" step="1" value="1" aria-label="Quốc ngữ bắt đầu từ box số">
+      đến trang <select id="alViEndPage" aria-label="Quốc ngữ kết thúc ở trang"></select> box
+      <input id="alViEnd" type="number" min="1" step="1" aria-label="Quốc ngữ kết thúc ở box số"></span>
+    <label>Đến dòng <input id="alJump" type="number" min="1" step="1"></label>
+    <span class="spacer"></span>
+    <button id="alExport" class="primary">⬇ Xuất CSV…</button>
+  </div>
+  <div id="alScroll"><div id="alList"></div></div>
+</section>
+<dialog id="expDlg">
+  <h2>Xuất CSV dóng hàng</h2>
+  <label class="f">Xuất từ dòng … đến dòng … (số thứ tự dòng trong bảng, tính cả hai đầu)</label>
+  <div class="rng"><input id="expFrom" type="number" min="1" step="1" aria-label="Từ dòng"> <span>→</span> <input id="expTo" type="number" min="1" step="1" aria-label="Đến dòng"> <span id="expTotal" class="stat"></span></div>
+  <label class="f"><input id="expSkip" type="checkbox"> Bỏ các dòng thiếu một phía (chỉ có Nôm hoặc chỉ có Quốc ngữ)</label>
+  <div class="sum" id="expSum"></div>
+  <div class="bar"><button id="expCancel">Hủy</button><button id="expGo" class="primary">Chọn nơi lưu &amp; xuất…</button></div>
+</dialog>
+<div id="toast" role="status"></div>
+
+<script id="labelData" type="application/json">[]</script>
+<script>
+(() => {
+  'use strict';
+  const LS_KEY = 'gold-generic';     // chỉ dùng cho tab có sẵn dữ liệu nhúng (trang gold)
+  const $ = id => document.getElementById(id);
+  const NFC = s => s.normalize('NFC');
+  const MAX_IMAGES = 6;           // ảnh trang lớn (giải mã ~30MB), chỉ giữ vài trang gần nhất mỗi tab
+
+  // ---------- state ----------
+  // Mỗi tab = một thư mục nhãn (ch/, vi/, ...): {name, pages, original, pageIdx, boxIdx, dirty, dir, fileMap, embedded, imgs}
+  const embedded = JSON.parse($('labelData').textContent);        // [{file, boxes}] bản chụp nhúng sẵn (có thể rỗng)
+  let tabs = [], T = null;                                        // các tab và tab đang mở
+  let books = [];                                                 // sách tìm thấy trong thư mục đã chọn: [{name, handle}]
+  let pages = [], original = [], pageIdx = 0, boxIdx = 0, zoom = 1, dirty = false;   // trạng thái của tab đang mở
+  const al = { on: false, token: 0, data: null, q: Promise.resolve(), start: { ch: 1, vi: 1 }, end: { ch: 0, vi: 0 } };   // end: 0 = tới box cuối;    // start: số thứ tự box (từ 1, tính cả sách) bắt đầu ghép của mỗi bên   // chế độ dóng hàng
+  let rootHandle = null;          // thư mục gốc của trang gold nhúng sẵn (để lưu tab nhúng)
+
+  const fsSupported = typeof window.showDirectoryPicker === 'function';
+
+  // ---------- helpers ----------
+  const base = f => f.split('/').pop();
+  const folderOf = f => f.includes('/') ? f.split('/')[0] : '';
+  const url = f => f.split('/').map(encodeURIComponent).join('/');
+  const pageNo = f => (base(f).match(/\.(\d+)\.\w+$/) || [, '?'])[1];
+  const origBox = (p, b) => (original[p] && original[p].boxes[b]) || null;
+  const isEdited = (p, b) => { const o = origBox(p, b); return !!o && o.transcription !== pages[p].boxes[b].transcription; };
+  const editedIn = (tab, p) => tab.pages[p].boxes.reduce((n, c, i) => {
+    const o = tab.original[p] && tab.original[p].boxes[i]; return n + (o && o.transcription !== c.transcription ? 1 : 0);
+  }, 0);
+  const editedInPage = p => editedIn(T, p);
+  const editedInTab = tab => tab.pages ? tab.pages.reduce((n, _, p) => n + editedIn(tab, p), 0) : 0;
+  const totalEdited = () => editedInTab(T);
+  const totalBoxes = () => pages.reduce((n, p) => n + p.boxes.length, 0);
+  const clone = v => JSON.parse(JSON.stringify(v));
+
+  function toast(msg, ms = 2600) {
+    const t = $('toast'); t.textContent = msg; t.classList.add('show');
+    clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove('show'), ms);
+  }
+
+  // Serialise like Python json.dumps(ensure_ascii=False) so Label.txt keeps PPOCRLabel's exact format.
+  function pyJson(v) {
+    if (Array.isArray(v)) return '[' + v.map(pyJson).join(', ') + ']';
+    if (v && typeof v === 'object') return '{' + Object.keys(v).map(k => JSON.stringify(k) + ': ' + pyJson(v[k])).join(', ') + '}';
+    return JSON.stringify(v);
+  }
+  // Trang chưa đổi từ lúc đọc file được ghi lại nguyên văn dòng cũ (giữ nguyên kiểu số như 1246.0); chỉ trang đã sửa mới serialise lại.
+  const sig = boxes => JSON.stringify(boxes);
+  const lineOf = p => p.raw != null && p.rawSig === sig(p.boxes) ? p.raw : p.file + '\t' + pyJson(p.boxes);
+  const serialize = () => {
+    if (!pages.length) return '';
+    const eol = (T && T.eol) || '\r\n';
+    return pages.map(lineOf).join(eol) + (T && T.trailing === false ? '' : eol);
+  };
+  function detectEol(tab, text) { tab.eol = text.includes('\r\n') ? '\r\n' : (text.includes('\n') ? '\n' : '\r\n'); tab.trailing = /\n$/.test(text); }
+
+  function parseLabel(text) {
+    const out = [];
+    for (const line of text.replace(/^﻿/, '').split(/\r?\n/)) {
+      if (!line.trim()) continue;
+      const i = line.indexOf('\t');
+      if (i < 0) throw new Error('Dòng sai định dạng (thiếu tab).');
+      const boxes = JSON.parse(line.slice(i + 1));
+      out.push({ file: line.slice(0, i), boxes, raw: line, rawSig: sig(boxes) });
+    }
+    return out;
+  }
+  // Apply a parsed Label.txt onto current pages (matched by file name).
+  function applyLoaded(loaded) {
+    let applied = 0;
+    for (const lp of loaded) {
+      const idx = pages.findIndex(p => NFC(base(p.file)) === NFC(base(lp.file)));
+      if (idx >= 0) { pages[idx] = { ...lp, file: pages[idx].file }; applied++; }
+    }
+    return applied;
+  }
+
+  // ---------- persistence (chỉ tab nhúng; tab đọc từ thư mục lấy đĩa làm chuẩn) ----------
+  function saveLocal() {
+    if (!T || !T.embedded) return;
+    try { localStorage.setItem(LS_KEY, JSON.stringify(pages.map(p => p.boxes.map(b => [b.transcription, !!b.difficult])))); } catch (e) {}
+  }
+  function loadLocal(tab) {
+    try {
+      const raw = localStorage.getItem(LS_KEY); if (!raw) return false;
+      const arr = JSON.parse(raw);
+      if (!Array.isArray(arr) || arr.length !== tab.pages.length) return false;
+      arr.forEach((bs, p) => bs.forEach(([t, d], i) => {
+        if (tab.pages[p].boxes[i]) { tab.pages[p].boxes[i].transcription = t; tab.pages[p].boxes[i].difficult = d; }
+      }));
+      return editedInTab(tab) > 0;
+    } catch (e) { return false; }
+  }
+  function setDirty(v) {
+    dirty = v;
+    if (T) T.dirty = v;
+    const s = $('saveState');
+    s.textContent = v ? 'Có thay đổi chưa lưu vào file' : (T && totalEdited() ? 'Đã lưu' : 'Chưa có thay đổi');
+    s.classList.toggle('dirty', v);
+    renderTabs();
+  }
+  const anyDirty = () => tabs.some(t => t === T ? dirty : t.dirty);
+
+  // ---------- tabs ----------
+  function renderTabs() {
+    const nav = $('tabs'); nav.textContent = '';
+    nav.hidden = tabs.length === 0;
+    tabs.forEach((t, i) => {
+      const b = document.createElement('button');
+      b.className = 'tab' + (t === T && !al.on ? ' active' : ''); b.setAttribute('role', 'tab');
+      b.setAttribute('aria-selected', t === T); b.title = `${t.name}/Label.txt (Alt+${i + 1})`;
+      b.append(t.name);
+      if (t.pages) { const n = document.createElement('span'); n.className = 'n'; n.textContent = `${t.pages.length} trang`; b.append(n); }
+      if (t === T ? dirty : t.dirty) { const d = document.createElement('span'); d.className = 'dot'; d.textContent = '●'; d.title = 'Có thay đổi chưa lưu'; b.append(d); }
+      b.addEventListener('click', () => { if (al.on) setAlign(false); if (t !== T) activate(t); });
+      nav.appendChild(b);
+    });
+    if (tabs.length) {
+      const a = document.createElement('button');
+      a.className = 'tab align' + (al.on ? ' active' : ''); a.setAttribute('role', 'tab'); a.setAttribute('aria-selected', al.on);
+      a.textContent = '⇄ Dóng hàng'; a.title = 'Ghép box ch/ với vi/ theo hàng và xuất CSV';
+      a.addEventListener('click', () => { if (!al.on) enterAlign(); });
+      nav.appendChild(a);
+    }
+    $('btnSave').title = T ? `Ghi vào ${T.name}/Label.txt (Ctrl+S)` : '';
+  }
+
+  function stash() { if (T) { T.pageIdx = pageIdx; T.boxIdx = boxIdx; T.dirty = dirty; } }
+
+  async function activate(tab) {
+    stash();
+    T = tab;
+    if (!tab.pages) {
+      try { await loadDirTab(tab); }
+      catch (e) { toast(`Không đọc được ${tab.name}/Label.txt: ${e.message}`, 6000); tab.pages = []; tab.original = []; }
+    }
+    pages = tab.pages; original = tab.original; pageIdx = Math.min(tab.pageIdx, Math.max(0, pages.length - 1)); boxIdx = tab.boxIdx; dirty = tab.dirty;
+    buildPageSelect();
+    await renderPage();
+    updateStats();
+    setDirty(dirty);
+  }
+
+  async function loadDirTab(tab) {
+    const text = await (await (await tab.dir.getFileHandle('Label.txt')).getFile()).text();
+    tab.pages = parseLabel(text); tab.original = clone(tab.pages); detectEol(tab, text);
+    tab.fileMap = new Map();
+    for await (const [name, h] of tab.dir.entries()) if (h.kind === 'file') tab.fileMap.set(NFC(name), h);   // khớp tên ảnh bất kể dạng Unicode NFC/NFD
+  }
+
+  const newTab = (name, extra) => ({ name, pages: null, original: null, pageIdx: 0, boxIdx: 0, dirty: false, dir: null, fileMap: null, embedded: false, imgs: new Map(), ...extra });
+
+  function releaseImages(tab) {
+    for (const p of tab.imgs.values()) p.then(im => { if (im.src.startsWith('blob:')) URL.revokeObjectURL(im.src); }).catch(() => {});
+    tab.imgs.clear();
+  }
+
+  // ---------- books (thư mục data/<tên-sách>) ----------
+  async function hasLabel(h) { try { await h.getFileHandle('Label.txt'); return true; } catch (e) { return false; } }
+  async function findFolders(bookHandle) {
+    const out = [];
+    for await (const [name, h] of bookHandle.entries()) {
+      if (h.kind === 'directory' && name !== 'cache' && await hasLabel(h)) out.push({ name, handle: h });
+    }
+    const rank = n => { const i = ['ch', 'vi'].indexOf(n); return i < 0 ? 9 : i; };
+    return out.sort((a, b) => rank(a.name) - rank(b.name) || a.name.localeCompare(b.name));
+  }
+
+  async function openFolder() {
+    if (!fsSupported) { toast('Hãy mở file trực tiếp bằng Chrome hoặc Edge để chọn thư mục sách.', 6000); return; }
+    if (anyDirty() && !confirm('Còn chỉnh sửa chưa lưu. Mở sách khác sẽ bỏ chúng. Tiếp tục?')) return;
+    let h;
+    try {
+      h = await window.showDirectoryPicker({ mode: 'readwrite', id: 'gold-books' });
+    } catch (e) {
+      if (e.name === 'SecurityError') toast('Trình duyệt đã chặn hộp thoại. Hãy mở file trực tiếp trong một tab Chrome hoặc Edge.', 6000);
+      else if (e.name !== 'AbortError') toast(`Không mở được thư mục: ${e.message}`, 6000);
+      return;
+    }
+    const found = [];
+    if ((await findFolders(h)).length) found.push({ name: h.name, handle: h });          // đã chọn đúng data/<tên-sách>
+    else for await (const [name, c] of h.entries()) {                                      // chọn data/: liệt kê các sách bên trong
+      if (c.kind === 'directory' && name !== 'cache' && (await findFolders(c)).length) found.push({ name, handle: c });
+    }
+    if (!found.length) { toast('Không thấy thư mục con nào có Label.txt (ch/, vi/, …) trong thư mục này.', 6000); return; }
+    found.sort((a, b) => a.name.localeCompare(b.name));
+    books = found;
+    const sel = $('bookSel'); sel.textContent = '';
+    books.forEach((b, i) => { const o = document.createElement('option'); o.value = i; o.textContent = b.name; sel.appendChild(o); });
+    sel.hidden = books.length < 2;
+    sel.value = 0;
+    await useBook(0);
+  }
+
+  async function useBook(i) {
+    const book = books[i];
+    const folders = await findFolders(book.handle);
+    tabs.forEach(releaseImages);
+    tabs = folders.map(f => newTab(f.name, { dir: f.handle }));
+    T = null; dirty = false;
+    if (al.on) setAlign(false);
+    al.start = { ch: 1, vi: 1 }; al.end = { ch: 0, vi: 0 };
+    $('bookName').textContent = book.name;
+    document.title = `Kiểm tra nhãn OCR – ${book.name}`;
+    await activate(tabs.find(t => t.name === 'vi') || tabs[0]);
+    toast(`Đã kết nối ${book.name}: ${tabs.map(t => t.name).join(', ')}`);
+  }
+
+  // ---------- rendering ----------
+  function loadImage(tab, f) {
+    const hit = tab.imgs.get(f);
+    if (hit) { tab.imgs.delete(f); tab.imgs.set(f, hit); return hit; }     // làm mới thứ tự LRU
+    const p = (async () => {
+      let src;
+      if (tab.embedded) src = url(f);
+      else {
+        const h = tab.fileMap && tab.fileMap.get(NFC(base(f)));
+        if (!h) throw new Error(`Không thấy ảnh ${base(f)} trong ${tab.name}/`);
+        src = URL.createObjectURL(await h.getFile());
+      }
+      return new Promise((res, rej) => { const im = new Image(); im.onload = () => res(im); im.onerror = () => rej(new Error('Không tải được ảnh ' + f)); im.src = src; });
+    })();
+    tab.imgs.set(f, p);
+    p.catch(() => tab.imgs.delete(f));
+    while (tab.imgs.size > MAX_IMAGES) {
+      const [k, old] = tab.imgs.entries().next().value;
+      tab.imgs.delete(k);
+      old.then(im => { if (im.src.startsWith('blob:') && im.src !== $('pageImg').src) URL.revokeObjectURL(im.src); }).catch(() => {});
+    }
+    return p;
+  }
+  const bbox = pts => {
+    const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
+    return { x0: Math.min(...xs), y0: Math.min(...ys), x1: Math.max(...xs), y1: Math.max(...ys) };
+  };
+
+  function pageLabel(i) {
+    const e = editedInPage(i);
+    return `Trang ${pageNo(pages[i].file)} (${pages[i].boxes.length} box${e ? ', sửa ' + e : ''})`;
+  }
+  function buildPageSelect() {
+    const sel = $('pageSel'); sel.textContent = '';
+    pages.forEach((p, i) => { const o = document.createElement('option'); o.value = i; o.textContent = pageLabel(i); sel.appendChild(o); });
+    sel.value = pageIdx;
+  }
+
+  function updateStats() {
+    $('totalCount').textContent = totalBoxes();
+    $('editedCount').textContent = T ? totalEdited() : 0;
+    const page = pages[pageIdx];
+    $('boxPos').textContent = page && page.boxes.length ? `${boxIdx + 1}/${page.boxes.length}` : '–';
+    const o = $('pageSel').options[pageIdx];
+    if (o && page) o.textContent = pageLabel(pageIdx);
+    $('prevPage').disabled = pageIdx <= 0;
+    $('nextPage').disabled = pageIdx >= pages.length - 1;
+  }
+
+  function showEmpty(msg) {
+    $('imgName').textContent = '';
+    $('pageImg').removeAttribute('src');
+    $('overlay').textContent = '';
+    const list = $('list'); list.textContent = '';
+    const d = document.createElement('div'); d.className = 'empty'; d.textContent = msg; list.appendChild(d);
+  }
+
+  async function renderPage() {
+    if (!T) { showEmpty('Bấm “📂 Mở thư mục sách…” rồi chọn data/<tên-sách> để bắt đầu.'); return; }
+    const page = pages[pageIdx];
+    if (!page) { showEmpty(`${T.name}/Label.txt chưa có dòng nào.`); return; }
+    const tab = T;
+    $('imgName').textContent = base(page.file);
+    $('pageSel').value = pageIdx;
+    const im = await loadImage(tab, page.file).catch(e => { toast(e.message, 5000); return null; });
+    if (T !== tab || pages[pageIdx] !== page) return;   // user moved on
+    if (im) $('pageImg').src = im.src; else $('pageImg').removeAttribute('src');
+    drawOverlay(im);
+    drawList(im);
+    applyZoom();
+    selectBox(Math.min(boxIdx, page.boxes.length - 1), { focus: false, scroll: true });
+  }
+
+  function drawOverlay(im) {
+    const svg = $('overlay'), page = pages[pageIdx];
+    const W = im ? im.naturalWidth : 2550, H = im ? im.naturalHeight : 3300;
+    svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+    svg.textContent = '';
+    const NS = 'http://www.w3.org/2000/svg';
+    page.boxes.forEach((b, i) => {
+      const poly = document.createElementNS(NS, 'polygon');
+      poly.setAttribute('points', b.points.map(p => p.join(',')).join(' '));
+      poly.setAttribute('class', 'bx'); poly.dataset.i = i;
+      poly.addEventListener('click', () => selectBox(i, { focus: true, scroll: false }));
+      svg.appendChild(poly);
+      const bb = bbox(b.points);
+      const t = document.createElementNS(NS, 'text');
+      t.setAttribute('x', bb.x0 - 6); t.setAttribute('y', bb.y0 + 34);
+      t.setAttribute('font-size', 40); t.setAttribute('class', 'bn'); t.dataset.i = i;
+      t.setAttribute('text-anchor', 'end');
+      t.textContent = i + 1;
+      svg.appendChild(t);
+    });
+    refreshOverlayState();
+  }
+  function refreshOverlayState() {
+    document.querySelectorAll('#overlay .bx').forEach(el => {
+      const i = +el.dataset.i;
+      el.classList.toggle('sel', i === boxIdx);
+      el.classList.toggle('edited', isEdited(pageIdx, i));
+    });
+    document.querySelectorAll('#overlay .bn').forEach(el => el.classList.toggle('sel', +el.dataset.i === boxIdx));
+  }
+
+  function drawCrop(canvas, im, pts) {
+    const bb = bbox(pts), pad = 14;
+    const sx = Math.max(0, bb.x0 - pad), sy = Math.max(0, bb.y0 - pad);
+    const sw = Math.min(im.naturalWidth - sx, bb.x1 - bb.x0 + 2 * pad);
+    const sh = Math.min(im.naturalHeight - sy, bb.y1 - bb.y0 + 2 * pad);
+    if (sw <= 0 || sh <= 0) return;
+    const scale = Math.min(1, 1100 / sw);
+    canvas.width = Math.round(sw * scale); canvas.height = Math.round(sh * scale);
+    canvas.getContext('2d').drawImage(im, sx, sy, sw, sh, 0, 0, canvas.width, canvas.height);
+  }
+
+  function drawList(im) {
+    const list = $('list'); list.textContent = '';
+    const page = pages[pageIdx];
+    if (!page.boxes.length) { const d = document.createElement('div'); d.className = 'empty'; d.textContent = 'Trang này chưa có box nào.'; list.appendChild(d); return; }
+    page.boxes.forEach((b, i) => {
+      const row = document.createElement('div'); row.className = 'row'; row.dataset.i = i;
+      const idx = document.createElement('div'); idx.className = 'idx'; idx.textContent = i + 1;
+      const cv = document.createElement('canvas');
+      if (im) drawCrop(cv, im, b.points);
+      const edit = document.createElement('div'); edit.className = 'edit';
+      const inp = document.createElement('input'); inp.type = 'text'; inp.value = b.transcription;
+      inp.spellcheck = false; inp.dataset.i = i; inp.setAttribute('aria-label', `Nội dung box ${i + 1}`);
+      const badge = document.createElement('span'); badge.className = 'badge'; badge.textContent = 'đã sửa'; badge.hidden = true;
+      const undo = document.createElement('button'); undo.className = 'undo'; undo.textContent = '↶'; undo.title = 'Hoàn tác về nội dung gốc'; undo.hidden = true;
+      edit.append(inp, badge, undo);
+      const orig = document.createElement('div'); orig.className = 'orig'; orig.hidden = true;
+      row.append(idx, cv, edit, orig);
+      list.appendChild(row);
+
+      row.addEventListener('mousedown', () => { if (boxIdx !== i) selectBox(i, { focus: false, scroll: true }); });
+      inp.addEventListener('focus', () => { if (boxIdx !== i) selectBox(i, { focus: false, scroll: true }); });
+      inp.addEventListener('input', () => { b.transcription = inp.value; onChange(i); });
+      undo.addEventListener('click', () => {
+        const o = origBox(pageIdx, i); if (!o) return;
+        b.transcription = o.transcription; inp.value = o.transcription;
+        onChange(i); inp.focus();
+      });
+      inp.addEventListener('keydown', e => {
+        if (e.isComposing) return;
+        if (e.key === 'Enter' && !e.shiftKey || e.key === 'ArrowDown') { e.preventDefault(); move(+1); }
+        else if (e.key === 'Enter' && e.shiftKey || e.key === 'ArrowUp') { e.preventDefault(); move(-1); }
+      });
+      refreshRow(i);
+    });
+  }
+
+  function refreshRow(i) {
+    const row = $('list').children[i]; if (!row || !row.classList.contains('row')) return;
+    const ed = isEdited(pageIdx, i);
+    row.classList.toggle('edited', ed);
+    row.querySelector('.badge').hidden = !ed;
+    row.querySelector('.undo').hidden = !ed;
+    const o = row.querySelector('.orig');
+    o.hidden = !ed;
+    o.textContent = '';
+    if (ed) { o.append('Gốc: '); const s = document.createElement('s'); s.textContent = origBox(pageIdx, i).transcription || '(trống)'; o.append(s); }
+  }
+
+  function onChange(i) {
+    refreshRow(i); refreshOverlayState(); updateStats(); saveLocal(); setDirty(true);
+  }
+
+  function selectBox(i, { focus = false, scroll = true } = {}) {
+    const n = pages[pageIdx] ? pages[pageIdx].boxes.length : 0;
+    if (!n) { updateStats(); return; }
+    boxIdx = Math.max(0, Math.min(n - 1, i));
+    document.querySelectorAll('#list .row').forEach(r => r.classList.toggle('sel', +r.dataset.i === boxIdx));
+    refreshOverlayState(); updateStats();
+    const row = $('list').children[boxIdx];
+    if (scroll && row) row.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    if (scroll) scrollImageToBox();
+    if (focus && row) { const inp = row.querySelector('input[type=text]'); inp.focus(); inp.select(); }
+  }
+
+  function scrollImageToBox() {
+    const wrap = $('imgWrap'), sc = $('imgScroll'), img = $('pageImg');
+    const b = pages[pageIdx] && pages[pageIdx].boxes[boxIdx]; if (!b || !img.naturalWidth) return;
+    const k = wrap.clientWidth / img.naturalWidth, bb = bbox(b.points);
+    const cx = (bb.x0 + bb.x1) / 2 * k, cy = (bb.y0 + bb.y1) / 2 * k;
+    sc.scrollTo({ left: cx - sc.clientWidth / 2 + wrap.offsetLeft, top: cy - sc.clientHeight / 2, behavior: 'smooth' });
+  }
+
+  function move(d) {
+    const n = pages[pageIdx].boxes.length, j = boxIdx + d;
+    if (j >= n) { if (pageIdx < pages.length - 1) { gotoPage(pageIdx + 1, 0, true); } else toast('Đã tới box cuối cùng'); }
+    else if (j < 0) { if (pageIdx > 0) gotoPage(pageIdx - 1, 'last', true); }
+    else selectBox(j, { focus: true });
+  }
+
+  async function gotoPage(p, box = 0, focus = false) {
+    if (!pages.length) return;
+    pageIdx = Math.max(0, Math.min(pages.length - 1, p));
+    boxIdx = box === 'last' ? pages[pageIdx].boxes.length - 1 : box;
+    await renderPage();
+    $('imgScroll').scrollTop = 0;
+    selectBox(boxIdx, { focus, scroll: true });
+  }
+
+  // ---------- zoom ----------
+  function applyZoom() {
+    const sc = $('imgScroll');
+    $('imgWrap').style.width = Math.round((sc.clientWidth - 2) * zoom) + 'px';
+    $('zoomVal').textContent = Math.round(zoom * 100) + '%';
+  }
+  function setZoom(z) { zoom = Math.max(0.5, Math.min(4, z)); applyZoom(); scrollImageToBox(); }
+
+  // ---------- IndexedDB: nhớ thư mục đã chọn ----------
+  const idb = () => new Promise((res, rej) => {
+    const r = indexedDB.open('gold2-handles', 1);
+    r.onupgradeneeded = () => r.result.createObjectStore('h');
+    r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error);
+  });
+  async function remember(key, h) {
+    try { const db = await idb(); db.transaction('h', 'readwrite').objectStore('h').put(h, key); } catch (e) {}
+  }
+  async function recall(key) {
+    try {
+      const db = await idb();
+      return await new Promise((res, rej) => { const r = db.transaction('h').objectStore('h').get(key); r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error); });
+    } catch (e) { return null; }
+  }
+
+  // ---------- save / load ----------
+  const disk = async dir => { try { return await (await (await dir.getFileHandle('Label.txt')).getFile()).text(); } catch (e) { return null; } };
+
+  // Tab nhúng (trang gold) chưa có thư mục: nối tới thư mục chứa index.html này (có <tab>/Label.txt).
+  async function connectEmbedded() {
+    if (!fsSupported) { toast('Trình duyệt không hỗ trợ ghi trực tiếp. Dùng Chrome/Edge, hoặc “Tải Label.txt”.', 5000); return false; }
+    let dir = null;
+    try {
+      const saved = await recall('dir');
+      if (saved && (await saved.queryPermission({ mode: 'readwrite' })) === 'granted' || saved && (await saved.requestPermission({ mode: 'readwrite' })) === 'granted') rootHandle = saved;
+      if (rootHandle) dir = await rootHandle.getDirectoryHandle(T.name);
+    } catch (e) { rootHandle = null; dir = null; }
+    if (!dir) {
+      try { rootHandle = await window.showDirectoryPicker({ mode: 'readwrite', id: 'gold2' }); } catch (e) { return false; }
+      try { dir = await rootHandle.getDirectoryHandle(T.name); } catch (e) {
+        toast(`Thư mục này không có “${T.name}/”. Hãy chọn đúng thư mục chứa index.html.`, 5000); rootHandle = null; return false;
+      }
+      remember('dir', rootHandle);
+    }
+    const text = await disk(dir);
+    if (text != null && text.trim() && text !== serialize()) {
+      const useMine = totalEdited() > 0 && dirty
+        ? confirm('File trên đĩa khác với bản đang sửa.\n\nOK = giữ bản đang sửa (sẽ ghi đè khi bấm Lưu)\nHủy = tải bản trên đĩa vào trình duyệt')
+        : false;
+      if (!useMine) {
+        try { applyLoaded(parseLabel(text)); detectEol(T, text); saveLocal(); setDirty(false); buildPageSelect(); await renderPage(); updateStats(); toast(`Đã nạp ${T.name}/Label.txt từ thư mục`); }
+        catch (e) { toast('Label.txt trên đĩa lỗi: ' + e.message, 5000); }
+      }
+    }
+    T.dir = dir;
+    return true;
+  }
+
+  async function save() {
+    if (!T || !T.pages) return;
+    if (!fsSupported) { download(); return; }
+    if (!T.dir && !(await connectEmbedded())) return;
+    try {
+      const fh = await T.dir.getFileHandle('Label.txt', { create: true });
+      const w = await fh.createWritable();
+      await w.write(new Blob([serialize()], { type: 'text/plain;charset=utf-8' }));
+      await w.close();
+      setDirty(false); toast(`Đã lưu vào ${T.name}/Label.txt ✔`);
+    } catch (e) { if (T.embedded) T.dir = null; toast('Lưu thất bại: ' + e.message, 5000); }
+  }
+  function download() {
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([serialize()], { type: 'text/plain;charset=utf-8' }));
+    a.download = 'Label.txt'; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    setDirty(false); toast(`Đã tải Label.txt — chép đè vào thư mục ${T ? T.name + '/' : ''} để cập nhật.`, 5000);
+  }
+
+  // ---------- dóng hàng (gộp mọi box ch/ và vi/ thành một danh sách, ghép theo thứ tự) ----------
+  const pnum = f => { const n = parseInt(pageNo(f), 10); return Number.isNaN(n) ? null : n; };
+  const tabNamed = n => tabs.find(t => t.name === n);
+
+  async function ensureLoaded(tab) {
+    if (tab.pages) return true;
+    if (!tab.dir) return false;
+    try { await loadDirTab(tab); return true; }
+    catch (e) { toast(`Không đọc được ${tab.name}/Label.txt: ${e.message}`, 6000); return false; }
+  }
+
+  // Mọi box của một tab, xếp theo số trang (ổn định) rồi theo thứ tự box trong trang.
+  function flatBoxes(tab) {
+    const out = [];
+    tab.pages.map((p, i) => ({ p, n: pnum(p.file), i }))
+      .sort((a, b) => (a.n ?? 1e9) - (b.n ?? 1e9) || a.i - b.i)
+      .forEach(({ p, n }) => p.boxes.forEach((box, k) => out.push({ page: p, n, k: k + 1, box })));
+    return out;
+  }
+  const clampStart = (n, len) => Math.max(1, Math.min(Math.max(len, 1), Math.floor(n) || 1));
+  function alignRows() {
+    const all = { ch: flatBoxes(tabNamed('ch')), vi: flatBoxes(tabNamed('vi')) };
+    al.start.ch = clampStart(al.start.ch, all.ch.length); al.start.vi = clampStart(al.start.vi, all.vi.length);
+    const ends = {};   // mốc kết thúc hiệu lực: chưa đặt (0) = box cuối; không bao giờ nhỏ hơn mốc bắt đầu hay lớn hơn số box
+    for (const side of ['ch', 'vi']) {
+      const len = all[side].length;
+      ends[side] = al.end[side] ? Math.max(al.start[side], Math.min(len, Math.floor(al.end[side]) || len)) : len;
+    }
+    const c = all.ch.slice(al.start.ch - 1, ends.ch), v = all.vi.slice(al.start.vi - 1, ends.vi), n = Math.max(c.length, v.length), rows = [];
+    for (let i = 0; i < n; i++) {
+      const ch = c[i] || null, vi = v[i] || null;
+      rows.push({ no: i + 1, id: ch ? `image${ch.n ?? '?'}_${ch.k}` : `vi${vi.n ?? '?'}_${vi.k}`, ch, vi });
+    }
+    return { rows, nc: c.length, nv: v.length, all, ends };
+  }
+  // Ô chọn mốc: danh sách trang (giá trị = số thứ tự box đầu tiên của trang cho mốc bắt đầu, box cuối của trang cho mốc kết thúc) và ô số box,
+  // luôn khớp với al.start / mốc kết thúc hiệu lực.
+  function fillAnchors(all, ends) {
+    const ids = { ch: ['alChPage', 'alChStart', 'alChEndPage', 'alChEnd'], vi: ['alViPage', 'alViStart', 'alViEndPage', 'alViEnd'] };
+    for (const side of ['ch', 'vi']) {
+      const [startSel, startInp, endSel, endInp] = ids[side].map($), list = all[side], firstOf = new Map(), lastOf = new Map();
+      list.forEach((b, i) => { const key = b.n ?? '?'; if (!firstOf.has(key)) firstOf.set(key, i + 1); lastOf.set(key, i + 1); });
+      for (const [sel, map] of [[startSel, firstOf], [endSel, lastOf]]) {
+        sel.textContent = '';
+        for (const [key, idx] of map) {
+          const o = document.createElement('option'); o.value = idx; o.textContent = typeof key === 'number' ? String(key).padStart(3, '0') : key; sel.appendChild(o);
+        }
+      }
+      startInp.max = endInp.max = list.length || 1;
+      startInp.value = al.start[side]; endInp.value = ends[side];
+      const s0 = list[al.start[side] - 1], e0 = list[ends[side] - 1];
+      if (s0) startSel.value = firstOf.get(s0.n ?? '?');
+      if (e0) endSel.value = lastOf.get(e0.n ?? '?');
+    }
+  }
+  function setStart(side, n) { al.start[side] = n; renderAlign(); }
+  function setEnd(side, n) { al.end[side] = n > 0 ? n : 0; renderAlign(); }
+  const rowTxt = (r, side) => r[side] ? NFC(r[side].box.transcription).trim() : '';
+
+  async function enterAlign() {
+    const ch = tabNamed('ch'), vi = tabNamed('vi');
+    if (!ch || !vi) { toast('Dóng hàng cần sách có cả thư mục ch/ và vi/ (bấm “Mở thư mục sách…”).', 5000); return; }
+    stash();
+    if (!(await ensureLoaded(ch)) || !(await ensureLoaded(vi))) return;
+    setAlign(true);
+  }
+  function setAlign(on) {
+    al.on = on;
+    document.body.classList.toggle('align', on);
+    $('alignView').hidden = !on;
+    renderTabs();
+    if (on) renderAlign();
+    else { al.token++; if (alObs) alObs.disconnect(); applyZoom(); }
+  }
+
+  let alObs = null;
+  const mk = (cls, txt) => { const d = document.createElement('div'); if (cls) d.className = cls; if (txt != null) d.textContent = txt; return d; };
+
+  function renderAlign() {
+    const my = ++al.token, list = $('alList');
+    if (alObs) alObs.disconnect();
+    list.textContent = '';
+    const data = al.data = alignRows(), { rows, nc, nv } = data;
+    fillAnchors(data.all, data.ends);
+    const info = $('alInfo');
+    info.textContent = `${rows.length} dòng · Nôm ${nc} box · Quốc ngữ ${nv} box`;
+    const cut = { ch: [al.start.ch - 1, data.all.ch.length - data.ends.ch], vi: [al.start.vi - 1, data.all.vi.length - data.ends.vi] };
+    if (cut.ch[0] || cut.ch[1] || cut.vi[0] || cut.vi[1]) info.append(` (bỏ ${cut.ch[0]} đầu + ${cut.ch[1]} cuối bên Nôm, ${cut.vi[0]} đầu + ${cut.vi[1]} cuối bên Quốc ngữ)`);
+    if (nc !== nv) {
+      const w = document.createElement('span'); w.className = 'al-warn'; w.textContent = `⚠ lệch ${Math.abs(nc - nv)} box`;
+      w.title = 'Tổng số box hai bên khác nhau: từ chỗ lệch trở đi các dòng bị so le, các dòng cuối trống một phía';
+      info.append(' ', w);
+    }
+    $('alJump').max = rows.length || 1;
+    if (!rows.length) { list.append(mk('empty', 'Chưa có box nào để dóng hàng.')); return; }
+    const head = mk('arow head');
+    ['ID', 'Ảnh Nôm', 'Ảnh Quốc ngữ', 'SinoNom OCR', 'Chữ Quốc ngữ'].forEach(h => head.append(mk('', h)));
+    const frag = document.createDocumentFragment(); frag.append(head);
+    const src = (r, side) => r[side] ? `${side === 'ch' ? 'Nôm' : 'QN'} tr.${r[side].n ?? '?'}` : '';
+    rows.forEach((r, i) => {
+      const row = mk('arow'); row.dataset.i = i;
+      const aid = mk('aid'); aid.append(`${r.id}`);
+      const small = document.createElement('small'); small.textContent = [src(r, 'ch'), src(r, 'vi')].filter(Boolean).join(' · ');
+      const no = document.createElement('span'); no.className = 'no'; no.textContent = ` #${r.no}`; aid.append(no, small);
+      const nom = mk('nom', r.ch ? rowTxt(r, 'ch') : '—'), qn = mk('qn', r.vi ? rowTxt(r, 'vi') : '—');
+      nom.lang = 'zh-Hant'; if (!r.ch) nom.classList.add('miss'); if (!r.vi) qn.classList.add('miss');
+      const sc = mk('none', r.ch ? '…' : '(thiếu box)'), sv = mk('none', r.vi ? '…' : '(thiếu box)');
+      sc.dataset.s = 'ch'; sv.dataset.s = 'vi';
+      row.append(aid, sc, sv, nom, qn);
+      frag.append(row);
+    });
+    list.append(frag);
+    // Ảnh cắt chỉ dựng khi dòng sắp hiện ra (sách có thể hàng nghìn box, mỗi trang ảnh ~30MB khi giải mã).
+    alObs = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      alObs.unobserve(e.target);
+      al.q = al.q.then(() => fillRow(e.target, my)).catch(() => {});
+    }), { root: $('alScroll'), rootMargin: '700px 0px' });
+    list.querySelectorAll('.arow:not(.head)').forEach(el => alObs.observe(el));
+  }
+
+  async function fillRow(el, my) {
+    if (my !== al.token) return;
+    const sc = $('alScroll').getBoundingClientRect(), rc = el.getBoundingClientRect();
+    if (rc.bottom < sc.top - 900 || rc.top > sc.bottom + 900) { alObs.observe(el); return; }   // đã cuộn qua khi còn xếp hàng chờ
+    const r = al.data.rows[+el.dataset.i];
+    for (const side of ['ch', 'vi']) {
+      const slot = el.querySelector(`[data-s="${side}"]`);
+      if (!r[side] || !slot) continue;
+      const im = await loadImage(tabNamed(side), r[side].page.file).catch(e => { slot.textContent = 'không có ảnh'; return null; });
+      if (my !== al.token) return;
+      if (!im) continue;
+      const cv = document.createElement('canvas'); drawCrop(cv, im, r[side].box.points);
+      slot.replaceWith(cv);
+    }
+  }
+
+  function jumpTo(n) {
+    const rows = al.data ? al.data.rows.length : 0; if (!rows) return;
+    n = Math.max(1, Math.min(rows, n | 0));
+    const el = $('alList').querySelector(`.arow[data-i="${n - 1}"]`);
+    if (el) el.scrollIntoView({ block: 'start' });
+    $('alJump').value = n;
+  }
+
+  // ---- xuất CSV (ID, Image Box, SinoNom OCR, Chữ Quốc ngữ; không tô màu)
+  const csvCell = v => /[",\r\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+  const fnum = n => Number.isInteger(n) ? n.toFixed(1) : String(n);
+  const boxStr = pts => '[' + pts.map(p => `[${fnum(p[0])}, ${fnum(p[1])}]`).join(', ') + ']';
+
+  function exportRows() {
+    const all = al.data.rows, total = all.length, skip = $('expSkip').checked;
+    const from = $('expFrom').value.trim() === '' ? 1 : +$('expFrom').value, to = $('expTo').value.trim() === '' ? total : +$('expTo').value;
+    if (!Number.isInteger(from) || !Number.isInteger(to) || from < 1 || to < from || to > total) throw new Error(`Khoảng dòng không hợp lệ (cần 1 ≤ từ ≤ đến ≤ ${total}).`);
+    const rows = all.slice(from - 1, to).filter(r => !(skip && (!r.ch || !r.vi)))
+      .map(r => [r.id, r.ch ? boxStr(r.ch.box.points) : '', rowTxt(r, 'ch'), rowTxt(r, 'vi')]);
+    return { rows, from, to, first: all[from - 1].id, last: all[to - 1].id };
+  }
+  function expPreview() {
+    const s = $('expSum'), go = $('expGo');
+    try {
+      const d = exportRows();
+      s.textContent = `Sẽ xuất ${d.rows.length} dòng (dòng ${d.from} ${d.first} → dòng ${d.to} ${d.last}).`; go.disabled = !d.rows.length;
+    } catch (e) { s.textContent = e.message; go.disabled = true; }
+  }
+  async function doExport() {
+    let data;
+    try { data = exportRows(); } catch (e) { toast(e.message, 4000); return; }
+    if (!data.rows.length) return;
+    const head = ['ID', 'Image Box', 'SinoNom OCR', 'Chữ Quốc ngữ'];
+    const text = '﻿' + [head, ...data.rows].map(r => r.map(csvCell).join(',')).join('\r\n') + '\r\n';   // BOM để Excel đọc đúng UTF-8
+    const blob = new Blob([text], { type: 'text/csv;charset=utf-8' });
+    const name = ($('bookName').textContent.trim() || 'dong_hang').replace(/[\\/:*?"<>|]+/g, '_') + '.csv';
+    if (typeof window.showSaveFilePicker === 'function') {
+      try {
+        const fh = await window.showSaveFilePicker({ suggestedName: name, id: 'gold-csv', types: [{ description: 'CSV', accept: { 'text/csv': ['.csv'] } }] });
+        const w = await fh.createWritable(); await w.write(blob); await w.close();
+        $('expDlg').close(); toast(`Đã xuất ${data.rows.length} dòng → ${fh.name} ✔`); return;
+      } catch (e) { if (e.name === 'AbortError') return; toast('Không ghi được file: ' + e.message, 5000); return; }
+    }
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name;
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+    $('expDlg').close(); toast(`Đã tải ${name} (${data.rows.length} dòng).`);
+  }
+
+  $('alJump').addEventListener('change', e => jumpTo(+e.target.value));
+  $('alChPage').addEventListener('change', e => setStart('ch', +e.target.value));
+  $('alViPage').addEventListener('change', e => setStart('vi', +e.target.value));
+  $('alChStart').addEventListener('change', e => setStart('ch', parseInt(e.target.value, 10)));
+  $('alViStart').addEventListener('change', e => setStart('vi', parseInt(e.target.value, 10)));
+  $('alChEndPage').addEventListener('change', e => setEnd('ch', +e.target.value));
+  $('alViEndPage').addEventListener('change', e => setEnd('vi', +e.target.value));
+  $('alChEnd').addEventListener('change', e => setEnd('ch', parseInt(e.target.value, 10)));
+  $('alViEnd').addEventListener('change', e => setEnd('vi', parseInt(e.target.value, 10)));
+  $('alExport').addEventListener('click', () => {
+    const total = al.data ? al.data.rows.length : 0;
+    $('expFrom').value = 1; $('expTo').value = total; $('expTotal').textContent = `(tổng ${total} dòng)`;
+    $('expDlg').showModal(); expPreview(); $('expFrom').focus();
+  });
+  $('expFrom').addEventListener('input', expPreview);
+  $('expTo').addEventListener('input', expPreview);
+  $('expSkip').addEventListener('change', expPreview);
+  $('expCancel').addEventListener('click', () => $('expDlg').close());
+  $('expGo').addEventListener('click', doExport);
+
+  // ---------- events ----------
+  $('btnOpen').addEventListener('click', openFolder);
+  $('bookSel').addEventListener('change', async e => {
+    if (anyDirty() && !confirm('Còn chỉnh sửa chưa lưu. Đổi sách sẽ bỏ chúng. Tiếp tục?')) { e.target.value = books.findIndex(b => b.name === $('bookName').textContent); return; }
+    await useBook(+e.target.value);
+  });
+  $('pageSel').addEventListener('change', e => gotoPage(+e.target.value));
+  $('prevPage').addEventListener('click', () => gotoPage(pageIdx - 1));
+  $('nextPage').addEventListener('click', () => gotoPage(pageIdx + 1));
+  $('zoomIn').addEventListener('click', () => setZoom(zoom * 1.25));
+  $('zoomOut').addEventListener('click', () => setZoom(zoom / 1.25));
+  $('zoomFit').addEventListener('click', () => setZoom(1));
+  $('btnSave').addEventListener('click', save);
+  $('btnDownload').addEventListener('click', download);
+  $('fileLoad').addEventListener('change', async e => {
+    const f = e.target.files[0]; if (!f || !T) return;
+    try {
+      const n = applyLoaded(parseLabel(await f.text()));
+      saveLocal(); buildPageSelect(); await renderPage(); setDirty(true); toast(`Đã nạp ${n} trang từ ${f.name}`);
+    } catch (err) { toast('Không đọc được file: ' + err.message, 5000); }
+    e.target.value = '';
+  });
+  document.addEventListener('keydown', e => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') { e.preventDefault(); save(); }
+    else if (e.altKey && e.key === 'ArrowLeft') { e.preventDefault(); if (!al.on) gotoPage(pageIdx - 1); }
+    else if (e.altKey && e.key === 'ArrowRight') { e.preventDefault(); if (!al.on) gotoPage(pageIdx + 1); }
+    else if (e.altKey && /^[1-9]$/.test(e.key) && tabs[+e.key - 1]) { e.preventDefault(); if (al.on) setAlign(false); if (tabs[+e.key - 1] !== T) activate(tabs[+e.key - 1]); }
+  });
+  window.addEventListener('beforeunload', e => { if (anyDirty()) { e.preventDefault(); e.returnValue = ''; } });
+  window.addEventListener('resize', () => { if (!al.on) applyZoom(); });
+
+  // ---------- init ----------
+  (async () => {
+    if (!fsSupported) { $('btnOpen').title = 'Mở file trực tiếp bằng Chrome hoặc Edge để chọn thư mục'; $('btnDownload').hidden = false; $('loadLbl').hidden = false; }
+    if (!embedded.length) { renderTabs(); await renderPage(); updateStats(); return; }
+    const tab = newTab(folderOf(embedded[0].file) || 'vi', { embedded: true, pages: clone(embedded), original: clone(embedded) });
+    tabs = [tab];
+    const restored = loadLocal(tab);
+    tab.dirty = restored;
+    await activate(tab);
+    if (restored) toast('Đã khôi phục các chỉnh sửa trước đó từ trình duyệt (chưa chắc đã lưu vào file).', 4500);
+  })();
+})();
+</script>
+</body>
+</html>

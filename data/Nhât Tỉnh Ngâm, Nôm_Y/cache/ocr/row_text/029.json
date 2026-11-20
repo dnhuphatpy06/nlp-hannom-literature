@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 29,
-  "saved": "2026-11-07T21:42:05.212709",
+  "saved": "2026-11-09T17:17:02.141660",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.029.jpg",
     "sha256": "82b902cb9a0d0afa1445952ced9ee648ae79491699de34ba6d139d6f5ec2c682",
@@ -13,47 +13,7 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
-    },
-    "row_projection": {
-      "bg_kernel": 25,
-      "blob_dilate": 0.3,
-      "blob_mass": 0.35,
-      "edge_ratio": 0.05,
-      "ink_thresh": null,
-      "line_len": null,
-      "margin": 6,
-      "merge_gap": 2,
-      "min_height": 8,
-      "min_width_ratio": 0.4,
-      "near_gap": 0.35,
-      "no_auto_crop": false,
-      "no_clean_x": false,
-      "no_post": false,
-      "pad": 2,
-      "peak_prom": 0.2,
-      "post_min_rows": 4,
-      "punct_gap": 2.0,
-      "punct_size": 0.45,
-      "roi": null,
-      "save_crops": false,
-      "sliver_gap": 0.15,
-      "sliver_max_height": 1.35,
-      "sliver_ratio": 0.45,
-      "sliver_x_overlap": 0.5,
-      "smooth": 2.5,
-      "thr_ratio": 0.012,
-      "valley_ratio": 0.6,
-      "x_trim": 0.5
-    },
-    "tag": "ch_vi"
+    }
   },
   "boxes": [
     {
@@ -77,7 +37,9 @@
           767
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -100,7 +62,9 @@
           997
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -123,7 +87,9 @@
           1218
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -146,7 +112,9 @@
           1466
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -169,7 +137,9 @@
           1673
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -192,7 +162,9 @@
           1900
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -215,7 +187,9 @@
           2120
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -238,7 +212,9 @@
           2345
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -261,7 +237,9 @@
           2570
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -284,237 +262,9 @@
           2798
         ]
       ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Erau cây ruang cho thong gion và",
-      "points": [
-        [
-          419,
-          783
-        ],
-        [
-          1929,
-          783
-        ],
-        [
-          1929,
-          859
-        ],
-        [
-          419,
-          859
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Ch' g'e'l hoai gi'ng va'e co' c'ng,",
-      "points": [
-        [
-          422,
-          1002
-        ],
-        [
-          1920,
-          1002
-        ],
-        [
-          1920,
-          1109
-        ],
-        [
-          422,
-          1109
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Cai nay la cua tiü chung,",
-      "points": [
-        [
-          436,
-          1234
-        ],
-        [
-          1698,
-          1234
-        ],
-        [
-          1698,
-          1325
-        ],
-        [
-          436,
-          1325
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Ning nguii than lam con mong lat gi,",
-      "points": [
-        [
-          407,
-          1462
-        ],
-        [
-          2092,
-          1462
-        ],
-        [
-          2092,
-          1552
-        ],
-        [
-          407,
-          1552
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Nguyen Lâm eua bnh nhi hnh đuc, 225",
-      "points": [
-        [
-          411,
-          1679
-        ],
-        [
-          2176,
-          1679
-        ],
-        [
-          2176,
-          1746
-        ],
-        [
-          411,
-          1746
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Pham Lam giau nul muce hâl nhân.",
-      "points": [
-        [
-          440,
-          1906
-        ],
-        [
-          1920,
-          1906
-        ],
-        [
-          1920,
-          1973
-        ],
-        [
-          440,
-          1973
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Gioi cho ta von co ngân,",
-      "points": [
-        [
-          442,
-          2136
-        ],
-        [
-          1712,
-          2136
-        ],
-        [
-          1712,
-          2205
-        ],
-        [
-          442,
-          2205
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Crai vão cung chang khai lain trai ra,",
-      "points": [
-        [
-          424,
-          2348
-        ],
-        [
-          2119,
-          2348
-        ],
-        [
-          2119,
-          2419
-        ],
-        [
-          424,
-          2419
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "f.o.5.ed. Ngheo thi phai thue tha ngay thung.",
-      "points": [
-        [
-          291,
-          2583
-        ],
-        [
-          1935,
-          2583
-        ],
-        [
-          1935,
-          2668
-        ],
-        [
-          291,
-          2668
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Cua an thng xem bang phu vân.",
-      "points": [
-        [
-          422,
-          2794
-        ],
-        [
-          2156,
-          2794
-        ],
-        [
-          2156,
-          2873
-        ],
-        [
-          422,
-          2873
-        ]
-      ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     }
   ]
 }

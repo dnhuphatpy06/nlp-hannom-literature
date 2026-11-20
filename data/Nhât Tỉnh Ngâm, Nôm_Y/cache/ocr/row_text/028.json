@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 28,
-  "saved": "2026-11-07T21:41:28.098207",
+  "saved": "2026-11-09T17:16:24.920655",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.028.jpg",
     "sha256": "65ea78ed02dce0bc0a2372eae34c1f03b2c49c21810ed76bb4605b2d5e1c98bb",
@@ -13,47 +13,7 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
-    },
-    "row_projection": {
-      "bg_kernel": 25,
-      "blob_dilate": 0.3,
-      "blob_mass": 0.35,
-      "edge_ratio": 0.05,
-      "ink_thresh": null,
-      "line_len": null,
-      "margin": 6,
-      "merge_gap": 2,
-      "min_height": 8,
-      "min_width_ratio": 0.4,
-      "near_gap": 0.35,
-      "no_auto_crop": false,
-      "no_clean_x": false,
-      "no_post": false,
-      "pad": 2,
-      "peak_prom": 0.2,
-      "post_min_rows": 4,
-      "punct_gap": 2.0,
-      "punct_size": 0.45,
-      "roi": null,
-      "save_crops": false,
-      "sliver_gap": 0.15,
-      "sliver_max_height": 1.35,
-      "sliver_ratio": 0.45,
-      "sliver_x_overlap": 0.5,
-      "smooth": 2.5,
-      "thr_ratio": 0.012,
-      "valley_ratio": 0.6,
-      "x_trim": 0.5
-    },
-    "tag": "ch_vi"
+    }
   },
   "boxes": [
     {
@@ -77,7 +37,9 @@
           717
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 5,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -100,7 +62,9 @@
           939
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -123,7 +87,9 @@
           1164
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -146,7 +112,9 @@
           1389
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -169,7 +137,9 @@
           1606
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -192,7 +162,9 @@
           1840
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -215,7 +187,9 @@
           2056
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -238,7 +212,9 @@
           2281
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -261,7 +237,9 @@
           2506
         ]
       ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -284,237 +262,9 @@
           2741
         ]
       ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Düng gân ngue ninh k",
-      "points": [
-        [
-          380,
-          726
-        ],
-        [
-          1653,
-          726
-        ],
-        [
-          1653,
-          796
-        ],
-        [
-          380,
-          796
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Ding nghe ai noi nhiing teu giem pha,",
-      "points": [
-        [
-          380,
-          947
-        ],
-        [
-          2071,
-          947
-        ],
-        [
-          2071,
-          1032
-        ],
-        [
-          380,
-          1032
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Quang kiên khoanh chu ngon chi thê,",
-      "points": [
-        [
-          384,
-          1167
-        ],
-        [
-          1862,
-          1167
-        ],
-        [
-          1862,
-          1247
-        ],
-        [
-          384,
-          1247
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "He's been to Xi'an for 3 days.",
-      "points": [
-        [
-          399,
-          1391
-        ],
-        [
-          1878,
-          1391
-        ],
-        [
-          1878,
-          1475
-        ],
-        [
-          399,
-          1475
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Sao nên phá v衰 ou chung, 215",
-      "points": [
-        [
-          379,
-          1615
-        ],
-        [
-          2068,
-          1615
-        ],
-        [
-          2068,
-          1694
-        ],
-        [
-          379,
-          1694
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Sao nên xử gi� người cung kiến nhan,",
-      "points": [
-        [
-          391,
-          1842
-        ],
-        [
-          2119,
-          1842
-        ],
-        [
-          2119,
-          1915
-        ],
-        [
-          391,
-          1915
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Qung co'g bung oan thu thiên dia.",
-      "points": [
-        [
-          370,
-          2059
-        ],
-        [
-          1883,
-          2059
-        ],
-        [
-          1883,
-          2145
-        ],
-        [
-          370,
-          2145
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Lai' thông nên siem my qui than",
-      "points": [
-        [
-          390,
-          2290
-        ],
-        [
-          1889,
-          2290
-        ],
-        [
-          1889,
-          2372
-        ],
-        [
-          390,
-          2372
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Cank chay ding eot chang eam,",
-      "points": [
-        [
-          367,
-          2517
-        ],
-        [
-          1664,
-          2517
-        ],
-        [
-          1664,
-          2604
-        ],
-        [
-          367,
-          2604
-        ]
-      ],
-      "status": "ok"
-    },
-    {
-      "folder": "vi",
-      "text": "Ding khi guo gió chó làn máng mù.",
-      "points": [
-        [
-          352,
-          2737
-        ],
-        [
-          2107,
-          2737
-        ],
-        [
-          2107,
-          2836
-        ],
-        [
-          352,
-          2836
-        ]
-      ],
-      "status": "ok"
+      "status": "ok",
+      "proj": 9,
+      "check_v": 3
     }
   ]
 }

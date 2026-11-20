@@ -1,7 +1,7 @@
 {
   "engine": "row_text",
   "page": 14,
-  "saved": "2026-11-07T20:25:35.598474",
+  "saved": "2026-11-09T17:07:54.682550",
   "image": {
     "name": "Nhât Tỉnh Ngâm, Nôm_Y.014.jpg",
     "sha256": "3b68e321a285bdfb4a59f868d433c102e466f2fd556a9ef2c6e0166412063952",
@@ -13,47 +13,7 @@
       "lang_type": 2,
       "ocr_id": 4,
       "reading_direction": 2
-    },
-    "paddleocr": {
-      "engine": "transformers",
-      "pipeline_version": "v1",
-      "prompt_label": "ocr",
-      "use_doc_orientation_classify": false,
-      "use_doc_unwarping": false,
-      "use_layout_detection": false
-    },
-    "row_projection": {
-      "bg_kernel": 25,
-      "blob_dilate": 0.3,
-      "blob_mass": 0.35,
-      "edge_ratio": 0.05,
-      "ink_thresh": null,
-      "line_len": null,
-      "margin": 6,
-      "merge_gap": 2,
-      "min_height": 8,
-      "min_width_ratio": 0.4,
-      "near_gap": 0.35,
-      "no_auto_crop": false,
-      "no_clean_x": false,
-      "no_post": false,
-      "pad": 2,
-      "peak_prom": 0.2,
-      "post_min_rows": 4,
-      "punct_gap": 2.0,
-      "punct_size": 0.45,
-      "roi": null,
-      "save_crops": false,
-      "sliver_gap": 0.15,
-      "sliver_max_height": 1.35,
-      "sliver_ratio": 0.45,
-      "sliver_x_overlap": 0.5,
-      "smooth": 2.5,
-      "thr_ratio": 0.012,
-      "valley_ratio": 0.6,
-      "x_trim": 0.5
-    },
-    "tag": "ch_vi"
+    }
   },
   "boxes": [
     {
@@ -76,7 +36,10 @@
           458,
           766
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 6,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -98,7 +61,10 @@
           448,
           979
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -120,7 +86,10 @@
           447,
           1207
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -142,7 +111,10 @@
           448,
           1435
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -164,7 +136,10 @@
           442,
           1664
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -186,7 +161,10 @@
           449,
           1881
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -208,7 +186,10 @@
           465,
           2110
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -230,7 +211,10 @@
           451,
           2327
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -252,7 +236,10 @@
           449,
           2556
         ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 7,
+      "check_v": 3
     },
     {
       "folder": "ch",
@@ -274,227 +261,10 @@
           466,
           2779
         ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Wun xuân dao ly xum vay.",
-      "points": [
-        [
-          449,
-          773
-        ],
-        [
-          1693,
-          773
-        ],
-        [
-          1693,
-          840
-        ],
-        [
-          449,
-          840
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Canh kia riang thé gòe nay chung nhan,",
-      "points": [
-        [
-          422,
-          990
-        ],
-        [
-          2156,
-          990
-        ],
-        [
-          2156,
-          1057
-        ],
-        [
-          422,
-          1057
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Ghe' nhau che' em dau xiè kè",
-      "points": [
-        [
-          444,
-          1218
-        ],
-        [
-          1888,
-          1218
-        ],
-        [
-          1888,
-          1285
-        ],
-        [
-          444,
-          1285
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Dêu giêm pha đ 设 tái nhe.",
-      "points": [
-        [
-          426,
-          1434
-        ],
-        [
-          1940,
-          1434
-        ],
-        [
-          1940,
-          1518
-        ],
-        [
-          426,
-          1518
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Moe cha yeu ghel mwi be ,",
-      "points": [
-        [
-          429,
-          1660
-        ],
-        [
-          2062,
-          1660
-        ],
-        [
-          2062,
-          1734
-        ],
-        [
-          429,
-          1734
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Qing ghen ti ke cho kho eay minh,",
-      "points": [
-        [
-          434,
-          1888
-        ],
-        [
-          2154,
-          1888
-        ],
-        [
-          2154,
-          1965
-        ],
-        [
-          434,
-          1965
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Erung tink inghia phai think tiin cua",
-      "points": [
-        [
-          425,
-          2110
-        ],
-        [
-          1949,
-          2110
-        ],
-        [
-          1949,
-          2186
-        ],
-        [
-          425,
-          2186
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Da",
-      "points": [
-        [
-          433,
-          2332
-        ],
-        [
-          1909,
-          2332
-        ],
-        [
-          1909,
-          2409
-        ],
-        [
-          433,
-          2409
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Noi lam nhàm l文字 diu gi",
-      "points": [
-        [
-          426,
-          2559
-        ],
-        [
-          1679,
-          2559
-        ],
-        [
-          1679,
-          2652
-        ],
-        [
-          426,
-          2652
-        ]
-      ]
-    },
-    {
-      "folder": "vi",
-      "text": "Nhan La phai đa chịp thi thương an.",
-      "points": [
-        [
-          427,
-          2788
-        ],
-        [
-          2140,
-          2788
-        ],
-        [
-          2140,
-          2872
-        ],
-        [
-          427,
-          2872
-        ]
-      ]
+      ],
+      "status": "ok",
+      "proj": 8,
+      "check_v": 3
     }
   ]
 }

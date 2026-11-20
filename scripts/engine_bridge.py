@@ -30,11 +30,11 @@ AUTO_LABEL = "Tự động theo thư mục (ch: Kim Hán Nôm · vi/intro/ref/to
 # Việc cần làm trong hộp thoại PPOCRLabel: (khoá, nhãn). "read" và "selected" cùng khoá engine existing+chữ, khác nhau ở phạm vi khi chạy ngay:
 # tất cả box của ảnh (Re-recognition) hay chỉ các box đang chọn (Re-recognition RectBox).
 TASKS = [("both", "Phát hiện box và đọc chữ (cả trang)"),
-         ("detect", "Chỉ phát hiện box (cả trang, chữ để trống)"),
+         ("detect", "Chỉ phát hiện box (không cần OCR chữ)"),
          ("read", "Đọc lại chữ của tất cả box trong trang (giữ nguyên box)"),
          ("selected", "Đọc lại chữ của các box đã chọn (giữ nguyên box)")]
 TASK_HELP = {"both": "Tìm box mới rồi đọc chữ trong từng box. Thay các box hiện có của ảnh.",
-             "detect": "Chỉ tìm box, chữ để trống (đọc chữ sau). Thay các box hiện có của ảnh.",
+             "detect": "Tách các hàng chữ ngang bằng row_projection và để trống chữ. Thay các box hiện có của ảnh.",
              "read": "Không tìm box mới: giữ nguyên mọi box đang có và đọc lại chữ của tất cả. Chữ cũ bị thay.",
              "selected": "Không tìm box mới: chỉ đọc lại chữ của các box đang chọn trên ảnh (Ctrl+Shift+A chọn tất cả). Box khác giữ nguyên."}
 
@@ -46,9 +46,9 @@ def engine_options(folder: str) -> dict:
 
 
 def build_engine(task: str, box: str | None, text: str | None) -> str:
-    """Khoá engine của PPOCRLabel từ ba ô chọn: both -> box+chữ, detect -> box+none, read/selected -> existing+chữ."""
+    """Khoá engine của PPOCRLabel: both -> box+chữ, detect -> row_projection+none, read/selected -> existing+chữ."""
     if task == "detect":
-        return eng.pipeline_key(box, eng.TEXT_NONE)
+        return eng.pipeline_key(eng.ROW_PROJECTION, eng.TEXT_NONE)
     if task in ("read", "selected"):
         return eng.pipeline_key(eng.BOX_EXISTING, text)
     return eng.pipeline_key(box, eng.BOX_READS_TEXT.get(box) or text)
@@ -56,7 +56,10 @@ def build_engine(task: str, box: str | None, text: str | None) -> str:
 
 def unavailable_reasons(task: str, box: str | None, text: str | None) -> list[str]:
     """Lý do các engine mà lựa chọn này cần chưa dùng được (thiếu TOKEN, chưa cài PaddleOCR, chưa có môi trường Vintern, ...); rỗng nếu dùng được."""
-    used = [text] if task in ("read", "selected") else [box] if task == "detect" else [box, text]
+    if task == "detect":
+        used = [eng.ROW_PROJECTION]
+    else:
+        used = [text] if task in ("read", "selected") else [box, text]
     reasons = []
     for name in dict.fromkeys(k for k in used if k):
         reason = ocr_jobs._engine_unavailable(name)
@@ -142,11 +145,23 @@ def ensure_ready(engine: str) -> None:
             raise eng.EngineError(reason)
 
 
+<<<<<<< Updated upstream
 def recognize_page(image_path, engine: str | None = None, use_cache: bool = True) -> tuple[list[dict], str, bool]:
     """Nhận dạng cả trang. Trả về (các box {"transcription", "points"} của thư mục đang mở, engine đã dùng, lấy từ cache?).
 
     `engine`: auto, một engine đơn, hoặc khoá "box+chữ" (xem đầu file). Đi qua ocr_jobs.ocr_page nên giống hệt bước OCR của app: ảnh đã OCR
     bằng engine đó thì lấy từ cache, không gọi lại API/mô hình. "existing+chữ" không phát hiện box: đọc lại chữ trên box đang có trong Label.txt."""
+=======
+def recognize_page(image_path, engine: str | None = None, use_cache: bool = True,
+                   alternate: bool = True, detect_rows: str | None = None) -> tuple[list[dict], str, bool]:
+    """Nhận dạng cả trang. Trả về (các box {"transcription", "points"} của thư mục đang mở, engine đã dùng, lấy từ cache?).
+
+    `engine`: auto, một engine đơn, hoặc khoá "box+chữ" (xem đầu file). Đi qua ocr_jobs.ocr_page nên giống hệt bước OCR của app: ảnh đã OCR
+    bằng engine đó thì lấy từ cache, không gọi lại API/mô hình. "existing+chữ" không phát hiện box: đọc lại chữ trên box đang có trong Label.txt.
+    `alternate`: trang ch_vi tách hàng bằng row_projection thì lọc xen kẽ lẻ/chẵn (ch nhận hàng lẻ, vi nhận hàng chẵn); False thì thư mục
+    đang mở nhận MỌI hàng (người dùng tự xoá hàng thừa). Ảnh mẫu (gold) mặc định lọc rồi ghép lại cả trang.
+    `detect_rows`: khi chỉ tách box, coi ảnh là trang xen kẽ và lấy riêng hàng ch (lẻ) hoặc vi (chẵn)."""
+>>>>>>> Stashed changes
     book, number, folder, path = locate(image_path)
     tag = page_tag(book, number, folder)
     read_text, boxes_only = True, False
@@ -167,6 +182,9 @@ def recognize_page(image_path, engine: str | None = None, use_cache: bool = True
     else:
         used_key = None
         engine = eng.RECOMMENDED[tag] if engine in (None, AUTO) else engine
+    row_scope = detect_rows if boxes_only and engine == eng.ROW_PROJECTION and detect_rows in ("ch", "vi") else None
+    if row_scope:
+        tag, alternate = "ch_vi", True
     if engine not in eng.engines_for_tag(tag):
         raise eng.EngineError(f"Chế độ \"{eng.ENGINES[engine]['label']}\" không dùng được cho trang nhãn {tag}.")
     ensure_ready(engine)
@@ -174,8 +192,18 @@ def recognize_page(image_path, engine: str | None = None, use_cache: bool = True
     if engine in eng.ROW_ENGINES and read_text:   # tách hàng rồi đọc chữ trong từng box bằng Kim Hán Nôm (ch) / Vintern-1B hoặc PaddleOCR-VL
         for text_engine_name in ocr_jobs.row_text_engines(tag, engine, {folder}):
             ensure_ready(text_engine_name)
+<<<<<<< Updated upstream
     result, cached = ocr_jobs.ocr_page(book, number, tag, engine, path, use_cache, read_text, wanted)
     boxes = result.get(folder)
+=======
+    result, cached = ocr_jobs.ocr_page(book, number, tag, engine, path, use_cache, read_text, wanted, alternate)
+    if row_scope:
+        boxes = result.get(row_scope, [])
+    elif gold and tag == "ch_vi" and len(result) == 2:   # ảnh mẫu giữ nguyên cả trang: ghép lại hàng Hán/Quốc ngữ xen kẽ theo thứ tự gốc
+        boxes = merge_rows(result.get("ch", []), result.get("vi", []))
+    else:
+        boxes = result.get(folder)
+>>>>>>> Stashed changes
     if boxes is None:                      # thư mục mở không trùng nhãn nào: lấy phần đầu tiên
         boxes = next(iter(result.values()), [])
     if boxes_only:                         # chỉ lấy box: bỏ chữ engine đã đọc luôn
