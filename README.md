@@ -1,6 +1,18 @@
 # Pipeline xử lý sách Hán Nôm
 
-Gồm hai phần:
+> 📘 **Hướng dẫn chạy chi tiết từ A - Z**: Vui lòng tham khảo file [USER_GUIDE.md](USER_GUIDE.md) để xem các bước cài đặt và vận hành hệ thống như trên một máy tính mới.
+
+## Môi trường thực thi của dự án (Execution Environment)
+Tuân thủ quy định đồ án về môi trường triển khai mã nguồn:
+* **Hệ điều hành (OS)**: Ubuntu 22.04 LTS (ưu tiên) / Windows 10/11 64-bit.
+* **Phiên bản Python**: `Python 3.10.x` – `3.12.x` (được kiểm thử chính thức trên Python 3.11.9).
+* **Bộ nhớ RAM**: Tối thiểu 8 GB RAM (Khuyến nghị 16 GB để nạp mô hình mượt mà).
+* **Cấu hình đồ hoạ (GPU)**: Hỗ trợ cả CPU và GPU NVIDIA (CUDA 11.8 / 12.1).
+* **Các thư viện phụ thuộc**: Đã được cố định phiên bản tại [requirements.txt](requirements.txt) và [requirements-ocr.txt](requirements-ocr.txt).
+
+---
+
+Dự án gồm hai phần chính:
 
 - **Web UI `app.py`**: gán loại sách, tách PDF thành ảnh từng trang, gán nhãn trang (`ch`, `vi`, `blank`, ...) để chuẩn bị dữ liệu nộp bài. Xem [mục Web UI](#web-ui-apppy). **Không cần token.**
 - **API Kim Hán Nôm** (`scripts/api/`): các hàm Python gọi API upload ảnh, OCR và dịch âm Hán-Nôm của `https://kimhannom.fit.hcmus.edu.vn/`, dùng trong pipeline xử lý. Xem [mục 2 trở đi](#2-lấy-token).
