@@ -70,11 +70,19 @@ Trình duyệt tự động mở tại địa chỉ `http://localhost:8766`. Nh�
 File PDF đặt trong thư mục `data/` sẽ tự động được nhận diện:
 
 1. Màn hình chính liệt kê toàn bộ các sách trong thư mục `data/`.
-2. Bấm nút **Chọn loại** để gán loại sách:
-   - `Tnom`: sách thuần chữ Nôm mộc bản.
-   - `T2`: sách quét xen kẽ (trang Nôm đối diện trang Quốc ngữ viết tay).
-   - `T1`: sách nửa đầu Quốc ngữ, nửa sau chữ Nôm.
-   - `T2b`: trang chứa cả chữ Nôm và chữ Quốc ngữ.
+2. Bấm nút **Chọn loại** để gán loại sách theo bảng quy chuẩn:
+
+| Loại | Ý nghĩa |
+|---|---|
+| T1 / T1w | Quốc ngữ ở phần đầu, Nôm ở phần cuối (w: viết tay) |
+| T2 / T2w | Xen kẽ, ví dụ phải Nôm, trái Quốc ngữ (w: viết tay) |
+| T2b | Quốc ngữ và Nôm chung trang |
+| Tnom / Tnomw | Chỉ có Nôm (w: viết tay) |
+| Tqn | Chỉ có Quốc ngữ |
+| Tref | Tham khảo |
+| Tx | Loại khác |
+| chưa phân loại | Mặc định |
+
 3. Bấm **Save** để lưu cấu hình loại sách vào `data/cache/type.json`.
 4. Bấm nút **Trang** ở hàng cuốn sách cần làm để vào giao diện chi tiết.
 
@@ -136,3 +144,14 @@ Kết quả xuất ra tại thư mục `data/<Tên sách>/`:
 - `<Tên sách>.xlsx`: file Excel gồm 4 cột (`img_id`, `sentence_id`, `SinoNom_Char`, `ChuQN_txt`), cột Nôm định dạng font HAN NOM A.
 - `<Tên sách>.csv`: file CSV mã hoá UTF-8 có BOM, mở trực tiếp bằng Excel không lỗi font.
 - `align_report.txt`: báo cáo các trường hợp lệch dòng hoặc hàng một vế.
+
+### Quy định cấu trúc và tô màu file `<Tên sách>.xlsx`:
+
+- Cấu trúc giống như file `<Tên sách>.csv` (gồm 4 cột).
+- Tô màu chữ Nôm và chữ Quốc ngữ để thể hiện tình trạng dóng hàng:
+  - Màu đen (bắt buộc): Chữ Nôm và chữ Quốc ngữ giống nhau về nghĩa hoặc âm đọc (được kiểm tra qua từ điển Unihan và từ điển Nôm bổ sung).
+  - Màu đỏ (bắt buộc): Chữ Nôm và chữ Quốc ngữ khác nhau về nghĩa hoặc âm đọc.
+  - Chữ Nôm không tìm thấy trong từ điển cũng được tính là sai: tô màu đỏ cho cả chữ Nôm và chữ Quốc ngữ tương ứng.
+- Ví dụ:
+  - Chữ 一 và `nhất` giống nghĩa nhau: tô màu đen cho cả hai chữ.
+  - Chữ 一 và `nhị` khác nghĩa nhau: tô màu đỏ cho cả hai chữ.
