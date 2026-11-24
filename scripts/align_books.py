@@ -166,9 +166,20 @@ def write_csv(path: Path, pairs: list[Pair]) -> None:
         w.writerows([p.img_id, p.sentence_id, p.nom, p.qn] for p in pairs)
 
 
-def write_xlsx(path: Path, pairs: list[Pair]) -> None:
+def write_xlsx(path: Path, pairs: list[Pair], data_dir: Path = library.DEFAULT_DATA_DIR) -> None:
     from openpyxl import Workbook
+    from openpyxl.cell.rich_text import CellRichText, TextBlock
+    from openpyxl.cell.text import InlineFont
     from openpyxl.styles import Alignment, Font
+
+    # Nạp từ điển để tô màu đen/đỏ theo quy định đồ án
+    nomdict = None
+    try:
+        from scripts import postocr
+        from scripts.nom_dict import NomDict
+        nomdict = NomDict.load(data_dir)
+    except Exception as e:
+        print(f"  ! Không nạp được từ điển tô màu ({e}), dùng màu đen mặc định.")
 
     wb = Workbook()
     ws = wb.active
@@ -176,13 +187,48 @@ def write_xlsx(path: Path, pairs: list[Pair]) -> None:
     ws.append(COLUMNS)
     for c in ws[1]:
         c.font = Font(name=LATIN_FONT, bold=True)
-    black = "FF000000"   # đen = cùng nghĩa (chưa kiểm tra nghĩa, xem docstring)
+    black = "FF000000"
+    red = "FFFF0000"
+
     for p in pairs:
-        ws.append([p.img_id, p.sentence_id, p.nom, p.qn])
-        row = ws.max_row
+        row = ws.max_row + 1
+        if nomdict and p.nom and p.qn:
+            nom_chars = [c for c in p.nom if not c.isspace()]
+            qn_words = p.qn.split()
+            clean_qn = []
+            for w in qn_words:
+                cl, _ = postocr.clean_qn(w)
+                clean_qn.append(cl[0] if cl else w.lower())
+
+            aligned = postocr.align_tokens(nomdict, nom_chars, clean_qn)
+            nom_color = {}
+            qn_color = {}
+            for i, j in aligned:
+                if i is not None and j is not None:
+                    k = postocr.match_kind(nomdict, nom_chars[i], clean_qn[j])
+                    c = black if k in (postocr.BLACK, postocr.BLUE) else red
+                    nom_color[i] = c
+                    qn_color[j] = c
+                elif i is not None:
+                    nom_color[i] = red
+                elif j is not None:
+                    qn_color[j] = red
+
+            nom_blocks = [TextBlock(InlineFont(rFont=NOM_FONT, color=nom_color.get(i, red), sz=14), ch)
+                          for i, ch in enumerate(nom_chars)]
+            qn_blocks = []
+            for j, w in enumerate(qn_words):
+                if j > 0:
+                    qn_blocks.append(TextBlock(InlineFont(rFont=LATIN_FONT, color=black, sz=12), " "))
+                qn_blocks.append(TextBlock(InlineFont(rFont=LATIN_FONT, color=qn_color.get(j, red), sz=12), w))
+
+            ws.append([p.img_id, p.sentence_id, CellRichText(nom_blocks), CellRichText(qn_blocks)])
+        else:
+            ws.append([p.img_id, p.sentence_id, p.nom, p.qn])
+            ws.cell(row, 3).font = Font(name=NOM_FONT, color=black if p.qn else red, size=14)
+            ws.cell(row, 4).font = Font(name=LATIN_FONT, color=black, size=12)
+
         ws.cell(row, 1).font = ws.cell(row, 2).font = Font(name=LATIN_FONT, color=black)
-        ws.cell(row, 3).font = Font(name=NOM_FONT, color=black, size=14)
-        ws.cell(row, 4).font = Font(name=LATIN_FONT, color=black, size=12)
         for col in (1, 2, 3, 4):
             ws.cell(row, col).alignment = Alignment(vertical="center", wrap_text=col == 4)
     for col, width in zip("ABCD", (34, 34, 38, 52)):
