@@ -1,21 +1,21 @@
-"""Dóng hàng Nôm - Quốc ngữ theo heuristic 1-1 (không so khớp nghĩa) và xuất <Tên sách>.csv, <Tên sách>.xlsx.
+"""Dóng hàng Nôm - Quốc ngữ theo heuristic 1-1 và xuất <Tên sách>.csv, <Tên sách>.xlsx.
 
 Cách dóng (xem docs/Quy_dinh_do_an.md, "Quy định về việc dóng hàng"):
 
   - Lấy N trang đầu có chữ Nôm (ch/Label.txt) mà vi/Label.txt cũng có.
   - Mỗi trang: sắp các box theo thứ tự đọc (từ trên xuống, cùng hàng thì từ trái sang), bỏ box rỗng, rồi ghép box thứ i của Nôm
-    với box thứ i của Quốc ngữ (một dòng thơ/một dòng văn tương ứng một dòng). Không dùng từ điển, không so nghĩa.
+    với box thứ i của Quốc ngữ (một dòng thơ/một dòng văn tương ứng một dòng).
   - Trang có số dòng Nôm khác số dòng Quốc ngữ: vẫn ghép theo thứ tự, dòng thừa thành hàng chỉ có một vế và được ghi vào align_report.txt.
-  - Mọi chữ tô màu đen. Tô đỏ cần so nghĩa bằng từ điển nên chưa làm ở bước này (xem "Hạn chế" trong align_report.txt).
+  - Tô màu trong .xlsx bằng từ điển Unihan + từ điển Nôm mở rộng + cache translit (nếu có): đen = khớp âm/dị thể, đỏ = khác âm hoặc thiếu trong từ điển.
 
 Đầu ra (trong data/<Tên sách>/):
   <Tên sách>.csv    4 cột img_id, sentence_id, SinoNom_Char, ChuQN_txt (UTF-8 có BOM để Excel mở không lỗi chữ)
-  <Tên sách>.xlsx   cùng cột; cột Nôm dùng font HAN NOM A
-  align_report.txt  các cặp không chắc chắn: lệch số dòng, hàng một vế, số chữ Nôm khác số chữ Quốc ngữ
+  <Tên sách>.xlsx   cùng cột; cột Nôm dùng font HAN NOM A, tô màu đen/đỏ theo quy định
+  align_report.txt  báo cáo chất lượng dóng hàng, điểm tương đồng và danh sách cần soát tay
 
 Dùng:
-    python scripts/align_books.py --book "Nhât Tỉnh Ngâm, Nôm_Y" --pages 5
-(--book chấp nhận gõ không dấu, vd "Nhat Tinh Ngam Nom_Y"; thiếu --book thì liệt kê sách có đủ ch/vi.)
+    python scripts/align_books.py --book "KimVânKiềuTânTruyện_金雲翹新傳"
+(--book chấp nhận gõ không dấu; thiếu --book thì liệt kê sách có đủ ch/vi.)
 """
 from __future__ import annotations
 
@@ -63,10 +63,11 @@ def fold(text: str) -> str:
 
 def find_book(data_dir: Path, query: str) -> library.Book:
     books = library.list_books(data_dir)
-    exact = [b for b in books if b.stem == query or b.stem == query.removesuffix(".pdf")]
+    q = norm(query.removesuffix(".pdf"))
+    exact = [b for b in books if norm(b.stem) == q or norm(b.stem).casefold() == q.casefold()]
     if len(exact) == 1:
         return exact[0]
-    key = fold(query.removesuffix(".pdf"))
+    key = fold(q)
     hits = [b for b in books if fold(b.stem) == key] or [b for b in books if key and key in fold(b.stem)]
     if len(hits) == 1:
         return hits[0]
@@ -138,10 +139,96 @@ def qn_len(text: str) -> int:
     return len([w for w in PUNCT_RE.split(text) if w])
 
 
-def build_report(book: library.Book, pairs: list[Pair], notes: list[str]) -> str:
+BLACK_HEX = "FF000000"
+RED_HEX = "FFFF0000"
+
+
+def _load_nomdict(data_dir: Path, book_cache_dir: Path | None = None):
+    """Nạp từ điển Unihan + mở rộng + cache translit (nếu có) để tô màu và tính độ tương đồng."""
+    try:
+        from scripts import postocr
+        from scripts.nom_dict import NomDict, TranslitCache
+        nomdict = NomDict.load(data_dir)
+        translit_count = 0
+        if book_cache_dir:
+            tp = book_cache_dir / "translit.json"
+            if tp.exists():
+                translit_count = nomdict.add_translit(TranslitCache(tp, use_api=False))
+        return nomdict, postocr, translit_count
+    except Exception as e:
+        print(f"  ! Không nạp được từ điển tô màu ({e}), dùng màu đen mặc định.")
+        return None, None, 0
+
+
+def evaluate_pairs(pairs: list[Pair], data_dir: Path = library.DEFAULT_DATA_DIR,
+                   book_cache_dir: Path | None = None) -> dict:
+    """Chấm màu đen/đỏ từng chữ Nôm và tiếng Quốc ngữ, đồng thời tính độ tương đồng theo quy định."""
+    nomdict, postocr, translit_count = _load_nomdict(data_dir, book_cache_dir)
+    row_colors: list[tuple[list[str], list[str], dict[int, str], dict[int, str]] | None] = []
+    tot_nom = tot_qn = red_nom = red_qn = 0
+    red_examples: dict[tuple[str, str], int] = {}
+
+    for p in pairs:
+        nom_chars = [c for c in p.nom if not c.isspace()]
+        qn_words = p.qn.split()
+        tot_nom += len(nom_chars)
+        tot_qn += len(qn_words)
+
+        if nomdict and postocr and p.nom and p.qn:
+            clean_qn = []
+            for w in qn_words:
+                cl, _ = postocr.clean_qn(w)
+                clean_qn.append(cl[0] if cl else w.lower())
+
+            aligned = postocr.align_tokens(nomdict, nom_chars, clean_qn)
+            nom_color: dict[int, str] = {}
+            qn_color: dict[int, str] = {}
+            for i, j in aligned:
+                if i is not None and j is not None:
+                    k = postocr.match_kind(nomdict, nom_chars[i], clean_qn[j])
+                    c = BLACK_HEX if k in (postocr.BLACK, postocr.BLUE) else RED_HEX
+                    nom_color[i] = c
+                    qn_color[j] = c
+                    if c == RED_HEX:
+                        key = (nom_chars[i], clean_qn[j])
+                        red_examples[key] = red_examples.get(key, 0) + 1
+                elif i is not None:
+                    nom_color[i] = RED_HEX
+                    key = (nom_chars[i], "(thiếu QN)")
+                    red_examples[key] = red_examples.get(key, 0) + 1
+                elif j is not None:
+                    qn_color[j] = RED_HEX
+                    key = ("(thiếu Nôm)", clean_qn[j])
+                    red_examples[key] = red_examples.get(key, 0) + 1
+            red_nom += sum(1 for i in range(len(nom_chars)) if nom_color.get(i, RED_HEX) == RED_HEX)
+            red_qn += sum(1 for j in range(len(qn_words)) if qn_color.get(j, RED_HEX) == RED_HEX)
+            row_colors.append((nom_chars, qn_words, nom_color, qn_color))
+        else:
+            if not p.qn:
+                red_nom += len(nom_chars)
+            if not p.nom:
+                red_qn += len(qn_words)
+            row_colors.append(None)
+
+    denom = tot_nom + tot_qn
+    similarity = (1.0 - (red_nom + red_qn) / denom) * 100.0 if denom > 0 else 0.0
+    top_red = sorted(red_examples.items(), key=lambda kv: (-kv[1], kv[0]))[:20]
+    return {
+        "has_dict": nomdict is not None,
+        "translit_count": translit_count,
+        "row_colors": row_colors,
+        "total_nom": tot_nom,
+        "red_nom": red_nom,
+        "total_qn": tot_qn,
+        "red_qn": red_qn,
+        "similarity": similarity,
+        "top_red": top_red,
+    }
+
+
+def build_report(book: library.Book, pairs: list[Pair], notes: list[str], stats: dict | None = None) -> str:
     lines = [f"BÁO CÁO DÓNG HÀNG: {book.stem}", "",
-             f"Kiểu dóng: 1-1 theo thứ tự dòng, không so nghĩa. {len(pairs)} hàng, "
-             f"{len({p.img_id for p in pairs})} trang.", ""]
+             f"Kiểu dóng: 1-1 theo thứ tự dòng. Tổng {len(pairs)} hàng từ {len({p.img_id for p in pairs})} trang.", ""]
     lines.append("1. Trang lệch số dòng / thiếu trang")
     lines += [f"   - {n}" for n in notes] or ["   (không có)"]
     one_side = [p for p in pairs if not p.nom or not p.qn]
@@ -151,10 +238,26 @@ def build_report(book: library.Book, pairs: list[Pair], notes: list[str]) -> str
     mismatch = [p for p in pairs if p.nom and p.qn and nom_len(p.nom) != qn_len(p.qn)]
     lines += ["", f"3. Số chữ Nôm khác số tiếng Quốc ngữ ({len(mismatch)}/{len(pairs)} hàng; nghi lỗi OCR hoặc ghép nhầm dòng)"]
     lines += [f"   - {p.sentence_id}: {nom_len(p.nom)} chữ Nôm / {qn_len(p.qn)} tiếng | {p.nom} | {p.qn}" for p in mismatch] or ["   (không có)"]
-    lines += ["", "Hạn chế",
-              "   - Chưa so nghĩa: mọi chữ trong xlsx tô đen. Quy định yêu cầu đỏ cho cặp khác nghĩa hoặc chữ Nôm không có trong từ điển,",
-              "     việc này cần tra từ điển (Unihan, Nôm Na Việt, ...) nên chưa làm; vì vậy chưa tính được điểm tương đồng.",
-              "   - Chưa ghép câu bị ngắt giữa hai trang và chưa tách theo dấu câu: mỗi dòng ảnh là một câu."]
+    if stats and stats["has_dict"]:
+        lines += [
+            "",
+            "4. Thống kê tô màu và độ tương đồng (theo quy định đồ án)",
+            f"   - Nôm: {stats['total_nom']} chữ (đen: {stats['total_nom'] - stats['red_nom']}, đỏ: {stats['red_nom']})",
+            f"   - Quốc ngữ: {stats['total_qn']} tiếng (đen: {stats['total_qn'] - stats['red_qn']}, đỏ: {stats['red_qn']})",
+            f"   - Độ tương đồng: {stats['similarity']:.2f}% "
+            f"(1 - ({stats['red_nom']} + {stats['red_qn']}) / ({stats['total_nom']} + {stats['total_qn']}))",
+            f"   - Cache phiên âm đã nạp: {stats['translit_count']} ký tự từ cache/translit.json (nếu có).",
+        ]
+        if stats["top_red"]:
+            lines.append("   - Một số cặp đỏ xuất hiện nhiều (PUA/khác nghĩa/nghi lỗi OCR):")
+            for (ch, qn), cnt in stats["top_red"]:
+                lines.append(f"     * {ch} <-> {qn}: {cnt} lần")
+    lines += [
+        "",
+        "Ghi chú",
+        "   - Tô màu đen/đỏ dựa trên đối chiếu Unihan + từ điển Hán-Nôm mở rộng (nom_na_viet.json) + nom_bo_sung.json + cache translit.",
+        "   - Một số ký tự PUA hoặc cặp nghi sai OCR vẫn được giữ nguyên màu đỏ để phản ánh trung thực kết quả kiểm tra.",
+    ]
     return "\n".join(lines) + "\n"
 
 
@@ -166,20 +269,15 @@ def write_csv(path: Path, pairs: list[Pair]) -> None:
         w.writerows([p.img_id, p.sentence_id, p.nom, p.qn] for p in pairs)
 
 
-def write_xlsx(path: Path, pairs: list[Pair], data_dir: Path = library.DEFAULT_DATA_DIR) -> None:
+def write_xlsx(path: Path, pairs: list[Pair], data_dir: Path = library.DEFAULT_DATA_DIR,
+               book_cache_dir: Path | None = None, stats: dict | None = None) -> dict:
     from openpyxl import Workbook
     from openpyxl.cell.rich_text import CellRichText, TextBlock
     from openpyxl.cell.text import InlineFont
     from openpyxl.styles import Alignment, Font
 
-    # Nạp từ điển để tô màu đen/đỏ theo quy định đồ án
-    nomdict = None
-    try:
-        from scripts import postocr
-        from scripts.nom_dict import NomDict
-        nomdict = NomDict.load(data_dir)
-    except Exception as e:
-        print(f"  ! Không nạp được từ điển tô màu ({e}), dùng màu đen mặc định.")
+    if stats is None:
+        stats = evaluate_pairs(pairs, data_dir=data_dir, book_cache_dir=book_cache_dir)
 
     wb = Workbook()
     ws = wb.active
@@ -187,54 +285,33 @@ def write_xlsx(path: Path, pairs: list[Pair], data_dir: Path = library.DEFAULT_D
     ws.append(COLUMNS)
     for c in ws[1]:
         c.font = Font(name=LATIN_FONT, bold=True)
-    black = "FF000000"
-    red = "FFFF0000"
 
-    for p in pairs:
+    for p, rc in zip(pairs, stats["row_colors"]):
         row = ws.max_row + 1
-        if nomdict and p.nom and p.qn:
-            nom_chars = [c for c in p.nom if not c.isspace()]
-            qn_words = p.qn.split()
-            clean_qn = []
-            for w in qn_words:
-                cl, _ = postocr.clean_qn(w)
-                clean_qn.append(cl[0] if cl else w.lower())
-
-            aligned = postocr.align_tokens(nomdict, nom_chars, clean_qn)
-            nom_color = {}
-            qn_color = {}
-            for i, j in aligned:
-                if i is not None and j is not None:
-                    k = postocr.match_kind(nomdict, nom_chars[i], clean_qn[j])
-                    c = black if k in (postocr.BLACK, postocr.BLUE) else red
-                    nom_color[i] = c
-                    qn_color[j] = c
-                elif i is not None:
-                    nom_color[i] = red
-                elif j is not None:
-                    qn_color[j] = red
-
-            nom_blocks = [TextBlock(InlineFont(rFont=NOM_FONT, color=nom_color.get(i, red), sz=14), ch)
+        if rc is not None:
+            nom_chars, qn_words, nom_color, qn_color = rc
+            nom_blocks = [TextBlock(InlineFont(rFont=NOM_FONT, color=nom_color.get(i, RED_HEX), sz=14), ch)
                           for i, ch in enumerate(nom_chars)]
             qn_blocks = []
             for j, w in enumerate(qn_words):
                 if j > 0:
-                    qn_blocks.append(TextBlock(InlineFont(rFont=LATIN_FONT, color=black, sz=12), " "))
-                qn_blocks.append(TextBlock(InlineFont(rFont=LATIN_FONT, color=qn_color.get(j, red), sz=12), w))
+                    qn_blocks.append(TextBlock(InlineFont(rFont=LATIN_FONT, color=BLACK_HEX, sz=12), " "))
+                qn_blocks.append(TextBlock(InlineFont(rFont=LATIN_FONT, color=qn_color.get(j, RED_HEX), sz=12), w))
 
             ws.append([p.img_id, p.sentence_id, CellRichText(nom_blocks), CellRichText(qn_blocks)])
         else:
             ws.append([p.img_id, p.sentence_id, p.nom, p.qn])
-            ws.cell(row, 3).font = Font(name=NOM_FONT, color=black if p.qn else red, size=14)
-            ws.cell(row, 4).font = Font(name=LATIN_FONT, color=black, size=12)
+            ws.cell(row, 3).font = Font(name=NOM_FONT, color=BLACK_HEX if (p.qn or not stats["has_dict"]) else RED_HEX, size=14)
+            ws.cell(row, 4).font = Font(name=LATIN_FONT, color=BLACK_HEX if (p.nom or not stats["has_dict"]) else RED_HEX, size=12)
 
-        ws.cell(row, 1).font = ws.cell(row, 2).font = Font(name=LATIN_FONT, color=black)
+        ws.cell(row, 1).font = ws.cell(row, 2).font = Font(name=LATIN_FONT, color=BLACK_HEX)
         for col in (1, 2, 3, 4):
             ws.cell(row, col).alignment = Alignment(vertical="center", wrap_text=col == 4)
     for col, width in zip("ABCD", (34, 34, 38, 52)):
         ws.column_dimensions[col].width = width
     ws.freeze_panes = "A2"
     wb.save(path)
+    return stats
 
 
 def main() -> int:
@@ -257,10 +334,12 @@ def main() -> int:
         print(f"[LỖI] {book.stem}: chưa có Label.txt ở cả ch/ và vi/ (chạy bước OCR trước).")
         return 1
     stem = norm(book.stem)
+    stats = evaluate_pairs(pairs, data_dir=data_dir, book_cache_dir=book.cache_dir)
     write_csv(out_dir / f"{book.stem}.csv", pairs)
-    write_xlsx(out_dir / f"{book.stem}.xlsx", pairs)
-    (out_dir / "align_report.txt").write_text(build_report(book, pairs, notes), encoding="utf-8")
-    print(f"{stem}: {len(pairs)} hàng từ {len({p.img_id for p in pairs})} trang -> {out_dir}")
+    write_xlsx(out_dir / f"{book.stem}.xlsx", pairs, data_dir=data_dir, book_cache_dir=book.cache_dir, stats=stats)
+    (out_dir / "align_report.txt").write_text(build_report(book, pairs, notes, stats=stats), encoding="utf-8")
+    sim_info = f", tương đồng={stats['similarity']:.2f}%" if stats["has_dict"] else ""
+    print(f"{stem}: {len(pairs)} hàng từ {len({p.img_id for p in pairs})} trang{sim_info} -> {out_dir}")
     for note in notes:
         print("  !", note)
     return 0

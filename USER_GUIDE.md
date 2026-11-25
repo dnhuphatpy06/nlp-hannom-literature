@@ -1,76 +1,121 @@
 # Hướng dẫn sử dụng dự án (USER_GUIDE)
 
-Tài liệu hướng dẫn chi tiết cách cài đặt và chạy dự án từ đầu đến cuối trên máy tính mới với dữ liệu đã nộp.
+Tài liệu hướng dẫn chi tiết cách cài đặt và chạy dự án từ đầu đến cuối trên máy tính mới với bộ dữ liệu nhóm đã nộp.
 
 ## 1. Môi trường thực thi
 
 Dự án được kiểm thử và vận hành trên cấu hình:
 
-- Hệ điều hành: Ubuntu 22.04 LTS hoặc Windows 10/11 64-bit.
-- Python: 3.10 đến 3.12 (khuyến nghị Python 3.11).
+- Hệ điều hành: Ubuntu 22.04 LTS (ưu tiên) hoặc Windows 10/11 64-bit.
+- Python: `Python 3.11.0` (tương thích `3.11.x` theo ràng buộc của `transformers==5.22.1`).
 - RAM: tối thiểu 8 GB, khuyến nghị 16 GB.
 - Đồ hoạ: CPU hoặc GPU NVIDIA (CUDA 11.8 / 12.1).
+- Toàn bộ phiên bản thư viện phụ thuộc đã được cố định (`==`) trong `requirements.txt`, `requirements-ocr.txt` và `requirements-vintern.txt`.
 
 ## 2. Cài đặt môi trường
 
-Mở terminal tại thư mục gốc của dự án và chạy các lệnh sau:
-
-### Tạo môi trường ảo
+Mở terminal tại thư mục gốc của dự án `nlp-hannom-literature` và tạo môi trường ảo:
 
 Trên Windows:
+
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
 ```
 
 Trên Linux (Ubuntu):
+
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-### Cài đặt thư viện
+Cài đặt thư viện nền tảng (chạy Web UI `app.py`, tách trang PDF, nhận diện trang trắng, gọi API Kim Hán Nôm, tách hàng `row_projection`, dóng hàng và xuất `.csv`/`.xlsx`):
 
 ```bash
 pip install -r requirements.txt
-pip install torch torchvision
+```
+
+Nếu cần chạy OCR cục bộ (`PaddleOCR-VL`) và mở công cụ duyệt nhãn `PPOCRLabel`:
+
+```bash
+pip install torch==2.8.0 torchvision==0.23.0
 pip install -r requirements-ocr.txt
 ```
 
-Bản PPOCRLabel đã được tích hợp sẵn trong thư mục `external/PPOCRLabel/` và tinh chỉnh cho dự án, không cần chạy `pip install PPOCRLabel`.
+Nếu máy có GPU NVIDIA, cài cặp `torch==2.8.0` và `torchvision==0.23.0` bản CUDA tương ứng theo hướng dẫn của PyTorch trước khi chạy `pip install -r requirements-ocr.txt`. Mã nguồn `PPOCRLabel` đã được tích hợp trực tiếp trong thư mục `external/PPOCRLabel/`, không cần cài đặt qua `pip`.
 
-## 3. Cấu hình Token API Kim Hán Nôm
+Nếu cần chạy thêm mô hình `Vintern-1B-v3.5` (chỉ dùng cho tuỳ chọn đọc từng box chữ Quốc ngữ trong `row_projection`), tạo một môi trường ảo tách biệt dùng `transformers==4.46.3`:
 
-Nếu cần gọi API nhận dạng chữ Hán Nôm từ hệ thống `https://kimhannom.fit.hcmus.edu.vn/`:
+```bash
+python -m venv C:\vintern
+C:\vintern\Scripts\activate
+pip install torch==2.8.0 torchvision==0.23.0
+pip install -r requirements-vintern.txt
+```
 
-1. Đăng nhập vào trang web trên trình duyệt.
-2. Nhấn F12 mở công cụ nhà phát triển, vào mục Application (hoặc Storage), chọn Cookies của trang web và sao chép giá trị của mục `token`.
-3. Tạo file `.env` tại thư mục gốc và dán token:
+Trên Ubuntu có thể tạo môi trường này tại `~/.venv-vintern` bằng lệnh tương ứng, sau đó khai báo đường dẫn trình thông dịch trong file `.env` ở biến `VINTERN_PYTHON`.
+
+Dựng lại từ điển Hán-Nôm mở rộng (`nom_na_viet.json`) từ các nguồn mở (`hanviet.csv`, Nôm Na Việt, Giúp đọc Nôm và Hán Việt, Tự Điển Chữ Nôm Dẫn Giải) nếu thư mục `data/cache/dict/` chưa có sẵn:
+
+```bash
+python scripts/nom_dict.py build
+python scripts/nom_dict.py build-full
+```
+
+## 3. Cấu hình Token và các mô hình OCR sử dụng
+
+### 3.1. API Kim Hán Nôm (trả phí / yêu cầu tài khoản)
+
+Hệ thống sử dụng API của `https://kimhannom.fit.hcmus.edu.vn/` để OCR chữ Hán Nôm (`ch/`) và tra phiên âm hỗ trợ hậu xử lý:
+
+1. Đăng nhập vào hệ thống `https://kimhannom.fit.hcmus.edu.vn/` trên trình duyệt.
+2. Nhấn F12 mở công cụ nhà phát triển, vào mục Application (hoặc Storage), chọn Cookies của tên miền trên và sao chép giá trị của trường `token`.
+3. Tạo file `.env` tại thư mục gốc dự án (tham khảo `.env.example`) và điền token:
 
 ```env
 TOKEN=eyJhbGciOi...chuỗi_token...
 ```
 
-Không đưa file `.env` lên git hay chia sẻ ra ngoài.
+Không đưa file `.env` lên git hay chia sẻ công khai.
+
+Các tham số gọi API sử dụng trong pipeline (`scripts/ocr_engines.py`, `scripts/api/sinonom_service.py`):
+
+- Upload ảnh (`image-upload`): khử trùng lặp theo SHA-256 thông qua `data/cache/uploads.json`.
+- OCR trang Hán Nôm (`image-ocr`): `ocr_id=2` (hành chính), `lang_type=2` (chữ Nôm), `epitaph=0` (văn bản thường).
+- Đọc lại từng box chữ Nôm: `ocr_id=2`, `reading_direction` chọn theo tỷ lệ khung cắt (dọc nếu cao hơn rộng, ngang nếu rộng hơn cao).
+- Tra phiên âm chữ/câu (`sinonom-transliteration`): `font_type=1`, `lang_type=1`, lưu cache vào `data/<Tên sách>/cache/translit.json`.
+
+### 3.2. Mô hình chạy cục bộ trên máy
+
+- **PaddleOCR-VL**: cài qua gói `paddleocr[doc-parser]==3.7.0`, chạy bằng backend `engine="transformers"` trên PyTorch `2.8.0` (`pipeline_version="v1"`). Dùng để phát hiện bounding box và đọc chữ cho các thư mục chữ Quốc ngữ (`vi/`, `intro/`, `ref/`, `toc/`).
+- **Vintern-1B-v3.5** (`5CD-AI/Vintern-1B-v3_5`, `transformers==4.46.3`): dùng cho tuỳ chọn đọc chữ Quốc ngữ trong từng box đã cắt của `row_projection` hoặc thao tác nhận dạng lại box. Prompt nguyên văn truyền vào mô hình gồm tiền tố `<image>` và câu lệnh:
+
+```text
+<image>
+Đây là một dòng chữ viết tay tiếng Việt. Hãy chép lại chính xác từng chữ, giữ nguyên dấu thanh và dấu mũ, không thêm, không bớt, không giải thích. Chỉ trả về đúng dòng chữ đó.
+```
+
+Tham số sinh mặc định của `Vintern-1B-v3.5`: `max_new_tokens=128`, `do_sample=False`, `num_beams=3`, `repetition_penalty=1.1` (tự động thử lại với `repetition_penalty=2.5` nếu phát hiện lặp từ vô hạn), `max_num=12`.
 
 ## 4. Khởi chạy Web UI
 
-Chạy lệnh:
+Chạy ứng dụng chính từ thư mục gốc dự án:
 
 ```bash
 python app.py
 ```
 
-Trình duyệt tự động mở tại địa chỉ `http://localhost:8766`. Nhấn Ctrl+C tại terminal khi muốn tắt ứng dụng.
+Trình duyệt tự động mở tại `http://localhost:8766`. Để tắt ứng dụng, nhấn Ctrl+C trong cửa sổ terminal. Nếu muốn trỏ sang một thư mục dữ liệu khác ngoài `data/`, dùng tuỳ chọn `--data <đường dẫn>`.
 
 ## 5. Quy trình xử lý sách
 
 ### 5.1. Nhận diện sách và phân loại
 
-File PDF đặt trong thư mục `data/` sẽ tự động được nhận diện:
+Các file PDF gốc được đặt trong `data/` hoặc `data/<Tên sách>/<Tên sách>.pdf` sẽ tự động hiển thị trên giao diện chính:
 
-1. Màn hình chính liệt kê toàn bộ các sách trong thư mục `data/`.
-2. Bấm nút **Chọn loại** để gán loại sách theo bảng quy chuẩn:
+1. Dùng ô tìm kiếm hoặc bộ lọc để tìm cuốn sách cần xử lý.
+2. Bấm **Chọn loại** và gán mã phân loại theo quy chuẩn:
 
 | Loại | Ý nghĩa |
 |---|---|
@@ -83,75 +128,82 @@ File PDF đặt trong thư mục `data/` sẽ tự động được nhận diệ
 | Tx | Loại khác |
 | chưa phân loại | Mặc định |
 
-3. Bấm **Save** để lưu cấu hình loại sách vào `data/cache/type.json`.
-4. Bấm nút **Trang** ở hàng cuốn sách cần làm để vào giao diện chi tiết.
+3. Bấm **Save** để lưu cấu hình vào `data/cache/type.json`.
+4. Bấm **Trang** ở hàng cuốn sách tương ứng để chuyển sang màn hình tách và gán nhãn trang.
 
 ### 5.2. Tách trang và gán nhãn trang
 
-1. Tại mục **1. Nhãn trang**, chọn DPI (khuyên dùng 300) rồi bấm **Tách trang**. Ảnh trang sau khi tách được lưu tại `data/<Tên sách>/cache/pages/`.
-2. Xem lưới ảnh trang để kiểm tra nhãn: hệ thống tự động gán nhãn `blank` cho trang trắng và gợi ý nhãn `ch`, `vi` theo loại sách đã chọn.
-3. Nếu cần sửa nhãn: tích chọn các trang trên lưới, bấm **Gán nhãn ▾** rồi chọn nhãn phù hợp:
-   - `ch`: trang chữ Hán Nôm.
-   - `vi`: trang chữ Quốc ngữ.
-   - `intro`: trang bìa, tựa, mục lục đầu sách.
-   - `blank`: trang giấy trắng.
-4. Nhãn lưu tự động vào `data/<Tên sách>/cache/phan_loai.json`.
+1. Tại thẻ **1. Nhãn trang**, chọn độ phân giải DPI (mặc định 300) rồi bấm **Tách trang**. Ảnh trang lưu dưới dạng `<Tên sách>.<NNN>.jpg` trong `data/<Tên sách>/cache/pages/`.
+2. Hệ thống tự động phát hiện trang trắng để gán `blank` và gợi ý nhãn ban đầu cho các trang `unknown` theo loại sách đã lưu.
+3. Kiểm tra lại toàn bộ lưới ảnh thu nhỏ. Để sửa nhãn các trang bìa, tựa, mục lục hay trang gán sai: chọn các trang cần sửa, bấm **Gán nhãn ▾** và chọn đúng nhãn (`ch`, `vi`, `ch_vi`, `intro`, `toc`, `ref`, `blank`, `misc`). Với các ảnh chụp hai trang Hán Nôm, có thể đánh dấu thuộc tính **Bản chụp 2 trang** để pipeline sắp xếp thứ tự box đúng quy định (trang trái trước, trang phải sau; cột từ phải sang trái).
+4. Toàn bộ nhãn trang được lưu tức thời vào `data/<Tên sách>/cache/phan_loai.json`.
 
-## 6. OCR và kiểm tra bằng PPOCRLabel
+## 6. OCR, hiệu chỉnh bằng PPOCRLabel và Web đối chiếu
 
-### 6.1. Mở PPOCRLabel từ giao diện web
+### 6.1. Chạy OCR và mở PPOCRLabel từ giao diện web
 
-1. Bấm nút **2. OCR →** ở thanh điều hướng trên cùng để chuyển sang màn hình OCR.
-2. Tại bảng **OCR riêng từng thư mục và kiểm tra bằng PPOCRLabel**, các thư mục thành phần sẽ hiển thị (`ch/`, `vi/`, `intro/`...).
-3. Bấm nút **Mở PPOCRLabel** ở hàng thư mục cần kiểm tra:
-   - Bấm ở dòng `ch/` để mở toàn bộ ảnh và nhãn chữ Nôm.
-   - Bấm ở dòng `vi/` để mở toàn bộ ảnh và nhãn chữ Quốc ngữ.
-4. Cửa sổ PPOCRLabel tự động nạp thư mục ảnh cùng file nhãn `Label.txt` và trạng thái `fileState.txt`.
+1. Bấm **2. OCR →** trên thanh điều hướng của màn hình sách để sang bước OCR. Hệ thống tự đồng bộ ảnh từ `cache/pages/` sang các thư mục `ch/`, `vi/`, `intro/`, `ref/`, `toc/`, `blank/`, `misc/`.
+2. Tại bảng **OCR riêng từng thư mục và kiểm tra bằng PPOCRLabel**, bấm **OCR thư mục này** để chọn engine phù hợp (`Kim Hán Nôm` cho `ch/`; `PaddleOCR-VL` hoặc `row_projection + Vintern-1B` cho `vi/`, `intro/`, `ref/`, `toc/`). Kết quả thô được lưu cache trong `data/<Tên sách>/cache/ocr/` để tránh gọi lại khi không thay đổi ảnh.
+3. Bấm **Mở PPOCRLabel** ở dòng thư mục cần soát (`ch/` hoặc `vi/`). Cửa sổ PPOCRLabel sẽ nạp trực tiếp thư mục ảnh cùng hai file `Label.txt` và `fileState.txt` (cũng có thể mở thủ công bằng lệnh `python scripts/ppocrlabel_boot.py --image_dir "data\<Tên sách>\ch"`).
 
 ### 6.2. Phím tắt và thao tác trong PPOCRLabel
 
-Cửa sổ PPOCRLabel gồm danh sách file ảnh ở bên trái, ảnh trang sách ở giữa và danh sách box cùng chữ ở bên phải.
+Cửa sổ PPOCRLabel gồm danh sách ảnh bên trái, khung hiển thị bounding box ở giữa và danh sách câu/tọa độ bên phải:
 
-Các phím tắt thao tác:
-
-- `W`: bật chế độ vẽ khung chữ nhật (RectBox) mới quanh dòng chữ.
-- `Ctrl+R`: nhận dạng lại chữ cho box đang chọn hoặc box vừa vẽ.
+- `W`: bật chế độ vẽ khung mới (RectBox).
+- `Ctrl+R`: nhận dạng lại chữ cho box đang chọn.
 - `Ctrl+Shift+R`: nhận dạng lại toàn bộ box trên trang.
-- `Ctrl+B`: tự động sắp xếp lại thứ tự box theo quy chuẩn đọc (Nôm dọc từ trên xuống dưới, phải sang trái; Quốc ngữ từ trên xuống dưới, trái sang phải).
-- `Alt+Up` / `Alt+Down`: đưa box đang chọn lên trước hoặc xuống sau trong danh sách dòng/câu.
-- `Ctrl+Shift+A`: chọn tất cả box đang có trên trang.
-- `Ctrl+T`: chuyển box tứ giác thành hình chữ nhật song song các trục toạ độ.
+- `Ctrl+B`: tự động sắp xếp thứ tự box theo quy chuẩn đọc (Nôm dọc từ phải sang trái, trên xuống dưới; Quốc ngữ từ trên xuống dưới, trái sang phải).
+- `Alt+Up` / `Alt+Down`: dịch chuyển thứ tự box đang chọn lên trên hoặc xuống dưới.
+- `Ctrl+Shift+A`: chọn toàn bộ box hiện có trên trang.
+- `Ctrl+T`: chuẩn hoá box tứ giác thành hình chữ nhật song song trục toạ độ.
 - `Delete`: xoá box đang chọn.
-- Rê chuột vào giữa cạnh box rồi kéo: dịch cạnh song song, giúp box ôm khít chữ mà không bị méo góc.
-- `Space` hoặc nút **Check**: đánh dấu trang hiện tại đã duyệt xong (ghi `1` vào `fileState.txt`) và tự động chuyển sang trang tiếp theo.
-- `D` / `A`: chuyển sang trang tiếp theo / trang trước đó.
-- `Ctrl+S`: lưu nhãn vào file `Label.txt`.
-- `Ctrl+Shift+K`: mở hộp thoại kiểm tra chi tiết các box bị cảnh báo lệch số chữ.
-- `Ctrl+M`: mở hộp thoại chọn mô hình OCR.
+- Rê chuột vào giữa cạnh của box rồi kéo: điều chỉnh song song một cạnh mà không làm méo các góc khác.
+- `Space` hoặc nút **Check**: đánh dấu ảnh hiện tại hoàn thành (`1` trong `fileState.txt`) và chuyển sang ảnh kế tiếp.
+- `D` / `A`: chuyển sang ảnh tiếp theo / ảnh trước đó.
+- `Ctrl+S`: lưu `Label.txt` và `fileState.txt`.
+- `Ctrl+Shift+K`: mở hộp thoại kiểm tra các box bị cảnh báo lệch số chữ (khi dùng chế độ `row_projection`).
+- `Ctrl+M`: mở hộp thoại chuyển đổi engine OCR.
 
-Quy trình duyệt: kiểm tra box xanh trên ảnh, sửa chữ ở danh sách bên phải nếu cần, bấm `Ctrl+B` để chuẩn hoá thứ tự câu, sau đó bấm `Space` (hoặc nút Check) để hoàn thành trang và chuyển tiếp. Khi tắt PPOCRLabel, số liệu trang đã duyệt trên giao diện web tự động cập nhật.
+### 6.3. Soát chữ song ngữ trên Web đối chiếu
+
+Dự án tích hợp thêm giao diện **Web đối chiếu CH và VI** giúp đối chiếu từng dòng Hán Nôm với bản Quốc ngữ cùng hình ảnh gốc:
+
+- Khi đang chạy `app.py`, bấm nút **Đối chiếu CH–VI** hoặc truy cập `http://localhost:8766/review/`.
+- Hoặc mở độc lập không cần khởi chạy toàn bộ `app.py` bằng lệnh:
+
+```bash
+python review_local.py
+```
+
+Trên Windows có thể bấm đúp `review-web/Mo-web-doi-chieu.bat`. Web đối chiếu mở tại `http://127.0.0.1:8768/`, hỗ trợ sửa trực tiếp văn bản và lưu vào `Label.txt` mà giữ nguyên toạ độ box và `fileState.txt`. Phím tắt hỗ trợ gồm `←`/`→` (đổi trang), `↑`/`↓` (chọn dòng), `Enter` (phóng to ảnh trang), `R` (tải lại từ đĩa), `Ctrl+S` (lưu chữ) và `?` (xem bảng phím tắt).
 
 ## 7. Dóng hàng song ngữ và xuất kết quả
 
-Với sách có cả trang Nôm và Quốc ngữ, chạy lệnh sau để dóng hàng 1-1 từng câu thơ:
+Với sách có cả `ch/Label.txt` và `vi/Label.txt` (như cuốn `KimVânKiềuTânTruyện_金雲翹新傳`), chạy lệnh sau để dóng hàng 1-1 và xuất báo cáo:
 
 ```bash
 python scripts/align_books.py --book "KimVânKiềuTânTruyện_金雲翹新傳"
 ```
 
-Kết quả xuất ra tại thư mục `data/<Tên sách>/`:
+Kết quả được tạo tại `data/<Tên sách>/`:
 
-- `<Tên sách>.xlsx`: file Excel gồm 4 cột (`img_id`, `sentence_id`, `SinoNom_Char`, `ChuQN_txt`), cột Nôm định dạng font HAN NOM A.
-- `<Tên sách>.csv`: file CSV mã hoá UTF-8 có BOM, mở trực tiếp bằng Excel không lỗi font.
-- `align_report.txt`: báo cáo các trường hợp lệch dòng hoặc hàng một vế.
+- `<Tên sách>.csv`: file CSV 4 cột (`img_id`, `sentence_id`, `SinoNom_Char`, `ChuQN_txt`) mã hoá UTF-8 có BOM.
+- `<Tên sách>.xlsx`: file Excel cùng 4 cột, cột `SinoNom_Char` dùng font `HAN NOM A`, cột `ChuQN_txt` dùng `Times New Roman`, tự động tô màu đen/đỏ theo từng chữ dựa trên từ điển (`unihan_vi.json`, `nom_na_viet.json`, `nom_bo_sung.json`) và `cache/translit.json`:
+  - Màu đen: chữ Nôm và tiếng Quốc ngữ khớp nhau về âm/dị thể trong từ điển.
+  - Màu đỏ: chữ Nôm và tiếng Quốc ngữ khác nhau hoặc chữ Nôm chưa có âm khớp trong từ điển.
+- `align_report.txt`: thống kê số hàng, kiểm tra lệch số chữ từng cặp, danh sách cặp màu đỏ xuất hiện nhiều và **độ tương đồng (%)** tính theo công thức của quy định đồ án.
 
-### Quy định cấu trúc và tô màu file `<Tên sách>.xlsx`:
+## 8. Kiểm tra dữ liệu và đóng gói nộp bài
 
-- Cấu trúc giống như file `<Tên sách>.csv` (gồm 4 cột).
-- Tô màu chữ Nôm và chữ Quốc ngữ để thể hiện tình trạng dóng hàng:
-  - Màu đen (bắt buộc): Chữ Nôm và chữ Quốc ngữ giống nhau về nghĩa hoặc âm đọc (được kiểm tra qua từ điển Unihan và từ điển Nôm bổ sung).
-  - Màu đỏ (bắt buộc): Chữ Nôm và chữ Quốc ngữ khác nhau về nghĩa hoặc âm đọc.
-  - Chữ Nôm không tìm thấy trong từ điển cũng được tính là sai: tô màu đỏ cho cả chữ Nôm và chữ Quốc ngữ tương ứng.
-- Ví dụ:
-  - Chữ 一 và `nhất` giống nghĩa nhau: tô màu đen cho cả hai chữ.
-  - Chữ 一 và `nhị` khác nghĩa nhau: tô màu đỏ cho cả hai chữ.
+Chạy script kiểm tra tổng thể để xác nhận toàn bộ file nhãn, ảnh, file dóng hàng và file cố định thư viện đều hợp lệ:
+
+```bash
+python scripts/check_submission.py --strict-env
+```
+
+Khi đóng gói file nộp bài dạng `<MSSV1_MSSV2_MSSV3_MSSV4>.zip` theo quy định đồ án:
+
+- Mỗi thư mục sách giữ lại: `<Tên sách>.pdf`, các thư mục `ch/`, `vi/`, `intro/`, `ref/`, `toc/`, `blank/`, `misc/`, cùng các file dóng hàng `<Tên sách>.csv`, `<Tên sách>.xlsx` và `align_report.txt` (với sách có cặp song ngữ).
+- Loại bỏ toàn bộ thư mục/file tạm cục bộ sinh ra trong quá trình làm việc gồm: `data/<Tên sách>/cache/`, `Cache.cach`, `Label.txt.bak`, `fileState.txt.bak`, `.venv/` và file bí mật `.env`.
+- Giữ đầy đủ mã nguồn (`app.py`, `review_local.py`, `scripts/`, `web/`, `review-web/`, `external/`), các file cấu hình phụ thuộc đã cố định (`requirements*.txt`, `.env.example`) và tài liệu (`README.md`, `USER_GUIDE.md`, `scripts/legacy/README.md`).

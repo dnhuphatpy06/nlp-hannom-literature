@@ -9,7 +9,7 @@ pypdfium2==5.14.0
 click==8.5.0
 numpy==2.3.5
 Pillow==13.0.0
-scipy>=1.15.0,<=1.18.1
+scipy==1.17.1
 openpyxl==3.1.5
 
 # Chỉ MỘT gói OpenCV. Dùng bản contrib 4.10.0.84 vì đây đúng là bản paddlex (do PaddleOCR kéo vào) ghim; nếu cài thêm

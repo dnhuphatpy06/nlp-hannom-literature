@@ -1,16 +1,16 @@
-# OCR chạy trên máy và PPOCRLabel: scripts/paddleocr_vl_viz.py, bước OCR của app.py, open_ppocrlabel.bat.
+# OCR chạy trên máy và PPOCRLabel: scripts/paddleocr_vl_viz.py, bước OCR của app.py, scripts/ppocrlabel_boot.py.
 # Cài: pip install -r requirements-ocr.txt   (đã gồm requirements.txt)
 #
 # KHÔNG cần `pip install PPOCRLabel`: mã PPOCRLabel đã nằm trong dự án (external/PPOCRLabel, có sửa riêng);
-# chỉ cần các thư viện của nó bên dưới (PyQt5, và PaddleOCR-VL nếu dùng). Python 3.12.
+# chỉ cần các thư viện của nó bên dưới (PyQt5, và PaddleOCR-VL nếu dùng). Môi trường khuyến nghị: Python 3.11.0.
 
 -r requirements.txt
 
-# torch/torchvision cài riêng theo máy (CPU hoặc CUDA) trước khi cài file này: https://pytorch.org/get-started/locally/
+# torch/torchvision: nếu dùng GPU CUDA, cài trước theo https://pytorch.org/get-started/locally/ với đúng cặp phiên bản bên dưới.
 # torchvision bắt buộc: transformers nạp nó trong bộ xử lý ảnh của PaddleOCR-VL.
-torch
-torchvision
-transformers>=5.10
+torch==2.8.0
+torchvision==0.23.0
+transformers==5.22.1
 
 # PaddleOCR-VL, chạy bằng PyTorch (engine=transformers), KHÔNG cần paddlepaddle. Kéo theo paddlex.
 paddleocr[doc-parser]==3.7.0

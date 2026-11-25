@@ -5,10 +5,10 @@
 ## Môi trường thực thi của dự án (Execution Environment)
 Tuân thủ quy định đồ án về môi trường triển khai mã nguồn:
 * **Hệ điều hành (OS)**: Ubuntu 22.04 LTS (ưu tiên) / Windows 10/11 64-bit.
-* **Phiên bản Python**: `Python 3.10.x` – `3.12.x` (được kiểm thử chính thức trên Python 3.11.9).
+* **Phiên bản Python**: `Python 3.11.0` (hỗ trợ `3.11.x` theo yêu cầu của `transformers==5.22.1`).
 * **Bộ nhớ RAM**: Tối thiểu 8 GB RAM (Khuyến nghị 16 GB để nạp mô hình mượt mà).
 * **Cấu hình đồ hoạ (GPU)**: Hỗ trợ cả CPU và GPU NVIDIA (CUDA 11.8 / 12.1).
-* **Các thư viện phụ thuộc**: Đã được cố định phiên bản tại [requirements.txt](requirements.txt) và [requirements-ocr.txt](requirements-ocr.txt).
+* **Các thư viện phụ thuộc**: Đã được cố định phiên bản (`==`) tại [requirements.txt](requirements.txt), [requirements-ocr.txt](requirements-ocr.txt) và [requirements-vintern.txt](requirements-vintern.txt).
 
 ---
 
@@ -23,16 +23,16 @@ Dự án gồm hai phần chính:
 nlp-hannom-literature/
 ├── .env                  <- điền TOKEN vào đây
 ├── .env.example          <- file mẫu
-├── requirements.txt      <- thư viện cơ bản
-├── requirements-ocr.txt  <- thêm cho OCR cục bộ (PaddleOCR-VL) và PPOCRLabel
-├── open_ppocrlabel.bat   <- bấm đúp để mở PPOCRLabel không qua app (xem mục "Mở PPOCRLabel để kiểm tra")
-├── app.py                <- file chính: Web UI (gán loại sách, tách trang), chạy `python app.py`
+├── requirements.txt      <- thư viện cơ bản (pinned)
+├── requirements-ocr.txt  <- thêm cho OCR cục bộ (PaddleOCR-VL) và PPOCRLabel (pinned)
+├── requirements-vintern.txt <- môi trường tách biệt (transformers 4.x) cho Vintern-1B-v3.5 (pinned)
+├── app.py                <- file chính: Web UI (gán loại sách, tách trang, OCR, /review/), chạy `python app.py`
 ├── web/index.html        <- giao diện của app.py
 ├── review_local.py       <- phục vụ web đối chiếu CH và VI, đọc và lưu Label.txt
 ├── review-web/           <- giao diện đối chiếu và file Mo-web-doi-chieu.bat
-├── data/                 <- dữ liệu, cấu trúc giống thư mục nộp bài (git chỉ theo dõi các file cache .json, xem bên dưới)
-│   ├── cache/            <- cache dùng chung: type.json (loại sách), uploads.json (lịch sử upload ảnh)
-│   └── <Tên sách>/       <- <Tên sách>.pdf, ch/ vi/ intro/ ref/ toc/ blank/ misc/ và cache/ (không nộp)
+├── data/                 <- dữ liệu, cấu trúc giống thư mục nộp bài (git theo dõi nhãn, alignment và cache .json)
+│   ├── cache/            <- cache dùng chung: type.json, uploads.json, dict/ (từ điển Unihan + Nôm Na Việt)
+│   └── <Tên sách>/       <- <Tên sách>.pdf, ch/ vi/ intro/ ref/ toc/ blank/ misc/, <Tên sách>.csv/.xlsx, align_report.txt, cache/ (không nộp)
 ├── external/PPOCRLabel/ <- bản PPOCRLabel chép vào dự án để sửa trực tiếp (xem CHANGES_GK.md)
 ├── img/                  <- ảnh dùng để test
 ├── scripts/
@@ -46,18 +46,29 @@ nlp-hannom-literature/
 │   ├── ocr_engines.py        <- 3 nguồn OCR: Kim Hán Nôm, PaddleOCR-VL, row_projection; thứ tự box
 │   ├── engine_bridge.py      <- nối PPOCRLabel với 3 engine OCR (nhận dạng cả trang/một box, dùng chung cache)
 │   ├── ocr_jobs.py           <- bước OCR: chép ảnh theo nhãn, chạy nền, ghi Label.txt, mở PPOCRLabel
+│   ├── ocr_cache.py          <- quản lý cache kết quả OCR theo sha256 ảnh
+│   ├── ocr_events.py         <- phát sự kiện log và tiến độ cho PPOCRLabel
+│   ├── ppocrlabel_boot.py    <- khởi chạy PPOCRLabel từ external/PPOCRLabel/
+│   ├── paddleocr_vl_viz.py   <- chạy thử PaddleOCR-VL trên một ảnh
+│   ├── vintern_worker.py     <- worker nền giao tiếp qua stdin/stdout với Vintern-1B-v3.5
+│   ├── vintern_viz.py        <- chạy thử Vintern-1B-v3.5 trên ảnh hoặc Label.txt
+│   ├── row_projection_viz.py <- tách hàng chữ ngang bằng chiếu ngang (row projection)
 │   ├── box_check.py          <- đối chiếu chữ Nôm API với số chữ (projection) của box, gắn cờ "chưa check"
 │   ├── box_review.py         <- kiểm tra từng box trong PPOCRLabel: phân tích cờ, dấu "đã check", tính lại fileState
 │   ├── char_projection.py    <- đếm chữ trong ảnh một hàng bằng chiếu dọc
 │   ├── import_kimhannom_csv.py <- nhập CSV Kim Hán Nôm đã đọc sẵn vào cache chữ trong box
+│   ├── ocr_folder_kimhannom.py <- đọc hàng loạt ảnh hàng chữ qua API Kim Hán Nôm
 │   ├── label_io.py           <- đọc/ghi/kiểm tra Label.txt và fileState.txt (chuẩn PPOCRLabel)
+│   ├── nom_dict.py           <- dựng và nạp từ điển Unihan + Nôm mở rộng + cache translit
+│   ├── postocr.py            <- hậu xử lý, dóng từ Needleman-Wunsch và chấm khớp âm/dị thể
+│   ├── compare_book.py       <- hậu xử lý so sánh Nôm - Quốc ngữ theo sách
+│   ├── align_books.py        <- dóng hàng 1-1 xuất .csv, .xlsx (tô màu đen/đỏ) và align_report.txt
+│   ├── check_submission.py   <- kiểm tra hợp lệ toàn bộ dữ liệu nộp và phiên bản thư viện
 │   ├── page_classifier.py    <- phân loại từng trang vào ch/ vi/ ... (Web UI cũ + dòng lệnh)
 │   ├── pdfslice_split.py     <- tách PDF bằng pdfslice_py (công cụ cũ)
-│   └── api/
-│       ├── sinonom_api.py       <- 3 hàm gọi API, trả nguyên JSON server trả về
-│       ├── sinonom_service.py   <- hàm dùng cho pipeline: kiểm tra lỗi, trả `data`, lưu lịch sử upload
-│       └── sinonom_demo.py      <- file chạy thử các hàm service
-└── docs/images/          <- ảnh tài liệu API
+│   ├── api/                  <- client gọi API Kim Hán Nôm (sinonom_api, sinonom_service, sinonom_demo)
+│   └── legacy/               <- 28 script xử lý/kiểm tra đơn lẻ trước đây (lưu trữ tham khảo)
+└── docs/                     <- Quy_dinh_do_an.md và ảnh tài liệu API (docs/images/)
 ```
 
 ## Web UI (`app.py`)
@@ -82,13 +93,14 @@ App chỉ lắng nghe ở `127.0.0.1` (chỉ máy bạn truy cập được).
 
 ### Chuẩn bị dữ liệu: bỏ file PDF vào `data/`
 
-Git **chỉ theo dõi các file cache `.json`** trong `data/`, nên sau khi clone repo bạn tự chép PDF vào. Cụ thể (xem `.gitignore`):
+Git theo dõi nhãn, file dóng hàng và các file cache `.json` trong `data/`, nhưng bỏ qua PDF và ảnh nặng để giữ repo gọn (xem `.gitignore`):
 
 | Được đưa lên git | Không đưa lên git |
 |---|---|
-| `data/cache/.gitkeep`, `type.json`, `uploads.json` | PDF, ảnh trong `ch/ vi/ intro/ ref/ toc/ blank/ misc/`, `Label.txt`, `fileState.txt` |
-| `data/<Tên sách>/cache/*.json` (`phan_loai.json`, `ocr_log.json`) | `data/<Tên sách>/cache/pages/` và `thumbs/` (ảnh) |
-| `data/<Tên sách>/cache/ocr/<engine>/<NNN>.json` (kết quả OCR thô) | ảnh và file debug của row_projection (`cache/ocr/row_projection/<NNN>/`), file `.bak` |
+| `data/cache/.gitkeep`, `type.json`, `uploads.json`, `data/cache/dict/*.json` | PDF, ảnh trong `ch/ vi/ intro/ ref/ toc/ blank/ misc/` |
+| `data/<Tên sách>/{ch,vi,intro,ref,toc}/{Label.txt,fileState.txt}` | `data/<Tên sách>/cache/pages/` và `thumbs/` (ảnh) |
+| `data/<Tên sách>/*.csv`, `*.xlsx`, `align_report.txt` | `Cache.cach`, `*.bak`, `data/cache/dict/raw/` |
+| `data/<Tên sách>/cache/*.json` và `cache/ocr/*/*.json` | ảnh và file debug của row_projection (`cache/ocr/row_projection/<NNN>/`) |
 
 Nhờ vậy cả nhóm dùng chung nhãn trang và kết quả OCR đã chạy mà không phải gọi lại API Kim Hán Nôm hay chạy lại mô hình. Cache gắn với ảnh theo sha256, nên máy khác tách trang ra ảnh khác byte thì cache không khớp và tự tính lại. `.gitkeep` chỉ cần ở `data/cache/` (thư mục của sách sinh ra khi có PDF hoặc khi pull các file cache).
 
@@ -178,7 +190,7 @@ Không cần bấm nút nào. Khi chạy `python app.py`, khi có PDF mới tron
 | T2, T2w | xen kẽ `ch`, `vi`, `ch`, `vi`, ... (Nôm trước, bỏ qua blank) |
 | Tref, Tx, chưa phân loại | không gán, gán tay |
 
-Đây là giả định theo bố cục nên có thể sai (T2 thực tế có thể xen kẽ theo khối, ranh giới T1 hiếm khi đúng giữa). Chỉ trang `unknown` bị đổi và trang đã có nhãn không tính vào chuỗi xen kẽ/chia đôi. Vì máy tự gán ngay khi mở app, hãy duyệt lưới trang và sửa tay `intro`, `toc`, `ref`, `misc` cùng các trang gán sai; nhãn sửa tay không bị ghi đè. Kiểm tra quy tắc bằng `python tests/test_auto_tag.py`.
+Đây là giả định theo bố cục nên có thể sai (T2 thực tế có thể xen kẽ theo khối, ranh giới T1 hiếm khi đúng giữa). Chỉ trang `unknown` bị đổi và trang đã có nhãn không tính vào chuỗi xen kẽ/chia đôi. Vì máy tự gán ngay khi mở app, hãy duyệt lưới trang và sửa tay `intro`, `toc`, `ref`, `misc` cùng các trang gán sai; nhãn sửa tay không bị ghi đè. Kiểm tra toàn bộ dữ liệu sách bằng `python scripts/check_submission.py`.
 
 
 ### Bước 2: OCR
@@ -227,7 +239,7 @@ Chỉ thư mục đã chọn bị đụng tới. Thư mục được nuôi bởi
 Khi bấm **Chạy OCR** trong popup, app làm lần lượt:
 
 1. Chép ảnh từ `cache/pages/` vào thư mục theo nhãn (`ch/`, `vi/`, `intro/`, ..., `blank/`, `misc/`; `ch_vi` vào cả `ch/` và `vi/`). Ảnh của trang đã đổi nhãn bị xoá khỏi thư mục cũ cùng dòng nhãn tương ứng.
-2. OCR từng ảnh và ghi vào `<thư mục>/Label.txt` và `<thư mục>/fileState.txt` theo đúng chuẩn PPOCRLabel (mỗi ảnh một dòng `ch/Tên sách.012.jpg` TAB mảng `{"transcription","points"}`, mỗi box đúng 4 điểm; `fileState.txt` ghi `0`: chưa hoàn thành, chờ duyệt). Ghi từng đợt 5 ảnh nên dừng giữa chừng không mất kết quả.
+2. OCR từng ảnh và ghi vào `<thư mục>/Label.txt` và `<thư mục>/fileState.txt` theo đúng chuẩn PPOCRLabel (mỗi ảnh một dòng `ch/Tên sách.012.jpg` TAB mảng `{"transcription","points"}`, mỗi box đúng 4 điểm; `fileState.txt` ghi `0`: chưa hoàn thành, chờ duyệt). Một số box có thể có thêm `"difficult": false` từ PPOCRLabel — giữ hoặc bỏ đều hợp lệ theo quy định. Ghi từng đợt 5 ảnh nên dừng giữa chừng không mất kết quả.
 3. Ghi thông số (nguồn dùng, số box, lấy từ cache hay không, ảnh lỗi) vào `cache/ocr_log.json`, không đưa vào `Label.txt`.
 
 Lưu ý:
@@ -306,7 +318,7 @@ Mỗi dòng thành một bản ghi `ch` (`status: ok`, kèm `proj`) trong `data/
 
 #### Mở PPOCRLabel để kiểm tra
 
-Mỗi thư mục `ch/`, `vi/`, `intro/`, `ref/`, `toc/` có nút **Mở PPOCRLabel**, kèm số ảnh, số ảnh đã có nhãn và đã duyệt. Bấm nút thì PPOCRLabel mở lên **với đúng thư mục của dòng đó đã được mở sẵn** (app truyền `--image_dir`, tương đương File → Open Dir): ảnh, `Label.txt` và `fileState.txt` được nạp, ảnh đầu tiên hiện luôn trên màn hình. Mở bằng `open_ppocrlabel.bat` thì thêm `--image_dir "data\Tên sách\ch"`, không thêm thì chọn File → Open Dir.
+Mỗi thư mục `ch/`, `vi/`, `intro/`, `ref/`, `toc/` có nút **Mở PPOCRLabel**, kèm số ảnh, số ảnh đã có nhãn và đã duyệt. Bấm nút thì PPOCRLabel mở lên **với đúng thư mục của dòng đó đã được mở sẵn** (app truyền `--image_dir`, tương đương File → Open Dir): ảnh, `Label.txt` và `fileState.txt` được nạp, ảnh đầu tiên hiện luôn trên màn hình. Có thể mở trực tiếp qua dòng lệnh: `python scripts/ppocrlabel_boot.py --image_dir "data\<Tên sách>\ch"`.
 
 **Không cần `pip install PPOCRLabel`.** Mã PPOCRLabel đã chép sẵn trong dự án ([external/PPOCRLabel/](external/PPOCRLabel/), kèm `LICENSE` Apache-2.0; các chỗ sửa riêng đánh dấu `[GK]` và liệt kê ở [CHANGES_GK.md](external/PPOCRLabel/CHANGES_GK.md)). Chỉ cần thư viện giao diện `PyQt5` (có trong `requirements-ocr.txt`): `pip install -r requirements-ocr.txt`. PPOCRLabel **không còn cần `paddlepaddle`/`paddleocr`** (xem mục nối 3 engine bên dưới). Bấm **Mở PPOCRLabel** là app chạy `scripts/ppocrlabel_boot.py` bằng Python đang chạy app (nếu thiếu thư viện thì thử `.venv` của dự án); thiếu thư viện thì màn hình OCR hiện cảnh báo kèm lệnh cài. Chỉ mở được một cửa sổ PPOCRLabel tại một thời điểm; trong lúc nó mở, các số liệu bên dưới tự cập nhật sau khi bạn lưu. Cấu hình tùy chọn trong `.env` (xem `.env.example`): `PPOCRLABEL_LANG` (`en` mặc định = giao diện tiếng Anh, `ch` = tiếng Trung, hoặc mã khác như `vi`) và `PPOCRLABEL_PYTHON` (Python khác có cài `requirements-ocr.txt`, đường dẫn tương đối tính từ thư mục gốc dự án). PPOCRLabel chỉ có giao diện tiếng Trung và tiếng Anh, không có tiếng Việt.
 
@@ -322,9 +334,9 @@ Mỗi thư mục `ch/`, `vi/`, `intro/`, `ref/`, `toc/` có nút **Mở PPOCRLab
 - Nguồn dữ liệu: các engine, bước đọc chữ và cầu nối phát sự kiện qua `scripts/ocr_events.py` (log, tiến độ, trạng thái nạp mô hình, nhịp chờ, huỷ); app web không dùng nó (có log riêng ở bước OCR).
 
 
-**Mở PPOCRLabel không qua app:** bấm đúp [open_ppocrlabel.bat](open_ppocrlabel.bat) (hoặc chạy trong cmd, thêm tham số nếu cần, ví dụ `open_ppocrlabel.bat --lang ch`; mặc định `--lang en`). Lỗi (nếu có) hiện ngay trong cửa sổ cmd. Cửa sổ hiện sau vài giây (PPOCRLabel gốc nạp 11 mô hình PP-OCR mất ~70 giây; bản này không nạp mô hình nào lúc khởi động). Nếu gọi thẳng `PPOCRLabel.exe` của gói pip (không cần nữa) thì PyQt5 nạp trước `torch` làm `torch` lỗi `WinError 1114`; `ppocrlabel_boot.py` nạp `torch` trước. Đã sửa riêng trong mã: **vùng bắt đỉnh box** tính theo pixel màn hình (bản gốc chỉ 5 pixel *của ảnh*, ảnh 300 DPI thu nhỏ chỉ còn ~1 pixel màn hình nên gần như không kéo được góc); **kéo cạnh** (rê vào giữa một cạnh rồi kéo, chỉ cạnh đó dịch song song nên box luôn là hình chữ nhật; giữ `Ctrl` khi bấm thì không bắt cạnh); **`Ctrl+Shift+A` chọn tất cả box** đang hiện (rồi `Ctrl+T` đổi hết thành hình chữ nhật trục, `Delete` xóa, kéo để dịch cả nhóm). Lưu ý: khoảng 78% box Kim Hán Nôm là tứ giác hơi nghiêng chứ không phải hình chữ nhật trục; với các box đó kéo *đỉnh* sẽ làm méo hình, nên dùng kéo cạnh hoặc `Ctrl+T`. Kiểm tra các chỉnh sửa bằng `.venv\Scripts\python.exe tests/test_ppocrlabel_boot.py`.
+**Mở PPOCRLabel không qua app:** chạy `python scripts/ppocrlabel_boot.py --lang en` (thêm `--image_dir "data\<Tên sách>\ch"` nếu muốn mở sẵn thư mục). Cửa sổ hiện sau vài giây (PPOCRLabel gốc nạp 11 mô hình PP-OCR mất ~70 giây; bản này không nạp mô hình nào lúc khởi động). `ppocrlabel_boot.py` nạp `torch` trước `PyQt5` để tránh lỗi `WinError 1114` trên Windows. Đã sửa riêng trong mã: **vùng bắt đỉnh box** tính theo pixel màn hình (bản gốc chỉ 5 pixel *của ảnh*, ảnh 300 DPI thu nhỏ chỉ còn ~1 pixel màn hình nên gần như không kéo được góc); **kéo cạnh** (rê vào giữa một cạnh rồi kéo, chỉ cạnh đó dịch song song nên box luôn là hình chữ nhật; giữ `Ctrl` khi bấm thì không bắt cạnh); **`Ctrl+Shift+A` chọn tất cả box** đang hiện (rồi `Ctrl+T` đổi hết thành hình chữ nhật trục, `Delete` xóa, kéo để dịch cả nhóm). Lưu ý: khoảng 78% box Kim Hán Nôm là tứ giác hơi nghiêng chứ không phải hình chữ nhật trục; với các box đó kéo *đỉnh* sẽ làm méo hình, nên dùng kéo cạnh hoặc `Ctrl+T`.
 
-Lưu ý: PPOCRLabel coi **mọi ảnh có trong `fileState.txt` là đã hoàn thành** (ghi lại thành `1` khi lưu), kể cả dòng app ghi `0`; chỉ lưu sau khi đã kiểm tra hết ảnh. Kiểm tra định dạng `Label.txt` bằng `python tests/test_ocr_jobs.py`.
+Lưu ý: PPOCRLabel coi **mọi ảnh có trong `fileState.txt` là đã hoàn thành** (ghi lại thành `1` khi lưu), kể cả dòng app ghi `0`; chỉ lưu sau khi đã kiểm tra hết ảnh. Kiểm tra định dạng `Label.txt` và bộ dữ liệu bằng `python scripts/check_submission.py`.
 
 
 ## Web đối chiếu CH và VI
@@ -367,20 +379,22 @@ Bạn cũng có thể mở trực tiếp [review.html](review-web/review.html) r
 
 ## 1. Cài đặt
 
-Python 3.12. Nên dùng môi trường ảo ngay trong dự án (`.venv/` đã nằm trong `.gitignore`):
+Python `3.11.0` (`transformers==5.22.1` yêu cầu `>=3.11.0`). Nên dùng môi trường ảo ngay trong dự án (`.venv/` đã nằm trong `.gitignore`):
 
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
-pip install -r requirements.txt        # cơ bản: app, tách trang, nhận diện trang trắng, gọi API, row_projection
+pip install -r requirements.txt
 ```
 
 Muốn OCR chạy trên máy (PaddleOCR-VL) và mở PPOCRLabel để kiểm tra nhãn:
 
 ```bash
-pip install torch torchvision          # chọn bản CPU/CUDA đúng máy: https://pytorch.org/get-started/locally/
-pip install -r requirements-ocr.txt    # PaddleOCR-VL (paddleocr, transformers), PyQt5 (đã gồm requirements.txt)
+pip install torch==2.8.0 torchvision==0.23.0
+pip install -r requirements-ocr.txt
 ```
+
+Muốn chạy thêm Vintern-1B-v3.5 đọc chữ Quốc ngữ cho `row_projection`, tạo môi trường riêng theo [requirements-vintern.txt](requirements-vintern.txt).
 
 - Chỉ **một** gói OpenCV (`opencv-contrib-python`, đúng bản paddlex ghim). Đừng cài thêm `opencv-python` hay bản headless: chúng ghi đè lẫn nhau lên thư mục `cv2/` và gỡ một gói sẽ làm hỏng `cv2`.
 - Không cần `pip install PPOCRLabel` (mã đã có trong `external/`).

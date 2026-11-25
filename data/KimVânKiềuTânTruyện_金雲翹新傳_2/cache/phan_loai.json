@@ -8,15 +8,14 @@
   "total_pages": 70,
   "pages": {
     "1": {
-      "tag": "ch",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
         "components": 157,
         "active": 0.2685,
         "ink": 0.0767
-      },
-      "auto": true
+      }
     },
     "2": {
       "tag": "ch",
@@ -782,7 +781,7 @@
     "at": "2026-11-07T00:43:59.117779",
     "side": 640
   },
-  "last_updated": "2026-11-22T23:31:51.479741",
+  "last_updated": "2026-11-25T22:23:30.784049",
   "autotag": {
     "type": "Tnom",
     "at": "2026-11-07T00:43:59.166172"
