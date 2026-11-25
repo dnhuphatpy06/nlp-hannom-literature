@@ -8,6 +8,7 @@ Hiện có các bước:
   4. Bước OCR (sau khi gán nhãn trang): chọn nguồn OCR theo nhãn (Kim Hán Nôm, PaddleOCR-VL, row_projection),
      ghi <Tên sách>/<ch|vi|...>/Label.txt + fileState.txt theo chuẩn PPOCRLabel, rồi mở PPOCRLabel để kiểm tra
      (scripts/ocr_jobs.py). Không OCR trang blank, misc.
+  5. Đối chiếu CH và VI tại /review/ để kiểm tra ảnh và sửa chữ trong Label.txt.
 
 Cấu trúc data/ giống thư mục nộp bài, xem scripts/library.py. Các công cụ hỗ trợ nằm trong scripts/.
 """
@@ -20,6 +21,7 @@ import urllib.parse
 import webbrowser
 from pathlib import Path
 
+from review_local import REVIEW_PATH, review_handler
 from scripts import book_types, library, ocr_engines, ocr_jobs, page_cache, split_jobs
 from scripts.library import UNKNOWN
 
@@ -86,7 +88,7 @@ def build_book(data_dir: Path, type_file: Path, name: str) -> dict:
 # HTTP server
 # ==============================================================================
 def make_handler(data_dir: Path, type_file: Path):
-    class Handler(http.server.BaseHTTPRequestHandler):
+    class Handler(review_handler(data_dir, prefix=REVIEW_PATH, pdf_lock=split_jobs.pdf_lock)):
         def log_message(self, format, *args):
             pass
 
@@ -115,9 +117,12 @@ def make_handler(data_dir: Path, type_file: Path):
 
         def do_GET(self):
             parsed = urllib.parse.urlparse(self.path)
+            path = parsed.path
+            if path == REVIEW_PATH or path.startswith(REVIEW_PATH + "/"):
+                super().do_GET()
+                return
             query = urllib.parse.parse_qs(parsed.query)
             name = query.get("name", [""])[0]
-            path = parsed.path
 
             if path in ("/", "/index.html"):
                 if not HTML_FILE.is_file():

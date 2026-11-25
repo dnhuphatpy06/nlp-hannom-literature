@@ -14,13 +14,13 @@ Tuân thủ quy định đồ án về môi trường triển khai mã nguồn:
 
 Dự án gồm hai phần chính:
 
-- **Web UI `app.py`**: gán loại sách, tách PDF thành ảnh từng trang, gán nhãn trang (`ch`, `vi`, `blank`, ...) để chuẩn bị dữ liệu nộp bài. Xem [mục Web UI](#web-ui-apppy). **Không cần token.**
+- **Web UI `app.py`**: gán loại sách, tách PDF thành ảnh từng trang, gán nhãn trang (`ch`, `vi`, `blank`, ...) để chuẩn bị dữ liệu nộp bài. Sau khi OCR, dùng [web đối chiếu CH và VI](#web-đối-chiếu-ch-và-vi) để soát ảnh và sửa chữ. Xem [mục Web UI](#web-ui-apppy). **Không cần token.**
 - **API Kim Hán Nôm** (`scripts/api/`): các hàm Python gọi API upload ảnh, OCR và dịch âm Hán-Nôm của `https://kimhannom.fit.hcmus.edu.vn/`, dùng trong pipeline xử lý. Xem [mục 2 trở đi](#2-lấy-token).
 
 ## Cấu trúc thư mục
 
 ```
-GK/
+nlp-hannom-literature/
 ├── .env                  <- điền TOKEN vào đây
 ├── .env.example          <- file mẫu
 ├── requirements.txt      <- thư viện cơ bản
@@ -28,6 +28,8 @@ GK/
 ├── open_ppocrlabel.bat   <- bấm đúp để mở PPOCRLabel không qua app (xem mục "Mở PPOCRLabel để kiểm tra")
 ├── app.py                <- file chính: Web UI (gán loại sách, tách trang), chạy `python app.py`
 ├── web/index.html        <- giao diện của app.py
+├── review_local.py       <- phục vụ web đối chiếu CH và VI, đọc và lưu Label.txt
+├── review-web/           <- giao diện đối chiếu và file Mo-web-doi-chieu.bat
 ├── data/                 <- dữ liệu, cấu trúc giống thư mục nộp bài (git chỉ theo dõi các file cache .json, xem bên dưới)
 │   ├── cache/            <- cache dùng chung: type.json (loại sách), uploads.json (lịch sử upload ảnh)
 │   └── <Tên sách>/       <- <Tên sách>.pdf, ch/ vi/ intro/ ref/ toc/ blank/ misc/ và cache/ (không nộp)
@@ -324,6 +326,44 @@ Mỗi thư mục `ch/`, `vi/`, `intro/`, `ref/`, `toc/` có nút **Mở PPOCRLab
 
 Lưu ý: PPOCRLabel coi **mọi ảnh có trong `fileState.txt` là đã hoàn thành** (ghi lại thành `1` khi lưu), kể cả dòng app ghi `0`; chỉ lưu sau khi đã kiểm tra hết ảnh. Kiểm tra định dạng `Label.txt` bằng `python tests/test_ocr_jobs.py`.
 
+
+## Web đối chiếu CH và VI
+
+### Mở từ app
+
+Chạy `python app.py` trong thư mục chứa `app.py`. Bấm **Đối chiếu CH–VI** ở màn hình danh sách sách hoặc trong bước **2. OCR** để mở web đối chiếu ở tab mới. Bạn cũng có thể mở `http://localhost:8766/review/`. Nếu app dùng cổng khác, thêm `/review/` vào địa chỉ mà app in trong console.
+
+Web dùng chung thư mục dữ liệu với app. Khi chạy `python app.py --data "D:/Du-lieu-OCR"`, web đối chiếu cũng đọc và lưu nhãn trong thư mục đó.
+
+### Soát ảnh và sửa chữ
+
+1. Sau khi OCR hoặc lưu bbox bằng PPOCRLabel, chọn **Sách** và **Trang**. Web hiển thị ảnh cắt và chữ từ `ch/Label.txt` và `vi/Label.txt`. Có thể xem sách chỉ có một trong hai thư mục nhãn.
+2. Sửa chữ trong ô tương ứng rồi bấm **Lưu chữ** hoặc **Ctrl+S**. Web ghi phần chữ đã sửa vào `Label.txt` của từng bên và giữ nguyên tọa độ bbox cùng trạng thái trong `fileState.txt`. Nếu nhãn thay đổi trong lúc bạn sửa và web báo xung đột, bấm **Tải lại** để đọc bản trên đĩa rồi kiểm tra trước khi sửa lại.
+3. Bấm **Xem ảnh toàn trang** rồi **Hiện bbox** để kiểm tra vị trí khung. Khung cam đánh dấu dòng đang chọn. Web ưu tiên ảnh cùng tên trong `ch/` hoặc `vi/`, rồi đến `cache/pages/`. Khi thiếu ảnh, web có thể dựng trang từ PDF gốc nếu `cache/phan_loai.json` có thông tin DPI và số trang. Tính năng này dùng PyMuPDF có sẵn trong `requirements.txt`.
+
+Dùng **← / →** để đổi trang, **↑ / ↓** để chọn dòng, **Enter** để phóng to và **R** để tải lại ảnh và nhãn. Nút **Trang chưa duyệt** chuyển đến trang tiếp theo theo trạng thái trong `fileState.txt`. Bấm **?** để xem tất cả phím tắt.
+
+### Mở riêng
+
+Trên Windows, bấm đúp [Mo-web-doi-chieu.bat](review-web/Mo-web-doi-chieu.bat). Trên Windows hoặc Linux, chạy lệnh sau từ thư mục chứa `app.py`.
+
+```bash
+python review_local.py
+```
+
+Web mở tại `http://127.0.0.1:8768/`. Giữ cửa sổ lệnh mở trong lúc dùng. Chế độ này ưu tiên `review-web/data/` nếu có, sau đó dùng `data/` cạnh `app.py`. Bạn có thể trỏ đến thư mục chứa nhiều sách hoặc thư mục của một sách bằng `--data`.
+
+```powershell
+.\review-web\Mo-web-doi-chieu.bat --data "D:\Du-lieu-OCR"
+```
+
+```bash
+python review_local.py --data "/duong/dan/thu-muc-sach"
+```
+
+Dùng `--port N` để đổi cổng hoặc `--no-browser` để mở địa chỉ bằng tay. Nếu chạy bằng một Python riêng và cần dựng ảnh từ PDF, chạy `python -m pip install PyMuPDF` trong môi trường đó.
+
+Bạn cũng có thể mở trực tiếp [review.html](review-web/review.html) rồi bấm **Chọn thư mục**. Nếu trình duyệt không cấp quyền ghi trực tiếp, bấm **Lưu chữ** để hiện nút tải nhãn CH hoặc VI về máy.
 
 ## 1. Cài đặt
 

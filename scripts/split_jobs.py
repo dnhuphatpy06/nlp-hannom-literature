@@ -29,7 +29,7 @@ THUMB_SIZE = (360, 520)
 # Trạng thái tác vụ tách trang đang chạy / vừa lỗi (trong bộ nhớ)
 _jobs: dict[str, dict] = {}
 _jobs_lock = threading.Lock()
-# PyMuPDF không an toàn đa luồng: tách trang và nhận diện trang trắng không được chạy cùng lúc
+# PyMuPDF không an toàn đa luồng. Tách trang, nhận diện trang trắng và dựng ảnh đối chiếu dùng chung khóa.
 pdf_lock = threading.Lock()
 
 
@@ -68,7 +68,7 @@ def start_split(data_dir: Path, type_file: Path, name: str, dpi: int, force: boo
         if any(j["status"] == "running" for j in _jobs.values()):
             raise SplitBusy("Đang có một sách khác được tách trang, hãy đợi xong rồi thử lại.")
         if not pdf_lock.acquire(blocking=False):
-            raise SplitBusy("Đang nhận diện trang trắng, hãy đợi xong rồi thử lại.")
+            raise SplitBusy("Đang nhận diện trang trắng hoặc dựng ảnh đối chiếu, hãy đợi xong rồi thử lại.")
         _jobs[key] = {"status": "running", "done": 0, "total": 0}
     try:
         threading.Thread(target=_run_split, args=(book, key, type_file, dpi, force), daemon=True).start()

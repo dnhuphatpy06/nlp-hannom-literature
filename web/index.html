@@ -44,6 +44,7 @@ h1 { font-size: 20px; margin: 0 0 4px; word-break: break-word; }
 .sub { color: var(--muted); font-size: 13px; margin-bottom: 16px; word-break: break-all; }
 .bar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 12px; }
 .bar .grow { flex: 1; }
+.review-link { color: var(--accent); }
 input[type=search], input[type=number], input[type=text], select { padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--text); font: inherit; }
 input[type=search] { min-width: 220px; }
 input[type=number] { width: 72px; }
@@ -184,6 +185,7 @@ details li { word-break: break-all; }
       <select id="filter" aria-label="Lọc theo loại"></select>
       <span class="stats" id="stats"></span>
       <span class="grow"></span>
+      <a class="review-link" href="/review/" target="_blank" rel="noopener">Đối chiếu CH–VI</a>
       <span class="dirty" id="dirty">Chưa lưu</span>
       <button class="primary" id="saveBtn" disabled>Save</button>
     </div>
@@ -285,6 +287,7 @@ details li { word-break: break-all; }
 
       <div class="ocr-section">
         <h2>OCR riêng từng thư mục và kiểm tra bằng PPOCRLabel</h2>
+        <div class="ocr-note"><a class="review-link" href="/review/" target="_blank" rel="noopener">Đối chiếu CH–VI</a></div>
         <div class="ocr-note" id="ppocrNote"></div>
         <table class="ocr-table">
           <thead><tr><th>Thư mục</th><th>Ảnh</th><th>Đã có nhãn</th><th title="Số ảnh còn ít nhất một box có chữ rỗng; chạy OCR (không ghi đè) sẽ điền các box này">Còn box trống</th><th>Đã duyệt</th><th></th></tr></thead>
