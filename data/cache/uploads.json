@@ -468,105 +468,33 @@
     "uploaded_at": "2026-11-07T14:13:17+00:00"
   },
   {
-    "image_path": "img/test_api/test_1.png",
-    "sha256": "67062d62bf2147e7b40189101c969e20e5fff3b969302fa297fb83b42c7029c9",
-    "file_name": "upload_1ea9ae61c0734ce68b3bfcb3a55fa0fc.png",
-    "uploaded_at": "2026-11-09T09:10:57+00:00"
+    "image_path": "data/KimVânKiềuTânTruyện_金雲翹新傳_2/ch/KimVânKiềuTânTruyện_金雲翹新傳_2.010.jpg",
+    "sha256": "79fcfe829fd4c855b4ed714562feda96b0d1b064ffefd3d5b34cdee3384e9494",
+    "file_name": "upload_b0a64f178d5a48018760701ecd511952.jpg",
+    "uploaded_at": "2026-11-09T09:20:49+00:00"
   },
   {
-    "image_path": "temp_crop0.jpg",
-    "sha256": "4424a8b198945624c71308cf0664ea93011982ae8aff3b27a048dcc5df60b440",
-    "file_name": "upload_4c77851b173543028f6d5a4c9d68a801.jpg",
-    "uploaded_at": "2026-11-09T09:40:01+00:00"
+    "image_path": "img/merged_pages/TruyenVuaQuangTrung/006.ch_only.jpg",
+    "sha256": "bc174e6a5de71f42af4163521d7e5ff70c53210656204a229f25b3fe27d2e1d5",
+    "file_name": "upload_bec6514bb39e4e3b81a4b6b0f6a23611.jpg",
+    "uploaded_at": "2026-11-11T12:07:47+00:00"
   },
   {
-    "image_path": "temp_crop0.jpg",
-    "sha256": "4424a8b198945624c71308cf0664ea93011982ae8aff3b27a048dcc5df60b440",
-    "file_name": "upload_1bd3f42911174278b94ac457465e5d33.jpg",
-    "uploaded_at": "2026-11-09T09:40:55+00:00"
+    "image_path": "img/merged_pages/TruyenVuaQuangTrung/007.ch_only.jpg",
+    "sha256": "2bac176b12dfab576469cc21f11654bd87d61a586903c9c00931fe4904aaa291",
+    "file_name": "upload_35dcd527b00c4a3cb5819ba0ff4bca08.jpg",
+    "uploaded_at": "2026-11-11T12:14:32+00:00"
   },
   {
-    "image_path": "temp_full.jpg",
-    "sha256": "5bd222161d7d115bc568c14aa5abf2be0936b9f48101aa89047c1d76b7f0cde4",
-    "file_name": "upload_e0ed0f0a74ca49f786b8adace13a6e77.jpg",
-    "uploaded_at": "2026-11-09T09:41:52+00:00"
+    "image_path": "img/quangtrung006.jpg",
+    "sha256": "b611876070abfab598bca5ded49c081d1a1b7574dd15b0506446b2f743342d43",
+    "file_name": "upload_ed980424b48f4892b653bb0e5f556dc4.jpg",
+    "uploaded_at": "2026-11-11T12:32:45+00:00"
   },
   {
-    "image_path": "temp_padded.jpg",
-    "sha256": "4a79038de0b4a95dd9d1f937f2ee0317c1c1b4914d331024d835b648b1a62b49",
-    "file_name": "upload_0f9400f0a7cc4771b0c051e0c6223302.jpg",
-    "uploaded_at": "2026-11-09T09:41:56+00:00"
-  },
-  {
-    "image_path": "debug_crop0.jpg",
-    "sha256": "4424a8b198945624c71308cf0664ea93011982ae8aff3b27a048dcc5df60b440",
-    "file_name": "upload_bcf2b24dd3cf42a8b2034cff0e262493.jpg",
-    "uploaded_at": "2026-11-09T10:16:44+00:00"
-  },
-  {
-    "image_path": "debug_crop4.jpg",
-    "sha256": "6955d7f6a84076adab869c6e7b76640a3db2e4d60796e2a3fa8f773fffade8bd",
-    "file_name": "upload_0d1a1a63483849948c63ed65aee3986b.jpg",
-    "uploaded_at": "2026-11-09T10:18:12+00:00"
-  },
-  {
-    "image_path": "debug_rot.jpg",
-    "sha256": "ca61914dab75a10feeb8feea3a49481c43e5bdefa6d3da453b318e76ac68c011",
-    "file_name": "upload_52dbf83f9e08400282c920326637f209.jpg",
-    "uploaded_at": "2026-11-09T10:19:22+00:00"
-  },
-  {
-    "image_path": "C:\\Users\\ADMIN\\.gemini\\antigravity\\brain\\f5f7c49f-c29c-47ff-a16e-0bf3af9783e9\\.user_uploaded\\media_1794232468733_13a144c0.png",
-    "sha256": "e8a0bec76331831c9df3e0c8149b685e961a52a2d4c7a55a531916e15dcd460b",
-    "file_name": "upload_b2e317bc33a14570839b3c1cfe88d03b.png",
-    "uploaded_at": "2026-11-09T13:55:49+00:00"
-  },
-  {
-    "image_path": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\gk_ppocrlabel\\test_quad.jpg",
-    "sha256": "bf55beb6402238e77d6ff287885d55800cf629ef486393d8a926080d920db858",
-    "file_name": "upload_f457c1584d7841e480f6060d930a9be9.jpg",
-    "uploaded_at": "2026-11-10T01:57:06+00:00"
-  },
-  {
-    "image_path": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\gk_ppocrlabel\\test_108.jpg",
-    "sha256": "fbc75ebb2598c4ea5211110282f7f1d74aa2391ee44397cbacb85ffad84c4d03",
-    "file_name": "upload_6cfc52d234ab4355832c7d204fb77902.jpg",
-    "uploaded_at": "2026-11-19T18:59:09+00:00"
-  },
-  {
-    "image_path": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\gk_ppocrlabel\\test_109.jpg",
-    "sha256": "b3284856a30cd44f1971891ad930f8ea2c2638d8dda095e5461e359eef112c67",
-    "file_name": "upload_feb330c3dd344ae1b2bf26ada60a3956.jpg",
-    "uploaded_at": "2026-11-19T18:59:29+00:00"
-  },
-  {
-    "image_path": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\gk_ppocrlabel\\test_110.jpg",
-    "sha256": "c981c0a2e1c0d0f9c3c7d7ef2f44394680b828d3013585d521a832237ce49778",
-    "file_name": "upload_f293cef88d66412ea54a61d0a0eeb543.jpg",
-    "uploaded_at": "2026-11-19T18:59:40+00:00"
-  },
-  {
-    "image_path": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\gk_ppocrlabel\\test_111.jpg",
-    "sha256": "364d948ea12bcb0b5aad5cad79fdb2434c38a2ec058642d3c6a283c3652258ed",
-    "file_name": "upload_76987a4b67ad4e1ab8f8a2e129f4fa81.jpg",
-    "uploaded_at": "2026-11-19T18:59:48+00:00"
-  },
-  {
-    "image_path": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\gk_ppocrlabel\\test_111.jpg",
-    "sha256": "1d9b5867e6a6e435d04b9f3e1c325abc915c4b908aa9591dbfaaece2bf3d6c39",
-    "file_name": "upload_a1f6563388244378a9cf9f1e38b3c60d.jpg",
-    "uploaded_at": "2026-11-19T19:00:28+00:00"
-  },
-  {
-    "image_path": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\gk_ppocrlabel\\test_112.jpg",
-    "sha256": "b18e68479fb3853e16d78193eff3de74267b9bd0425c89720d889e310868b282",
-    "file_name": "upload_bc22a9ab911f4eefa360ce0b8ca195d7.jpg",
-    "uploaded_at": "2026-11-19T19:01:05+00:00"
-  },
-  {
-    "image_path": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\gk_ppocrlabel\\test_108.jpg",
-    "sha256": "5c66bba9836fac5ff1380cec49f01f3a7aed9abcb44dd1c389406b51c7947b2b",
-    "file_name": "upload_267c2e8af74c402ca666c9a1b3421424.jpg",
-    "uploaded_at": "2026-11-19T19:02:08+00:00"
+    "image_path": "img/quangtrung007.jpg",
+    "sha256": "1733f9962d63a80d2b65745a71426181b18378434397fe105c7f387ffe507e44",
+    "file_name": "upload_820b219c38f849078633993aee24d6ed.jpg",
+    "uploaded_at": "2026-11-11T12:33:28+00:00"
   }
 ]

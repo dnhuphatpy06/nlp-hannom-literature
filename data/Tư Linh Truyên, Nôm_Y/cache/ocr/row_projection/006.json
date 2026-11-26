@@ -1,0 +1,190 @@
+{
+  "engine": "row_projection",
+  "page": 6,
+  "saved": "2026-11-09T15:56:01.356932",
+  "image": {
+    "name": "Tư Linh Truyên, Nôm_Y.006.jpg",
+    "sha256": "d03de6da46ac39f1c1b0def2d6929bdd679f03ce9e1ad0ac1acde187255a0b13",
+    "size": 863910
+  },
+  "params": {
+    "bg_kernel": 25,
+    "blob_dilate": 0.3,
+    "blob_mass": 0.35,
+    "edge_ratio": 0.05,
+    "ink_thresh": null,
+    "line_len": null,
+    "margin": 6,
+    "merge_gap": 2,
+    "min_height": 8,
+    "min_width_ratio": 0.4,
+    "near_gap": 0.35,
+    "no_auto_crop": false,
+    "no_clean_x": false,
+    "no_post": false,
+    "pad": 2,
+    "peak_prom": 0.2,
+    "post_min_rows": 4,
+    "punct_gap": 2.0,
+    "punct_size": 0.45,
+    "roi": null,
+    "save_crops": false,
+    "sliver_gap": 0.15,
+    "sliver_max_height": 1.35,
+    "sliver_ratio": 0.45,
+    "sliver_x_overlap": 0.5,
+    "smooth": 2.5,
+    "thr_ratio": 0.012,
+    "valley_ratio": 0.6,
+    "x_trim": 0.5
+  },
+  "boxes": [
+    {
+      "text": "",
+      "points": [
+        [
+          213,
+          654
+        ],
+        [
+          1633,
+          654
+        ],
+        [
+          1633,
+          781
+        ],
+        [
+          213,
+          781
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          211,
+          777
+        ],
+        [
+          1888,
+          777
+        ],
+        [
+          1888,
+          898
+        ],
+        [
+          211,
+          898
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          208,
+          894
+        ],
+        [
+          1763,
+          894
+        ],
+        [
+          1763,
+          1045
+        ],
+        [
+          208,
+          1045
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          799,
+          1184
+        ],
+        [
+          1944,
+          1184
+        ],
+        [
+          1944,
+          1301
+        ],
+        [
+          799,
+          1301
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          205,
+          1297
+        ],
+        [
+          2032,
+          1297
+        ],
+        [
+          2032,
+          1461
+        ],
+        [
+          205,
+          1461
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          205,
+          1484
+        ],
+        [
+          1642,
+          1484
+        ],
+        [
+          1642,
+          1609
+        ],
+        [
+          205,
+          1609
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          205,
+          1605
+        ],
+        [
+          1762,
+          1605
+        ],
+        [
+          1762,
+          1810
+        ],
+        [
+          205,
+          1810
+        ]
+      ]
+    }
+  ]
+}

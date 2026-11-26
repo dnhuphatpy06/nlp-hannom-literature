@@ -1,7 +1,7 @@
 {
   "engine": "row_projection",
   "page": 18,
-  "saved": "2026-11-08T20:54:43.992874",
+  "saved": "2026-11-26T14:05:32.888209",
   "image": {
     "name": "Nguyêt Lịnh Quôc Âm Ca, Nôm_Y.018.jpg",
     "sha256": "ca130b7cf87c74d8ba2701bbb0aa5fbf749759637e4eda8e20a14cfb072ef6cc",
@@ -36,6 +36,8 @@
     "smooth": 2.5,
     "thr_ratio": 0.012,
     "valley_ratio": 0.6,
+    "vline_ratio": 0.25,
+    "vline_tilt": 3.0,
     "x_trim": 0.5
   },
   "boxes": [

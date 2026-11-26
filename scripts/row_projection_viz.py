@@ -11,7 +11,9 @@ Các bước (mọi ngưỡng tính bằng pixel của ảnh gốc, trừ khi gh
     1. Thang xám -> tự cắt vùng giấy (bỏ viền trắng, tiêu đề ngoài giấy) nếu không có --no-auto-crop.
     2. Chuẩn hóa nền: nền = closing thang xám bằng kernel --bg-kernel; mực = nền - ảnh.
     3. Nhị phân hóa mực bằng Otsu (hoặc --ink-thresh); loại đường kẻ ô: nét ngang dài hơn --line-len
-       (mặc định 1/10 chiều rộng giấy) và nét dọc dài hơn 1/10 chiều cao giấy bị trừ khỏi mặt nạ.
+       (mặc định 1/10 chiều rộng giấy) và nét dọc dài hơn 1/10 chiều cao giấy bị trừ khỏi mặt nạ. Riêng đường lề dọc của vở
+       (mảnh, hơi nghiêng, đứt đoạn) được bắt bằng Hough có cho phép nghiêng (--vline-ratio, --vline-tilt), nếu không nó thành
+       "khối chữ" sát lề và kéo box bên trái của hàng sang tận lề.
     4. Chiếu ngang: với mỗi hàng pixel đếm số pixel mực, làm mượt Gauss (--smooth), hàng pixel "có chữ" khi
        đếm >= --thr-ratio x chiều rộng giấy.
     5. Các đoạn liên tiếp có chữ là một hàng; khe hở ngắn hơn --merge-gap thì nối lại; đoạn thấp hơn
@@ -25,8 +27,8 @@ Các bước (mọi ngưỡng tính bằng pixel của ảnh gốc, trừ khi gh
        Box được nới --pad px mỗi phía.
     8. Hậu xử lý ô nhỏ (postprocess_rows): mảnh MỎNG (cao < --sliver-ratio x chiều cao trung vị, thường là phần chữ cao/đuôi chữ
        bị cắt rời thành một "hàng" riêng) được gộp vào hàng kề nếu chạm/chồng theo chiều dọc, trùm lên nhau theo chiều ngang và hàng
-       gộp không cao quá --sliver-max-height x trung vị; ô còn lại quá hẹp (rộng < --min-width-ratio x chiều rộng trung vị: nét
-       nguệch ngoạc, số thứ tự dòng, vết bẩn) hoặc quá mỏng thì bị bỏ. Nhờ vậy số hàng không bị thừa và thứ tự hàng (lẻ/chẵn = Hán/Quốc ngữ)
+       gộp không cao quá --sliver-max-height x trung vị; ô còn lại quá hẹp (rộng < --min-width-ratio x chiều rộng trung vị VÀ tâm nằm ngoài khối chữ: số thứ tự dòng, ghi chú lề,
+       vết bẩn; dòng ngắn nằm trong khối chữ như tiêu đề thì giữ) hoặc quá mỏng thì bị bỏ. Nhờ vậy số hàng không bị thừa và thứ tự hàng (lẻ/chẵn = Hán/Quốc ngữ)
        không bị lệch. Tắt bằng --no-post; ô bị bỏ/gộp được ghi trong _res.json ("post") và vẽ màu xám trong _boxes.png.
 
 Đầu ra trong <out-dir> (mặc định output/row_projection/<tên ảnh>/):
@@ -78,8 +80,38 @@ def find_paper(gray: np.ndarray, white: int = 245) -> tuple[int, int, int, int]:
     return int(x), int(y), int(x + w), int(y + h)
 
 
-def ink_mask(gray: np.ndarray, bg_kernel: int, ink_thresh: float | None, line_len: int):
-    """Mặt nạ mực (255 = mực) đã chuẩn hóa nền và loại đường kẻ ô."""
+def tilted_vertical_lines(mask: np.ndarray, min_ratio: float, max_tilt: float, thickness: int = 5) -> np.ndarray:
+    """Mặt nạ (uint8, 255 = đường) của các đường kẻ DỌC NGHIÊNG NHẸ chạy dọc trang, như lề đỏ của vở học sinh.
+
+    Kernel mở 1 px thẳng đứng trong ink_mask chỉ bắt được đường dọc tuyệt đối thẳng; ảnh scan hơi lệch (~0.2-1 độ) làm đường lề
+    đứt thành các đoạn ngắn, lọt qua bước đó và còn lại trong mặt nạ mực, rồi bị tính nhầm thành "chữ" sát lề (box trái của hàng
+    bị kéo sát vào lề vở). Ở đây dùng Hough: lấy các đường lệch khỏi phương dọc <= max_tilt độ mà có >= min_ratio x chiều cao trang
+    pixel mực nằm trên đó (đường lề đứt đoạn vẫn đủ phiếu), gộp các ứng viên trùng nhau, rồi vẽ lại mỗi đường dày `thickness` px.
+    """
+    h = mask.shape[0]
+    out = np.zeros_like(mask)
+    if min_ratio <= 0 or h < 20:
+        return out
+    tilt = np.deg2rad(max_tilt)
+    found: list[tuple[float, float, float]] = []   # (số phiếu, rho, theta)
+    for lo, hi in ((0.0, tilt), (np.pi - tilt, np.pi)):   # theta ~ 0 hoặc ~ pi là đường dọc
+        res = cv2.HoughLinesWithAccumulator(mask, 1, np.pi / 1440, max(10, int(min_ratio * h)), min_theta=lo, max_theta=hi)
+        if res is not None:   # OpenCV 4 trả (N,1,3), OpenCV 5 trả (N,3); cột: rho, theta, số phiếu
+            found += [(float(v), float(r), float(t)) for r, t, v in np.asarray(res).reshape(-1, 3)]
+    kept: list[tuple[float, float]] = []             # (x ở mép trên, x ở mép dưới) của các đường đã nhận
+    for _, rho, theta in sorted(found, reverse=True):
+        c, s = np.cos(theta), np.sin(theta)
+        xt, xb = rho / c, (rho - (h - 1) * s) / c
+        if any(abs(xt - a) <= thickness + 1 and abs(xb - b) <= thickness + 1 for a, b in kept):
+            continue                                 # cùng một đường, ứng viên Hough lân cận
+        kept.append((xt, xb))
+        cv2.line(out, (int(round(xt)), 0), (int(round(xb)), h - 1), 255, thickness)
+    return out
+
+
+def ink_mask(gray: np.ndarray, bg_kernel: int, ink_thresh: float | None, line_len: int, vline_ratio: float = 0.0,
+             vline_tilt: float = 3.0):
+    """Mặt nạ mực (255 = mực) đã chuẩn hóa nền và loại đường kẻ ô. vline_ratio > 0: loại thêm đường kẻ dọc nghiêng nhẹ."""
     k = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (bg_kernel, bg_kernel))
     bg = cv2.morphologyEx(gray, cv2.MORPH_CLOSE, k)  # closing xoá nét tối mảnh -> còn lại nền giấy
     diff = cv2.subtract(bg, gray)                      # mực dương, nền ~ 0
@@ -94,6 +126,8 @@ def ink_mask(gray: np.ndarray, bg_kernel: int, ink_thresh: float | None, line_le
     hl = cv2.morphologyEx(mask, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_RECT, (h_len, 1)))
     vl = cv2.morphologyEx(mask, cv2.MORPH_OPEN, cv2.getStructuringElement(cv2.MORPH_RECT, (1, v_len)))
     lines = cv2.dilate(cv2.bitwise_or(hl, vl), cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3)))
+    if vline_ratio > 0:
+        lines = cv2.bitwise_or(lines, tilted_vertical_lines(mask, vline_ratio, vline_tilt))
     return cv2.bitwise_and(mask, cv2.bitwise_not(lines)), float(t)
 
 
@@ -265,9 +299,14 @@ def postprocess_rows(rows: list[list[int]], args) -> tuple[list[list[int]], dict
                 break
 
     # 2) ô còn lại quá hẹp (nét nguệch ngoạc, số dòng, vết bẩn) hoặc quá mỏng mà không gộp được -> bỏ
+    # Ô hẹp chỉ bị coi là nhiễu khi tâm của nó nằm NGOÀI khoảng ngang của khối chữ (số dòng, ghi chú ở lề). Dòng ngắn nằm trong
+    # khối chữ (tiêu đề, "Bài tựa", "Soạn"...) là hàng thật: bỏ nó sẽ làm lệch thứ tự lẻ/chẵn Hán/Quốc ngữ của mọi hàng phía sau.
+    body_lo = float(np.percentile([r[0] for r in rows], 10))
+    body_hi = float(np.percentile([r[2] for r in rows], 90))
     kept = []
     for r in rows:
-        if r[2] - r[0] < args.min_width_ratio * med_w or r[3] - r[1] < args.sliver_ratio * med_h:
+        narrow = r[2] - r[0] < args.min_width_ratio * med_w and not body_lo <= (r[0] + r[2]) / 2 <= body_hi
+        if narrow or r[3] - r[1] < args.sliver_ratio * med_h:
             info["dropped"].append(r)
         else:
             kept.append(r)
@@ -303,6 +342,11 @@ def build_parser() -> argparse.ArgumentParser:
     ap.add_argument("--bg-kernel", type=int, default=25, help="kernel closing ước lượng nền (mặc định 25)")
     ap.add_argument("--ink-thresh", type=float, help="ngưỡng mực cố định 0-255 (mặc định: Otsu)")
     ap.add_argument("--line-len", type=int, help="độ dài tối thiểu của nét bị coi là đường kẻ (mặc định 1/10 chiều rộng giấy)")
+    ap.add_argument("--vline-ratio", type=float, default=0.25,
+                    help="loại đường kẻ dọc nghiêng nhẹ (lề đỏ của vở) có mực >= tỉ lệ này x chiều cao giấy nằm trên đường; "
+                         "0 = tắt (mặc định 0.25)")
+    ap.add_argument("--vline-tilt", type=float, default=3.0,
+                    help="độ nghiêng tối đa (độ) so với phương dọc của đường kẻ dọc cần loại (mặc định 3)")
     ap.add_argument("--smooth", type=float, default=2.5, help="sigma làm mượt profile (mặc định 2.5)")
     ap.add_argument("--thr-ratio", type=float, default=0.012,
                     help="hàng pixel có chữ khi số pixel mực >= tỉ lệ này x chiều rộng giấy (mặc định 0.012)")
@@ -372,7 +416,7 @@ def process(args, image_path: Path, out_dir: Path, stem: str | None = None, verb
     log(f"Vùng xử lý: x={x0}..{x1} y={y0}..{y1} ({pw}x{gray.shape[0]}px)")
 
     line_len = args.line_len or max(20, pw // 10)
-    mask, otsu = ink_mask(gray, args.bg_kernel, args.ink_thresh, line_len)
+    mask, otsu = ink_mask(gray, args.bg_kernel, args.ink_thresh, line_len, args.vline_ratio, args.vline_tilt)
     log(f"Ngưỡng mực: {otsu:.0f} ({'cố định' if args.ink_thresh is not None else 'Otsu'}), "
         f"mực chiếm {100 * (mask > 0).mean():.1f}% vùng")
 

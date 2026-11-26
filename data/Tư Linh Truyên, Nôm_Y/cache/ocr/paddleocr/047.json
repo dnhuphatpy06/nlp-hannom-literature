@@ -1,0 +1,82 @@
+{
+  "engine": "paddleocr",
+  "page": 47,
+  "saved": "2026-11-09T17:51:08.468308",
+  "image": {
+    "name": "Tư Linh Truyên, Nôm_Y.047.jpg",
+    "sha256": "75e949b775e3df0a9f43dbfb694e533ae39c77b384d6a07e327d766990dc5625",
+    "size": 1198491
+  },
+  "params": {
+    "engine": "transformers",
+    "pipeline_version": "v1"
+  },
+  "boxes": [
+    {
+      "text": "劳时英拯為饒惛节.\nChé thi anh chang vi nhan chid nao\n\n默碎唪吒湿高\nChōng lǒi nhoi jiay thái cas,\n交朱貽朔轕勤狞狞掠\nGiao cho xen soo buo sau gui jiang\n\n油英恚固惊囊.\nDu anh long có né nang.\n\n唉真英渚踣錨山之\nHay xin anh cho nè vang lam chi.\n\n挡浪唿呐拯聿\nNgh nng nhoi noi chang ughe.\n\n歐罷些另乙時買衝\nQu là la laoh al thi moi xong.\n\n固睜永餘如空.\nCo ngay vang ve nhu khong.\n\n違鞍扎買倘跂塘槐.\nYen chang moi thang gong duing hoe.\n\n帑末娘買踏術.\nCh? nong moi gio ve.\n\n扎翠永别时屯赊\nChang Chuy vang biil thi da za.\n\n仍差没陟陟得为口\nBen Sai mol dua ngui nha.",
+      "points": [
+        [
+          403,
+          566
+        ],
+        [
+          2173,
+          566
+        ],
+        [
+          2173,
+          3031
+        ],
+        [
+          403,
+          3031
+        ]
+      ],
+      "label": "text"
+    },
+    {
+      "text": "Page 42",
+      "points": [
+        [
+          194,
+          188
+        ],
+        [
+          410,
+          188
+        ],
+        [
+          410,
+          250
+        ],
+        [
+          194,
+          250
+        ]
+      ],
+      "label": "number"
+    },
+    {
+      "text": "Image ID: 10723882",
+      "points": [
+        [
+          188,
+          269
+        ],
+        [
+          604,
+          269
+        ],
+        [
+          604,
+          323
+        ],
+        [
+          188,
+          323
+        ]
+      ],
+      "label": "header"
+    }
+  ]
+}

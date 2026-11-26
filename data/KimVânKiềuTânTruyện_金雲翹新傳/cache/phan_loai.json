@@ -8,7 +8,7 @@
   "total_pages": 302,
   "pages": {
     "1": {
-      "tag": "intro",
+      "tag": "blank",
       "rotate": 0,
       "notes": "",
       "blank": {
@@ -18,7 +18,7 @@
       }
     },
     "2": {
-      "tag": "intro",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
@@ -28,7 +28,7 @@
       }
     },
     "3": {
-      "tag": "intro",
+      "tag": "misc",
       "rotate": 0,
       "notes": "",
       "blank": {
@@ -38,7 +38,7 @@
       }
     },
     "4": {
-      "tag": "intro",
+      "tag": "blank",
       "rotate": 0,
       "notes": "",
       "blank": {
@@ -58,7 +58,7 @@
       }
     },
     "6": {
-      "tag": "intro",
+      "tag": "blank",
       "rotate": 0,
       "notes": "",
       "blank": {
@@ -128,7 +128,7 @@
       }
     },
     "13": {
-      "tag": "intro",
+      "tag": "blank",
       "rotate": 0,
       "notes": "",
       "blank": {
@@ -2858,7 +2858,7 @@
       }
     },
     "286": {
-      "tag": "misc",
+      "tag": "blank",
       "rotate": 0,
       "notes": "",
       "blank": {
@@ -2868,7 +2868,7 @@
       }
     },
     "287": {
-      "tag": "misc",
+      "tag": "blank",
       "rotate": 0,
       "notes": "",
       "blank": {
@@ -2878,7 +2878,7 @@
       }
     },
     "288": {
-      "tag": "misc",
+      "tag": "blank",
       "rotate": 0,
       "notes": "",
       "blank": {
@@ -2908,7 +2908,7 @@
       }
     },
     "291": {
-      "tag": "misc",
+      "tag": "blank",
       "rotate": 0,
       "notes": "",
       "blank": {
@@ -2918,7 +2918,7 @@
       }
     },
     "292": {
-      "tag": "misc",
+      "tag": "blank",
       "rotate": 0,
       "notes": "",
       "blank": {
@@ -2968,7 +2968,7 @@
       }
     },
     "297": {
-      "tag": "misc",
+      "tag": "blank",
       "rotate": 0,
       "notes": "",
       "blank": {
@@ -2988,7 +2988,7 @@
       }
     },
     "299": {
-      "tag": "misc",
+      "tag": "blank",
       "rotate": 0,
       "notes": "",
       "blank": {
@@ -3032,7 +3032,7 @@
     "at": "2026-11-07T00:43:56.926271",
     "side": 640
   },
-  "last_updated": "2026-11-22T23:30:11.140301",
+  "last_updated": "2026-11-26T13:19:16.180721",
   "autotag": {
     "type": "T2",
     "at": "2026-11-07T00:43:56.999887"

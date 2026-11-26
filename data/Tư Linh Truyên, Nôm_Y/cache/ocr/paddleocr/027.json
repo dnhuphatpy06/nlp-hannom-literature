@@ -1,0 +1,82 @@
+{
+  "engine": "paddleocr",
+  "page": 27,
+  "saved": "2026-11-09T17:31:02.113448",
+  "image": {
+    "name": "Tư Linh Truyên, Nôm_Y.027.jpg",
+    "sha256": "f8a5836dc6d090495260ea7483340530d801a0cef92e1119af9ec6d0f1a515be",
+    "size": 1169825
+  },
+  "params": {
+    "engine": "transformers",
+    "pipeline_version": "v1"
+  },
+  "boxes": [
+    {
+      "text": "牯些畢翠祥雲戈塘.\nEên Ta la Chuy teing. Vn qua tuing.\n賒蹟蹟nghe 永永哨娘.\nBa ngh vang viing nang.\n噺克快憂鑽惴悻.\nthan khaé khoi long vang xol xa.\n宫麻吏帝乙罟la.\nVi ma la day al la.\n沛少謀意底和救饒.\nPhai lam miu aj de ho cee nhan.\n娘時圭貫尼兜.\nNang thi que quan noi taü.\n賄賒倣度色数壙塘.\nGân xa phong do bao lau quang tuing.\n之麻必左倍鑽.\nChi ma tâ tuive voi vang.\n倣欺号屈女娘少牢.\nPhong khi khuya khual nua rang lam sas.\n頗當春芷茁桃.\nNa duing tuan chum nh; dao.\n瀉羝脹脹埃帝固吱.\nRièu nng gi be ai nas eo che.\n勸娘勻渚夢号.\nKhuyên rang day cho ti khuya.",
+      "points": [
+        [
+          547,
+          573
+        ],
+        [
+          2213,
+          573
+        ],
+        [
+          2213,
+          3060
+        ],
+        [
+          547,
+          3060
+        ]
+      ],
+      "label": "text"
+    },
+    {
+      "text": "Page 22",
+      "points": [
+        [
+          196,
+          187
+        ],
+        [
+          408,
+          187
+        ],
+        [
+          408,
+          251
+        ],
+        [
+          196,
+          251
+        ]
+      ],
+      "label": "number"
+    },
+    {
+      "text": "Image ID: 10723862",
+      "points": [
+        [
+          191,
+          270
+        ],
+        [
+          601,
+          270
+        ],
+        [
+          601,
+          323
+        ],
+        [
+          191,
+          323
+        ]
+      ],
+      "label": "header"
+    }
+  ]
+}

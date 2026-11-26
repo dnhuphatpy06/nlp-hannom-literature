@@ -926,7 +926,7 @@ class Canvas(QWidget):
         return True in map(self.outOfPixmap, points)
 
     def setLastLabel(self, text, line_color=None, fill_color=None, key_cls=None):
-        assert text
+        # [GK] bỏ `assert text`: box mới vẽ có chữ rỗng (xem PPOCRLabel.newShape), assert làm PPOCRLabel crash ngay khi vẽ xong box
         self.shapes[-1].label = text
         if line_color:
             self.shapes[-1].line_color = line_color

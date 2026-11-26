@@ -1,0 +1,232 @@
+{
+  "engine": "row_projection",
+  "page": 6,
+  "saved": "2026-11-09T14:45:35.260628",
+  "image": {
+    "name": "Nhuân Chính Trung Hiêu Tiêt Nghĩa, Nôm_Y.006.jpg",
+    "sha256": "097db5453d7bd933e96e35896d35dea52bafd9562b5babfc3bed3fb4fc680e6c",
+    "size": 976242
+  },
+  "params": {
+    "bg_kernel": 25,
+    "blob_dilate": 0.3,
+    "blob_mass": 0.35,
+    "edge_ratio": 0.05,
+    "ink_thresh": null,
+    "line_len": null,
+    "margin": 6,
+    "merge_gap": 2,
+    "min_height": 8,
+    "min_width_ratio": 0.4,
+    "near_gap": 0.35,
+    "no_auto_crop": false,
+    "no_clean_x": false,
+    "no_post": false,
+    "pad": 2,
+    "peak_prom": 0.2,
+    "post_min_rows": 4,
+    "punct_gap": 2.0,
+    "punct_size": 0.45,
+    "roi": null,
+    "save_crops": false,
+    "sliver_gap": 0.15,
+    "sliver_max_height": 1.35,
+    "sliver_ratio": 0.45,
+    "sliver_x_overlap": 0.5,
+    "smooth": 2.5,
+    "thr_ratio": 0.012,
+    "valley_ratio": 0.6,
+    "x_trim": 0.5
+  },
+  "boxes": [
+    {
+      "text": "",
+      "points": [
+        [
+          752,
+          595
+        ],
+        [
+          1869,
+          595
+        ],
+        [
+          1869,
+          715
+        ],
+        [
+          752,
+          715
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          959,
+          717
+        ],
+        [
+          1659,
+          717
+        ],
+        [
+          1659,
+          813
+        ],
+        [
+          959,
+          813
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          495,
+          809
+        ],
+        [
+          1954,
+          809
+        ],
+        [
+          1954,
+          919
+        ],
+        [
+          495,
+          919
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          494,
+          915
+        ],
+        [
+          1927,
+          915
+        ],
+        [
+          1927,
+          1018
+        ],
+        [
+          494,
+          1018
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          492,
+          1036
+        ],
+        [
+          1495,
+          1036
+        ],
+        [
+          1495,
+          1129
+        ],
+        [
+          492,
+          1129
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          853,
+          1210
+        ],
+        [
+          1785,
+          1210
+        ],
+        [
+          1785,
+          1315
+        ],
+        [
+          853,
+          1315
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          809,
+          1311
+        ],
+        [
+          1843,
+          1311
+        ],
+        [
+          1843,
+          1392
+        ],
+        [
+          809,
+          1392
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          488,
+          1413
+        ],
+        [
+          1824,
+          1413
+        ],
+        [
+          1824,
+          1524
+        ],
+        [
+          488,
+          1524
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          487,
+          1523
+        ],
+        [
+          1819,
+          1523
+        ],
+        [
+          1819,
+          1641
+        ],
+        [
+          487,
+          1641
+        ]
+      ]
+    }
+  ]
+}

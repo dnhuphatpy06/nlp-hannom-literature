@@ -1,0 +1,192 @@
+{
+  "engine": "row_projection",
+  "page": 29,
+  "saved": "2026-11-26T14:03:07.153538",
+  "image": {
+    "name": "Nguyêt Lịnh Quôc Âm Ca, Nôm_Y.029.jpg",
+    "sha256": "4e85134b86095f58b5499fe722e7416f0e3f5185fc08b26e002f59f9e177d1ed",
+    "size": 857587
+  },
+  "params": {
+    "bg_kernel": 25,
+    "blob_dilate": 0.3,
+    "blob_mass": 0.35,
+    "edge_ratio": 0.05,
+    "ink_thresh": null,
+    "line_len": null,
+    "margin": 6,
+    "merge_gap": 2,
+    "min_height": 8,
+    "min_width_ratio": 0.4,
+    "near_gap": 0.35,
+    "no_auto_crop": false,
+    "no_clean_x": false,
+    "no_post": false,
+    "pad": 2,
+    "peak_prom": 0.2,
+    "post_min_rows": 4,
+    "punct_gap": 2.0,
+    "punct_size": 0.45,
+    "roi": null,
+    "save_crops": false,
+    "sliver_gap": 0.15,
+    "sliver_max_height": 1.35,
+    "sliver_ratio": 0.45,
+    "sliver_x_overlap": 0.5,
+    "smooth": 2.5,
+    "thr_ratio": 0.012,
+    "valley_ratio": 0.6,
+    "vline_ratio": 0.25,
+    "vline_tilt": 3.0,
+    "x_trim": 0.5
+  },
+  "boxes": [
+    {
+      "text": "",
+      "points": [
+        [
+          722,
+          577
+        ],
+        [
+          1888,
+          577
+        ],
+        [
+          1888,
+          711
+        ],
+        [
+          722,
+          711
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          507,
+          742
+        ],
+        [
+          2123,
+          742
+        ],
+        [
+          2123,
+          898
+        ],
+        [
+          507,
+          898
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          717,
+          904
+        ],
+        [
+          1948,
+          904
+        ],
+        [
+          1948,
+          1057
+        ],
+        [
+          717,
+          1057
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          506,
+          1077
+        ],
+        [
+          2121,
+          1077
+        ],
+        [
+          2121,
+          1230
+        ],
+        [
+          506,
+          1230
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          714,
+          1256
+        ],
+        [
+          1916,
+          1256
+        ],
+        [
+          1916,
+          1424
+        ],
+        [
+          714,
+          1424
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          512,
+          1426
+        ],
+        [
+          2145,
+          1426
+        ],
+        [
+          2145,
+          1573
+        ],
+        [
+          512,
+          1573
+        ]
+      ]
+    },
+    {
+      "text": "",
+      "points": [
+        [
+          832,
+          2820
+        ],
+        [
+          1744,
+          2820
+        ],
+        [
+          1744,
+          2930
+        ],
+        [
+          832,
+          2930
+        ]
+      ]
+    }
+  ]
+}

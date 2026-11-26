@@ -46,6 +46,7 @@ class EngineState:
         self.folder_getter = folder_getter
         self.quiet = False              # đang chạy hàng loạt (khung OCR log): lỗi chỉ ghi vào log, báo một lần khi xong thay vì hộp thoại từng box
         self.alternate = False          # trang ch_vi tách hàng bằng row_projection: True = lọc xen kẽ lẻ/chẵn về ch/vi, False = thư mục đang mở nhận mọi hàng (lưu trong cài đặt PPOCRLabel)
+        self.use_cache = True           # False = bỏ qua cache: nhận dạng cả trang gọi lại API/mô hình thay vì dùng kết quả đã lưu (hộp thoại chọn mô hình)
         self.task = None                # both | detect | read | selected (nhớ để mở lại hộp thoại đúng lựa chọn); None = chưa chọn
         self.last_error = None
 
@@ -85,7 +86,7 @@ class EngineOCR:
         try:
             if not image_path:
                 raise RuntimeError("Thiếu đường dẫn ảnh để nhận dạng cả trang.")
-            boxes, engine, cached = bridge().recognize_page(image_path, self.state.engine, alternate=self.state.alternate)
+            boxes, engine, cached = bridge().recognize_page(image_path, self.state.engine, use_cache=self.state.use_cache, alternate=self.state.alternate)
             logger.info("OCR trang %s bằng %s%s: %d box", Path(image_path).name, engine, " (cache)" if cached else "", len(boxes))
         except events().Cancelled:   # người dùng bấm Dừng ở khung OCR log
             events().log("Đã dừng.", "warn")

@@ -1,0 +1,104 @@
+{
+  "engine": "paddleocr",
+  "page": 8,
+  "saved": "2026-11-13T21:26:39.069635",
+  "image": {
+    "name": "Tư Linh Truyên, Nôm_Y.008.jpg",
+    "sha256": "03d2c869a24fcba1ea09f3b7e9d21062d949663f12dd9d414fd05d9dc0473c09",
+    "size": 1184374
+  },
+  "params": {
+    "engine": "transformers",
+    "pipeline_version": "v1"
+  },
+  "boxes": [
+    {
+      "text": "德 躄 停 抵 词 茂\nDüe qiày qianh le muàn dài\n錯 特 福 道 歪 至 公\nLám lái teié phué dào gièi chi cóng\n玉 皇 判 嗨 仙 宫\nNgoe hoang phán hǎi tién cung;\n埃 闷 靳 於 墐 閒\nCo ai muàn xuǐg dó vung diéng qián\n楚 冢 斡 吏 再 还\nDu nǎm nǎm lái tai hoan\n铖 名 價 當 官 運 茂\nnén danh qiá dàng quan drén dài\n仲 晋 判 准 紫 臺\nErong lǎn phán chǒn lu cài\n雞 大 將 哪 唆 嗟 戈\nlain dài tuǐng vàng nhoi tài qua\n碎 哪 御 旨 判 黜\nEo xīn guè chi? phán ra.\n差 朱 鼋 帝 丕 和 髙 鞫\nSai cho xuǐg tǎi vǎy hǎo lám sao\n判 浪 武 勇 文 高\nPhán raíng huí dùn ván cao,\n樑 宰 相 埃 节 监 戈\nCám quén le tuǐng ai nan qián qua",
+      "points": [
+        [
+          544,
+          551
+        ],
+        [
+          2228,
+          551
+        ],
+        [
+          2228,
+          3021
+        ],
+        [
+          544,
+          3021
+        ]
+      ],
+      "label": "text"
+    },
+    {
+      "text": "Page 3",
+      "points": [
+        [
+          194,
+          188
+        ],
+        [
+          383,
+          188
+        ],
+        [
+          383,
+          251
+        ],
+        [
+          194,
+          251
+        ]
+      ],
+      "label": "number"
+    },
+    {
+      "text": "Image ID: 10723843",
+      "points": [
+        [
+          188,
+          270
+        ],
+        [
+          605,
+          270
+        ],
+        [
+          605,
+          323
+        ],
+        [
+          188,
+          323
+        ]
+      ],
+      "label": "header"
+    },
+    {
+      "text": "$ f^{02}\\cdot\\cos1 $",
+      "points": [
+        [
+          228,
+          1389
+        ],
+        [
+          579,
+          1389
+        ],
+        [
+          579,
+          1572
+        ],
+        [
+          228,
+          1572
+        ]
+      ],
+      "label": "aside_text"
+    }
+  ]
+}

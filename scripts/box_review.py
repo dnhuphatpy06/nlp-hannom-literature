@@ -1,4 +1,4 @@
-"""Kiểm tra từng box của một ảnh trong PPOCRLabel (nút "Kiểm tra box", external/PPOCRLabel/libs/gk_review.py).
+"""Kiểm tra từng box của một ảnh trong PPOCRLabel (logic dùng chung; hộp thoại "Kiểm tra box" trong PPOCRLabel đã bỏ).
 
 Với ảnh trong `ch/`, mỗi box được đối chiếu bằng scripts/box_check.py (lệch số chữ API/projection, chưa có chữ). Box dính cờ phải được
 NGƯỜI bấm "đã check" thì mới coi là xong; box không dính cờ coi như đã check. Khi MỌI box của ảnh đã check thì fileState của ảnh là 1, ngược lại 0.

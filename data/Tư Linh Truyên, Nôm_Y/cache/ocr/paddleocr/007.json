@@ -1,0 +1,214 @@
+{
+  "engine": "paddleocr",
+  "page": 7,
+  "saved": "2026-11-13T21:26:30.819380",
+  "image": {
+    "name": "Tư Linh Truyên, Nôm_Y.007.jpg",
+    "sha256": "d5facba20f62bb2a2294fd0095f136a0b385b755a24d31a86623b7e0cf0ec13b",
+    "size": 1149999
+  },
+  "params": {
+    "engine": "transformers",
+    "pipeline_version": "v1"
+  },
+  "boxes": [
+    {
+      "text": "因耒皮眼從容.\nThaim n'oï nuia thue thong dong.",
+      "points": [
+        [
+          753,
+          578
+        ],
+        [
+          2039,
+          578
+        ],
+        [
+          2039,
+          777
+        ],
+        [
+          753,
+          777
+        ]
+      ],
+      "label": "text"
+    },
+    {
+      "text": "哦 貼 跡 觸 典 恚 呤 哦.\nGiày xem lieh cu đên long ngàm ruga.",
+      "points": [
+        [
+          566,
+          781
+        ],
+        [
+          2239,
+          781
+        ],
+        [
+          2239,
+          1004
+        ],
+        [
+          566,
+          1004
+        ]
+      ],
+      "label": "text"
+    },
+    {
+      "text": "Dwyên- châu xua có melt ngใi.\n牆罳払俊於荻茹充.\nCên là chang Cuân 9% đời nhà Nguyên.",
+      "points": [
+        [
+          580,
+          1494
+        ],
+        [
+          2310,
+          1494
+        ],
+        [
+          2310,
+          1806
+        ],
+        [
+          580,
+          1806
+        ]
+      ],
+      "label": "text"
+    },
+    {
+      "text": "本澜詩礼唯傳.\nNǒn dōng thì lé nǒi tuì yěn.\n抡斤扔墨縷權相卿.\nCaim càn nǎy muè nǒi guèn tuǐng khank.",
+      "points": [
+        [
+          564,
+          1812
+        ],
+        [
+          2316,
+          1812
+        ],
+        [
+          2316,
+          2208
+        ],
+        [
+          564,
+          2208
+        ]
+      ],
+      "label": "text"
+    },
+    {
+      "text": "咻民改共而镫.\nDay dàn cài nuè lam lanh.\n蛮夷愧德朝廷嘴頑.\nclan. di mén dué tuèi dìn hí hén guo an.",
+      "points": [
+        [
+          558,
+          2219
+        ],
+        [
+          2325,
+          2219
+        ],
+        [
+          2325,
+          2610
+        ],
+        [
+          558,
+          2610
+        ]
+      ],
+      "label": "text"
+    },
+    {
+      "text": "獄 囚 隊 准 解 冤\nNque tu doi chon giai oan.\n腰 民 貼 凭 腰 猥 拯 移.\nYeu dan xem veing yeu con ching roi.",
+      "points": [
+        [
+          583,
+          2623
+        ],
+        [
+          2240,
+          2623
+        ],
+        [
+          2240,
+          3046
+        ],
+        [
+          583,
+          3046
+        ]
+      ],
+      "label": "text"
+    },
+    {
+      "text": "Page 2",
+      "points": [
+        [
+          195,
+          188
+        ],
+        [
+          382,
+          188
+        ],
+        [
+          382,
+          251
+        ],
+        [
+          195,
+          251
+        ]
+      ],
+      "label": "number"
+    },
+    {
+      "text": "Image ID: 10723842",
+      "points": [
+        [
+          189,
+          270
+        ],
+        [
+          603,
+          270
+        ],
+        [
+          603,
+          323
+        ],
+        [
+          189,
+          323
+        ]
+      ],
+      "label": "header"
+    },
+    {
+      "text": "$f_{01}^{B}$，$c o l s$.",
+      "points": [
+        [
+          206,
+          600
+        ],
+        [
+          586,
+          600
+        ],
+        [
+          586,
+          764
+        ],
+        [
+          206,
+          764
+        ]
+      ],
+      "label": "aside_text"
+    }
+  ]
+}

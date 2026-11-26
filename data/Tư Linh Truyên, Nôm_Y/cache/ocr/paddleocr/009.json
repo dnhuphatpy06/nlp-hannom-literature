@@ -1,0 +1,104 @@
+{
+  "engine": "paddleocr",
+  "page": 9,
+  "saved": "2026-11-13T21:26:53.861026",
+  "image": {
+    "name": "Tư Linh Truyên, Nôm_Y.009.jpg",
+    "sha256": "1a9909eca573c7b3b122b58c458d9f5036302ac678fbab80f5243155dfd4563a",
+    "size": 1195329
+  },
+  "params": {
+    "engine": "transformers",
+    "pipeline_version": "v1"
+  },
+  "boxes": [
+    {
+      "text": "哪傳辞謝蹓黜.\n\nVàng liuyěn tu ta lu na.\n\n騎遽韻蹟蹟包如俊公.\n\nCièi mǎy thàng te ch vao nha Cuán-cōng.\n\n夫人秩省戢受.\n\nPhu-nhân chol tinh giè mòng.\n\n覓猥麟赤矬惡麻遫\n\nChày con làn xich ngài long ma chéi.\n\n想占包事捶抹.\n\nCuòng chìm bao du-rach noi.\n\n恬錯劍應仍唸冉頡.\n\nDèm lans Sàn yīng nhuǐ nhiè mi thíng.\n\n渚嫩自意永信.\n\nNuò non lè-y vàng lén.\n\n滿期胎月生轼没扎.\n\nkī thai ngui-sinh nén mol-chang.\n\n質招貼凭玉鎖.\n\nCǎl chù xen wìng guo- vang;\n\n棧槐色扔門堂添春.\n\nCày ho- ta nǎy màn de-ng them xuàn.\n\n想然然戢夢神.\n\nCuǒng nshon nshon qiè-mòng thán.\n\n怙達宇叟麟焖駐.\n\nUng te-tǎ chu-bóng-Lán-tén-lanh.",
+      "points": [
+        [
+          576,
+          560
+        ],
+        [
+          2278,
+          560
+        ],
+        [
+          2278,
+          3040
+        ],
+        [
+          576,
+          3040
+        ]
+      ],
+      "label": "text"
+    },
+    {
+      "text": "Page 4",
+      "points": [
+        [
+          196,
+          188
+        ],
+        [
+          382,
+          188
+        ],
+        [
+          382,
+          251
+        ],
+        [
+          196,
+          251
+        ]
+      ],
+      "label": "number"
+    },
+    {
+      "text": "Image ID: 10723844",
+      "points": [
+        [
+          191,
+          270
+        ],
+        [
+          601,
+          270
+        ],
+        [
+          601,
+          323
+        ],
+        [
+          191,
+          323
+        ]
+      ],
+      "label": "header"
+    },
+    {
+      "text": "$f \\cdot 2^{B} \\cdot \\cos 1$.",
+      "points": [
+        [
+          216,
+          2233
+        ],
+        [
+          579,
+          2233
+        ],
+        [
+          579,
+          2407
+        ],
+        [
+          216,
+          2407
+        ]
+      ],
+      "label": "aside_text"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "engine": "paddleocr",
+  "page": 26,
+  "saved": "2026-11-09T17:05:19.623548",
+  "image": {
+    "name": "Tư Linh Truyên, Nôm_Y.026.jpg",
+    "sha256": "8c1abf5fc9f715a577d276967a2282998d24842075febc7fe43154375058657f",
+    "size": 1198737
+  },
+  "params": {
+    "engine": "transformers",
+    "pipeline_version": "v1"
+  },
+  "boxes": [
+    {
+      "text": "唸神應現即時然然\nNhoi than ing hiin tiie thi nhin nhin\n倭箕湿脆嫩肝.\nLu kia thp gia non gan\n調時拯監心乾女兜\nThi chang qiam lam con nuia taic\n感息娘買叩頭\nCam dn rang nui khai tau\n嗯浪色隊恩婆閉分\nTha ng da to in sau muin phain\n拯賣埃噲浮神\nChang thiing ai go la than\n空讀翔憂仁群之\nkhong nong mo long nhin con gi\n嗔塗礼輕仕街.\nXin ngoi le luoe se ve\n嗔忖德英威声訪穷\nxin who duie anh uy ho d\n瞧睡谨位凯蝗\nLiè trong lun vi ngai roig\n得襖糾糾裙紅蒂中\nngui ao vo c hng dai cain\n嗔浪些拯沛神.\nCuoi rang ta chang phai thain.",
+      "points": [
+        [
+          515,
+          574
+        ],
+        [
+          2248,
+          574
+        ],
+        [
+          2248,
+          3040
+        ],
+        [
+          515,
+          3040
+        ]
+      ],
+      "label": "text"
+    },
+    {
+      "text": "Page 21",
+      "points": [
+        [
+          195,
+          188
+        ],
+        [
+          406,
+          188
+        ],
+        [
+          406,
+          251
+        ],
+        [
+          195,
+          251
+        ]
+      ],
+      "label": "number"
+    },
+    {
+      "text": "Image ID: 10723861",
+      "points": [
+        [
+          190,
+          270
+        ],
+        [
+          602,
+          270
+        ],
+        [
+          602,
+          323
+        ],
+        [
+          190,
+          323
+        ]
+      ],
+      "label": "header"
+    }
+  ]
+}

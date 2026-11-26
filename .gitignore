@@ -1,4 +1,5 @@
 .env
+font/
 __pycache__/
 *.pyc
 ket_qua/

@@ -1,0 +1,572 @@
+{
+  "engine": "row_text",
+  "page": 22,
+  "saved": "2026-11-09T17:00:34.284663",
+  "image": {
+    "name": "Tư Linh Truyên, Nôm_Y.022.jpg",
+    "sha256": "60d32162bb90acfb36d232db8337df9fa962cd0dec2982e1284b19aff28e7947",
+    "size": 1191598
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "vi",
+      "text": "冢浪於色返饒",
+      "points": [
+        [
+          802,
+          554
+        ],
+        [
+          1930,
+          554
+        ],
+        [
+          1930,
+          660
+        ],
+        [
+          802,
+          660
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "Chung rang nay da gaye when.",
+      "points": [
+        [
+          764,
+          656
+        ],
+        [
+          1988,
+          656
+        ],
+        [
+          1988,
+          769
+        ],
+        [
+          764,
+          769
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "嗬空埃固信帝浪空.",
+      "points": [
+        [
+          584,
+          765
+        ],
+        [
+          2138,
+          765
+        ],
+        [
+          2138,
+          861
+        ],
+        [
+          584,
+          861
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "Dài zhōng aí có tàn nǎo ràng zhōng.",
+      "points": [
+        [
+          545,
+          857
+        ],
+        [
+          2184,
+          857
+        ],
+        [
+          2184,
+          974
+        ],
+        [
+          545,
+          974
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "蹉 渚 沛 義 姦 軼.",
+      "points": [
+        [
+          801,
+          970
+        ],
+        [
+          2121,
+          970
+        ],
+        [
+          2121,
+          1066
+        ],
+        [
+          801,
+          1066
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "Cuy chua phai nghia w? Chung.",
+      "points": [
+        [
+          777,
+          1062
+        ],
+        [
+          2008,
+          1062
+        ],
+        [
+          2008,
+          1171
+        ],
+        [
+          777,
+          1171
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "185 - 遐低寔拱暴恚叁吹.",
+      "points": [
+        [
+          296,
+          1167
+        ],
+        [
+          2160,
+          1167
+        ],
+        [
+          2160,
+          1280
+        ],
+        [
+          296,
+          1280
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "Gay day thue cung ra long givi xui. 眾人固詩浪.",
+      "points": [
+        [
+          553,
+          1276
+        ],
+        [
+          2162,
+          1276
+        ],
+        [
+          2162,
+          1482
+        ],
+        [
+          553,
+          1482
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "Chung nhân có thơ rang",
+      "points": [
+        [
+          860,
+          1478
+        ],
+        [
+          1881,
+          1478
+        ],
+        [
+          1881,
+          1581
+        ],
+        [
+          860,
+          1581
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "仍男隔阻隗堆方",
+      "points": [
+        [
+          692,
+          1584
+        ],
+        [
+          2030,
+          1584
+        ],
+        [
+          2030,
+          1677
+        ],
+        [
+          692,
+          1677
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "Niuing lai each tro luing to phuing.",
+      "points": [
+        [
+          618,
+          1673
+        ],
+        [
+          2139,
+          1673
+        ],
+        [
+          2139,
+          1788
+        ],
+        [
+          618,
+          1788
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "想妆殓濃陣焜香.",
+      "points": [
+        [
+          697,
+          1784
+        ],
+        [
+          2056,
+          1784
+        ],
+        [
+          2056,
+          1882
+        ],
+        [
+          697,
+          1882
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "Cuì yǒu zhǒu wǒ yǒu nǐn shān luò shuǐ",
+      "points": [
+        [
+          650,
+          1878
+        ],
+        [
+          2111,
+          1878
+        ],
+        [
+          2111,
+          1992
+        ],
+        [
+          650,
+          1992
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "賴刻睜蟪琵琶仍",
+      "points": [
+        [
+          686,
+          1988
+        ],
+        [
+          2064,
+          1988
+        ],
+        [
+          2064,
+          2089
+        ],
+        [
+          686,
+          2089
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "Saü kha'e ngay dai long luing nheing.",
+      "points": [
+        [
+          668,
+          2085
+        ],
+        [
+          2129,
+          2085
+        ],
+        [
+          2129,
+          2195
+        ],
+        [
+          668,
+          2195
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "go - 南五更脍演脆添强.",
+      "points": [
+        [
+          312,
+          2191
+        ],
+        [
+          2056,
+          2191
+        ],
+        [
+          2056,
+          2288
+        ],
+        [
+          312,
+          2288
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "Naim canh tem diên gia them cang",
+      "points": [
+        [
+          642,
+          2284
+        ],
+        [
+          2065,
+          2284
+        ],
+        [
+          2065,
+          2402
+        ],
+        [
+          642,
+          2402
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "呟 送信魴 攏 勾 呂.",
+      "points": [
+        [
+          671,
+          2398
+        ],
+        [
+          2024,
+          2398
+        ],
+        [
+          2024,
+          2497
+        ],
+        [
+          671,
+          2497
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "Raj dua ten ca' buing ca' La?",
+      "points": [
+        [
+          636,
+          2493
+        ],
+        [
+          2055,
+          2493
+        ],
+        [
+          2055,
+          2598
+        ],
+        [
+          636,
+          2598
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "懷啖書鴈雞絲湯",
+      "points": [
+        [
+          678,
+          2594
+        ],
+        [
+          2029,
+          2594
+        ],
+        [
+          2029,
+          2698
+        ],
+        [
+          678,
+          2698
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "lbong gèi the nhan mo' lèi Chang.",
+      "points": [
+        [
+          625,
+          2694
+        ],
+        [
+          2099,
+          2694
+        ],
+        [
+          2099,
+          2801
+        ],
+        [
+          625,
+          2801
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "f078cals. 哺容宫遷空固意",
+      "points": [
+        [
+          241,
+          2797
+        ],
+        [
+          2045,
+          2797
+        ],
+        [
+          2045,
+          2905
+        ],
+        [
+          241,
+          2905
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    },
+    {
+      "folder": "vi",
+      "text": "Dù thù chú cung mǎy, thǒng có yí.",
+      "points": [
+        [
+          224,
+          2901
+        ],
+        [
+          2037,
+          2901
+        ],
+        [
+          2037,
+          3056
+        ],
+        [
+          224,
+          3056
+        ]
+      ],
+      "status": "ok",
+      "reader": "paddleocr:83122e12"
+    }
+  ]
+}

@@ -162,7 +162,6 @@ Cửa sổ PPOCRLabel gồm danh sách ảnh bên trái, khung hiển thị boun
 - `Space` hoặc nút **Check**: đánh dấu ảnh hiện tại hoàn thành (`1` trong `fileState.txt`) và chuyển sang ảnh kế tiếp.
 - `D` / `A`: chuyển sang ảnh tiếp theo / ảnh trước đó.
 - `Ctrl+S`: lưu `Label.txt` và `fileState.txt`.
-- `Ctrl+Shift+K`: mở hộp thoại kiểm tra các box bị cảnh báo lệch số chữ (khi dùng chế độ `row_projection`).
 - `Ctrl+M`: mở hộp thoại chuyển đổi engine OCR.
 
 ### 6.3. Soát chữ song ngữ trên Web đối chiếu
