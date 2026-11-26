@@ -1,0 +1,131 @@
+{
+ "saved_at": "2026-11-26 16:43:31",
+ "decisions": {
+  "KimVânKiềuTânTruyện_金雲翹新傳|15003|4": {
+   "side": "KEEP",
+   "nom": "㐌",
+   "qn": "mà",
+   "rank": 1,
+   "orig_nom": "㐌",
+   "orig_qn": "mà",
+   "time": "2026-11-26 16:39:49"
+  },
+  "KimVânKiềuTânTruyện_金雲翹新傳|15007|2": {
+   "side": "QN",
+   "nom": "固",
+   "qn": "có",
+   "rank": 2,
+   "orig_nom": "固",
+   "orig_qn": "cổ",
+   "time": "2026-11-26 16:39:58"
+  },
+  "KimVânKiềuTânTruyện_金雲翹新傳|15019|5": {
+   "side": "NOM",
+   "nom": "𧍋",
+   "qn": "ngài",
+   "rank": 1,
+   "orig_nom": "𣈜",
+   "orig_qn": "ngài",
+   "time": "2026-11-26 16:40:25"
+  },
+  "KimVânKiềuTânTruyện_金雲翹新傳|16005|3": {
+   "side": "NOM",
+   "nom": "害",
+   "qn": "họa",
+   "rank": 2,
+   "orig_nom": "書",
+   "orig_qn": "họa",
+   "time": "2026-11-26 16:40:29"
+  },
+  "KimVânKiềuTânTruyện_金雲翹新傳|16012|0": {
+   "side": "KEEP",
+   "nom": "陰",
+   "qn": "Êm",
+   "rank": 3,
+   "orig_nom": "陰",
+   "orig_qn": "Êm",
+   "time": "2026-11-26 16:40:45"
+  },
+  "KimVânKiềuTânTruyện_金雲翹新傳|16012|1": {
+   "side": "QN",
+   "nom": "捻",
+   "qn": "đệm",
+   "rank": 1,
+   "orig_nom": "捻",
+   "orig_qn": "đềm",
+   "time": "2026-11-26 16:41:00"
+  },
+  "KimVânKiềuTânTruyện_金雲翹新傳|16014|0": {
+   "side": "NOM",
+   "nom": "𣦍",
+   "qn": "Ngày",
+   "rank": 2,
+   "orig_nom": "節",
+   "orig_qn": "Ngày",
+   "time": "2026-11-26 16:41:29"
+  },
+  "KimVânKiềuTânTruyện_金雲翹新傳|16017|5": {
+   "side": "NOM",
+   "nom": "𠄧",
+   "qn": "vài",
+   "rank": 1,
+   "orig_nom": "𠀧",
+   "orig_qn": "vài",
+   "time": "2026-11-26 16:41:36"
+  },
+  "KimVânKiềuTânTruyện_金雲翹新傳|16019|4": {
+   "side": "QN",
+   "nom": "噲",
+   "qn": "hồi",
+   "rank": 1,
+   "orig_nom": "噲",
+   "orig_qn": "hội",
+   "time": "2026-11-26 16:42:11"
+  },
+  "KimVânKiềuTânTruyện_金雲翹新傳|16022|1": {
+   "side": "NOM",
+   "nom": "耀",
+   "qn": "dìu",
+   "rank": 1,
+   "orig_nom": "濯",
+   "orig_qn": "dìu",
+   "time": "2026-11-26 16:42:20"
+  },
+  "KimVânKiềuTânTruyện_金雲翹新傳|19001|2": {
+   "side": "QN",
+   "nom": "抪",
+   "qn": "bó",
+   "rank": 1,
+   "orig_nom": "抪",
+   "orig_qn": "vó",
+   "time": "2026-11-26 16:42:24"
+  },
+  "KimVânKiềuTânTruyện_金雲翹新傳|19007|4": {
+   "side": "NOM",
+   "nom": "檜",
+   "qn": "cuối",
+   "rank": 1,
+   "orig_nom": "襘",
+   "orig_qn": "cuối",
+   "time": "2026-11-26 16:42:38"
+  },
+  "KimVânKiềuTânTruyện_金雲翹新傳|19021|2": {
+   "side": "NOM",
+   "nom": "橬",
+   "qn": "trâm",
+   "rank": 2,
+   "orig_nom": "潛",
+   "orig_qn": "trâm",
+   "time": "2026-11-26 16:42:44"
+  },
+  "KimVânKiềuTânTruyện_金雲翹新傳|19021|3": {
+   "side": "QN",
+   "nom": "技",
+   "qn": "gãy",
+   "rank": 1,
+   "orig_nom": "技",
+   "orig_qn": "gẫy",
+   "time": "2026-11-26 16:42:47"
+  }
+ }
+}

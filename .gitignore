@@ -17,6 +17,10 @@ data/*/*/*
 !data/*/*.xlsx
 !data/*/*.csv
 !data/*/align_report.txt
+# Kết quả duyệt đề xuất của tab Đề xuất (lựa chọn, ứng viên đã chấm, thống kê): giữ lại để làm tiếp trên máy khác
+!data/*/review_state.json
+!data/*/candidates_cache.json
+!data/*/statistics.json
 # Cache của từng sách: data/<Tên sách>/cache/*.json (phan_loai.json, ocr_log.json) và
 # data/<Tên sách>/cache/ocr/<engine>/<NNN>.json (kết quả OCR thô). KHÔNG lấy ảnh: cache/pages/, cache/thumbs/,
 # và ảnh debug của row_projection (cache/ocr/row_projection/<NNN>/).

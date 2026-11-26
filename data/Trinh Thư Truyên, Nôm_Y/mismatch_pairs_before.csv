@@ -1,0 +1,623 @@
+﻿book,sentence_order,review_page,ID,image_id,image_file,line_in_image,pair_order,type,aln_pos,nom_pos,qn_pos,nom,qn,nom_readings_in_dict,sentence_nom,sentence_qn
+"Trinh Thư Truyên, Nôm",2,1,2,"Trinh Thư Truyên, Nôm.006.001","Trinh Thư Truyên, Nôm_Y.006.jpg",1,1,mismatch,1,1,1,嗣,cự,"ti, tơ, tư, tự",嗣德乙亥春,cự đức ất hợi xuân
+"Trinh Thư Truyên, Nôm",7,2,7,"Trinh Thư Truyên, Nôm.007.003","Trinh Thư Truyên, Nôm_Y.007.jpg",3,1,mismatch,1,1,1,罗,lá,"la, là, lạ",罗胡生本善名當時,lá hồ sinh vốn thiện danh đương thì
+"Trinh Thư Truyên, Nôm",9,,9,"Trinh Thư Truyên, Nôm.007.005","Trinh Thư Truyên, Nôm_Y.007.jpg",5,1,mismatch,5,5,5,惻,biết,trắc,㗂獴𪀄吏惻推𢧚唎,tiếng muông chim lại biết suy nên lời
+"Trinh Thư Truyên, Nôm",10,,10,"Trinh Thư Truyên, Nôm.007.006","Trinh Thư Truyên, Nôm_Y.007.jpg",6,1,mismatch,4,4,4,𠵩,thuở,quở,京城因𠵩𫥨𨔈,kinh thành nhân thuở ra chơi
+"Trinh Thư Truyên, Nôm",11,,11,"Trinh Thư Truyên, Nôm.007.007","Trinh Thư Truyên, Nôm_Y.007.jpg",7,1,mismatch,2,2,2,䖽,ly,lợi,季䖽丞相𧵆尼寓茹,quí ly thừa tướng gần nơi ngụ nhà
+"Trinh Thư Truyên, Nôm",13,,13,"Trinh Thư Truyên, Nôm.007.009","Trinh Thư Truyên, Nôm_Y.007.jpg",9,1,mismatch,6,6,6,𡍼,đồ,,𨔍茹諸𪿀糊𡍼掣包,lạ nhà chưa ngủ hồ đồ xiết bao
+"Trinh Thư Truyên, Nôm",15,3,15,"Trinh Thư Truyên, Nôm.007.011","Trinh Thư Truyên, Nôm_Y.007.jpg",11,1,mismatch,5,5,5,泡,báo,"bào, bàu, bảo, bầu, phao, pháo",㗂𡥵獴𣷱泡哮𠰺揚,tiếng con muông sữa báo hao giây giàng
+"Trinh Thư Truyên, Nôm",15,3,15,"Trinh Thư Truyên, Nôm.007.011","Trinh Thư Truyên, Nôm_Y.007.jpg",11,2,mismatch,7,7,7,𠰺,giây,"dái, dạy, dậy, đại, đẫy, đậy",㗂𡥵獴𣷱泡哮𠰺揚,tiếng con muông sữa báo hao giây giàng
+"Trinh Thư Truyên, Nôm",17,4,17,"Trinh Thư Truyên, Nôm.008.001","Trinh Thư Truyên, Nôm_Y.008.jpg",1,1,mismatch,1,1,1,弘,cong,"hoằng, ngoằng",弘𡳪𦓡𧼌𫏚鐄駭驚,cong đuôi mà chạy vội vang hãi kinh
+"Trinh Thư Truyên, Nôm",17,4,17,"Trinh Thư Truyên, Nôm.008.001","Trinh Thư Truyên, Nôm_Y.008.jpg",1,2,mismatch,6,6,6,鐄,vang,"hoàng, hoành, vàng, vành, vần",弘𡳪𦓡𧼌𫏚鐄駭驚,cong đuôi mà chạy vội vang hãi kinh
+"Trinh Thư Truyên, Nôm",20,5,20,"Trinh Thư Truyên, Nôm.008.004","Trinh Thư Truyên, Nôm_Y.008.jpg",4,1,mismatch,1,1,1,𠅎,mắt,"mất, tốn",𠅎㖼懞吏𧼌𠫾,mắt mỏi mừng lại chạy đi
+"Trinh Thư Truyên, Nôm",20,5,20,"Trinh Thư Truyên, Nôm.008.004","Trinh Thư Truyên, Nôm_Y.008.jpg",4,2,mismatch,2,2,2,㖼,mỏi,"môi, mưu, mỏ, mồi, mổ",𠅎㖼懞吏𧼌𠫾,mắt mỏi mừng lại chạy đi
+"Trinh Thư Truyên, Nôm",20,5,20,"Trinh Thư Truyên, Nôm.008.004","Trinh Thư Truyên, Nôm_Y.008.jpg",4,3,mismatch,3,3,3,懞,mừng,"mong, muông, muống, màng, mòng, mông, mỏng, mộng",𠅎㖼懞吏𧼌𠫾,mắt mỏi mừng lại chạy đi
+"Trinh Thư Truyên, Nôm",21,,21,"Trinh Thư Truyên, Nôm.008.005","Trinh Thư Truyên, Nôm_Y.008.jpg",5,1,mismatch,1,1,1,𥪝,cung,"lông, trong, trông",𥪝𧯄羕㗂男児𠳨哴,cung hang dường tiếng nam nhi hỏi rằng
+"Trinh Thư Truyên, Nôm",25,,25,"Trinh Thư Truyên, Nôm.008.009","Trinh Thư Truyên, Nôm_Y.008.jpg",9,1,mismatch,7,7,7,昢,nom,phốt,𦤾边墻𥊘眜𠓨昢𨔈,đến bên tường ghé mắt vào nom chơi
+"Trinh Thư Truyên, Nôm",31,,31,"Trinh Thư Truyên, Nôm.009.003","Trinh Thư Truyên, Nôm_Y.009.jpg",3,1,mismatch,5,5,5,惻,biết,trắc,為蒸汝𨀈惻低准𱜢,ví chưng nhỡ bước biết đây chốn nào
+"Trinh Thư Truyên, Nôm",32,6,32,"Trinh Thư Truyên, Nôm.009.004","Trinh Thư Truyên, Nôm_Y.009.jpg",4,1,mismatch,1,1,1,細,cối,"té, tí, tía, tế, tỉ, tới, đến",細𨆢坤惻爫𫳵,cối lui khôn biết làm sao
+"Trinh Thư Truyên, Nôm",32,6,32,"Trinh Thư Truyên, Nôm.009.004","Trinh Thư Truyên, Nôm_Y.009.jpg",4,2,mismatch,4,4,4,惻,biết,trắc,細𨆢坤惻爫𫳵,cối lui khôn biết làm sao
+"Trinh Thư Truyên, Nôm",33,7,33,"Trinh Thư Truyên, Nôm.009.005","Trinh Thư Truyên, Nôm_Y.009.jpg",5,1,mismatch,5,5,5,𧑂,cây,cáy,恪芾如体𧑂𠓨𧯄𧍆,khác nào như thể cây vào hang cua
+"Trinh Thư Truyên, Nôm",41,8,41,"Trinh Thư Truyên, Nôm.010.001","Trinh Thư Truyên, Nôm_Y.010.jpg",1,1,mismatch,6,6,6,𣈙,dầy,"rày, rầy, tày",特戈难𧘇恩𣈙𪾋忘,được qua nạn ấy ơn dầy giám vong
+"Trinh Thư Truyên, Nôm",50,,50,"Trinh Thư Truyên, Nôm.010.010","Trinh Thư Truyên, Nôm_Y.010.jpg",10,1,mismatch,4,4,4,搁,mở,"các, gác",𫢩些𢌌搁𢚸傷,nay ta rộng mở lòng thương
+"Trinh Thư Truyên, Nôm",54,9,54,"Trinh Thư Truyên, Nôm.011.002","Trinh Thư Truyên, Nôm_Y.011.jpg",2,1,mismatch,1,1,1,妾,chiếp,"thiếp, thê",妾𫢩𣄒𠃅東鄰,chiếp nay ở mái đông lân
+"Trinh Thư Truyên, Nôm",58,,58,"Trinh Thư Truyên, Nôm.011.006","Trinh Thư Truyên, Nôm_Y.011.jpg",6,1,mismatch,5,5,5,𣈙,sớm,"rày, rầy, tày",𧏵𧏵蹺媄𣈙𬁑,rồng rồng theo mẹ sớm trưa
+"Trinh Thư Truyên, Nôm",63,10,63,"Trinh Thư Truyên, Nôm.011.011","Trinh Thư Truyên, Nôm_Y.011.jpg",11,1,mismatch,1,1,1,㪯,của,"cỡ, cử, cửa, cữ, gở, gỡ",㪯茹壯䴡𧵑𣹓平𡽫,của nhà tráng lệ của đầy bằng non
+"Trinh Thư Truyên, Nôm",64,,64,"Trinh Thư Truyên, Nôm.012.000","Trinh Thư Truyên, Nôm_Y.012.jpg",0,1,mismatch,3,3,3,鴶,hết,"cắt, két",㦖咹鴶沛掏𧑒,muốn ăn hết phải đào giun
+"Trinh Thư Truyên, Nôm",65,11,65,"Trinh Thư Truyên, Nôm.012.001","Trinh Thư Truyên, Nôm_Y.012.jpg",1,1,mismatch,2,2,2,坡,bỏ,"ba, bờ, bỡ, da, pha, phơ, phơi, phờ",坡坡冲蓓芇群惻𠲖,pha bỏ xông bụi nào còn biết e
+"Trinh Thư Truyên, Nôm",65,11,65,"Trinh Thư Truyên, Nôm.012.001","Trinh Thư Truyên, Nôm_Y.012.jpg",1,2,mismatch,7,7,7,惻,biết,trắc,坡坡冲蓓芇群惻𠲖,pha bỏ xông bụi nào còn biết e
+"Trinh Thư Truyên, Nôm",66,,66,"Trinh Thư Truyên, Nôm.012.002","Trinh Thư Truyên, Nôm_Y.012.jpg",2,1,mismatch,4,4,4,䟴,giấn,thằn,𣎀󰞴拱䟴𨉓𠫾,đêm khuya cũng giấn mình đi
+"Trinh Thư Truyên, Nôm",68,12,68,"Trinh Thư Truyên, Nôm.012.004","Trinh Thư Truyên, Nôm_Y.012.jpg",4,1,mismatch,2,2,2,𢪀,ngỡ,"dở, ngay, nghe, nghĩ, nghỉ, ngại, ngờ, tư, xét",埃𢪀﨤仉不仁,ai ngỡ gặp kẻ bất nhân
+"Trinh Thư Truyên, Nôm",69,,69,"Trinh Thư Truyên, Nôm.012.005","Trinh Thư Truyên, Nôm_Y.012.jpg",5,1,mismatch,7,7,7,细,tới,tế,朱𢧚汝𨀈風塵细低,cho nên nhỡ bước phong trần tới đây
+"Trinh Thư Truyên, Nôm",70,13,70,"Trinh Thư Truyên, Nôm.012.006","Trinh Thư Truyên, Nôm_Y.012.jpg",6,1,mismatch,5,5,5,特,giải,"hay, sệt, vậy, đước, được, đặc, đặt, đực",払𦖑農餒特排,chẳng nghe nông nỗi giải bầy
+"Trinh Thư Truyên, Nôm",71,14,71,"Trinh Thư Truyên, Nôm.012.007","Trinh Thư Truyên, Nôm_Y.012.jpg",7,1,mismatch,7,7,7,𠴗,giữ,"dô, dỗ, giỗ, nhổ, sỗ, đổ",决𢚸琴瑟󰜋𠄩𠴗停,quyết lòng cầm sắt một hai giữ giành
+"Trinh Thư Truyên, Nôm",74,,74,"Trinh Thư Truyên, Nôm.012.010","Trinh Thư Truyên, Nôm_Y.012.jpg",10,1,mismatch,5,5,5,𱙡,vợ,,㐌𫨩𥪝道𱙡𫯳,dã hay trong đạo vợ chồng
+"Trinh Thư Truyên, Nôm",81,15,81,"Trinh Thư Truyên, Nôm.013.005","Trinh Thư Truyên, Nôm_Y.013.jpg",5,1,mismatch,2,2,2,纒,gìn,"chiền, dờn, triền",𧊉纒螉𡨹爫𫳵朱全,bướm gìn ong giữ làm sao cho toàn
+"Trinh Thư Truyên, Nôm",82,16,82,"Trinh Thư Truyên, Nôm.013.006","Trinh Thư Truyên, Nôm_Y.013.jpg",6,1,mismatch,1,1,1,󰬷,nỡ,"vã, vả",󰬷娘󰑼𡛔婵娟,nỡ nang là gái thuyền quyên
+"Trinh Thư Truyên, Nôm",82,16,82,"Trinh Thư Truyên, Nôm.013.006","Trinh Thư Truyên, Nôm_Y.013.jpg",6,2,mismatch,2,2,2,娘,nang,"chàng, như, nàng, náng, nâng, nương, nước, nường, rằng, vương",󰬷娘󰑼𡛔婵娟,nỡ nang là gái thuyền quyên
+"Trinh Thư Truyên, Nôm",84,,84,"Trinh Thư Truyên, Nôm.013.008","Trinh Thư Truyên, Nôm_Y.013.jpg",8,1,mismatch,1,1,1,吨,vì,"dồn, giòn, rộn, xôn, xồn, đon, đòn, đùn, đốn, đồn, ồn",吨𦓡篤𬌓𢚸葵,vì mà giốc tấm lòng quí
+"Trinh Thư Truyên, Nôm",94,17,94,"Trinh Thư Truyên, Nôm.014.006","Trinh Thư Truyên, Nôm_Y.014.jpg",6,1,mismatch,1,1,1,纲,cưỡng,cương,纲常道奇𪾋𨔈,cưỡng thường đạo cả giám chơi
+"Trinh Thư Truyên, Nôm",95,18,95,"Trinh Thư Truyên, Nôm.014.007","Trinh Thư Truyên, Nôm_Y.014.jpg",7,1,mismatch,5,5,5,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",󰜋惗𥱬𡨹尒唎丁寕,một niềm ghi giữ mấy lời đinh ninh
+"Trinh Thư Truyên, Nôm",99,19,99,"Trinh Thư Truyên, Nôm.014.011","Trinh Thư Truyên, Nôm_Y.014.jpg",11,1,mismatch,7,7,7,󰜋,mặt,"mốt, một",𨑮分拱𫽄轉交󰜋分,mười phân cũng chẳng chuyển giao mặt phấn
+"Trinh Thư Truyên, Nôm",100,20,100,"Trinh Thư Truyên, Nôm.015.000","Trinh Thư Truyên, Nôm_Y.015.jpg",0,1,mismatch,5,5,5,来,lại,"lai, lay, lây, lãi, lơi, ray, rài, rơi, rồi",夏戈𪾋約来春,hạ qua giám ước lại xuân
+"Trinh Thư Truyên, Nôm",101,21,101,"Trinh Thư Truyên, Nôm.015.001","Trinh Thư Truyên, Nôm_Y.015.jpg",1,1,mismatch,1,1,1,屍,rể,"thi, thây",屍侯鵸𤀓尒吝女𫳵,rể hâu gà buộc mấy lần nữa sao
+"Trinh Thư Truyên, Nôm",101,21,101,"Trinh Thư Truyên, Nôm.015.001","Trinh Thư Truyên, Nôm_Y.015.jpg",1,2,mismatch,2,2,2,侯,hâu,"hầu, hậu",屍侯鵸𤀓尒吝女𫳵,rể hâu gà buộc mấy lần nữa sao
+"Trinh Thư Truyên, Nôm",101,21,101,"Trinh Thư Truyên, Nôm.015.001","Trinh Thư Truyên, Nôm_Y.015.jpg",1,3,mismatch,4,4,4,𤀓,buộc,lọc,屍侯鵸𤀓尒吝女𫳵,rể hâu gà buộc mấy lần nữa sao
+"Trinh Thư Truyên, Nôm",101,21,101,"Trinh Thư Truyên, Nôm.015.001","Trinh Thư Truyên, Nôm_Y.015.jpg",1,4,mismatch,5,5,5,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",屍侯鵸𤀓尒吝女𫳵,rể hâu gà buộc mấy lần nữa sao
+"Trinh Thư Truyên, Nôm",102,22,102,"Trinh Thư Truyên, Nôm.015.002","Trinh Thư Truyên, Nôm_Y.015.jpg",2,1,mismatch,6,6,6,曹,cao,"rào, tao, tào, tàu, tảo",分停如妸𣱆曹,phận đành như ả họ cao
+"Trinh Thư Truyên, Nôm",103,23,103,"Trinh Thư Truyên, Nôm.015.003","Trinh Thư Truyên, Nôm_Y.015.jpg",3,1,mismatch,4,4,4,特,đuốc,"hay, sệt, vậy, đước, được, đặc, đặt, đực",懞𡑝槐特清騷󰑼𢜠,mong sân hoè đuốc thanh tao là mừng
+"Trinh Thư Truyên, Nôm",104,24,104,"Trinh Thư Truyên, Nôm.015.004","Trinh Thư Truyên, Nôm_Y.015.jpg",4,1,mismatch,3,3,3,趾,sẩy,"chỉ, nhảy, nhẩy",悲𣉹趾𨀈𢙲蹎,bây giờ sẩy bước nhở chân
+"Trinh Thư Truyên, Nôm",104,24,104,"Trinh Thư Truyên, Nôm.015.004","Trinh Thư Truyên, Nôm_Y.015.jpg",4,2,mismatch,5,5,5,𢙲,nhở,"lả, lỡ, lữa, nhỡ, rỡ",悲𣉹趾𨀈𢙲蹎,bây giờ sẩy bước nhở chân
+"Trinh Thư Truyên, Nôm",107,25,107,"Trinh Thư Truyên, Nôm.015.007","Trinh Thư Truyên, Nôm_Y.015.jpg",7,1,mismatch,6,6,6,強,cang,"càng, cùng, cương, cường, cưỡng, cẵng, gàn, gàng, gương, gượng, gắng, ngượng",𠰺塘方便𢚸強感恩,giậy đường phương tiện lòng cang cảm ơn
+"Trinh Thư Truyên, Nôm",108,26,108,"Trinh Thư Truyên, Nôm.015.008","Trinh Thư Truyên, Nôm_Y.015.jpg",8,1,mismatch,2,2,2,絲,to,"chi, duyên, dây, mịch, the, ti, ty, tì, tơ, tưa, tỉ",𩯀絲𠸤󰤣源干,tóc to giãi hết nguồn cơn
+"Trinh Thư Truyên, Nôm",109,,109,"Trinh Thư Truyên, Nôm.015.009","Trinh Thư Truyên, Nôm_Y.015.jpg",9,1,mismatch,5,5,5,禅,thơn,"thiền, thiện, thuyền, xèng",决料𠹾分禅𩺡𣳚皮,quyết liều chịu phận thơn bơn một bề
+"Trinh Thư Truyên, Nôm",110,27,110,"Trinh Thư Truyên, Nôm.015.010","Trinh Thư Truyên, Nôm_Y.015.jpg",10,1,mismatch,1,1,1,情,bình,"dềnh, giả, lòng, rình, thanh, tành, tình, tính, tạnh, xênh, xình",情𠸗𡶀指𡽫𡂉,bình xưa núi chỉ non thề
+"Trinh Thư Truyên, Nôm",111,28,111,"Trinh Thư Truyên, Nôm.015.011","Trinh Thư Truyên, Nôm_Y.015.jpg",11,1,mismatch,1,1,1,𡬷,các,"gang, tấc",𡬷𢚸𥒥鑿鐄𥱬𪾋𨄼,các lòng đá tạc vàng ghi giám ròi
+"Trinh Thư Truyên, Nôm",111,28,111,"Trinh Thư Truyên, Nôm.015.011","Trinh Thư Truyên, Nôm_Y.015.jpg",11,2,mismatch,8,8,8,𨄼,ròi,dời,𡬷𢚸𥒥鑿鐄𥱬𪾋𨄼,các lòng đá tạc vàng ghi giám ròi
+"Trinh Thư Truyên, Nôm",112,29,112,"Trinh Thư Truyên, Nôm.016.000","Trinh Thư Truyên, Nôm_Y.016.jpg",0,1,mismatch,6,6,6,𠁀,đôi,"đời, đờị",𣄒𠁀擅競貝𠁀,ở đời chen cạnh mấy đôi
+"Trinh Thư Truyên, Nôm",117,,117,"Trinh Thư Truyên, Nôm.016.005","Trinh Thư Truyên, Nôm_Y.016.jpg",5,1,mismatch,5,5,5,屍,rể,"thi, thây",󰮂欺比換屍侯𣳚埃,trong khi tỉ hoán rể hầu một ai
+"Trinh Thư Truyên, Nôm",119,30,119,"Trinh Thư Truyên, Nôm.016.007","Trinh Thư Truyên, Nôm_Y.016.jpg",7,1,mismatch,4,4,4,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",𣳚𣈜󰑼尒𣋽𣈕咳娘,một ngày là mấy sớm mai hỡi nàng
+"Trinh Thư Truyên, Nôm",120,31,120,"Trinh Thư Truyên, Nôm.016.008","Trinh Thư Truyên, Nôm_Y.016.jpg",8,1,mismatch,1,1,1,細,cởi,"té, tí, tía, tế, tỉ, tới, đến",細𨆢堆礼朱詳,cởi lui đôi lẽ cho tường
+"Trinh Thư Truyên, Nôm",122,32,122,"Trinh Thư Truyên, Nôm.016.010","Trinh Thư Truyên, Nôm_Y.016.jpg",10,1,mismatch,5,5,5,至,thì,"cháy, chí, giạ",㐌𢧚夫婦至情,đã nên phu phụ thì tình
+"Trinh Thư Truyên, Nôm",127,33,127,"Trinh Thư Truyên, Nôm.017.003","Trinh Thư Truyên, Nôm_Y.017.jpg",3,1,mismatch,4,4,4,𨄃,sộc,"choạc, trục, xộc, đuổi",丐𫅷𨅃𨄃伮辰蹺𡢐,cái già sồng sộc nó thì theo sau
+"Trinh Thư Truyên, Nôm",129,,129,"Trinh Thư Truyên, Nôm.017.005","Trinh Thư Truyên, Nôm_Y.017.jpg",5,1,mismatch,2,2,2,𥳪,toan,,急𥳪劔准半愁𢺀𢝙,kíp toan kiếm chốn bán sầu mua vui
+"Trinh Thư Truyên, Nôm",130,,130,"Trinh Thư Truyên, Nôm.017.006","Trinh Thư Truyên, Nôm_Y.017.jpg",6,1,mismatch,4,4,4,典,rữa,"dến, điếng, điển, đén, đến",花殘蘃典辰傕,hoa tàn nhị rữa thì thôi
+"Trinh Thư Truyên, Nôm",131,34,131,"Trinh Thư Truyên, Nôm.017.007","Trinh Thư Truyên, Nôm_Y.017.jpg",7,1,mismatch,6,6,6,唎,lòi,"lí, lý, lời, lợi, ré, rí, rỉa, trơi",閉𣉹埃仉群唎𩯀丝,bấy giờ ai kẻ con lòi tóc tơ
+"Trinh Thư Truyên, Nôm",131,34,131,"Trinh Thư Truyên, Nôm.017.007","Trinh Thư Truyên, Nôm_Y.017.jpg",7,2,mismatch,8,8,8,丝,tơ,"ti, ty",閉𣉹埃仉群唎𩯀丝,bấy giờ ai kẻ con lòi tóc tơ
+"Trinh Thư Truyên, Nôm",133,35,133,"Trinh Thư Truyên, Nôm.017.009","Trinh Thư Truyên, Nôm_Y.017.jpg",9,1,mismatch,1,1,1,剔,rẽ,"dịch, thí, thế, tích",剔埃𢗼𢠯𣋽𬁑尒娘,rẽ ai lo lắng sớm trưa máy nang
+"Trinh Thư Truyên, Nôm",133,35,133,"Trinh Thư Truyên, Nôm.017.009","Trinh Thư Truyên, Nôm_Y.017.jpg",9,2,mismatch,7,7,7,尒,máy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",剔埃𢗼𢠯𣋽𬁑尒娘,rẽ ai lo lắng sớm trưa máy nang
+"Trinh Thư Truyên, Nôm",133,35,133,"Trinh Thư Truyên, Nôm.017.009","Trinh Thư Truyên, Nôm_Y.017.jpg",9,3,mismatch,8,8,8,娘,nang,"chàng, như, nàng, náng, nâng, nương, nước, nường, rằng, vương",剔埃𢗼𢠯𣋽𬁑尒娘,rẽ ai lo lắng sớm trưa máy nang
+"Trinh Thư Truyên, Nôm",135,36,135,"Trinh Thư Truyên, Nôm.017.011","Trinh Thư Truyên, Nôm_Y.017.jpg",11,1,mismatch,5,5,5,弾,đau,"rờn, đan, đàn, đạn, đận, đằn",𦀊油𢴇䋦弾羕𣵚𢝙,giây du chắp mối đau dường thêm vui
+"Trinh Thư Truyên, Nôm",138,,138,"Trinh Thư Truyên, Nôm.018.002","Trinh Thư Truyên, Nôm_Y.018.jpg",2,1,mismatch,3,3,3,忊,vò,"dành, đuềnh, đành",欣欺忊𡨸𡛤𧜖,hơn khi vò võ nửa chăn
+"Trinh Thư Truyên, Nôm",138,,138,"Trinh Thư Truyên, Nôm.018.002","Trinh Thư Truyên, Nôm_Y.018.jpg",2,2,mismatch,4,4,4,𡨸,võ,"chử, chữ, giữ, tên",欣欺忊𡨸𡛤𧜖,hơn khi vò võ nửa chăn
+"Trinh Thư Truyên, Nôm",141,,141,"Trinh Thư Truyên, Nôm.018.005","Trinh Thư Truyên, Nôm_Y.018.jpg",5,1,mismatch,1,1,1,批,bác,"phe, phây, phê, phơi, phẩy, tỉa",批銅斤此䀡皮芇欣,bác đồng cân thử xem bề nào hơn
+"Trinh Thư Truyên, Nôm",142,37,142,"Trinh Thư Truyên, Nôm.018.006","Trinh Thư Truyên, Nôm_Y.018.jpg",6,1,mismatch,3,3,3,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",𠸗𫢩尒仉紅顔,xưa nay mấy kẻ hồng nhan
+"Trinh Thư Truyên, Nôm",145,38,145,"Trinh Thư Truyên, Nôm.018.009","Trinh Thư Truyên, Nôm_Y.018.jpg",9,1,mismatch,1,1,1,𢚸,lưng,"bề, bụi, long, lòng, lời, nàng, trời, đành, đắng",𢚸𣘈胣鉄𨉓兜𪾋皮,lưng son giạ sắt mình đâu giám bì
+"Trinh Thư Truyên, Nôm",148,39,148,"Trinh Thư Truyên, Nôm.019.000","Trinh Thư Truyên, Nôm_Y.019.jpg",0,1,mismatch,6,6,6,恒,hàng,"căng, cắng, hoàn, hằng",𡞕𫯳道奇礼恒,vợ chồng đạo cả lẽ hàng
+"Trinh Thư Truyên, Nôm",150,,150,"Trinh Thư Truyên, Nôm.019.002","Trinh Thư Truyên, Nôm_Y.019.jpg",2,1,mismatch,1,1,1,𠼯,thể,"hả, hớ, hở, hử, khứa",𠼯徐𠵩買天開,thể từ thuở mới thiên khai
+"Trinh Thư Truyên, Nôm",150,,150,"Trinh Thư Truyên, Nôm.019.002","Trinh Thư Truyên, Nôm_Y.019.jpg",2,2,mismatch,3,3,3,𠵩,thuở,quở,𠼯徐𠵩買天開,thể từ thuở mới thiên khai
+"Trinh Thư Truyên, Nôm",151,40,151,"Trinh Thư Truyên, Nôm.019.003","Trinh Thư Truyên, Nôm_Y.019.jpg",3,1,mismatch,1,1,1,𦣰,nam,"nằm, nằn",𦣰𧯄𣄒内諸埃惻𫡛,nam bang ở nội chứa ai biết gì
+"Trinh Thư Truyên, Nôm",151,40,151,"Trinh Thư Truyên, Nôm.019.003","Trinh Thư Truyên, Nôm_Y.019.jpg",3,2,mismatch,2,2,2,𧯄,bang,hang,𦣰𧯄𣄒内諸埃惻𫡛,nam bang ở nội chứa ai biết gì
+"Trinh Thư Truyên, Nôm",151,40,151,"Trinh Thư Truyên, Nôm.019.003","Trinh Thư Truyên, Nôm_Y.019.jpg",3,3,mismatch,7,7,7,惻,biết,trắc,𦣰𧯄𣄒内諸埃惻𫡛,nam bang ở nội chứa ai biết gì
+"Trinh Thư Truyên, Nôm",152,41,152,"Trinh Thư Truyên, Nôm.019.004","Trinh Thư Truyên, Nôm_Y.019.jpg",4,1,mismatch,3,3,3,因,có,"dăn, nhân, nhăn, nhơn, nhưng, nhận, nhằn",拱群因礼例皮,cũng con có lề lệ bì
+"Trinh Thư Truyên, Nôm",152,41,152,"Trinh Thư Truyên, Nôm.019.004","Trinh Thư Truyên, Nôm_Y.019.jpg",4,2,mismatch,4,4,4,礼,lề,"lãi, lưỡi, lạy, lấy, lẩy, lẫy, lẻ, lẽ, lể, lễ, lệ, lởi, lỡi, rẻ, rẽ, trải, trẩy, trẻ, trễ",拱群因礼例皮,cũng con có lề lệ bì
+"Trinh Thư Truyên, Nôm",153,42,153,"Trinh Thư Truyên, Nôm.019.005","Trinh Thư Truyên, Nôm_Y.019.jpg",5,1,mismatch,6,6,6,皮,bế,"bè, bê, bì, bìa, bầy, bề, bờ, bừa, da, kịp, lại, mới, phì, từ, vào, về, vờ, vừa",吱𩔗茍合呡皮滛奔,chi loài cẩu hợp răn bế dâm bôn
+"Trinh Thư Truyên, Nôm",156,,156,"Trinh Thư Truyên, Nôm.019.008","Trinh Thư Truyên, Nôm_Y.019.jpg",8,1,mismatch,1,1,1,𡗶,gửi,"giơì, giời, lời, nhời, thì, trời",𡗶兜負仉節儀,gửi đâu phụ kẻ tiết nghì
+"Trinh Thư Truyên, Nôm",158,43,158,"Trinh Thư Truyên, Nôm.019.010","Trinh Thư Truyên, Nôm_Y.019.jpg",10,1,mismatch,3,3,3,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",𠁀𠸗尒仉𡛔䝨,đời xưa mấy kẻ gái hiền
+"Trinh Thư Truyên, Nôm",164,44,164,"Trinh Thư Truyên, Nôm.020.004","Trinh Thư Truyên, Nôm_Y.020.jpg",4,1,mismatch,5,5,5,除,trơ,"chờ, chừ, chừa, dơ, dờ, giờ, hờ, khừ, thờ, trờ, trừ, xờ",仉𫯳𡥵妬除除,kẻ chồng con đó trơ trơ
+"Trinh Thư Truyên, Nôm",164,44,164,"Trinh Thư Truyên, Nôm.020.004","Trinh Thư Truyên, Nôm_Y.020.jpg",4,2,mismatch,6,6,6,除,trơ,"chờ, chừ, chừa, dơ, dờ, giờ, hờ, khừ, thờ, trờ, trừ, xờ",仉𫯳𡥵妬除除,kẻ chồng con đó trơ trơ
+"Trinh Thư Truyên, Nôm",167,45,167,"Trinh Thư Truyên, Nôm.020.007","Trinh Thư Truyên, Nôm_Y.020.jpg",7,1,mismatch,5,5,5,改,cái,"cãi, cải, cởi, cửi, gãi, gưởi, gảy, gởi, gợi, gửi, hãy, khảy",𣠖撑𦰟𦹵改容变󰀩,chưa xanh ngọn cỏ cái dung biến nghi
+"Trinh Thư Truyên, Nôm",169,46,169,"Trinh Thư Truyên, Nôm.020.009","Trinh Thư Truyên, Nôm_Y.020.jpg",9,1,mismatch,1,1,1,焞,đành,"hảnh, hửng, tuấn, đun, đôn",焞焞碑𠰘群𥱬𦤾𣈙,đành đành bia miệng còn ghi đến dày
+"Trinh Thư Truyên, Nôm",169,46,169,"Trinh Thư Truyên, Nôm.020.009","Trinh Thư Truyên, Nôm_Y.020.jpg",9,2,mismatch,2,2,2,焞,đành,"hảnh, hửng, tuấn, đun, đôn",焞焞碑𠰘群𥱬𦤾𣈙,đành đành bia miệng còn ghi đến dày
+"Trinh Thư Truyên, Nôm",169,46,169,"Trinh Thư Truyên, Nôm.020.009","Trinh Thư Truyên, Nôm_Y.020.jpg",9,3,mismatch,8,8,8,𣈙,dày,"rày, rầy, tày",焞焞碑𠰘群𥱬𦤾𣈙,đành đành bia miệng còn ghi đến dày
+"Trinh Thư Truyên, Nôm",171,,171,"Trinh Thư Truyên, Nôm.020.011","Trinh Thư Truyên, Nôm_Y.020.jpg",11,1,mismatch,3,3,3,惻,biết,trắc,娘陀惻󰜋𣠖𫨩惻𨑮,nàng đà biết một chưa hay biết mười
+"Trinh Thư Truyên, Nôm",171,,171,"Trinh Thư Truyên, Nôm.020.011","Trinh Thư Truyên, Nôm_Y.020.jpg",11,2,mismatch,7,7,7,惻,biết,trắc,娘陀惻󰜋𣠖𫨩惻𨑮,nàng đà biết một chưa hay biết mười
+"Trinh Thư Truyên, Nôm",172,47,172,"Trinh Thư Truyên, Nôm.021.000","Trinh Thư Truyên, Nôm_Y.021.jpg",0,1,mismatch,6,6,6,𠁀,đới,"đời, đờị",㐌󰑼𦖻眜𣄒𠁀,dã là tai mắt ở đới
+"Trinh Thư Truyên, Nôm",173,48,173,"Trinh Thư Truyên, Nôm.021.001","Trinh Thư Truyên, Nôm_Y.021.jpg",1,1,mismatch,2,2,2,𨉓,minh,mình,拠𨉓濐扒斫𠊚務名,cứ minh chớ bắt chiếc người vụ danh
+"Trinh Thư Truyên, Nôm",173,48,173,"Trinh Thư Truyên, Nôm.021.001","Trinh Thư Truyên, Nôm_Y.021.jpg",1,2,mismatch,5,5,5,斫,chiếc,"chác, chóc, chước, rích, trác",拠𨉓濐扒斫𠊚務名,cứ minh chớ bắt chiếc người vụ danh
+"Trinh Thư Truyên, Nôm",174,49,174,"Trinh Thư Truyên, Nôm.021.002","Trinh Thư Truyên, Nôm_Y.021.jpg",2,1,mismatch,5,5,5,常,thướng,"hằng, sàn, thì, thường, trường",𣄒󰮂世事常情,ở trong thế sự thướng tình
+"Trinh Thư Truyên, Nôm",175,50,175,"Trinh Thư Truyên, Nôm.021.003","Trinh Thư Truyên, Nôm_Y.021.jpg",3,1,mismatch,3,3,3,𨉓,mính,mình,係󰑼𨉓特益𨉓辰催,hễ là mính được ích mình thì thôi
+"Trinh Thư Truyên, Nôm",176,51,176,"Trinh Thư Truyên, Nôm.021.004","Trinh Thư Truyên, Nôm_Y.021.jpg",4,1,mismatch,1,1,1,𠸠,mí,"bí, vì, ví",𠸠𦓡扒斫如埃,mí mà bắt chiếc như ai
+"Trinh Thư Truyên, Nôm",176,51,176,"Trinh Thư Truyên, Nôm.021.004","Trinh Thư Truyên, Nôm_Y.021.jpg",4,2,mismatch,4,4,4,斫,chiếc,"chác, chóc, chước, rích, trác",𠸠𦓡扒斫如埃,mí mà bắt chiếc như ai
+"Trinh Thư Truyên, Nôm",179,,179,"Trinh Thư Truyên, Nôm.021.007","Trinh Thư Truyên, Nôm_Y.021.jpg",7,1,mismatch,1,1,1,𣈙,sớm,"rày, rầy, tày",𣈙󰞴紫𠓨𫥨茹鐄,sớm khuya cửa tía vào ra nhà vàng
+"Trinh Thư Truyên, Nôm",180,52,180,"Trinh Thư Truyên, Nôm.021.008","Trinh Thư Truyên, Nôm_Y.021.jpg",8,1,mismatch,1,1,1,徐,cứ,"chờ, chừ, chừa, dờ, giờ, thờ, từ, xờ",徐欺屈󰘚漢皇,cứ khi khuất mặt hán hoàng
+"Trinh Thư Truyên, Nôm",181,53,181,"Trinh Thư Truyên, Nôm.021.009","Trinh Thư Truyên, Nôm_Y.021.jpg",9,1,mismatch,5,5,5,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",𢚸群私襊尒払斯諅,lòng con tư túi mấy chang cư kỵ
+"Trinh Thư Truyên, Nôm",181,53,181,"Trinh Thư Truyên, Nôm.021.009","Trinh Thư Truyên, Nôm_Y.021.jpg",9,2,mismatch,7,7,7,斯,cư,"ti, tê, tư",𢚸群私襊尒払斯諅,lòng con tư túi mấy chang cư kỵ
+"Trinh Thư Truyên, Nôm",182,54,182,"Trinh Thư Truyên, Nôm.021.010","Trinh Thư Truyên, Nôm_Y.021.jpg",10,1,mismatch,3,3,3,陽,dường,"dàng, dương, giang, âm",妸湖陽怒𢀨乘,ả hồ dường nọ sang thưa
+"Trinh Thư Truyên, Nôm",182,54,182,"Trinh Thư Truyên, Nôm.021.010","Trinh Thư Truyên, Nôm_Y.021.jpg",10,2,mismatch,6,6,6,乘,thưa,"thắng, thặng, thừa",妸湖陽怒𢀨乘,ả hồ dường nọ sang thưa
+"Trinh Thư Truyên, Nôm",183,55,183,"Trinh Thư Truyên, Nôm.021.011","Trinh Thư Truyên, Nôm_Y.021.jpg",11,1,mismatch,5,5,5,憚,toan,"dạn, dợn, rợn, đát, đạn, đận, đặn",故𫡛𦓡吏憚榦宗公,có gì mà lại toan thờ công cộng
+"Trinh Thư Truyên, Nôm",183,55,183,"Trinh Thư Truyên, Nôm.021.011","Trinh Thư Truyên, Nôm_Y.021.jpg",11,2,mismatch,6,6,6,榦,thờ,"can, càn, cán, cơn, hàn",故𫡛𦓡吏憚榦宗公,có gì mà lại toan thờ công cộng
+"Trinh Thư Truyên, Nôm",183,55,183,"Trinh Thư Truyên, Nôm.021.011","Trinh Thư Truyên, Nôm_Y.021.jpg",11,3,mismatch,7,7,7,宗,công,"tong, tung, tôn, tông",故𫡛𦓡吏憚榦宗公,có gì mà lại toan thờ công cộng
+"Trinh Thư Truyên, Nôm",183,55,183,"Trinh Thư Truyên, Nôm.021.011","Trinh Thư Truyên, Nôm_Y.021.jpg",11,4,mismatch,8,8,8,公,cộng,công,故𫡛𦓡吏憚榦宗公,có gì mà lại toan thờ công cộng
+"Trinh Thư Truyên, Nôm",185,56,185,"Trinh Thư Truyên, Nôm.022.001","Trinh Thư Truyên, Nôm_Y.022.jpg",1,1,mismatch,1,1,1,葿,chay,may,葿𧍋特聘陛𧏵尒番,chay ngai được sánh bệ rồng mấy phen
+"Trinh Thư Truyên, Nôm",185,56,185,"Trinh Thư Truyên, Nôm.022.001","Trinh Thư Truyên, Nôm_Y.022.jpg",1,2,mismatch,2,2,2,𧍋,ngai,ngài,葿𧍋特聘陛𧏵尒番,chay ngai được sánh bệ rồng mấy phen
+"Trinh Thư Truyên, Nôm",185,56,185,"Trinh Thư Truyên, Nôm.022.001","Trinh Thư Truyên, Nôm_Y.022.jpg",1,3,mismatch,7,7,7,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",葿𧍋特聘陛𧏵尒番,chay ngai được sánh bệ rồng mấy phen
+"Trinh Thư Truyên, Nôm",186,57,186,"Trinh Thư Truyên, Nôm.022.002","Trinh Thư Truyên, Nôm_Y.022.jpg",2,1,mismatch,1,1,1,希,vua,"he, hi, hoe, hy, hây, hê, hì, hơi, hề, si, sè, sé, sì, sầy, ê",希唐脱𨇒車仙,vua dương thoát ruổi xe tiên
+"Trinh Thư Truyên, Nôm",186,57,186,"Trinh Thư Truyên, Nôm.022.002","Trinh Thư Truyên, Nôm_Y.022.jpg",2,2,mismatch,2,2,2,唐,dương,"dể, giềng, đàng, đường, đằng, ường",希唐脱𨇒車仙,vua dương thoát ruổi xe tiên
+"Trinh Thư Truyên, Nôm",187,58,187,"Trinh Thư Truyên, Nôm.022.003","Trinh Thư Truyên, Nôm_Y.022.jpg",3,1,mismatch,3,3,3,𥪝,trung,"lông, trong, trông",𢷀幔𥪝㐌固𡅪𥢆西,dủ màn trung đã có nguyền riêng tây
+"Trinh Thư Truyên, Nôm",188,59,188,"Trinh Thư Truyên, Nôm.022.004","Trinh Thư Truyên, Nôm_Y.022.jpg",4,1,mismatch,3,3,3,堆,đối,"chui, doi, duôi, dùi, một, nhoi, thôi, đui, đuôi, đòi, đôi, đồi",𣱆張堆妸𫅠台,họ trương đối ả dẹp thay
+"Trinh Thư Truyên, Nôm",188,59,188,"Trinh Thư Truyên, Nôm.022.004","Trinh Thư Truyên, Nôm_Y.022.jpg",4,2,mismatch,5,5,5,𫅠,dẹp,đẹp,𣱆張堆妸𫅠台,họ trương đối ả dẹp thay
+"Trinh Thư Truyên, Nôm",190,60,190,"Trinh Thư Truyên, Nôm.022.006","Trinh Thư Truyên, Nôm_Y.022.jpg",6,1,mismatch,5,5,5,專,chuyện,"chiên, choèn, chuyên, chuyến, xuyền, đoan, đoàn",貂婵𧯶正專芇,điêu thuyền há chính chuyện nào
+"Trinh Thư Truyên, Nôm",193,61,193,"Trinh Thư Truyên, Nôm.022.009","Trinh Thư Truyên, Nôm_Y.022.jpg",9,1,mismatch,1,1,1,𡎝,coi,"cõi, cỏi, cổi, quẽ",𡎝𠁀埃乃調穷唭吱,coi đời ai nấy đều cùng cười chê
+"Trinh Thư Truyên, Nôm",194,62,194,"Trinh Thư Truyên, Nôm.022.010","Trinh Thư Truyên, Nôm_Y.022.jpg",10,1,mismatch,1,1,1,此,chủ,"nảy, thử, thửa, tử",此𥋳𥙩帝𦓡推,chủ cui lấy đấy mà suy
+"Trinh Thư Truyên, Nôm",194,62,194,"Trinh Thư Truyên, Nôm.022.010","Trinh Thư Truyên, Nôm_Y.022.jpg",10,2,mismatch,2,2,2,𥋳,cui,coi,此𥋳𥙩帝𦓡推,chủ cui lấy đấy mà suy
+"Trinh Thư Truyên, Nôm",195,63,195,"Trinh Thư Truyên, Nôm.022.011","Trinh Thư Truyên, Nôm_Y.022.jpg",11,1,mismatch,8,8,8,兜,đầu,"dâu, đâu, đây, đâủ, đẩu",𠊚灵欣物芇儀𣄒兜,người linh hơn vật nào nghi ở đầu
+"Trinh Thư Truyên, Nôm",200,64,200,"Trinh Thư Truyên, Nôm.023.004","Trinh Thư Truyên, Nôm_Y.023.jpg",4,1,mismatch,1,1,1,𨃴,gút,gót,𨃴頭娘𢠯𡎢𦖑,gút đầu nàng lắng ngồi nghe
+"Trinh Thư Truyên, Nôm",202,65,202,"Trinh Thư Truyên, Nôm.023.006","Trinh Thư Truyên, Nôm_Y.023.jpg",6,1,mismatch,5,5,5,掩,em,"uôm, yểm, ám, ém, êm, ôm, ẵm, ếm, ỉm",払𪫢娘㐌掩𦖻,chẳng ngờ nàng đã em tai
+"Trinh Thư Truyên, Nôm",206,,206,"Trinh Thư Truyên, Nôm.023.010","Trinh Thư Truyên, Nôm_Y.023.jpg",10,1,mismatch,6,6,6,蚆,vờ,ba,𧁷巾𦓡壳如蚆,khó khăn mà xác như vờ
+"Trinh Thư Truyên, Nôm",207,66,207,"Trinh Thư Truyên, Nôm.023.011","Trinh Thư Truyên, Nôm_Y.023.jpg",11,1,mismatch,5,5,5,萎,rau,"nuy, oải, oẻ, tuy, uy, uế, uỳ, uỷ",渃滝𥺊𢄂萎𢺀檜同,nước sông gạo chợ rau mua củi đồng
+"Trinh Thư Truyên, Nôm",208,67,208,"Trinh Thư Truyên, Nôm.024.000","Trinh Thư Truyên, Nôm_Y.024.jpg",0,1,mismatch,1,1,1,𦧘,chịt,thịt,𦧘𫽄固𩵜衣空,chịt chăng có cá thú không
+"Trinh Thư Truyên, Nôm",208,67,208,"Trinh Thư Truyên, Nôm.024.000","Trinh Thư Truyên, Nôm_Y.024.jpg",0,2,mismatch,5,5,5,衣,thú,"e, y, ý, ấy, ỉ, ỵ",𦧘𫽄固𩵜衣空,chịt chăng có cá thú không
+"Trinh Thư Truyên, Nôm",212,,212,"Trinh Thư Truyên, Nôm.024.004","Trinh Thư Truyên, Nôm_Y.024.jpg",4,1,mismatch,4,4,4,啿,gậm,"thòm, thầm, đảm",㹥𦣰𡏘啿𤿭𬞲,chó nằm hè gậm vỏ khoai
+"Trinh Thư Truyên, Nôm",213,68,213,"Trinh Thư Truyên, Nôm.024.005","Trinh Thư Truyên, Nôm_Y.024.jpg",5,1,mismatch,3,3,3,𠾕,giũi,"dỗi, giỗi, xổi, đòi, đồi, ở",𤞼觥𠾕坦扲唏𤷍癯,lợn quanh giũi đất cầm hơi gày gò
+"Trinh Thư Truyên, Nôm",217,69,217,"Trinh Thư Truyên, Nôm.024.009","Trinh Thư Truyên, Nôm_Y.024.jpg",9,1,mismatch,7,7,7,斗,đau,"dấu, rẫu, tẩu, điếu, đấu, đẩu, ẩu",江山󰜋捻吏強斗𢫝,giang sơn một nắm lại càng đau đong
+"Trinh Thư Truyên, Nôm",219,,219,"Trinh Thư Truyên, Nôm.024.011","Trinh Thư Truyên, Nôm_Y.024.jpg",11,,extra_nom,3,3,,𠽮,,"chề, dè, dề, giề, đe, đì",𠰘咹𠽮噠𠤆㤨𤷱𡄎,miệng ăn giãi chớ hòng mon men
+"Trinh Thư Truyên, Nôm",219,,219,"Trinh Thư Truyên, Nôm.024.011","Trinh Thư Truyên, Nôm_Y.024.jpg",11,1,mismatch,4,4,3,噠,giãi,"tháp, thơn, thớt, đáp, đát, đạt, đật, đặt, đớt",𠰘咹𠽮噠𠤆㤨𤷱𡄎,miệng ăn giãi chớ hòng mon men
+"Trinh Thư Truyên, Nôm",219,,219,"Trinh Thư Truyên, Nôm.024.011","Trinh Thư Truyên, Nôm_Y.024.jpg",11,2,mismatch,8,8,7,𡄎,men,"căm, gẫm, gậm, gắm, gặm, gớm, ngâm, ngấm, ngẩm, ngẫm, ngắm, ỷ",𠰘咹𠽮噠𠤆㤨𤷱𡄎,miệng ăn giãi chớ hòng mon men
+"Trinh Thư Truyên, Nôm",221,70,221,"Trinh Thư Truyên, Nôm.025.001","Trinh Thư Truyên, Nôm_Y.025.jpg",1,1,mismatch,4,4,4,鵬,mỡ,"bàng, bằng, phượng, phụng",炟𥑥𫥨鵬倴擅曽调,rán sành ra mỡ bon chen tứng điều
+"Trinh Thư Truyên, Nôm",221,70,221,"Trinh Thư Truyên, Nôm.025.001","Trinh Thư Truyên, Nôm_Y.025.jpg",1,2,mismatch,5,5,5,倴,bon,"buôn, bôn",炟𥑥𫥨鵬倴擅曽调,rán sành ra mỡ bon chen tứng điều
+"Trinh Thư Truyên, Nôm",221,70,221,"Trinh Thư Truyên, Nôm.025.001","Trinh Thư Truyên, Nôm_Y.025.jpg",1,3,mismatch,7,7,7,曽,tứng,"tâng, tăng, tơn, tưng, tằng, từng",炟𥑥𫥨鵬倴擅曽调,rán sành ra mỡ bon chen tứng điều
+"Trinh Thư Truyên, Nôm",223,71,223,"Trinh Thư Truyên, Nôm.025.003","Trinh Thư Truyên, Nôm_Y.025.jpg",3,1,mismatch,2,2,2,茶,giữa,"che, choè, chà, chè, chèo, chòe, dưa, già, giưa, sà, trà, đồ",𤭸茶𱘅𩻐㩫招𥈶蜬,bình giữa lọ mắm chắt chiu nơm rơm
+"Trinh Thư Truyên, Nôm",223,71,223,"Trinh Thư Truyên, Nôm.025.003","Trinh Thư Truyên, Nôm_Y.025.jpg",3,2,mismatch,3,3,3,𱘅,lọ,,𤭸茶𱘅𩻐㩫招𥈶蜬,bình giữa lọ mắm chắt chiu nơm rơm
+"Trinh Thư Truyên, Nôm",223,71,223,"Trinh Thư Truyên, Nôm.025.003","Trinh Thư Truyên, Nôm_Y.025.jpg",3,3,mismatch,7,7,7,𥈶,nơm,nom,𤭸茶𱘅𩻐㩫招𥈶蜬,bình giữa lọ mắm chắt chiu nơm rơm
+"Trinh Thư Truyên, Nôm",223,71,223,"Trinh Thư Truyên, Nôm.025.003","Trinh Thư Truyên, Nôm_Y.025.jpg",3,4,mismatch,8,8,8,蜬,rơm,"ham, hàm",𤭸茶𱘅𩻐㩫招𥈶蜬,bình giữa lọ mắm chắt chiu nơm rơm
+"Trinh Thư Truyên, Nôm",226,,226,"Trinh Thư Truyên, Nôm.025.006","Trinh Thư Truyên, Nôm_Y.025.jpg",6,1,mismatch,2,2,2,涞,vẻ,"lai, lây, rơi, rời, rợi, sùi",曷涞曷用包𩜙,hạt vẻ hạt dụng bao nhiêu
+"Trinh Thư Truyên, Nôm",227,72,227,"Trinh Thư Truyên, Nôm.025.007","Trinh Thư Truyên, Nôm_Y.025.jpg",7,1,mismatch,1,1,1,垣,chậu,viên,垣盆捽吏𧁷掏特𫥨,chậu bồn trút lại khó đảo được ra
+"Trinh Thư Truyên, Nôm",227,72,227,"Trinh Thư Truyên, Nôm.025.007","Trinh Thư Truyên, Nôm_Y.025.jpg",7,2,mismatch,6,6,6,掏,đảo,"thao, đào",垣盆捽吏𧁷掏特𫥨,chậu bồn trút lại khó đảo được ra
+"Trinh Thư Truyên, Nôm",229,73,229,"Trinh Thư Truyên, Nôm.025.009","Trinh Thư Truyên, Nôm_Y.025.jpg",9,1,mismatch,3,3,3,愁,sâu,"ràu, rầu, sầu, thiểu, xàu, xầu, xỉu",珠滇愁𢢇𢪀和傷朱,châu chan sâu tủi nghĩ hoá thương cho
+"Trinh Thư Truyên, Nôm",229,73,229,"Trinh Thư Truyên, Nôm.025.009","Trinh Thư Truyên, Nôm_Y.025.jpg",9,2,mismatch,6,6,6,和,hoá,"hoà, hoạ, huề, hòa, hùa, họa, hồ, oa, oà, ua, và, ùa, ỉa",珠滇愁𢢇𢪀和傷朱,châu chan sâu tủi nghĩ hoá thương cho
+"Trinh Thư Truyên, Nôm",231,,231,"Trinh Thư Truyên, Nôm.025.011","Trinh Thư Truyên, Nôm_Y.025.jpg",11,1,mismatch,3,3,3,𡗶,gửi,"giơì, giời, lời, nhời, thì, trời",坦𢆧𡗶塟穴由𧋟扽,đất may gửi táng huyệt do mối đùn
+"Trinh Thư Truyên, Nôm",232,74,232,"Trinh Thư Truyên, Nôm.026.000","Trinh Thư Truyên, Nôm_Y.026.jpg",0,1,mismatch,3,3,3,八,nhập,"bát, bét, bít, bắt, bịt, bớt, xốc",回龍八首轉坤,hồi long nhập thủ chuyển khôn
+"Trinh Thư Truyên, Nôm",233,75,233,"Trinh Thư Truyên, Nôm.026.001","Trinh Thư Truyên, Nôm_Y.026.jpg",1,1,mismatch,7,7,7,八,nhập,"bát, bét, bít, bắt, bịt, bớt, xốc",包𩜙虎水拱𣻆八𢙇,bao nhiêu hổ thủy cũng tuôn nhập hoài
+"Trinh Thư Truyên, Nôm",235,76,235,"Trinh Thư Truyên, Nôm.026.003","Trinh Thư Truyên, Nôm_Y.026.jpg",3,1,mismatch,5,5,5,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",㨂方子午尒𠁀𦤾𫢩,đóng phương tí ngọ mấy đời đến nay
+"Trinh Thư Truyên, Nôm",237,77,237,"Trinh Thư Truyên, Nôm.026.005","Trinh Thư Truyên, Nôm_Y.026.jpg",5,1,mismatch,5,5,5,才,tại,"chài, dài, tai, thủ, tài, tơi",貴人扶𦔳才尼爫𢧚,quí nhân phù trợ tại nay làm nên
+"Trinh Thư Truyên, Nôm",239,,239,"Trinh Thư Truyên, Nôm.026.007","Trinh Thư Truyên, Nôm_Y.026.jpg",7,1,mismatch,2,2,2,傑,thảy,"kiệt, kẹt, kịt",𨑮傑穷吶如印󰜋𠳒,mười thảy cùng nói như in một nhời
+"Trinh Thư Truyên, Nôm",240,78,240,"Trinh Thư Truyên, Nôm.026.008","Trinh Thư Truyên, Nôm_Y.026.jpg",8,1,mismatch,5,5,5,特,giải,"hay, sệt, vậy, đước, được, đặc, đặt, đực",𢼂紫㣲㐌特排,số tử vi đã giải bày
+"Trinh Thư Truyên, Nôm",241,79,241,"Trinh Thư Truyên, Nôm.026.009","Trinh Thư Truyên, Nôm_Y.026.jpg",9,1,mismatch,1,1,1,𮚃,tham,,𮚃狼守命乙𣈙旺台,tham lang thủ mệnh ắt đầy vượng thay
+"Trinh Thư Truyên, Nôm",241,79,241,"Trinh Thư Truyên, Nôm.026.009","Trinh Thư Truyên, Nôm_Y.026.jpg",9,2,mismatch,6,6,6,𣈙,đầy,"rày, rầy, tày",𮚃狼守命乙𣈙旺台,tham lang thủ mệnh ắt đầy vượng thay
+"Trinh Thư Truyên, Nôm",242,80,242,"Trinh Thư Truyên, Nôm.026.010","Trinh Thư Truyên, Nôm_Y.026.jpg",10,1,mismatch,4,4,4,𲈾,của,cửa,丕𢧚﨤𲈾𠊚低,vậy nên gặp của người đây
+"Trinh Thư Truyên, Nôm",246,81,246,"Trinh Thư Truyên, Nôm.027.002","Trinh Thư Truyên, Nôm_Y.027.jpg",2,1,mismatch,1,1,1,𲈾,của,cửa,𲈾衣𡶀鉑𡽫鐄,của thú núi bạc non vang
+"Trinh Thư Truyên, Nôm",246,81,246,"Trinh Thư Truyên, Nôm.027.002","Trinh Thư Truyên, Nôm_Y.027.jpg",2,2,mismatch,2,2,2,衣,thú,"e, y, ý, ấy, ỉ, ỵ",𲈾衣𡶀鉑𡽫鐄,của thú núi bạc non vang
+"Trinh Thư Truyên, Nôm",246,81,246,"Trinh Thư Truyên, Nôm.027.002","Trinh Thư Truyên, Nôm_Y.027.jpg",2,3,mismatch,6,6,6,鐄,vang,"hoàng, hoành, vàng, vành, vần",𲈾衣𡶀鉑𡽫鐄,của thú núi bạc non vang
+"Trinh Thư Truyên, Nôm",247,82,247,"Trinh Thư Truyên, Nôm.027.003","Trinh Thư Truyên, Nôm_Y.027.jpg",3,1,mismatch,1,1,1,税,chóc,"thoát, thuê, thuế, thối",税周穭漢庫藏少兜,chóc chu lúa hán kho tàng thiếu đâu
+"Trinh Thư Truyên, Nôm",250,83,250,"Trinh Thư Truyên, Nôm.027.006","Trinh Thư Truyên, Nôm_Y.027.jpg",6,1,mismatch,1,1,1,式,chức,"rị, sức, thắc, thức, xức",式𫡛式𫽄產床,chức gì thức chẳng sẵn sàng
+"Trinh Thư Truyên, Nôm",252,84,252,"Trinh Thư Truyên, Nôm.027.008","Trinh Thư Truyên, Nôm_Y.027.jpg",8,1,mismatch,3,3,3,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",󰬷茹尒仉䝨𫅜,vả nhà mấy kẻ hiền lành
+"Trinh Thư Truyên, Nôm",254,,254,"Trinh Thư Truyên, Nôm.027.010","Trinh Thư Truyên, Nôm_Y.027.jpg",10,1,mismatch,3,3,3,唷,núc,"dóc, dọc, dục, giục, róc",欺𢝙唷唉頭𡏘,khi vui núc dích đầu hè
+"Trinh Thư Truyên, Nôm",254,,254,"Trinh Thư Truyên, Nôm.027.010","Trinh Thư Truyên, Nôm_Y.027.jpg",10,2,mismatch,4,4,4,唉,dích,"ai, hãy, hĩ, hơi, hễ, hởi, hỡi, ái, ơi",欺𢝙唷唉頭𡏘,khi vui núc dích đầu hè
+"Trinh Thư Truyên, Nôm",255,85,255,"Trinh Thư Truyên, Nôm.027.011","Trinh Thư Truyên, Nôm_Y.027.jpg",11,1,mismatch,1,1,1,嚕,cưng,"dỗ, ló, lô, lỗ, lớ, nổ, ruả, rô, rõ, rỉa, rủa, sỗ, sủa",嚕呯翁李𠤆兮底愷,cưng bứng ông lý chớ hề để ngôi
+"Trinh Thư Truyên, Nôm",255,85,255,"Trinh Thư Truyên, Nôm.027.011","Trinh Thư Truyên, Nôm_Y.027.jpg",11,2,mismatch,2,2,2,呯,bứng,bừng,嚕呯翁李𠤆兮底愷,cưng bứng ông lý chớ hề để ngôi
+"Trinh Thư Truyên, Nôm",255,85,255,"Trinh Thư Truyên, Nôm.027.011","Trinh Thư Truyên, Nôm_Y.027.jpg",11,3,mismatch,8,8,8,愷,ngôi,"khải, ngai",嚕呯翁李𠤆兮底愷,cưng bứng ông lý chớ hề để ngôi
+"Trinh Thư Truyên, Nôm",257,86,257,"Trinh Thư Truyên, Nôm.028.001","Trinh Thư Truyên, Nôm_Y.028.jpg",1,1,mismatch,3,3,3,󰜋,mặt,"mốt, một",嫌為󰜋悴𢼂𠺼悶幽,hiềm vì mặt chích số xui muộn mằn
+"Trinh Thư Truyên, Nôm",257,86,257,"Trinh Thư Truyên, Nôm.028.001","Trinh Thư Truyên, Nôm_Y.028.jpg",1,2,mismatch,4,4,4,悴,chích,"chút, sót, trót, tuỵ, tuỷ, tủi, xót",嫌為󰜋悴𢼂𠺼悶幽,hiềm vì mặt chích số xui muộn mằn
+"Trinh Thư Truyên, Nôm",257,86,257,"Trinh Thư Truyên, Nôm.028.001","Trinh Thư Truyên, Nôm_Y.028.jpg",1,3,mismatch,8,8,8,幽,mằn,"ngu, u, ù",嫌為󰜋悴𢼂𠺼悶幽,hiềm vì mặt chích số xui muộn mằn
+"Trinh Thư Truyên, Nôm",260,,260,"Trinh Thư Truyên, Nôm.028.004","Trinh Thư Truyên, Nôm_Y.028.jpg",4,1,mismatch,6,6,6,蝿,rùa,"dăng, giằng, nhặng, thằn",㐌曽䀡卦𧴤蝿,đã từng xem quẻ bói rùa
+"Trinh Thư Truyên, Nôm",261,,261,"Trinh Thư Truyên, Nôm.028.005","Trinh Thư Truyên, Nôm_Y.028.jpg",5,1,mismatch,2,2,2,憚,toan,"dạn, dợn, rợn, đát, đạn, đận, đặn",群憚𧴤䳽䀡朱買𢝜,còn toan bói hạc xem cho mới đành
+"Trinh Thư Truyên, Nôm",265,,265,"Trinh Thư Truyên, Nôm.028.009","Trinh Thư Truyên, Nôm_Y.028.jpg",9,1,mismatch,7,7,7,剔,rễ,"dịch, thí, thế, tích",生𡥵生丐餒朱剔揚,sinh con sinh cái nuôi cho rễ dàng
+"Trinh Thư Truyên, Nôm",268,,268,"Trinh Thư Truyên, Nôm.029.000","Trinh Thư Truyên, Nôm_Y.029.jpg",0,1,mismatch,5,5,5,𮔉,mật,,人参連肉𮔉螉,nhân sâm liên nhục mật ong
+"Trinh Thư Truyên, Nôm",270,87,270,"Trinh Thư Truyên, Nôm.029.002","Trinh Thư Truyên, Nôm_Y.029.jpg",2,1,mismatch,2,2,2,𥪝,trung,"lông, trong, trông",補𥪝五臓㐌安,bổ trung ngũ tạng dã yên
+"Trinh Thư Truyên, Nôm",272,,272,"Trinh Thư Truyên, Nôm.029.004","Trinh Thư Truyên, Nôm_Y.029.jpg",4,1,mismatch,1,1,1,󰮂,crung,"giữa, trong, xông",󰮂𢚸群𢪀𣠖衝,crung lòng con nghĩ chưa xong
+"Trinh Thư Truyên, Nôm",274,88,274,"Trinh Thư Truyên, Nôm.029.006","Trinh Thư Truyên, Nôm_Y.029.jpg",6,1,mismatch,1,1,1,蘇,co,"su, to, tua, tô, tố",蘇頭𪜛奇䐭腮,co đầu vui cả giác tai
+"Trinh Thư Truyên, Nôm",274,88,274,"Trinh Thư Truyên, Nôm.029.006","Trinh Thư Truyên, Nôm_Y.029.jpg",6,2,mismatch,3,3,3,𪜛,vui,bú,蘇頭𪜛奇䐭腮,co đầu vui cả giác tai
+"Trinh Thư Truyên, Nôm",274,88,274,"Trinh Thư Truyên, Nôm.029.006","Trinh Thư Truyên, Nôm_Y.029.jpg",6,3,mismatch,5,5,5,䐭,giác,giái,蘇頭𪜛奇䐭腮,co đầu vui cả giác tai
+"Trinh Thư Truyên, Nôm",275,89,275,"Trinh Thư Truyên, Nôm.029.007","Trinh Thư Truyên, Nôm_Y.029.jpg",7,1,mismatch,2,2,2,尼,nối,"chầy, lão, lại, nay, ni, này, nê, nì, nói, nơi, nơị, nảy, nầy, nật, nặc, nề, nệ, nỉ, nợi",𠫆尼魚尾高尼臥蚕,giầy nối ngư vỹ cao nồi ngoạ tằm
+"Trinh Thư Truyên, Nôm",275,89,275,"Trinh Thư Truyên, Nôm.029.007","Trinh Thư Truyên, Nôm_Y.029.jpg",7,2,mismatch,6,6,6,尼,nồi,"chầy, lão, lại, nay, ni, này, nê, nì, nói, nơi, nơị, nảy, nầy, nật, nặc, nề, nệ, nỉ, nợi",𠫆尼魚尾高尼臥蚕,giầy nối ngư vỹ cao nồi ngoạ tằm
+"Trinh Thư Truyên, Nôm",276,90,276,"Trinh Thư Truyên, Nôm.029.008","Trinh Thư Truyên, Nôm_Y.029.jpg",8,1,mismatch,1,1,1,惻,biết,trắc,惻兜如世𦓡蟳,biết đâu như thế mà tìm
+"Trinh Thư Truyên, Nôm",276,90,276,"Trinh Thư Truyên, Nôm.029.008","Trinh Thư Truyên, Nôm_Y.029.jpg",8,2,mismatch,6,6,6,蟳,tìm,"tầm, tằm",惻兜如世𦓡蟳,biết đâu như thế mà tìm
+"Trinh Thư Truyên, Nôm",281,91,281,"Trinh Thư Truyên, Nôm.030.001","Trinh Thư Truyên, Nôm_Y.030.jpg",1,1,mismatch,7,7,7,戋,qua,"tiên, tàn",凭𡥵鮮丐外抌戋内,vững con tươi cái ngoài đem qua nồi
+"Trinh Thư Truyên, Nôm",287,92,287,"Trinh Thư Truyên, Nôm.030.007","Trinh Thư Truyên, Nôm_Y.030.jpg",7,1,mismatch,1,1,1,𦓡,mã,mà,𦓡䀡形象拱齊娘𦾉,mã xem hình tượng cũng tày nàng oanh
+"Trinh Thư Truyên, Nôm",292,93,292,"Trinh Thư Truyên, Nôm.031.000","Trinh Thư Truyên, Nôm_Y.031.jpg",0,1,mismatch,3,3,3,怓,nhờ,nao,迻縁怓𩙌閣藤,đưa duyên nhờ gió các đàng
+"Trinh Thư Truyên, Nôm",292,93,292,"Trinh Thư Truyên, Nôm.031.000","Trinh Thư Truyên, Nôm_Y.031.jpg",0,2,mismatch,6,6,6,藤,đàng,đằng,迻縁怓𩙌閣藤,đưa duyên nhờ gió các đàng
+"Trinh Thư Truyên, Nôm",294,,294,"Trinh Thư Truyên, Nôm.031.002","Trinh Thư Truyên, Nôm_Y.031.jpg",2,1,mismatch,2,2,2,𥳪,toan,,𢘮𥳪革𫇰迎新,rắp toan cách cựu nghinh tân
+"Trinh Thư Truyên, Nôm",297,94,297,"Trinh Thư Truyên, Nôm.031.005","Trinh Thư Truyên, Nôm_Y.031.jpg",5,1,mismatch,5,5,5,相,tường,"rương, tuông, tương, tướng",不期𢧚義相期買𫨩,bất kỳ nên nghĩa tường kỹ mới hay
+"Trinh Thư Truyên, Nôm",297,94,297,"Trinh Thư Truyên, Nôm.031.005","Trinh Thư Truyên, Nôm_Y.031.jpg",5,2,mismatch,6,6,6,期,kỹ,"cà, cơ, cờ, khi, ki, ky, kì, kề, kỳ, sánh, sính",不期𢧚義相期買𫨩,bất kỳ nên nghĩa tường kỹ mới hay
+"Trinh Thư Truyên, Nôm",303,95,303,"Trinh Thư Truyên, Nôm.031.011","Trinh Thư Truyên, Nôm_Y.031.jpg",11,1,mismatch,3,3,3,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",悲𣉹尒𠼯事胡季犛,bây giờ mấy kẻ sự hồ quí ly
+"Trinh Thư Truyên, Nôm",303,95,303,"Trinh Thư Truyên, Nôm.031.011","Trinh Thư Truyên, Nôm_Y.031.jpg",11,2,mismatch,4,4,4,𠼯,kẻ,"hả, hớ, hở, hử, khứa",悲𣉹尒𠼯事胡季犛,bây giờ mấy kẻ sự hồ quí ly
+"Trinh Thư Truyên, Nôm",305,,305,"Trinh Thư Truyên, Nôm.032.001","Trinh Thư Truyên, Nôm_Y.032.jpg",1,1,mismatch,6,6,6,為,nể,"gì, nguỵ, vay, ve, veo, vi, vy, và, vài, vây, vê, vì, ví, vĩ, vơ, vơi, vị, vờ, vời",本𠊚骨格𫽄為𫽄𢞅,vốn người cốt cách chẳng nể chẳng yêu
+"Trinh Thư Truyên, Nôm",307,96,307,"Trinh Thư Truyên, Nôm.032.003","Trinh Thư Truyên, Nôm_Y.032.jpg",3,1,mismatch,1,1,1,𮚃,tham,,𮚃婪𫽄恪李苗𠁀唐,tham lam chẳng khác lý miêu đôi đường
+"Trinh Thư Truyên, Nôm",307,96,307,"Trinh Thư Truyên, Nôm.032.003","Trinh Thư Truyên, Nôm_Y.032.jpg",3,2,mismatch,7,7,7,𠁀,đôi,"đời, đờị",𮚃婪𫽄恪李苗𠁀唐,tham lam chẳng khác lý miêu đôi đường
+"Trinh Thư Truyên, Nôm",308,97,308,"Trinh Thư Truyên, Nôm.032.004","Trinh Thư Truyên, Nôm_Y.032.jpg",4,1,mismatch,5,5,5,𡬷,tác,"gang, tấc",陛𧏵閣鳯𡬷𡬼,bệ rồng các phượng tác gang
+"Trinh Thư Truyên, Nôm",309,,309,"Trinh Thư Truyên, Nôm.032.005","Trinh Thư Truyên, Nôm_Y.032.jpg",5,1,mismatch,5,5,5,𥳪,toan,,悁塘犬馬𥳪塘容身,quen đường khuyển mã toan đường dong thân
+"Trinh Thư Truyên, Nôm",310,98,310,"Trinh Thư Truyên, Nôm.032.006","Trinh Thư Truyên, Nôm_Y.032.jpg",6,1,mismatch,3,3,3,蠧,đổ,"đố, đỗ",女爫蠧國害民,nỡ làm đổ quốc hại dân
+"Trinh Thư Truyên, Nôm",315,,315,"Trinh Thư Truyên, Nôm.032.011","Trinh Thư Truyên, Nôm_Y.032.jpg",11,1,mismatch,2,2,2,𥳪,toan,,拱𥳪急沛另𨉓朱𫨩,cũng toan kíp phải lánh mình cho hay
+"Trinh Thư Truyên, Nôm",318,,318,"Trinh Thư Truyên, Nôm.033.002","Trinh Thư Truyên, Nôm_Y.033.jpg",2,1,mismatch,6,6,6,㹯,hiêu,"hòi, hưu, hươu",黙埃𢬭兎𤞓㹯,mặc ai đuổi thỏ săn hiêu
+"Trinh Thư Truyên, Nôm",323,99,323,"Trinh Thư Truyên, Nôm.033.007","Trinh Thư Truyên, Nôm_Y.033.jpg",7,1,mismatch,6,6,6,𮚃,tham,,𧡊𬲞如雉𪽝𮚃𢹇紬,thấy mồi như trĩ bởi tham mắc rò
+"Trinh Thư Truyên, Nôm",323,99,323,"Trinh Thư Truyên, Nôm.033.007","Trinh Thư Truyên, Nôm_Y.033.jpg",7,2,mismatch,8,8,8,紬,rò,"dò, trù, trừu, điều",𧡊𬲞如雉𪽝𮚃𢹇紬,thấy mồi như trĩ bởi tham mắc rò
+"Trinh Thư Truyên, Nôm",324,100,324,"Trinh Thư Truyên, Nôm.033.008","Trinh Thư Truyên, Nôm_Y.033.jpg",8,1,mismatch,1,1,1,咃,chá,"tha, thà, thơ",咃咹𧑂嘅嗚嗚,chá ăn cáy ngáy o o
+"Trinh Thư Truyên, Nôm",325,101,325,"Trinh Thư Truyên, Nôm.033.009","Trinh Thư Truyên, Nôm_Y.033.jpg",9,1,mismatch,2,2,2,欣,hòn,"hoen, hàn, hân, hơn, hớn",群欣癡傑咹𤙭爫之,con hòn ngay ngáy ăn bó làm chi
+"Trinh Thư Truyên, Nôm",325,101,325,"Trinh Thư Truyên, Nôm.033.009","Trinh Thư Truyên, Nôm_Y.033.jpg",9,2,mismatch,4,4,4,傑,ngáy,"kiệt, kẹt, kịt",群欣癡傑咹𤙭爫之,con hòn ngay ngáy ăn bó làm chi
+"Trinh Thư Truyên, Nôm",325,101,325,"Trinh Thư Truyên, Nôm.033.009","Trinh Thư Truyên, Nôm_Y.033.jpg",9,3,mismatch,6,6,6,𤙭,bó,"bò, con",群欣癡傑咹𤙭爫之,con hòn ngay ngáy ăn bó làm chi
+"Trinh Thư Truyên, Nôm",329,102,329,"Trinh Thư Truyên, Nôm.034.001","Trinh Thư Truyên, Nôm_Y.034.jpg",1,1,mismatch,3,3,3,滝,luống,"long, lung, lùng, rông, rồng, song, suông, suồng, sòng, sông, trong, tần, xông",壳蟡滝𠹾㗂󰮂𡎝𠁀,xác ve luống chực tiếng trong cõi đời
+"Trinh Thư Truyên, Nôm",329,102,329,"Trinh Thư Truyên, Nôm.034.001","Trinh Thư Truyên, Nôm_Y.034.jpg",1,2,mismatch,4,4,4,𠹾,chực,"chiệu, chịu",壳蟡滝𠹾㗂󰮂𡎝𠁀,xác ve luống chực tiếng trong cõi đời
+"Trinh Thư Truyên, Nôm",332,103,332,"Trinh Thư Truyên, Nôm.034.004","Trinh Thư Truyên, Nôm_Y.034.jpg",4,1,mismatch,2,2,2,哴,răng,"lang, lượng, rằng",払哴罕暫𢭗𢘾,chang răng hắn tạm mừng nhờ
+"Trinh Thư Truyên, Nôm",332,103,332,"Trinh Thư Truyên, Nôm.034.004","Trinh Thư Truyên, Nôm_Y.034.jpg",4,2,mismatch,5,5,5,𢭗,mừng,"lẳng, nhương, nhướng, nhường, nhưỡng, nương, nấn",払哴罕暫𢭗𢘾,chang răng hắn tạm mừng nhờ
+"Trinh Thư Truyên, Nôm",334,,334,"Trinh Thư Truyên, Nôm.034.006","Trinh Thư Truyên, Nôm_Y.034.jpg",6,1,mismatch,6,6,6,髫,mày,"thiều, điều, đào",㐌兜𦤾餒𤈜髫,đã đâu đến nỗi cháy mày
+"Trinh Thư Truyên, Nôm",336,104,336,"Trinh Thư Truyên, Nôm.034.008","Trinh Thư Truyên, Nôm_Y.034.jpg",8,1,mismatch,5,5,5,染,nhiệm,"nhiễm, nhuốm, nhuộm, nhẹm, ruộm, vẩn",黙埃報應染牟,mặc ai báo ứng nhiệm mầu
+"Trinh Thư Truyên, Nôm",337,105,337,"Trinh Thư Truyên, Nôm.034.009","Trinh Thư Truyên, Nôm_Y.034.jpg",9,1,mismatch,5,5,5,𧗱,vẽ,"thuật, trao, truật, về, vể, vệ",季犛油固𧗱𡢐𫽄全,quí ly dù có vẽ sau chẳng toàn
+"Trinh Thư Truyên, Nôm",338,,338,"Trinh Thư Truyên, Nôm.034.010","Trinh Thư Truyên, Nôm_Y.034.jpg",10,1,mismatch,5,5,5,乎,bằng,"hô, hồ",騎𧏵些㐌乎𡅪,cưỡi rồng ta đã bằng nguyền
+"Trinh Thư Truyên, Nôm",339,106,339,"Trinh Thư Truyên, Nôm.034.011","Trinh Thư Truyên, Nôm_Y.034.jpg",11,1,mismatch,3,3,3,熊,hưng,"hay, hùng, năn, năng, nưng, nấng, nằng",應恬熊虺院全𡛔𱰺,ứng điềm hưng huỷ vẹn tuyên gái giai
+"Trinh Thư Truyên, Nôm",339,106,339,"Trinh Thư Truyên, Nôm.034.011","Trinh Thư Truyên, Nôm_Y.034.jpg",11,2,mismatch,6,6,6,全,tuyên,"giồng, phần, thuyên, toàn, trọn, tuyền, đồng",應恬熊虺院全𡛔𱰺,ứng điềm hưng huỷ vẹn tuyên gái giai
+"Trinh Thư Truyên, Nôm",339,106,339,"Trinh Thư Truyên, Nôm.034.011","Trinh Thư Truyên, Nôm_Y.034.jpg",11,3,mismatch,8,8,8,𱰺,giai,trai,應恬熊虺院全𡛔𱰺,ứng điềm hưng huỷ vẹn tuyên gái giai
+"Trinh Thư Truyên, Nôm",344,,344,"Trinh Thư Truyên, Nôm.035.004","Trinh Thư Truyên, Nôm_Y.035.jpg",4,1,mismatch,2,2,2,哴,rộng,"lang, lượng, rằng",𨿽哴𢭗搙𣄒𠁀,tuy rộng nương náu ở đời
+"Trinh Thư Truyên, Nôm",345,107,345,"Trinh Thư Truyên, Nôm.035.005","Trinh Thư Truyên, Nôm_Y.035.jpg",5,1,mismatch,6,6,6,蛦,giời,"di, dơi, ri",羕蟡𤷱痗羕蛦字鐄,dáng ve mòn mỏi dáng giời vò vang
+"Trinh Thư Truyên, Nôm",345,107,345,"Trinh Thư Truyên, Nôm.035.005","Trinh Thư Truyên, Nôm_Y.035.jpg",5,2,mismatch,7,7,7,字,vò,"chữ, giữa, tợ, tự",羕蟡𤷱痗羕蛦字鐄,dáng ve mòn mỏi dáng giời vò vang
+"Trinh Thư Truyên, Nôm",345,107,345,"Trinh Thư Truyên, Nôm.035.005","Trinh Thư Truyên, Nôm_Y.035.jpg",5,3,mismatch,8,8,8,鐄,vang,"hoàng, hoành, vàng, vành, vần",羕蟡𤷱痗羕蛦字鐄,dáng ve mòn mỏi dáng giời vò vang
+"Trinh Thư Truyên, Nôm",346,108,346,"Trinh Thư Truyên, Nôm.035.006","Trinh Thư Truyên, Nôm_Y.035.jpg",6,1,mismatch,3,3,3,湥,giại,"chéo, dọi, dột, giọt, giột, lệ, lụt, nuột, rót, rọt, rụt, sụt, thốc, thụt, xụt, đạm",𤾓𢆥湥淚網常,trăm năm giại lệ cương thường
+"Trinh Thư Truyên, Nôm",346,108,346,"Trinh Thư Truyên, Nôm.035.006","Trinh Thư Truyên, Nôm_Y.035.jpg",6,2,mismatch,5,5,5,網,cương,"vóng, võng, vọng",𤾓𢆥湥淚網常,trăm năm giại lệ cương thường
+"Trinh Thư Truyên, Nôm",348,,348,"Trinh Thư Truyên, Nôm.035.008","Trinh Thư Truyên, Nôm_Y.035.jpg",8,1,mismatch,2,2,2,懞,nung,"mong, muông, muống, màng, mòng, mông, mỏng, mộng",侯懞󰞺玊況珠,hầu nung nát ngọc chìm châu
+"Trinh Thư Truyên, Nôm",348,,348,"Trinh Thư Truyên, Nôm.035.008","Trinh Thư Truyên, Nôm_Y.035.jpg",8,2,mismatch,5,5,5,況,chìm,"huynh, huống",侯懞󰞺玊況珠,hầu nung nát ngọc chìm châu
+"Trinh Thư Truyên, Nôm",351,109,351,"Trinh Thư Truyên, Nôm.035.011","Trinh Thư Truyên, Nôm_Y.035.jpg",11,1,mismatch,3,3,3,奇,cá,"cơ, cả, kì, kỳ",懞欺奇𰋝闭𣉹仕𫨩,mong khi cá lớn bầy giờ sẽ hay
+"Trinh Thư Truyên, Nôm",351,109,351,"Trinh Thư Truyên, Nôm.035.011","Trinh Thư Truyên, Nôm_Y.035.jpg",11,2,mismatch,5,5,5,闭,bầy,"bây, bé, bấy, bế",懞欺奇𰋝闭𣉹仕𫨩,mong khi cá lớn bầy giờ sẽ hay
+"Trinh Thư Truyên, Nôm",352,110,352,"Trinh Thư Truyên, Nôm.036.000","Trinh Thư Truyên, Nôm_Y.036.jpg",0,1,mismatch,1,1,1,𠸠,vi,"bí, vì, ví",𠸠𦓡性渃𢚸𩄲,vi mã tính nước lòng mây
+"Trinh Thư Truyên, Nôm",352,110,352,"Trinh Thư Truyên, Nôm.036.000","Trinh Thư Truyên, Nôm_Y.036.jpg",0,2,mismatch,2,2,2,𦓡,mã,mà,𠸠𦓡性渃𢚸𩄲,vi mã tính nước lòng mây
+"Trinh Thư Truyên, Nôm",353,,353,"Trinh Thư Truyên, Nôm.036.001","Trinh Thư Truyên, Nôm_Y.036.jpg",1,1,mismatch,6,6,6,𣈙,dây,"rày, rầy, tày",之群𪀄越杜𣈙梗南,chi con chim việt đỗ dây cành nam
+"Trinh Thư Truyên, Nôm",354,111,354,"Trinh Thư Truyên, Nôm.036.002","Trinh Thư Truyên, Nôm_Y.036.jpg",2,1,mismatch,1,1,1,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",尒欺渃眜滇粓,mấy khi nước mắt chan cơm
+"Trinh Thư Truyên, Nôm",357,112,357,"Trinh Thư Truyên, Nôm.036.005","Trinh Thư Truyên, Nôm_Y.036.jpg",5,1,mismatch,8,8,8,红,hường,hồng,𩃳𠊚唒屈唎𡂉群红,bóng người dầu khuất lời thề còn hường
+"Trinh Thư Truyên, Nôm",359,113,359,"Trinh Thư Truyên, Nôm.036.007","Trinh Thư Truyên, Nôm_Y.036.jpg",7,1,mismatch,6,6,6,塘,đừng,"bờ, cùng, dường, giềng, điều, đàng, đường, đằng",義夫婦女𫏚塘背忘,nghĩa phu phụ nỡ vội đừng bội vong
+"Trinh Thư Truyên, Nôm",360,,360,"Trinh Thư Truyên, Nôm.036.008","Trinh Thư Truyên, Nôm_Y.036.jpg",8,1,mismatch,1,1,1,箕,thìa,"cà, cơ, cờ, ki, kia, ky, kì, kìa, kỳ",箕勾夫唱婦従,thìa câu phu xướng phụ tòng
+"Trinh Thư Truyên, Nôm",361,114,361,"Trinh Thư Truyên, Nôm.036.009","Trinh Thư Truyên, Nôm_Y.036.jpg",9,1,mismatch,5,5,5,啂,như,"bù, bú, nhỏ, nhổ, nhủ, ú",𥱬𠳒前聖啂𢚸丁宁,ghi nhời tiên thánh như lòng đinh ninh
+"Trinh Thư Truyên, Nôm",362,,362,"Trinh Thư Truyên, Nôm.036.010","Trinh Thư Truyên, Nôm_Y.036.jpg",10,1,mismatch,5,5,5,擿,chọn,"chệch, sịch, thích, trích, trạnh, trệch, trịch, xệch",𫨩群挸𩵜擿羹,hay còn kén cá chọn canh
+"Trinh Thư Truyên, Nôm",364,115,364,"Trinh Thư Truyên, Nôm.037.000","Trinh Thư Truyên, Nôm_Y.037.jpg",0,1,mismatch,1,1,1,欣,hờn,"hoen, hàn, hân, hơn, hớn",欣払傷仉汝澄,hờn chàng thương kẻ nhớ chăng
+"Trinh Thư Truyên, Nôm",364,115,364,"Trinh Thư Truyên, Nôm.037.000","Trinh Thư Truyên, Nôm_Y.037.jpg",0,2,mismatch,6,6,6,澄,chăng,"chằng, chừng, rành, rưng, sình, sềnh, trừng, xừng",欣払傷仉汝澄,hờn chàng thương kẻ nhớ chăng
+"Trinh Thư Truyên, Nôm",365,,365,"Trinh Thư Truyên, Nôm.037.001","Trinh Thư Truyên, Nôm_Y.037.jpg",1,1,mismatch,8,8,8,𣈙,dây,"rày, rầy, tày",吀停𫼲㗂𩙌𦝄女𣈙,xin đừng lay tiếng gió giăng nữa dây
+"Trinh Thư Truyên, Nôm",368,116,368,"Trinh Thư Truyên, Nôm.037.004","Trinh Thư Truyên, Nôm_Y.037.jpg",4,1,mismatch,1,1,1,𠴗,giở,"dô, dỗ, giỗ, nhổ, sỗ, đổ",𠴗停坤惻爫𫳵,giở giành khôn biết làm sao
+"Trinh Thư Truyên, Nôm",368,116,368,"Trinh Thư Truyên, Nôm.037.004","Trinh Thư Truyên, Nôm_Y.037.jpg",4,2,mismatch,4,4,4,惻,biết,trắc,𠴗停坤惻爫𫳵,giở giành khôn biết làm sao
+"Trinh Thư Truyên, Nôm",371,117,371,"Trinh Thư Truyên, Nôm.037.007","Trinh Thư Truyên, Nôm_Y.037.jpg",7,1,mismatch,1,1,1,此,chử,"nảy, thử, thửa, tử",此䀡𢚸𡛔節貞箕󰑼,chử xem long gái tiết trinh kia là
+"Trinh Thư Truyên, Nôm",372,118,372,"Trinh Thư Truyên, Nôm.037.008","Trinh Thư Truyên, Nôm_Y.037.jpg",8,1,mismatch,1,1,1,𣈙,rây,"rày, rầy, tày",𣈙因𧊉特𧵆花,rây nhân bướm được gần hoa
+"Trinh Thư Truyên, Nôm",373,119,373,"Trinh Thư Truyên, Nôm.037.009","Trinh Thư Truyên, Nôm_Y.037.jpg",9,1,mismatch,7,7,7,俸,bửng,"bong, bóng, bọng, bống, bổng, bỗng, bụng, phỗng, vổng, vụng",𡄎縁奇遇寔󰑼俸仍,ngẫm duyên kỳ ngộ thực là bửng nhưng
+"Trinh Thư Truyên, Nôm",375,120,375,"Trinh Thư Truyên, Nôm.037.011","Trinh Thư Truyên, Nôm_Y.037.jpg",11,1,mismatch,4,4,4,择,gỡ,trạch,蒸﨤择𧯶哴𢘮名,bởi chưng gặp gỡ há rằng dắp danh
+"Trinh Thư Truyên, Nôm",375,120,375,"Trinh Thư Truyên, Nôm.037.011","Trinh Thư Truyên, Nôm_Y.037.jpg",11,2,mismatch,7,7,7,𢘮,dắp,rắp,蒸﨤择𧯶哴𢘮名,bởi chưng gặp gỡ há rằng dắp danh
+"Trinh Thư Truyên, Nôm",376,,376,"Trinh Thư Truyên, Nôm.038.000","Trinh Thư Truyên, Nôm_Y.038.jpg",0,1,mismatch,2,2,2,𫞤,viên,,白𫞤𠸗結孫生,bạch viên xưa kết tôn sinh
+"Trinh Thư Truyên, Nôm",377,121,377,"Trinh Thư Truyên, Nôm.038.001","Trinh Thư Truyên, Nôm_Y.038.jpg",1,1,mismatch,1,1,1,拱,cung,"chọn, chợt, còng, cõng, cùm, cùng, cúng, cũ, cũng, cọng, cộng, cụng, củng, gọng, kề, ngõng, ngỏng, đều",拱為𦝄𩙌𠬕經従權,cung vì giang gió bỏ kinh tùng quyền
+"Trinh Thư Truyên, Nôm",377,121,377,"Trinh Thư Truyên, Nôm.038.001","Trinh Thư Truyên, Nôm_Y.038.jpg",1,2,mismatch,3,3,3,𦝄,giang,"cữ, da, dăng, giăng, gương, lăng, lưng, mây, mối, nhị, răng, trăng",拱為𦝄𩙌𠬕經従權,cung vì giang gió bỏ kinh tùng quyền
+"Trinh Thư Truyên, Nôm",379,122,379,"Trinh Thư Truyên, Nôm.038.003","Trinh Thư Truyên, Nôm_Y.038.jpg",3,1,mismatch,3,3,3,揲,dịp,"diệp, duệ, dìa, dẹp, giẹp, nhịp, rợp, thiệt, xà, điệp, đắp",𦖑𫥨揲𧘇群𢧚㗂𫡛,nghe ra dịp ấy con nên tiếng gì
+"Trinh Thư Truyên, Nôm",381,123,381,"Trinh Thư Truyên, Nôm.038.005","Trinh Thư Truyên, Nôm_Y.038.jpg",5,1,mismatch,5,5,5,褚,giở,"chử, trử, trữ",𠀧山乙𫽄褚𧗱𢬣空,ba sơn ắt chẳng giở vẽ tay không
+"Trinh Thư Truyên, Nôm",381,123,381,"Trinh Thư Truyên, Nôm.038.005","Trinh Thư Truyên, Nôm_Y.038.jpg",5,2,mismatch,6,6,6,𧗱,vẽ,"thuật, trao, truật, về, vể, vệ",𠀧山乙𫽄褚𧗱𢬣空,ba sơn ắt chẳng giở vẽ tay không
+"Trinh Thư Truyên, Nôm",384,,384,"Trinh Thư Truyên, Nôm.038.008","Trinh Thư Truyên, Nôm_Y.038.jpg",8,1,mismatch,6,6,6,𦎛,giòng,gương,滛歸𥱬吏群𦎛,dâm qui ghi lại con giòng
+"Trinh Thư Truyên, Nôm",390,124,390,"Trinh Thư Truyên, Nôm.039.002","Trinh Thư Truyên, Nôm_Y.039.jpg",2,1,mismatch,1,1,1,𠸠,vi,"bí, vì, ví",𠸠𢚸妾𫽄𥒥鐄,vi lòng thiếp chẳng đá vàng
+"Trinh Thư Truyên, Nôm",391,125,391,"Trinh Thư Truyên, Nôm.039.003","Trinh Thư Truyên, Nôm_Y.039.jpg",3,1,mismatch,1,1,1,辰,chi,"gìn, thì, thìn, thần, thời, tthì",辰名㗂𧘇女払底兜,chi danh tiếng ấy nữa chàng để đâu
+"Trinh Thư Truyên, Nôm",397,,397,"Trinh Thư Truyên, Nôm.039.009","Trinh Thư Truyên, Nôm_Y.039.jpg",9,1,mismatch,3,3,3,𢵢,khoét,"vấn, vẫn, vặn",𫽄𫨩𢵢壁𫽄𫨩𨅹墻,chẳng hay khoét vách chẳng hay trèo tường
+"Trinh Thư Truyên, Nôm",400,,400,"Trinh Thư Truyên, Nôm.040.000","Trinh Thư Truyên, Nôm_Y.040.jpg",0,1,mismatch,4,4,4,遠,thói,"nhiễu, viển, viễn, vẻn, vỏn",𠸠油抌遠滛邪,ví dù đem thói dâm tà
+"Trinh Thư Truyên, Nôm",401,126,401,"Trinh Thư Truyên, Nôm.040.001","Trinh Thư Truyên, Nôm_Y.040.jpg",1,1,mismatch,1,1,1,鬌,mấy,"đoạ, đoả",鬌𧍋𩯀鳯𠓨𫥨險𫡛,mấy ngải tóe phụng vào ra hiểm gì
+"Trinh Thư Truyên, Nôm",401,126,401,"Trinh Thư Truyên, Nôm.040.001","Trinh Thư Truyên, Nôm_Y.040.jpg",1,2,mismatch,2,2,2,𧍋,ngải,ngài,鬌𧍋𩯀鳯𠓨𫥨險𫡛,mấy ngải tóe phụng vào ra hiểm gì
+"Trinh Thư Truyên, Nôm",401,126,401,"Trinh Thư Truyên, Nôm.040.001","Trinh Thư Truyên, Nôm_Y.040.jpg",1,3,mismatch,3,3,3,𩯀,tóe,tóc,鬌𧍋𩯀鳯𠓨𫥨險𫡛,mấy ngải tóe phụng vào ra hiểm gì
+"Trinh Thư Truyên, Nôm",403,127,403,"Trinh Thư Truyên, Nôm.040.003","Trinh Thư Truyên, Nôm_Y.040.jpg",3,1,mismatch,6,6,6,為,nĩ,"gì, nguỵ, vay, ve, veo, vi, vy, và, vài, vây, vê, vì, ví, vĩ, vơ, vơi, vị, vờ, vời",拱𡗉尼𢘮尼為禎襾,cũng nhiều nơi rắp nơi nĩ riêng tây
+"Trinh Thư Truyên, Nôm",403,127,403,"Trinh Thư Truyên, Nôm.040.003","Trinh Thư Truyên, Nôm_Y.040.jpg",3,2,mismatch,7,7,7,禎,riêng,trinh,拱𡗉尼𢘮尼為禎襾,cũng nhiều nơi rắp nơi nĩ riêng tây
+"Trinh Thư Truyên, Nôm",403,127,403,"Trinh Thư Truyên, Nôm.040.003","Trinh Thư Truyên, Nôm_Y.040.jpg",3,3,mismatch,8,8,8,襾,tây,á,拱𡗉尼𢘮尼為禎襾,cũng nhiều nơi rắp nơi nĩ riêng tây
+"Trinh Thư Truyên, Nôm",404,,404,"Trinh Thư Truyên, Nôm.040.004","Trinh Thư Truyên, Nôm_Y.040.jpg",4,1,mismatch,1,1,1,嘲,lẳng,"chiều, chào, chèo, nhào, ràu, rầu, thều, trào, trêu, trều",嘲𦖻爫眜𫽄𫨩,lẳng tai làm mắt chẳng hay
+"Trinh Thư Truyên, Nôm",407,128,407,"Trinh Thư Truyên, Nôm.040.007","Trinh Thư Truyên, Nôm_Y.040.jpg",7,1,mismatch,6,6,6,兜,nhi,"dâu, đâu, đây, đâủ, đẩu",搊䀡恪價女兜𣈜𣈙,so xem khác giá nữ nhi ngày dầy
+"Trinh Thư Truyên, Nôm",407,128,407,"Trinh Thư Truyên, Nôm.040.007","Trinh Thư Truyên, Nôm_Y.040.jpg",7,2,mismatch,8,8,8,𣈙,dầy,"rày, rầy, tày",搊䀡恪價女兜𣈜𣈙,so xem khác giá nữ nhi ngày dầy
+"Trinh Thư Truyên, Nôm",412,129,412,"Trinh Thư Truyên, Nôm.041.000","Trinh Thư Truyên, Nôm_Y.041.jpg",0,1,mismatch,1,1,1,耒,rối,"chuỗi, chòi, chồi, doi, dồi, giòi, lai, lay, lòi, lõi, lơi, lại, lẫn, lọi, lồi, lỗi, lội, ray, ruồi, ròi, rơi, rồi, rồị, rổi, rỗi, rời, rủi, sói, thòi, trồi, về",耒𫥨堆我北南,rối na đôi ngả bắc nam
+"Trinh Thư Truyên, Nôm",412,129,412,"Trinh Thư Truyên, Nôm.041.000","Trinh Thư Truyên, Nôm_Y.041.jpg",0,2,mismatch,2,2,2,𫥨,na,"khoả, khỏa, là, ra, uy",耒𫥨堆我北南,rối na đôi ngả bắc nam
+"Trinh Thư Truyên, Nôm",414,130,414,"Trinh Thư Truyên, Nôm.041.002","Trinh Thư Truyên, Nôm_Y.041.jpg",2,1,mismatch,3,3,3,𠸠,ủ,"bí, vì, ví",情春𠸠𫽄待藤,tình xuân ủ chẳng dai dẳng
+"Trinh Thư Truyên, Nôm",414,130,414,"Trinh Thư Truyên, Nôm.041.002","Trinh Thư Truyên, Nôm_Y.041.jpg",2,2,mismatch,5,5,5,待,dai,"chờ, dãi, dại, dợi, giãi, rãi, thi, đãi, được, đảy, đất, đẩy, đẫy, đậy, đợi",情春𠸠𫽄待藤,tình xuân ủ chẳng dai dẳng
+"Trinh Thư Truyên, Nôm",414,130,414,"Trinh Thư Truyên, Nôm.041.002","Trinh Thư Truyên, Nôm_Y.041.jpg",2,3,mismatch,6,6,6,藤,dẳng,đằng,情春𠸠𫽄待藤,tình xuân ủ chẳng dai dẳng
+"Trinh Thư Truyên, Nôm",415,131,415,"Trinh Thư Truyên, Nôm.041.003","Trinh Thư Truyên, Nôm_Y.041.jpg",3,1,mismatch,7,7,7,皮,bẽ,"bè, bê, bì, bìa, bầy, bề, bờ, bừa, da, kịp, lại, mới, phì, từ, vào, về, vờ, vừa",拱󰑼𫼳㗂㖫仍皮迯,cũng la mang tiếng lẳng nhẳng bẽ ngoài
+"Trinh Thư Truyên, Nôm",416,132,416,"Trinh Thư Truyên, Nôm.041.004","Trinh Thư Truyên, Nôm_Y.041.jpg",4,1,mismatch,1,1,1,𢴑,giãi,"dắc, dắt, dứt, giắt, lắt, ngắt, rắc, tất, tắt, đứt",𢴑唎娘尒𠸤排,giãi lời năng mấy giãi bầy
+"Trinh Thư Truyên, Nôm",416,132,416,"Trinh Thư Truyên, Nôm.041.004","Trinh Thư Truyên, Nôm_Y.041.jpg",4,2,mismatch,3,3,3,娘,năng,"chàng, như, nàng, náng, nâng, nương, nước, nường, rằng, vương",𢴑唎娘尒𠸤排,giãi lời năng mấy giãi bầy
+"Trinh Thư Truyên, Nôm",416,132,416,"Trinh Thư Truyên, Nôm.041.004","Trinh Thư Truyên, Nôm_Y.041.jpg",4,3,mismatch,4,4,4,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",𢴑唎娘尒𠸤排,giãi lời năng mấy giãi bầy
+"Trinh Thư Truyên, Nôm",417,,417,"Trinh Thư Truyên, Nôm.041.005","Trinh Thư Truyên, Nôm_Y.041.jpg",5,1,mismatch,4,4,4,𢠤,gian,đần,窖調󰘚𢠤髫𠫆𧁷𥋳,khéo đều mặt gian mày giầy khó coi
+"Trinh Thư Truyên, Nôm",417,,417,"Trinh Thư Truyên, Nôm.041.005","Trinh Thư Truyên, Nôm_Y.041.jpg",5,2,mismatch,5,5,5,髫,mày,"thiều, điều, đào",窖調󰘚𢠤髫𠫆𧁷𥋳,khéo đều mặt gian mày giầy khó coi
+"Trinh Thư Truyên, Nôm",420,,420,"Trinh Thư Truyên, Nôm.041.008","Trinh Thư Truyên, Nôm_Y.041.jpg",8,1,mismatch,5,5,5,堙,vách,"nhân, yên",悲𣉹棱脉堙腮,bây giờ rừng mạch vách tai
+"Trinh Thư Truyên, Nôm",421,133,421,"Trinh Thư Truyên, Nôm.041.009","Trinh Thư Truyên, Nôm_Y.041.jpg",9,1,mismatch,2,2,2,𥪝,trung,"lông, trong, trông",𭛣𥪝買𢘮仉迯㐌𫨩,việc trung mới rắp kẻ ngoài đã hay
+"Trinh Thư Truyên, Nôm",422,134,422,"Trinh Thư Truyên, Nôm.041.010","Trinh Thư Truyên, Nôm_Y.041.jpg",10,1,mismatch,1,1,1,暈,vàng,"huy, quầng, vần, vầng, vận, vừng, vững, vựng",暈棱㐌我𧗱襾,vàng giồng đã ngả vẽ tây
+"Trinh Thư Truyên, Nôm",422,134,422,"Trinh Thư Truyên, Nôm.041.010","Trinh Thư Truyên, Nôm_Y.041.jpg",10,2,mismatch,2,2,2,棱,giồng,"dừng, lăng, rừng, săng, sừng",暈棱㐌我𧗱襾,vàng giồng đã ngả vẽ tây
+"Trinh Thư Truyên, Nôm",422,134,422,"Trinh Thư Truyên, Nôm.041.010","Trinh Thư Truyên, Nôm_Y.041.jpg",10,3,mismatch,5,5,5,𧗱,vẽ,"thuật, trao, truật, về, vể, vệ",暈棱㐌我𧗱襾,vàng giồng đã ngả vẽ tây
+"Trinh Thư Truyên, Nôm",422,134,422,"Trinh Thư Truyên, Nôm.041.010","Trinh Thư Truyên, Nôm_Y.041.jpg",10,4,mismatch,6,6,6,襾,tây,á,暈棱㐌我𧗱襾,vàng giồng đã ngả vẽ tây
+"Trinh Thư Truyên, Nôm",423,135,423,"Trinh Thư Truyên, Nôm.041.011","Trinh Thư Truyên, Nôm_Y.041.jpg",11,1,mismatch,5,5,5,𧗱,vẽ,"thuật, trao, truật, về, vể, vệ",底朱妾𡪄𧗱𣈙貝𡥵,để cho thiếp giữ vẽ dây với con
+"Trinh Thư Truyên, Nôm",423,135,423,"Trinh Thư Truyên, Nôm.041.011","Trinh Thư Truyên, Nôm_Y.041.jpg",11,2,mismatch,6,6,6,𣈙,dây,"rày, rầy, tày",底朱妾𡪄𧗱𣈙貝𡥵,để cho thiếp giữ vẽ dây với con
+"Trinh Thư Truyên, Nôm",425,136,425,"Trinh Thư Truyên, Nôm.042.001","Trinh Thư Truyên, Nôm_Y.042.jpg",1,1,mismatch,5,5,5,駭,hại,"hãi, hãy, hải",屡孩兒伮駭群疎𬏝,lũ hài nhi nó hại con thơ ngây
+"Trinh Thư Truyên, Nôm",428,137,428,"Trinh Thư Truyên, Nôm.042.004","Trinh Thư Truyên, Nôm_Y.042.jpg",4,1,mismatch,3,3,3,𠿮,rơ,"hẩm, ấm, ẩm, ẫm, ậm, ỏm, ỡm",吏強𠿮儀蛾眉,lại càng rơ dáng nga my
+"Trinh Thư Truyên, Nôm",428,137,428,"Trinh Thư Truyên, Nôm.042.004","Trinh Thư Truyên, Nôm_Y.042.jpg",4,2,mismatch,4,4,4,儀,dáng,"nghe, nghi, nghè, nghì, nghĩa, nghỉ, ngơi, ngửi",吏強𠿮儀蛾眉,lại càng rơ dáng nga my
+"Trinh Thư Truyên, Nôm",429,138,429,"Trinh Thư Truyên, Nôm.042.005","Trinh Thư Truyên, Nôm_Y.042.jpg",5,1,mismatch,5,5,5,唱,xưng,"sướng, xang, xương, xướng, xắng, xẳng, xẵng",𤾓𢆥名節唱隨𫳵當,trăm năm danh tiết xưng tuỳ sao đang
+"Trinh Thư Truyên, Nôm",430,139,430,"Trinh Thư Truyên, Nôm.042.006","Trinh Thư Truyên, Nôm_Y.042.jpg",6,1,mismatch,5,5,5,遺,thói,"di, doi, dị",󰂇㧅桑僕遺常,ví đeo tang bộc thói thường
+"Trinh Thư Truyên, Nôm",432,,432,"Trinh Thư Truyên, Nôm.042.008","Trinh Thư Truyên, Nôm_Y.042.jpg",8,1,mismatch,1,1,1,惻,biết,trắc,惻哴娘𫽄轉𢚸,biết rằng nàng chẳng chuyển lòng
+"Trinh Thư Truyên, Nôm",433,140,433,"Trinh Thư Truyên, Nôm.042.009","Trinh Thư Truyên, Nôm_Y.042.jpg",9,1,mismatch,6,6,6,𠼾,suông,"song, suồng, sòng, sùng",閉𣉹払買吶𠼾和𢆧,bấy giờ chàng mới nói suông hoạ may
+"Trinh Thư Truyên, Nôm",435,,435,"Trinh Thư Truyên, Nôm.042.011","Trinh Thư Truyên, Nôm_Y.042.jpg",11,1,mismatch,2,2,2,綏,anh,"nhuy, nối, nỗi, rối, thoả, tuy",簮綏令族𠸗𫢩刎󰑼,trâm anh lệnh tộc xưa nay vẫn là
+"Trinh Thư Truyên, Nôm",436,141,436,"Trinh Thư Truyên, Nôm.043.000","Trinh Thư Truyên, Nôm_Y.043.jpg",0,1,mismatch,5,5,5,弾,tan,"rờn, đan, đàn, đạn, đận, đằn",弾婆𧘇買弾婆,đàn bà ấy mới tan ba
+"Trinh Thư Truyên, Nôm",436,141,436,"Trinh Thư Truyên, Nôm.043.000","Trinh Thư Truyên, Nôm_Y.043.jpg",0,2,mismatch,6,6,6,婆,ba,bà,弾婆𧘇買弾婆,đàn bà ấy mới tan ba
+"Trinh Thư Truyên, Nôm",438,142,438,"Trinh Thư Truyên, Nôm.043.002","Trinh Thư Truyên, Nôm_Y.043.jpg",2,1,mismatch,5,5,5,弩,nở,"ná, nõ, nỏ, nổ, nỗ",𢢅𫯳𧇊𣋽弩囔,chiều chồng khuya sớm nở nang
+"Trinh Thư Truyên, Nôm",439,143,439,"Trinh Thư Truyên, Nôm.043.003","Trinh Thư Truyên, Nôm_Y.043.jpg",3,1,mismatch,7,7,7,󰜋,mặt,"mốt, một",沛庒𫽄𪾋梞𪘵󰜋唎,phải chăng chăng giám cậy răng mặt lời
+"Trinh Thư Truyên, Nôm",442,144,442,"Trinh Thư Truyên, Nôm.043.006","Trinh Thư Truyên, Nôm_Y.043.jpg",6,1,mismatch,4,4,4,仉,bẻ,"chưởng, kẻ, kẽ, người",㦖朱特仉拖󱹗,muốn cho được bẻ đỡ đần
+"Trinh Thư Truyên, Nôm",443,145,443,"Trinh Thư Truyên, Nôm.043.007","Trinh Thư Truyên, Nôm_Y.043.jpg",7,1,mismatch,4,4,4,揲,dịp,"diệp, duệ, dìa, dẹp, giẹp, nhịp, rợp, thiệt, xà, điệp, đắp",䦕睢和揲閍分仍懞,quan thư hoà dịp muôn phần những mong
+"Trinh Thư Truyên, Nôm",445,146,445,"Trinh Thư Truyên, Nôm.043.009","Trinh Thư Truyên, Nôm_Y.043.jpg",9,1,mismatch,7,7,7,憹,rung,"lùng, ngồi, náo, não, nông, nùng",悭縱為餒𫯳終憹𢥪,ghen tuông vì nỗi chồng chung rung màn
+"Trinh Thư Truyên, Nôm",445,146,445,"Trinh Thư Truyên, Nôm.043.009","Trinh Thư Truyên, Nôm_Y.043.jpg",9,2,mismatch,8,8,8,𢥪,màn,nản,悭縱為餒𫯳終憹𢥪,ghen tuông vì nỗi chồng chung rung màn
+"Trinh Thư Truyên, Nôm",446,147,446,"Trinh Thư Truyên, Nôm.043.010","Trinh Thư Truyên, Nôm_Y.043.jpg",10,1,mismatch,3,3,3,樛,cũ,cù,葛蹽樛木𢘮𥳪,cát leo cũ mộc rắp toan
+"Trinh Thư Truyên, Nôm",446,147,446,"Trinh Thư Truyên, Nôm.043.010","Trinh Thư Truyên, Nôm_Y.043.jpg",10,2,mismatch,6,6,6,𥳪,toan,,葛蹽樛木𢘮𥳪,cát leo cũ mộc rắp toan
+"Trinh Thư Truyên, Nôm",450,148,450,"Trinh Thư Truyên, Nôm.044.002","Trinh Thư Truyên, Nôm_Y.044.jpg",2,1,mismatch,1,1,1,娘,nang,"chàng, như, nàng, náng, nâng, nương, nước, nường, rằng, vương",娘哴払𠰺世辰,nang rằng chàng giậy thế thì
+"Trinh Thư Truyên, Nôm",451,149,451,"Trinh Thư Truyên, Nôm.044.003","Trinh Thư Truyên, Nôm_Y.044.jpg",3,1,mismatch,8,8,8,唎,lói,"lí, lý, lời, lợi, ré, rí, rỉa, trơi",婦人妬忌𠸗箕群唎,phụ nhân đố kỵ xưa kia con lói
+"Trinh Thư Truyên, Nôm",457,150,457,"Trinh Thư Truyên, Nôm.044.009","Trinh Thư Truyên, Nôm_Y.044.jpg",9,1,mismatch,5,5,5,𡃎,phân,phàn,情箕意怒𡃎󱋔𦓡之,tình kia ý nọ phân nàn mà chi
+"Trinh Thư Truyên, Nôm",459,151,459,"Trinh Thư Truyên, Nôm.044.011","Trinh Thư Truyên, Nôm_Y.044.jpg",11,1,mismatch,2,2,2,頭,đây,"đâu, đầu",𨕭頭𫽄𢪀群辰固埃,trên đây chẳng nghĩ con thì có ai
+"Trinh Thư Truyên, Nôm",462,152,462,"Trinh Thư Truyên, Nôm.045.002","Trinh Thư Truyên, Nôm_Y.045.jpg",2,1,mismatch,1,1,1,閉,bây,"bé, bấy, bế",閉𣉹驚𢜝駭雄,bây giờ kinh sợ hãi hùng
+"Trinh Thư Truyên, Nôm",463,,463,"Trinh Thư Truyên, Nôm.045.003","Trinh Thư Truyên, Nôm_Y.045.jpg",3,,extra_qn,1,,1,,bát,,珍𢪌買𠸤𢚸朱戈,bát trân chung mới giãi lòng cho qua
+"Trinh Thư Truyên, Nôm",463,,463,"Trinh Thư Truyên, Nôm.045.003","Trinh Thư Truyên, Nôm_Y.045.jpg",3,1,mismatch,3,2,3,𢪌,chung,tùng,珍𢪌買𠸤𢚸朱戈,bát trân chung mới giãi lòng cho qua
+"Trinh Thư Truyên, Nôm",464,153,464,"Trinh Thư Truyên, Nôm.045.004","Trinh Thư Truyên, Nôm_Y.045.jpg",4,1,mismatch,5,5,5,細,lối,"té, tí, tía, tế, tỉ, tới, đến",哴娘𢆧吏細茹,rằng nàng may lại lối nhà
+"Trinh Thư Truyên, Nôm",465,154,465,"Trinh Thư Truyên, Nôm.045.005","Trinh Thư Truyên, Nôm_Y.045.jpg",5,1,mismatch,1,1,1,餞,tiền,tiễn,餞迻󰜋席噲󰑼故知,tiền đưa một tiệc gọi là có tư
+"Trinh Thư Truyên, Nôm",465,154,465,"Trinh Thư Truyên, Nôm.045.005","Trinh Thư Truyên, Nôm_Y.045.jpg",5,2,mismatch,8,8,8,知,tư,"si, tre, tri, trê, trí, trơ",餞迻󰜋席噲󰑼故知,tiền đưa một tiệc gọi là có tư
+"Trinh Thư Truyên, Nôm",470,,470,"Trinh Thư Truyên, Nôm.045.010","Trinh Thư Truyên, Nôm_Y.045.jpg",10,1,mismatch,1,1,1,䏧,chả,"da, trăng, đa",䏧氊屋𣷭燕巢,chả chiên ốc bể yến sào
+"Trinh Thư Truyên, Nôm",471,155,471,"Trinh Thư Truyên, Nôm.045.011","Trinh Thư Truyên, Nôm_Y.045.jpg",11,1,mismatch,1,1,1,弹,dặn,"dàn, dạn, hát, rờn, đan, đàn, đạn, đần, đận, đặn, đờn",弹𡥵罕仍約泑味尼,dặn con hẳn những ước ao mùi này
+"Trinh Thư Truyên, Nôm",476,156,476,"Trinh Thư Truyên, Nôm.046.004","Trinh Thư Truyên, Nôm_Y.046.jpg",4,1,mismatch,5,5,5,知,trứ,"si, tre, tri, trê, trí, trơ",仉悁𠊚属知名,kẻ quen người thuộc trứ danh
+"Trinh Thư Truyên, Nôm",478,,478,"Trinh Thư Truyên, Nôm.046.006","Trinh Thư Truyên, Nôm_Y.046.jpg",6,1,mismatch,5,5,5,豬,giở,"chưa, trơ, trư, trưa",吀催朱妾豬𧗱,xin thôi cho thiếp giở về
+"Trinh Thư Truyên, Nôm",479,157,479,"Trinh Thư Truyên, Nôm.046.007","Trinh Thư Truyên, Nôm_Y.046.jpg",7,1,mismatch,7,7,7,畑,đến,"càn, dền, vặc, đèn, đền",恩払𢭸𡶀底辰畑𡢐,ơn chàng tựa núi để thì đến sau
+"Trinh Thư Truyên, Nôm",481,158,481,"Trinh Thư Truyên, Nôm.046.009","Trinh Thư Truyên, Nôm_Y.046.jpg",9,1,mismatch,3,3,3,耒,vội,"chuỗi, chòi, chồi, doi, dồi, giòi, lai, lay, lòi, lõi, lơi, lại, lẫn, lọi, lồi, lỗi, lội, ray, ruồi, ròi, rơi, rồi, rồị, rổi, rỗi, rời, rủi, sói, thòi, trồi, về",𫽄󰑼耒𦤾𣈕𡢐聀𫡛,chẳng là vội đến mau sau chắc gì
+"Trinh Thư Truyên, Nôm",481,158,481,"Trinh Thư Truyên, Nôm.046.009","Trinh Thư Truyên, Nôm_Y.046.jpg",9,2,mismatch,5,5,5,𣈕,mau,mai,𫽄󰑼耒𦤾𣈕𡢐聀𫡛,chẳng là vội đến mau sau chắc gì
+"Trinh Thư Truyên, Nôm",482,,482,"Trinh Thư Truyên, Nôm.046.010","Trinh Thư Truyên, Nôm_Y.046.jpg",10,1,mismatch,4,4,4,遣,thói,"khiến, khiển, khán",朱𫨩哴遣女兜,cho hay rằng thói nữ nhi
+"Trinh Thư Truyên, Nôm",482,,482,"Trinh Thư Truyên, Nôm.046.010","Trinh Thư Truyên, Nôm_Y.046.jpg",10,2,mismatch,6,6,6,兜,nhi,"dâu, đâu, đây, đâủ, đẩu",朱𫨩哴遣女兜,cho hay rằng thói nữ nhi
+"Trinh Thư Truyên, Nôm",483,,483,"Trinh Thư Truyên, Nôm.046.011","Trinh Thư Truyên, Nôm_Y.046.jpg",11,1,mismatch,1,1,1,惻,biết,trắc,惻庒只固󰜋皮𦓡傕,biết chăng chỉ có một bề mà thôi
+"Trinh Thư Truyên, Nôm",492,,492,"Trinh Thư Truyên, Nôm.047.008","Trinh Thư Truyên, Nôm_Y.047.jpg",8,1,mismatch,3,3,3,窒,giữ,"chất, dứt, khỏng, rấp, rất, rốt, rứt, thất, thắt, trất",坤頑窒墨紅裙,khôn ngoan giữ mực hồng quần
+"Trinh Thư Truyên, Nôm",493,,493,"Trinh Thư Truyên, Nôm.047.009","Trinh Thư Truyên, Nôm_Y.047.jpg",9,1,mismatch,2,2,2,𥳪,toan,,仍𥳪𡀠噠𠲝寅朱𣵶,những toan bịa đặt giối giàn cho xuôi
+"Trinh Thư Truyên, Nôm",495,,495,"Trinh Thư Truyên, Nôm.047.011","Trinh Thư Truyên, Nôm_Y.047.jpg",11,1,mismatch,4,4,4,惻,biết,trắc,𫯳𡥵芇惻固埃𫨩󰑼,chồng con nào biết có ai hay là
+"Trinh Thư Truyên, Nôm",497,159,497,"Trinh Thư Truyên, Nôm.048.001","Trinh Thư Truyên, Nôm_Y.048.jpg",1,1,mismatch,1,1,1,世,chê,"có, ghê, thay, thuế, thá, thé, thế, thể, đời",世𦓡仍遺滛邪辰空,chê mà những thói dâm tà thì không
+"Trinh Thư Truyên, Nôm",497,159,497,"Trinh Thư Truyên, Nôm.048.001","Trinh Thư Truyên, Nôm_Y.048.jpg",1,2,mismatch,4,4,4,遺,thói,"di, doi, dị",世𦓡仍遺滛邪辰空,chê mà những thói dâm tà thì không
+"Trinh Thư Truyên, Nôm",499,160,499,"Trinh Thư Truyên, Nôm.048.003","Trinh Thư Truyên, Nôm_Y.048.jpg",3,1,mismatch,1,1,1,怛,dặn,"chát, dắt, dứt, tạ, đát, đét, đảm, đất, đắn, đắt, đẵn, đớn, đứt",怛𢵋𣵶虐𦓡𢚸𫽄𢞅,dặn dò xuôi ngược mà lòng chẳng yêu
+"Trinh Thư Truyên, Nôm",499,160,499,"Trinh Thư Truyên, Nôm.048.003","Trinh Thư Truyên, Nôm_Y.048.jpg",3,2,mismatch,2,2,2,𢵋,dò,"so, đo, đu, đua, đô",怛𢵋𣵶虐𦓡𢚸𫽄𢞅,dặn dò xuôi ngược mà lòng chẳng yêu
+"Trinh Thư Truyên, Nôm",503,161,503,"Trinh Thư Truyên, Nôm.048.007","Trinh Thư Truyên, Nôm_Y.048.jpg",7,1,mismatch,3,3,3,鳴,mình,"minh, ô",聘堆鳴鳫懞塘螽蟖,sánh đôi mình nhạn mong đường chung tư
+"Trinh Thư Truyên, Nôm",505,162,505,"Trinh Thư Truyên, Nôm.048.009","Trinh Thư Truyên, Nôm_Y.048.jpg",9,1,mismatch,6,6,6,𪡷,rơ,"chờ, chừa",窖哬仍傳強𪡷儀𠁀,khéo hờ những truyện càng rơ dáng đời
+"Trinh Thư Truyên, Nôm",505,162,505,"Trinh Thư Truyên, Nôm.048.009","Trinh Thư Truyên, Nôm_Y.048.jpg",9,2,mismatch,7,7,7,儀,dáng,"nghe, nghi, nghè, nghì, nghĩa, nghỉ, ngơi, ngửi",窖哬仍傳強𪡷儀𠁀,khéo hờ những truyện càng rơ dáng đời
+"Trinh Thư Truyên, Nôm",506,163,506,"Trinh Thư Truyên, Nôm.048.010","Trinh Thư Truyên, Nôm_Y.048.jpg",10,1,mismatch,1,1,1,傕,chối,"giác, quyết, sôi, thoi, thòi, thôi, thôị, thội, thời",傕辰傕拱𢢅𠊚,chối thì thôi cũng chiều người
+"Trinh Thư Truyên, Nôm",507,164,507,"Trinh Thư Truyên, Nôm.048.011","Trinh Thư Truyên, Nôm_Y.048.jpg",11,1,mismatch,3,3,3,貯,chưa,"chứa, chữa, giữ, ninh, trữ",剣塘貯𢢆尒𠳒朱戈,kiếm đường chưa thẹn mấy nhời cho qua
+"Trinh Thư Truyên, Nôm",507,164,507,"Trinh Thư Truyên, Nôm.048.011","Trinh Thư Truyên, Nôm_Y.048.jpg",11,2,mismatch,5,5,5,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",剣塘貯𢢆尒𠳒朱戈,kiếm đường chưa thẹn mấy nhời cho qua
+"Trinh Thư Truyên, Nôm",508,165,508,"Trinh Thư Truyên, Nôm.049.000","Trinh Thư Truyên, Nôm_Y.049.jpg",0,1,mismatch,1,1,1,蟾,chiềm,"thiêm, thiềm",蟾宮𩃳㐌斜斜,chiềm cung bóng đã tà tà
+"Trinh Thư Truyên, Nôm",509,166,509,"Trinh Thư Truyên, Nôm.049.001","Trinh Thư Truyên, Nôm_Y.049.jpg",1,1,mismatch,7,7,7,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",𡅳哴娘急吏茹尒𡥵,khuyên rằng nàng kíp lại nhà mấy con
+"Trinh Thư Truyên, Nôm",511,167,511,"Trinh Thư Truyên, Nôm.049.003","Trinh Thư Truyên, Nôm_Y.049.jpg",3,1,mismatch,1,1,1,𧡊,cháy,"thấu, thấy",𧡊娘固胣鉄𣘈𡦂情,cháy nàng có giạ sắt son chữ tình
+"Trinh Thư Truyên, Nôm",512,168,512,"Trinh Thư Truyên, Nôm.049.004","Trinh Thư Truyên, Nôm_Y.049.jpg",4,1,mismatch,1,1,1,𦝄,giảng,"cữ, da, dăng, giăng, gương, lăng, lưng, mây, mối, nhị, răng, trăng",𦝄花低仍爫清,giảng hoa đây những làm thinh
+"Trinh Thư Truyên, Nôm",513,169,513,"Trinh Thư Truyên, Nôm.049.005","Trinh Thư Truyên, Nôm_Y.049.jpg",5,1,mismatch,2,2,2,𡗶,giỏi,"giơì, giời, lời, nhời, thì, trời",固𡗶唉惻朱𨉓𦓡傕,có giỏi hãi biết cho mình mà thôi
+"Trinh Thư Truyên, Nôm",513,169,513,"Trinh Thư Truyên, Nôm.049.005","Trinh Thư Truyên, Nôm_Y.049.jpg",5,2,mismatch,3,3,3,唉,hãi,"ai, hãy, hĩ, hơi, hễ, hởi, hỡi, ái, ơi",固𡗶唉惻朱𨉓𦓡傕,có giỏi hãi biết cho mình mà thôi
+"Trinh Thư Truyên, Nôm",513,169,513,"Trinh Thư Truyên, Nôm.049.005","Trinh Thư Truyên, Nôm_Y.049.jpg",5,3,mismatch,4,4,4,惻,biết,trắc,固𡗶唉惻朱𨉓𦓡傕,có giỏi hãi biết cho mình mà thôi
+"Trinh Thư Truyên, Nôm",515,170,515,"Trinh Thư Truyên, Nôm.049.007","Trinh Thư Truyên, Nôm_Y.049.jpg",7,1,mismatch,4,4,4,效,số,"hiệu, hào, loài",𥙩調趂效沛㖠唸之,lấy đều sắn số phải nài nẫm chi
+"Trinh Thư Truyên, Nôm",515,170,515,"Trinh Thư Truyên, Nôm.049.007","Trinh Thư Truyên, Nôm_Y.049.jpg",7,2,mismatch,7,7,7,唸,nẫm,"niềm, niệm, núm, nắm, nếm, nỏm, điếm, điệm",𥙩調趂效沛㖠唸之,lấy đều sắn số phải nài nẫm chi
+"Trinh Thư Truyên, Nôm",517,171,517,"Trinh Thư Truyên, Nôm.049.009","Trinh Thư Truyên, Nôm_Y.049.jpg",9,1,mismatch,1,1,1,惜,biếc,"tiếc, tích",惜春尒仉相知貝情,biếc xuân mấy kẻ tưởng tri với tình
+"Trinh Thư Truyên, Nôm",517,171,517,"Trinh Thư Truyên, Nôm.049.009","Trinh Thư Truyên, Nôm_Y.049.jpg",9,2,mismatch,3,3,3,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",惜春尒仉相知貝情,biếc xuân mấy kẻ tưởng tri với tình
+"Trinh Thư Truyên, Nôm",517,171,517,"Trinh Thư Truyên, Nôm.049.009","Trinh Thư Truyên, Nôm_Y.049.jpg",9,3,mismatch,5,5,5,相,tưởng,"rương, tuông, tương, tướng",惜春尒仉相知貝情,biếc xuân mấy kẻ tưởng tri với tình
+"Trinh Thư Truyên, Nôm",519,172,519,"Trinh Thư Truyên, Nôm.049.011","Trinh Thư Truyên, Nôm_Y.049.jpg",11,1,mismatch,1,1,1,𬌓,cám,tấm,𬌓𣘈鑿胣春撑昻頭,cám son tạc giạ xuân xanh ngang đầu
+"Trinh Thư Truyên, Nôm",522,173,522,"Trinh Thư Truyên, Nôm.050.002","Trinh Thư Truyên, Nôm_Y.050.jpg",2,1,mismatch,1,1,1,𠽔,chưa,"thơ, thưa",𠽔哴身分弾娑,chưa rằng thân phận đàn bà
+"Trinh Thư Truyên, Nôm",522,173,522,"Trinh Thư Truyên, Nôm.050.002","Trinh Thư Truyên, Nôm_Y.050.jpg",2,2,mismatch,6,6,6,娑,bà,"sa, ta",𠽔哴身分弾娑,chưa rằng thân phận đàn bà
+"Trinh Thư Truyên, Nôm",524,174,524,"Trinh Thư Truyên, Nôm.050.004","Trinh Thư Truyên, Nôm_Y.050.jpg",4,1,mismatch,3,3,3,停,danh,"dành, dừng, giành, rinh, rành, đinh, đoành, đành, đánh, đình, đần, đứa, đứng, đừng",德𠫆停隊閍𠁀,đức giầy danh đội muôn đời
+"Trinh Thư Truyên, Nôm",525,,525,"Trinh Thư Truyên, Nôm.050.005","Trinh Thư Truyên, Nôm_Y.050.jpg",5,1,mismatch,6,6,6,唎,nhời,"lí, lý, lời, lợi, ré, rí, rỉa, trơi",嘿唎𢧚沛料唎嗃𰙔,mắc lời nên phải liệu nhời kêu ca
+"Trinh Thư Truyên, Nôm",529,175,529,"Trinh Thư Truyên, Nôm.050.009","Trinh Thư Truyên, Nôm_Y.050.jpg",9,1,mismatch,3,3,3,𪟽,nghỉ,"hề, nghi, nghĩ, ngây, ngơ, ngơi, ngại, ngờ, ngỡ, ngừa, ngừng",停乎𪟽女妾吀豬𧗱,dừng hồ nghỉ nữa thiếp xin giở về
+"Trinh Thư Truyên, Nôm",529,175,529,"Trinh Thư Truyên, Nôm.050.009","Trinh Thư Truyên, Nôm_Y.050.jpg",9,2,mismatch,7,7,7,豬,giở,"chưa, trơ, trư, trưa",停乎𪟽女妾吀豬𧗱,dừng hồ nghỉ nữa thiếp xin giở về
+"Trinh Thư Truyên, Nôm",531,,531,"Trinh Thư Truyên, Nôm.050.011","Trinh Thư Truyên, Nôm_Y.050.jpg",11,1,mismatch,4,4,4,𤋵,thoáng,"dãi, giãi, giải",󰄯払湿𤋵塘箕㐌𧗱,vợ chàng thấp thoáng đứng kia đã về
+"Trinh Thư Truyên, Nôm",531,,531,"Trinh Thư Truyên, Nôm.050.011","Trinh Thư Truyên, Nôm_Y.050.jpg",11,2,mismatch,5,5,5,塘,đứng,"bờ, cùng, dường, giềng, điều, đàng, đường, đằng",󰄯払湿𤋵塘箕㐌𧗱,vợ chàng thấp thoáng đứng kia đã về
+"Trinh Thư Truyên, Nôm",533,176,533,"Trinh Thư Truyên, Nôm.051.001","Trinh Thư Truyên, Nôm_Y.051.jpg",1,1,mismatch,2,2,2,诗,thơ,thi,吟诗𦓡解𢚸圭矯憹,ngâm thơ mà giải lòng quê kẻo nồng
+"Trinh Thư Truyên, Nôm",533,176,533,"Trinh Thư Truyên, Nôm.051.001","Trinh Thư Truyên, Nôm_Y.051.jpg",1,2,mismatch,8,8,8,憹,nồng,"lùng, ngồi, náo, não, nông, nùng",吟诗𦓡解𢚸圭矯憹,ngâm thơ mà giải lòng quê kẻo nồng
+"Trinh Thư Truyên, Nôm",534,177,534,"Trinh Thư Truyên, Nôm.051.002","Trinh Thư Truyên, Nôm_Y.051.jpg",2,1,mismatch,1,1,1,詩,cho,"thi, thơ, tơ",詩𧵑𱙡𡥵𤝞特,cho của vợ con chút đực
+"Trinh Thư Truyên, Nôm",534,177,534,"Trinh Thư Truyên, Nôm.051.002","Trinh Thư Truyên, Nôm_Y.051.jpg",2,2,mismatch,3,3,3,𱙡,vợ,,詩𧵑𱙡𡥵𤝞特,cho của vợ con chút đực
+"Trinh Thư Truyên, Nôm",534,177,534,"Trinh Thư Truyên, Nôm.051.002","Trinh Thư Truyên, Nôm_Y.051.jpg",2,3,mismatch,5,5,5,𤝞,chút,"chuộc, chuột, tuột",詩𧵑𱙡𡥵𤝞特,cho của vợ con chút đực
+"Trinh Thư Truyên, Nôm",535,178,535,"Trinh Thư Truyên, Nôm.051.003","Trinh Thư Truyên, Nôm_Y.051.jpg",3,1,mismatch,5,5,5,滝,luống,"long, lung, lùng, rông, rồng, song, suông, suồng, sòng, sông, trong, tần, xông",𡽫滝隔阻滝𠀧秋,non sông cách trở luống ba thu
+"Trinh Thư Truyên, Nôm",536,179,536,"Trinh Thư Truyên, Nôm.051.004","Trinh Thư Truyên, Nôm_Y.051.jpg",4,1,mismatch,4,4,4,矇,mung,"mong, muống, mòng, móng, mông, mỏng, mồng, mỗng, trông",聀𧊉𥊚矇𡶀望夫,giấc bướm mơ mung núi vọng phu
+"Trinh Thư Truyên, Nôm",537,180,537,"Trinh Thư Truyên, Nôm.051.005","Trinh Thư Truyên, Nôm_Y.051.jpg",5,1,mismatch,3,3,3,𢘮,nắp,rắp,𠸦仉𢘮迻縁鳯卜,khen kẻ nắp đưa duyên phượng bốc
+"Trinh Thư Truyên, Nôm",538,,538,"Trinh Thư Truyên, Nôm.051.006","Trinh Thư Truyên, Nôm_Y.051.jpg",6,1,mismatch,3,3,3,憚,toan,"dạn, dợn, rợn, đát, đạn, đận, đặn",責払憚𢴑𦛌蠶枯,trách chàng toan giứt ruột tằm khô
+"Trinh Thư Truyên, Nôm",539,181,539,"Trinh Thư Truyên, Nôm.051.007","Trinh Thư Truyên, Nôm_Y.051.jpg",7,1,mismatch,6,6,6,暈,vàng,"huy, quầng, vần, vầng, vận, vừng, vững, vựng",󰜋惗胣鉄印暈兎,một niềm giạ sắt in vàng thỏ
+"Trinh Thư Truyên, Nôm",540,182,540,"Trinh Thư Truyên, Nôm.051.008","Trinh Thư Truyên, Nôm_Y.051.jpg",8,1,mismatch,1,1,1,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",尒𣅶肝鐄𤋵𩄴烏,mấy lúc gan vàng giãi bóng ô
+"Trinh Thư Truyên, Nôm",541,183,541,"Trinh Thư Truyên, Nôm.051.009","Trinh Thư Truyên, Nôm_Y.051.jpg",9,1,mismatch,6,6,6,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",𧜖𥴜󰭺雷陀尒最,chăn chiếu lẻ loi đà mấy tối
+"Trinh Thư Truyên, Nôm",542,184,542,"Trinh Thư Truyên, Nôm.051.010","Trinh Thư Truyên, Nôm_Y.051.jpg",10,1,mismatch,1,1,1,𦓡,ma,mà,𦓡𢚸㐌女世箕𠱋,ma long đã nỡ thế kia du
+"Trinh Thư Truyên, Nôm",543,185,543,"Trinh Thư Truyên, Nôm.051.011","Trinh Thư Truyên, Nôm_Y.051.jpg",11,1,mismatch,1,1,1,詩,cho,"thi, thơ, tơ",詩𧵑𡥵𤝞白𢹇难和吏,cho của con chút bạch mắc nạn họa lại
+"Trinh Thư Truyên, Nôm",543,185,543,"Trinh Thư Truyên, Nôm.051.011","Trinh Thư Truyên, Nôm_Y.051.jpg",11,2,mismatch,4,4,4,𤝞,chút,"chuộc, chuột, tuột",詩𧵑𡥵𤝞白𢹇难和吏,cho của con chút bạch mắc nạn họa lại
+"Trinh Thư Truyên, Nôm",544,,544,"Trinh Thư Truyên, Nôm.052.000","Trinh Thư Truyên, Nôm_Y.052.jpg",0,1,mismatch,5,5,5,惻,biết,trắc,名節箕陀惻𠇍秋,danh tiết kia đã biết mấy thu
+"Trinh Thư Truyên, Nôm",548,186,548,"Trinh Thư Truyên, Nôm.052.004","Trinh Thư Truyên, Nôm_Y.052.jpg",4,1,mismatch,5,5,5,暈,vàng,"huy, quầng, vần, vầng, vận, vừng, vững, vựng",悴義㐌願暈玊皃,chút nghĩa đã nguyền vàng ngọc thỏ
+"Trinh Thư Truyên, Nôm",548,186,548,"Trinh Thư Truyên, Nôm.052.004","Trinh Thư Truyên, Nôm_Y.052.jpg",4,2,mismatch,7,7,7,皃,thỏ,"miều, mạo",悴義㐌願暈玊皃,chút nghĩa đã nguyền vàng ngọc thỏ
+"Trinh Thư Truyên, Nôm",549,187,549,"Trinh Thư Truyên, Nôm.052.005","Trinh Thư Truyên, Nôm_Y.052.jpg",5,1,mismatch,1,1,1,𬌓,cầm,tấm,𬌓𢚸付黙𩄴金鳥,cầm lòng phó mặc bóng kim ô
+"Trinh Thư Truyên, Nôm",549,187,549,"Trinh Thư Truyên, Nôm.052.005","Trinh Thư Truyên, Nôm_Y.052.jpg",5,2,mismatch,7,7,7,鳥,ô,"diểu, dẻo, láo, đeo, điểu, điệu, đéo, đảo, đẽo",𬌓𢚸付黙𩄴金鳥,cầm lòng phó mặc bóng kim ô
+"Trinh Thư Truyên, Nôm",550,188,550,"Trinh Thư Truyên, Nôm.052.006","Trinh Thư Truyên, Nôm_Y.052.jpg",6,1,mismatch,1,1,1,輸,châu,"du, ròn, thua, thâu, thú",輸𣎀𫼳㗂哴箕怒,châu đêm mang tiếng rằng kia nọ
+"Trinh Thư Truyên, Nôm",551,189,551,"Trinh Thư Truyên, Nôm.052.007","Trinh Thư Truyên, Nôm_Y.052.jpg",7,1,mismatch,5,5,5,剔,rẽ,"dịch, thí, thế, tích",胣鉄肝鐄剔朳𠱋,giạ sắt gan vàng rẽ biết du
+"Trinh Thư Truyên, Nôm",551,189,551,"Trinh Thư Truyên, Nôm.052.007","Trinh Thư Truyên, Nôm_Y.052.jpg",7,2,mismatch,6,6,6,朳,biết,"bà, bát, bít, bắt, bịt, xốc",胣鉄肝鐄剔朳𠱋,giạ sắt gan vàng rẽ biết du
+"Trinh Thư Truyên, Nôm",558,190,558,"Trinh Thư Truyên, Nôm.053.002","Trinh Thư Truyên, Nôm_Y.053.jpg",2,1,mismatch,1,1,1,提,dễ,"chẵn, chặn, chề, dè, dề, gi, giề, nhè, re, rè, rề, thì, đè, đì, đầy, đề, để",提澄扑𩄴容𨱽,dễ chừng bắt bóng dong dài
+"Trinh Thư Truyên, Nôm",558,190,558,"Trinh Thư Truyên, Nôm.053.002","Trinh Thư Truyên, Nôm_Y.053.jpg",2,2,mismatch,3,3,3,扑,bắt,"buốt, buộc, bóc, bói, bóp, bốc, phác, phốc, phộc, vọc, vục",提澄扑𩄴容𨱽,dễ chừng bắt bóng dong dài
+"Trinh Thư Truyên, Nôm",561,,561,"Trinh Thư Truyên, Nôm.053.005","Trinh Thư Truyên, Nôm_Y.053.jpg",5,1,mismatch,2,2,2,僻,tôi,"tích, tịch",為僻󰜋悴𫥨𠓨朱𢧚,vì tôi một chút ra vào cho nên
+"Trinh Thư Truyên, Nôm",563,191,563,"Trinh Thư Truyên, Nôm.053.007","Trinh Thư Truyên, Nôm_Y.053.jpg",7,1,mismatch,1,1,1,憹,nồng,"lùng, ngồi, náo, não, nông, nùng",憹󱋔之𡗋𣵚煩能之,nồng nàn chi lắm thêm phiền hay chi
+"Trinh Thư Truyên, Nôm",564,192,564,"Trinh Thư Truyên, Nôm.053.008","Trinh Thư Truyên, Nôm_Y.053.jpg",8,1,mismatch,5,5,5,𠨽,tỉ,tí,閉𣉹払吶𠨽啤,bấy giờ chẳng nói tỉ tê
+"Trinh Thư Truyên, Nôm",564,192,564,"Trinh Thư Truyên, Nôm.053.008","Trinh Thư Truyên, Nôm_Y.053.jpg",8,2,mismatch,6,6,6,啤,tê,"bi, bì, te, ti, ty, tỳ",閉𣉹払吶𠨽啤,bấy giờ chẳng nói tỉ tê
+"Trinh Thư Truyên, Nôm",569,193,569,"Trinh Thư Truyên, Nôm.054.001","Trinh Thư Truyên, Nôm_Y.054.jpg",1,1,mismatch,1,1,1,罪,cội,"tội, tụi",罪𫡛𨻫仍𨢥𦓡𠊚仍,cội gì luống những mặn mà người rưng
+"Trinh Thư Truyên, Nôm",569,193,569,"Trinh Thư Truyên, Nôm.054.001","Trinh Thư Truyên, Nôm_Y.054.jpg",1,2,mismatch,8,8,8,仍,rưng,"cả, dưng, dừng, dửng, nhang, nhâng, nhùng, nhăng, nhưng, nhắn, nhằng, nhẳng, nhứng, những",罪𫡛𨻫仍𨢥𦓡𠊚仍,cội gì luống những mặn mà người rưng
+"Trinh Thư Truyên, Nôm",570,194,570,"Trinh Thư Truyên, Nôm.054.002","Trinh Thư Truyên, Nôm_Y.054.jpg",2,1,mismatch,1,1,1,紫,giá,"tia, tía, tử",紫𦖻𣜾󰘚𤇊𤇊,giá tai dỏ mặt bưng bưng
+"Trinh Thư Truyên, Nôm",570,194,570,"Trinh Thư Truyên, Nôm.054.002","Trinh Thư Truyên, Nôm_Y.054.jpg",2,2,mismatch,3,3,3,𣜾,dỏ,"chưa, chớ, chửa",紫𦖻𣜾󰘚𤇊𤇊,giá tai dỏ mặt bưng bưng
+"Trinh Thư Truyên, Nôm",570,194,570,"Trinh Thư Truyên, Nôm.054.002","Trinh Thư Truyên, Nôm_Y.054.jpg",2,3,mismatch,5,5,5,𤇊,bưng,"bùng, bầng, bừng, phừng",紫𦖻𣜾󰘚𤇊𤇊,giá tai dỏ mặt bưng bưng
+"Trinh Thư Truyên, Nôm",570,194,570,"Trinh Thư Truyên, Nôm.054.002","Trinh Thư Truyên, Nôm_Y.054.jpg",2,4,mismatch,6,6,6,𤇊,bưng,"bùng, bầng, bừng, phừng",紫𦖻𣜾󰘚𤇊𤇊,giá tai dỏ mặt bưng bưng
+"Trinh Thư Truyên, Nôm",572,195,572,"Trinh Thư Truyên, Nôm.054.004","Trinh Thư Truyên, Nôm_Y.054.jpg",4,1,mismatch,5,5,5,永,vảng,"huênh, viếng, vành, vánh, vênh, vính, văng, vĩnh, vạnh, vảnh, vắng, vẳng, vểnh, vịnh",故𫡛妾買永茹,có gì thiếp mới vảng nhà
+"Trinh Thư Truyên, Nôm",573,,573,"Trinh Thư Truyên, Nôm.054.005","Trinh Thư Truyên, Nôm_Y.054.jpg",5,1,mismatch,3,3,3,𡁹,gió,"dỗ, dụ",㐌𢚸𡁹月眷花哉排,đã lòng gió nguyệt quyến hoa tơi bời
+"Trinh Thư Truyên, Nôm",574,196,574,"Trinh Thư Truyên, Nôm.054.006","Trinh Thư Truyên, Nôm_Y.054.jpg",6,1,mismatch,1,1,1,被,vừa,"bí, bệ, bị, bỡ, bợ, bự, phi",被𢚸適志辰𨔈,vừa lòng thích chí thỉ chơi
+"Trinh Thư Truyên, Nôm",574,196,574,"Trinh Thư Truyên, Nôm.054.006","Trinh Thư Truyên, Nôm_Y.054.jpg",6,2,mismatch,5,5,5,辰,thỉ,"gìn, thì, thìn, thần, thời, tthì",被𢚸適志辰𨔈,vừa lòng thích chí thỉ chơi
+"Trinh Thư Truyên, Nôm",576,197,576,"Trinh Thư Truyên, Nôm.054.008","Trinh Thư Truyên, Nôm_Y.054.jpg",8,1,mismatch,1,1,1,𲈾,của,cửa,𲈾茹󱳮𢠯𣋽󰞴,của nhà lo lắng sớm khuya
+"Trinh Thư Truyên, Nôm",578,198,578,"Trinh Thư Truyên, Nôm.054.010","Trinh Thư Truyên, Nôm_Y.054.jpg",10,1,mismatch,4,4,4,𠱆,giảng,"dắng, dặng, giắng",𩛂粓辰𠱆紅毛,no cơm thì giảng hồng mao
+"Trinh Thư Truyên, Nôm",580,199,580,"Trinh Thư Truyên, Nôm.055.000","Trinh Thư Truyên, Nôm_Y.055.jpg",0,1,mismatch,2,2,2,𢪀,ngỡ,"dở, ngay, nghe, nghĩ, nghỉ, ngại, ngờ, tư, xét",埃𢪀󰘚𩸲肝𤞻,ai ngỡ mặt sứa gan hâm
+"Trinh Thư Truyên, Nôm",580,199,580,"Trinh Thư Truyên, Nôm.055.000","Trinh Thư Truyên, Nôm_Y.055.jpg",0,2,mismatch,6,6,6,𤞻,hâm,"hùm, hạm, hầm, kia",埃𢪀󰘚𩸲肝𤞻,ai ngỡ mặt sứa gan hâm
+"Trinh Thư Truyên, Nôm",581,200,581,"Trinh Thư Truyên, Nôm.055.001","Trinh Thư Truyên, Nôm_Y.055.jpg",1,1,mismatch,2,2,2,𥳪,toan,,𢘮𥳪𬷤脿沁妥𢚸,rắp toan gã béo rượu tăm thoả lòng
+"Trinh Thư Truyên, Nôm",581,200,581,"Trinh Thư Truyên, Nôm.055.001","Trinh Thư Truyên, Nôm_Y.055.jpg",1,2,mismatch,3,3,3,𬷤,gã,gà,𢘮𥳪𬷤脿沁妥𢚸,rắp toan gã béo rượu tăm thoả lòng
+"Trinh Thư Truyên, Nôm",583,201,583,"Trinh Thư Truyên, Nôm.055.003","Trinh Thư Truyên, Nôm_Y.055.jpg",3,1,mismatch,3,3,3,𥪝,trung,"lông, trong, trông",螠箕𥪝汫仍㤨𬲞𩛂,ếch kia trung giếng những hòng mới no
+"Trinh Thư Truyên, Nôm",583,201,583,"Trinh Thư Truyên, Nôm.055.003","Trinh Thư Truyên, Nôm_Y.055.jpg",3,2,mismatch,7,7,7,𬲞,mới,mồi,螠箕𥪝汫仍㤨𬲞𩛂,ếch kia trung giếng những hòng mới no
+"Trinh Thư Truyên, Nôm",585,202,585,"Trinh Thư Truyên, Nôm.055.005","Trinh Thư Truyên, Nôm_Y.055.jpg",5,1,mismatch,6,6,6,󱳮,lọ,"lo, lơ",𩛂粓呴戯群󱳮𢠯𫡛,no cơm hú hí con lọ lắng gì
+"Trinh Thư Truyên, Nôm",586,203,586,"Trinh Thư Truyên, Nôm.055.006","Trinh Thư Truyên, Nôm_Y.055.jpg",6,1,mismatch,3,3,3,之,chí,"chi, chỉ, chị, giây, gì, gì;, sao",兑傷之餒妻児,đoái thương chí nỗi thê nhi
+"Trinh Thư Truyên, Nôm",587,204,587,"Trinh Thư Truyên, Nôm.055.007","Trinh Thư Truyên, Nôm_Y.055.jpg",7,1,mismatch,6,6,6,𠫾,đè,"quên, đi, đưa, đị",尋媒󰞴𣋽㐌𠫾拖払,tìm mối khuya sớm đã đè độ chăng
+"Trinh Thư Truyên, Nôm",587,204,587,"Trinh Thư Truyên, Nôm.055.007","Trinh Thư Truyên, Nôm_Y.055.jpg",7,2,mismatch,7,7,7,拖,độ,"lả, rày, sửa, tha, đà, đã, đẩy, đớ, đờ, đỡ, đợ",尋媒󰞴𣋽㐌𠫾拖払,tìm mối khuya sớm đã đè độ chăng
+"Trinh Thư Truyên, Nôm",587,204,587,"Trinh Thư Truyên, Nôm.055.007","Trinh Thư Truyên, Nôm_Y.055.jpg",7,3,mismatch,8,8,8,払,chăng,"chang, choàng, chàng, chẳng, giằng, nàng, phất, phắt, phớt, phứt, phựt, rằng, tên",尋媒󰞴𣋽㐌𠫾拖払,tìm mối khuya sớm đã đè độ chăng
+"Trinh Thư Truyên, Nôm",588,205,588,"Trinh Thư Truyên, Nôm.055.008","Trinh Thư Truyên, Nôm_Y.055.jpg",8,1,mismatch,3,3,3,被,vừa,"bí, bệ, bị, bỡ, bợ, bự, phi",欺𧗱被𦤾頭墻,khi về vừa đến đầu tường
+"Trinh Thư Truyên, Nôm",589,206,589,"Trinh Thư Truyên, Nôm.055.009","Trinh Thư Truyên, Nôm_Y.055.jpg",9,1,mismatch,8,8,8,睈,dình,rình,𧡊𡥵獴𨅸𧯄伮睈,thấy con muông đứng cửa hang nó dình
+"Trinh Thư Truyên, Nôm",591,207,591,"Trinh Thư Truyên, Nôm.055.011","Trinh Thư Truyên, Nôm_Y.055.jpg",11,1,mismatch,2,2,2,唏,hờn,"he, hi, hy, hây, hè, hê, hì, hí, hôi, hý, hơi, hề, hời, khề, tăm, vó",吟唏𨇍𨀈抌𨉓𧗱低,ngậm hờn lén bước đem mình về đây
+"Trinh Thư Truyên, Nôm",592,208,592,"Trinh Thư Truyên, Nôm.056.000","Trinh Thư Truyên, Nôm_Y.056.jpg",0,1,mismatch,6,6,6,𦀊,giày,"dai, dây, giây, rây, tơ, đây",吏𠲖屡𤠲𢭾𦀊,lại e lũ khỉ buông giày
+"Trinh Thư Truyên, Nôm",595,209,595,"Trinh Thư Truyên, Nôm.056.003","Trinh Thư Truyên, Nôm_Y.056.jpg",3,1,mismatch,2,2,2,𠺚,vâng,"băn, van",払𠺚如𠰚排詳頭𡳪,chẳng vâng như cốc bảy tường đầu đuôi
+"Trinh Thư Truyên, Nôm",595,209,595,"Trinh Thư Truyên, Nôm.056.003","Trinh Thư Truyên, Nôm_Y.056.jpg",3,2,mismatch,4,4,4,𠰚,cốc,"nhé, nhạy, nhẻ, nhẽ, nhỉ, nể, nỉ",払𠺚如𠰚排詳頭𡳪,chẳng vâng như cốc bảy tường đầu đuôi
+"Trinh Thư Truyên, Nôm",595,209,595,"Trinh Thư Truyên, Nôm.056.003","Trinh Thư Truyên, Nôm_Y.056.jpg",3,3,mismatch,5,5,5,排,bảy,"bai, bay, bài, bày, bơi, bầy, bối, bồi, bời, bởi, phơi, vài, vời",払𠺚如𠰚排詳頭𡳪,chẳng vâng như cốc bảy tường đầu đuôi
+"Trinh Thư Truyên, Nôm",599,210,599,"Trinh Thư Truyên, Nôm.056.007","Trinh Thư Truyên, Nôm_Y.056.jpg",7,1,mismatch,4,4,4,𣷱,sủa,"rửa, sữa",㗂𡥵獴𣷱徐賖吏𧵆,tiếng con muông sủa tứ xa lại gần
+"Trinh Thư Truyên, Nôm",599,210,599,"Trinh Thư Truyên, Nôm.056.007","Trinh Thư Truyên, Nôm_Y.056.jpg",7,2,mismatch,5,5,5,徐,tứ,"chờ, chừ, chừa, dờ, giờ, thờ, từ, xờ",㗂𡥵獴𣷱徐賖吏𧵆,tiếng con muông sủa tứ xa lại gần
+"Trinh Thư Truyên, Nôm",602,211,602,"Trinh Thư Truyên, Nôm.056.010","Trinh Thư Truyên, Nôm_Y.056.jpg",10,1,mismatch,1,1,1,吣,căm,"khấm, tom, tăm, tấm, tầm, tẩm",吣唏𣠖惻爫𫳵,căm hởi chưa biết làm sao
+"Trinh Thư Truyên, Nôm",602,211,602,"Trinh Thư Truyên, Nôm.056.010","Trinh Thư Truyên, Nôm_Y.056.jpg",10,2,mismatch,2,2,2,唏,hởi,"he, hi, hy, hây, hè, hê, hì, hí, hôi, hý, hơi, hề, hời, khề, tăm, vó",吣唏𣠖惻爫𫳵,căm hởi chưa biết làm sao
+"Trinh Thư Truyên, Nôm",602,211,602,"Trinh Thư Truyên, Nôm.056.010","Trinh Thư Truyên, Nôm_Y.056.jpg",10,3,mismatch,4,4,4,惻,biết,trắc,吣唏𣠖惻爫𫳵,căm hởi chưa biết làm sao
+"Trinh Thư Truyên, Nôm",603,212,603,"Trinh Thư Truyên, Nôm.056.011","Trinh Thư Truyên, Nôm_Y.056.jpg",11,1,mismatch,4,4,4,𤢥,rượn,vượn,排徊肝𤢥噋哰𦛌蟳,bối hồi gan rượn xôn xao ruột tằm
+"Trinh Thư Truyên, Nôm",604,213,604,"Trinh Thư Truyên, Nôm.057.000","Trinh Thư Truyên, Nôm_Y.057.jpg",0,1,mismatch,2,2,2,𫏝,thó,thò,十𫏝侯𢘮𫥨𠽉,thập thó hầu rắp ra thăm
+"Trinh Thư Truyên, Nôm",606,214,606,"Trinh Thư Truyên, Nôm.057.002","Trinh Thư Truyên, Nôm_Y.057.jpg",2,1,mismatch,1,1,1,與,rũ,"dư, dở, dữ, dự, giữ, ru, trở, đử",與𫅜𠄩󰭺𣠖詳,rũ lành hai lẻ chưa tường
+"Trinh Thư Truyên, Nôm",617,215,617,"Trinh Thư Truyên, Nôm.058.001","Trinh Thư Truyên, Nôm_Y.058.jpg",1,1,mismatch,4,4,4,崪,chút,"chót, tuỵ, tốt, tột",𦖑𫥨𫽄崪𠓨𦖻𣵚煩,nghe ra chẳng chút vào tai thêm phiền
+"Trinh Thư Truyên, Nôm",618,,618,"Trinh Thư Truyên, Nôm.058.002","Trinh Thư Truyên, Nôm_Y.058.jpg",2,1,mismatch,1,1,1,𱙡,vợ,,𱙡哴事㐌果然,vợ rằng sự đã quả nhiên
+"Trinh Thư Truyên, Nôm",620,216,620,"Trinh Thư Truyên, Nôm.058.004","Trinh Thư Truyên, Nôm_Y.058.jpg",4,1,mismatch,3,3,3,被,vừa,"bí, bệ, bị, bỡ, bợ, bự, phi",󰄯𡥵被𨀈𫥨塘,vợ con vừa bước ra đường
+"Trinh Thư Truyên, Nôm",622,,622,"Trinh Thư Truyên, Nôm.058.006","Trinh Thư Truyên, Nôm_Y.058.jpg",6,1,mismatch,5,5,5,𠸠,vũ,"bí, vì, ví",𢚸𪀄胣𩵜𠸠空,lòng chim dạ cá vũ không
+"Trinh Thư Truyên, Nôm",623,217,623,"Trinh Thư Truyên, Nôm.058.007","Trinh Thư Truyên, Nôm_Y.058.jpg",7,1,mismatch,3,3,3,𠴗,giở,"dô, dỗ, giỗ, nhổ, sỗ, đổ",世辰𠴗𡛔𧗱房爫之,thế thì giở gói về phòng làm chi
+"Trinh Thư Truyên, Nôm",623,217,623,"Trinh Thư Truyên, Nôm.058.007","Trinh Thư Truyên, Nôm_Y.058.jpg",7,2,mismatch,4,4,4,𡛔,gói,"cái, cưới, gái",世辰𠴗𡛔𧗱房爫之,thế thì giở gói về phòng làm chi
+"Trinh Thư Truyên, Nôm",624,,624,"Trinh Thư Truyên, Nôm.058.008","Trinh Thư Truyên, Nôm_Y.058.jpg",8,1,mismatch,1,1,1,𫗂,chơi,"gió, thói",𫗂悁𡨺墨惻𫡛,chơi quen giữ mực biết gì
+"Trinh Thư Truyên, Nôm",624,,624,"Trinh Thư Truyên, Nôm.058.008","Trinh Thư Truyên, Nôm_Y.058.jpg",8,2,mismatch,5,5,5,惻,biết,trắc,𫗂悁𡨺墨惻𫡛,chơi quen giữ mực biết gì
+"Trinh Thư Truyên, Nôm",625,218,625,"Trinh Thư Truyên, Nôm.058.009","Trinh Thư Truyên, Nôm_Y.058.jpg",9,1,mismatch,1,1,1,弼,bắt,"bạt, bậc, bật, bằn, bặt",弼𣦍曽𠾿如羝术𧤁,bắt ngay tàng hãng như giè mọc sừng
+"Trinh Thư Truyên, Nôm",625,218,625,"Trinh Thư Truyên, Nôm.058.009","Trinh Thư Truyên, Nôm_Y.058.jpg",9,2,mismatch,3,3,3,曽,tàng,"tâng, tăng, tơn, tưng, tằng, từng",弼𣦍曽𠾿如羝术𧤁,bắt ngay tàng hãng như giè mọc sừng
+"Trinh Thư Truyên, Nôm",625,218,625,"Trinh Thư Truyên, Nôm.058.009","Trinh Thư Truyên, Nôm_Y.058.jpg",9,3,mismatch,4,4,4,𠾿,hãng,"hẫng, hững",弼𣦍曽𠾿如羝术𧤁,bắt ngay tàng hãng như giè mọc sừng
+"Trinh Thư Truyên, Nôm",625,218,625,"Trinh Thư Truyên, Nôm.058.009","Trinh Thư Truyên, Nôm_Y.058.jpg",9,4,mismatch,6,6,6,羝,giè,"dê, đê, để",弼𣦍曽𠾿如羝术𧤁,bắt ngay tàng hãng như giè mọc sừng
+"Trinh Thư Truyên, Nôm",625,218,625,"Trinh Thư Truyên, Nôm.058.009","Trinh Thư Truyên, Nôm_Y.058.jpg",9,5,mismatch,7,7,7,术,mọc,"thuật, truật",弼𣦍曽𠾿如羝术𧤁,bắt ngay tàng hãng như giè mọc sừng
+"Trinh Thư Truyên, Nôm",627,219,627,"Trinh Thư Truyên, Nôm.058.011","Trinh Thư Truyên, Nôm_Y.058.jpg",11,1,mismatch,3,3,3,󱤅,rượng,ruộng,𢭳㺔󱤅𦲹𢪀哴謹台,giấu voi rượng dạ nghĩ rằng kín thay
+"Trinh Thư Truyên, Nôm",627,219,627,"Trinh Thư Truyên, Nôm.058.011","Trinh Thư Truyên, Nôm_Y.058.jpg",11,2,mismatch,4,4,4,𦲹,dạ,rạ,𢭳㺔󱤅𦲹𢪀哴謹台,giấu voi rượng dạ nghĩ rằng kín thay
+"Trinh Thư Truyên, Nôm",629,220,629,"Trinh Thư Truyên, Nôm.059.001","Trinh Thư Truyên, Nôm_Y.059.jpg",1,1,mismatch,6,6,6,𦀊,giày,"dai, dây, giây, rây, tơ, đây",𤝞芇吏𪾋哏𦀊𢪗猫,chuột nào lại giám cắn giày buộc mèo
+"Trinh Thư Truyên, Nôm",630,,630,"Trinh Thư Truyên, Nôm.059.002","Trinh Thư Truyên, Nôm_Y.059.jpg",2,1,mismatch,3,3,3,𥳪,toan,,必󰑼𥳪撘世芇,ắt là toan đắp thế nào
+"Trinh Thư Truyên, Nôm",633,,633,"Trinh Thư Truyên, Nôm.059.005","Trinh Thư Truyên, Nôm_Y.059.jpg",5,1,mismatch,1,1,1,惻,biết,trắc,惻󰑼特丐女󰑼傳埃,biết là được cái nữa là truyện ai
+"Trinh Thư Truyên, Nôm",635,,635,"Trinh Thư Truyên, Nôm.059.007","Trinh Thư Truyên, Nôm_Y.059.jpg",7,1,mismatch,1,1,1,屍,rể,"thi, thây",屍𦓡咹𧑂𢬄𦖻特芇,rể mà ăn cáy bưng tai được nào
+"Trinh Thư Truyên, Nôm",637,,637,"Trinh Thư Truyên, Nôm.059.009","Trinh Thư Truyên, Nôm_Y.059.jpg",9,1,mismatch,4,4,4,鵬,mỡ,"bàng, bằng, phượng, phụng",如猫𧡊鵬渴稿仍󰑼,như mèo thấy mỡ khát khao những là
+"Trinh Thư Truyên, Nôm",638,,638,"Trinh Thư Truyên, Nôm.059.010","Trinh Thư Truyên, Nôm_Y.059.jpg",10,1,mismatch,4,4,4,雞,trẻ,"duật, gà, ke, kê",𫅷𫽄𠬕雞𫽄他,già chẳng bỏ trẻ chẳng tha
+"Trinh Thư Truyên, Nôm",640,,640,"Trinh Thư Truyên, Nôm.060.000","Trinh Thư Truyên, Nôm_Y.060.jpg",0,1,mismatch,1,1,1,䗖,chuông,,䗖螳𣄒汫特𠱋,chuông buồng ở giếng được du
+"Trinh Thư Truyên, Nôm",640,,640,"Trinh Thư Truyên, Nôm.060.000","Trinh Thư Truyên, Nôm_Y.060.jpg",0,2,mismatch,2,2,2,螳,buồng,đường,䗖螳𣄒汫特𠱋,chuông buồng ở giếng được du
+"Trinh Thư Truyên, Nôm",641,221,641,"Trinh Thư Truyên, Nôm.060.001","Trinh Thư Truyên, Nôm_Y.060.jpg",1,1,mismatch,1,1,1,𦓡,ma,mà,𦓡𥳪哏咘𭉑㗅巴為,ma toan gắn bó hẹn hò bơ vơ
+"Trinh Thư Truyên, Nôm",641,221,641,"Trinh Thư Truyên, Nôm.060.001","Trinh Thư Truyên, Nôm_Y.060.jpg",1,2,mismatch,2,2,2,𥳪,toan,,𦓡𥳪哏咘𭉑㗅巴為,ma toan gắn bó hẹn hò bơ vơ
+"Trinh Thư Truyên, Nôm",642,,642,"Trinh Thư Truyên, Nôm.060.002","Trinh Thư Truyên, Nôm_Y.060.jpg",2,1,mismatch,5,5,5,㖽,hửng,"hợt, trách",𥴜𧜖𱜢固㖽哬,chiếu chăn nào có hửng hờ
+"Trinh Thư Truyên, Nôm",643,222,643,"Trinh Thư Truyên, Nôm.060.003","Trinh Thư Truyên, Nôm_Y.060.jpg",3,1,mismatch,3,3,3,撝,với,"hoay, huy, huơi, hươi, loay, va, vay, ve, vày, vê, vơ, vẻo, về, vớ, vời",𦓡如撝𩛜仍撝容𨱽,mà như với đói những vơ dong dài
+"Trinh Thư Truyên, Nôm",644,223,644,"Trinh Thư Truyên, Nôm.060.004","Trinh Thư Truyên, Nôm_Y.060.jpg",4,1,mismatch,4,4,4,𢙲,bữa,"lả, lỡ, lữa, nhỡ, rỡ",悁味𠳺𢙲咹𨔈,quen mùi lẫn bữa ăn chơi
+"Trinh Thư Truyên, Nôm",648,224,648,"Trinh Thư Truyên, Nôm.060.008","Trinh Thư Truyên, Nôm_Y.060.jpg",8,1,mismatch,3,3,3,㤛,nhẫm,"nhẩm, nhậm, nhắm",𠸠𠱋㤛沛𡞕埃,ví dù nhẫm phải vợ ai
+"Trinh Thư Truyên, Nôm",649,,649,"Trinh Thư Truyên, Nôm.060.009","Trinh Thư Truyên, Nôm_Y.060.jpg",9,1,mismatch,3,3,3,笈,bẻ,"cạp, cấp, cập, cặp",𢚸滝笈棳買𫨩朱𠁀,lòng sông bẻ chuối mới hay cho đời
+"Trinh Thư Truyên, Nôm",652,225,652,"Trinh Thư Truyên, Nôm.061.000","Trinh Thư Truyên, Nôm_Y.061.jpg",0,1,mismatch,3,3,3,祸,vạ,"hoạ, họa, phước",仍懞祸固包𣉹,những mong vạ có bao gio
+"Trinh Thư Truyên, Nôm",652,225,652,"Trinh Thư Truyên, Nôm.061.000","Trinh Thư Truyên, Nôm_Y.061.jpg",0,2,mismatch,6,6,6,𣉹,gio,"chờ, chừ, giờ",仍懞祸固包𣉹,những mong vạ có bao gio
+"Trinh Thư Truyên, Nôm",654,226,654,"Trinh Thư Truyên, Nôm.061.002","Trinh Thư Truyên, Nôm_Y.061.jpg",2,1,mismatch,1,1,1,傕,chối,"giác, quyết, sôi, thoi, thòi, thôi, thôị, thội, thời",傕傕停固唒觥,chối thôi đừng có giấu quanh
+"Trinh Thư Truyên, Nôm",655,,655,"Trinh Thư Truyên, Nôm.061.003","Trinh Thư Truyên, Nôm_Y.061.jpg",3,1,mismatch,4,4,4,剔,rẽ,"dịch, thí, thế, tích",俸仍娘剔抌𨉓𦤾低,bỗng những nàng rẽ đem mình đến đây
+"Trinh Thư Truyên, Nôm",657,,657,"Trinh Thư Truyên, Nôm.061.005","Trinh Thư Truyên, Nôm_Y.061.jpg",5,1,mismatch,6,6,6,傑,thay,"kiệt, kẹt, kịt",󰘚如頭𤞼𥆾傑猪猪,mặt như đầu lợn nhìn thay trơ trơ
+"Trinh Thư Truyên, Nôm",658,227,658,"Trinh Thư Truyên, Nôm.061.006","Trinh Thư Truyên, Nôm_Y.061.jpg",6,1,mismatch,2,2,2,𢪀,ngỡ,"dở, ngay, nghe, nghĩ, nghỉ, ngại, ngờ, tư, xét",娘𢪀沛𧆄沛符,nàng ngỡ phải thuốc phải bùa
+"Trinh Thư Truyên, Nôm",659,,659,"Trinh Thư Truyên, Nôm.061.007","Trinh Thư Truyên, Nôm_Y.061.jpg",7,1,mismatch,3,3,3,賦,giấc,"phí, phú",迷蛮賦蝶𥊚糊塊莊,mê man giấc điệp mơ hồ hồn trang
+"Trinh Thư Truyên, Nôm",660,228,660,"Trinh Thư Truyên, Nôm.061.008","Trinh Thư Truyên, Nôm_Y.061.jpg",8,1,mismatch,5,5,5,㽳,vơ,võ,朱𢧚蜍矧㽳鐄,cho nên thơ thẩn vơ vang
+"Trinh Thư Truyên, Nôm",660,228,660,"Trinh Thư Truyên, Nôm.061.008","Trinh Thư Truyên, Nôm_Y.061.jpg",8,2,mismatch,6,6,6,鐄,vang,"hoàng, hoành, vàng, vành, vần",朱𢧚蜍矧㽳鐄,cho nên thơ thẩn vơ vang
+"Trinh Thư Truyên, Nôm",661,229,661,"Trinh Thư Truyên, Nôm.061.009","Trinh Thư Truyên, Nôm_Y.061.jpg",9,1,mismatch,1,1,1,樳,cim,"chầm, giầm, rầm, tìm, tùm, tầm",樳鰱朱急𬟥湯㐌穷,cim luồn cho kịp thuốc thang đã cùng
+"Trinh Thư Truyên, Nôm",661,229,661,"Trinh Thư Truyên, Nôm.061.009","Trinh Thư Truyên, Nôm_Y.061.jpg",9,2,mismatch,2,2,2,鰱,luồn,"liên, lươn, lờn",樳鰱朱急𬟥湯㐌穷,cim luồn cho kịp thuốc thang đã cùng
+"Trinh Thư Truyên, Nôm",661,229,661,"Trinh Thư Truyên, Nôm.061.009","Trinh Thư Truyên, Nôm_Y.061.jpg",9,3,mismatch,4,4,4,急,kịp,"cấp, gấp, kép, kíp, quắp",樳鰱朱急𬟥湯㐌穷,cim luồn cho kịp thuốc thang đã cùng
+"Trinh Thư Truyên, Nôm",665,230,665,"Trinh Thư Truyên, Nôm.062.001","Trinh Thư Truyên, Nôm_Y.062.jpg",1,1,mismatch,1,1,1,𦝄,giàng,"cữ, da, dăng, giăng, gương, lăng, lưng, mây, mối, nhị, răng, trăng",𦝄花蹺還𨔈沔𦝄花,giàng hoa theo thói chơi miền giàng hoa
+"Trinh Thư Truyên, Nôm",665,230,665,"Trinh Thư Truyên, Nôm.062.001","Trinh Thư Truyên, Nôm_Y.062.jpg",1,2,mismatch,4,4,4,還,thói,"hoàn, toàn, về",𦝄花蹺還𨔈沔𦝄花,giàng hoa theo thói chơi miền giàng hoa
+"Trinh Thư Truyên, Nôm",665,230,665,"Trinh Thư Truyên, Nôm.062.001","Trinh Thư Truyên, Nôm_Y.062.jpg",1,3,mismatch,7,7,7,𦝄,giàng,"cữ, da, dăng, giăng, gương, lăng, lưng, mây, mối, nhị, răng, trăng",𦝄花蹺還𨔈沔𦝄花,giàng hoa theo thói chơi miền giàng hoa
+"Trinh Thư Truyên, Nôm",667,,667,"Trinh Thư Truyên, Nôm.062.003","Trinh Thư Truyên, Nôm_Y.062.jpg",3,1,mismatch,2,2,2,𥳪,toan,,𢘮𥳪申告朱𫥨事无,rắp toan thân cáo cho ra sự này
+"Trinh Thư Truyên, Nôm",667,,667,"Trinh Thư Truyên, Nôm.062.003","Trinh Thư Truyên, Nôm_Y.062.jpg",3,2,mismatch,8,8,8,无,này,"mô, vô",𢘮𥳪申告朱𫥨事无,rắp toan thân cáo cho ra sự này
+"Trinh Thư Truyên, Nôm",668,,668,"Trinh Thư Truyên, Nôm.062.004","Trinh Thư Truyên, Nôm_Y.062.jpg",4,1,mismatch,1,1,1,吟,chỉn,"câm, căm, cầm, cẩm, cằm, gầm, gẫm, gặm, khong, ngâm, ngăm, ngăn, ngấm, ngầm, ngẩm, ngẫm, ngậm, ngắm, ngợm",吟𠲖証借坤㖠,chỉn e chứng tá khôn nài
+"Trinh Thư Truyên, Nôm",669,,669,"Trinh Thư Truyên, Nôm.062.005","Trinh Thư Truyên, Nôm_Y.062.jpg",5,1,mismatch,4,4,4,剔,rễ,"dịch, thí, thế, tích",堆𢮩乎剔𡬶埃特芇,đôi co hồ rễ tìm ai được nào
+"Trinh Thư Truyên, Nôm",670,231,670,"Trinh Thư Truyên, Nôm.062.006","Trinh Thư Truyên, Nôm_Y.062.jpg",6,1,mismatch,3,3,3,一,nhát,"dứt, nhất, nhắt, nhứt",妸箕一向在迯,ả kia nhát hường tại đào
+"Trinh Thư Truyên, Nôm",670,231,670,"Trinh Thư Truyên, Nôm.062.006","Trinh Thư Truyên, Nôm_Y.062.jpg",6,2,mismatch,4,4,4,向,hường,"bước, hướng, hưởng",妸箕一向在迯,ả kia nhát hường tại đào
+"Trinh Thư Truyên, Nôm",671,,671,"Trinh Thư Truyên, Nôm.062.007","Trinh Thư Truyên, Nôm_Y.062.jpg",7,1,mismatch,4,4,4,惻,biết,trắc,𠫾蓮棱惻塘𱜢追當,đi lên rừng biết đường nào truy đương
+"Trinh Thư Truyên, Nôm",674,232,674,"Trinh Thư Truyên, Nôm.062.010","Trinh Thư Truyên, Nôm_Y.062.jpg",10,1,mismatch,5,5,5,𠽍,dặm,"râm, rân, rầm, rần",㗂獅󰑼𠯦𠽍唎,tiếng sư la thét dặm lòi
+"Trinh Thư Truyên, Nôm",674,232,674,"Trinh Thư Truyên, Nôm.062.010","Trinh Thư Truyên, Nôm_Y.062.jpg",10,2,mismatch,6,6,6,唎,lòi,"lí, lý, lời, lợi, ré, rí, rỉa, trơi",㗂獅󰑼𠯦𠽍唎,tiếng sư la thét dặm lòi
+"Trinh Thư Truyên, Nôm",675,,675,"Trinh Thư Truyên, Nôm.062.011","Trinh Thư Truyên, Nôm_Y.062.jpg",11,1,mismatch,4,4,4,遣,thói,"khiến, khiển, khán",哴払悁遣咹𨔈𨔍𠁀,rằng chẳng quen thói ăn chơi lạ đời
+"Trinh Thư Truyên, Nôm",678,233,678,"Trinh Thư Truyên, Nôm.063.002","Trinh Thư Truyên, Nôm_Y.063.jpg",2,1,mismatch,1,1,1,箕,khá,"cà, cơ, cờ, ki, kia, ky, kì, kìa, kỳ",箕勾哴貴易妻,khá câu răng gửi dịch thê
+"Trinh Thư Truyên, Nôm",678,233,678,"Trinh Thư Truyên, Nôm.063.002","Trinh Thư Truyên, Nôm_Y.063.jpg",2,2,mismatch,3,3,3,哴,răng,"lang, lượng, rằng",箕勾哴貴易妻,khá câu răng gửi dịch thê
+"Trinh Thư Truyên, Nôm",678,233,678,"Trinh Thư Truyên, Nôm.063.002","Trinh Thư Truyên, Nôm_Y.063.jpg",2,3,mismatch,4,4,4,貴,gửi,"qui, quí, quý, qúi",箕勾哴貴易妻,khá câu răng gửi dịch thê
+"Trinh Thư Truyên, Nôm",680,,680,"Trinh Thư Truyên, Nôm.063.004","Trinh Thư Truyên, Nôm_Y.063.jpg",4,1,mismatch,3,3,3,憚,toan,"dạn, dợn, rợn, đát, đạn, đận, đặn",𫅷耒憚仍䋠料,già rồi toan những bổ liều
+"Trinh Thư Truyên, Nôm",681,234,681,"Trinh Thư Truyên, Nôm.063.005","Trinh Thư Truyên, Nôm_Y.063.jpg",5,1,mismatch,1,1,1,詫,chá,"sá, xá",詫之󱟢抶𨉞腰芻𥯌,chá chi vú thắt lưng eo số sề
+"Trinh Thư Truyên, Nôm",681,234,681,"Trinh Thư Truyên, Nôm.063.005","Trinh Thư Truyên, Nôm_Y.063.jpg",5,2,mismatch,7,7,7,芻,số,"ro, so, su, sò, sô, sù, sồ, xô, xù",詫之󱟢抶𨉞腰芻𥯌,chá chi vú thắt lưng eo số sề
+"Trinh Thư Truyên, Nôm",681,234,681,"Trinh Thư Truyên, Nôm.063.005","Trinh Thư Truyên, Nôm_Y.063.jpg",5,3,mismatch,8,8,8,𥯌,sề,"rì, tre",詫之󱟢抶𨉞腰芻𥯌,chá chi vú thắt lưng eo số sề
+"Trinh Thư Truyên, Nôm",682,235,682,"Trinh Thư Truyên, Nôm.063.006","Trinh Thư Truyên, Nôm_Y.063.jpg",6,1,mismatch,3,3,3,茶,giữa,"che, choè, chà, chè, chèo, chòe, dưa, già, giưa, sà, trà, đồ",𫽄唹茶駒瓢𫅷,chẳng ưa giữa khú bầu già
+"Trinh Thư Truyên, Nôm",682,235,682,"Trinh Thư Truyên, Nôm.063.006","Trinh Thư Truyên, Nôm_Y.063.jpg",6,2,mismatch,4,4,4,駒,khú,"câu, kiêu",𫽄唹茶駒瓢𫅷,chẳng ưa giữa khú bầu già
+"Trinh Thư Truyên, Nôm",683,,683,"Trinh Thư Truyên, Nôm.063.007","Trinh Thư Truyên, Nôm_Y.063.jpg",7,1,mismatch,1,1,1,穢,cuối,uế,穢辰餘齒曆陀𬨨年,cuối thời dư xẻ lịch đã quá niên
+"Trinh Thư Truyên, Nôm",684,236,684,"Trinh Thư Truyên, Nôm.063.008","Trinh Thư Truyên, Nôm_Y.063.jpg",8,1,mismatch,2,2,2,𦝄,giằng,"cữ, da, dăng, giăng, gương, lăng, lưng, mây, mối, nhị, răng, trăng",固𦝄𢧚餒負畑,có giằng nên nỗi phụ đen
+"Trinh Thư Truyên, Nôm",684,236,684,"Trinh Thư Truyên, Nôm.063.008","Trinh Thư Truyên, Nôm_Y.063.jpg",8,2,mismatch,6,6,6,畑,đen,"càn, dền, vặc, đèn, đền",固𦝄𢧚餒負畑,có giằng nên nỗi phụ đen
+"Trinh Thư Truyên, Nôm",685,237,685,"Trinh Thư Truyên, Nôm.063.009","Trinh Thư Truyên, Nôm_Y.063.jpg",9,1,mismatch,4,4,4,焠,sót,"chuốt, chút, lướt, rót, suốt, sút, sốt, sột, thót, thướt, thối, trui, trút, tuỵ, tôi, xót, đốt",𫽄唁体焠辰連𤊰唏,chẳng ngon thể sót thì liền bén hơi
+"Trinh Thư Truyên, Nôm",687,,687,"Trinh Thư Truyên, Nôm.063.011","Trinh Thư Truyên, Nôm_Y.063.jpg",11,1,mismatch,7,7,7,𠸠,nỉ,"bí, vì, ví",埃窖噠仍唎𠸠𠸗,khen ai khéo đặt những lời nỉ xưa
+"Trinh Thư Truyên, Nôm",690,,690,"Trinh Thư Truyên, Nôm.064.002","Trinh Thư Truyên, Nôm_Y.064.jpg",2,1,mismatch,5,5,5,𮚃,tham,,世常𡮶𨔍𮚃清,thế thường chuộng lạ tham thanh
+"Trinh Thư Truyên, Nôm",692,,692,"Trinh Thư Truyên, Nôm.064.004","Trinh Thư Truyên, Nôm_Y.064.jpg",4,1,mismatch,3,3,3,汭,nổi,"lội, nhuế",梂喃汭滝监皮,cầu nôm nổi bũng giám bì
+"Trinh Thư Truyên, Nôm",692,,692,"Trinh Thư Truyên, Nôm.064.004","Trinh Thư Truyên, Nôm_Y.064.jpg",4,2,mismatch,4,4,4,滝,bũng,"long, lung, lùng, rông, rồng, song, suông, suồng, sòng, sông, trong, tần, xông",梂喃汭滝监皮,cầu nôm nổi bũng giám bì
+"Trinh Thư Truyên, Nôm",694,,694,"Trinh Thư Truyên, Nôm.064.006","Trinh Thư Truyên, Nôm_Y.064.jpg",6,1,mismatch,6,6,6,僻,tôi,"tích, tịch",哏𡳪他𧖱分僻,cắn đuôi tha máu phận tôi
+"Trinh Thư Truyên, Nôm",695,238,695,"Trinh Thư Truyên, Nôm.064.007","Trinh Thư Truyên, Nôm_Y.064.jpg",7,1,mismatch,2,2,2,𢪀,ngỡ,"dở, ngay, nghe, nghĩ, nghỉ, ngại, ngờ, tư, xét",埃𢪀情負悁唎情鍾,ai ngỡ tình phụ quên lời tình chung
+"Trinh Thư Truyên, Nôm",696,,696,"Trinh Thư Truyên, Nôm.064.008","Trinh Thư Truyên, Nôm_Y.064.jpg",8,1,mismatch,3,3,3,掉,xe,"chác, chèo, chạc, khiêu, khêu, khều, khểu, rước, sạo, trao, treo, tráo, trạc, trạo, trẹo, vẹo, điệu",野長掉𡋥枉功,dã tràng xe cát uổng công
+"Trinh Thư Truyên, Nôm",697,239,697,"Trinh Thư Truyên, Nôm.064.009","Trinh Thư Truyên, Nôm_Y.064.jpg",9,1,mismatch,1,1,1,󱭔,cô,tò,󱭔紆餒蝒𧯶懞梞𢘾,cô vo nuôi nhện há mong cậy nhờ
+"Trinh Thư Truyên, Nôm",697,239,697,"Trinh Thư Truyên, Nôm.064.009","Trinh Thư Truyên, Nôm_Y.064.jpg",9,2,mismatch,2,2,2,紆,vo,"hu, u, vu, vò",󱭔紆餒蝒𧯶懞梞𢘾,cô vo nuôi nhện há mong cậy nhờ
+"Trinh Thư Truyên, Nôm",699,240,699,"Trinh Thư Truyên, Nôm.064.011","Trinh Thư Truyên, Nôm_Y.064.jpg",11,1,mismatch,3,3,3,払,chảng,"chang, choàng, chàng, chẳng, giằng, nàng, phất, phắt, phớt, phứt, phựt, rằng, tên",仍調払𣄒必󰑼𫽄𫡾,những điều chảng ở ắt là chẳng quên
+"Trinh Thư Truyên, Nôm",702,241,702,"Trinh Thư Truyên, Nôm.065.002","Trinh Thư Truyên, Nôm_Y.065.jpg",2,1,mismatch,1,1,1,祖,cố,"chõ, chỗ, giỏ, giỗ, tô, tỏ, tổ",祖𩵽𢪀寔不才,cố tôm nghĩ thực bất tài
+"Trinh Thư Truyên, Nôm",703,242,703,"Trinh Thư Truyên, Nôm.065.003","Trinh Thư Truyên, Nôm_Y.065.jpg",3,1,mismatch,5,5,5,𠶗,chực,"hực, nực, sực",九萬八索𠶗𢙇半支,cửu vạn bát sách chực hoài bán chi
+"Trinh Thư Truyên, Nôm",705,243,705,"Trinh Thư Truyên, Nôm.065.005","Trinh Thư Truyên, Nôm_Y.065.jpg",5,1,mismatch,8,8,8,𦀎,lề,"lét, lượt, riết, rách, rịt",拠之囷摂拠之𡓃𦀎,cứ gì khuôn xếp cứ chi lối lề
+"Trinh Thư Truyên, Nôm",707,244,707,"Trinh Thư Truyên, Nôm.065.007","Trinh Thư Truyên, Nôm_Y.065.jpg",7,1,mismatch,5,5,5,𫗂,thái,"gió, thói",𠸥寛𠸥日𫗂圭常情,kể khoan kể nhặt thái quê thương tình
+"Trinh Thư Truyên, Nôm",707,244,707,"Trinh Thư Truyên, Nôm.065.007","Trinh Thư Truyên, Nôm_Y.065.jpg",7,2,mismatch,7,7,7,常,thương,"hằng, sàn, thì, thường, trường",𠸥寛𠸥日𫗂圭常情,kể khoan kể nhặt thái quê thương tình
+"Trinh Thư Truyên, Nôm",709,,709,"Trinh Thư Truyên, Nôm.065.009","Trinh Thư Truyên, Nôm_Y.065.jpg",9,1,mismatch,1,1,1,𥳪,toan,,𥳪塘尋𢭮𢭹梗𫨩𫳵,toan đường tầm gửi lấn cành hay sao
+"Trinh Thư Truyên, Nôm",710,,710,"Trinh Thư Truyên, Nôm.065.010","Trinh Thư Truyên, Nôm_Y.065.jpg",10,1,mismatch,3,3,3,剔,rẽ,"dịch, thí, thế, tích",些低剔𠽇特芇,ta đây rẽ nạt được nào
+"Trinh Thư Truyên, Nôm",711,245,711,"Trinh Thư Truyên, Nôm.065.011","Trinh Thư Truyên, Nôm_Y.065.jpg",11,1,mismatch,4,4,4,恰,quắp,"cáp, góp, kháp, khắp, khớp",𫽄如仉恰𩭶𠓨祸𤽗,chẳng như kẻ quắp dâu vào rễ người
+"Trinh Thư Truyên, Nôm",711,245,711,"Trinh Thư Truyên, Nôm.065.011","Trinh Thư Truyên, Nôm_Y.065.jpg",11,2,mismatch,5,5,5,𩭶,dâu,râu,𫽄如仉恰𩭶𠓨祸𤽗,chẳng như kẻ quắp dâu vào rễ người
+"Trinh Thư Truyên, Nôm",711,245,711,"Trinh Thư Truyên, Nôm.065.011","Trinh Thư Truyên, Nôm_Y.065.jpg",11,3,mismatch,7,7,7,祸,rễ,"hoạ, họa, phước",𫽄如仉恰𩭶𠓨祸𤽗,chẳng như kẻ quắp dâu vào rễ người
+"Trinh Thư Truyên, Nôm",712,,712,"Trinh Thư Truyên, Nôm.066.000","Trinh Thư Truyên, Nôm_Y.066.jpg",0,1,mismatch,2,2,2,𥳪,toan,,拱𥳪忍辱朱耒,cùng toan nhẫn nhục cho rồi
+"Trinh Thư Truyên, Nôm",715,246,715,"Trinh Thư Truyên, Nôm.066.003","Trinh Thư Truyên, Nôm_Y.066.jpg",3,1,mismatch,7,7,7,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",㐌淦如馭𫽝艚尒畨,đã cam như ngựa giam tàu mấy phen
+"Trinh Thư Truyên, Nôm",717,,717,"Trinh Thư Truyên, Nôm.066.005","Trinh Thư Truyên, Nôm_Y.066.jpg",5,1,mismatch,3,3,3,𠯅,giốc,"dậy, dức, giạc, nhắc, nhức, sức",傕停𠯅嚛喧天節𩂟,thôi đừng giốc lác huyên thiên tít mù
+"Trinh Thư Truyên, Nôm",718,247,718,"Trinh Thư Truyên, Nôm.066.006","Trinh Thư Truyên, Nôm_Y.066.jpg",6,1,mismatch,1,1,1,閉,bây,"bé, bấy, bế",閉𣉹娘尒知呼,bây giờ nàng mấy tri hô
+"Trinh Thư Truyên, Nôm",718,247,718,"Trinh Thư Truyên, Nôm.066.006","Trinh Thư Truyên, Nôm_Y.066.jpg",6,2,mismatch,4,4,4,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",閉𣉹娘尒知呼,bây giờ nàng mấy tri hô
+"Trinh Thư Truyên, Nôm",719,,719,"Trinh Thư Truyên, Nôm.066.007","Trinh Thư Truyên, Nôm_Y.066.jpg",7,1,mismatch,6,6,6,蹝,thò,"sỉ, tỉ",𪮭裙𪮭襖十蹝𧯄,xắn quần xắn áo thập thò cửa hang
+"Trinh Thư Truyên, Nôm",721,248,721,"Trinh Thư Truyên, Nôm.066.009","Trinh Thư Truyên, Nôm_Y.066.jpg",9,1,mismatch,5,5,5,負,phục,"lộn, phu, phũ, phụ",𱜢𢪀𢧚餒負傍穷𠑬,nào ngờ nên nỗi phục phàng cùng nhau
+"Trinh Thư Truyên, Nôm",723,249,723,"Trinh Thư Truyên, Nôm.066.011","Trinh Thư Truyên, Nôm_Y.066.jpg",11,1,mismatch,1,1,1,婆,ba,bà,婆爫朱𤑟𫥨頭𫥨𡳪,ba làm cho rõ ra đầu ra đuôi
+"Trinh Thư Truyên, Nôm",726,250,726,"Trinh Thư Truyên, Nôm.067.002","Trinh Thư Truyên, Nôm_Y.067.jpg",2,1,mismatch,1,1,1,㪯,của,"cỡ, cử, cửa, cữ, gở, gỡ",㪯𧯄𤝞白細𧵆,của hang chuột bạch tới gần
+"Trinh Thư Truyên, Nôm",728,,728,"Trinh Thư Truyên, Nôm.067.004","Trinh Thư Truyên, Nôm_Y.067.jpg",4,1,mismatch,1,1,1,犹,chuột,"do, du, dứu, vưu",犹白𧺃󰘚紫𦖻,chuột bạch đỏ mắt tía tai
+"Trinh Thư Truyên, Nôm",729,,729,"Trinh Thư Truyên, Nôm.067.005","Trinh Thư Truyên, Nôm_Y.067.jpg",5,1,mismatch,7,7,7,准,chửi,"chuyết, chuẩn, chõn, chùn, chốn, chổn, chủn, dỏi, hốn, trốn",𠳨哴埃帝𠻵埃准尼,hỏi rằng ai đấy mắng ai chửi này
+"Trinh Thư Truyên, Nôm",730,251,730,"Trinh Thư Truyên, Nôm.067.006","Trinh Thư Truyên, Nôm_Y.067.jpg",6,1,mismatch,4,4,4,惻,biết,trắc,𡥵尼𣠖惻娑低,con này chửa biết bà đây
+"Trinh Thư Truyên, Nôm",730,251,730,"Trinh Thư Truyên, Nôm.067.006","Trinh Thư Truyên, Nôm_Y.067.jpg",6,2,mismatch,5,5,5,娑,bà,"sa, ta",𡥵尼𣠖惻娑低,con này chửa biết bà đây
+"Trinh Thư Truyên, Nôm",731,,731,"Trinh Thư Truyên, Nôm.067.007","Trinh Thư Truyên, Nôm_Y.067.jpg",7,1,mismatch,2,2,2,𥳪,toan,,吏𥳪㗂怒唎尼停亨,lại toan tiếng nọ lời này đánh hanh
+"Trinh Thư Truyên, Nôm",732,252,732,"Trinh Thư Truyên, Nôm.067.008","Trinh Thư Truyên, Nôm_Y.067.jpg",8,1,mismatch,3,3,3,蹴,thủng,"thúc, xúc",猫兜蹴請𧣳城,mèo đâu thủng thỉnh góc thành
+"Trinh Thư Truyên, Nôm",733,,733,"Trinh Thư Truyên, Nôm.067.009","Trinh Thư Truyên, Nôm_Y.067.jpg",9,1,mismatch,3,3,3,撾,xó,"qua, quơ, quớ, quờ",𨅸䀡撾攃𫥨情爫𫳵,đứng xem xó xát ra tình làm sao
+"Trinh Thư Truyên, Nôm",735,,735,"Trinh Thư Truyên, Nôm.067.011","Trinh Thư Truyên, Nôm_Y.067.jpg",11,1,mismatch,1,1,1,嘲,tréo,"chiều, chào, chèo, nhào, ràu, rầu, thều, trào, trêu, trều",嘲𡽫𨅿𤂬𫥨朝牢刀,tréo non miệt suối ra chiều lao đao
+"Trinh Thư Truyên, Nôm",735,,735,"Trinh Thư Truyên, Nôm.067.011","Trinh Thư Truyên, Nôm_Y.067.jpg",11,2,mismatch,3,3,3,𨅿,miệt,vượt,嘲𡽫𨅿𤂬𫥨朝牢刀,tréo non miệt suối ra chiều lao đao
+"Trinh Thư Truyên, Nôm",736,,736,"Trinh Thư Truyên, Nôm.068.000","Trinh Thư Truyên, Nôm_Y.068.jpg",0,1,mismatch,2,2,2,塘,tướng,"bờ, cùng, dường, giềng, điều, đàng, đường, đằng",𨔍塘𤝞丐沙泑,lạ tướng chuột cái sa ao
+"Trinh Thư Truyên, Nôm",737,253,737,"Trinh Thư Truyên, Nôm.068.001","Trinh Thư Truyên, Nôm_Y.068.jpg",1,1,mismatch,1,1,1,𬌓,cấm,tấm,𬌓身況浽聀𠓨特戈,cấm thân chìm nổi chắc vào được qua
+"Trinh Thư Truyên, Nôm",737,253,737,"Trinh Thư Truyên, Nôm.068.001","Trinh Thư Truyên, Nôm_Y.068.jpg",1,2,mismatch,3,3,3,況,chìm,"huynh, huống",𬌓身況浽聀𠓨特戈,cấm thân chìm nổi chắc vào được qua
+"Trinh Thư Truyên, Nôm",738,254,738,"Trinh Thư Truyên, Nôm.068.002","Trinh Thư Truyên, Nôm_Y.068.jpg",2,1,mismatch,2,2,2,辰,thỉ,"gìn, thì, thìn, thần, thời, tthì",白辰𧼌脱𧗱茹,bạch thỉ chạy thoát về nhà
+"Trinh Thư Truyên, Nôm",741,255,741,"Trinh Thư Truyên, Nôm.068.005","Trinh Thư Truyên, Nôm_Y.068.jpg",5,1,mismatch,4,4,4,納,nếp,"nuốt, nép, nóp, núp, nượp, nạp, nấp, nầm, nập, nắp, nối, nốp, nộp, nớp",胡生𨅸納墻揺此𥉫,hồ sinh đứng nếp tường rào thử trông
+"Trinh Thư Truyên, Nôm",741,255,741,"Trinh Thư Truyên, Nôm.068.005","Trinh Thư Truyên, Nôm_Y.068.jpg",5,2,mismatch,6,6,6,揺,rào,"dao, diêu, dêu, gieo, vêu",胡生𨅸納墻揺此𥉫,hồ sinh đứng nếp tường rào thử trông
+"Trinh Thư Truyên, Nôm",743,256,743,"Trinh Thư Truyên, Nôm.068.007","Trinh Thư Truyên, Nôm_Y.068.jpg",7,1,mismatch,4,4,4,𠶗,chực,"hực, nực, sực",𨕭坡猫𠶗仍懞𫥨朝,trên bờ mèo chực những mong ra chiều
+"Trinh Thư Truyên, Nôm",746,257,746,"Trinh Thư Truyên, Nôm.068.010","Trinh Thư Truyên, Nôm_Y.068.jpg",10,1,mismatch,1,1,1,燥,trao,"ráo, táo, tảo",燥篭醒吏被安,trao long tỉnh lại vừa yên
+"Trinh Thư Truyên, Nôm",746,257,746,"Trinh Thư Truyên, Nôm.068.010","Trinh Thư Truyên, Nôm_Y.068.jpg",10,2,mismatch,2,2,2,篭,long,"dẹp, lung, luông, luồng, lông, lồng, ruồng, rông, trông, trồng",燥篭醒吏被安,trao long tỉnh lại vừa yên
+"Trinh Thư Truyên, Nôm",746,257,746,"Trinh Thư Truyên, Nôm.068.010","Trinh Thư Truyên, Nôm_Y.068.jpg",10,3,mismatch,5,5,5,被,vừa,"bí, bệ, bị, bỡ, bợ, bự, phi",燥篭醒吏被安,trao long tỉnh lại vừa yên
+"Trinh Thư Truyên, Nôm",748,,748,"Trinh Thư Truyên, Nôm.069.000","Trinh Thư Truyên, Nôm_Y.069.jpg",0,1,mismatch,2,2,2,僻,tôi,"tích, tịch",哴僻悴分疎𬏝,rằng tôi chút phận thư ngây
+"Trinh Thư Truyên, Nôm",749,,749,"Trinh Thư Truyên, Nôm.069.001","Trinh Thư Truyên, Nôm_Y.069.jpg",1,1,mismatch,3,3,3,揰,giuồng,"giống, trồng",為𫯳揰𢩽細低﨤难,vì chồng giuồng giẩy tới đây gặp nàn
+"Trinh Thư Truyên, Nôm",751,,751,"Trinh Thư Truyên, Nôm.069.003","Trinh Thư Truyên, Nôm_Y.069.jpg",3,1,mismatch,4,4,4,夂,ấy,"chon, chung, giong, tri, truy, trọn, xông",感功德夂閍萬掣兜,cảm công đức ấy muôn vàn xiết đâu
+"Trinh Thư Truyên, Nôm",752,258,752,"Trinh Thư Truyên, Nôm.069.004","Trinh Thư Truyên, Nôm_Y.069.jpg",4,1,mismatch,1,1,1,寔,chực,"thiệt, thật, thực, tẩm",寔󰑼量𣷭高溇,chực là lượng bể cao sâu
+"Trinh Thư Truyên, Nôm",753,,753,"Trinh Thư Truyên, Nôm.069.005","Trinh Thư Truyên, Nôm_Y.069.jpg",5,1,mismatch,5,5,5,批,bác,"phe, phây, phê, phơi, phẩy, tỉa",𫥨𢬣造化批梂度縁,ra tay tạo hoá bác cầu độ duyên
+"Trinh Thư Truyên, Nôm",759,259,759,"Trinh Thư Truyên, Nôm.069.011","Trinh Thư Truyên, Nôm_Y.069.jpg",11,1,mismatch,3,3,3,眉,may,"me, mi, my, mày, mây, mè, mì, mơ, mạy, mầy",𠓨𧯄眉隱安耒吏𫥨,vào hang may ẩn yên rồi lại ra
+"Trinh Thư Truyên, Nôm",761,,761,"Trinh Thư Truyên, Nôm.070.001","Trinh Thư Truyên, Nôm_Y.070.jpg",1,1,mismatch,1,1,1,𫯳,chẳng,"chồng, chờn",𫯳偈拱㦖鄰󰑼贝情,chẳng may cũng muộn lân la với tình
+"Trinh Thư Truyên, Nôm",761,,761,"Trinh Thư Truyên, Nôm.070.001","Trinh Thư Truyên, Nôm_Y.070.jpg",1,2,mismatch,2,2,2,偈,may,"khế, kẹ, kệ",𫯳偈拱㦖鄰󰑼贝情,chẳng may cũng muộn lân la với tình
+"Trinh Thư Truyên, Nôm",761,,761,"Trinh Thư Truyên, Nôm.070.001","Trinh Thư Truyên, Nôm_Y.070.jpg",1,3,mismatch,7,7,7,贝,với,bối,𫯳偈拱㦖鄰󰑼贝情,chẳng may cũng muộn lân la với tình
+"Trinh Thư Truyên, Nôm",763,260,763,"Trinh Thư Truyên, Nôm.070.003","Trinh Thư Truyên, Nôm_Y.070.jpg",3,1,mismatch,5,5,5,啫,giở,"chã, chả, chớ, dã, dạ, dỡ, gia, giã, giả, giỡ, nhả, trả",𫥨朝坤𨤰啫停吏傕,ra chiều khôn nhẽ giở giành lại thôi
+"Trinh Thư Truyên, Nôm",765,,765,"Trinh Thư Truyên, Nôm.070.005","Trinh Thư Truyên, Nôm_Y.070.jpg",5,1,mismatch,3,3,3,㤉,nghiền,,𧖱悭㤉僸𡗋𠳒喓囄,máu ghen nghiền ngẫm lắm nhời éo le
+"Trinh Thư Truyên, Nôm",765,,765,"Trinh Thư Truyên, Nôm.070.005","Trinh Thư Truyên, Nôm_Y.070.jpg",5,2,mismatch,4,4,4,僸,ngẫm,cấm,𧖱悭㤉僸𡗋𠳒喓囄,máu ghen nghiền ngẫm lắm nhời éo le
+"Trinh Thư Truyên, Nôm",768,,768,"Trinh Thư Truyên, Nôm.070.008","Trinh Thư Truyên, Nôm_Y.070.jpg",8,1,mismatch,4,4,4,夂,ấy,"chon, chung, giong, tri, truy, trọn, xông",𧯶浪事夂𪽝埃,há rằng sự ấy bởi ai
+"Trinh Thư Truyên, Nôm",771,,771,"Trinh Thư Truyên, Nôm.070.011","Trinh Thư Truyên, Nôm_Y.070.jpg",11,1,mismatch,3,3,3,犹,chuột,"do, du, dứu, vưu",𪾋尋犹白打悭盡茹,giám tìm chuột bạch đánh ghen tận nhà
+"Trinh Thư Truyên, Nôm",774,,774,"Trinh Thư Truyên, Nôm.071.002","Trinh Thư Truyên, Nôm_Y.071.jpg",2,1,mismatch,4,4,4,𠰺,giây,"dái, dạy, dậy, đại, đẫy, đậy",娘𠳐唎𠰺𡢐𠸗,rằng vâng lời giây sau xưa
+"Trinh Thư Truyên, Nôm",775,261,775,"Trinh Thư Truyên, Nôm.071.003","Trinh Thư Truyên, Nôm_Y.071.jpg",3,1,mismatch,4,4,4,𠰺,giày,"dái, dạy, dậy, đại, đẫy, đậy",哴恩翁𠰺悲𣉹買𫨩,rằng ơn ông giày bây giờ máy hay
+"Trinh Thư Truyên, Nôm",775,261,775,"Trinh Thư Truyên, Nôm.071.003","Trinh Thư Truyên, Nôm_Y.071.jpg",3,2,mismatch,7,7,7,買,máy,"bấy, là, mai, mái, mãi, mé, mưới, mạy, mải, mảy, mấy, mỏi, mới, mời, phía, thâm, với",哴恩翁𠰺悲𣉹買𫨩,rằng ơn ông giày bây giờ máy hay
+"Trinh Thư Truyên, Nôm",779,262,779,"Trinh Thư Truyên, Nôm.071.007","Trinh Thư Truyên, Nôm_Y.071.jpg",7,1,mismatch,4,4,4,㗭,nất,rắt,悲𣉹哏㗭固群特𠱋,bây giờ cắn nất có còn được du
+"Trinh Thư Truyên, Nôm",782,263,782,"Trinh Thư Truyên, Nôm.071.010","Trinh Thư Truyên, Nôm_Y.071.jpg",10,1,mismatch,3,3,3,干,còn,"can, càn, cán, cơm, cơn, cần, gan",役尼干故𪽝𤽗,việc này còn có bởi người
+"Trinh Thư Truyên, Nôm",783,264,783,"Trinh Thư Truyên, Nôm.071.011","Trinh Thư Truyên, Nôm_Y.071.jpg",11,1,mismatch,5,5,5,𫯳,chống,"chồng, chờn",料𧗱吶𠮾𫯳𢢯辰󰑼,liệu về nói ngọt chống nguôi thì là
+"Trinh Thư Truyên, Nôm",786,,786,"Trinh Thư Truyên, Nôm.072.002","Trinh Thư Truyên, Nôm_Y.072.jpg",2,1,mismatch,1,1,1,屍,rể,"thi, thây",屍埃𢹇襖戈頭,rể ai mặc áo qua đầu
+"Trinh Thư Truyên, Nôm",791,265,791,"Trinh Thư Truyên, Nôm.072.007","Trinh Thư Truyên, Nôm_Y.072.jpg",7,1,mismatch,7,7,7,局,cọc,"cuộc, cược, cộc, cục, guộc, gục, ngúc",𦓡調淹𬙾欣边局𡀣,mà đều êm đẹp hơn bên cọc cằn
+"Trinh Thư Truyên, Nôm",793,266,793,"Trinh Thư Truyên, Nôm.072.009","Trinh Thư Truyên, Nôm_Y.072.jpg",9,1,mismatch,5,5,5,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",𨤰芇𡥵蝒尒吝𥿁絲,nhẽ nào con nhện mấy lần vương tơ
+"Trinh Thư Truyên, Nôm",794,267,794,"Trinh Thư Truyên, Nôm.072.010","Trinh Thư Truyên, Nôm_Y.072.jpg",10,1,mismatch,1,1,1,併,bính,"sắm, tinh, tính, tịnh",併𫳵如体局棋,bính sao như thể cuộc cờ
+"Trinh Thư Truyên, Nôm",796,,796,"Trinh Thư Truyên, Nôm.073.000","Trinh Thư Truyên, Nôm_Y.073.jpg",0,1,mismatch,2,2,2,𥳪,toan,,𠤆𥳪仍事腥灰,chớ toan những sự tanh hôi
+"Trinh Thư Truyên, Nôm",797,,797,"Trinh Thư Truyên, Nôm.073.001","Trinh Thư Truyên, Nôm_Y.073.jpg",1,1,mismatch,1,1,1,擺,rối,"bài, bãi, bẩy, bẫy, bới, vãi, vẫy",擺䕯𫥨𧐾争衃茹,rối bèo ra bọ tranh phôi cửa nhà
+"Trinh Thư Truyên, Nôm",799,,799,"Trinh Thư Truyên, Nôm.073.003","Trinh Thư Truyên, Nôm_Y.073.jpg",3,1,mismatch,5,5,5,惻,biết,trắc,﨤𫳵𫨩丕惻󰑼兜欣,gặp sao hay vậy biết là đâu hơn
+"Trinh Thư Truyên, Nôm",800,268,800,"Trinh Thư Truyên, Nôm.073.004","Trinh Thư Truyên, Nôm_Y.073.jpg",4,1,mismatch,6,6,6,寒,hờn,hàn,唒𫯳𤾓𫺶𠦳寒,dẫu chồng trăm giận nghìn hờn
+"Trinh Thư Truyên, Nôm",804,269,804,"Trinh Thư Truyên, Nôm.073.008","Trinh Thư Truyên, Nôm_Y.073.jpg",8,1,mismatch,1,1,1,尒,mấy,"ne, nhãi, nhé, nhĩ, nhẽ, nẻ, nể",尒󰑼沛道唱従,mấy là phải đạo xướng tùng
+"Trinh Thư Truyên, Nôm",807,,807,"Trinh Thư Truyên, Nôm.073.011","Trinh Thư Truyên, Nôm_Y.073.jpg",11,1,mismatch,1,1,1,𠴭,rang,"dể, rích",𠴭𠴭傕󰤣窖坤弾󰜏,rang rang thôi hết khéo khôn đàn bà
+"Trinh Thư Truyên, Nôm",807,,807,"Trinh Thư Truyên, Nôm.073.011","Trinh Thư Truyên, Nôm_Y.073.jpg",11,2,mismatch,2,2,2,𠴭,rang,"dể, rích",𠴭𠴭傕󰤣窖坤弾󰜏,rang rang thôi hết khéo khôn đàn bà
+"Trinh Thư Truyên, Nôm",808,270,808,"Trinh Thư Truyên, Nôm.074.000","Trinh Thư Truyên, Nôm_Y.074.jpg",0,1,mismatch,5,5,5,兜,đầu,"dâu, đâu, đây, đâủ, đẩu",猫𫅜𣄒𡏢兜𦓡,mèo lành ở mả đầu ma
+"Trinh Thư Truyên, Nôm",808,270,808,"Trinh Thư Truyên, Nôm.074.000","Trinh Thư Truyên, Nôm_Y.074.jpg",0,2,mismatch,6,6,6,𦓡,ma,mà,猫𫅜𣄒𡏢兜𦓡,mèo lành ở mả đầu ma
+"Trinh Thư Truyên, Nôm",810,271,810,"Trinh Thư Truyên, Nôm.074.002","Trinh Thư Truyên, Nôm_Y.074.jpg",2,1,mismatch,1,1,1,傕,chôi,"giác, quyết, sôi, thoi, thòi, thôi, thôị, thội, thời",傕停𢵋飭施唏,chôi đừng đua sức thi hơi
+"Trinh Thư Truyên, Nôm",813,272,813,"Trinh Thư Truyên, Nôm.074.005","Trinh Thư Truyên, Nôm_Y.074.jpg",5,1,mismatch,8,8,8,簦,đàng,đăng,唉䀡𪮈𨅿特芇戈簦,hãy xem sửa vượt được nào qua đàng
+"Trinh Thư Truyên, Nôm",815,,815,"Trinh Thư Truyên, Nôm.074.007","Trinh Thư Truyên, Nôm_Y.074.jpg",7,1,mismatch,2,2,2,𦀊,giàn,"dai, dây, giây, rây, tơ, đây",𢴑𦀊𫽄𢜝動棱箕𠱋,dứt giàn chẳng sợ động rừng kia du
+"Trinh Thư Truyên, Nôm",816,273,816,"Trinh Thư Truyên, Nôm.074.008","Trinh Thư Truyên, Nôm_Y.074.jpg",8,1,mismatch,1,1,1,施,chỉ,"di, dị, the, thi, thia, thè, thí, thỉ, thị",施唏貝蠏辰輸,chỉ hơi với giải thử thua
+"Trinh Thư Truyên, Nôm",816,273,816,"Trinh Thư Truyên, Nôm.074.008","Trinh Thư Truyên, Nôm_Y.074.jpg",8,2,mismatch,5,5,5,辰,thử,"gìn, thì, thìn, thần, thời, tthì",施唏貝蠏辰輸,chỉ hơi với giải thử thua
+"Trinh Thư Truyên, Nôm",817,274,817,"Trinh Thư Truyên, Nôm.074.009","Trinh Thư Truyên, Nôm_Y.074.jpg",9,1,mismatch,2,2,2,娑,bà,"sa, ta",弾娑兜固争𢵋朱𢝜,đàn bà đâu có tranh đua cho đành
+"Trinh Thư Truyên, Nôm",818,275,818,"Trinh Thư Truyên, Nôm.074.010","Trinh Thư Truyên, Nôm_Y.074.jpg",10,1,mismatch,3,3,3,叭,bắt,"bá, bát, bớ, bớt, bợt, váp, vát",沛𢧚叭與爫𫅜,phải nên bắt rể làm lành
+"Trinh Thư Truyên, Nôm",818,275,818,"Trinh Thư Truyên, Nôm.074.010","Trinh Thư Truyên, Nôm_Y.074.jpg",10,2,mismatch,4,4,4,與,rể,"dư, dở, dữ, dự, giữ, ru, trở, đử",沛𢧚叭與爫𫅜,phải nên bắt rể làm lành
+"Trinh Thư Truyên, Nôm",820,276,820,"Trinh Thư Truyên, Nôm.075.000","Trinh Thư Truyên, Nôm_Y.075.jpg",0,1,mismatch,4,4,4,惶,nết,hoàng,妙揚󰑼惶弾󰜏,dịu dàng là nết đàn bà
+"Trinh Thư Truyên, Nôm",821,277,821,"Trinh Thư Truyên, Nôm.075.001","Trinh Thư Truyên, Nôm_Y.075.jpg",1,1,mismatch,2,2,2,辰,thà,"gìn, thì, thìn, thần, thời, tthì",𫽄辰咮㤕淚沙𣳔𣳔,chẳng thà chua xót lệ sa dòng dòng
+"Trinh Thư Truyên, Nôm",822,,822,"Trinh Thư Truyên, Nôm.075.002","Trinh Thư Truyên, Nôm_Y.075.jpg",2,1,mismatch,4,4,4,𠰺,giầy,"dái, dạy, dậy, đại, đẫy, đậy",娘𠳐唎𠰺𥱬𢚸,nàng vâng lời giầy ghi lòng
+"Trinh Thư Truyên, Nôm",823,278,823,"Trinh Thư Truyên, Nôm.075.003","Trinh Thư Truyên, Nôm_Y.075.jpg",3,1,mismatch,1,1,1,豬,giở,"chưa, trơ, trư, trưa",豬𧗱𠺚𥛉穷𫯳𪾋差,giở vẽ vạn lạy cùng chông giám sai
+"Trinh Thư Truyên, Nôm",823,278,823,"Trinh Thư Truyên, Nôm.075.003","Trinh Thư Truyên, Nôm_Y.075.jpg",3,2,mismatch,2,2,2,𧗱,vẽ,"thuật, trao, truật, về, vể, vệ",豬𧗱𠺚𥛉穷𫯳𪾋差,giở vẽ vạn lạy cùng chông giám sai
+"Trinh Thư Truyên, Nôm",823,278,823,"Trinh Thư Truyên, Nôm.075.003","Trinh Thư Truyên, Nôm_Y.075.jpg",3,3,mismatch,3,3,3,𠺚,vạn,"băn, van",豬𧗱𠺚𥛉穷𫯳𪾋差,giở vẽ vạn lạy cùng chông giám sai
+"Trinh Thư Truyên, Nôm",823,278,823,"Trinh Thư Truyên, Nôm.075.003","Trinh Thư Truyên, Nôm_Y.075.jpg",3,4,mismatch,6,6,6,𫯳,chông,"chồng, chờn",豬𧗱𠺚𥛉穷𫯳𪾋差,giở vẽ vạn lạy cùng chông giám sai
+"Trinh Thư Truyên, Nôm",824,279,824,"Trinh Thư Truyên, Nôm.075.004","Trinh Thư Truyên, Nôm_Y.075.jpg",4,1,mismatch,3,3,3,𧗱,vẽ,"thuật, trao, truật, về, vể, vệ",胡生𧗱准書齋,hồ sinh vẽ chốn thư trai
+"Trinh Thư Truyên, Nôm",825,,825,"Trinh Thư Truyên, Nôm.075.005","Trinh Thư Truyên, Nôm_Y.075.jpg",5,1,mismatch,5,5,5,𥱬,chép,ghi,産硏筆買𥱬唎矯悁,sẵn nghiên bút mấy chép lời kéo quên
+"Trinh Thư Truyên, Nôm",827,280,827,"Trinh Thư Truyên, Nôm.075.007","Trinh Thư Truyên, Nôm_Y.075.jpg",7,1,mismatch,7,7,7,戾,lạ,"liệt, luỵ, lệ",事尼䀡拱𢧚戾𫡛,sự này xem cũng nên khen lạ gì
+"Trinh Thư Truyên, Nôm",830,281,830,"Trinh Thư Truyên, Nôm.075.010","Trinh Thư Truyên, Nôm_Y.075.jpg",10,1,mismatch,3,3,3,颠,đen,điên,埃𫨩颠萡变移,ai hay đen bạc biển rồi
+"Trinh Thư Truyên, Nôm",830,281,830,"Trinh Thư Truyên, Nôm.075.010","Trinh Thư Truyên, Nôm_Y.075.jpg",10,2,mismatch,6,6,6,移,rồi,"chòm, day, di, dày, dây, dè, dê, dầy, dị, dời, giay, lả, rì, rơi, rời, sỉ, xảy, xỉ, xờm, đi, đưa, đệm, đỡ, đừa",埃𫨩颠萡变移,ai hay đen bạc biển rồi
+"Trinh Thư Truyên, Nôm",831,,831,"Trinh Thư Truyên, Nôm.075.011","Trinh Thư Truyên, Nôm_Y.075.jpg",11,1,mismatch,4,4,4,惻,biết,trắc,唒𠊚𫽄惻仍𡗶㐌咍,dẫu người chẳng biết nhưng giời đã hay
+"Trinh Thư Truyên, Nôm",832,,832,"Trinh Thư Truyên, Nôm.076.000","Trinh Thư Truyên, Nôm_Y.076.jpg",0,1,mismatch,4,4,4,𢠤,giạn,đần,仍𠊚󰘚𢠤髫𠫆,những người mặt giạn mày giầy
+"Trinh Thư Truyên, Nôm",832,,832,"Trinh Thư Truyên, Nôm.076.000","Trinh Thư Truyên, Nôm_Y.076.jpg",0,2,mismatch,5,5,5,髫,mày,"thiều, điều, đào",仍𠊚󰘚𢠤髫𠫆,những người mặt giạn mày giầy
+"Trinh Thư Truyên, Nôm",833,,833,"Trinh Thư Truyên, Nôm.076.001","Trinh Thư Truyên, Nôm_Y.076.jpg",1,1,mismatch,7,7,7,獴,mường,"muôn, muông, mông",搊䀡乙拱𫽄齊獴羝,so xem ắt cũng chẳng tầy mường giê
+"Trinh Thư Truyên, Nôm",834,282,834,"Trinh Thư Truyên, Nôm.076.002","Trinh Thư Truyên, Nôm_Y.076.jpg",2,1,mismatch,4,4,4,特,đục,"hay, sệt, vậy, đước, được, đặc, đặt, đực",如𢚸𤝞特𧯶吱,như lòng chuột đục khá chê
+"Trinh Thư Truyên, Nôm",834,282,834,"Trinh Thư Truyên, Nôm.076.002","Trinh Thư Truyên, Nôm_Y.076.jpg",2,2,mismatch,5,5,5,𧯶,khá,"há, khờ",如𢚸𤝞特𧯶吱,như lòng chuột đục khá chê
+"Trinh Thư Truyên, Nôm",835,283,835,"Trinh Thư Truyên, Nôm.076.003","Trinh Thư Truyên, Nôm_Y.076.jpg",3,1,mismatch,1,1,1,𥳪,coan,,𥳪塘眷𠴗仍迷為情,coan đường quyến gió những mê vì tình
+"Trinh Thư Truyên, Nôm",835,283,835,"Trinh Thư Truyên, Nôm.076.003","Trinh Thư Truyên, Nôm_Y.076.jpg",3,2,mismatch,4,4,4,𠴗,gió,"dô, dỗ, giỗ, nhổ, sỗ, đổ",𥳪塘眷𠴗仍迷為情,coan đường quyến gió những mê vì tình
+"Trinh Thư Truyên, Nôm",838,284,838,"Trinh Thư Truyên, Nôm.076.006","Trinh Thư Truyên, Nôm_Y.076.jpg",6,1,mismatch,1,1,1,𧡊,chấy,"thấu, thấy",𧡊眞寡婦仁儀,chấy chân quả phụ nhân nghĩ
+"Trinh Thư Truyên, Nôm",838,284,838,"Trinh Thư Truyên, Nôm.076.006","Trinh Thư Truyên, Nôm_Y.076.jpg",6,2,mismatch,6,6,6,儀,nghĩ,"nghe, nghi, nghè, nghì, nghĩa, nghỉ, ngơi, ngửi",𧡊眞寡婦仁儀,chấy chân quả phụ nhân nghĩ
+"Trinh Thư Truyên, Nôm",839,285,839,"Trinh Thư Truyên, Nôm.076.007","Trinh Thư Truyên, Nôm_Y.076.jpg",7,1,mismatch,7,7,7,遺,thói,"di, doi, dị",𫽄𡅳塘正吏迷遺邪,chẳng khuyên đường chính lại mê thói tà
+"Trinh Thư Truyên, Nôm",845,286,845,"Trinh Thư Truyên, Nôm.077.001","Trinh Thư Truyên, Nôm_Y.077.jpg",1,1,mismatch,1,1,1,𦓡,mả,mà,𦓡𢚸鑿鉄𥱬𣘈𫽄移,mả long tạc sắt ghi son chẳng rời
+"Trinh Thư Truyên, Nôm",846,,846,"Trinh Thư Truyên, Nôm.077.002","Trinh Thư Truyên, Nôm_Y.077.jpg",2,1,mismatch,6,6,6,溈,vời,"duy, quy, vy",﨤干啉𨀈𢙲溈,gặp cơn lầm bước lỡ vời
+"Trinh Thư Truyên, Nôm",847,,847,"Trinh Thư Truyên, Nôm.077.003","Trinh Thư Truyên, Nôm_Y.077.jpg",3,1,mismatch,2,2,2,𮚃,tham,,𫽄𮚃𢢅待𦖑唎𧊉螉,chẳng tham chiều đãi nghe lời bướm ong
+"Trinh Thư Truyên, Nôm",852,287,852,"Trinh Thư Truyên, Nôm.077.008","Trinh Thư Truyên, Nôm_Y.077.jpg",8,1,mismatch,5,5,5,󰇾,rở,"dở, dỡ, dữ, giở, giữ, gỡ",𡃍台𤝞丐󰇾𠾇,gớm thay chuột cái rở tró
+"Trinh Thư Truyên, Nôm",852,287,852,"Trinh Thư Truyên, Nôm.077.008","Trinh Thư Truyên, Nôm_Y.077.jpg",8,2,mismatch,6,6,6,𠾇,tró,"chù, chùa, sù, trò, trù",𡃍台𤝞丐󰇾𠾇,gớm thay chuột cái rở tró
+"Trinh Thư Truyên, Nôm",853,,853,"Trinh Thư Truyên, Nôm.077.009","Trinh Thư Truyên, Nôm_Y.077.jpg",9,1,mismatch,5,5,5,空,khinh,"chăng, cung, hỏng, hổng, khong, khung, khôn, không, khỏng, khống, khổng, khủng, xang",悭𫯳花月空朱特芇,ghen chồng hoa nguyệt khinh cho được nào
+"Trinh Thư Truyên, Nôm",854,288,854,"Trinh Thư Truyên, Nôm.077.010","Trinh Thư Truyên, Nôm_Y.077.jpg",10,1,mismatch,4,4,4,𠴗,giữ,"dô, dỗ, giỗ, nhổ, sỗ, đổ",沛調勸𠴗𥰊高,phải đều khuyên giữ thấp cao
+"Trinh Thư Truyên, Nôm",856,,856,"Trinh Thư Truyên, Nôm.078.000","Trinh Thư Truyên, Nôm_Y.078.jpg",0,1,mismatch,2,2,2,𱰺,giai,trai,爫𱰺𠀧𬙞買生,làm giai ba bảy mới xinh
+"Trinh Thư Truyên, Nôm",859,289,859,"Trinh Thư Truyên, Nôm.078.003","Trinh Thư Truyên, Nôm_Y.078.jpg",3,1,mismatch,2,2,2,拥,giường,"duồng, dùng, ruồng, rúng, rụng, ung, ủng",𫯳拥𢩽沛沙湖強傷,chồng giường giãy phải sa hố càng thương
+"Trinh Thư Truyên, Nôm",859,289,859,"Trinh Thư Truyên, Nôm.078.003","Trinh Thư Truyên, Nôm_Y.078.jpg",3,2,mismatch,6,6,6,湖,hố,hồ,𫯳拥𢩽沛沙湖強傷,chồng giường giãy phải sa hố càng thương
+"Trinh Thư Truyên, Nôm",863,290,863,"Trinh Thư Truyên, Nôm.078.007","Trinh Thư Truyên, Nôm_Y.078.jpg",7,1,mismatch,2,2,2,縦,tuông,"tung, túng",悭縦扒特𠊚些常情,ghen tuông bắt được người ta thường tình
+"Trinh Thư Truyên, Nôm",865,,865,"Trinh Thư Truyên, Nôm.078.009","Trinh Thư Truyên, Nôm_Y.078.jpg",9,1,mismatch,1,1,1,𥪝,cùng,"lông, trong, trông",𥪝机造化焞焞𫽄差,cùng cơ tạo hoá dành dành chẳng sai
+"Trinh Thư Truyên, Nôm",865,,865,"Trinh Thư Truyên, Nôm.078.009","Trinh Thư Truyên, Nôm_Y.078.jpg",9,2,mismatch,5,5,5,焞,dành,"hảnh, hửng, tuấn, đun, đôn",𥪝机造化焞焞𫽄差,cùng cơ tạo hoá dành dành chẳng sai
+"Trinh Thư Truyên, Nôm",865,,865,"Trinh Thư Truyên, Nôm.078.009","Trinh Thư Truyên, Nôm_Y.078.jpg",9,3,mismatch,6,6,6,焞,dành,"hảnh, hửng, tuấn, đun, đôn",𥪝机造化焞焞𫽄差,cùng cơ tạo hoá dành dành chẳng sai
+"Trinh Thư Truyên, Nôm",867,291,867,"Trinh Thư Truyên, Nôm.078.011","Trinh Thư Truyên, Nôm_Y.078.jpg",11,1,mismatch,6,6,6,𡗶,giối,"giơì, giời, lời, nhời, thì, trời",𢯢𨉓朱正𱜢𡗶𧴥埃,sửa mình cho chính nào giối phụ ai
+"Trinh Thư Truyên, Nôm",867,291,867,"Trinh Thư Truyên, Nôm.078.011","Trinh Thư Truyên, Nôm_Y.078.jpg",11,2,mismatch,7,7,7,𧴥,phụ,"bạu, bậu, bịa, bội, bụa, vội",𢯢𨉓朱正𱜢𡗶𧴥埃,sửa mình cho chính nào giối phụ ai
+"Trinh Thư Truyên, Nôm",871,292,871,"Trinh Thư Truyên, Nôm.079.003","Trinh Thư Truyên, Nôm_Y.079.jpg",3,1,mismatch,7,7,7,𨇒,rồi,"cõi, duỗi, lùi, lỏi, lối, lỗi, lội, lủi, ruổi, ruỗi, rõi, rủi",噲󰑼蹺𫗂喃哪𨇒传,gọi là theo thói nôm na rồi truyền

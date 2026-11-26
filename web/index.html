@@ -169,6 +169,54 @@ details li { word-break: break-all; }
 .acell .tools { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
 .acell .tools button, .a-bar button { padding: 3px 9px; font-size: 12px; }
 .mv-btn { min-width: 28px; }
+/* bước 3: tab nhỏ dưới header và các tab Kiểm tra, Đề xuất, Kết quả */
+.sub-tabs { display: flex; gap: 2px; margin: 8px -16px -8px; padding: 0 16px; border-top: 1px solid var(--line); background: var(--panel); }
+.sub-tabs button { border: 0; border-bottom: 3px solid transparent; border-radius: 0; background: transparent; padding: 7px 16px; font-size: 14px; }
+.sub-tabs button.on { border-bottom-color: var(--accent); font-weight: 600; color: var(--accent); }
+.sub-tabs button:disabled { opacity: .4; }
+.sent-scroll { overflow-x: auto; padding-bottom: 4px; }
+.sent-table { border-collapse: collapse; margin: 2px 0 6px; width: auto; border: 0; background: transparent; }
+.sent-table td { border: 1px solid var(--line); padding: 3px 8px; text-align: center; min-width: 44px; vertical-align: middle; }
+.sent-table td.nomc { font-size: 26px; line-height: 1.2; }
+.sent-table td.qnc { font-size: 17px; }
+.sent-table td.idx { font-size: 11px; color: var(--muted); border: 0; padding: 0 2px; }
+.sent-table td.mm { color: #c00000; font-weight: 700; background: rgba(255, 0, 0, .10); }
+.sent-table td.gap { color: #999; font-style: italic; }
+.sent-table td.fixed { color: #00873e; font-weight: 700; background: rgba(0, 160, 80, .10); }
+.sent-table td.kept { color: #c55a11; font-weight: 700; background: rgba(255, 140, 0, .12); }
+.sent-table .was { font-size: 14px; color: #999; }
+.chk-sent { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 6px 12px; margin-bottom: 8px; }
+.chk-sent .hd { font-size: 12px; color: var(--muted); }
+.prop-pages { flex: 0 0 46%; min-width: 0; display: flex; flex-direction: column; gap: 12px; max-height: calc(100vh - 260px); overflow-y: auto; }
+.page-slot { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 8px; min-width: 0; }
+.pg-head { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 6px; }
+.pg-head .pg-num { width: 72px; padding: 3px 6px; }
+.pg-head button { padding: 2px 10px; }
+.pg-head .aid { margin-left: auto; }
+.page-img { display: block; margin: 0 auto; width: 100%; object-fit: contain; cursor: zoom-in; background: #fff; border: 1px solid var(--line); border-radius: 6px; }
+.prop-body { display: flex; gap: 16px; align-items: flex-start; }
+.prop-left { flex: 0 0 220px; display: flex; flex-direction: column; gap: 6px; }
+.prop-left .lbl { font-size: 12px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.prop-left img { max-width: 100%; max-height: 260px; object-fit: contain; background: #fff; border: 1px solid var(--line); border-radius: 6px; }
+.prop-right { flex: 1; min-width: 0; }
+.pair-card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; margin: 8px 0; }
+.pair-card .tt { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+.cand-row { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.cand { font-size: 17px; padding: 4px 10px; }
+.cand.on { background: var(--accent); color: var(--accent-text); border-color: var(--accent); font-weight: 600; }
+.cand.keep.on { background: #c55a11; border-color: #c55a11; color: #fff; }
+.res-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 8px; margin: 8px 0; }
+.res-stats div { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; }
+.res-stats b { display: block; font-size: 20px; }
+.chg { display: flex; gap: 10px; flex-wrap: wrap; align-items: baseline; margin: 2px 0; font-size: 17px; }
+.chg .tag { font-size: 12px; color: var(--muted); }
+.chg s { color: #999; }
+.chg .new { color: #00873e; font-weight: 700; }
+.chg .still { color: #c00000; font-weight: 700; }
+@media (max-width: 820px) { .prop-body { flex-direction: column; } .prop-left { flex-basis: auto; } .prop-pages { flex-basis: auto; max-height: 55vh; width: 100%; } }
+.aedit { width: 100%; font-size: 17px; padding: 5px 8px; }
+.acell.nom .aedit { font-size: 20px; }
+.aedit.edited { border-color: #e0a000; background: var(--warn-bg); }
 .miss-btn.on { background: var(--warn-bg); color: var(--warn-text); border-color: var(--warn-text); font-weight: 600; }
 .adich { width: 100%; font-size: 15px; padding: 6px 8px; }
 .adich.manual { border-color: var(--accent); }
@@ -293,6 +341,12 @@ details li { word-break: break-all; }
           <div class="tag-menu tag-info" id="tagInfo"></div>
         </div>
       </div>
+      <div class="sub-tabs" id="alignTabs" style="display:none" role="tablist" aria-label="Các tab của bước dóng hàng">
+        <button id="alignTabBtn_sent" class="on" role="tab">Dóng câu</button>
+        <button id="alignTabBtn_check" role="tab">Kiểm tra</button>
+        <button id="alignTabBtn_prop" role="tab">Đề xuất</button>
+        <button id="alignTabBtn_res" role="tab" disabled title="Chỉ mở được khi đã duyệt hết các đề xuất">Kết quả</button>
+      </div>
     </div>
 
     <div class="empty" id="gridEmpty" style="display:none">Sách này chưa được tách trang.</div>
@@ -326,7 +380,6 @@ details li { word-break: break-all; }
 
       <div class="ocr-section">
         <h2>OCR riêng từng thư mục và kiểm tra bằng PPOCRLabel</h2>
-        <div class="ocr-note"><a class="review-link" href="/review/" target="_blank" rel="noopener">Đối chiếu CH–VI</a></div>
         <div class="ocr-note" id="ppocrNote"></div>
         <table class="ocr-table">
           <thead><tr><th>Thư mục</th><th>Ảnh</th><th>Đã có nhãn</th><th title="Số ảnh còn ít nhất một box có chữ rỗng; chạy OCR (không ghi đè) sẽ điền các box này">Còn box trống</th><th>Đã duyệt</th><th></th></tr></thead>
@@ -338,11 +391,12 @@ details li { word-break: break-all; }
 
     <!-- Bước 3: Dóng hàng (đối chiếu Hán Nôm - Việt) -->
     <div id="alignView" style="display:none">
+      <div id="alignPane_sent">
       <div class="ocr-section">
         <h2>Đối chiếu Hán Nôm và Việt</h2>
         <div class="a-bar" id="alignTop">
           <button class="primary" id="alignRunBtn" title="Xuất toàn bộ các trang ra file .csv trong thư mục của sách đang mở">Xuất file</button>
-          <button id="alignSaveBtn" title="Ghi thứ tự đã dời lên / xuống vào các file Label.txt của hai nguồn">Lưu vào Label.txt</button>
+          <button id="alignEditsReset" style="display:none" title="Bỏ mọi chữ đã sửa nhưng chưa lưu vào Label.txt">Bỏ chỗ đã sửa</button>
           <span class="stats" id="alignState"></span>
         </div>
         <div class="ocr-note">Id mỗi bbox là tên văn bản, số trang, số dòng, ví dụ <b id="alignIdExample"></b>. Id Nôm và id Việt được sắp riêng rồi ghép lần lượt từng cái một. Ô lệch thì đánh <b>Miss vi</b> trên ô Nôm hoặc <b>Miss nôm</b> trên ô Việt để các hàng sau ghép lại đúng.</div>
@@ -353,6 +407,18 @@ details li { word-break: break-all; }
           <label title="Thư mục lấy các box Nôm: của sách này hoặc của sách khác">Nguồn Nôm <select id="alignSrcNom"></select></label>
           <label title="Thư mục lấy các box Việt: của sách này hoặc của sách khác">Nguồn Việt <select id="alignSrcVi"></select></label>
           <button id="alignSrcReset" title="Về mặc định: ch/ cho Nôm, vi/ cho Việt của sách này">Về mặc định</button>
+        </div>
+        <div class="a-bar" id="alignSentBar">
+          <button class="primary" id="alignSentBtn" title="Dóng từng câu Nôm với câu Việt của hai nguồn đã chọn bằng từ điển và khoảng cách Levenshtein như dóng chữ">Dóng câu</button>
+          <label title="Cặp Nôm - Việt được ghép khi tỉ lệ chữ khớp từ điển từ mức này trở lên (1 là khớp hết)">Độ khớp tối thiểu <input type="number" id="alignSentTau" min="0.1" max="1" step="0.05" value="0.4" style="width:72px"></label>
+          <button id="alignSentClear" style="display:none" title="Bỏ các dấu miss và lần dời do dóng câu tự động tạo">Bỏ kết quả dóng câu</button>
+          <span class="stats" id="alignSentInfo"></span>
+        </div>
+        <div class="a-bar" id="alignMatchBar" style="display:none">
+          <button id="alignMatchBtn" title="So khớp chữ Nôm của sách này với văn bản mẫu đang là nguồn Việt rồi đánh dấu miss và sắp lại thứ tự tự động">So khớp Nôm với văn bản đã dóng</button>
+          <label title="Hai dòng Nôm coi là cùng một câu khi độ giống từ mức này trở lên (1 là giống hệt)">Độ giống tối thiểu <input type="number" id="alignMatchTau" min="0.2" max="1" step="0.05" value="0.5" style="width:72px"></label>
+          <button id="alignMatchClear" style="display:none" title="Bỏ các dấu miss và lần dời do so khớp tự động tạo">Bỏ kết quả so khớp</button>
+          <span class="stats" id="alignMatchInfo"></span>
         </div>
         <div class="a-bar">
           <span class="stats" id="alignCounts"></span>
@@ -377,6 +443,87 @@ details li { word-break: break-all; }
         <details id="alignReportBox" open><summary>Báo cáo</summary><pre class="ocr-log" id="alignReport"></pre></details>
         <details id="alignLogBox" style="display:none"><summary>Log chạy</summary><pre class="ocr-log" id="alignLog"></pre></details>
       </details>
+      </div>
+      <div id="alignPane_check" style="display:none">
+        <div class="ocr-section">
+          <h2>Kiểm tra cặp chữ Nôm và âm Quốc ngữ</h2>
+          <div class="ocr-note">Mỗi câu được dóng hàng từng chữ Nôm với từng âm Quốc ngữ theo từ điển. Cặp khớp từ điển để màu thường, <b style="color:#c00000">đỏ</b> là cặp lệch, <span style="color:#999;font-style:italic">xám</span> là chữ Nôm thừa hoặc âm thừa. Dấu câu bỏ khi so khớp.</div>
+          <div class="ocr-note warn" id="chkWarn" style="display:none"></div>
+          <div class="a-bar" id="chkUpload" style="display:none">
+            <span class="stats">Văn bản này chưa có file input.xlsx (cột Patch ID, Label, Vietnamese).</span>
+            <input type="file" id="chkUploadFile" accept=".xlsx">
+            <button class="primary" id="chkUploadBtn">Tải lên input.xlsx</button>
+          </div>
+          <div class="a-bar">
+            <button class="primary" id="chkSaveCsv">Lưu file .csv</button>
+            <span class="stats" id="chkCsvInfo"></span>
+            <span class="grow" style="flex:1"></span>
+            <label><input type="checkbox" id="chkOnly" checked> Chỉ câu có cặp lệch</label>
+          </div>
+          <div class="a-bar"><span class="stats" id="chkStats"></span></div>
+          <div class="a-bar">
+            <button id="chkPrev">‹ Trước</button>
+            <label>Trang <select id="chkPageSel"></select></label>
+            <button id="chkNext">Sau ›</button>
+            <span class="stats" id="chkPageInfo"></span>
+          </div>
+          <div id="chkList"></div>
+        </div>
+      </div>
+      <div id="alignPane_prop" style="display:none">
+        <div class="ocr-section">
+          <h2>Đề xuất sửa lỗi</h2>
+          <div id="propSetup" style="display:none">
+            <div class="ocr-note">Mỗi cặp lệch có ba loại đề xuất: <b>NOM</b> thay chữ Nôm, <b>QN</b> thay âm Quốc ngữ và <b>KEEP</b> giữ nguyên. Các đề xuất được chấm điểm bằng từ điển và (nếu bật) hai mô hình ngôn ngữ, kết quả lưu vào thư mục sách.</div>
+            <div class="ocr-note warn" id="propWarn" style="display:none"></div>
+            <div class="a-bar">
+              <label><input type="checkbox" id="propUseLm" checked> Dùng mô hình ngôn ngữ</label>
+              <button class="primary" id="propScoreBtn">Chấm điểm đề xuất</button>
+              <button id="propBackBtn" style="display:none">Quay lại duyệt</button>
+              <span class="stats" id="propJob"></span>
+            </div>
+          </div>
+          <div id="propReview" style="display:none">
+            <div class="a-bar">
+              <span class="stats" id="propProgress"></span>
+              <span class="grow" style="flex:1"></span>
+              <button id="propPrev">‹ Câu trước</button>
+              <button id="propNext">Câu tiếp ›</button>
+              <button id="propNextOpen">Câu chưa duyệt kế tiếp</button>
+              <button id="propRescore" title="Mở lại phần chọn cách chấm điểm">Chấm điểm lại</button>
+              <button class="primary" id="propSave" title="Lưu lựa chọn và xuất các file kết quả vào thư mục sách">Lưu</button>
+            </div>
+            <div class="prop-body" id="propBody">
+              <div class="prop-pages" id="propPages" style="display:none"></div>
+              <div class="prop-left" id="propBboxBox">
+                <div class="lbl">Nôm</div><img id="propImg" alt=""><div class="aid" id="propInfo"></div>
+                <div class="lbl">Việt</div><img id="propImgVi" alt=""><div class="aid" id="propInfoVi"></div>
+              </div>
+              <div class="prop-right"><div class="sent-scroll" id="propTable"></div><div id="propCards"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="alignPane_res" style="display:none">
+        <div class="ocr-section">
+          <h2>Kết quả sau khi duyệt</h2>
+          <div class="ocr-note warn" id="resWarn" style="display:none"></div>
+          <div class="a-bar">
+            <button class="primary" id="resExport"></button>
+            <button id="resCompare"></button>
+            <span class="stats" id="resState"></span>
+          </div>
+          <ul class="align-files" id="resFiles"></ul>
+          <div class="res-stats" id="resStats"></div>
+          <div class="a-bar">
+            <button id="resPrev">‹ Trước</button>
+            <label>Trang <select id="resPageSel"></select></label>
+            <button id="resNext">Sau ›</button>
+            <span class="stats" id="resPageInfo"></span>
+          </div>
+          <div id="resList"></div>
+        </div>
+      </div>
     </div>
   </section>
 </div>
@@ -646,6 +793,7 @@ async function openBook(name, silent) {
   catch (e) { showError(e.message); location.hash = ""; return; }
   showError(null);
   currentBook = b;
+  applyBookKind();
   const f = fileByName(b.name);
   if (f) { f.split = b.split; b.type = f.type; }   // loại chưa lưu vẫn hiển thị đúng
   $("listView").style.display = "none";
@@ -657,7 +805,7 @@ async function openBook(name, silent) {
   renderGrid();
   renderBookStatus();
   if (b.split.status === "running") ensurePolling();
-  if (!silent) { step = "tags"; ocrData = null; alignData = null; alignRows = null; alignSources = null; alignPage = 0; window.scrollTo(0, 0); pollAuto(); }
+  if (!silent) { step = "tags"; ocrData = null; alignData = null; alignRows = null; alignSources = null; alignPage = 0; reviewSum = null; propData = null; alignTab = isXlsx() ? "check" : "sent"; propPageSel = { idx: null, nom: null, vi: null }; chkPage = propPage = resPage = 0; window.scrollTo(0, 0); pollAuto(); }
   else updateBlankSummary();
   showStep(step);
 }
@@ -939,12 +1087,308 @@ function showStep(next) {
   $("gridEmpty").style.display = tags && !hasPages ? "" : "none";
   $("ocrView").style.display = ocr ? "" : "none";
   $("alignView").style.display = align ? "" : "none";
+  $("alignTabs").style.display = align ? "" : "none";
   if (ocr) { if (!ocrData) enterOcr(); else ensureOcrPolling(); }
   else { clearInterval(ocrTimer); ocrTimer = null; }
-  if (align) { enterAlign(); loadAlignRows(); loadAlignSources(); }
-  else { clearInterval(alignTimer); alignTimer = null; clearInterval(alignRowsTimer); alignRowsTimer = null; }
+  if (align) { if (!isXlsx()) { enterAlign(); loadAlignRows(); loadAlignSources(); } loadReviewSummary(); showAlignTab(alignTab); }
+  else { clearInterval(alignTimer); alignTimer = null; clearInterval(alignRowsTimer); alignRowsTimer = null; clearInterval(propTimer); propTimer = null; }
 }
 
+
+/* ---------- bước 3: các tab Kiểm tra, Đề xuất, Kết quả ---------- */
+const ALIGN_TABS = ["sent", "check", "prop", "res"];
+const CIRCLED = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮⑯⑰⑱⑲⑳";
+let alignTab = "sent";
+let reviewSum = null;       // /api/review/summary
+let chkPage = 0, propPage = 0, resPage = 0;
+let propData = null;        // /api/review/page
+let propTimer = null;
+let propSetupOpen = false;
+
+function bookStem() { return currentBook.name.replace(/\.pdf$/i, ""); }
+function reviewUrl(kind, extra) { return `/api/review/${kind}?name=${encodeURIComponent(currentBook.name)}${extra || ""}`; }
+function fileLink(kind, info) {
+  return el("a", { href: reviewUrl("file", "&kind=" + kind), textContent: info.name, download: info.name });
+}
+
+async function loadReviewSummary() {
+  if (!currentBook) return null;
+  try { reviewSum = await api(reviewUrl("summary")); }
+  catch (e) { showError("Không tải được số liệu kiểm tra: " + e.message); return null; }
+  const ok = !!reviewSum.all_reviewed;
+  $("alignTabBtn_res").disabled = !ok;
+  $("alignTabBtn_res").title = ok ? "" : "Chỉ mở được khi đã duyệt hết các đề xuất";
+  return reviewSum;
+}
+
+async function showAlignTab(tab) {
+  if (tab === "sent" && isXlsx()) tab = "check";
+  if (tab === "res" && reviewSum && !reviewSum.all_reviewed) tab = "prop";
+  alignTab = tab;
+  for (const t of ALIGN_TABS) {
+    $("alignPane_" + t).style.display = t === tab ? "" : "none";
+    $("alignTabBtn_" + t).classList.toggle("on", t === tab);
+  }
+  clearInterval(propTimer); propTimer = null;
+  if (tab === "check") await loadCheck();
+  else if (tab === "prop") await loadProp();
+  else if (tab === "res") await loadRes();
+}
+
+function sentTable(cells, review) {
+  const idx = el("tr"), nom = el("tr"), qn = el("tr");
+  for (const c of cells) {
+    let cls = "";
+    if (review) {
+      if (c.mark) cls = c.how === "KEEP" ? "kept" : c.how ? "fixed" : "mm";
+      else if (c.status.startsWith("extra")) cls = "gap";
+    } else {
+      cls = c.status === "mismatch" ? "mm" : c.status.startsWith("extra") ? "gap" : "";
+    }
+    const mark = review && c.mark ? (CIRCLED[c.mark - 1] || c.mark) : "";
+    idx.append(el("td", { className: "idx", textContent: c.pos + (mark ? " " + mark : "") }));
+    const nTd = el("td", { className: "nomc " + cls, textContent: c.nom || "∅" });
+    const qTd = el("td", { className: "qnc " + cls, textContent: c.qn || "∅" });
+    if (review && c.mark && c.how && c.how !== "KEEP") {
+      if (c.nom !== c.orig_nom) nTd.append(el("br"), el("s", { className: "was", textContent: c.orig_nom }));
+      if (c.qn !== c.orig_qn) qTd.append(el("br"), el("s", { className: "was", textContent: c.orig_qn }));
+    }
+    nom.append(nTd); qn.append(qTd);
+  }
+  return el("div", { className: "sent-scroll" }, el("table", { className: "sent-table" }, idx, nom, qn));
+}
+
+function fillPager(selId, page, pages) {
+  const sel = $(selId);
+  if (sel.options.length !== pages) sel.replaceChildren(...Array.from({ length: pages }, (_, i) => el("option", { value: i, textContent: `${i + 1} / ${pages}` })));
+  sel.value = page;
+}
+
+/* --- tab Kiểm tra --- */
+async function loadCheck() {
+  const sum = await loadReviewSummary(); if (!sum) return;
+  const warn = $("chkWarn");
+  $("chkUpload").style.display = !sum.ready && sum.mode === "xlsx" && !sum.has_input ? "" : "none";
+  if (!sum.ready) { warn.style.display = ""; warn.textContent = sum.error; $("chkList").replaceChildren(); return; }
+  warn.style.display = "none";
+  const s = sum.stats;
+  $("chkStats").textContent = `${sum.sentences} câu · ${s.aligned_pairs} cặp chữ–âm · lệch ${s.mismatch_before} (${s.pct_before}%) · chữ Nôm thừa ${s.extra_nom} · âm thừa ${s.extra_qn}`;
+  const csv = sum.files.csv;
+  $("chkSaveCsv").textContent = `Lưu file ${bookStem()}.csv`;
+  $("chkCsvInfo").textContent = csv ? `Đã lưu ${csv.name} · ${fmtSize(csv.size)} · ${fmtTime(csv.mtime)}` : "Chưa lưu file .csv";
+  let d;
+  try { d = await api(reviewUrl("check", `&page=${chkPage}&only=${$("chkOnly").checked ? 1 : 0}`)); }
+  catch (e) { showError("Không tải được danh sách câu: " + e.message); return; }
+  chkPage = d.page;
+  fillPager("chkPageSel", d.page, d.pages);
+  $("chkPrev").disabled = d.page === 0; $("chkNext").disabled = d.page >= d.pages - 1;
+  $("chkPageInfo").textContent = `${d.total} câu`;
+  const list = $("chkList"); list.replaceChildren();
+  for (const sent of d.sentences) {
+    list.append(el("div", { className: "chk-sent" },
+      el("div", { className: "hd", textContent: `Câu ${sent.sid} · ${sent.id}` }), sentTable(sent.pairs.map(p => ({ pos: p.pos, nom: p.nom, qn: p.qn, status: p.status })), false)));
+  }
+}
+
+async function saveCsv() {
+  try { await api("/api/review/csv", { name: currentBook.name }); } catch (e) { alert(e.message); return; }
+  toast(`Đã lưu ${bookStem()}.csv vào thư mục sách.`, 4000);
+  await loadCheck();
+}
+
+/* trang ảnh của câu cho văn bản đọc từ xlsx (không có bbox): trang Nôm, và trang Việt khi văn bản có trang Việt riêng */
+let propPageSel = { idx: null, nom: null, vi: null };   // trang người dùng chọn tay cho câu đang xem (null: theo gợi ý)
+
+function renderPropPages(d) {
+  const lay = d.layout || { kind: "single", nom_page: null, vi_page: null, total: 0 };
+  if (propPageSel.idx !== d.idx) propPageSel = { idx: d.idx, nom: null, vi: null };
+  const slots = [["Nôm", "nom", lay.nom_page]];
+  if (lay.kind === "pair" || propPageSel.vi !== null) slots.push(["Việt", "vi", lay.vi_page || lay.nom_page]);
+  const box = $("propPages"); box.replaceChildren();
+  for (const [label, key, base] of slots) {
+    const page = propPageSel[key] !== null ? propPageSel[key] : base;
+    const setPage = p => { if (Number.isFinite(p) && p >= 1 && (!lay.total || p <= lay.total)) { propPageSel[key] = p; renderPropPages(d); } };
+    const num = el("input", { type: "number", className: "pg-num", min: 1, value: page || "" });
+    num.onchange = () => setPage(parseInt(num.value, 10));
+    const prev = el("button", { textContent: "‹", title: "Trang trước" }), next = el("button", { textContent: "›", title: "Trang sau" });
+    prev.onclick = () => setPage(page - 1); next.onclick = () => setPage(page + 1);
+    const note = key === "nom" ? (d.line !== null && d.line !== undefined ? `dòng ${d.line + 1} trên trang` : "") : "";
+    const head = el("div", { className: "pg-head" }, el("b", { textContent: lay.kind === "single" && key === "nom" ? "Trang Nôm và Quốc ngữ xen kẽ" : `Trang ${label}` }),
+      prev, num, next, el("span", { className: "aid", textContent: key === "nom" ? `${d.id}${note ? " · " + note : ""}` : "" }));
+    const img = page ? el("img", { className: "page-img", loading: "lazy", alt: `Trang ${page}`, title: "Bấm để phóng to và chuyển trang",
+      src: `/api/page?name=${encodeURIComponent(currentBook.name)}&page=${page}` }) : el("div", { className: "acell empty", textContent: "Không có trang" });
+    img.onclick = () => openLightbox(page);
+    img.onerror = () => { img.replaceWith(el("div", { className: "acell empty", textContent: `Chưa có ảnh trang ${page} (cache/pages)` })); };
+    box.append(el("div", { className: "page-slot" }, head, img));
+  }
+}
+
+function isXlsx() { return !!(currentBook && currentBook.kind && currentBook.kind.xlsx); }
+
+/* chỉ 4 văn bản Kim* có bước OCR và dóng câu theo bbox; văn bản còn lại chỉ có phân loại trang và dóng hàng đọc từ input.xlsx */
+function applyBookKind() {
+  const k = (currentBook && currentBook.kind) || { ocr: true, xlsx: false };
+  $("stepOcrBtn").style.display = k.ocr ? "" : "none";
+  $("stepAlignBtn").querySelector(".n").textContent = k.ocr ? "3" : "2";
+  $("alignTabBtn_sent").style.display = k.xlsx ? "none" : "";
+}
+
+function uploadInput(file) {
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = async () => {
+    const b64 = String(reader.result).split(",", 2)[1] || "";
+    try { await api("/api/review/upload", { name: currentBook.name, file: b64 }); } catch (e) { alert(e.message); return; }
+    toast("Đã lưu input.xlsx vào thư mục của văn bản.", 4000);
+    await showAlignTab(alignTab);
+  };
+  reader.readAsDataURL(file);
+}
+
+/* --- tab Đề xuất --- */
+async function loadProp() {
+  const sum = await loadReviewSummary(); if (!sum) return;
+  const setup = $("propSetup"), review = $("propReview");
+  const job = sum.job || {};
+  const running = job.status === "running";
+  if (!sum.ready) {
+    setup.style.display = ""; review.style.display = "none";
+    $("propWarn").style.display = ""; $("propWarn").textContent = sum.error;
+    $("propScoreBtn").disabled = true; return;
+  }
+  $("propWarn").style.display = job.status === "error" ? "" : "none";
+  if (job.status === "error") $("propWarn").textContent = "Chấm điểm lỗi: " + job.error;
+  $("propScoreBtn").disabled = running;
+  $("propJob").textContent = running ? `Đang chấm điểm: ${job.stage || ""} · ${Math.round(Date.now() / 1000 - job.started)} giây` : "";
+  if (running && !propTimer) propTimer = setInterval(loadProp, 2000);
+  if (!running && propTimer) { clearInterval(propTimer); propTimer = null; if (job.status === "done") toast("Chấm điểm xong.", 3000); }
+  if (!sum.has_candidates || propSetupOpen || running) {
+    setup.style.display = ""; review.style.display = "none";
+    $("propBackBtn").style.display = sum.has_candidates ? "" : "none";
+    if (!propSetupOpen && !running && !sum.has_candidates) $("propUseLm").checked = sum.config.models.use_lm !== false;
+    return;
+  }
+  setup.style.display = "none"; review.style.display = "";
+  if (!sum.progress.pages) { review.style.display = "none"; setup.style.display = ""; $("propWarn").style.display = ""; $("propWarn").textContent = "Không có cặp lệch nào có đề xuất để duyệt."; return; }
+  await loadPropPage(propPage);
+}
+
+async function startScoring() {
+  try { await api("/api/review/score", { name: currentBook.name, use_lm: $("propUseLm").checked }); } catch (e) { alert(e.message); return; }
+  propSetupOpen = false;
+  await loadProp();
+  if (!propTimer) propTimer = setInterval(loadProp, 2000);
+}
+
+async function loadPropPage(p) {
+  try { propData = await api(reviewUrl("page", "&page=" + p)); } catch (e) { showError("Không tải được câu cần duyệt: " + e.message); return; }
+  propPage = propData.page;
+  renderProp();
+}
+
+function renderProp() {
+  const d = propData; if (!d) return;
+  const pr = d.progress;
+  $("propProgress").textContent = `Câu ${d.page + 1}/${d.pages} · Đã duyệt ${pr.pairs_done}/${pr.pairs} cặp lệch · Xong ${pr.pages_done}/${pr.pages} câu`;
+  $("propPrev").disabled = d.page === 0; $("propNext").disabled = d.page >= d.pages - 1;
+  $("propNextOpen").disabled = !d.unreviewed_pages.length;
+  const xl = !!d.layout;     // văn bản đọc từ xlsx: hiện trang ảnh thay cho ảnh cắt bbox
+  $("propBboxBox").style.display = xl ? "none" : "";
+  $("propPages").style.display = xl ? "" : "none";
+  $("propBody").classList.toggle("xlsx", xl);
+  if (xl) renderPropPages(d);
+  const img = $("propImg"); img.style.display = xl ? "none" : ""; if (!xl) img.src = alignCropUrl("ch", d.id);
+  img.onerror = () => { img.style.display = "none"; };
+  $("propInfo").textContent = `${d.id}${d.line !== null && d.line !== undefined ? ` · dòng ${d.line + 1} trên trang` : ""}`;
+  const imgVi = $("propImgVi");
+  imgVi.style.display = d.vi_id && !xl ? "" : "none";
+  if (d.vi_id && !xl) { imgVi.src = alignCropUrl("vi", d.vi_id); imgVi.onerror = () => { imgVi.style.display = "none"; }; }
+  $("propInfoVi").textContent = d.vi_id ? `${d.vi_id}${d.vi_line !== null && d.vi_line !== undefined ? ` · dòng ${d.vi_line + 1} trên trang` : ""}` : "";
+  $("propTable").replaceChildren(sentTable(d.cells, true));
+  const box = $("propCards"); box.replaceChildren();
+  for (const c of d.cards) {
+    const dec = c.decision;
+    const row = el("div", { className: "cand-row" });
+    for (const h of c.candidates) {
+      const on = !!dec && dec.side === h.side && dec.nom === h.nom && dec.qn === h.qn;
+      const b = el("button", { className: "cand" + (on ? " on" : ""), textContent: `${h.confidence.toFixed(2)} · ${h.change}`, title: `${h.side} · điểm ${h.score}` });
+      b.onclick = () => propDecide(c.key, on ? null : h);
+      row.append(b);
+    }
+    const keepOn = !!dec && dec.side === "KEEP";
+    const keep = el("button", { className: "cand keep" + (keepOn ? " on" : ""), textContent: keepOn ? "✔ KEEP" : "KEEP", title: "Giữ nguyên cặp này" });
+    keep.onclick = () => propDecide(c.key, keepOn ? null : { side: "KEEP" });
+    row.append(keep);
+    box.append(el("div", { className: "pair-card" }, el("div", { className: "tt", textContent: `${CIRCLED[c.order - 1] || c.order + "."} Sửa chữ ${c.kind}` }), row));
+  }
+}
+
+async function propDecide(key, h) {
+  try {
+    await api("/api/review/decide", { name: currentBook.name, key, side: h ? h.side : null, nom: h ? h.nom : null, qn: h ? h.qn : null });
+  } catch (e) { alert(e.message); return; }
+  await loadPropPage(propPage);
+  loadReviewSummary();
+}
+
+async function propSave() {
+  try { await api("/api/review/save", { name: currentBook.name }); } catch (e) { alert(e.message); return; }
+  toast("Đã lưu lựa chọn và xuất các file kết quả vào thư mục sách.", 4000);
+  await loadReviewSummary();
+}
+
+/* --- tab Kết quả --- */
+async function loadRes() {
+  const sum = await loadReviewSummary(); if (!sum) return;
+  const stem = bookStem();
+  $("resExport").textContent = `Xuất ${stem}.xlsx`;
+  $("resCompare").textContent = `Lưu ${stem}_SO_SANH.xlsx`;
+  const warn = $("resWarn");
+  if (!sum.ready || !sum.all_reviewed) {
+    warn.style.display = ""; warn.textContent = sum.ready ? "Còn cặp lệch chưa duyệt: duyệt hết ở tab Đề xuất rồi quay lại." : sum.error;
+    $("resExport").disabled = $("resCompare").disabled = true;
+    $("resList").replaceChildren(); $("resStats").replaceChildren(); return;
+  }
+  warn.style.display = "none"; $("resExport").disabled = $("resCompare").disabled = false;
+  const files = $("resFiles"); files.replaceChildren();
+  for (const [kind, label] of [["result", "Kết quả"], ["compare", "So sánh"]]) {
+    const info = sum.files[kind];
+    files.append(info ? el("li", {}, el("span", { textContent: label + ":" }), fileLink(kind, info), el("span", { className: "stats", textContent: `${fmtSize(info.size)} · ${fmtTime(info.mtime)}` }))
+      : el("li", { className: "none" }, el("span", { textContent: label + ": chưa xuất" })));
+  }
+  let d;
+  try { d = await api(reviewUrl("results", "&page=" + resPage)); } catch (e) { showError("Không tải được kết quả: " + e.message); return; }
+  resPage = d.page;
+  const s = d.stats;
+  const stat = (label, value) => el("div", {}, el("span", { className: "stats", textContent: label }), el("b", { textContent: value }));
+  $("resStats").replaceChildren(stat("Cặp lệch trước", `${s.mismatch_before} (${s.pct_before}%)`), stat("Cặp lệch sau", `${s.mismatch_after} (${s.pct_after}%)`),
+    stat("Sửa chữ Nôm", s.decision_NOM), stat("Sửa âm Quốc ngữ", s.decision_QN), stat("Giữ nguyên KEEP", s.decision_KEEP), stat("Câu có chỗ sửa", d.total));
+  fillPager("resPageSel", d.page, d.pages);
+  $("resPrev").disabled = d.page === 0; $("resNext").disabled = d.page >= d.pages - 1;
+  $("resPageInfo").textContent = `${d.total} câu`;
+  const list = $("resList"); list.replaceChildren();
+  for (const sent of d.sentences) {
+    const box = el("div", { className: "chk-sent" }, el("div", { className: "hd", textContent: `Câu ${sent.sid} · ${sent.id}` }));
+    for (const c of sent.changes) {
+      if (c.how === "KEEP") continue;
+      const nomChange = c.nom !== c.orig_nom, qnChange = c.qn !== c.orig_qn;
+      const cls = c.still ? "still" : "new";
+      box.append(el("div", { className: "chg" }, el("span", { className: "tag", textContent: `vị trí ${c.pos} · ${c.how}` }),
+        nomChange ? el("span", {}, el("s", { textContent: c.orig_nom }), " → ", el("span", { className: cls, textContent: c.nom })) : el("span", { textContent: c.nom }),
+        qnChange ? el("span", {}, el("s", { textContent: c.orig_qn }), " → ", el("span", { className: cls, textContent: c.qn })) : el("span", { textContent: c.qn }),
+        c.still ? el("span", { className: "tag", textContent: "vẫn lệch từ điển" }) : el("span")));
+    }
+    list.append(box);
+  }
+}
+
+async function resExport(kind) {
+  $("resState").textContent = "Đang ghi file…";
+  try { await api("/api/review/export", { name: currentBook.name, kind }); } catch (e) { $("resState").textContent = ""; alert(e.message); return; }
+  $("resState").textContent = "";
+  toast(kind === "result" ? `Đã xuất ${bookStem()}.xlsx.` : `Đã lưu ${bookStem()}_SO_SANH.xlsx.`, 4000);
+  await loadRes();
+}
 
 /* ---------- bước 3: đối chiếu Hán Nôm - Việt ---------- */
 const ALIGN_PAGE_SIZE = 40;
@@ -977,17 +1421,41 @@ async function alignMark(side, id, miss) {
   await loadAlignRows();
 }
 
-async function alignSave() {
-  const d = alignRows; if (!d) return;
-  const s = d.info.sources;
-  const targets = ["ch", "vi"].map(r => `${r === "ch" ? "Nôm" : "Việt"}: ${s[r].book} / ${s[r].folder}`).join("\n");
-  const foreign = d.info.foreign.length ? "\n\nCảnh báo: có nguồn thuộc sách khác, Label.txt của sách đó cũng bị ghi." : "";
-  if (!confirm(`Ghi thứ tự đã dời vào Label.txt của:\n${targets}${foreign}\n\nId của các box được đánh lại theo vị trí mới. Tiếp tục?`)) return;
+async function alignSetText(side, id, text) {
+  try { await api("/api/align/text", { name: currentBook.name, side, id, text }); } catch (e) { alert(e.message); return; }
+  await loadAlignRows();
+}
+
+async function alignSent() {
+  const tau = parseFloat($("alignSentTau").value);
+  if (!(tau >= 0.1 && tau <= 1)) { alert("Độ khớp tối thiểu phải từ 0,1 đến 1."); return; }
+  const info = alignRows ? alignRows.info : null;
+  const hasOld = info && (info.moves.ch + info.moves.vi > 0 || info.auto.matched !== undefined);
+  const s = info ? info.sources : null;
+  if (!confirm(`Dóng câu giữa nguồn Nôm${s ? ` (${s.ch.book} / ${s.ch.folder})` : ""} và nguồn Việt${s ? ` (${s.vi.book} / ${s.vi.folder})` : ""}: tự ghép từng câu, đánh dấu miss và dời thứ tự các dòng Nôm cho khớp thứ tự dòng Việt.` +
+      (hasOld ? " Kết quả tự động trước và các lần dời hiện có sẽ bị thay." : "") + " Có thể bỏ lại bằng nút Bỏ kết quả. Tiếp tục?")) return;
+  $("alignSentBtn").disabled = true; $("alignSentInfo").textContent = "Đang dóng câu…";
   let r;
-  try { r = await api("/api/align/save", { name: currentBook.name }); } catch (e) { alert(e.message); return; }
-  const n = r.changed.ch + r.changed.vi;
-  toast(n ? `Đã lưu ${n} ảnh vào Label.txt.` : "Không có ảnh nào cần ghi lại." , 4000);
-  if (r.kept_moves) alert(`${r.kept_moves} lần dời giữa hai ảnh khác nhau không ghi được vào Label.txt, vẫn giữ trong màn hình này.`);
+  try { r = await api("/api/align/match", { name: currentBook.name, kind: "align", tau }); }
+  catch (e) { $("alignSentInfo").textContent = ""; $("alignSentBtn").disabled = false; alert(e.message); return; }
+  $("alignSentBtn").disabled = false;
+  alignPage = 0;
+  toast(`Đã dóng câu: ghép ${r.matched}/${r.own} dòng Nôm, miss vi ${r.miss_vi}, miss nôm ${r.miss_nom}.`, 6000);
+  await loadAlignRows();
+}
+
+async function alignMatch() {
+  const tau = parseFloat($("alignMatchTau").value);
+  if (!(tau >= 0.2 && tau <= 1)) { alert("Độ giống tối thiểu phải từ 0,2 đến 1."); return; }
+  const info = alignRows ? alignRows.info : null;
+  const hasOld = info && (info.moves.ch + info.moves.vi > 0 || info.auto.matched !== undefined);
+  if (!confirm("So khớp chữ Nôm của sách này với văn bản mẫu (nguồn Việt), tự đánh dấu miss và dời thứ tự các dòng Nôm cho khớp thứ tự văn bản mẫu." +
+      (hasOld ? " Kết quả so khớp trước và các lần dời hiện có sẽ bị thay." : "") + " Có thể bỏ lại bằng nút Bỏ kết quả so khớp. Tiếp tục?")) return;
+  $("alignMatchInfo").textContent = "Đang so khớp…";
+  let r;
+  try { r = await api("/api/align/match", { name: currentBook.name, tau }); } catch (e) { $("alignMatchInfo").textContent = ""; alert(e.message); return; }
+  alignPage = 0;
+  toast(`Đã so khớp: ghép ${r.matched}/${r.own} dòng Nôm, miss vi ${r.miss_vi}, miss nôm ${r.miss_nom}.`, 6000);
   await loadAlignRows();
 }
 
@@ -1027,8 +1495,10 @@ function alignCell(side, box, row) {
   }
   const img = el("img", { className: "acrop", loading: "lazy", alt: box.id, src: alignCropUrl(side, box.id) });
   img.onerror = () => { img.style.display = "none"; };
-  return el("div", { className: "acell " + (nom ? "nom" : "vi") }, img, el("span", { className: "aid", textContent: box.id }),
-    el("span", { className: "atext", textContent: box.text }), tools);
+  const text = el("input", { type: "text", className: "aedit" + (box.edited ? " edited" : ""), value: box.text,
+    title: box.edited ? "Đã sửa, chưa ghi vào Label.txt" : "Sửa chữ rồi nhấn Enter hoặc bấm ra ngoài để lưu tạm; bấm Lưu vào Label.txt để ghi" });
+  text.onchange = () => alignSetText(side, box.id, text.value);
+  return el("div", { className: "acell " + (nom ? "nom" : "vi") }, img, el("span", { className: "aid", textContent: box.id }), text, tools);
 }
 
 function alignDichCell(row) {
@@ -1053,10 +1523,21 @@ function renderAlignRows() {
     : "";
   $("alignCounts").textContent = `Nôm ${info.nom} box · Việt ${info.vi} box · ${d.rows.length} hàng · miss vi ${info.miss_vi} · miss nôm ${info.miss_nom}`
     + (info.nom_empty || info.vi_empty ? ` · bỏ ${info.nom_empty + info.vi_empty} box không có chữ` : "");
+  const viForeign = info.foreign.some(f => f.role === "vi");
+  const au = info.auto || {};
+  $("alignMatchBar").style.display = (viForeign && au.kind !== "align") || au.kind === "match" ? "" : "none";
+  $("alignMatchClear").style.display = au.matched !== undefined && au.kind !== "align" ? "" : "none";
+  $("alignSentClear").style.display = au.kind === "align" ? "" : "none";
+  $("alignMatchInfo").textContent = au.matched !== undefined && au.kind !== "align"
+    ? `Đã so khớp với ${au.ref_book}: ghép ${au.matched}/${au.own} dòng Nôm, miss vi ${au.miss_vi}, miss nôm ${au.miss_nom}, ${au.moves} lần dời, độ giống từ ${au.tau}` : "";
+  $("alignSentInfo").textContent = au.matched !== undefined && au.kind === "align"
+    ? `Đã dóng câu: ghép ${au.matched}/${au.own} dòng Nôm với ${au.ref} dòng Việt, miss vi ${au.miss_vi}, miss nôm ${au.miss_nom}, ${au.moves} lần dời, độ khớp từ ${au.tau}` : "";
   const moved = info.moves.ch + info.moves.vi;
+  const edited = info.edits.ch + info.edits.vi;
   $("alignMovesReset").style.display = moved ? "" : "none";
-  $("alignSaveBtn").disabled = !moved;
+  $("alignEditsReset").style.display = edited ? "" : "none";
   if (moved) $("alignCounts").textContent += " · đã dời " + moved + " lần";
+  if (edited) $("alignCounts").textContent += " · đã sửa " + edited + " box chưa lưu";
   const rows = $("alignOnlyDiff").checked ? d.rows.filter(r => alignNeedsReview(r) || (r.nom && r.nom.miss) || (r.vi && r.vi.miss)) : d.rows;
   const pages = Math.max(1, Math.ceil(rows.length / ALIGN_PAGE_SIZE));
   alignPage = Math.min(alignPage, pages - 1);
@@ -1068,7 +1549,7 @@ function renderAlignRows() {
   const from = alignPage * ALIGN_PAGE_SIZE;
   $("alignPageInfo").textContent = rows.length ? `Hàng ${rows[from].n} đến ${rows[Math.min(rows.length, from + ALIGN_PAGE_SIZE) - 1].n}` : "Không có hàng nào";
   const active = document.activeElement;
-  if (active && active.classList && active.classList.contains("adich") && $("alignRows").contains(active)) return;   // đang gõ dịch tay: không vẽ lại
+  if (active && active.classList && (active.classList.contains("adich") || active.classList.contains("aedit")) && $("alignRows").contains(active)) return;   // đang gõ: không vẽ lại
   const box = $("alignRows"); box.replaceChildren();
   for (const r of rows.slice(from, from + ALIGN_PAGE_SIZE)) {
     const cls = "arow" + ((r.nom && r.nom.miss) || (r.vi && r.vi.miss) ? " miss" : alignNeedsReview(r) ? " diff" : "");
@@ -1430,7 +1911,45 @@ $("stepTagsBtn").onclick = () => showStep("tags");
 $("stepOcrBtn").onclick = () => showStep("ocr");
 $("stepAlignBtn").onclick = () => showStep("align");
 $("alignRunBtn").onclick = runAlign;
-$("alignSaveBtn").onclick = alignSave;
+$("alignMatchBtn").onclick = alignMatch;
+$("alignSentBtn").onclick = alignSent;
+async function alignClearAuto() {
+  try { await api("/api/align/match", { name: currentBook.name, clear: true }); } catch (e) { alert(e.message); return; }
+  await loadAlignRows();
+}
+$("alignMatchClear").onclick = alignClearAuto;
+$("alignSentClear").onclick = alignClearAuto;
+$("alignTabBtn_sent").onclick = () => showAlignTab("sent");
+$("alignTabBtn_check").onclick = () => showAlignTab("check");
+$("alignTabBtn_prop").onclick = () => showAlignTab("prop");
+$("alignTabBtn_res").onclick = () => showAlignTab("res");
+$("chkSaveCsv").onclick = saveCsv;
+$("chkUploadBtn").onclick = () => uploadInput($("chkUploadFile").files[0]);
+$("chkOnly").onchange = () => { chkPage = 0; loadCheck(); };
+$("chkPrev").onclick = () => { chkPage = Math.max(0, chkPage - 1); loadCheck(); };
+$("chkNext").onclick = () => { chkPage += 1; loadCheck(); };
+$("chkPageSel").onchange = () => { chkPage = parseInt($("chkPageSel").value, 10) || 0; loadCheck(); };
+$("propScoreBtn").onclick = startScoring;
+$("propBackBtn").onclick = () => { propSetupOpen = false; loadProp(); };
+$("propRescore").onclick = () => { propSetupOpen = true; loadProp(); };
+$("propPrev").onclick = () => loadPropPage(propPage - 1);
+$("propNext").onclick = () => loadPropPage(propPage + 1);
+$("propNextOpen").onclick = () => {
+  const open = propData ? propData.unreviewed_pages : [];
+  const next = open.find(p => p > propPage);
+  loadPropPage(next !== undefined ? next : open[0] !== undefined ? open[0] : propPage);
+};
+$("propSave").onclick = propSave;
+$("resExport").onclick = () => resExport("result");
+$("resCompare").onclick = () => resExport("compare");
+$("resPrev").onclick = () => { resPage = Math.max(0, resPage - 1); loadRes(); };
+$("resNext").onclick = () => { resPage += 1; loadRes(); };
+$("resPageSel").onchange = () => { resPage = parseInt($("resPageSel").value, 10) || 0; loadRes(); };
+$("alignEditsReset").onclick = async () => {
+  if (!confirm("Bỏ mọi chữ đã sửa nhưng chưa lưu vào Label.txt?")) return;
+  try { await api("/api/align/text", { name: currentBook.name, reset: true }); } catch (e) { alert(e.message); return; }
+  await loadAlignRows();
+};
 $("alignOnlyDiff").onchange = () => { alignPage = 0; renderAlignRows(); };
 $("alignPrev").onclick = () => { alignPage = Math.max(0, alignPage - 1); renderAlignRows(); window.scrollTo(0, 0); };
 $("alignNext").onclick = () => { alignPage += 1; renderAlignRows(); window.scrollTo(0, 0); };

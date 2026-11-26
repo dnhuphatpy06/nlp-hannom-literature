@@ -1,0 +1,1011 @@
+﻿book,sentence_order,ID,image_id,pair_order,nom_pos,qn_pos,nom,qn,n_candidates,rank,side,cand_nom,cand_qn,score,confidence,evidence,selected,decision,final_nom,final_qn,decided_at
+"Truyên Vua Quang Trung, Nôm",1,1,"Truyên Vua Quang Trung, Nôm.006.000",1,2,2,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",5,5,"Truyên Vua Quang Trung, Nôm.007.000",1,3,3,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",9,9,"Truyên Vua Quang Trung, Nôm.007.004",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",13,13,"Truyên Vua Quang Trung, Nôm.007.008",1,7,7,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",14,14,"Truyên Vua Quang Trung, Nôm.007.009",1,5,5,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",14,14,"Truyên Vua Quang Trung, Nôm.007.009",2,7,7,太,chái,1,1,QN,太,thái,0.7314,0.9913,"{""ortho"": 0.6, ""qlm_delta"": 8.438}",x,QN,太,thái,2026-11-20 11:48:55
+"Truyên Vua Quang Trung, Nôm",14,14,"Truyên Vua Quang Trung, Nôm.007.009",2,7,7,太,chái,1,2,KEEP,太,chái,-4.0,0.0087,{},,QN,太,thái,2026-11-20 11:48:55
+"Truyên Vua Quang Trung, Nôm",15,15,"Truyên Vua Quang Trung, Nôm.007.010",1,3,3,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",16,16,"Truyên Vua Quang Trung, Nôm.008.000",1,2,2,擐,chống,0,1,KEEP,擐,chống,-4.0,1.0,{},,UNREVIEWED,擐,chống,
+"Truyên Vua Quang Trung, Nôm",16,16,"Truyên Vua Quang Trung, Nôm.008.000",2,4,4,元,nguyễn,1,1,QN,元,nguyên,-1.9296,0.888,"{""ortho"": 0.5, ""qlm_delta"": -1.432}",x,QN,元,nguyên,2026-11-20 11:49:16
+"Truyên Vua Quang Trung, Nôm",16,16,"Truyên Vua Quang Trung, Nôm.008.000",2,4,4,元,nguyễn,1,2,KEEP,元,nguyễn,-4.0,0.112,{},,QN,元,nguyên,2026-11-20 11:49:16
+"Truyên Vua Quang Trung, Nôm",20,20,"Truyên Vua Quang Trung, Nôm.008.004",1,7,7,元,nguyễn,1,1,QN,元,nguyên,-2.2259,0.855,"{""ortho"": 0.5, ""qlm_delta"": -2.42}",x,QN,元,nguyên,2026-11-20 11:49:22
+"Truyên Vua Quang Trung, Nôm",20,20,"Truyên Vua Quang Trung, Nôm.008.004",1,7,7,元,nguyễn,1,2,KEEP,元,nguyễn,-4.0,0.145,{},,QN,元,nguyên,2026-11-20 11:49:22
+"Truyên Vua Quang Trung, Nôm",21,21,"Truyên Vua Quang Trung, Nôm.008.005",1,5,5,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",22,22,"Truyên Vua Quang Trung, Nôm.008.006",1,4,4,擐,chống,0,1,KEEP,擐,chống,-4.0,1.0,{},,UNREVIEWED,擐,chống,
+"Truyên Vua Quang Trung, Nôm",26,26,"Truyên Vua Quang Trung, Nôm.008.010",1,3,3,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",26,26,"Truyên Vua Quang Trung, Nôm.008.010",2,6,6,擐,chống,0,1,KEEP,擐,chống,-4.0,1.0,{},,UNREVIEWED,擐,chống,
+"Truyên Vua Quang Trung, Nôm",32,32,"Truyên Vua Quang Trung, Nôm.009.005",1,3,3,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",38,38,"Truyên Vua Quang Trung, Nôm.010.000",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",44,44,"Truyên Vua Quang Trung, Nôm.010.006",1,7,7,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",46,46,"Truyên Vua Quang Trung, Nôm.010.008",1,1,1,鈐,găm,0,1,KEEP,鈐,găm,-4.0,1.0,{},,UNREVIEWED,鈐,găm,
+"Truyên Vua Quang Trung, Nôm",50,50,"Truyên Vua Quang Trung, Nôm.011.001",1,2,2,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",53,53,"Truyên Vua Quang Trung, Nôm.011.004",1,3,3,𠄻,nhằm,1,1,KEEP,𠄻,nhằm,-4.0,0.8821,{},x,KEEP,𠄻,nhằm,2026-11-20 11:49:36
+"Truyên Vua Quang Trung, Nôm",53,53,"Truyên Vua Quang Trung, Nôm.011.004",1,3,3,𠄻,nhằm,1,2,QN,𠄻,rằm,-6.0128,0.1179,"{""ortho"": 1.2, ""qlm_delta"": -8.043}",,KEEP,𠄻,nhằm,2026-11-20 11:49:36
+"Truyên Vua Quang Trung, Nôm",55,55,"Truyên Vua Quang Trung, Nôm.011.006",1,7,7,已,kỷ,1,1,NOM,己,kỷ,1.3804,0.9954,"{""visual_rank"": 1, ""nlm_delta"": 4.84, ""lm_oov"": false}",x,NOM,己,kỷ,2026-11-20 11:49:47
+"Truyên Vua Quang Trung, Nôm",55,55,"Truyên Vua Quang Trung, Nôm.011.006",1,7,7,已,kỷ,1,2,KEEP,已,kỷ,-4.0,0.0046,{},,NOM,己,kỷ,2026-11-20 11:49:47
+"Truyên Vua Quang Trung, Nôm",60,60,"Truyên Vua Quang Trung, Nôm.012.000",1,4,4,搈,giùng,0,1,KEEP,搈,giùng,-4.0,1.0,{},,UNREVIEWED,搈,giùng,
+"Truyên Vua Quang Trung, Nôm",60,60,"Truyên Vua Quang Trung, Nôm.012.000",2,6,6,囄,lẽ,2,1,QN,囄,lè,0.9461,0.6584,"{""ortho"": 0.5, ""qlm_delta"": 8.154}",x,QN,囄,lè,2026-11-20 11:49:52
+"Truyên Vua Quang Trung, Nôm",60,60,"Truyên Vua Quang Trung, Nôm.012.000",2,6,6,囄,lẽ,2,2,QN,囄,le,0.2762,0.3369,"{""ortho"": 0.5, ""qlm_delta"": 5.921}",,QN,囄,lè,2026-11-20 11:49:52
+"Truyên Vua Quang Trung, Nôm",60,60,"Truyên Vua Quang Trung, Nôm.012.000",2,6,6,囄,lẽ,2,3,KEEP,囄,lẽ,-4.0,0.0047,{},,QN,囄,lè,2026-11-20 11:49:52
+"Truyên Vua Quang Trung, Nôm",61,61,"Truyên Vua Quang Trung, Nôm.012.001",1,6,6,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",64,64,"Truyên Vua Quang Trung, Nôm.012.004",1,2,2,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",68,68,"Truyên Vua Quang Trung, Nôm.012.008",1,5,5,亘,cáng,3,1,QN,亘,càng,-0.5741,0.6363,"{""ortho"": 0.5, ""qlm_delta"": 3.086}",,QN,亘,cắng,2026-11-20 11:50:09
+"Truyên Vua Quang Trung, Nôm",68,68,"Truyên Vua Quang Trung, Nôm.012.008",1,5,5,亘,cáng,3,2,QN,亘,cứng,-1.4999,0.2521,"{""ortho"": 1.0, ""qlm_delta"": 5.0}",,QN,亘,cắng,2026-11-20 11:50:09
+"Truyên Vua Quang Trung, Nôm",68,68,"Truyên Vua Quang Trung, Nôm.012.008",1,5,5,亘,cáng,3,3,QN,亘,cắng,-2.5208,0.0908,"{""ortho"": 0.4, ""qlm_delta"": -4.403}",x,QN,亘,cắng,2026-11-20 11:50:09
+"Truyên Vua Quang Trung, Nôm",68,68,"Truyên Vua Quang Trung, Nôm.012.008",1,5,5,亘,cáng,3,4,KEEP,亘,cáng,-4.0,0.0207,{},,QN,亘,cắng,2026-11-20 11:50:09
+"Truyên Vua Quang Trung, Nôm",72,72,"Truyên Vua Quang Trung, Nôm.013.001",1,5,5,豬,giở,0,1,KEEP,豬,giở,-4.0,1.0,{},,UNREVIEWED,豬,giở,
+"Truyên Vua Quang Trung, Nôm",74,74,"Truyên Vua Quang Trung, Nôm.013.003",1,6,6,傮,cấu,0,1,KEEP,傮,cấu,-4.0,1.0,{},,UNREVIEWED,傮,cấu,
+"Truyên Vua Quang Trung, Nôm",75,75,"Truyên Vua Quang Trung, Nôm.013.004",1,5,5,孫,côn,2,1,QN,孫,tôn,-2.3022,0.7586,"{""ortho"": 0.6, ""qlm_delta"": -1.674}",x,QN,孫,tôn,2026-11-20 11:50:25
+"Truyên Vua Quang Trung, Nôm",75,75,"Truyên Vua Quang Trung, Nôm.013.004",1,5,5,孫,côn,2,2,KEEP,孫,côn,-4.0,0.1389,{},,QN,孫,tôn,2026-11-20 11:50:25
+"Truyên Vua Quang Trung, Nôm",75,75,"Truyên Vua Quang Trung, Nôm.013.004",1,5,5,孫,côn,2,3,QN,孫,tốn,-4.3034,0.1025,"{""ortho"": 1.1, ""qlm_delta"": -3.345}",,QN,孫,tôn,2026-11-20 11:50:25
+"Truyên Vua Quang Trung, Nôm",75,75,"Truyên Vua Quang Trung, Nôm.013.004",2,6,6,臏,cẫn,1,1,QN,臏,tẫn,-2.3922,0.8331,"{""ortho"": 0.6, ""qlm_delta"": -1.974}",x,QN,臏,tẫn,2026-11-20 11:50:26
+"Truyên Vua Quang Trung, Nôm",75,75,"Truyên Vua Quang Trung, Nôm.013.004",2,6,6,臏,cẫn,1,2,KEEP,臏,cẫn,-4.0,0.1669,{},,QN,臏,tẫn,2026-11-20 11:50:26
+"Truyên Vua Quang Trung, Nôm",88,88,"Truyên Vua Quang Trung, Nôm.014.006",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",93,93,"Truyên Vua Quang Trung, Nôm.015.000",1,1,1,詠,thơ,0,1,KEEP,詠,thơ,-4.0,1.0,{},,UNREVIEWED,詠,thơ,
+"Truyên Vua Quang Trung, Nôm",93,93,"Truyên Vua Quang Trung, Nôm.015.000",2,2,2,詩,rằng,0,1,KEEP,詩,rằng,-4.0,1.0,{},,UNREVIEWED,詩,rằng,
+"Truyên Vua Quang Trung, Nôm",97,97,"Truyên Vua Quang Trung, Nôm.015.004",1,5,5,尒,mấy,3,1,NOM,氽,mấy,1.7992,0.8785,"{""visual_rank"": 1, ""nlm_delta"": 5.678, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 11:50:32
+"Truyên Vua Quang Trung, Nôm",97,97,"Truyên Vua Quang Trung, Nôm.015.004",1,5,5,尒,mấy,3,2,NOM,𠇍,mấy,-0.2616,0.1119,"{""visual_rank"": 1, ""nlm_delta"": 1.556, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 11:50:32
+"Truyên Vua Quang Trung, Nôm",97,97,"Truyên Vua Quang Trung, Nôm.015.004",1,5,5,尒,mấy,3,3,NOM,汆,mấy,-3.0394,0.007,"{""visual_rank"": 16, ""nlm_delta"": 2.421, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 11:50:32
+"Truyên Vua Quang Trung, Nôm",97,97,"Truyên Vua Quang Trung, Nôm.015.004",1,5,5,尒,mấy,3,4,KEEP,尒,mấy,-4.0,0.0027,{},x,KEEP,尒,mấy,2026-11-20 11:50:32
+"Truyên Vua Quang Trung, Nôm",108,108,"Truyên Vua Quang Trung, Nôm.016.006",1,4,4,𤂬,ruổi,2,1,NOM,㩡,ruổi,-2.8017,0.7042,"{""visual_rank"": 1, ""nlm_delta"": -3.524, ""lm_oov"": false}",,KEEP,𤂬,ruổi,2026-11-20 11:51:01
+"Truyên Vua Quang Trung, Nôm",108,108,"Truyên Vua Quang Trung, Nôm.016.006",1,4,4,𤂬,ruổi,2,2,KEEP,𤂬,ruổi,-4.0,0.2125,{},x,KEEP,𤂬,ruổi,2026-11-20 11:51:01
+"Truyên Vua Quang Trung, Nôm",108,108,"Truyên Vua Quang Trung, Nôm.016.006",1,4,4,𤂬,ruổi,2,3,NOM,𥗐,ruổi,-4.9364,0.0833,"{""visual_rank"": 5, ""nlm_delta"": -4.497, ""lm_oov"": false}",,KEEP,𤂬,ruổi,2026-11-20 11:51:01
+"Truyên Vua Quang Trung, Nôm",108,108,"Truyên Vua Quang Trung, Nôm.016.006",2,5,5,𠎣,biển,0,1,KEEP,𠎣,biển,-4.0,1.0,{},,UNREVIEWED,𠎣,biển,
+"Truyên Vua Quang Trung, Nôm",113,114,"Truyên Vua Quang Trung, Nôm.017.001",1,5,5,襾,tây,3,1,NOM,西,tây,2.5448,0.9976,"{""visual_rank"": 1, ""nlm_delta"": 7.169, ""lm_oov"": false}",x,NOM,西,tây,2026-11-20 11:56:04
+"Truyên Vua Quang Trung, Nôm",113,114,"Truyên Vua Quang Trung, Nôm.017.001",1,5,5,襾,tây,3,2,KEEP,襾,tây,-4.0,0.0014,{},,NOM,西,tây,2026-11-20 11:56:04
+"Truyên Vua Quang Trung, Nôm",113,114,"Truyên Vua Quang Trung, Nôm.017.001",1,5,5,襾,tây,3,3,NOM,覀,tây,-4.7359,0.0007,"{""visual_rank"": 13, ""nlm_delta"": -1.555, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 11:56:04
+"Truyên Vua Quang Trung, Nôm",113,114,"Truyên Vua Quang Trung, Nôm.017.001",1,5,5,襾,tây,3,4,NOM,恓,tây,-5.678,0.0003,"{""visual_rank"": 17, ""nlm_delta"": -2.685, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 11:56:04
+"Truyên Vua Quang Trung, Nôm",116,117,"Truyên Vua Quang Trung, Nôm.017.004",1,3,3,颖,đĩnh,2,1,QN,颖,dĩnh,-2.1692,0.6486,"{""ortho"": 0.4, ""qlm_delta"": -3.231}",x,QN,颖,dĩnh,2026-11-20 11:56:13
+"Truyên Vua Quang Trung, Nôm",116,117,"Truyên Vua Quang Trung, Nôm.017.004",1,3,3,颖,đĩnh,2,2,QN,颖,dính,-3.1329,0.2474,"{""ortho"": 0.9, ""qlm_delta"": -1.443}",,QN,颖,dĩnh,2026-11-20 11:56:13
+"Truyên Vua Quang Trung, Nôm",116,117,"Truyên Vua Quang Trung, Nôm.017.004",1,3,3,颖,đĩnh,2,3,KEEP,颖,đĩnh,-4.0,0.104,{},,QN,颖,dĩnh,2026-11-20 11:56:13
+"Truyên Vua Quang Trung, Nôm",117,118,"Truyên Vua Quang Trung, Nôm.017.005",1,1,1,才,cai,3,1,QN,才,tai,-1.6364,0.5488,"{""ortho"": 0.6, ""qlm_delta"": 0.545}",,QN,才,tài,2026-11-20 11:56:20
+"Truyên Vua Quang Trung, Nôm",117,118,"Truyên Vua Quang Trung, Nôm.017.005",1,1,1,才,cai,3,2,QN,才,tài,-2.1262,0.3363,"{""ortho"": 1.1, ""qlm_delta"": 3.913}",x,QN,才,tài,2026-11-20 11:56:20
+"Truyên Vua Quang Trung, Nôm",117,118,"Truyên Vua Quang Trung, Nôm.017.005",1,1,1,才,cai,3,3,QN,才,chài,-3.7967,0.0633,"{""ortho"": 1.1, ""qlm_delta"": -1.656}",,QN,才,tài,2026-11-20 11:56:20
+"Truyên Vua Quang Trung, Nôm",117,118,"Truyên Vua Quang Trung, Nôm.017.005",1,1,1,才,cai,3,4,KEEP,才,cai,-4.0,0.0516,{},,QN,才,tài,2026-11-20 11:56:20
+"Truyên Vua Quang Trung, Nôm",118,119,"Truyên Vua Quang Trung, Nôm.017.006",1,6,6,溈,vời,0,1,KEEP,溈,vời,-4.0,1.0,{},,UNREVIEWED,溈,vời,
+"Truyên Vua Quang Trung, Nôm",122,123,"Truyên Vua Quang Trung, Nôm.017.010",1,1,1,乘,chữa,1,1,KEEP,乘,chữa,-4.0,0.5144,{},,QN,乘,thừa,2026-11-20 11:56:28
+"Truyên Vua Quang Trung, Nôm",122,123,"Truyên Vua Quang Trung, Nôm.017.010",1,1,1,乘,chữa,1,2,QN,乘,thừa,-4.0576,0.4856,"{""ortho"": 1.1, ""qlm_delta"": -2.525}",x,QN,乘,thừa,2026-11-20 11:56:28
+"Truyên Vua Quang Trung, Nôm",124,125,"Truyên Vua Quang Trung, Nôm.018.001",1,4,4,𦊚,vốn,1,1,QN,𦊚,bốn,-3.6083,0.5967,"{""ortho"": 1.0, ""qlm_delta"": -2.028}",,KEEP,𦊚,vốn,2026-11-20 11:56:37
+"Truyên Vua Quang Trung, Nôm",124,125,"Truyên Vua Quang Trung, Nôm.018.001",1,4,4,𦊚,vốn,1,2,KEEP,𦊚,vốn,-4.0,0.4033,{},x,KEEP,𦊚,vốn,2026-11-20 11:56:37
+"Truyên Vua Quang Trung, Nôm",127,128,"Truyên Vua Quang Trung, Nôm.018.004",1,5,5,富,phủ,1,1,QN,富,phú,-1.0998,0.9479,"{""ortho"": 0.5, ""qlm_delta"": 1.334}",x,QN,富,phú,2026-11-20 11:56:46
+"Truyên Vua Quang Trung, Nôm",127,128,"Truyên Vua Quang Trung, Nôm.018.004",1,5,5,富,phủ,1,2,KEEP,富,phủ,-4.0,0.0521,{},,QN,富,phú,2026-11-20 11:56:46
+"Truyên Vua Quang Trung, Nôm",129,130,"Truyên Vua Quang Trung, Nôm.018.006",1,2,2,𢬄,phăng,1,1,KEEP,𢬄,phăng,-4.0,0.6057,{},,NOM,冰,phăng,2026-11-20 11:56:59
+"Truyên Vua Quang Trung, Nôm",129,130,"Truyên Vua Quang Trung, Nôm.018.006",1,2,2,𢬄,phăng,1,2,NOM,冰,phăng,-4.4293,0.3943,"{""visual_rank"": 14, ""nlm_delta"": -0.734, ""lm_oov"": false}",x,NOM,冰,phăng,2026-11-20 11:56:59
+"Truyên Vua Quang Trung, Nôm",130,131,"Truyên Vua Quang Trung, Nôm.018.007",1,4,4,尒,mấy,3,1,NOM,氽,mấy,1.9159,0.8424,"{""visual_rank"": 1, ""nlm_delta"": 5.911, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 11:57:08
+"Truyên Vua Quang Trung, Nôm",130,131,"Truyên Vua Quang Trung, Nôm.018.007",1,4,4,尒,mấy,3,2,NOM,𠇍,mấy,0.1908,0.1501,"{""visual_rank"": 1, ""nlm_delta"": 2.461, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 11:57:08
+"Truyên Vua Quang Trung, Nôm",130,131,"Truyên Vua Quang Trung, Nôm.018.007",1,4,4,尒,mấy,3,3,NOM,汆,mấy,-3.1726,0.0052,"{""visual_rank"": 16, ""nlm_delta"": 2.154, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 11:57:08
+"Truyên Vua Quang Trung, Nôm",130,131,"Truyên Vua Quang Trung, Nôm.018.007",1,4,4,尒,mấy,3,4,KEEP,尒,mấy,-4.0,0.0023,{},x,KEEP,尒,mấy,2026-11-20 11:57:08
+"Truyên Vua Quang Trung, Nôm",131,132,"Truyên Vua Quang Trung, Nôm.018.008",1,3,3,贼,giặc,1,1,NOM,賊,giặc,3.4496,0.9994,"{""visual_rank"": 1, ""nlm_delta"": 8.979, ""lm_oov"": false}",x,NOM,賊,giặc,2026-11-20 11:57:12
+"Truyên Vua Quang Trung, Nôm",131,132,"Truyên Vua Quang Trung, Nôm.018.008",1,3,3,贼,giặc,1,2,KEEP,贼,giặc,-4.0,0.0006,{},,NOM,賊,giặc,2026-11-20 11:57:12
+"Truyên Vua Quang Trung, Nôm",135,136,"Truyên Vua Quang Trung, Nôm.019.001",1,7,7,忊,hả,0,1,KEEP,忊,hả,-4.0,1.0,{},,UNREVIEWED,忊,hả,
+"Truyên Vua Quang Trung, Nôm",136,137,"Truyên Vua Quang Trung, Nôm.019.002",1,1,1,錢,biển,0,1,KEEP,錢,biển,-4.0,1.0,{},,UNREVIEWED,錢,biển,
+"Truyên Vua Quang Trung, Nôm",136,137,"Truyên Vua Quang Trung, Nôm.019.002",2,4,4,住,chí,1,1,QN,住,chú,-2.8026,0.7681,"{""ortho"": 1.0, ""qlm_delta"": 0.658}",x,QN,住,chú,2026-11-20 11:57:18
+"Truyên Vua Quang Trung, Nôm",136,137,"Truyên Vua Quang Trung, Nôm.019.002",2,4,4,住,chí,1,2,KEEP,住,chí,-4.0,0.2319,{},,QN,住,chú,2026-11-20 11:57:18
+"Truyên Vua Quang Trung, Nôm",138,139,"Truyên Vua Quang Trung, Nôm.019.004",1,2,2,千,con,1,1,QN,千,cơn,-2.6898,0.7875,"{""ortho"": 0.4, ""qlm_delta"": -4.966}",x,QN,千,cơn,2026-11-20 11:57:24
+"Truyên Vua Quang Trung, Nôm",138,139,"Truyên Vua Quang Trung, Nôm.019.004",1,2,2,千,con,1,2,KEEP,千,con,-4.0,0.2125,{},,QN,千,cơn,2026-11-20 11:57:24
+"Truyên Vua Quang Trung, Nôm",140,141,"Truyên Vua Quang Trung, Nôm.019.006",1,5,5,夛,đa,0,1,KEEP,夛,đa,-4.0,1.0,{},,UNREVIEWED,夛,đa,
+"Truyên Vua Quang Trung, Nôm",141,142,"Truyên Vua Quang Trung, Nôm.019.007",1,1,1,𥪝,trung,2,1,QN,𥪝,trong,-2.6967,0.707,"{""ortho"": 1.0, ""qlm_delta"": 1.011}",x,QN,𥪝,trong,2026-11-20 11:57:28
+"Truyên Vua Quang Trung, Nôm",141,142,"Truyên Vua Quang Trung, Nôm.019.007",1,1,1,𥪝,trung,2,2,KEEP,𥪝,trung,-4.0,0.192,{},,QN,𥪝,trong,2026-11-20 11:57:28
+"Truyên Vua Quang Trung, Nôm",141,142,"Truyên Vua Quang Trung, Nôm.019.007",1,1,1,𥪝,trung,2,3,QN,𥪝,trông,-4.6427,0.101,"{""ortho"": 1.0, ""qlm_delta"": -5.476}",,QN,𥪝,trong,2026-11-20 11:57:28
+"Truyên Vua Quang Trung, Nôm",141,142,"Truyên Vua Quang Trung, Nôm.019.007",2,5,5,張,trường,4,1,QN,張,trương,-2.4793,0.4085,"{""ortho"": 0.5, ""qlm_delta"": -3.264}",x,QN,張,trương,2026-11-20 11:57:34
+"Truyên Vua Quang Trung, Nôm",141,142,"Truyên Vua Quang Trung, Nôm.019.007",2,5,5,張,trường,4,2,QN,張,trưởng,-3.0756,0.225,"{""ortho"": 0.5, ""qlm_delta"": -5.252}",,QN,張,trương,2026-11-20 11:57:34
+"Truyên Vua Quang Trung, Nôm",141,142,"Truyên Vua Quang Trung, Nôm.019.007",2,5,5,張,trường,4,3,QN,張,trướng,-3.4588,0.1534,"{""ortho"": 0.5, ""qlm_delta"": -6.529}",,QN,張,trương,2026-11-20 11:57:34
+"Truyên Vua Quang Trung, Nôm",141,142,"Truyên Vua Quang Trung, Nôm.019.007",2,5,5,張,trường,4,4,NOM,𦁢,trường,-3.6727,0.1238,"{""visual_rank"": 4, ""nlm_delta"": -2.517, ""lm_oov"": false}",,QN,張,trương,2026-11-20 11:57:34
+"Truyên Vua Quang Trung, Nôm",141,142,"Truyên Vua Quang Trung, Nôm.019.007",2,5,5,張,trường,4,5,KEEP,張,trường,-4.0,0.0893,{},,QN,張,trương,2026-11-20 11:57:34
+"Truyên Vua Quang Trung, Nôm",147,148,"Truyên Vua Quang Trung, Nôm.020.002",1,2,2,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",148,149,"Truyên Vua Quang Trung, Nôm.020.003",1,4,4,嫋,nách,0,1,KEEP,嫋,nách,-4.0,1.0,{},,UNREVIEWED,嫋,nách,
+"Truyên Vua Quang Trung, Nôm",148,149,"Truyên Vua Quang Trung, Nôm.020.003",2,6,6,襾,tây,3,1,NOM,西,tây,2.305,0.9971,"{""visual_rank"": 1, ""nlm_delta"": 6.689, ""lm_oov"": false}",x,NOM,西,tây,2026-11-20 11:57:39
+"Truyên Vua Quang Trung, Nôm",148,149,"Truyên Vua Quang Trung, Nôm.020.003",2,6,6,襾,tây,3,2,KEEP,襾,tây,-4.0,0.0018,{},,NOM,西,tây,2026-11-20 11:57:39
+"Truyên Vua Quang Trung, Nôm",148,149,"Truyên Vua Quang Trung, Nôm.020.003",2,6,6,襾,tây,3,3,NOM,覀,tây,-4.8413,0.0008,"{""visual_rank"": 13, ""nlm_delta"": -1.765, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 11:57:39
+"Truyên Vua Quang Trung, Nôm",148,149,"Truyên Vua Quang Trung, Nôm.020.003",2,6,6,襾,tây,3,4,NOM,恓,tây,-5.9455,0.0003,"{""visual_rank"": 17, ""nlm_delta"": -3.22, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 11:57:39
+"Truyên Vua Quang Trung, Nôm",149,150,"Truyên Vua Quang Trung, Nôm.020.004",1,2,2,𥳪,toan,0,1,KEEP,𥳪,toan,-4.0,1.0,{},,UNREVIEWED,𥳪,toan,
+"Truyên Vua Quang Trung, Nôm",151,152,"Truyên Vua Quang Trung, Nôm.020.006",1,3,3,𣠖,chúa,2,1,QN,𣠖,chưa,-1.2827,0.8619,"{""ortho"": 0.9, ""qlm_delta"": 4.724}",x,QN,𣠖,chưa,2026-11-20 11:57:50
+"Truyên Vua Quang Trung, Nôm",151,152,"Truyên Vua Quang Trung, Nôm.020.006",1,3,3,𣠖,chúa,2,2,QN,𣠖,chửa,-3.6455,0.0812,"{""ortho"": 0.9, ""qlm_delta"": -3.152}",,QN,𣠖,chưa,2026-11-20 11:57:50
+"Truyên Vua Quang Trung, Nôm",151,152,"Truyên Vua Quang Trung, Nôm.020.006",1,3,3,𣠖,chúa,2,3,KEEP,𣠖,chúa,-4.0,0.0569,{},,QN,𣠖,chưa,2026-11-20 11:57:50
+"Truyên Vua Quang Trung, Nôm",154,155,"Truyên Vua Quang Trung, Nôm.020.009",1,2,2,㨓,trao,0,1,KEEP,㨓,trao,-4.0,1.0,{},,UNREVIEWED,㨓,trao,
+"Truyên Vua Quang Trung, Nôm",154,155,"Truyên Vua Quang Trung, Nôm.020.009",2,6,6,拥,dung,3,1,QN,拥,dùng,-1.2013,0.6071,"{""ortho"": 0.5, ""qlm_delta"": 0.996}",x,QN,拥,dùng,2026-11-20 11:58:01
+"Truyên Vua Quang Trung, Nôm",154,155,"Truyên Vua Quang Trung, Nôm.020.009",2,6,6,拥,dung,3,2,NOM,佣,dung,-1.8861,0.306,"{""visual_rank"": 5, ""nlm_delta"": 1.603, ""lm_oov"": false}",,QN,拥,dùng,2026-11-20 11:58:01
+"Truyên Vua Quang Trung, Nôm",154,155,"Truyên Vua Quang Trung, Nôm.020.009",2,6,6,拥,dung,3,3,QN,拥,ung,-3.6993,0.0499,"{""ortho"": 1.0, ""qlm_delta"": -2.331}",,QN,拥,dùng,2026-11-20 11:58:01
+"Truyên Vua Quang Trung, Nôm",154,155,"Truyên Vua Quang Trung, Nôm.020.009",2,6,6,拥,dung,3,4,KEEP,拥,dung,-4.0,0.037,{},,QN,拥,dùng,2026-11-20 11:58:01
+"Truyên Vua Quang Trung, Nôm",158,159,"Truyên Vua Quang Trung, Nôm.021.002",1,1,1,阮,nguyên,2,1,QN,阮,nguyễn,-0.838,0.9533,"{""ortho"": 0.5, ""qlm_delta"": 2.207}",,KEEP,阮,nguyên,2026-11-20 11:58:15
+"Truyên Vua Quang Trung, Nôm",158,159,"Truyên Vua Quang Trung, Nôm.021.002",1,1,1,阮,nguyên,2,2,KEEP,阮,nguyên,-4.0,0.0404,{},x,KEEP,阮,nguyên,2026-11-20 11:58:15
+"Truyên Vua Quang Trung, Nôm",158,159,"Truyên Vua Quang Trung, Nôm.021.002",1,1,1,阮,nguyên,2,3,NOM,杬,nguyên,-5.8458,0.0064,"{""visual_rank"": 8, ""nlm_delta"": -5.1, ""lm_oov"": false}",,KEEP,阮,nguyên,2026-11-20 11:58:15
+"Truyên Vua Quang Trung, Nôm",158,159,"Truyên Vua Quang Trung, Nôm.021.002",2,2,2,宣,cuyên,3,1,QN,宣,tuyên,0.9727,0.7602,"{""ortho"": 0.6, ""qlm_delta"": 9.242}",x,QN,宣,tuyên,2026-11-20 11:58:09
+"Truyên Vua Quang Trung, Nôm",158,159,"Truyên Vua Quang Trung, Nôm.021.002",2,2,2,宣,cuyên,3,2,QN,宣,thuyên,-0.6713,0.1469,"{""ortho"": 1.2, ""qlm_delta"": 9.762}",,QN,宣,tuyên,2026-11-20 11:58:09
+"Truyên Vua Quang Trung, Nôm",158,159,"Truyên Vua Quang Trung, Nôm.021.002",2,2,2,宣,cuyên,3,3,QN,宣,huyên,-1.1868,0.0877,"{""ortho"": 1.0, ""qlm_delta"": 6.044}",,QN,宣,tuyên,2026-11-20 11:58:09
+"Truyên Vua Quang Trung, Nôm",158,159,"Truyên Vua Quang Trung, Nôm.021.002",2,2,2,宣,cuyên,3,4,KEEP,宣,cuyên,-4.0,0.0053,{},,QN,宣,tuyên,2026-11-20 11:58:09
+"Truyên Vua Quang Trung, Nôm",162,163,"Truyên Vua Quang Trung, Nôm.021.006",1,1,1,勢,giết,0,1,KEEP,勢,giết,-4.0,1.0,{},,UNREVIEWED,勢,giết,
+"Truyên Vua Quang Trung, Nôm",162,163,"Truyên Vua Quang Trung, Nôm.021.006",2,6,6,宣,cuyên,3,1,QN,宣,tuyên,-0.6029,0.8431,"{""ortho"": 0.6, ""qlm_delta"": 3.99}",x,QN,宣,tuyên,2026-11-20 11:58:21
+"Truyên Vua Quang Trung, Nôm",162,163,"Truyên Vua Quang Trung, Nôm.021.006",2,6,6,宣,cuyên,3,2,QN,宣,thuyên,-3.1584,0.0655,"{""ortho"": 1.2, ""qlm_delta"": 1.472}",,QN,宣,tuyên,2026-11-20 11:58:21
+"Truyên Vua Quang Trung, Nôm",162,163,"Truyên Vua Quang Trung, Nôm.021.006",2,6,6,宣,cuyên,3,3,QN,宣,huyên,-3.1927,0.0633,"{""ortho"": 1.0, ""qlm_delta"": -0.642}",,QN,宣,tuyên,2026-11-20 11:58:21
+"Truyên Vua Quang Trung, Nôm",162,163,"Truyên Vua Quang Trung, Nôm.021.006",2,6,6,宣,cuyên,3,4,KEEP,宣,cuyên,-4.0,0.0282,{},,QN,宣,tuyên,2026-11-20 11:58:21
+"Truyên Vua Quang Trung, Nôm",170,171,"Truyên Vua Quang Trung, Nôm.022.003",1,1,1,襾,sơn,0,1,KEEP,襾,sơn,-4.0,1.0,{},,UNREVIEWED,襾,sơn,
+"Truyên Vua Quang Trung, Nôm",170,171,"Truyên Vua Quang Trung, Nôm.022.003",2,2,2,丐,tây,0,1,KEEP,丐,tây,-4.0,1.0,{},,UNREVIEWED,丐,tây,
+"Truyên Vua Quang Trung, Nôm",171,172,"Truyên Vua Quang Trung, Nôm.022.004",1,7,7,勢,giúp,0,1,KEEP,勢,giúp,-4.0,1.0,{},,UNREVIEWED,勢,giúp,
+"Truyên Vua Quang Trung, Nôm",173,174,"Truyên Vua Quang Trung, Nôm.022.006",1,8,8,慊,gườm,0,1,KEEP,慊,gườm,-4.0,1.0,{},,UNREVIEWED,慊,gườm,
+"Truyên Vua Quang Trung, Nôm",175,176,"Truyên Vua Quang Trung, Nôm.022.008",1,2,2,伴,mượn,0,1,KEEP,伴,mượn,-4.0,1.0,{},,UNREVIEWED,伴,mượn,
+"Truyên Vua Quang Trung, Nôm",175,176,"Truyên Vua Quang Trung, Nôm.022.008",2,5,5,憚,toan,0,1,KEEP,憚,toan,-4.0,1.0,{},,UNREVIEWED,憚,toan,
+"Truyên Vua Quang Trung, Nôm",176,177,"Truyên Vua Quang Trung, Nôm.022.009",1,5,5,當,đứng,3,1,KEEP,當,đứng,-4.0,0.4535,{},x,KEEP,當,đứng,2026-11-20 11:58:31
+"Truyên Vua Quang Trung, Nôm",176,177,"Truyên Vua Quang Trung, Nôm.022.009",1,5,5,當,đứng,3,2,QN,當,đáng,-4.263,0.3486,"{""ortho"": 1.0, ""qlm_delta"": -4.21}",,KEEP,當,đứng,2026-11-20 11:58:31
+"Truyên Vua Quang Trung, Nôm",176,177,"Truyên Vua Quang Trung, Nôm.022.009",1,5,5,當,đứng,3,3,QN,當,đấng,-5.0149,0.1644,"{""ortho"": 1.0, ""qlm_delta"": -6.716}",,KEEP,當,đứng,2026-11-20 11:58:31
+"Truyên Vua Quang Trung, Nôm",176,177,"Truyên Vua Quang Trung, Nôm.022.009",1,5,5,當,đứng,3,4,QN,當,đũng,-6.6046,0.0335,"{""ortho"": 0.9, ""qlm_delta"": -13.015}",,KEEP,當,đứng,2026-11-20 11:58:31
+"Truyên Vua Quang Trung, Nôm",178,179,"Truyên Vua Quang Trung, Nôm.023.000",1,1,1,西,cây,1,1,QN,西,tây,-1.9204,0.8889,"{""ortho"": 0.6, ""qlm_delta"": -0.401}",x,QN,西,tây,2026-11-20 11:58:35
+"Truyên Vua Quang Trung, Nôm",178,179,"Truyên Vua Quang Trung, Nôm.023.000",1,1,1,西,cây,1,2,KEEP,西,cây,-4.0,0.1111,{},,QN,西,tây,2026-11-20 11:58:35
+"Truyên Vua Quang Trung, Nôm",178,179,"Truyên Vua Quang Trung, Nôm.023.000",2,3,3,𤑟,rỏ,3,1,QN,𤑟,rõ,-1.3821,0.8288,"{""ortho"": 0.5, ""qlm_delta"": 0.393}",x,QN,𤑟,rõ,2026-11-20 11:58:37
+"Truyên Vua Quang Trung, Nôm",178,179,"Truyên Vua Quang Trung, Nôm.023.000",2,3,3,𤑟,rỏ,3,2,QN,𤑟,tỏ,-3.9315,0.0648,"{""ortho"": 1.0, ""qlm_delta"": -3.105}",,QN,𤑟,rõ,2026-11-20 11:58:37
+"Truyên Vua Quang Trung, Nôm",178,179,"Truyên Vua Quang Trung, Nôm.023.000",2,3,3,𤑟,rỏ,3,3,KEEP,𤑟,rỏ,-4.0,0.0605,{},,QN,𤑟,rõ,2026-11-20 11:58:37
+"Truyên Vua Quang Trung, Nôm",178,179,"Truyên Vua Quang Trung, Nôm.023.000",2,3,3,𤑟,rỏ,3,4,QN,𤑟,rỡ,-4.2751,0.0459,"{""ortho"": 0.9, ""qlm_delta"": -5.25}",,QN,𤑟,rõ,2026-11-20 11:58:37
+"Truyên Vua Quang Trung, Nôm",180,181,"Truyên Vua Quang Trung, Nôm.023.002",1,3,3,尒,mấy,3,1,NOM,氽,mấy,2.5826,0.953,"{""visual_rank"": 1, ""nlm_delta"": 7.245, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 11:58:46
+"Truyên Vua Quang Trung, Nôm",180,181,"Truyên Vua Quang Trung, Nôm.023.002",1,3,3,尒,mấy,3,2,NOM,𠇍,mấy,-0.8557,0.0306,"{""visual_rank"": 1, ""nlm_delta"": 0.368, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 11:58:46
+"Truyên Vua Quang Trung, Nôm",180,181,"Truyên Vua Quang Trung, Nôm.023.002",1,3,3,尒,mấy,3,3,NOM,汆,mấy,-1.5675,0.015,"{""visual_rank"": 16, ""nlm_delta"": 5.365, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 11:58:46
+"Truyên Vua Quang Trung, Nôm",180,181,"Truyên Vua Quang Trung, Nôm.023.002",1,3,3,尒,mấy,3,4,KEEP,尒,mấy,-4.0,0.0013,{},x,KEEP,尒,mấy,2026-11-20 11:58:46
+"Truyên Vua Quang Trung, Nôm",181,182,"Truyên Vua Quang Trung, Nôm.023.003",1,5,5,西,cây,1,1,QN,西,tây,-1.5034,0.9239,"{""ortho"": 0.6, ""qlm_delta"": 0.989}",x,QN,西,tây,2026-11-20 11:58:50
+"Truyên Vua Quang Trung, Nôm",181,182,"Truyên Vua Quang Trung, Nôm.023.003",1,5,5,西,cây,1,2,KEEP,西,cây,-4.0,0.0761,{},,QN,西,tây,2026-11-20 11:58:50
+"Truyên Vua Quang Trung, Nôm",184,185,"Truyên Vua Quang Trung, Nôm.023.006",1,3,3,專,chuyện,3,1,QN,專,chuyên,-0.2014,0.9112,"{""ortho"": 0.5, ""qlm_delta"": 4.329}",x,QN,專,chuyên,2026-11-20 11:58:57
+"Truyên Vua Quang Trung, Nôm",184,185,"Truyên Vua Quang Trung, Nôm.023.006",1,3,3,專,chuyện,3,2,QN,專,chuyến,-3.2465,0.0434,"{""ortho"": 0.5, ""qlm_delta"": -5.822}",,QN,專,chuyên,2026-11-20 11:58:57
+"Truyên Vua Quang Trung, Nôm",184,185,"Truyên Vua Quang Trung, Nôm.023.006",1,3,3,專,chuyện,3,3,NOM,傳,chuyện,-3.7968,0.025,"{""visual_rank"": 4, ""nlm_delta"": -2.765, ""lm_oov"": false}",,QN,專,chuyên,2026-11-20 11:58:57
+"Truyên Vua Quang Trung, Nôm",184,185,"Truyên Vua Quang Trung, Nôm.023.006",1,3,3,專,chuyện,3,4,KEEP,專,chuyện,-4.0,0.0204,{},,QN,專,chuyên,2026-11-20 11:58:57
+"Truyên Vua Quang Trung, Nôm",184,185,"Truyên Vua Quang Trung, Nôm.023.006",2,5,5,𢜠,miễng,0,1,KEEP,𢜠,miễng,-4.0,1.0,{},,UNREVIEWED,𢜠,miễng,
+"Truyên Vua Quang Trung, Nôm",184,185,"Truyên Vua Quang Trung, Nôm.023.006",3,6,6,忱,thẫm,1,1,QN,忱,thầm,-0.6078,0.9675,"{""ortho"": 0.5, ""qlm_delta"": 2.974}",x,QN,忱,thầm,2026-11-20 11:59:01
+"Truyên Vua Quang Trung, Nôm",184,185,"Truyên Vua Quang Trung, Nôm.023.006",3,6,6,忱,thẫm,1,2,KEEP,忱,thẫm,-4.0,0.0325,{},,QN,忱,thầm,2026-11-20 11:59:01
+"Truyên Vua Quang Trung, Nôm",186,187,"Truyên Vua Quang Trung, Nôm.023.008",1,5,5,揲,dịp,5,1,NOM,擛,dịp,-1.5903,0.8101,"{""visual_rank"": 1, ""nlm_delta"": -1.101, ""lm_oov"": false}",,KEEP,揲,dịp,2026-11-20 11:59:20
+"Truyên Vua Quang Trung, Nôm",186,187,"Truyên Vua Quang Trung, Nôm.023.008",1,5,5,揲,dịp,5,2,KEEP,揲,dịp,-4.0,0.0728,{},x,KEEP,揲,dịp,2026-11-20 11:59:20
+"Truyên Vua Quang Trung, Nôm",186,187,"Truyên Vua Quang Trung, Nôm.023.008",1,5,5,揲,dịp,5,3,QN,揲,dẹp,-4.1678,0.0615,"{""ortho"": 1.0, ""qlm_delta"": -3.893}",,KEEP,揲,dịp,2026-11-20 11:59:20
+"Truyên Vua Quang Trung, Nôm",186,187,"Truyên Vua Quang Trung, Nôm.023.008",1,5,5,揲,dịp,5,4,QN,揲,diệp,-4.4087,0.0484,"{""ortho"": 1.0, ""qlm_delta"": -4.696}",,KEEP,揲,dịp,2026-11-20 11:59:20
+"Truyên Vua Quang Trung, Nôm",186,187,"Truyên Vua Quang Trung, Nôm.023.008",1,5,5,揲,dịp,5,5,NOM,葉,dịp,-6.3322,0.0071,"{""visual_rank"": 10, ""nlm_delta"": -5.471, ""lm_oov"": false}",,KEEP,揲,dịp,2026-11-20 11:59:20
+"Truyên Vua Quang Trung, Nôm",186,187,"Truyên Vua Quang Trung, Nôm.023.008",1,5,5,揲,dịp,5,6,NOM,堞,dịp,-10.0132,0.0002,"{""visual_rank"": 13, ""nlm_delta"": -12.109, ""lm_oov"": false}",,KEEP,揲,dịp,2026-11-20 11:59:20
+"Truyên Vua Quang Trung, Nôm",187,188,"Truyên Vua Quang Trung, Nôm.023.009",1,3,3,五,ngủ,1,1,QN,五,ngũ,-0.104,0.9801,"{""ortho"": 0.5, ""qlm_delta"": 4.653}",x,QN,五,ngũ,2026-11-20 11:59:32
+"Truyên Vua Quang Trung, Nôm",187,188,"Truyên Vua Quang Trung, Nôm.023.009",1,3,3,五,ngủ,1,2,KEEP,五,ngủ,-4.0,0.0199,{},,QN,五,ngũ,2026-11-20 11:59:32
+"Truyên Vua Quang Trung, Nôm",188,189,"Truyên Vua Quang Trung, Nôm.023.010",1,4,4,󱷷,giữ,0,1,KEEP,󱷷,giữ,-4.0,1.0,{},,UNREVIEWED,󱷷,giữ,
+"Truyên Vua Quang Trung, Nôm",189,190,"Truyên Vua Quang Trung, Nôm.024.000",1,5,5,𤍊,tổ,1,1,QN,𤍊,tỏ,-2.4152,0.8299,"{""ortho"": 0.4, ""qlm_delta"": -4.051}",x,QN,𤍊,tỏ,2026-11-20 11:59:38
+"Truyên Vua Quang Trung, Nôm",189,190,"Truyên Vua Quang Trung, Nôm.024.000",1,5,5,𤍊,tổ,1,2,KEEP,𤍊,tổ,-4.0,0.1701,{},,QN,𤍊,tỏ,2026-11-20 11:59:38
+"Truyên Vua Quang Trung, Nôm",202,203,"Truyên Vua Quang Trung, Nôm.025.002",1,1,1,遷,chiên,2,1,QN,遷,thiên,-1.1025,0.9326,"{""ortho"": 0.6, ""qlm_delta"": 2.325}",x,QN,遷,thiên,2026-11-20 11:59:44
+"Truyên Vua Quang Trung, Nôm",202,203,"Truyên Vua Quang Trung, Nôm.025.002",1,1,1,遷,chiên,2,2,KEEP,遷,chiên,-4.0,0.0514,{},,QN,遷,thiên,2026-11-20 11:59:44
+"Truyên Vua Quang Trung, Nôm",202,203,"Truyên Vua Quang Trung, Nôm.025.002",1,1,1,遷,chiên,2,3,NOM,邅,chiên,-5.1692,0.016,"{""visual_rank"": 13, ""nlm_delta"": -2.421, ""lm_oov"": false}",,QN,遷,thiên,2026-11-20 11:59:44
+"Truyên Vua Quang Trung, Nôm",205,206,"Truyên Vua Quang Trung, Nôm.025.005",1,7,7,𤼸,giảng,1,1,QN,𤼸,giâng,-3.8629,0.5342,"{""ortho"": 0.9, ""qlm_delta"": -3.876}",x,QN,𤼸,giâng,2026-11-20 11:59:51
+"Truyên Vua Quang Trung, Nôm",205,206,"Truyên Vua Quang Trung, Nôm.025.005",1,7,7,𤼸,giảng,1,2,KEEP,𤼸,giảng,-4.0,0.4658,{},,QN,𤼸,giâng,2026-11-20 11:59:51
+"Truyên Vua Quang Trung, Nôm",219,220,"Truyên Vua Quang Trung, Nôm.026.008",1,1,1,西,cây,1,1,QN,西,tây,-1.468,0.9264,"{""ortho"": 0.6, ""qlm_delta"": 1.107}",x,QN,西,tây,2026-11-20 11:59:55
+"Truyên Vua Quang Trung, Nôm",219,220,"Truyên Vua Quang Trung, Nôm.026.008",1,1,1,西,cây,1,2,KEEP,西,cây,-4.0,0.0736,{},,QN,西,tây,2026-11-20 11:59:55
+"Truyên Vua Quang Trung, Nôm",220,221,"Truyên Vua Quang Trung, Nôm.026.009",1,2,2,卞,bên,3,1,QN,卞,bền,-2.0109,0.5471,"{""ortho"": 0.5, ""qlm_delta"": -1.703}",,KEEP,卞,bên,2026-11-20 12:00:05
+"Truyên Vua Quang Trung, Nôm",220,221,"Truyên Vua Quang Trung, Nôm.026.009",1,2,2,卞,bên,3,2,QN,卞,bện,-2.8748,0.2306,"{""ortho"": 0.5, ""qlm_delta"": -4.583}",,KEEP,卞,bên,2026-11-20 12:00:05
+"Truyên Vua Quang Trung, Nôm",220,221,"Truyên Vua Quang Trung, Nôm.026.009",1,2,2,卞,bên,3,3,QN,卞,bèn,-3.322,0.1475,"{""ortho"": 0.9, ""qlm_delta"": -2.073}",,KEEP,卞,bên,2026-11-20 12:00:05
+"Truyên Vua Quang Trung, Nôm",220,221,"Truyên Vua Quang Trung, Nôm.026.009",1,2,2,卞,bên,3,4,KEEP,卞,bên,-4.0,0.0749,{},x,KEEP,卞,bên,2026-11-20 12:00:05
+"Truyên Vua Quang Trung, Nôm",222,223,"Truyên Vua Quang Trung, Nôm.027.000",1,1,1,坦,dất,3,1,QN,坦,đất,-0.1317,0.9433,"{""ortho"": 0.4, ""qlm_delta"": 3.561}",x,QN,坦,đất,2026-11-20 12:00:11
+"Truyên Vua Quang Trung, Nôm",222,223,"Truyên Vua Quang Trung, Nôm.027.000",1,1,1,坦,dất,3,2,KEEP,坦,dất,-4.0,0.0197,{},,QN,坦,đất,2026-11-20 12:00:11
+"Truyên Vua Quang Trung, Nôm",222,223,"Truyên Vua Quang Trung, Nôm.027.000",1,1,1,坦,dất,3,3,QN,坦,đật,-4.0276,0.0192,"{""ortho"": 0.9, ""qlm_delta"": -4.425}",,QN,坦,đất,2026-11-20 12:00:11
+"Truyên Vua Quang Trung, Nôm",222,223,"Truyên Vua Quang Trung, Nôm.027.000",1,1,1,坦,dất,3,4,QN,坦,đắt,-4.1031,0.0178,"{""ortho"": 0.8, ""qlm_delta"": -5.677}",,QN,坦,đất,2026-11-20 12:00:11
+"Truyên Vua Quang Trung, Nôm",222,223,"Truyên Vua Quang Trung, Nôm.027.000",2,4,4,坦,dất,3,1,QN,坦,đất,-1.1351,0.8678,"{""ortho"": 0.4, ""qlm_delta"": 0.216}",x,QN,坦,đất,2026-11-20 12:00:12
+"Truyên Vua Quang Trung, Nôm",222,223,"Truyên Vua Quang Trung, Nôm.027.000",2,4,4,坦,dất,3,2,KEEP,坦,dất,-4.0,0.0495,{},,QN,坦,đất,2026-11-20 12:00:12
+"Truyên Vua Quang Trung, Nôm",222,223,"Truyên Vua Quang Trung, Nôm.027.000",2,4,4,坦,dất,3,3,QN,坦,đắt,-4.1469,0.0427,"{""ortho"": 0.8, ""qlm_delta"": -5.823}",,QN,坦,đất,2026-11-20 12:00:12
+"Truyên Vua Quang Trung, Nôm",222,223,"Truyên Vua Quang Trung, Nôm.027.000",2,4,4,坦,dất,3,4,QN,坦,đật,-4.2121,0.04,"{""ortho"": 0.9, ""qlm_delta"": -5.04}",,QN,坦,đất,2026-11-20 12:00:12
+"Truyên Vua Quang Trung, Nôm",223,224,"Truyên Vua Quang Trung, Nôm.027.001",1,5,5,雄,hưng,2,1,QN,雄,hung,-3.3306,0.4191,"{""ortho"": 0.4, ""qlm_delta"": -7.102}",,QN,雄,hùng,2026-11-20 12:00:18
+"Truyên Vua Quang Trung, Nôm",223,224,"Truyên Vua Quang Trung, Nôm.027.001",1,5,5,雄,hưng,2,2,QN,雄,hùng,-3.4653,0.3663,"{""ortho"": 0.9, ""qlm_delta"": -2.551}",x,QN,雄,hùng,2026-11-20 12:00:18
+"Truyên Vua Quang Trung, Nôm",223,224,"Truyên Vua Quang Trung, Nôm.027.001",1,5,5,雄,hưng,2,3,KEEP,雄,hưng,-4.0,0.2146,{},,QN,雄,hùng,2026-11-20 12:00:18
+"Truyên Vua Quang Trung, Nôm",226,227,"Truyên Vua Quang Trung, Nôm.027.004",1,6,6,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",228,229,"Truyên Vua Quang Trung, Nôm.027.006",1,3,3,朂,huế,1,1,KEEP,朂,huế,-4.0,0.5224,{},,QN,朂,húc,2026-11-20 12:00:26
+"Truyên Vua Quang Trung, Nôm",228,229,"Truyên Vua Quang Trung, Nôm.027.006",1,3,3,朂,huế,1,2,QN,朂,húc,-4.0895,0.4776,"{""ortho"": 1.0, ""qlm_delta"": -3.632}",x,QN,朂,húc,2026-11-20 12:00:26
+"Truyên Vua Quang Trung, Nôm",229,230,"Truyên Vua Quang Trung, Nôm.027.007",1,1,1,朂,huế,1,1,QN,朂,húc,-0.7029,0.9643,"{""ortho"": 1.0, ""qlm_delta"": 7.657}",x,QN,朂,húc,2026-11-20 12:00:38
+"Truyên Vua Quang Trung, Nôm",229,230,"Truyên Vua Quang Trung, Nôm.027.007",1,1,1,朂,huế,1,2,KEEP,朂,huế,-4.0,0.0357,{},,QN,朂,húc,2026-11-20 12:00:38
+"Truyên Vua Quang Trung, Nôm",229,230,"Truyên Vua Quang Trung, Nôm.027.007",2,3,3,朂,huế,1,1,QN,朂,húc,-3.3394,0.6594,"{""ortho"": 1.0, ""qlm_delta"": -1.131}",x,QN,朂,húc,2026-11-20 12:00:39
+"Truyên Vua Quang Trung, Nôm",229,230,"Truyên Vua Quang Trung, Nôm.027.007",2,3,3,朂,huế,1,2,KEEP,朂,huế,-4.0,0.3406,{},,QN,朂,húc,2026-11-20 12:00:39
+"Truyên Vua Quang Trung, Nôm",229,230,"Truyên Vua Quang Trung, Nôm.027.007",3,4,4,𠹾,thẹo,0,1,KEEP,𠹾,thẹo,-4.0,1.0,{},,UNREVIEWED,𠹾,thẹo,
+"Truyên Vua Quang Trung, Nôm",229,230,"Truyên Vua Quang Trung, Nôm.027.007",4,7,7,寄,xứng,0,1,KEEP,寄,xứng,-4.0,1.0,{},,UNREVIEWED,寄,xứng,
+"Truyên Vua Quang Trung, Nôm",231,232,"Truyên Vua Quang Trung, Nôm.027.009",1,1,1,𧘇,cậy,0,1,KEEP,𧘇,cậy,-4.0,1.0,{},,UNREVIEWED,𧘇,cậy,
+"Truyên Vua Quang Trung, Nôm",231,232,"Truyên Vua Quang Trung, Nôm.027.009",2,2,2,恬,đêm,1,1,QN,恬,đềm,-2.8303,0.7631,"{""ortho"": 0.5, ""qlm_delta"": -4.434}",x,QN,恬,đềm,2026-11-20 12:00:50
+"Truyên Vua Quang Trung, Nôm",231,232,"Truyên Vua Quang Trung, Nôm.027.009",2,2,2,恬,đêm,1,2,KEEP,恬,đêm,-4.0,0.2369,{},,QN,恬,đềm,2026-11-20 12:00:50
+"Truyên Vua Quang Trung, Nôm",233,234,"Truyên Vua Quang Trung, Nôm.028.000",1,2,2,拥,dung,3,1,QN,拥,dùng,-2.6358,0.5422,"{""ortho"": 0.5, ""qlm_delta"": -3.786}",x,QN,拥,dùng,2026-11-20 12:00:55
+"Truyên Vua Quang Trung, Nôm",233,234,"Truyên Vua Quang Trung, Nôm.028.000",1,2,2,拥,dung,3,2,NOM,佣,dung,-3.4958,0.2295,"{""visual_rank"": 5, ""nlm_delta"": -1.616, ""lm_oov"": false}",,QN,拥,dùng,2026-11-20 12:00:55
+"Truyên Vua Quang Trung, Nôm",233,234,"Truyên Vua Quang Trung, Nôm.028.000",1,2,2,拥,dung,3,3,KEEP,拥,dung,-4.0,0.1386,{},,QN,拥,dùng,2026-11-20 12:00:55
+"Truyên Vua Quang Trung, Nôm",233,234,"Truyên Vua Quang Trung, Nôm.028.000",1,2,2,拥,dung,3,4,QN,拥,ung,-4.4348,0.0897,"{""ortho"": 1.0, ""qlm_delta"": -4.783}",,QN,拥,dùng,2026-11-20 12:00:55
+"Truyên Vua Quang Trung, Nôm",234,235,"Truyên Vua Quang Trung, Nôm.028.001",1,4,4,𤬄,vuốt,0,1,KEEP,𤬄,vuốt,-4.0,1.0,{},,UNREVIEWED,𤬄,vuốt,
+"Truyên Vua Quang Trung, Nôm",235,236,"Truyên Vua Quang Trung, Nôm.028.002",1,6,6,乎,bình,0,1,KEEP,乎,bình,-4.0,1.0,{},,UNREVIEWED,乎,bình,
+"Truyên Vua Quang Trung, Nôm",239,240,"Truyên Vua Quang Trung, Nôm.028.006",1,6,6,鐄,vang,1,1,QN,鐄,vàng,-1.4768,0.9257,"{""ortho"": 0.5, ""qlm_delta"": 0.077}",x,QN,鐄,vàng,2026-11-20 12:01:02
+"Truyên Vua Quang Trung, Nôm",239,240,"Truyên Vua Quang Trung, Nôm.028.006",1,6,6,鐄,vang,1,2,KEEP,鐄,vang,-4.0,0.0743,{},,QN,鐄,vàng,2026-11-20 12:01:02
+"Truyên Vua Quang Trung, Nôm",241,242,"Truyên Vua Quang Trung, Nôm.028.008",1,1,1,𦕅,ngửa,0,1,KEEP,𦕅,ngửa,-4.0,1.0,{},,UNREVIEWED,𦕅,ngửa,
+"Truyên Vua Quang Trung, Nôm",246,247,"Truyên Vua Quang Trung, Nôm.029.002",1,1,1,卞,bên,3,1,QN,卞,bện,-1.3364,0.7465,"{""ortho"": 0.5, ""qlm_delta"": 0.545}",,KEEP,卞,bên,2026-11-20 12:02:01
+"Truyên Vua Quang Trung, Nôm",246,247,"Truyên Vua Quang Trung, Nôm.029.002",1,1,1,卞,bên,3,2,QN,卞,bền,-2.7749,0.1771,"{""ortho"": 0.5, ""qlm_delta"": -4.25}",,KEEP,卞,bên,2026-11-20 12:02:01
+"Truyên Vua Quang Trung, Nôm",246,247,"Truyên Vua Quang Trung, Nôm.029.002",1,1,1,卞,bên,3,3,KEEP,卞,bên,-4.0,0.052,{},x,KEEP,卞,bên,2026-11-20 12:02:01
+"Truyên Vua Quang Trung, Nôm",246,247,"Truyên Vua Quang Trung, Nôm.029.002",1,1,1,卞,bên,3,4,QN,卞,bèn,-4.7604,0.0243,"{""ortho"": 0.9, ""qlm_delta"": -6.868}",,KEEP,卞,bên,2026-11-20 12:02:01
+"Truyên Vua Quang Trung, Nôm",246,247,"Truyên Vua Quang Trung, Nôm.029.002",2,6,6,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",249,250,"Truyên Vua Quang Trung, Nôm.029.005",1,1,1,𦦙,cứ,2,1,QN,𦦙,cử,1.7578,0.6521,"{""ortho"": 0.5, ""qlm_delta"": 10.859}",x,QN,𦦙,cử,2026-11-20 12:02:10
+"Truyên Vua Quang Trung, Nôm",249,250,"Truyên Vua Quang Trung, Nôm.029.005",1,1,1,𦦙,cứ,2,2,QN,𦦙,cữ,1.1234,0.3458,"{""ortho"": 0.5, ""qlm_delta"": 8.745}",,QN,𦦙,cử,2026-11-20 12:02:10
+"Truyên Vua Quang Trung, Nôm",249,250,"Truyên Vua Quang Trung, Nôm.029.005",1,1,1,𦦙,cứ,2,3,KEEP,𦦙,cứ,-4.0,0.0021,{},,QN,𦦙,cử,2026-11-20 12:02:10
+"Truyên Vua Quang Trung, Nôm",253,254,"Truyên Vua Quang Trung, Nôm.029.009",1,1,1,𢰗,gượng,0,1,KEEP,𢰗,gượng,-4.0,1.0,{},,UNREVIEWED,𢰗,gượng,
+"Truyên Vua Quang Trung, Nôm",253,254,"Truyên Vua Quang Trung, Nôm.029.009",2,3,3,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",254,255,"Truyên Vua Quang Trung, Nôm.029.010",1,6,6,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",255,256,"Truyên Vua Quang Trung, Nôm.030.000",1,6,6,厨,chua,1,1,QN,厨,chùa,-0.8241,0.9599,"{""ortho"": 0.5, ""qlm_delta"": 2.253}",,KEEP,厨,chua,2026-11-20 12:02:16
+"Truyên Vua Quang Trung, Nôm",255,256,"Truyên Vua Quang Trung, Nôm.030.000",1,6,6,厨,chua,1,2,KEEP,厨,chua,-4.0,0.0401,{},x,KEEP,厨,chua,2026-11-20 12:02:16
+"Truyên Vua Quang Trung, Nôm",260,261,"Truyên Vua Quang Trung, Nôm.030.005",1,4,4,烈,biệt,2,1,KEEP,烈,biệt,-4.0,0.633,{},x,KEEP,烈,biệt,2026-11-20 12:02:26
+"Truyên Vua Quang Trung, Nôm",260,261,"Truyên Vua Quang Trung, Nôm.030.005",1,4,4,烈,biệt,2,2,QN,烈,liệt,-5.0049,0.2318,"{""ortho"": 1.0, ""qlm_delta"": -6.683}",,KEEP,烈,biệt,2026-11-20 12:02:26
+"Truyên Vua Quang Trung, Nôm",260,261,"Truyên Vua Quang Trung, Nôm.030.005",1,4,4,烈,biệt,2,3,QN,烈,riệt,-5.5436,0.1352,"{""ortho"": 1.0, ""qlm_delta"": -8.479}",,KEEP,烈,biệt,2026-11-20 12:02:26
+"Truyên Vua Quang Trung, Nôm",263,264,"Truyên Vua Quang Trung, Nôm.030.008",1,1,1,襾,tây,3,1,NOM,西,tây,3.3748,0.9985,"{""visual_rank"": 1, ""nlm_delta"": 8.829, ""lm_oov"": false}",x,NOM,西,tây,2026-11-20 12:02:30
+"Truyên Vua Quang Trung, Nôm",263,264,"Truyên Vua Quang Trung, Nôm.030.008",1,1,1,襾,tây,3,2,NOM,覀,tây,-3.8737,0.0007,"{""visual_rank"": 13, ""nlm_delta"": 0.17, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 12:02:30
+"Truyên Vua Quang Trung, Nôm",263,264,"Truyên Vua Quang Trung, Nôm.030.008",1,1,1,襾,tây,3,3,KEEP,襾,tây,-4.0,0.0006,{},,NOM,西,tây,2026-11-20 12:02:30
+"Truyên Vua Quang Trung, Nôm",263,264,"Truyên Vua Quang Trung, Nôm.030.008",1,1,1,襾,tây,3,4,NOM,恓,tây,-5.4236,0.0002,"{""visual_rank"": 17, ""nlm_delta"": -2.176, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 12:02:30
+"Truyên Vua Quang Trung, Nôm",269,270,"Truyên Vua Quang Trung, Nôm.031.003",1,3,3,㤗,chái,1,1,QN,㤗,thái,-0.3525,0.9746,"{""ortho"": 0.6, ""qlm_delta"": 4.825}",x,QN,㤗,thái,2026-11-20 12:02:34
+"Truyên Vua Quang Trung, Nôm",269,270,"Truyên Vua Quang Trung, Nôm.031.003",1,3,3,㤗,chái,1,2,KEEP,㤗,chái,-4.0,0.0254,{},,QN,㤗,thái,2026-11-20 12:02:34
+"Truyên Vua Quang Trung, Nôm",270,271,"Truyên Vua Quang Trung, Nôm.031.004",1,1,1,𢢅,chiễu,2,1,QN,𢢅,chiều,-0.3935,0.5893,"{""ortho"": 0.5, ""qlm_delta"": 3.688}",x,QN,𢢅,chiều,2026-11-20 12:02:41
+"Truyên Vua Quang Trung, Nôm",270,271,"Truyên Vua Quang Trung, Nôm.031.004",1,1,1,𢢅,chiễu,2,2,QN,𢢅,chiêu,-0.7942,0.3947,"{""ortho"": 0.5, ""qlm_delta"": 2.353}",,QN,𢢅,chiều,2026-11-20 12:02:41
+"Truyên Vua Quang Trung, Nôm",270,271,"Truyên Vua Quang Trung, Nôm.031.004",1,1,1,𢢅,chiễu,2,3,KEEP,𢢅,chiễu,-4.0,0.016,{},,QN,𢢅,chiều,2026-11-20 12:02:41
+"Truyên Vua Quang Trung, Nôm",272,273,"Truyên Vua Quang Trung, Nôm.031.006",1,3,3,欺,khí,2,1,QN,欺,khi,-0.9949,0.9196,"{""ortho"": 0.5, ""qlm_delta"": 1.684}",x,QN,欺,khi,2026-11-20 12:02:46
+"Truyên Vua Quang Trung, Nôm",272,273,"Truyên Vua Quang Trung, Nôm.031.006",1,3,3,欺,khí,2,2,KEEP,欺,khí,-4.0,0.0455,{},,QN,欺,khi,2026-11-20 12:02:46
+"Truyên Vua Quang Trung, Nôm",272,273,"Truyên Vua Quang Trung, Nôm.031.006",1,3,3,欺,khí,2,3,QN,欺,khị,-4.267,0.0349,"{""ortho"": 0.5, ""qlm_delta"": -9.223}",,QN,欺,khi,2026-11-20 12:02:46
+"Truyên Vua Quang Trung, Nôm",277,278,"Truyên Vua Quang Trung, Nôm.032.000",1,2,2,爫,lam,2,1,QN,爫,làm,-1.0187,0.9438,"{""ortho"": 0.5, ""qlm_delta"": 1.604}",x,QN,爫,làm,2026-11-20 12:02:52
+"Truyên Vua Quang Trung, Nôm",277,278,"Truyên Vua Quang Trung, Nôm.032.000",1,2,2,爫,lam,2,2,KEEP,爫,lam,-4.0,0.0479,{},,QN,爫,làm,2026-11-20 12:02:52
+"Truyên Vua Quang Trung, Nôm",277,278,"Truyên Vua Quang Trung, Nôm.032.000",1,2,2,爫,lam,2,3,QN,爫,lòm,-5.7448,0.0084,"{""ortho"": 1.1, ""qlm_delta"": -8.149}",,QN,爫,làm,2026-11-20 12:02:52
+"Truyên Vua Quang Trung, Nôm",279,280,"Truyên Vua Quang Trung, Nôm.032.002",1,7,7,祸,vạ,1,1,NOM,禍,vạ,-2.8863,0.7528,"{""visual_rank"": 4, ""nlm_delta"": -0.944, ""lm_oov"": false}",,KEEP,祸,vạ,2026-11-20 12:03:01
+"Truyên Vua Quang Trung, Nôm",279,280,"Truyên Vua Quang Trung, Nôm.032.002",1,7,7,祸,vạ,1,2,KEEP,祸,vạ,-4.0,0.2472,{},x,KEEP,祸,vạ,2026-11-20 12:03:01
+"Truyên Vua Quang Trung, Nôm",280,281,"Truyên Vua Quang Trung, Nôm.032.003",1,1,1,𠂫,bên,1,1,KEEP,𠂫,bên,-4.0,0.7746,{},,QN,𠂫,bèn,2026-11-20 12:03:05
+"Truyên Vua Quang Trung, Nôm",280,281,"Truyên Vua Quang Trung, Nôm.032.003",1,1,1,𠂫,bên,1,2,QN,𠂫,bèn,-5.2342,0.2254,"{""ortho"": 0.9, ""qlm_delta"": -8.447}",x,QN,𠂫,bèn,2026-11-20 12:03:05
+"Truyên Vua Quang Trung, Nôm",283,284,"Truyên Vua Quang Trung, Nôm.032.006",1,1,1,尊,còn,1,1,QN,尊,ton,-3.2018,0.6896,"{""ortho"": 1.1, ""qlm_delta"": 0.327}",x,QN,尊,ton,2026-11-20 12:32:26
+"Truyên Vua Quang Trung, Nôm",283,284,"Truyên Vua Quang Trung, Nôm.032.006",1,1,1,尊,còn,1,2,KEEP,尊,còn,-4.0,0.3104,{},,QN,尊,ton,2026-11-20 12:32:26
+"Truyên Vua Quang Trung, Nôm",283,284,"Truyên Vua Quang Trung, Nôm.032.006",2,4,4,容,khách,2,1,NOM,客,khách,-1.4014,0.9305,"{""visual_rank"": 1, ""nlm_delta"": -0.723, ""lm_oov"": false}",x,NOM,客,khách,2026-11-20 12:32:27
+"Truyên Vua Quang Trung, Nôm",283,284,"Truyên Vua Quang Trung, Nôm.032.006",2,4,4,容,khách,2,2,KEEP,容,khách,-4.0,0.0692,{},,NOM,客,khách,2026-11-20 12:32:27
+"Truyên Vua Quang Trung, Nôm",283,284,"Truyên Vua Quang Trung, Nôm.032.006",2,4,4,容,khách,2,3,NOM,喀,khách,-9.3668,0.0003,"{""visual_rank"": 14, ""nlm_delta"": -10.61, ""lm_oov"": false}",,NOM,客,khách,2026-11-20 12:32:27
+"Truyên Vua Quang Trung, Nôm",285,286,"Truyên Vua Quang Trung, Nôm.032.008",1,5,5,䠔,chặn,0,1,KEEP,䠔,chặn,-4.0,1.0,{},,UNREVIEWED,䠔,chặn,
+"Truyên Vua Quang Trung, Nôm",287,288,"Truyên Vua Quang Trung, Nôm.032.010",1,5,5,媄,mở,2,1,KEEP,媄,mở,-4.0,0.5783,{},x,KEEP,媄,mở,2026-11-20 12:32:45
+"Truyên Vua Quang Trung, Nôm",287,288,"Truyên Vua Quang Trung, Nôm.032.010",1,5,5,媄,mở,2,2,QN,媄,mẻ,-4.555,0.332,"{""ortho"": 1.0, ""qlm_delta"": -5.183}",,KEEP,媄,mở,2026-11-20 12:32:45
+"Truyên Vua Quang Trung, Nôm",287,288,"Truyên Vua Quang Trung, Nôm.032.010",1,5,5,媄,mở,2,3,QN,媄,mỉ,-5.8638,0.0897,"{""ortho"": 1.0, ""qlm_delta"": -9.546}",,KEEP,媄,mở,2026-11-20 12:32:45
+"Truyên Vua Quang Trung, Nôm",290,291,"Truyên Vua Quang Trung, Nôm.033.002",1,3,3,圯,rẫy,3,1,NOM,𢩽,rẫy,-1.1949,0.6188,"{""visual_rank"": 4, ""nlm_delta"": 2.438, ""lm_oov"": false}",,KEEP,圯,rẫy,2026-11-20 12:33:07
+"Truyên Vua Quang Trung, Nôm",290,291,"Truyên Vua Quang Trung, Nôm.033.002",1,3,3,圯,rẫy,3,2,NOM,𢩵,rẫy,-2.2983,0.2053,"{""visual_rank"": 4, ""nlm_delta"": 0.232, ""lm_oov"": false}",,KEEP,圯,rẫy,2026-11-20 12:33:07
+"Truyên Vua Quang Trung, Nôm",290,291,"Truyên Vua Quang Trung, Nôm.033.002",1,3,3,圯,rẫy,3,3,NOM,𠖰,rẫy,-2.6923,0.1384,"{""visual_rank"": 11, ""nlm_delta"": 2.07, ""lm_oov"": false}",,KEEP,圯,rẫy,2026-11-20 12:33:07
+"Truyên Vua Quang Trung, Nôm",290,291,"Truyên Vua Quang Trung, Nôm.033.002",1,3,3,圯,rẫy,3,4,KEEP,圯,rẫy,-4.0,0.0374,{},x,KEEP,圯,rẫy,2026-11-20 12:33:07
+"Truyên Vua Quang Trung, Nôm",291,292,"Truyên Vua Quang Trung, Nôm.033.003",1,1,1,勢,giết,0,1,KEEP,勢,giết,-4.0,1.0,{},,UNREVIEWED,勢,giết,
+"Truyên Vua Quang Trung, Nôm",295,296,"Truyên Vua Quang Trung, Nôm.033.007",1,8,8,跛,bừa,0,1,KEEP,跛,bừa,-4.0,1.0,{},,UNREVIEWED,跛,bừa,
+"Truyên Vua Quang Trung, Nôm",301,302,"Truyên Vua Quang Trung, Nôm.034.002",1,8,8,𡗶,giẽ,0,1,KEEP,𡗶,giẽ,-4.0,1.0,{},,UNREVIEWED,𡗶,giẽ,
+"Truyên Vua Quang Trung, Nôm",303,304,"Truyên Vua Quang Trung, Nôm.034.004",1,2,2,網,cường,0,1,KEEP,網,cường,-4.0,1.0,{},,UNREVIEWED,網,cường,
+"Truyên Vua Quang Trung, Nôm",308,309,"Truyên Vua Quang Trung, Nôm.034.009",1,3,3,兆,bắc,1,1,NOM,北,bắc,-3.671,0.5815,"{""visual_rank"": 17, ""nlm_delta"": 1.329, ""lm_oov"": false}",x,NOM,北,bắc,2026-11-20 12:33:19
+"Truyên Vua Quang Trung, Nôm",308,309,"Truyên Vua Quang Trung, Nôm.034.009",1,3,3,兆,bắc,1,2,KEEP,兆,bắc,-4.0,0.4185,{},,NOM,北,bắc,2026-11-20 12:33:19
+"Truyên Vua Quang Trung, Nôm",319,320,"Truyên Vua Quang Trung, Nôm.035.009",1,1,1,城,chành,1,1,QN,城,thành,-1.6467,0.9132,"{""ortho"": 0.6, ""qlm_delta"": 0.511}",x,QN,城,thành,2026-11-20 12:33:23
+"Truyên Vua Quang Trung, Nôm",319,320,"Truyên Vua Quang Trung, Nôm.035.009",1,1,1,城,chành,1,2,KEEP,城,chành,-4.0,0.0868,{},,QN,城,thành,2026-11-20 12:33:23
+"Truyên Vua Quang Trung, Nôm",320,321,"Truyên Vua Quang Trung, Nôm.035.010",1,1,1,水,dịch,0,1,KEEP,水,dịch,-4.0,1.0,{},,UNREVIEWED,水,dịch,
+"Truyên Vua Quang Trung, Nôm",320,321,"Truyên Vua Quang Trung, Nôm.035.010",2,3,3,整,đổ,0,1,KEEP,整,đổ,-4.0,1.0,{},,UNREVIEWED,整,đổ,
+"Truyên Vua Quang Trung, Nôm",320,321,"Truyên Vua Quang Trung, Nôm.035.010",3,5,5,渭,giáp,0,1,KEEP,渭,giáp,-4.0,1.0,{},,UNREVIEWED,渭,giáp,
+"Truyên Vua Quang Trung, Nôm",320,321,"Truyên Vua Quang Trung, Nôm.035.010",4,6,6,潢,công,0,1,KEEP,潢,công,-4.0,1.0,{},,UNREVIEWED,潢,công,
+"Truyên Vua Quang Trung, Nôm",321,322,"Truyên Vua Quang Trung, Nôm.036.000",1,4,4,讓,những,1,1,QN,讓,nhưỡng,-3.4028,0.645,"{""ortho"": 1.0, ""qlm_delta"": -1.343}",x,QN,讓,nhưỡng,2026-11-20 12:33:30
+"Truyên Vua Quang Trung, Nôm",321,322,"Truyên Vua Quang Trung, Nôm.036.000",1,4,4,讓,những,1,2,KEEP,讓,những,-4.0,0.355,{},,QN,讓,nhưỡng,2026-11-20 12:33:30
+"Truyên Vua Quang Trung, Nôm",321,322,"Truyên Vua Quang Trung, Nôm.036.000",2,5,5,隊,chặn,0,1,KEEP,隊,chặn,-4.0,1.0,{},,UNREVIEWED,隊,chặn,
+"Truyên Vua Quang Trung, Nôm",321,322,"Truyên Vua Quang Trung, Nôm.036.000",3,7,7,祿,luộc,4,1,QN,祿,lục,-1.0849,0.541,"{""ortho"": 1.0, ""qlm_delta"": 6.384}",,KEEP,祿,luộc,2026-11-20 12:33:34
+"Truyên Vua Quang Trung, Nôm",321,322,"Truyên Vua Quang Trung, Nôm.036.000",3,7,7,祿,luộc,4,2,NOM,淥,luộc,-1.925,0.2335,"{""visual_rank"": 3, ""nlm_delta"": 0.309, ""lm_oov"": false}",,KEEP,祿,luộc,2026-11-20 12:33:34
+"Truyên Vua Quang Trung, Nôm",321,322,"Truyên Vua Quang Trung, Nôm.036.000",3,7,7,祿,luộc,4,3,QN,祿,lộc,-2.4561,0.1373,"{""ortho"": 1.0, ""qlm_delta"": 1.813}",,KEEP,祿,luộc,2026-11-20 12:33:34
+"Truyên Vua Quang Trung, Nôm",321,322,"Truyên Vua Quang Trung, Nôm.036.000",3,7,7,祿,luộc,4,4,NOM,𤊒,luộc,-3.3044,0.0588,"{""visual_rank"": 2, ""nlm_delta"": -3.313, ""lm_oov"": false}",,KEEP,祿,luộc,2026-11-20 12:33:34
+"Truyên Vua Quang Trung, Nôm",321,322,"Truyên Vua Quang Trung, Nôm.036.000",3,7,7,祿,luộc,4,5,KEEP,祿,luộc,-4.0,0.0293,{},x,KEEP,祿,luộc,2026-11-20 12:33:34
+"Truyên Vua Quang Trung, Nôm",322,323,"Truyên Vua Quang Trung, Nôm.036.001",1,1,1,敵,dịch,1,1,QN,敵,địch,-1.8736,0.8934,"{""ortho"": 0.4, ""qlm_delta"": -2.245}",x,QN,敵,địch,2026-11-20 12:33:39
+"Truyên Vua Quang Trung, Nôm",322,323,"Truyên Vua Quang Trung, Nôm.036.001",1,1,1,敵,dịch,1,2,KEEP,敵,dịch,-4.0,0.1066,{},,QN,敵,địch,2026-11-20 12:33:39
+"Truyên Vua Quang Trung, Nôm",323,324,"Truyên Vua Quang Trung, Nôm.036.002",1,1,1,讓,những,1,1,KEEP,讓,những,-4.0,0.6641,{},,QN,讓,nhưỡng,2026-11-20 12:33:44
+"Truyên Vua Quang Trung, Nôm",323,324,"Truyên Vua Quang Trung, Nôm.036.002",1,1,1,讓,những,1,2,QN,讓,nhưỡng,-4.6817,0.3359,"{""ortho"": 1.0, ""qlm_delta"": -5.606}",x,QN,讓,nhưỡng,2026-11-20 12:33:44
+"Truyên Vua Quang Trung, Nôm",324,325,"Truyên Vua Quang Trung, Nôm.036.003",1,4,4,𠯪,kín,0,1,KEEP,𠯪,kín,-4.0,1.0,{},,UNREVIEWED,𠯪,kín,
+"Truyên Vua Quang Trung, Nôm",325,326,"Truyên Vua Quang Trung, Nôm.036.004",1,1,1,讓,những,1,1,KEEP,讓,những,-4.0,0.7214,{},,QN,讓,nhưỡng,2026-11-20 12:33:48
+"Truyên Vua Quang Trung, Nôm",325,326,"Truyên Vua Quang Trung, Nôm.036.004",1,1,1,讓,những,1,2,QN,讓,nhưỡng,-4.9512,0.2786,"{""ortho"": 1.0, ""qlm_delta"": -6.504}",x,QN,讓,nhưỡng,2026-11-20 12:33:48
+"Truyên Vua Quang Trung, Nôm",325,326,"Truyên Vua Quang Trung, Nôm.036.004",2,6,6,淶,nơi,4,1,QN,淶,rơi,-1.3136,0.7572,"{""ortho"": 0.6, ""qlm_delta"": 1.621}",,QN,淶,rời,2026-11-20 12:34:07
+"Truyên Vua Quang Trung, Nôm",325,326,"Truyên Vua Quang Trung, Nôm.036.004",2,6,6,淶,nơi,4,2,QN,淶,lơi,-3.2333,0.111,"{""ortho"": 1.0, ""qlm_delta"": -0.778}",,QN,淶,rời,2026-11-20 12:34:07
+"Truyên Vua Quang Trung, Nôm",325,326,"Truyên Vua Quang Trung, Nôm.036.004",2,6,6,淶,nơi,4,3,QN,淶,rời,-3.7609,0.0655,"{""ortho"": 1.1, ""qlm_delta"": -1.536}",x,QN,淶,rời,2026-11-20 12:34:07
+"Truyên Vua Quang Trung, Nôm",325,326,"Truyên Vua Quang Trung, Nôm.036.004",2,6,6,淶,nơi,4,4,KEEP,淶,nơi,-4.0,0.0516,{},,QN,淶,rời,2026-11-20 12:34:07
+"Truyên Vua Quang Trung, Nôm",325,326,"Truyên Vua Quang Trung, Nôm.036.004",2,6,6,淶,nơi,4,5,QN,淶,rợi,-5.2613,0.0146,"{""ortho"": 1.1, ""qlm_delta"": -6.538}",,QN,淶,rời,2026-11-20 12:34:07
+"Truyên Vua Quang Trung, Nôm",329,330,"Truyên Vua Quang Trung, Nôm.036.008",1,1,1,敵,định,1,1,QN,敵,địch,-2.7686,0.7741,"{""ortho"": 1.0, ""qlm_delta"": 0.771}",x,QN,敵,địch,2026-11-20 12:34:18
+"Truyên Vua Quang Trung, Nôm",329,330,"Truyên Vua Quang Trung, Nôm.036.008",1,1,1,敵,định,1,2,KEEP,敵,định,-4.0,0.2259,{},,QN,敵,địch,2026-11-20 12:34:18
+"Truyên Vua Quang Trung, Nôm",330,331,"Truyên Vua Quang Trung, Nôm.036.009",1,5,5,痴,xí,3,1,QN,痴,xì,-2.0115,0.7713,"{""ortho"": 0.5, ""qlm_delta"": -1.705}",x,QN,痴,xì,2026-11-20 12:34:26
+"Truyên Vua Quang Trung, Nôm",330,331,"Truyên Vua Quang Trung, Nôm.036.009",1,5,5,痴,xí,3,2,KEEP,痴,xí,-4.0,0.1056,{},,QN,痴,xì,2026-11-20 12:34:26
+"Truyên Vua Quang Trung, Nôm",330,331,"Truyên Vua Quang Trung, Nôm.036.009",1,5,5,痴,xí,3,3,QN,痴,sì,-4.203,0.0862,"{""ortho"": 1.1, ""qlm_delta"": -3.01}",,QN,痴,xì,2026-11-20 12:34:26
+"Truyên Vua Quang Trung, Nôm",330,331,"Truyên Vua Quang Trung, Nôm.036.009",1,5,5,痴,xí,3,4,QN,痴,si,-5.0516,0.0369,"{""ortho"": 1.1, ""qlm_delta"": -5.839}",,QN,痴,xì,2026-11-20 12:34:26
+"Truyên Vua Quang Trung, Nôm",331,332,"Truyên Vua Quang Trung, Nôm.036.010",1,1,1,讓,những,1,1,QN,讓,nhưỡng,-1.8059,0.8997,"{""ortho"": 1.0, ""qlm_delta"": 3.98}",x,QN,讓,nhưỡng,2026-11-20 12:34:29
+"Truyên Vua Quang Trung, Nôm",331,332,"Truyên Vua Quang Trung, Nôm.036.010",1,1,1,讓,những,1,2,KEEP,讓,những,-4.0,0.1003,{},,QN,讓,nhưỡng,2026-11-20 12:34:29
+"Truyên Vua Quang Trung, Nôm",331,332,"Truyên Vua Quang Trung, Nôm.036.010",2,5,5,弥,bên,0,1,KEEP,弥,bên,-4.0,1.0,{},,UNREVIEWED,弥,bên,
+"Truyên Vua Quang Trung, Nôm",331,332,"Truyên Vua Quang Trung, Nôm.036.010",3,8,8,踚,luôn,4,1,NOM,輪,luôn,-1.5405,0.6275,"{""visual_rank"": 7, ""nlm_delta"": 3.157, ""lm_oov"": false}",,KEEP,踚,luôn,2026-11-20 12:34:41
+"Truyên Vua Quang Trung, Nôm",331,332,"Truyên Vua Quang Trung, Nôm.036.010",3,8,8,踚,luôn,4,2,NOM,㫻,luôn,-2.9428,0.1544,"{""visual_rank"": 12, ""nlm_delta"": 1.809, ""lm_oov"": false}",,KEEP,踚,luôn,2026-11-20 12:34:41
+"Truyên Vua Quang Trung, Nôm",331,332,"Truyên Vua Quang Trung, Nôm.036.010",3,8,8,踚,luôn,4,3,NOM,掄,luôn,-3.4197,0.0958,"{""visual_rank"": 14, ""nlm_delta"": 1.285, ""lm_oov"": false}",,KEEP,踚,luôn,2026-11-20 12:34:41
+"Truyên Vua Quang Trung, Nôm",331,332,"Truyên Vua Quang Trung, Nôm.036.010",3,8,8,踚,luôn,4,4,QN,踚,luồn,-3.7531,0.0687,"{""ortho"": 0.5, ""qlm_delta"": -7.51}",,KEEP,踚,luôn,2026-11-20 12:34:41
+"Truyên Vua Quang Trung, Nôm",331,332,"Truyên Vua Quang Trung, Nôm.036.010",3,8,8,踚,luôn,4,5,KEEP,踚,luôn,-4.0,0.0536,{},x,KEEP,踚,luôn,2026-11-20 12:34:41
+"Truyên Vua Quang Trung, Nôm",332,333,"Truyên Vua Quang Trung, Nôm.037.000",1,1,1,敵,dịch,1,1,QN,敵,địch,-1.0644,0.9496,"{""ortho"": 0.4, ""qlm_delta"": 0.452}",x,QN,敵,địch,2026-11-20 12:34:46
+"Truyên Vua Quang Trung, Nôm",332,333,"Truyên Vua Quang Trung, Nôm.037.000",1,1,1,敵,dịch,1,2,KEEP,敵,dịch,-4.0,0.0504,{},,QN,敵,địch,2026-11-20 12:34:46
+"Truyên Vua Quang Trung, Nôm",332,333,"Truyên Vua Quang Trung, Nôm.037.000",2,5,5,趂,sẵn,4,1,QN,趂,sắn,-1.2255,0.5901,"{""ortho"": 0.5, ""qlm_delta"": 0.915}",,QN,趂,sấn,2026-11-20 12:34:53
+"Truyên Vua Quang Trung, Nôm",332,333,"Truyên Vua Quang Trung, Nôm.037.000",2,5,5,趂,sẵn,4,2,QN,趂,sấn,-2.578,0.1526,"{""ortho"": 0.9, ""qlm_delta"": 0.407}",x,QN,趂,sấn,2026-11-20 12:34:53
+"Truyên Vua Quang Trung, Nôm",332,333,"Truyên Vua Quang Trung, Nôm.037.000",2,5,5,趂,sẵn,4,3,QN,趂,sán,-2.7824,0.1244,"{""ortho"": 0.9, ""qlm_delta"": -0.275}",,QN,趂,sấn,2026-11-20 12:34:53
+"Truyên Vua Quang Trung, Nôm",332,333,"Truyên Vua Quang Trung, Nôm.037.000",2,5,5,趂,sẵn,4,4,QN,趂,xắn,-3.0411,0.096,"{""ortho"": 1.1, ""qlm_delta"": 0.863}",,QN,趂,sấn,2026-11-20 12:34:53
+"Truyên Vua Quang Trung, Nôm",332,333,"Truyên Vua Quang Trung, Nôm.037.000",2,5,5,趂,sẵn,4,5,KEEP,趂,sẵn,-4.0,0.0368,{},,QN,趂,sấn,2026-11-20 12:34:53
+"Truyên Vua Quang Trung, Nôm",333,334,"Truyên Vua Quang Trung, Nôm.037.001",1,2,2,棕,công,1,1,QN,棕,tông,-2.8855,0.753,"{""ortho"": 0.6, ""qlm_delta"": -3.618}",x,QN,棕,tông,2026-11-20 12:34:59
+"Truyên Vua Quang Trung, Nôm",333,334,"Truyên Vua Quang Trung, Nôm.037.001",1,2,2,棕,công,1,2,KEEP,棕,công,-4.0,0.247,{},,QN,棕,tông,2026-11-20 12:34:59
+"Truyên Vua Quang Trung, Nôm",333,334,"Truyên Vua Quang Trung, Nôm.037.001",2,7,7,襾,tây,3,1,NOM,西,tây,2.9335,0.9985,"{""visual_rank"": 1, ""nlm_delta"": 7.946, ""lm_oov"": false}",x,NOM,西,tây,2026-11-20 12:35:01
+"Truyên Vua Quang Trung, Nôm",333,334,"Truyên Vua Quang Trung, Nôm.037.001",2,7,7,襾,tây,3,2,KEEP,襾,tây,-4.0,0.001,{},,NOM,西,tây,2026-11-20 12:35:01
+"Truyên Vua Quang Trung, Nôm",333,334,"Truyên Vua Quang Trung, Nôm.037.001",2,7,7,襾,tây,3,3,NOM,覀,tây,-5.0024,0.0004,"{""visual_rank"": 13, ""nlm_delta"": -2.088, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 12:35:01
+"Truyên Vua Quang Trung, Nôm",333,334,"Truyên Vua Quang Trung, Nôm.037.001",2,7,7,襾,tây,3,4,NOM,恓,tây,-5.9368,0.0001,"{""visual_rank"": 17, ""nlm_delta"": -3.203, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 12:35:01
+"Truyên Vua Quang Trung, Nôm",334,335,"Truyên Vua Quang Trung, Nôm.037.002",1,1,1,敵,chủy,0,1,KEEP,敵,chủy,-4.0,1.0,{},,UNREVIEWED,敵,chủy,
+"Truyên Vua Quang Trung, Nôm",334,335,"Truyên Vua Quang Trung, Nôm.037.002",2,3,3,諸,chỉnh,0,1,KEEP,諸,chỉnh,-4.0,1.0,{},,UNREVIEWED,諸,chỉnh,
+"Truyên Vua Quang Trung, Nôm",334,335,"Truyên Vua Quang Trung, Nôm.037.002",3,5,5,夾,vị,0,1,KEEP,夾,vị,-4.0,1.0,{},,UNREVIEWED,夾,vị,
+"Truyên Vua Quang Trung, Nôm",334,335,"Truyên Vua Quang Trung, Nôm.037.002",4,6,6,攻,hoàng,0,1,KEEP,攻,hoàng,-4.0,1.0,{},,UNREVIEWED,攻,hoàng,
+"Truyên Vua Quang Trung, Nôm",335,336,"Truyên Vua Quang Trung, Nôm.037.003",1,4,4,燕,yễn,2,1,QN,燕,yến,0.1676,0.6405,"{""ortho"": 0.5, ""qlm_delta"": 5.559}",x,QN,燕,yến,2026-11-20 12:35:08
+"Truyên Vua Quang Trung, Nôm",335,336,"Truyên Vua Quang Trung, Nôm.037.003",1,4,4,燕,yễn,2,2,QN,燕,yên,-0.438,0.3496,"{""ortho"": 0.5, ""qlm_delta"": 3.54}",,QN,燕,yến,2026-11-20 12:35:08
+"Truyên Vua Quang Trung, Nôm",335,336,"Truyên Vua Quang Trung, Nôm.037.003",1,4,4,燕,yễn,2,3,KEEP,燕,yễn,-4.0,0.0099,{},,QN,燕,yến,2026-11-20 12:35:08
+"Truyên Vua Quang Trung, Nôm",337,338,"Truyên Vua Quang Trung, Nôm.037.005",1,1,1,敵,dịch,1,1,QN,敵,địch,0.8712,0.9924,"{""ortho"": 0.4, ""qlm_delta"": 6.904}",x,QN,敵,địch,2026-11-20 12:35:12
+"Truyên Vua Quang Trung, Nôm",337,338,"Truyên Vua Quang Trung, Nôm.037.005",1,1,1,敵,dịch,1,2,KEEP,敵,dịch,-4.0,0.0076,{},,QN,敵,địch,2026-11-20 12:35:12
+"Truyên Vua Quang Trung, Nôm",340,341,"Truyên Vua Quang Trung, Nôm.037.008",1,3,3,傑,thấy,0,1,KEEP,傑,thấy,-4.0,1.0,{},,UNREVIEWED,傑,thấy,
+"Truyên Vua Quang Trung, Nôm",342,343,"Truyên Vua Quang Trung, Nôm.037.010",1,2,2,棕,công,1,1,QN,棕,tông,-3.0514,0.7208,"{""ortho"": 0.6, ""qlm_delta"": -4.171}",x,QN,棕,tông,2026-11-20 12:35:16
+"Truyên Vua Quang Trung, Nôm",342,343,"Truyên Vua Quang Trung, Nôm.037.010",1,2,2,棕,công,1,2,KEEP,棕,công,-4.0,0.2792,{},,QN,棕,tông,2026-11-20 12:35:16
+"Truyên Vua Quang Trung, Nôm",343,344,"Truyên Vua Quang Trung, Nôm.038.000",1,6,6,𢢯,ngồi,1,1,QN,𢢯,ngùi,-3.7736,0.5564,"{""ortho"": 1.0, ""qlm_delta"": -2.579}",,KEEP,𢢯,ngồi,2026-11-20 12:35:23
+"Truyên Vua Quang Trung, Nôm",343,344,"Truyên Vua Quang Trung, Nôm.038.000",1,6,6,𢢯,ngồi,1,2,KEEP,𢢯,ngồi,-4.0,0.4436,{},x,KEEP,𢢯,ngồi,2026-11-20 12:35:23
+"Truyên Vua Quang Trung, Nôm",344,345,"Truyên Vua Quang Trung, Nôm.038.001",1,6,6,踈,chân,0,1,KEEP,踈,chân,-4.0,1.0,{},,UNREVIEWED,踈,chân,
+"Truyên Vua Quang Trung, Nôm",345,346,"Truyên Vua Quang Trung, Nôm.038.002",1,1,1,棕,công,1,1,QN,棕,tông,-3.7379,0.5652,"{""ortho"": 0.6, ""qlm_delta"": -6.46}",x,QN,棕,tông,2026-11-20 12:35:27
+"Truyên Vua Quang Trung, Nôm",345,346,"Truyên Vua Quang Trung, Nôm.038.002",1,1,1,棕,công,1,2,KEEP,棕,công,-4.0,0.4348,{},,QN,棕,tông,2026-11-20 12:35:27
+"Truyên Vua Quang Trung, Nôm",345,346,"Truyên Vua Quang Trung, Nôm.038.002",2,2,2,𥳪,toan,0,1,KEEP,𥳪,toan,-4.0,1.0,{},,UNREVIEWED,𥳪,toan,
+"Truyên Vua Quang Trung, Nôm",348,349,"Truyên Vua Quang Trung, Nôm.038.005",1,1,1,棕,công,1,1,QN,棕,tông,0.5746,0.9898,"{""ortho"": 0.6, ""qlm_delta"": 7.915}",x,QN,棕,tông,2026-11-20 12:35:32
+"Truyên Vua Quang Trung, Nôm",348,349,"Truyên Vua Quang Trung, Nôm.038.005",1,1,1,棕,công,1,2,KEEP,棕,công,-4.0,0.0102,{},,QN,棕,tông,2026-11-20 12:35:32
+"Truyên Vua Quang Trung, Nôm",348,349,"Truyên Vua Quang Trung, Nôm.038.005",2,4,4,地,vã,0,1,KEEP,地,vã,-4.0,1.0,{},,UNREVIEWED,地,vã,
+"Truyên Vua Quang Trung, Nôm",349,350,"Truyên Vua Quang Trung, Nôm.038.006",1,1,1,𱘃,phía,0,1,KEEP,𱘃,phía,-4.0,1.0,{},,UNREVIEWED,𱘃,phía,
+"Truyên Vua Quang Trung, Nôm",349,350,"Truyên Vua Quang Trung, Nôm.038.006",2,2,2,襾,tây,3,1,NOM,西,tây,0.8657,0.9865,"{""visual_rank"": 1, ""nlm_delta"": 3.811, ""lm_oov"": false}",x,NOM,西,tây,2026-11-20 12:35:36
+"Truyên Vua Quang Trung, Nôm",349,350,"Truyên Vua Quang Trung, Nôm.038.006",2,2,2,襾,tây,3,2,KEEP,襾,tây,-4.0,0.0076,{},,NOM,西,tây,2026-11-20 12:35:36
+"Truyên Vua Quang Trung, Nôm",349,350,"Truyên Vua Quang Trung, Nôm.038.006",2,2,2,襾,tây,3,3,NOM,恓,tây,-4.6272,0.0041,"{""visual_rank"": 17, ""nlm_delta"": -0.583, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 12:35:36
+"Truyên Vua Quang Trung, Nôm",349,350,"Truyên Vua Quang Trung, Nôm.038.006",2,2,2,襾,tây,3,4,NOM,覀,tây,-5.4071,0.0019,"{""visual_rank"": 13, ""nlm_delta"": -2.897, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 12:35:36
+"Truyên Vua Quang Trung, Nôm",352,353,"Truyên Vua Quang Trung, Nôm.038.009",1,2,2,傱,trò,0,1,KEEP,傱,trò,-4.0,1.0,{},,UNREVIEWED,傱,trò,
+"Truyên Vua Quang Trung, Nôm",354,355,"Truyên Vua Quang Trung, Nôm.039.000",1,3,3,棕,công,1,1,QN,棕,tông,-1.9269,0.8883,"{""ortho"": 0.6, ""qlm_delta"": -0.423}",x,QN,棕,tông,2026-11-20 12:35:40
+"Truyên Vua Quang Trung, Nôm",354,355,"Truyên Vua Quang Trung, Nôm.039.000",1,3,3,棕,công,1,2,KEEP,棕,công,-4.0,0.1117,{},,QN,棕,tông,2026-11-20 12:35:40
+"Truyên Vua Quang Trung, Nôm",355,356,"Truyên Vua Quang Trung, Nôm.039.001",1,7,7,尒,mấy,3,1,NOM,氽,mấy,2.5885,0.9049,"{""visual_rank"": 1, ""nlm_delta"": 7.256, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:35:53
+"Truyên Vua Quang Trung, Nôm",355,356,"Truyên Vua Quang Trung, Nôm.039.001",1,7,7,尒,mấy,3,2,NOM,𠇍,mấy,0.1756,0.081,"{""visual_rank"": 1, ""nlm_delta"": 2.431, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:35:53
+"Truyên Vua Quang Trung, Nôm",355,356,"Truyên Vua Quang Trung, Nôm.039.001",1,7,7,尒,mấy,3,3,NOM,汆,mấy,-1.6722,0.0128,"{""visual_rank"": 16, ""nlm_delta"": 5.155, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:35:53
+"Truyên Vua Quang Trung, Nôm",355,356,"Truyên Vua Quang Trung, Nôm.039.001",1,7,7,尒,mấy,3,4,KEEP,尒,mấy,-4.0,0.0012,{},x,KEEP,尒,mấy,2026-11-20 12:35:53
+"Truyên Vua Quang Trung, Nôm",357,358,"Truyên Vua Quang Trung, Nôm.039.003",1,1,1,傑,thấy,0,1,KEEP,傑,thấy,-4.0,1.0,{},,UNREVIEWED,傑,thấy,
+"Truyên Vua Quang Trung, Nôm",358,359,"Truyên Vua Quang Trung, Nôm.039.004",1,3,3,棕,công,1,1,QN,棕,tông,-2.9468,0.7414,"{""ortho"": 0.6, ""qlm_delta"": -3.823}",x,QN,棕,tông,2026-11-20 12:35:56
+"Truyên Vua Quang Trung, Nôm",358,359,"Truyên Vua Quang Trung, Nôm.039.004",1,3,3,棕,công,1,2,KEEP,棕,công,-4.0,0.2586,{},,QN,棕,tông,2026-11-20 12:35:56
+"Truyên Vua Quang Trung, Nôm",360,361,"Truyên Vua Quang Trung, Nôm.039.006",1,6,6,𢧚,nền,1,1,QN,𢧚,nên,-1.03,0.9512,"{""ortho"": 0.5, ""qlm_delta"": 1.567}",x,QN,𢧚,nên,2026-11-20 12:36:06
+"Truyên Vua Quang Trung, Nôm",360,361,"Truyên Vua Quang Trung, Nôm.039.006",1,6,6,𢧚,nền,1,2,KEEP,𢧚,nền,-4.0,0.0488,{},,QN,𢧚,nên,2026-11-20 12:36:06
+"Truyên Vua Quang Trung, Nôm",362,363,"Truyên Vua Quang Trung, Nôm.039.008",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",363,364,"Truyên Vua Quang Trung, Nôm.039.009",1,5,5,哴,răng,2,1,QN,哴,rằng,-1.1673,0.6444,"{""ortho"": 0.5, ""qlm_delta"": 1.109}",x,QN,哴,rằng,2026-11-20 12:36:13
+"Truyên Vua Quang Trung, Nôm",363,364,"Truyên Vua Quang Trung, Nôm.039.009",1,5,5,哴,răng,2,2,NOM,浪,răng,-1.8748,0.3176,"{""visual_rank"": 9, ""nlm_delta"": 3.158, ""lm_oov"": false}",,QN,哴,rằng,2026-11-20 12:36:13
+"Truyên Vua Quang Trung, Nôm",363,364,"Truyên Vua Quang Trung, Nôm.039.009",1,5,5,哴,răng,2,3,KEEP,哴,răng,-4.0,0.0379,{},,QN,哴,rằng,2026-11-20 12:36:13
+"Truyên Vua Quang Trung, Nôm",365,366,"Truyên Vua Quang Trung, Nôm.040.000",1,5,5,登,giảng,0,1,KEEP,登,giảng,-4.0,1.0,{},,UNREVIEWED,登,giảng,
+"Truyên Vua Quang Trung, Nôm",365,366,"Truyên Vua Quang Trung, Nôm.040.000",2,6,6,㨓,trao,0,1,KEEP,㨓,trao,-4.0,1.0,{},,UNREVIEWED,㨓,trao,
+"Truyên Vua Quang Trung, Nôm",367,368,"Truyên Vua Quang Trung, Nôm.040.002",1,1,1,边,ben,3,1,QN,边,bên,-1.4414,0.8085,"{""ortho"": 0.4, ""qlm_delta"": -0.805}",,KEEP,边,ben,2026-11-20 12:36:22
+"Truyên Vua Quang Trung, Nôm",367,368,"Truyên Vua Quang Trung, Nôm.040.002",1,1,1,边,ben,3,2,QN,边,ven,-3.9654,0.0648,"{""ortho"": 1.0, ""qlm_delta"": -3.218}",,KEEP,边,ben,2026-11-20 12:36:22
+"Truyên Vua Quang Trung, Nôm",367,368,"Truyên Vua Quang Trung, Nôm.040.002",1,1,1,边,ben,3,3,NOM,辺,ben,-3.9758,0.0641,"{""visual_rank"": 2, ""nlm_delta"": -4.656, ""lm_oov"": false}",,KEEP,边,ben,2026-11-20 12:36:22
+"Truyên Vua Quang Trung, Nôm",367,368,"Truyên Vua Quang Trung, Nôm.040.002",1,1,1,边,ben,3,4,KEEP,边,ben,-4.0,0.0626,{},x,KEEP,边,ben,2026-11-20 12:36:22
+"Truyên Vua Quang Trung, Nôm",367,368,"Truyên Vua Quang Trung, Nôm.040.002",2,8,8,𤉜,dàng,2,1,NOM,麻,dàng,-0.4576,0.5627,"{""visual_rank"": 14, ""nlm_delta"": 7.209, ""lm_oov"": false}",,KEEP,𤉜,dàng,2026-11-20 12:36:27
+"Truyên Vua Quang Trung, Nôm",367,368,"Truyên Vua Quang Trung, Nôm.040.002",2,8,8,𤉜,dàng,2,2,QN,𤉜,ràng,-0.7477,0.421,"{""ortho"": 1.0, ""qlm_delta"": 7.508}",,KEEP,𤉜,dàng,2026-11-20 12:36:27
+"Truyên Vua Quang Trung, Nôm",367,368,"Truyên Vua Quang Trung, Nôm.040.002",2,8,8,𤉜,dàng,2,3,KEEP,𤉜,dàng,-4.0,0.0163,{},x,KEEP,𤉜,dàng,2026-11-20 12:36:27
+"Truyên Vua Quang Trung, Nôm",370,371,"Truyên Vua Quang Trung, Nôm.040.005",1,1,1,息,cúc,1,1,QN,息,tức,-1.2656,0.939,"{""ortho"": 1.0, ""qlm_delta"": 5.781}",x,QN,息,tức,2026-11-20 12:36:31
+"Truyên Vua Quang Trung, Nôm",370,371,"Truyên Vua Quang Trung, Nôm.040.005",1,1,1,息,cúc,1,2,KEEP,息,cúc,-4.0,0.061,{},,QN,息,tức,2026-11-20 12:36:31
+"Truyên Vua Quang Trung, Nôm",370,371,"Truyên Vua Quang Trung, Nôm.040.005",2,5,5,敗,bấy,1,1,QN,敗,bậy,-0.8661,0.9583,"{""ortho"": 0.5, ""qlm_delta"": 2.113}",x,QN,敗,bậy,2026-11-20 12:36:37
+"Truyên Vua Quang Trung, Nôm",370,371,"Truyên Vua Quang Trung, Nôm.040.005",2,5,5,敗,bấy,1,2,KEEP,敗,bấy,-4.0,0.0417,{},,QN,敗,bậy,2026-11-20 12:36:37
+"Truyên Vua Quang Trung, Nôm",371,372,"Truyên Vua Quang Trung, Nôm.040.006",1,4,4,尒,mấy,3,1,NOM,氽,mấy,0.5484,0.859,"{""visual_rank"": 1, ""nlm_delta"": 3.176, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:36:44
+"Truyên Vua Quang Trung, Nôm",371,372,"Truyên Vua Quang Trung, Nôm.040.006",1,4,4,尒,mấy,3,2,NOM,𠇍,mấy,-1.3845,0.1243,"{""visual_rank"": 1, ""nlm_delta"": -0.689, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:36:44
+"Truyên Vua Quang Trung, Nôm",371,372,"Truyên Vua Quang Trung, Nôm.040.006",1,4,4,尒,mấy,3,3,KEEP,尒,mấy,-4.0,0.0091,{},x,KEEP,尒,mấy,2026-11-20 12:36:44
+"Truyên Vua Quang Trung, Nôm",371,372,"Truyên Vua Quang Trung, Nôm.040.006",1,4,4,尒,mấy,3,4,NOM,汆,mấy,-4.1841,0.0076,"{""visual_rank"": 16, ""nlm_delta"": 0.132, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:36:44
+"Truyên Vua Quang Trung, Nôm",373,374,"Truyên Vua Quang Trung, Nôm.040.008",1,2,2,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",374,375,"Truyên Vua Quang Trung, Nôm.040.009",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",375,376,"Truyên Vua Quang Trung, Nôm.040.010",1,1,1,埃,cúi,0,1,KEEP,埃,cúi,-4.0,1.0,{},,UNREVIEWED,埃,cúi,
+"Truyên Vua Quang Trung, Nôm",375,376,"Truyên Vua Quang Trung, Nôm.040.010",2,8,8,颠,đen,1,1,NOM,顛,đen,3.0122,0.9991,"{""visual_rank"": 1, ""nlm_delta"": 8.104, ""lm_oov"": false}",x,NOM,顛,đen,2026-11-20 12:36:48
+"Truyên Vua Quang Trung, Nôm",375,376,"Truyên Vua Quang Trung, Nôm.040.010",2,8,8,颠,đen,1,2,KEEP,颠,đen,-4.0,0.0009,{},,NOM,顛,đen,2026-11-20 12:36:48
+"Truyên Vua Quang Trung, Nôm",376,377,"Truyên Vua Quang Trung, Nôm.041.000",1,3,3,璨,toản,0,1,KEEP,璨,toản,-4.0,1.0,{},,UNREVIEWED,璨,toản,
+"Truyên Vua Quang Trung, Nôm",378,379,"Truyên Vua Quang Trung, Nôm.041.002",1,2,2,𢢯,ngồi,1,1,KEEP,𢢯,ngồi,-4.0,0.7673,{},x,KEEP,𢢯,ngồi,2026-11-20 12:36:55
+"Truyên Vua Quang Trung, Nôm",378,379,"Truyên Vua Quang Trung, Nôm.041.002",1,2,2,𢢯,ngồi,1,2,QN,𢢯,ngùi,-5.1932,0.2327,"{""ortho"": 1.0, ""qlm_delta"": -7.311}",,KEEP,𢢯,ngồi,2026-11-20 12:36:55
+"Truyên Vua Quang Trung, Nôm",379,380,"Truyên Vua Quang Trung, Nôm.041.003",1,4,4,璨,toản,0,1,KEEP,璨,toản,-4.0,1.0,{},,UNREVIEWED,璨,toản,
+"Truyên Vua Quang Trung, Nôm",379,380,"Truyên Vua Quang Trung, Nôm.041.003",2,7,7,弹,đán,8,1,QN,弹,đàn,1.2734,0.7445,"{""ortho"": 0.5, ""qlm_delta"": 9.245}",x,QN,弹,đàn,2026-11-20 12:37:03
+"Truyên Vua Quang Trung, Nôm",379,380,"Truyên Vua Quang Trung, Nôm.041.003",2,7,7,弹,đán,8,2,QN,弹,đan,-0.9495,0.0806,"{""ortho"": 0.5, ""qlm_delta"": 1.835}",,QN,弹,đàn,2026-11-20 12:37:03
+"Truyên Vua Quang Trung, Nôm",379,380,"Truyên Vua Quang Trung, Nôm.041.003",2,7,7,弹,đán,8,3,QN,弹,đạn,-1.2137,0.0619,"{""ortho"": 0.5, ""qlm_delta"": 0.954}",,QN,弹,đàn,2026-11-20 12:37:03
+"Truyên Vua Quang Trung, Nôm",379,380,"Truyên Vua Quang Trung, Nôm.041.003",2,7,7,弹,đán,8,4,QN,弹,dàn,-1.361,0.0534,"{""ortho"": 0.9, ""qlm_delta"": 4.463}",,QN,弹,đàn,2026-11-20 12:37:03
+"Truyên Vua Quang Trung, Nôm",379,380,"Truyên Vua Quang Trung, Nôm.041.003",2,7,7,弹,đán,8,5,QN,弹,dạn,-2.3051,0.0208,"{""ortho"": 0.9, ""qlm_delta"": 1.316}",,QN,弹,đàn,2026-11-20 12:37:03
+"Truyên Vua Quang Trung, Nôm",379,380,"Truyên Vua Quang Trung, Nôm.041.003",2,7,7,弹,đán,8,6,QN,弹,đặn,-2.6319,0.015,"{""ortho"": 0.9, ""qlm_delta"": 0.227}",,QN,弹,đàn,2026-11-20 12:37:03
+"Truyên Vua Quang Trung, Nôm",379,380,"Truyên Vua Quang Trung, Nôm.041.003",2,7,7,弹,đán,8,7,QN,弹,đần,-3.0044,0.0103,"{""ortho"": 0.9, ""qlm_delta"": -1.015}",,QN,弹,đàn,2026-11-20 12:37:03
+"Truyên Vua Quang Trung, Nôm",379,380,"Truyên Vua Quang Trung, Nôm.041.003",2,7,7,弹,đán,8,8,QN,弹,đận,-3.0783,0.0096,"{""ortho"": 0.9, ""qlm_delta"": -1.261}",,QN,弹,đàn,2026-11-20 12:37:03
+"Truyên Vua Quang Trung, Nôm",379,380,"Truyên Vua Quang Trung, Nôm.041.003",2,7,7,弹,đán,8,9,KEEP,弹,đán,-4.0,0.0038,{},,QN,弹,đàn,2026-11-20 12:37:03
+"Truyên Vua Quang Trung, Nôm",380,381,"Truyên Vua Quang Trung, Nôm.041.004",1,3,3,󰎓,giảng,0,1,KEEP,󰎓,giảng,-4.0,1.0,{},,UNREVIEWED,󰎓,giảng,
+"Truyên Vua Quang Trung, Nôm",382,383,"Truyên Vua Quang Trung, Nôm.041.006",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",391,392,"Truyên Vua Quang Trung, Nôm.042.004",1,5,5,𠂪,béo,1,1,KEEP,𠂪,béo,-4.0,0.8529,{},x,KEEP,𠂪,béo,2026-11-20 12:37:13
+"Truyên Vua Quang Trung, Nôm",391,392,"Truyên Vua Quang Trung, Nôm.042.004",1,5,5,𠂪,béo,1,2,NOM,胖,béo,-5.7572,0.1471,"{""visual_rank"": 15, ""nlm_delta"": -3.197, ""lm_oov"": false}",,KEEP,𠂪,béo,2026-11-20 12:37:13
+"Truyên Vua Quang Trung, Nôm",392,393,"Truyên Vua Quang Trung, Nôm.042.005",1,3,3,迯,ngoại,1,1,QN,迯,ngoài,-1.6225,0.9151,"{""ortho"": 0.5, ""qlm_delta"": -0.408}",x,QN,迯,ngoài,2026-11-20 12:37:18
+"Truyên Vua Quang Trung, Nôm",392,393,"Truyên Vua Quang Trung, Nôm.042.005",1,3,3,迯,ngoại,1,2,KEEP,迯,ngoại,-4.0,0.0849,{},,QN,迯,ngoài,2026-11-20 12:37:18
+"Truyên Vua Quang Trung, Nôm",394,395,"Truyên Vua Quang Trung, Nôm.042.007",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",396,397,"Truyên Vua Quang Trung, Nôm.042.009",1,1,1,𫔳,cúc,0,1,KEEP,𫔳,cúc,-4.0,1.0,{},,UNREVIEWED,𫔳,cúc,
+"Truyên Vua Quang Trung, Nôm",399,400,"Truyên Vua Quang Trung, Nôm.043.001",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",404,405,"Truyên Vua Quang Trung, Nôm.043.006",1,4,4,剔,nể,0,1,KEEP,剔,nể,-4.0,1.0,{},,UNREVIEWED,剔,nể,
+"Truyên Vua Quang Trung, Nôm",405,406,"Truyên Vua Quang Trung, Nôm.043.007",1,1,1,𦙃,cởi,0,1,KEEP,𦙃,cởi,-4.0,1.0,{},,UNREVIEWED,𦙃,cởi,
+"Truyên Vua Quang Trung, Nôm",406,407,"Truyên Vua Quang Trung, Nôm.043.008",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",407,408,"Truyên Vua Quang Trung, Nôm.043.009",1,4,4,招,cháu,2,1,NOM,沼,cháu,-3.776,0.5088,"{""visual_rank"": 1, ""nlm_delta"": -5.473, ""lm_oov"": false}",,KEEP,招,cháu,2026-11-20 12:37:36
+"Truyên Vua Quang Trung, Nôm",407,408,"Truyên Vua Quang Trung, Nôm.043.009",1,4,4,招,cháu,2,2,KEEP,招,cháu,-4.0,0.4067,{},x,KEEP,招,cháu,2026-11-20 12:37:36
+"Truyên Vua Quang Trung, Nôm",407,408,"Truyên Vua Quang Trung, Nôm.043.009",1,4,4,招,cháu,2,3,NOM,𡥙,cháu,-5.5704,0.0846,"{""visual_rank"": 5, ""nlm_delta"": -5.765, ""lm_oov"": false}",,KEEP,招,cháu,2026-11-20 12:37:36
+"Truyên Vua Quang Trung, Nôm",408,409,"Truyên Vua Quang Trung, Nôm.043.010",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",409,410,"Truyên Vua Quang Trung, Nôm.044.000",1,8,8,涞,róc,0,1,KEEP,涞,róc,-4.0,1.0,{},,UNREVIEWED,涞,róc,
+"Truyên Vua Quang Trung, Nôm",410,411,"Truyên Vua Quang Trung, Nôm.044.001",1,6,6,烣,hoi,5,1,NOM,恢,hoi,-1.3458,0.3696,"{""visual_rank"": 1, ""nlm_delta"": -0.612, ""lm_oov"": false}",x,NOM,恢,hoi,2026-11-20 12:37:58
+"Truyên Vua Quang Trung, Nôm",410,411,"Truyên Vua Quang Trung, Nôm.044.001",1,6,6,烣,hoi,5,2,NOM,咴,hoi,-1.8427,0.2249,"{""visual_rank"": 3, ""nlm_delta"": 0.473, ""lm_oov"": false}",,NOM,恢,hoi,2026-11-20 12:37:58
+"Truyên Vua Quang Trung, Nôm",410,411,"Truyên Vua Quang Trung, Nôm.044.001",1,6,6,烣,hoi,5,3,NOM,灰,hoi,-2.0566,0.1816,"{""visual_rank"": 6, ""nlm_delta"": 1.725, ""lm_oov"": false}",,NOM,恢,hoi,2026-11-20 12:37:58
+"Truyên Vua Quang Trung, Nôm",410,411,"Truyên Vua Quang Trung, Nôm.044.001",1,6,6,烣,hoi,5,4,NOM,拻,hoi,-2.1505,0.1653,"{""visual_rank"": 3, ""nlm_delta"": -0.142, ""lm_oov"": false}",,NOM,恢,hoi,2026-11-20 12:37:58
+"Truyên Vua Quang Trung, Nôm",410,411,"Truyên Vua Quang Trung, Nôm.044.001",1,6,6,烣,hoi,5,5,NOM,𦤠,hoi,-3.77,0.0327,"{""visual_rank"": 6, ""nlm_delta"": -1.702, ""lm_oov"": false}",,NOM,恢,hoi,2026-11-20 12:37:58
+"Truyên Vua Quang Trung, Nôm",410,411,"Truyên Vua Quang Trung, Nôm.044.001",1,6,6,烣,hoi,5,6,KEEP,烣,hoi,-4.0,0.026,{},,NOM,恢,hoi,2026-11-20 12:37:58
+"Truyên Vua Quang Trung, Nôm",411,412,"Truyên Vua Quang Trung, Nôm.044.002",1,5,5,𢴑,giất,1,1,QN,𢴑,giắt,-0.7536,0.9625,"{""ortho"": 0.4, ""qlm_delta"": 1.488}",,KEEP,𢴑,giất,2026-11-20 12:38:07
+"Truyên Vua Quang Trung, Nôm",411,412,"Truyên Vua Quang Trung, Nôm.044.002",1,5,5,𢴑,giất,1,2,KEEP,𢴑,giất,-4.0,0.0375,{},x,KEEP,𢴑,giất,2026-11-20 12:38:07
+"Truyên Vua Quang Trung, Nôm",416,417,"Truyên Vua Quang Trung, Nôm.044.007",1,6,6,𣈙,dầy,1,1,QN,𣈙,rầy,-3.4552,0.6329,"{""ortho"": 1.0, ""qlm_delta"": -1.517}",,KEEP,𣈙,dầy,2026-11-20 12:38:14
+"Truyên Vua Quang Trung, Nôm",416,417,"Truyên Vua Quang Trung, Nôm.044.007",1,6,6,𣈙,dầy,1,2,KEEP,𣈙,dầy,-4.0,0.3671,{},x,KEEP,𣈙,dầy,2026-11-20 12:38:14
+"Truyên Vua Quang Trung, Nôm",418,419,"Truyên Vua Quang Trung, Nôm.044.009",1,3,3,蹥,thốc,0,1,KEEP,蹥,thốc,-4.0,1.0,{},,UNREVIEWED,蹥,thốc,
+"Truyên Vua Quang Trung, Nôm",419,420,"Truyên Vua Quang Trung, Nôm.044.010",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",423,424,"Truyên Vua Quang Trung, Nôm.045.003",1,2,2,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",423,424,"Truyên Vua Quang Trung, Nôm.045.003",2,5,5,尒,mấy,3,1,NOM,氽,mấy,2.4773,0.9585,"{""visual_rank"": 1, ""nlm_delta"": 7.034, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:38:19
+"Truyên Vua Quang Trung, Nôm",423,424,"Truyên Vua Quang Trung, Nôm.045.003",2,5,5,尒,mấy,3,2,NOM,𠇍,mấy,-0.8453,0.0346,"{""visual_rank"": 1, ""nlm_delta"": 0.389, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:38:19
+"Truyên Vua Quang Trung, Nôm",423,424,"Truyên Vua Quang Trung, Nôm.045.003",2,5,5,尒,mấy,3,3,NOM,汆,mấy,-2.695,0.0054,"{""visual_rank"": 16, ""nlm_delta"": 3.11, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:38:19
+"Truyên Vua Quang Trung, Nôm",423,424,"Truyên Vua Quang Trung, Nôm.045.003",2,5,5,尒,mấy,3,4,KEEP,尒,mấy,-4.0,0.0015,{},x,KEEP,尒,mấy,2026-11-20 12:38:19
+"Truyên Vua Quang Trung, Nôm",423,424,"Truyên Vua Quang Trung, Nôm.045.003",3,8,8,柴,thay,3,1,QN,柴,thầy,-2.0776,0.5747,"{""ortho"": 0.9, ""qlm_delta"": 2.075}",,QN,柴,thày,2026-11-20 12:38:23
+"Truyên Vua Quang Trung, Nôm",423,424,"Truyên Vua Quang Trung, Nôm.045.003",3,8,8,柴,thay,3,2,QN,柴,thày,-2.7931,0.281,"{""ortho"": 0.5, ""qlm_delta"": -4.31}",x,QN,柴,thày,2026-11-20 12:38:23
+"Truyên Vua Quang Trung, Nôm",423,424,"Truyên Vua Quang Trung, Nôm.045.003",3,8,8,柴,thay,3,3,KEEP,柴,thay,-4.0,0.084,{},,QN,柴,thày,2026-11-20 12:38:23
+"Truyên Vua Quang Trung, Nôm",423,424,"Truyên Vua Quang Trung, Nôm.045.003",3,8,8,柴,thay,3,4,QN,柴,thài,-4.332,0.0603,"{""ortho"": 0.9, ""qlm_delta"": -5.44}",,QN,柴,thày,2026-11-20 12:38:23
+"Truyên Vua Quang Trung, Nôm",424,425,"Truyên Vua Quang Trung, Nôm.045.004",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",424,425,"Truyên Vua Quang Trung, Nôm.045.004",2,2,2,憚,toan,0,1,KEEP,憚,toan,-4.0,1.0,{},,UNREVIEWED,憚,toan,
+"Truyên Vua Quang Trung, Nôm",426,427,"Truyên Vua Quang Trung, Nôm.045.006",1,1,1,僻,cõi,0,1,KEEP,僻,cõi,-4.0,1.0,{},,UNREVIEWED,僻,cõi,
+"Truyên Vua Quang Trung, Nôm",426,427,"Truyên Vua Quang Trung, Nôm.045.006",2,2,2,嫌,hiểm,3,1,QN,嫌,hiềm,-2.3908,0.5244,"{""ortho"": 0.5, ""qlm_delta"": -2.969}",x,QN,嫌,hiềm,2026-11-20 12:38:41
+"Truyên Vua Quang Trung, Nôm",426,427,"Truyên Vua Quang Trung, Nôm.045.006",2,2,2,嫌,hiểm,3,2,QN,嫌,khiểm,-3.1621,0.2425,"{""ortho"": 1.0, ""qlm_delta"": -0.54}",,QN,嫌,hiềm,2026-11-20 12:38:41
+"Truyên Vua Quang Trung, Nôm",426,427,"Truyên Vua Quang Trung, Nôm.045.006",2,2,2,嫌,hiểm,3,3,QN,嫌,hiền,-3.7994,0.1282,"{""ortho"": 1.1, ""qlm_delta"": -1.665}",,QN,嫌,hiềm,2026-11-20 12:38:41
+"Truyên Vua Quang Trung, Nôm",426,427,"Truyên Vua Quang Trung, Nôm.045.006",2,2,2,嫌,hiểm,3,4,KEEP,嫌,hiểm,-4.0,0.1049,{},,QN,嫌,hiềm,2026-11-20 12:38:41
+"Truyên Vua Quang Trung, Nôm",427,428,"Truyên Vua Quang Trung, Nôm.045.007",1,3,3,尒,mấy,3,1,NOM,氽,mấy,1.6006,0.9394,"{""visual_rank"": 1, ""nlm_delta"": 5.281, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:38:44
+"Truyên Vua Quang Trung, Nôm",427,428,"Truyên Vua Quang Trung, Nôm.045.007",1,3,3,尒,mấy,3,2,NOM,𠇍,mấy,-1.2856,0.0524,"{""visual_rank"": 1, ""nlm_delta"": -0.492, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:38:44
+"Truyên Vua Quang Trung, Nôm",427,428,"Truyên Vua Quang Trung, Nôm.045.007",1,3,3,尒,mấy,3,3,NOM,汆,mấy,-3.6952,0.0047,"{""visual_rank"": 16, ""nlm_delta"": 1.109, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:38:44
+"Truyên Vua Quang Trung, Nôm",427,428,"Truyên Vua Quang Trung, Nôm.045.007",1,3,3,尒,mấy,3,4,KEEP,尒,mấy,-4.0,0.0035,{},x,KEEP,尒,mấy,2026-11-20 12:38:44
+"Truyên Vua Quang Trung, Nôm",427,428,"Truyên Vua Quang Trung, Nôm.045.007",2,5,5,傳,chuyển,3,1,QN,傳,chuyện,0.1488,0.7352,"{""ortho"": 0.5, ""qlm_delta"": 5.496}",,QN,傳,chuyến,2026-11-20 12:38:48
+"Truyên Vua Quang Trung, Nôm",427,428,"Truyên Vua Quang Trung, Nôm.045.007",2,5,5,傳,chuyển,3,2,QN,傳,chuyến,-1.3309,0.1674,"{""ortho"": 0.5, ""qlm_delta"": 0.564}",x,QN,傳,chuyến,2026-11-20 12:38:48
+"Truyên Vua Quang Trung, Nôm",427,428,"Truyên Vua Quang Trung, Nôm.045.007",2,5,5,傳,chuyển,3,3,QN,傳,chuyền,-1.9997,0.0858,"{""ortho"": 0.5, ""qlm_delta"": -1.666}",,QN,傳,chuyến,2026-11-20 12:38:48
+"Truyên Vua Quang Trung, Nôm",427,428,"Truyên Vua Quang Trung, Nôm.045.007",2,5,5,傳,chuyển,3,4,KEEP,傳,chuyển,-4.0,0.0116,{},,QN,傳,chuyến,2026-11-20 12:38:48
+"Truyên Vua Quang Trung, Nôm",429,430,"Truyên Vua Quang Trung, Nôm.045.009",1,3,3,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",429,430,"Truyên Vua Quang Trung, Nôm.045.009",2,5,5,𨑮,nuôi,0,1,KEEP,𨑮,nuôi,-4.0,1.0,{},,UNREVIEWED,𨑮,nuôi,
+"Truyên Vua Quang Trung, Nôm",432,433,"Truyên Vua Quang Trung, Nôm.046.001",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",434,435,"Truyên Vua Quang Trung, Nôm.046.003",1,5,5,懩,rưng,0,1,KEEP,懩,rưng,-4.0,1.0,{},,UNREVIEWED,懩,rưng,
+"Truyên Vua Quang Trung, Nôm",434,435,"Truyên Vua Quang Trung, Nôm.046.003",2,6,6,慊,rưng,0,1,KEEP,慊,rưng,-4.0,1.0,{},,UNREVIEWED,慊,rưng,
+"Truyên Vua Quang Trung, Nôm",435,436,"Truyên Vua Quang Trung, Nôm.046.004",1,6,6,掤,thằng,0,1,KEEP,掤,thằng,-4.0,1.0,{},,UNREVIEWED,掤,thằng,
+"Truyên Vua Quang Trung, Nôm",439,440,"Truyên Vua Quang Trung, Nôm.046.008",1,2,2,辞,tư,2,1,QN,辞,từ,-1.8131,0.6003,"{""ortho"": 0.5, ""qlm_delta"": -1.044}",x,QN,辞,từ,2026-11-20 12:39:05
+"Truyên Vua Quang Trung, Nôm",439,440,"Truyên Vua Quang Trung, Nôm.046.008",1,2,2,辞,tư,2,2,NOM,辭,tư,-2.4047,0.3323,"{""visual_rank"": 1, ""nlm_delta"": -2.73, ""lm_oov"": false}",,QN,辞,từ,2026-11-20 12:39:05
+"Truyên Vua Quang Trung, Nôm",439,440,"Truyên Vua Quang Trung, Nôm.046.008",1,2,2,辞,tư,2,3,KEEP,辞,tư,-4.0,0.0674,{},,QN,辞,từ,2026-11-20 12:39:05
+"Truyên Vua Quang Trung, Nôm",441,442,"Truyên Vua Quang Trung, Nôm.046.010",1,8,8,淶,rươi,2,1,QN,淶,rơi,-1.7694,0.499,"{""ortho"": 1.0, ""qlm_delta"": 4.102}",x,QN,淶,rơi,2026-11-20 12:39:12
+"Truyên Vua Quang Trung, Nôm",441,442,"Truyên Vua Quang Trung, Nôm.046.010",1,8,8,淶,rươi,2,2,NOM,𧍍,rươi,-1.8786,0.4474,"{""visual_rank"": 5, ""nlm_delta"": 1.618, ""lm_oov"": false}",,QN,淶,rơi,2026-11-20 12:39:12
+"Truyên Vua Quang Trung, Nôm",441,442,"Truyên Vua Quang Trung, Nôm.046.010",1,8,8,淶,rươi,2,3,KEEP,淶,rươi,-4.0,0.0536,{},,QN,淶,rơi,2026-11-20 12:39:12
+"Truyên Vua Quang Trung, Nôm",443,444,"Truyên Vua Quang Trung, Nôm.047.001",1,4,4,勢,giết,0,1,KEEP,勢,giết,-4.0,1.0,{},,UNREVIEWED,勢,giết,
+"Truyên Vua Quang Trung, Nôm",443,444,"Truyên Vua Quang Trung, Nôm.047.001",2,7,7,勢,giết,0,1,KEEP,勢,giết,-4.0,1.0,{},,UNREVIEWED,勢,giết,
+"Truyên Vua Quang Trung, Nôm",445,446,"Truyên Vua Quang Trung, Nôm.047.003",1,1,1,騎,cuối,0,1,KEEP,騎,cuối,-4.0,1.0,{},,UNREVIEWED,騎,cuối,
+"Truyên Vua Quang Trung, Nôm",445,446,"Truyên Vua Quang Trung, Nôm.047.003",2,4,4,觔,miết,0,1,KEEP,觔,miết,-4.0,1.0,{},,UNREVIEWED,觔,miết,
+"Truyên Vua Quang Trung, Nôm",446,447,"Truyên Vua Quang Trung, Nôm.047.004",1,6,6,饒,nghèo,0,1,KEEP,饒,nghèo,-4.0,1.0,{},,UNREVIEWED,饒,nghèo,
+"Truyên Vua Quang Trung, Nôm",449,450,"Truyên Vua Quang Trung, Nôm.047.007",1,7,7,尒,mấy,3,1,NOM,氽,mấy,1.5256,0.8964,"{""visual_rank"": 1, ""nlm_delta"": 5.131, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:39:17
+"Truyên Vua Quang Trung, Nôm",449,450,"Truyên Vua Quang Trung, Nôm.047.007",1,7,7,尒,mấy,3,2,NOM,𠇍,mấy,-0.7785,0.0895,"{""visual_rank"": 1, ""nlm_delta"": 0.522, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:39:17
+"Truyên Vua Quang Trung, Nôm",449,450,"Truyên Vua Quang Trung, Nôm.047.007",1,7,7,尒,mấy,3,3,NOM,汆,mấy,-2.9233,0.0105,"{""visual_rank"": 16, ""nlm_delta"": 2.653, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:39:17
+"Truyên Vua Quang Trung, Nôm",449,450,"Truyên Vua Quang Trung, Nôm.047.007",1,7,7,尒,mấy,3,4,KEEP,尒,mấy,-4.0,0.0036,{},x,KEEP,尒,mấy,2026-11-20 12:39:17
+"Truyên Vua Quang Trung, Nôm",454,455,"Truyên Vua Quang Trung, Nôm.048.001",1,2,2,憚,toan,0,1,KEEP,憚,toan,-4.0,1.0,{},,UNREVIEWED,憚,toan,
+"Truyên Vua Quang Trung, Nôm",455,456,"Truyên Vua Quang Trung, Nôm.048.002",1,2,2,為,rũ,0,1,KEEP,為,rũ,-4.0,1.0,{},,UNREVIEWED,為,rũ,
+"Truyên Vua Quang Trung, Nôm",456,457,"Truyên Vua Quang Trung, Nôm.048.003",1,2,2,弥,bên,0,1,KEEP,弥,bên,-4.0,1.0,{},,UNREVIEWED,弥,bên,
+"Truyên Vua Quang Trung, Nôm",456,457,"Truyên Vua Quang Trung, Nôm.048.003",2,3,3,酻,gây,0,1,KEEP,酻,gây,-4.0,1.0,{},,UNREVIEWED,酻,gây,
+"Truyên Vua Quang Trung, Nôm",457,458,"Truyên Vua Quang Trung, Nôm.048.004",1,8,8,真,trân,1,1,KEEP,真,trân,-4.0,0.9951,{},x,KEEP,真,trân,2026-11-20 12:39:22
+"Truyên Vua Quang Trung, Nôm",457,458,"Truyên Vua Quang Trung, Nôm.048.004",1,8,8,真,trân,1,2,NOM,瞋,trân,-9.316,0.0049,"{""visual_rank"": 15, ""nlm_delta"": -10.314, ""lm_oov"": false}",,KEEP,真,trân,2026-11-20 12:39:22
+"Truyên Vua Quang Trung, Nôm",459,460,"Truyên Vua Quang Trung, Nôm.048.006",1,7,7,𱛀,hết,0,1,KEEP,𱛀,hết,-4.0,1.0,{},,UNREVIEWED,𱛀,hết,
+"Truyên Vua Quang Trung, Nôm",460,461,"Truyên Vua Quang Trung, Nôm.048.007",1,4,4,𣵾,ứa,0,1,KEEP,𣵾,ứa,-4.0,1.0,{},,UNREVIEWED,𣵾,ứa,
+"Truyên Vua Quang Trung, Nôm",467,468,"Truyên Vua Quang Trung, Nôm.049.003",1,6,6,𢢯,ngồi,1,1,KEEP,𢢯,ngồi,-4.0,0.5495,{},x,KEEP,𢢯,ngồi,2026-11-20 12:39:27
+"Truyên Vua Quang Trung, Nôm",467,468,"Truyên Vua Quang Trung, Nôm.049.003",1,6,6,𢢯,ngồi,1,2,QN,𢢯,ngùi,-4.1988,0.4505,"{""ortho"": 1.0, ""qlm_delta"": -3.996}",,KEEP,𢢯,ngồi,2026-11-20 12:39:27
+"Truyên Vua Quang Trung, Nôm",468,469,"Truyên Vua Quang Trung, Nôm.049.004",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",471,472,"Truyên Vua Quang Trung, Nôm.049.007",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",471,472,"Truyên Vua Quang Trung, Nôm.049.007",2,7,7,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",472,473,"Truyên Vua Quang Trung, Nôm.049.008",1,5,5,豬,giở,0,1,KEEP,豬,giở,-4.0,1.0,{},,UNREVIEWED,豬,giở,
+"Truyên Vua Quang Trung, Nôm",473,474,"Truyên Vua Quang Trung, Nôm.049.009",1,2,2,槰,phùng,3,1,NOM,摓,phùng,-0.2852,0.5014,"{""visual_rank"": 1, ""nlm_delta"": 1.509, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:39:42
+"Truyên Vua Quang Trung, Nôm",473,474,"Truyên Vua Quang Trung, Nôm.049.009",1,2,2,槰,phùng,3,2,NOM,縫,phùng,-0.549,0.3852,"{""visual_rank"": 2, ""nlm_delta"": 2.198, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:39:42
+"Truyên Vua Quang Trung, Nôm",473,474,"Truyên Vua Quang Trung, Nôm.049.009",1,2,2,槰,phùng,3,3,NOM,缝,phùng,-1.8856,0.1012,"{""visual_rank"": 4, ""nlm_delta"": 1.057, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:39:42
+"Truyên Vua Quang Trung, Nôm",473,474,"Truyên Vua Quang Trung, Nôm.049.009",1,2,2,槰,phùng,3,4,KEEP,槰,phùng,-4.0,0.0122,{},x,KEEP,槰,phùng,2026-11-20 12:39:42
+"Truyên Vua Quang Trung, Nôm",474,475,"Truyên Vua Quang Trung, Nôm.049.010",1,6,6,槰,phùng,3,1,NOM,摓,phùng,0.1262,0.7222,"{""visual_rank"": 1, ""nlm_delta"": 2.332, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:39:49
+"Truyên Vua Quang Trung, Nôm",474,475,"Truyên Vua Quang Trung, Nôm.049.010",1,6,6,槰,phùng,3,2,NOM,縫,phùng,-0.9716,0.2409,"{""visual_rank"": 2, ""nlm_delta"": 1.353, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:39:49
+"Truyên Vua Quang Trung, Nôm",474,475,"Truyên Vua Quang Trung, Nôm.049.010",1,6,6,槰,phùng,3,3,NOM,缝,phùng,-3.228,0.0252,"{""visual_rank"": 4, ""nlm_delta"": -1.628, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:39:49
+"Truyên Vua Quang Trung, Nôm",474,475,"Truyên Vua Quang Trung, Nôm.049.010",1,6,6,槰,phùng,3,4,KEEP,槰,phùng,-4.0,0.0117,{},x,KEEP,槰,phùng,2026-11-20 12:39:49
+"Truyên Vua Quang Trung, Nôm",475,476,"Truyên Vua Quang Trung, Nôm.050.000",1,1,1,𣵶,xui,2,1,NOM,𨁰,xui,-2.6595,0.5683,"{""visual_rank"": 4, ""nlm_delta"": -0.491, ""lm_oov"": false}",,KEEP,𣵶,xui,2026-11-20 12:40:00
+"Truyên Vua Quang Trung, Nôm",475,476,"Truyên Vua Quang Trung, Nôm.050.000",1,1,1,𣵶,xui,2,2,QN,𣵶,xuôi,-3.357,0.2829,"{""ortho"": 1.0, ""qlm_delta"": -1.19}",,KEEP,𣵶,xui,2026-11-20 12:40:00
+"Truyên Vua Quang Trung, Nôm",475,476,"Truyên Vua Quang Trung, Nôm.050.000",1,1,1,𣵶,xui,2,3,KEEP,𣵶,xui,-4.0,0.1487,{},x,KEEP,𣵶,xui,2026-11-20 12:40:00
+"Truyên Vua Quang Trung, Nôm",475,476,"Truyên Vua Quang Trung, Nôm.050.000",2,5,5,従,tung,8,1,NOM,從,tung,2.449,0.9513,"{""visual_rank"": 1, ""nlm_delta"": 6.977, ""lm_oov"": false}",,KEEP,従,tung,2026-11-20 12:40:09
+"Truyên Vua Quang Trung, Nôm",475,476,"Truyên Vua Quang Trung, Nôm.050.000",2,5,5,従,tung,8,2,QN,従,tùng,-1.1676,0.0256,"{""ortho"": 0.5, ""qlm_delta"": 1.108}",,KEEP,従,tung,2026-11-20 12:40:09
+"Truyên Vua Quang Trung, Nôm",475,476,"Truyên Vua Quang Trung, Nôm.050.000",2,5,5,従,tung,8,3,QN,従,tụng,-1.7174,0.0148,"{""ortho"": 0.5, ""qlm_delta"": -0.725}",,KEEP,従,tung,2026-11-20 12:40:09
+"Truyên Vua Quang Trung, Nôm",475,476,"Truyên Vua Quang Trung, Nôm.050.000",2,5,5,従,tung,8,4,QN,従,thung,-3.3436,0.0029,"{""ortho"": 0.6, ""qlm_delta"": -5.145}",,KEEP,従,tung,2026-11-20 12:40:09
+"Truyên Vua Quang Trung, Nôm",475,476,"Truyên Vua Quang Trung, Nôm.050.000",2,5,5,従,tung,8,5,KEEP,従,tung,-4.0,0.0015,{},x,KEEP,従,tung,2026-11-20 12:40:09
+"Truyên Vua Quang Trung, Nôm",475,476,"Truyên Vua Quang Trung, Nôm.050.000",2,5,5,従,tung,8,6,QN,従,thùng,-4.2384,0.0012,"{""ortho"": 1.1, ""qlm_delta"": -3.128}",,KEEP,従,tung,2026-11-20 12:40:09
+"Truyên Vua Quang Trung, Nôm",475,476,"Truyên Vua Quang Trung, Nôm.050.000",2,5,5,従,tung,8,7,NOM,嵸,tung,-4.3904,0.001,"{""visual_rank"": 7, ""nlm_delta"": -2.542, ""lm_oov"": false}",,KEEP,従,tung,2026-11-20 12:40:09
+"Truyên Vua Quang Trung, Nôm",475,476,"Truyên Vua Quang Trung, Nôm.050.000",2,5,5,従,tung,8,8,NOM,踨,tung,-4.4009,0.001,"{""visual_rank"": 18, ""nlm_delta"": 0.032, ""lm_oov"": false}",,KEEP,従,tung,2026-11-20 12:40:09
+"Truyên Vua Quang Trung, Nôm",475,476,"Truyên Vua Quang Trung, Nôm.050.000",2,5,5,従,tung,8,9,QN,従,thủng,-4.6503,0.0008,"{""ortho"": 1.1, ""qlm_delta"": -4.501}",,KEEP,従,tung,2026-11-20 12:40:09
+"Truyên Vua Quang Trung, Nôm",476,477,"Truyên Vua Quang Trung, Nôm.050.001",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",477,478,"Truyên Vua Quang Trung, Nôm.050.002",1,6,6,憚,toan,0,1,KEEP,憚,toan,-4.0,1.0,{},,UNREVIEWED,憚,toan,
+"Truyên Vua Quang Trung, Nôm",479,480,"Truyên Vua Quang Trung, Nôm.050.004",1,8,8,千,bằng,0,1,KEEP,千,bằng,-4.0,1.0,{},,UNREVIEWED,千,bằng,
+"Truyên Vua Quang Trung, Nôm",483,484,"Truyên Vua Quang Trung, Nôm.050.008",1,6,6,槰,phùng,3,1,NOM,摓,phùng,0.716,0.5891,"{""visual_rank"": 1, ""nlm_delta"": 3.512, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:40:14
+"Truyên Vua Quang Trung, Nôm",483,484,"Truyên Vua Quang Trung, Nôm.050.008",1,6,6,槰,phùng,3,2,NOM,縫,phùng,0.1348,0.3295,"{""visual_rank"": 2, ""nlm_delta"": 3.566, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:40:14
+"Truyên Vua Quang Trung, Nôm",483,484,"Truyên Vua Quang Trung, Nôm.050.008",1,6,6,槰,phùng,3,3,NOM,缝,phùng,-1.3304,0.0761,"{""visual_rank"": 4, ""nlm_delta"": 2.168, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:40:14
+"Truyên Vua Quang Trung, Nôm",483,484,"Truyên Vua Quang Trung, Nôm.050.008",1,6,6,槰,phùng,3,4,KEEP,槰,phùng,-4.0,0.0053,{},x,KEEP,槰,phùng,2026-11-20 12:40:14
+"Truyên Vua Quang Trung, Nôm",486,487,"Truyên Vua Quang Trung, Nôm.051.000",1,5,5,動,cứng,1,1,KEEP,動,cứng,-4.0,0.9349,{},,NOM,𠡚,cứng,2026-11-20 12:40:31
+"Truyên Vua Quang Trung, Nôm",486,487,"Truyên Vua Quang Trung, Nôm.051.000",1,5,5,動,cứng,1,2,NOM,𠡚,cứng,-6.665,0.0651,"{""visual_rank"": 11, ""nlm_delta"": -5.875, ""lm_oov"": false}",x,NOM,𠡚,cứng,2026-11-20 12:40:31
+"Truyên Vua Quang Trung, Nôm",488,489,"Truyên Vua Quang Trung, Nôm.051.002",1,2,2,槰,phùng,3,1,NOM,摓,phùng,0.535,0.5467,"{""visual_rank"": 1, ""nlm_delta"": 3.15, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:40:36
+"Truyên Vua Quang Trung, Nôm",488,489,"Truyên Vua Quang Trung, Nôm.051.002",1,2,2,槰,phùng,3,2,NOM,縫,phùng,0.1522,0.3728,"{""visual_rank"": 2, ""nlm_delta"": 3.6, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:40:36
+"Truyên Vua Quang Trung, Nôm",488,489,"Truyên Vua Quang Trung, Nôm.051.002",1,2,2,槰,phùng,3,3,NOM,缝,phùng,-1.4575,0.0745,"{""visual_rank"": 4, ""nlm_delta"": 1.913, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:40:36
+"Truyên Vua Quang Trung, Nôm",488,489,"Truyên Vua Quang Trung, Nôm.051.002",1,2,2,槰,phùng,3,4,KEEP,槰,phùng,-4.0,0.0059,{},x,KEEP,槰,phùng,2026-11-20 12:40:36
+"Truyên Vua Quang Trung, Nôm",489,490,"Truyên Vua Quang Trung, Nôm.051.003",1,5,5,𢟹,náu,4,1,NOM,𤍇,náu,-0.9309,0.7698,"{""visual_rank"": 1, ""nlm_delta"": 0.218, ""lm_oov"": false}",,KEEP,𢟹,náu,2026-11-20 12:40:42
+"Truyên Vua Quang Trung, Nôm",489,490,"Truyên Vua Quang Trung, Nôm.051.003",1,5,5,𢟹,náu,4,2,NOM,槈,náu,-2.5658,0.1501,"{""visual_rank"": 2, ""nlm_delta"": -1.836, ""lm_oov"": false}",,KEEP,𢟹,náu,2026-11-20 12:40:42
+"Truyên Vua Quang Trung, Nôm",489,490,"Truyên Vua Quang Trung, Nôm.051.003",1,5,5,𢟹,náu,4,3,NOM,耨,náu,-3.8339,0.0422,"{""visual_rank"": 8, ""nlm_delta"": -1.076, ""lm_oov"": false}",,KEEP,𢟹,náu,2026-11-20 12:40:42
+"Truyên Vua Quang Trung, Nôm",489,490,"Truyên Vua Quang Trung, Nôm.051.003",1,5,5,𢟹,náu,4,4,KEEP,𢟹,náu,-4.0,0.0358,{},x,KEEP,𢟹,náu,2026-11-20 12:40:42
+"Truyên Vua Quang Trung, Nôm",489,490,"Truyên Vua Quang Trung, Nôm.051.003",1,5,5,𢟹,náu,4,5,NOM,鎒,náu,-6.8344,0.0021,"{""visual_rank"": 18, ""nlm_delta"": -4.836, ""lm_oov"": false}",,KEEP,𢟹,náu,2026-11-20 12:40:42
+"Truyên Vua Quang Trung, Nôm",491,492,"Truyên Vua Quang Trung, Nôm.051.005",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",491,492,"Truyên Vua Quang Trung, Nôm.051.005",2,4,4,擐,chống,0,1,KEEP,擐,chống,-4.0,1.0,{},,UNREVIEWED,擐,chống,
+"Truyên Vua Quang Trung, Nôm",491,492,"Truyên Vua Quang Trung, Nôm.051.005",3,6,6,弥,bên,0,1,KEEP,弥,bên,-4.0,1.0,{},,UNREVIEWED,弥,bên,
+"Truyên Vua Quang Trung, Nôm",493,494,"Truyên Vua Quang Trung, Nôm.051.007",1,6,6,槰,phùng,3,1,NOM,縫,phùng,0.5713,0.6156,"{""visual_rank"": 2, ""nlm_delta"": 4.438, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:41:02
+"Truyên Vua Quang Trung, Nôm",493,494,"Truyên Vua Quang Trung, Nôm.051.007",1,6,6,槰,phùng,3,2,NOM,摓,phùng,-0.2553,0.2694,"{""visual_rank"": 1, ""nlm_delta"": 1.569, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:41:02
+"Truyên Vua Quang Trung, Nôm",493,494,"Truyên Vua Quang Trung, Nôm.051.007",1,6,6,槰,phùng,3,3,NOM,缝,phùng,-1.1635,0.1086,"{""visual_rank"": 4, ""nlm_delta"": 2.501, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:41:02
+"Truyên Vua Quang Trung, Nôm",493,494,"Truyên Vua Quang Trung, Nôm.051.007",1,6,6,槰,phùng,3,4,KEEP,槰,phùng,-4.0,0.0064,{},x,KEEP,槰,phùng,2026-11-20 12:41:02
+"Truyên Vua Quang Trung, Nôm",494,495,"Truyên Vua Quang Trung, Nôm.051.008",1,1,1,槰,phùng,3,1,NOM,摓,phùng,0.362,0.6216,"{""visual_rank"": 1, ""nlm_delta"": 2.803, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:41:06
+"Truyên Vua Quang Trung, Nôm",494,495,"Truyên Vua Quang Trung, Nôm.051.008",1,1,1,槰,phùng,3,2,NOM,縫,phùng,-0.5141,0.2588,"{""visual_rank"": 2, ""nlm_delta"": 2.268, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:41:06
+"Truyên Vua Quang Trung, Nôm",494,495,"Truyên Vua Quang Trung, Nôm.051.008",1,1,1,槰,phùng,3,3,NOM,缝,phùng,-1.3544,0.1117,"{""visual_rank"": 4, ""nlm_delta"": 2.119, ""lm_oov"": false}",,KEEP,槰,phùng,2026-11-20 12:41:06
+"Truyên Vua Quang Trung, Nôm",494,495,"Truyên Vua Quang Trung, Nôm.051.008",1,1,1,槰,phùng,3,4,KEEP,槰,phùng,-4.0,0.0079,{},x,KEEP,槰,phùng,2026-11-20 12:41:06
+"Truyên Vua Quang Trung, Nôm",495,496,"Truyên Vua Quang Trung, Nôm.051.009",1,7,8,𠅎,tăm,0,1,KEEP,𠅎,tăm,-4.0,1.0,{},,UNREVIEWED,𠅎,tăm,
+"Truyên Vua Quang Trung, Nôm",496,497,"Truyên Vua Quang Trung, Nôm.051.010",1,4,4,棟,dòng,2,1,QN,棟,dộng,-2.6115,0.4476,"{""ortho"": 0.9, ""qlm_delta"": 0.295}",,QN,棟,đóng,2026-11-20 12:41:20
+"Truyên Vua Quang Trung, Nôm",496,497,"Truyên Vua Quang Trung, Nôm.051.010",1,4,4,棟,dòng,2,2,QN,棟,đóng,-2.627,0.4407,"{""ortho"": 0.9, ""qlm_delta"": 0.243}",x,QN,棟,đóng,2026-11-20 12:41:20
+"Truyên Vua Quang Trung, Nôm",496,497,"Truyên Vua Quang Trung, Nôm.051.010",1,4,4,棟,dòng,2,3,KEEP,棟,dòng,-4.0,0.1117,{},,QN,棟,đóng,2026-11-20 12:41:20
+"Truyên Vua Quang Trung, Nôm",497,498,"Truyên Vua Quang Trung, Nôm.052.000",1,6,6,啉,làm,8,1,QN,啉,lầm,-2.6797,0.3828,"{""ortho"": 0.4, ""qlm_delta"": -4.932}",,KEEP,啉,làm,2026-11-20 12:41:36
+"Truyên Vua Quang Trung, Nôm",497,498,"Truyên Vua Quang Trung, Nôm.052.000",1,6,6,啉,làm,8,2,QN,啉,lam,-3.2524,0.2159,"{""ortho"": 0.5, ""qlm_delta"": -5.841}",,KEEP,啉,làm,2026-11-20 12:41:36
+"Truyên Vua Quang Trung, Nôm",497,498,"Truyên Vua Quang Trung, Nôm.052.000",1,6,6,啉,làm,8,3,QN,啉,lảm,-3.9492,0.1076,"{""ortho"": 0.5, ""qlm_delta"": -8.164}",,KEEP,啉,làm,2026-11-20 12:41:36
+"Truyên Vua Quang Trung, Nôm",497,498,"Truyên Vua Quang Trung, Nôm.052.000",1,6,6,啉,làm,8,4,KEEP,啉,làm,-4.0,0.1022,{},x,KEEP,啉,làm,2026-11-20 12:41:36
+"Truyên Vua Quang Trung, Nôm",497,498,"Truyên Vua Quang Trung, Nôm.052.000",1,6,6,啉,làm,8,5,QN,啉,lằm,-4.2583,0.079,"{""ortho"": 0.4, ""qlm_delta"": -10.194}",,KEEP,啉,làm,2026-11-20 12:41:36
+"Truyên Vua Quang Trung, Nôm",497,498,"Truyên Vua Quang Trung, Nôm.052.000",1,6,6,啉,làm,8,6,QN,啉,lâm,-4.4426,0.0657,"{""ortho"": 0.9, ""qlm_delta"": -5.809}",,KEEP,啉,làm,2026-11-20 12:41:36
+"Truyên Vua Quang Trung, Nôm",497,498,"Truyên Vua Quang Trung, Nôm.052.000",1,6,6,啉,làm,8,7,QN,啉,lăm,-5.6317,0.02,"{""ortho"": 0.9, ""qlm_delta"": -9.772}",,KEEP,啉,làm,2026-11-20 12:41:36
+"Truyên Vua Quang Trung, Nôm",497,498,"Truyên Vua Quang Trung, Nôm.052.000",1,6,6,啉,làm,8,8,QN,啉,lùm,-5.6868,0.0189,"{""ortho"": 1.0, ""qlm_delta"": -8.956}",,KEEP,啉,làm,2026-11-20 12:41:36
+"Truyên Vua Quang Trung, Nôm",497,498,"Truyên Vua Quang Trung, Nôm.052.000",1,6,6,啉,làm,8,9,QN,啉,lẩm,-6.5643,0.0079,"{""ortho"": 0.9, ""qlm_delta"": -12.881}",,KEEP,啉,làm,2026-11-20 12:41:36
+"Truyên Vua Quang Trung, Nôm",499,500,"Truyên Vua Quang Trung, Nôm.052.002",1,7,7,𤊬,phới,1,1,QN,𤊬,phơi,-0.536,0.9696,"{""ortho"": 0.5, ""qlm_delta"": 3.213}",x,QN,𤊬,phơi,2026-11-20 12:41:40
+"Truyên Vua Quang Trung, Nôm",499,500,"Truyên Vua Quang Trung, Nôm.052.002",1,7,7,𤊬,phới,1,2,KEEP,𤊬,phới,-4.0,0.0304,{},,QN,𤊬,phơi,2026-11-20 12:41:40
+"Truyên Vua Quang Trung, Nôm",500,501,"Truyên Vua Quang Trung, Nôm.052.003",1,6,6,襾,tây,3,1,NOM,西,tây,3.5148,0.9989,"{""visual_rank"": 1, ""nlm_delta"": 9.109, ""lm_oov"": false}",x,NOM,西,tây,2026-11-20 12:41:46
+"Truyên Vua Quang Trung, Nôm",500,501,"Truyên Vua Quang Trung, Nôm.052.003",1,6,6,襾,tây,3,2,KEEP,襾,tây,-4.0,0.0005,{},,NOM,西,tây,2026-11-20 12:41:46
+"Truyên Vua Quang Trung, Nôm",500,501,"Truyên Vua Quang Trung, Nôm.052.003",1,6,6,襾,tây,3,3,NOM,覀,tây,-4.3087,0.0004,"{""visual_rank"": 13, ""nlm_delta"": -0.7, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 12:41:46
+"Truyên Vua Quang Trung, Nôm",500,501,"Truyên Vua Quang Trung, Nôm.052.003",1,6,6,襾,tây,3,4,NOM,恓,tây,-5.0042,0.0002,"{""visual_rank"": 17, ""nlm_delta"": -1.337, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 12:41:46
+"Truyên Vua Quang Trung, Nôm",503,504,"Truyên Vua Quang Trung, Nôm.052.006",1,7,7,捽,rích,0,1,KEEP,捽,rích,-4.0,1.0,{},,UNREVIEWED,捽,rích,
+"Truyên Vua Quang Trung, Nôm",508,509,"Truyên Vua Quang Trung, Nôm.053.000",1,1,1,蹺,cheo,2,1,QN,蹺,theo,1.5895,0.9895,"{""ortho"": 0.6, ""qlm_delta"": 11.298}",x,QN,蹺,theo,2026-11-20 12:41:51
+"Truyên Vua Quang Trung, Nôm",508,509,"Truyên Vua Quang Trung, Nôm.053.000",1,1,1,蹺,cheo,2,2,QN,蹺,teo,-3.3883,0.0068,"{""ortho"": 1.2, ""qlm_delta"": 0.706}",,QN,蹺,theo,2026-11-20 12:41:51
+"Truyên Vua Quang Trung, Nôm",508,509,"Truyên Vua Quang Trung, Nôm.053.000",1,1,1,蹺,cheo,2,3,KEEP,蹺,cheo,-4.0,0.0037,{},,QN,蹺,theo,2026-11-20 12:41:51
+"Truyên Vua Quang Trung, Nôm",509,510,"Truyên Vua Quang Trung, Nôm.053.001",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",509,510,"Truyên Vua Quang Trung, Nôm.053.001",2,7,7,𠅎,mắt,1,1,QN,𠅎,mất,-0.7663,0.9621,"{""ortho"": 0.4, ""qlm_delta"": 1.446}",x,QN,𠅎,mất,2026-11-20 12:41:57
+"Truyên Vua Quang Trung, Nôm",509,510,"Truyên Vua Quang Trung, Nôm.053.001",2,7,7,𠅎,mắt,1,2,KEEP,𠅎,mắt,-4.0,0.0379,{},,QN,𠅎,mất,2026-11-20 12:41:57
+"Truyên Vua Quang Trung, Nôm",509,510,"Truyên Vua Quang Trung, Nôm.053.001",3,8,8,𥉫,trong,2,1,NOM,滝,trong,1.034,0.9261,"{""visual_rank"": 1, ""nlm_delta"": 4.147, ""lm_oov"": false}",,KEEP,𥉫,trong,2026-11-20 12:55:57
+"Truyên Vua Quang Trung, Nôm",509,510,"Truyên Vua Quang Trung, Nôm.053.001",3,8,8,𥉫,trong,2,2,QN,𥉫,trông,-1.5794,0.0679,"{""ortho"": 0.4, ""qlm_delta"": -1.265}",,KEEP,𥉫,trong,2026-11-20 12:55:57
+"Truyên Vua Quang Trung, Nôm",509,510,"Truyên Vua Quang Trung, Nôm.053.001",3,8,8,𥉫,trong,2,3,KEEP,𥉫,trong,-4.0,0.006,{},x,KEEP,𥉫,trong,2026-11-20 12:55:57
+"Truyên Vua Quang Trung, Nôm",517,518,"Truyên Vua Quang Trung, Nôm.053.009",1,7,7,尒,mấy,3,1,NOM,氽,mấy,3.3935,0.93,"{""visual_rank"": 1, ""nlm_delta"": 8.867, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:42:01
+"Truyên Vua Quang Trung, Nôm",517,518,"Truyên Vua Quang Trung, Nôm.053.009",1,7,7,尒,mấy,3,2,NOM,𠇍,mấy,0.6496,0.0598,"{""visual_rank"": 1, ""nlm_delta"": 3.379, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:42:01
+"Truyên Vua Quang Trung, Nôm",517,518,"Truyên Vua Quang Trung, Nôm.053.009",1,7,7,尒,mấy,3,3,NOM,汆,mấy,-1.1787,0.0096,"{""visual_rank"": 16, ""nlm_delta"": 6.142, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:42:01
+"Truyên Vua Quang Trung, Nôm",517,518,"Truyên Vua Quang Trung, Nôm.053.009",1,7,7,尒,mấy,3,4,KEEP,尒,mấy,-4.0,0.0006,{},x,KEEP,尒,mấy,2026-11-20 12:42:01
+"Truyên Vua Quang Trung, Nôm",522,523,"Truyên Vua Quang Trung, Nôm.054.003",1,4,4,𢤡,giỏi,0,1,KEEP,𢤡,giỏi,-4.0,1.0,{},,UNREVIEWED,𢤡,giỏi,
+"Truyên Vua Quang Trung, Nôm",523,524,"Truyên Vua Quang Trung, Nôm.054.004",1,5,5,猪,giờ,0,1,KEEP,猪,giờ,-4.0,1.0,{},,UNREVIEWED,猪,giờ,
+"Truyên Vua Quang Trung, Nôm",525,526,"Truyên Vua Quang Trung, Nôm.054.006",1,5,5,施,thì,6,1,QN,施,thị,0.114,0.6311,"{""ortho"": 0.5, ""qlm_delta"": 5.38}",,QN,施,thi,2026-11-20 12:42:11
+"Truyên Vua Quang Trung, Nôm",525,526,"Truyên Vua Quang Trung, Nôm.054.006",1,5,5,施,thì,6,2,QN,施,thi,-1.2049,0.1688,"{""ortho"": 0.5, ""qlm_delta"": 0.984}",x,QN,施,thi,2026-11-20 12:42:11
+"Truyên Vua Quang Trung, Nôm",525,526,"Truyên Vua Quang Trung, Nôm.054.006",1,5,5,施,thì,6,3,QN,施,thí,-1.983,0.0775,"{""ortho"": 0.5, ""qlm_delta"": -1.61}",,QN,施,thi,2026-11-20 12:42:11
+"Truyên Vua Quang Trung, Nôm",525,526,"Truyên Vua Quang Trung, Nôm.054.006",1,5,5,施,thì,6,4,NOM,茄,thì,-2.4195,0.0501,"{""visual_rank"": 6, ""nlm_delta"": 0.999, ""lm_oov"": false}",,QN,施,thi,2026-11-20 12:42:11
+"Truyên Vua Quang Trung, Nôm",525,526,"Truyên Vua Quang Trung, Nôm.054.006",1,5,5,施,thì,6,5,QN,施,thỉ,-2.4718,0.0475,"{""ortho"": 0.5, ""qlm_delta"": -3.239}",,QN,施,thi,2026-11-20 12:42:11
+"Truyên Vua Quang Trung, Nôm",525,526,"Truyên Vua Quang Trung, Nôm.054.006",1,5,5,施,thì,6,6,QN,施,thè,-3.655,0.0146,"{""ortho"": 1.0, ""qlm_delta"": -2.183}",,QN,施,thi,2026-11-20 12:42:11
+"Truyên Vua Quang Trung, Nôm",525,526,"Truyên Vua Quang Trung, Nôm.054.006",1,5,5,施,thì,6,7,KEEP,施,thì,-4.0,0.0103,{},,QN,施,thi,2026-11-20 12:42:11
+"Truyên Vua Quang Trung, Nôm",525,526,"Truyên Vua Quang Trung, Nôm.054.006",2,6,6,唏,hỏi,3,1,QN,唏,hơi,-2.9788,0.3772,"{""ortho"": 0.9, ""qlm_delta"": -0.929}",x,QN,唏,hơi,2026-11-20 12:42:13
+"Truyên Vua Quang Trung, Nôm",525,526,"Truyên Vua Quang Trung, Nôm.054.006",2,6,6,唏,hỏi,3,2,QN,唏,hời,-3.3392,0.263,"{""ortho"": 0.9, ""qlm_delta"": -2.131}",,QN,唏,hơi,2026-11-20 12:42:13
+"Truyên Vua Quang Trung, Nôm",525,526,"Truyên Vua Quang Trung, Nôm.054.006",2,6,6,唏,hỏi,3,3,QN,唏,hôi,-3.5,0.224,"{""ortho"": 0.9, ""qlm_delta"": -2.667}",,QN,唏,hơi,2026-11-20 12:42:13
+"Truyên Vua Quang Trung, Nôm",525,526,"Truyên Vua Quang Trung, Nôm.054.006",2,6,6,唏,hỏi,3,4,KEEP,唏,hỏi,-4.0,0.1358,{},,QN,唏,hơi,2026-11-20 12:42:13
+"Truyên Vua Quang Trung, Nôm",526,527,"Truyên Vua Quang Trung, Nôm.054.007",1,6,6,京,bình,1,1,QN,京,kình,-3.8371,0.5406,"{""ortho"": 1.0, ""qlm_delta"": -2.79}",x,QN,京,kình,2026-11-20 12:42:22
+"Truyên Vua Quang Trung, Nôm",526,527,"Truyên Vua Quang Trung, Nôm.054.007",1,6,6,京,bình,1,2,KEEP,京,bình,-4.0,0.4594,{},,QN,京,kình,2026-11-20 12:42:22
+"Truyên Vua Quang Trung, Nôm",527,528,"Truyên Vua Quang Trung, Nôm.054.008",1,8,8,倫,luôn,5,1,NOM,㫻,luôn,-0.6197,0.5611,"{""visual_rank"": 1, ""nlm_delta"": 0.84, ""lm_oov"": false}",,KEEP,倫,luôn,2026-11-20 12:42:34
+"Truyên Vua Quang Trung, Nôm",527,528,"Truyên Vua Quang Trung, Nôm.054.008",1,8,8,倫,luôn,5,2,NOM,掄,luôn,-1.1645,0.3254,"{""visual_rank"": 3, ""nlm_delta"": 1.83, ""lm_oov"": false}",,KEEP,倫,luôn,2026-11-20 12:42:34
+"Truyên Vua Quang Trung, Nôm",527,528,"Truyên Vua Quang Trung, Nôm.054.008",1,8,8,倫,luôn,5,3,QN,倫,luồn,-3.203,0.0424,"{""ortho"": 0.5, ""qlm_delta"": -5.677}",,KEEP,倫,luôn,2026-11-20 12:42:34
+"Truyên Vua Quang Trung, Nôm",527,528,"Truyên Vua Quang Trung, Nôm.054.008",1,8,8,倫,luôn,5,4,QN,倫,luân,-3.3398,0.037,"{""ortho"": 1.0, ""qlm_delta"": -1.133}",,KEEP,倫,luôn,2026-11-20 12:42:34
+"Truyên Vua Quang Trung, Nôm",527,528,"Truyên Vua Quang Trung, Nôm.054.008",1,8,8,倫,luôn,5,5,KEEP,倫,luôn,-4.0,0.0191,{},x,KEEP,倫,luôn,2026-11-20 12:42:34
+"Truyên Vua Quang Trung, Nôm",527,528,"Truyên Vua Quang Trung, Nôm.054.008",1,8,8,倫,luôn,5,6,QN,倫,lôn,-4.2381,0.0151,"{""ortho"": 1.0, ""qlm_delta"": -4.127}",,KEEP,倫,luôn,2026-11-20 12:42:34
+"Truyên Vua Quang Trung, Nôm",535,536,"Truyên Vua Quang Trung, Nôm.055.005",1,4,4,勢,giết,0,1,KEEP,勢,giết,-4.0,1.0,{},,UNREVIEWED,勢,giết,
+"Truyên Vua Quang Trung, Nôm",543,544,"Truyên Vua Quang Trung, Nôm.056.002",1,1,1,𧗱,vẽ,3,1,QN,𧗱,về,-1.8988,0.772,"{""ortho"": 0.9, ""qlm_delta"": 2.671}",x,QN,𧗱,về,2026-11-20 12:42:40
+"Truyên Vua Quang Trung, Nôm",543,544,"Truyên Vua Quang Trung, Nôm.056.002",1,1,1,𧗱,vẽ,3,2,QN,𧗱,vệ,-3.8979,0.1046,"{""ortho"": 0.9, ""qlm_delta"": -3.993}",,QN,𧗱,về,2026-11-20 12:42:40
+"Truyên Vua Quang Trung, Nôm",543,544,"Truyên Vua Quang Trung, Nôm.056.002",1,1,1,𧗱,vẽ,3,3,KEEP,𧗱,vẽ,-4.0,0.0944,{},,QN,𧗱,về,2026-11-20 12:42:40
+"Truyên Vua Quang Trung, Nôm",543,544,"Truyên Vua Quang Trung, Nôm.056.002",1,1,1,𧗱,vẽ,3,4,QN,𧗱,vể,-5.1816,0.029,"{""ortho"": 0.9, ""qlm_delta"": -8.272}",,QN,𧗱,về,2026-11-20 12:42:40
+"Truyên Vua Quang Trung, Nôm",543,544,"Truyên Vua Quang Trung, Nôm.056.002",2,6,6,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",544,545,"Truyên Vua Quang Trung, Nôm.056.003",1,3,3,坦,dắt,2,1,QN,坦,đắt,0.1644,0.621,"{""ortho"": 0.4, ""qlm_delta"": 4.548}",,QN,坦,đất,2026-11-20 12:42:46
+"Truyên Vua Quang Trung, Nôm",544,545,"Truyên Vua Quang Trung, Nôm.056.003",1,3,3,坦,dắt,2,2,QN,坦,đất,-0.355,0.3694,"{""ortho"": 0.8, ""qlm_delta"": 6.817}",x,QN,坦,đất,2026-11-20 12:42:46
+"Truyên Vua Quang Trung, Nôm",544,545,"Truyên Vua Quang Trung, Nôm.056.003",1,3,3,坦,dắt,2,3,KEEP,坦,dắt,-4.0,0.0096,{},,QN,坦,đất,2026-11-20 12:42:46
+"Truyên Vua Quang Trung, Nôm",545,546,"Truyên Vua Quang Trung, Nôm.056.004",1,4,4,鑠,chước,1,1,QN,鑠,thước,-1.1258,0.9466,"{""ortho"": 0.6, ""qlm_delta"": 2.247}",x,QN,鑠,thước,2026-11-20 12:43:01
+"Truyên Vua Quang Trung, Nôm",545,546,"Truyên Vua Quang Trung, Nôm.056.004",1,4,4,鑠,chước,1,2,KEEP,鑠,chước,-4.0,0.0534,{},,QN,鑠,thước,2026-11-20 12:43:01
+"Truyên Vua Quang Trung, Nôm",546,547,"Truyên Vua Quang Trung, Nôm.056.005",1,4,4,地,vã,0,1,KEEP,地,vã,-4.0,1.0,{},,UNREVIEWED,地,vã,
+"Truyên Vua Quang Trung, Nôm",547,548,"Truyên Vua Quang Trung, Nôm.056.006",1,1,1,鑠,chước,1,1,QN,鑠,thước,-3.2712,0.6745,"{""ortho"": 0.6, ""qlm_delta"": -4.904}",x,QN,鑠,thước,2026-11-20 12:43:08
+"Truyên Vua Quang Trung, Nôm",547,548,"Truyên Vua Quang Trung, Nôm.056.006",1,1,1,鑠,chước,1,2,KEEP,鑠,chước,-4.0,0.3255,{},,QN,鑠,thước,2026-11-20 12:43:08
+"Truyên Vua Quang Trung, Nôm",547,548,"Truyên Vua Quang Trung, Nôm.056.006",2,8,8,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",549,550,"Truyên Vua Quang Trung, Nôm.056.008",1,4,4,倘,chang,3,1,QN,倘,thang,-1.1286,0.7731,"{""ortho"": 0.6, ""qlm_delta"": 2.238}",,QN,倘,thảng,2026-11-20 12:43:19
+"Truyên Vua Quang Trung, Nôm",549,550,"Truyên Vua Quang Trung, Nôm.056.008",1,4,4,倘,chang,3,2,QN,倘,tháng,-3.0812,0.1097,"{""ortho"": 1.1, ""qlm_delta"": 0.729}",,QN,倘,thảng,2026-11-20 12:43:19
+"Truyên Vua Quang Trung, Nôm",549,550,"Truyên Vua Quang Trung, Nôm.056.008",1,4,4,倘,chang,3,3,QN,倘,thảng,-3.4831,0.0734,"{""ortho"": 1.1, ""qlm_delta"": -0.61}",x,QN,倘,thảng,2026-11-20 12:43:19
+"Truyên Vua Quang Trung, Nôm",549,550,"Truyên Vua Quang Trung, Nôm.056.008",1,4,4,倘,chang,3,4,KEEP,倘,chang,-4.0,0.0438,{},,QN,倘,thảng,2026-11-20 12:43:19
+"Truyên Vua Quang Trung, Nôm",549,550,"Truyên Vua Quang Trung, Nôm.056.008",2,6,6,那,nửa,1,1,QN,那,nả,-3.8197,0.545,"{""ortho"": 1.0, ""qlm_delta"": -2.732}",,KEEP,那,nửa,2026-11-20 12:43:25
+"Truyên Vua Quang Trung, Nôm",549,550,"Truyên Vua Quang Trung, Nôm.056.008",2,6,6,那,nửa,1,2,KEEP,那,nửa,-4.0,0.455,{},x,KEEP,那,nửa,2026-11-20 12:43:25
+"Truyên Vua Quang Trung, Nôm",550,551,"Truyên Vua Quang Trung, Nôm.056.009",1,2,2,𥳪,toan,0,1,KEEP,𥳪,toan,-4.0,1.0,{},,UNREVIEWED,𥳪,toan,
+"Truyên Vua Quang Trung, Nôm",550,551,"Truyên Vua Quang Trung, Nôm.056.009",2,3,3,𠺵,rắp,0,1,KEEP,𠺵,rắp,-4.0,1.0,{},,UNREVIEWED,𠺵,rắp,
+"Truyên Vua Quang Trung, Nôm",552,553,"Truyên Vua Quang Trung, Nôm.057.000",1,6,6,乎,bình,0,1,KEEP,乎,bình,-4.0,1.0,{},,UNREVIEWED,乎,bình,
+"Truyên Vua Quang Trung, Nôm",553,554,"Truyên Vua Quang Trung, Nôm.057.001",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",557,558,"Truyên Vua Quang Trung, Nôm.057.005",1,8,8,七,vong,1,1,KEEP,七,vong,-4.0,0.9839,{},x,KEEP,七,vong,2026-11-20 12:43:33
+"Truyên Vua Quang Trung, Nôm",557,558,"Truyên Vua Quang Trung, Nôm.057.005",1,8,8,七,vong,1,2,NOM,杧,vong,-8.1101,0.0161,"{""visual_rank"": 14, ""nlm_delta"": -8.096, ""lm_oov"": false}",,KEEP,七,vong,2026-11-20 12:43:33
+"Truyên Vua Quang Trung, Nôm",563,564,"Truyên Vua Quang Trung, Nôm.058.000",1,2,2,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",567,568,"Truyên Vua Quang Trung, Nôm.058.004",1,7,7,西,cậy,1,1,QN,西,tây,-2.3288,0.8417,"{""ortho"": 1.1, ""qlm_delta"": 3.237}",x,QN,西,tây,2026-11-20 12:43:38
+"Truyên Vua Quang Trung, Nôm",567,568,"Truyên Vua Quang Trung, Nôm.058.004",1,7,7,西,cậy,1,2,KEEP,西,cậy,-4.0,0.1583,{},,QN,西,tây,2026-11-20 12:43:38
+"Truyên Vua Quang Trung, Nôm",568,569,"Truyên Vua Quang Trung, Nôm.058.005",1,6,6,倫,luôn,5,1,NOM,㫻,luôn,-0.949,0.466,"{""visual_rank"": 1, ""nlm_delta"": 0.181, ""lm_oov"": false}",,KEEP,倫,luôn,2026-11-20 12:43:48
+"Truyên Vua Quang Trung, Nôm",568,569,"Truyên Vua Quang Trung, Nôm.058.005",1,6,6,倫,luôn,5,2,NOM,掄,luôn,-1.1065,0.3981,"{""visual_rank"": 3, ""nlm_delta"": 1.946, ""lm_oov"": false}",,KEEP,倫,luôn,2026-11-20 12:43:48
+"Truyên Vua Quang Trung, Nôm",568,569,"Truyên Vua Quang Trung, Nôm.058.005",1,6,6,倫,luôn,5,3,QN,倫,luồn,-2.7481,0.0771,"{""ortho"": 0.5, ""qlm_delta"": -4.16}",,KEEP,倫,luôn,2026-11-20 12:43:48
+"Truyên Vua Quang Trung, Nôm",568,569,"Truyên Vua Quang Trung, Nôm.058.005",1,6,6,倫,luôn,5,4,QN,倫,luân,-3.7932,0.0271,"{""ortho"": 1.0, ""qlm_delta"": -2.644}",,KEEP,倫,luôn,2026-11-20 12:43:48
+"Truyên Vua Quang Trung, Nôm",568,569,"Truyên Vua Quang Trung, Nôm.058.005",1,6,6,倫,luôn,5,5,KEEP,倫,luôn,-4.0,0.022,{},x,KEEP,倫,luôn,2026-11-20 12:43:48
+"Truyên Vua Quang Trung, Nôm",568,569,"Truyên Vua Quang Trung, Nôm.058.005",1,6,6,倫,luôn,5,6,QN,倫,lôn,-4.8265,0.0096,"{""ortho"": 1.0, ""qlm_delta"": -6.088}",,KEEP,倫,luôn,2026-11-20 12:43:48
+"Truyên Vua Quang Trung, Nôm",569,570,"Truyên Vua Quang Trung, Nôm.058.006",1,8,8,兜,đầu,4,1,QN,兜,đâu,-2.7211,0.4811,"{""ortho"": 0.5, ""qlm_delta"": -4.07}",x,QN,兜,đâu,2026-11-20 12:43:54
+"Truyên Vua Quang Trung, Nôm",569,570,"Truyên Vua Quang Trung, Nôm.058.006",1,8,8,兜,đầu,4,2,QN,兜,đẩu,-3.1049,0.3277,"{""ortho"": 0.5, ""qlm_delta"": -5.35}",,QN,兜,đâu,2026-11-20 12:43:54
+"Truyên Vua Quang Trung, Nôm",569,570,"Truyên Vua Quang Trung, Nôm.058.006",1,8,8,兜,đầu,4,3,KEEP,兜,đầu,-4.0,0.1339,{},,QN,兜,đâu,2026-11-20 12:43:54
+"Truyên Vua Quang Trung, Nôm",569,570,"Truyên Vua Quang Trung, Nôm.058.006",1,8,8,兜,đầu,4,4,QN,兜,dâu,-5.1426,0.0427,"{""ortho"": 0.9, ""qlm_delta"": -8.142}",,QN,兜,đâu,2026-11-20 12:43:54
+"Truyên Vua Quang Trung, Nôm",569,570,"Truyên Vua Quang Trung, Nôm.058.006",1,8,8,兜,đầu,4,5,QN,兜,đâủ,-6.2222,0.0145,"{""ortho"": 0.5, ""qlm_delta"": -15.741}",,QN,兜,đâu,2026-11-20 12:43:54
+"Truyên Vua Quang Trung, Nôm",570,571,"Truyên Vua Quang Trung, Nôm.058.007",1,3,3,壻,rẻ,1,1,QN,壻,rể,-0.8457,0.9591,"{""ortho"": 0.4, ""qlm_delta"": 1.181}",x,QN,壻,rể,2026-11-20 12:43:59
+"Truyên Vua Quang Trung, Nôm",570,571,"Truyên Vua Quang Trung, Nôm.058.007",1,3,3,壻,rẻ,1,2,KEEP,壻,rẻ,-4.0,0.0409,{},,QN,壻,rể,2026-11-20 12:43:59
+"Truyên Vua Quang Trung, Nôm",571,572,"Truyên Vua Quang Trung, Nôm.058.008",1,2,2,𢪀,ngợ,1,1,QN,𢪀,ngờ,1.0886,0.9939,"{""ortho"": 0.5, ""qlm_delta"": 8.629}",x,QN,𢪀,ngờ,2026-11-20 12:44:06
+"Truyên Vua Quang Trung, Nôm",571,572,"Truyên Vua Quang Trung, Nôm.058.008",1,2,2,𢪀,ngợ,1,2,KEEP,𢪀,ngợ,-4.0,0.0061,{},,QN,𢪀,ngờ,2026-11-20 12:44:06
+"Truyên Vua Quang Trung, Nôm",573,574,"Truyên Vua Quang Trung, Nôm.058.010",1,1,1,𢫔,chiện,1,1,QN,𢫔,thiện,-3.2244,0.6847,"{""ortho"": 0.6, ""qlm_delta"": -4.748}",x,QN,𢫔,thiện,2026-11-20 12:44:10
+"Truyên Vua Quang Trung, Nôm",573,574,"Truyên Vua Quang Trung, Nôm.058.010",1,1,1,𢫔,chiện,1,2,KEEP,𢫔,chiện,-4.0,0.3153,{},,QN,𢫔,thiện,2026-11-20 12:44:10
+"Truyên Vua Quang Trung, Nôm",573,574,"Truyên Vua Quang Trung, Nôm.058.010",2,2,2,權,quyễn,1,1,QN,權,quyền,0.4929,0.9889,"{""ortho"": 0.5, ""qlm_delta"": 6.643}",x,QN,權,quyền,2026-11-20 12:44:12
+"Truyên Vua Quang Trung, Nôm",573,574,"Truyên Vua Quang Trung, Nôm.058.010",2,2,2,權,quyễn,1,2,KEEP,權,quyễn,-4.0,0.0111,{},,QN,權,quyền,2026-11-20 12:44:12
+"Truyên Vua Quang Trung, Nôm",573,574,"Truyên Vua Quang Trung, Nôm.058.010",3,3,3,勢,giết,0,1,KEEP,勢,giết,-4.0,1.0,{},,UNREVIEWED,勢,giết,
+"Truyên Vua Quang Trung, Nôm",576,577,"Truyên Vua Quang Trung, Nôm.059.002",1,3,3,𢬭,trói,0,1,KEEP,𢬭,trói,-4.0,1.0,{},,UNREVIEWED,𢬭,trói,
+"Truyên Vua Quang Trung, Nôm",578,579,"Truyên Vua Quang Trung, Nôm.059.004",1,1,1,惠,hệ,1,1,QN,惠,huệ,-2.3106,0.8441,"{""ortho"": 1.0, ""qlm_delta"": 2.298}",x,QN,惠,huệ,2026-11-20 12:44:17
+"Truyên Vua Quang Trung, Nôm",578,579,"Truyên Vua Quang Trung, Nôm.059.004",1,1,1,惠,hệ,1,2,KEEP,惠,hệ,-4.0,0.1559,{},,QN,惠,huệ,2026-11-20 12:44:17
+"Truyên Vua Quang Trung, Nôm",578,579,"Truyên Vua Quang Trung, Nôm.059.004",2,4,4,𡗋,làm,2,1,QN,𡗋,lầm,-1.2765,0.8565,"{""ortho"": 0.4, ""qlm_delta"": -0.255}",,QN,𡗋,lắm,2026-11-20 12:44:28
+"Truyên Vua Quang Trung, Nôm",578,579,"Truyên Vua Quang Trung, Nôm.059.004",2,4,4,𡗋,làm,2,2,QN,𡗋,lắm,-3.5606,0.0872,"{""ortho"": 0.9, ""qlm_delta"": -2.869}",x,QN,𡗋,lắm,2026-11-20 12:44:28
+"Truyên Vua Quang Trung, Nôm",578,579,"Truyên Vua Quang Trung, Nôm.059.004",2,4,4,𡗋,làm,2,3,KEEP,𡗋,làm,-4.0,0.0562,{},,QN,𡗋,lắm,2026-11-20 12:44:28
+"Truyên Vua Quang Trung, Nôm",578,579,"Truyên Vua Quang Trung, Nôm.059.004",3,6,6,偈,may,0,1,KEEP,偈,may,-4.0,1.0,{},,UNREVIEWED,偈,may,
+"Truyên Vua Quang Trung, Nôm",579,580,"Truyên Vua Quang Trung, Nôm.059.005",1,5,5,尒,mấy,3,1,NOM,氽,mấy,0.2448,0.7603,"{""visual_rank"": 1, ""nlm_delta"": 2.569, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:44:32
+"Truyên Vua Quang Trung, Nôm",579,580,"Truyên Vua Quang Trung, Nôm.059.005",1,5,5,尒,mấy,3,2,NOM,𠇍,mấy,-0.9782,0.2238,"{""visual_rank"": 1, ""nlm_delta"": 0.123, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:44:32
+"Truyên Vua Quang Trung, Nôm",579,580,"Truyên Vua Quang Trung, Nôm.059.005",1,5,5,尒,mấy,3,3,KEEP,尒,mấy,-4.0,0.0109,{},x,KEEP,尒,mấy,2026-11-20 12:44:32
+"Truyên Vua Quang Trung, Nôm",579,580,"Truyên Vua Quang Trung, Nôm.059.005",1,5,5,尒,mấy,3,4,NOM,汆,mấy,-4.7701,0.005,"{""visual_rank"": 16, ""nlm_delta"": -1.041, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:44:32
+"Truyên Vua Quang Trung, Nôm",579,580,"Truyên Vua Quang Trung, Nôm.059.005",2,6,6,持,chãy,2,1,QN,持,chày,-1.598,0.6551,"{""ortho"": 0.5, ""qlm_delta"": -0.327}",x,QN,持,chày,2026-11-20 12:44:36
+"Truyên Vua Quang Trung, Nôm",579,580,"Truyên Vua Quang Trung, Nôm.059.005",2,6,6,持,chãy,2,2,QN,持,chầy,-2.4282,0.2856,"{""ortho"": 0.9, ""qlm_delta"": 0.906}",,QN,持,chày,2026-11-20 12:44:36
+"Truyên Vua Quang Trung, Nôm",579,580,"Truyên Vua Quang Trung, Nôm.059.005",2,6,6,持,chãy,2,3,KEEP,持,chãy,-4.0,0.0593,{},,QN,持,chày,2026-11-20 12:44:36
+"Truyên Vua Quang Trung, Nôm",580,581,"Truyên Vua Quang Trung, Nôm.059.006",1,1,1,些,ca,3,1,QN,些,ta,-1.5223,0.8229,"{""ortho"": 0.6, ""qlm_delta"": 0.926}",x,QN,些,ta,2026-11-20 12:44:41
+"Truyên Vua Quang Trung, Nôm",580,581,"Truyên Vua Quang Trung, Nôm.059.006",1,1,1,些,ca,3,2,QN,些,tạ,-3.8221,0.0825,"{""ortho"": 1.1, ""qlm_delta"": -1.74}",,QN,些,ta,2026-11-20 12:44:41
+"Truyên Vua Quang Trung, Nôm",580,581,"Truyên Vua Quang Trung, Nôm.059.006",1,1,1,些,ca,3,3,KEEP,些,ca,-4.0,0.0691,{},,QN,些,ta,2026-11-20 12:44:41
+"Truyên Vua Quang Trung, Nôm",580,581,"Truyên Vua Quang Trung, Nôm.059.006",1,1,1,些,ca,3,4,QN,些,tá,-4.9982,0.0255,"{""ortho"": 1.1, ""qlm_delta"": -5.661}",,QN,些,ta,2026-11-20 12:44:41
+"Truyên Vua Quang Trung, Nôm",580,581,"Truyên Vua Quang Trung, Nôm.059.006",2,5,5,偈,máy,0,1,KEEP,偈,máy,-4.0,1.0,{},,UNREVIEWED,偈,máy,
+"Truyên Vua Quang Trung, Nôm",582,583,"Truyên Vua Quang Trung, Nôm.059.008",1,2,2,𥳪,toan,0,1,KEEP,𥳪,toan,-4.0,1.0,{},,UNREVIEWED,𥳪,toan,
+"Truyên Vua Quang Trung, Nôm",585,586,"Truyên Vua Quang Trung, Nôm.060.000",1,2,2,踚,buồn,1,1,QN,踚,luồn,-3.9577,0.5106,"{""ortho"": 1.0, ""qlm_delta"": -3.192}",,KEEP,踚,buồn,2026-11-20 12:44:51
+"Truyên Vua Quang Trung, Nôm",585,586,"Truyên Vua Quang Trung, Nôm.060.000",1,2,2,踚,buồn,1,2,KEEP,踚,buồn,-4.0,0.4894,{},x,KEEP,踚,buồn,2026-11-20 12:44:51
+"Truyên Vua Quang Trung, Nôm",589,590,"Truyên Vua Quang Trung, Nôm.060.004",1,7,7,豬,giở,0,1,KEEP,豬,giở,-4.0,1.0,{},,UNREVIEWED,豬,giở,
+"Truyên Vua Quang Trung, Nôm",591,592,"Truyên Vua Quang Trung, Nôm.060.006",1,7,7,䗖,gié,0,1,KEEP,䗖,gié,-4.0,1.0,{},,UNREVIEWED,䗖,gié,
+"Truyên Vua Quang Trung, Nôm",592,593,"Truyên Vua Quang Trung, Nôm.060.007",1,1,1,徐,cứ,2,1,QN,徐,từ,-1.1684,0.7527,"{""ortho"": 1.1, ""qlm_delta"": 7.105}",x,QN,徐,từ,2026-11-20 12:44:59
+"Truyên Vua Quang Trung, Nôm",592,593,"Truyên Vua Quang Trung, Nôm.060.007",1,1,1,徐,cứ,2,2,QN,徐,chừ,-2.4789,0.203,"{""ortho"": 1.1, ""qlm_delta"": 2.737}",,QN,徐,từ,2026-11-20 12:44:59
+"Truyên Vua Quang Trung, Nôm",592,593,"Truyên Vua Quang Trung, Nôm.060.007",1,1,1,徐,cứ,2,3,KEEP,徐,cứ,-4.0,0.0443,{},,QN,徐,từ,2026-11-20 12:44:59
+"Truyên Vua Quang Trung, Nôm",593,594,"Truyên Vua Quang Trung, Nôm.060.008",1,4,4,俊,cuán,1,1,QN,俊,tuấn,-1.0473,0.9504,"{""ortho"": 1.0, ""qlm_delta"": 6.509}",x,QN,俊,tuấn,2026-11-20 12:45:03
+"Truyên Vua Quang Trung, Nôm",593,594,"Truyên Vua Quang Trung, Nôm.060.008",1,4,4,俊,cuán,1,2,KEEP,俊,cuán,-4.0,0.0496,{},,QN,俊,tuấn,2026-11-20 12:45:03
+"Truyên Vua Quang Trung, Nôm",593,594,"Truyên Vua Quang Trung, Nôm.060.008",2,5,5,倫,luôn,5,1,NOM,掄,luôn,-1.4976,0.4462,"{""visual_rank"": 3, ""nlm_delta"": 1.164, ""lm_oov"": false}",,KEEP,倫,luôn,2026-11-20 12:45:16
+"Truyên Vua Quang Trung, Nôm",593,594,"Truyên Vua Quang Trung, Nôm.060.008",2,5,5,倫,luôn,5,2,NOM,㫻,luôn,-1.5488,0.4239,"{""visual_rank"": 1, ""nlm_delta"": -1.018, ""lm_oov"": false}",,KEEP,倫,luôn,2026-11-20 12:45:16
+"Truyên Vua Quang Trung, Nôm",593,594,"Truyên Vua Quang Trung, Nôm.060.008",2,5,5,倫,luôn,5,3,QN,倫,luồn,-3.4637,0.0625,"{""ortho"": 0.5, ""qlm_delta"": -6.546}",,KEEP,倫,luôn,2026-11-20 12:45:16
+"Truyên Vua Quang Trung, Nôm",593,594,"Truyên Vua Quang Trung, Nôm.060.008",2,5,5,倫,luôn,5,4,KEEP,倫,luôn,-4.0,0.0365,{},x,KEEP,倫,luôn,2026-11-20 12:45:16
+"Truyên Vua Quang Trung, Nôm",593,594,"Truyên Vua Quang Trung, Nôm.060.008",2,5,5,倫,luôn,5,5,QN,倫,luân,-4.4044,0.0244,"{""ortho"": 1.0, ""qlm_delta"": -4.681}",,KEEP,倫,luôn,2026-11-20 12:45:16
+"Truyên Vua Quang Trung, Nôm",593,594,"Truyên Vua Quang Trung, Nôm.060.008",2,5,5,倫,luôn,5,6,QN,倫,lôn,-5.7204,0.0065,"{""ortho"": 1.0, ""qlm_delta"": -9.068}",,KEEP,倫,luôn,2026-11-20 12:45:16
+"Truyên Vua Quang Trung, Nôm",593,594,"Truyên Vua Quang Trung, Nôm.060.008",3,6,6,倫,luôn,5,1,NOM,掄,luôn,-0.874,0.6144,"{""visual_rank"": 3, ""nlm_delta"": 2.411, ""lm_oov"": false}",,KEEP,倫,luôn,2026-11-20 12:45:21
+"Truyên Vua Quang Trung, Nôm",593,594,"Truyên Vua Quang Trung, Nôm.060.008",3,6,6,倫,luôn,5,2,NOM,㫻,luôn,-1.4788,0.3356,"{""visual_rank"": 1, ""nlm_delta"": -0.878, ""lm_oov"": false}",,KEEP,倫,luôn,2026-11-20 12:45:21
+"Truyên Vua Quang Trung, Nôm",593,594,"Truyên Vua Quang Trung, Nôm.060.008",3,6,6,倫,luôn,5,3,KEEP,倫,luôn,-4.0,0.027,{},x,KEEP,倫,luôn,2026-11-20 12:45:21
+"Truyên Vua Quang Trung, Nôm",593,594,"Truyên Vua Quang Trung, Nôm.060.008",3,6,6,倫,luôn,5,4,QN,倫,luồn,-4.4608,0.017,"{""ortho"": 0.5, ""qlm_delta"": -9.869}",,KEEP,倫,luôn,2026-11-20 12:45:21
+"Truyên Vua Quang Trung, Nôm",593,594,"Truyên Vua Quang Trung, Nôm.060.008",3,6,6,倫,luôn,5,5,QN,倫,luân,-6.0634,0.0034,"{""ortho"": 1.0, ""qlm_delta"": -10.211}",,KEEP,倫,luôn,2026-11-20 12:45:21
+"Truyên Vua Quang Trung, Nôm",593,594,"Truyên Vua Quang Trung, Nôm.060.008",3,6,6,倫,luôn,5,6,QN,倫,lôn,-6.3056,0.0027,"{""ortho"": 1.0, ""qlm_delta"": -11.019}",,KEEP,倫,luôn,2026-11-20 12:45:21
+"Truyên Vua Quang Trung, Nôm",594,595,"Truyên Vua Quang Trung, Nôm.060.009",1,1,1,尒,mấy,3,1,NOM,氽,mấy,2.5599,0.9768,"{""visual_rank"": 1, ""nlm_delta"": 7.199, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:45:25
+"Truyên Vua Quang Trung, Nôm",594,595,"Truyên Vua Quang Trung, Nôm.060.009",1,1,1,尒,mấy,3,2,NOM,𠇍,mấy,-1.3829,0.0189,"{""visual_rank"": 1, ""nlm_delta"": -0.686, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:45:25
+"Truyên Vua Quang Trung, Nôm",594,595,"Truyên Vua Quang Trung, Nôm.060.009",1,1,1,尒,mấy,3,3,NOM,汆,mấy,-3.2537,0.0029,"{""visual_rank"": 16, ""nlm_delta"": 1.992, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:45:25
+"Truyên Vua Quang Trung, Nôm",594,595,"Truyên Vua Quang Trung, Nôm.060.009",1,1,1,尒,mấy,3,4,KEEP,尒,mấy,-4.0,0.0014,{},x,KEEP,尒,mấy,2026-11-20 12:45:25
+"Truyên Vua Quang Trung, Nôm",595,596,"Truyên Vua Quang Trung, Nôm.060.010",1,6,6,篭,leung,1,1,QN,篭,lung,-1.5112,0.9234,"{""ortho"": 1.0, ""qlm_delta"": 4.963}",x,QN,篭,lung,2026-11-20 12:45:37
+"Truyên Vua Quang Trung, Nôm",595,596,"Truyên Vua Quang Trung, Nôm.060.010",1,6,6,篭,leung,1,2,KEEP,篭,leung,-4.0,0.0766,{},,QN,篭,lung,2026-11-20 12:45:37
+"Truyên Vua Quang Trung, Nôm",596,597,"Truyên Vua Quang Trung, Nôm.061.000",1,1,1,敵,dịch,1,1,QN,敵,địch,-1.3438,0.9344,"{""ortho"": 0.4, ""qlm_delta"": -0.479}",x,QN,敵,địch,2026-11-20 12:45:40
+"Truyên Vua Quang Trung, Nôm",596,597,"Truyên Vua Quang Trung, Nôm.061.000",1,1,1,敵,dịch,1,2,KEEP,敵,dịch,-4.0,0.0656,{},,QN,敵,địch,2026-11-20 12:45:40
+"Truyên Vua Quang Trung, Nôm",597,598,"Truyên Vua Quang Trung, Nôm.061.001",1,2,2,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",597,598,"Truyên Vua Quang Trung, Nôm.061.001",2,3,3,登,giăng,0,1,KEEP,登,giăng,-4.0,1.0,{},,UNREVIEWED,登,giăng,
+"Truyên Vua Quang Trung, Nôm",598,599,"Truyên Vua Quang Trung, Nôm.061.002",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",603,604,"Truyên Vua Quang Trung, Nôm.061.007",1,2,2,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",605,606,"Truyên Vua Quang Trung, Nôm.061.009",1,3,3,擐,chống,0,1,KEEP,擐,chống,-4.0,1.0,{},,UNREVIEWED,擐,chống,
+"Truyên Vua Quang Trung, Nôm",608,609,"Truyên Vua Quang Trung, Nôm.062.001",1,6,6,幢,lường,0,1,KEEP,幢,lường,-4.0,1.0,{},,UNREVIEWED,幢,lường,
+"Truyên Vua Quang Trung, Nôm",610,611,"Truyên Vua Quang Trung, Nôm.062.003",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",612,613,"Truyên Vua Quang Trung, Nôm.062.005",1,2,2,㨓,trao,0,1,KEEP,㨓,trao,-4.0,1.0,{},,UNREVIEWED,㨓,trao,
+"Truyên Vua Quang Trung, Nôm",613,614,"Truyên Vua Quang Trung, Nôm.062.006",1,6,6,摓,vung,1,1,QN,摓,vùng,-0.7053,0.9642,"{""ortho"": 0.5, ""qlm_delta"": 2.649}",x,QN,摓,vùng,2026-11-20 12:45:45
+"Truyên Vua Quang Trung, Nôm",613,614,"Truyên Vua Quang Trung, Nôm.062.006",1,6,6,摓,vung,1,2,KEEP,摓,vung,-4.0,0.0358,{},,QN,摓,vùng,2026-11-20 12:45:45
+"Truyên Vua Quang Trung, Nôm",614,615,"Truyên Vua Quang Trung, Nôm.062.007",1,2,2,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",615,616,"Truyên Vua Quang Trung, Nôm.062.008",1,4,4,,khí,0,1,KEEP,,khí,-4.0,1.0,{},,UNREVIEWED,,khí,
+"Truyên Vua Quang Trung, Nôm",616,617,"Truyên Vua Quang Trung, Nôm.062.009",1,4,4,擐,chống,0,1,KEEP,擐,chống,-4.0,1.0,{},,UNREVIEWED,擐,chống,
+"Truyên Vua Quang Trung, Nôm",617,618,"Truyên Vua Quang Trung, Nôm.062.010",1,2,2,襾,tây,3,1,NOM,西,tây,2.9977,0.9973,"{""visual_rank"": 1, ""nlm_delta"": 8.075, ""lm_oov"": false}",x,NOM,西,tây,2026-11-20 12:45:49
+"Truyên Vua Quang Trung, Nôm",617,618,"Truyên Vua Quang Trung, Nôm.062.010",1,2,2,襾,tây,3,2,NOM,覀,tây,-3.4408,0.0016,"{""visual_rank"": 13, ""nlm_delta"": 1.035, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 12:45:49
+"Truyên Vua Quang Trung, Nôm",617,618,"Truyên Vua Quang Trung, Nôm.062.010",1,2,2,襾,tây,3,3,KEEP,襾,tây,-4.0,0.0009,{},,NOM,西,tây,2026-11-20 12:45:49
+"Truyên Vua Quang Trung, Nôm",617,618,"Truyên Vua Quang Trung, Nôm.062.010",1,2,2,襾,tây,3,4,NOM,恓,tây,-5.5652,0.0002,"{""visual_rank"": 17, ""nlm_delta"": -2.459, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 12:45:49
+"Truyên Vua Quang Trung, Nôm",621,622,"Truyên Vua Quang Trung, Nôm.063.003",1,1,1,閉,bây,1,1,QN,閉,bấy,-1.1856,0.9435,"{""ortho"": 0.5, ""qlm_delta"": 1.048}",x,QN,閉,bấy,2026-11-20 12:45:57
+"Truyên Vua Quang Trung, Nôm",621,622,"Truyên Vua Quang Trung, Nôm.063.003",1,1,1,閉,bây,1,2,KEEP,閉,bây,-4.0,0.0565,{},,QN,閉,bấy,2026-11-20 12:45:57
+"Truyên Vua Quang Trung, Nôm",621,622,"Truyên Vua Quang Trung, Nôm.063.003",2,4,4,𥊢,thắng,1,1,QN,𥊢,thẳng,0.4852,0.9889,"{""ortho"": 0.5, ""qlm_delta"": 6.617}",x,QN,𥊢,thẳng,2026-11-20 12:45:59
+"Truyên Vua Quang Trung, Nôm",621,622,"Truyên Vua Quang Trung, Nôm.063.003",2,4,4,𥊢,thắng,1,2,KEEP,𥊢,thắng,-4.0,0.0111,{},,QN,𥊢,thẳng,2026-11-20 12:45:59
+"Truyên Vua Quang Trung, Nôm",622,623,"Truyên Vua Quang Trung, Nôm.063.004",1,5,5,俱,cầu,1,1,QN,俱,câu,-2.9683,0.7373,"{""ortho"": 0.5, ""qlm_delta"": -4.894}",x,QN,俱,câu,2026-11-20 12:46:05
+"Truyên Vua Quang Trung, Nôm",622,623,"Truyên Vua Quang Trung, Nôm.063.004",1,5,5,俱,cầu,1,2,KEEP,俱,cầu,-4.0,0.2627,{},,QN,俱,câu,2026-11-20 12:46:05
+"Truyên Vua Quang Trung, Nôm",624,625,"Truyên Vua Quang Trung, Nôm.063.006",1,5,5,凌,lằng,5,1,QN,凌,lăng,-2.8907,0.4879,"{""ortho"": 0.5, ""qlm_delta"": -4.636}",x,QN,凌,lăng,2026-11-20 12:46:10
+"Truyên Vua Quang Trung, Nôm",624,625,"Truyên Vua Quang Trung, Nôm.063.006",1,5,5,凌,lằng,5,2,QN,凌,lắng,-3.426,0.2857,"{""ortho"": 0.5, ""qlm_delta"": -6.42}",,QN,凌,lăng,2026-11-20 12:46:10
+"Truyên Vua Quang Trung, Nôm",624,625,"Truyên Vua Quang Trung, Nôm.063.006",1,5,5,凌,lằng,5,3,KEEP,凌,lằng,-4.0,0.1609,{},,QN,凌,lăng,2026-11-20 12:46:10
+"Truyên Vua Quang Trung, Nôm",624,625,"Truyên Vua Quang Trung, Nôm.063.006",1,5,5,凌,lằng,5,4,NOM,㖫,lằng,-5.6235,0.0317,"{""visual_rank"": 2, ""nlm_delta"": -7.951, ""lm_oov"": false}",,QN,凌,lăng,2026-11-20 12:46:10
+"Truyên Vua Quang Trung, Nôm",624,625,"Truyên Vua Quang Trung, Nôm.063.006",1,5,5,凌,lằng,5,5,QN,凌,lừng,-5.864,0.025,"{""ortho"": 1.0, ""qlm_delta"": -9.547}",,QN,凌,lăng,2026-11-20 12:46:10
+"Truyên Vua Quang Trung, Nôm",624,625,"Truyên Vua Quang Trung, Nôm.063.006",1,5,5,凌,lằng,5,6,QN,凌,lâng,-6.9135,0.0087,"{""ortho"": 0.9, ""qlm_delta"": -14.045}",,QN,凌,lăng,2026-11-20 12:46:10
+"Truyên Vua Quang Trung, Nôm",626,627,"Truyên Vua Quang Trung, Nôm.063.008",1,6,6,溈,vời,0,1,KEEP,溈,vời,-4.0,1.0,{},,UNREVIEWED,溈,vời,
+"Truyên Vua Quang Trung, Nôm",629,630,"Truyên Vua Quang Trung, Nôm.064.000",1,6,6,艚,cầu,2,1,QN,艚,tầu,-2.5069,0.504,"{""ortho"": 0.6, ""qlm_delta"": -2.356}",x,QN,艚,tầu,2026-11-20 12:46:22
+"Truyên Vua Quang Trung, Nôm",629,630,"Truyên Vua Quang Trung, Nôm.064.000",1,6,6,艚,cầu,2,2,QN,艚,tàu,-2.7823,0.3827,"{""ortho"": 1.0, ""qlm_delta"": 0.726}",,QN,艚,tầu,2026-11-20 12:46:22
+"Truyên Vua Quang Trung, Nôm",629,630,"Truyên Vua Quang Trung, Nôm.064.000",1,6,6,艚,cầu,2,3,KEEP,艚,cầu,-4.0,0.1132,{},,QN,艚,tầu,2026-11-20 12:46:22
+"Truyên Vua Quang Trung, Nôm",631,632,"Truyên Vua Quang Trung, Nôm.064.002",1,5,5,𠳒,nhởi,1,1,QN,𠳒,nhời,-1.3519,0.9339,"{""ortho"": 0.5, ""qlm_delta"": 0.494}",x,QN,𠳒,nhời,2026-11-20 12:46:28
+"Truyên Vua Quang Trung, Nôm",631,632,"Truyên Vua Quang Trung, Nôm.064.002",1,5,5,𠳒,nhởi,1,2,KEEP,𠳒,nhởi,-4.0,0.0661,{},,QN,𠳒,nhời,2026-11-20 12:46:28
+"Truyên Vua Quang Trung, Nôm",631,632,"Truyên Vua Quang Trung, Nôm.064.002",2,6,6,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",633,634,"Truyên Vua Quang Trung, Nôm.064.004",1,1,1,𥊢,chẳng,1,1,QN,𥊢,thẳng,-1.9167,0.8893,"{""ortho"": 0.6, ""qlm_delta"": -0.389}",x,QN,𥊢,thẳng,2026-11-20 12:46:33
+"Truyên Vua Quang Trung, Nôm",633,634,"Truyên Vua Quang Trung, Nôm.064.004",1,1,1,𥊢,chẳng,1,2,KEEP,𥊢,chẳng,-4.0,0.1107,{},,QN,𥊢,thẳng,2026-11-20 12:46:33
+"Truyên Vua Quang Trung, Nôm",633,634,"Truyên Vua Quang Trung, Nôm.064.004",2,4,4,𲈾,của,1,1,QN,𲈾,cửa,-1.3399,0.9346,"{""ortho"": 0.4, ""qlm_delta"": -0.466}",x,QN,𲈾,cửa,2026-11-20 12:46:35
+"Truyên Vua Quang Trung, Nôm",633,634,"Truyên Vua Quang Trung, Nôm.064.004",2,4,4,𲈾,của,1,2,KEEP,𲈾,của,-4.0,0.0654,{},,QN,𲈾,cửa,2026-11-20 12:46:35
+"Truyên Vua Quang Trung, Nôm",637,638,"Truyên Vua Quang Trung, Nôm.064.008",1,3,3,説,thiết,0,1,KEEP,説,thiết,-4.0,1.0,{},,UNREVIEWED,説,thiết,
+"Truyên Vua Quang Trung, Nôm",637,638,"Truyên Vua Quang Trung, Nôm.064.008",2,5,5,𢺹,chìa,1,1,QN,𢺹,chia,-0.3862,0.9738,"{""ortho"": 0.5, ""qlm_delta"": 3.713}",x,QN,𢺹,chia,2026-11-20 12:46:40
+"Truyên Vua Quang Trung, Nôm",637,638,"Truyên Vua Quang Trung, Nôm.064.008",2,5,5,𢺹,chìa,1,2,KEEP,𢺹,chìa,-4.0,0.0262,{},,QN,𢺹,chia,2026-11-20 12:46:40
+"Truyên Vua Quang Trung, Nôm",638,639,"Truyên Vua Quang Trung, Nôm.064.009",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",642,643,"Truyên Vua Quang Trung, Nôm.065.002",1,1,1,𤤰,vu,1,1,QN,𤤰,vua,-1.3903,0.9315,"{""ortho"": 1.0, ""qlm_delta"": 5.366}",x,QN,𤤰,vua,2026-11-20 12:46:47
+"Truyên Vua Quang Trung, Nôm",642,643,"Truyên Vua Quang Trung, Nôm.065.002",1,1,1,𤤰,vu,1,2,KEEP,𤤰,vu,-4.0,0.0685,{},,QN,𤤰,vua,2026-11-20 12:46:47
+"Truyên Vua Quang Trung, Nôm",644,645,"Truyên Vua Quang Trung, Nôm.065.004",1,5,5,寅,giãn,1,1,QN,寅,giần,-3.6256,0.5925,"{""ortho"": 0.9, ""qlm_delta"": -3.085}",x,QN,寅,giần,2026-11-20 12:46:56
+"Truyên Vua Quang Trung, Nôm",644,645,"Truyên Vua Quang Trung, Nôm.065.004",1,5,5,寅,giãn,1,2,KEEP,寅,giãn,-4.0,0.4075,{},,QN,寅,giần,2026-11-20 12:46:56
+"Truyên Vua Quang Trung, Nôm",645,646,"Truyên Vua Quang Trung, Nôm.065.005",1,7,7,重,trung,4,1,QN,重,trùng,-1.0579,0.7648,"{""ortho"": 0.5, ""qlm_delta"": 1.474}",x,QN,重,trùng,2026-11-20 12:47:01
+"Truyên Vua Quang Trung, Nôm",645,646,"Truyên Vua Quang Trung, Nôm.065.005",1,7,7,重,trung,4,2,QN,重,trụng,-2.596,0.1643,"{""ortho"": 0.5, ""qlm_delta"": -3.653}",,QN,重,trùng,2026-11-20 12:47:01
+"Truyên Vua Quang Trung, Nôm",645,646,"Truyên Vua Quang Trung, Nôm.065.005",1,7,7,重,trung,4,3,KEEP,重,trung,-4.0,0.0403,{},,QN,重,trùng,2026-11-20 12:47:01
+"Truyên Vua Quang Trung, Nôm",645,646,"Truyên Vua Quang Trung, Nôm.065.005",1,7,7,重,trung,4,4,QN,重,trửng,-4.3347,0.0289,"{""ortho"": 0.9, ""qlm_delta"": -5.449}",,QN,重,trùng,2026-11-20 12:47:01
+"Truyên Vua Quang Trung, Nôm",645,646,"Truyên Vua Quang Trung, Nôm.065.005",1,7,7,重,trung,4,5,NOM,盅,trung,-7.1562,0.0017,"{""visual_rank"": 14, ""nlm_delta"": -6.188, ""lm_oov"": false}",,QN,重,trùng,2026-11-20 12:47:01
+"Truyên Vua Quang Trung, Nôm",651,652,"Truyên Vua Quang Trung, Nôm.066.000",1,1,1,㹥,chớ,1,1,QN,㹥,chó,2.4446,0.9984,"{""ortho"": 0.4, ""qlm_delta"": 12.149}",x,QN,㹥,chó,2026-11-20 12:47:06
+"Truyên Vua Quang Trung, Nôm",651,652,"Truyên Vua Quang Trung, Nôm.066.000",1,1,1,㹥,chớ,1,2,KEEP,㹥,chớ,-4.0,0.0016,{},,QN,㹥,chó,2026-11-20 12:47:06
+"Truyên Vua Quang Trung, Nôm",651,652,"Truyên Vua Quang Trung, Nôm.066.000",2,7,7,帝,đây,1,1,QN,帝,đấy,-1.7468,0.9049,"{""ortho"": 0.5, ""qlm_delta"": -0.823}",x,QN,帝,đấy,2026-11-20 12:56:09
+"Truyên Vua Quang Trung, Nôm",651,652,"Truyên Vua Quang Trung, Nôm.066.000",2,7,7,帝,đây,1,2,KEEP,帝,đây,-4.0,0.0951,{},,QN,帝,đấy,2026-11-20 12:56:09
+"Truyên Vua Quang Trung, Nôm",653,654,"Truyên Vua Quang Trung, Nôm.066.002",1,3,3,勢,giết,0,1,KEEP,勢,giết,-4.0,1.0,{},,UNREVIEWED,勢,giết,
+"Truyên Vua Quang Trung, Nôm",655,656,"Truyên Vua Quang Trung, Nôm.066.004",1,2,2,𠄻,nhăm,0,1,KEEP,𠄻,nhăm,-4.0,1.0,{},,UNREVIEWED,𠄻,nhăm,
+"Truyên Vua Quang Trung, Nôm",656,657,"Truyên Vua Quang Trung, Nôm.066.005",1,1,1,𥩯,giương,0,1,KEEP,𥩯,giương,-4.0,1.0,{},,UNREVIEWED,𥩯,giương,
+"Truyên Vua Quang Trung, Nôm",657,658,"Truyên Vua Quang Trung, Nôm.066.006",1,3,3,𠄩,hiệu,0,1,KEEP,𠄩,hiệu,-4.0,1.0,{},,UNREVIEWED,𠄩,hiệu,
+"Truyên Vua Quang Trung, Nôm",662,663,"Truyên Vua Quang Trung, Nôm.067.000",1,6,6,滇,trận,1,1,KEEP,滇,trận,-4.0,0.5529,{},x,KEEP,滇,trận,2026-11-20 12:47:20
+"Truyên Vua Quang Trung, Nôm",662,663,"Truyên Vua Quang Trung, Nôm.067.000",1,6,6,滇,trận,1,2,QN,滇,tràn,-4.2126,0.4471,"{""ortho"": 0.9, ""qlm_delta"": -5.042}",,KEEP,滇,trận,2026-11-20 12:47:20
+"Truyên Vua Quang Trung, Nôm",666,667,"Truyên Vua Quang Trung, Nôm.067.004",1,1,1,箕,khá,0,1,KEEP,箕,khá,-4.0,1.0,{},,UNREVIEWED,箕,khá,
+"Truyên Vua Quang Trung, Nôm",670,671,"Truyên Vua Quang Trung, Nôm.067.008",1,1,1,𠳒,nhớ,0,1,KEEP,𠳒,nhớ,-4.0,1.0,{},,UNREVIEWED,𠳒,nhớ,
+"Truyên Vua Quang Trung, Nôm",674,675,"Truyên Vua Quang Trung, Nôm.068.001",1,6,6,呡,ran,1,1,QN,呡,răn,-1.583,0.9181,"{""ortho"": 0.4, ""qlm_delta"": -1.277}",,KEEP,呡,ran,2026-11-20 12:47:27
+"Truyên Vua Quang Trung, Nôm",674,675,"Truyên Vua Quang Trung, Nôm.068.001",1,6,6,呡,ran,1,2,KEEP,呡,ran,-4.0,0.0819,{},x,KEEP,呡,ran,2026-11-20 12:47:27
+"Truyên Vua Quang Trung, Nôm",677,678,"Truyên Vua Quang Trung, Nôm.068.004",1,1,1,徐,cứ,2,1,QN,徐,từ,-0.6163,0.7392,"{""ortho"": 1.1, ""qlm_delta"": 8.946}",x,QN,徐,từ,2026-11-20 12:47:33
+"Truyên Vua Quang Trung, Nôm",677,678,"Truyên Vua Quang Trung, Nôm.068.004",1,1,1,徐,cứ,2,2,QN,徐,chừ,-1.7591,0.2357,"{""ortho"": 1.1, ""qlm_delta"": 5.136}",,QN,徐,từ,2026-11-20 12:47:33
+"Truyên Vua Quang Trung, Nôm",677,678,"Truyên Vua Quang Trung, Nôm.068.004",1,1,1,徐,cứ,2,3,KEEP,徐,cứ,-4.0,0.0251,{},,QN,徐,từ,2026-11-20 12:47:33
+"Truyên Vua Quang Trung, Nôm",678,679,"Truyên Vua Quang Trung, Nôm.068.005",1,6,6,𨀐,giòng,1,1,QN,𨀐,giong,-1.7401,0.9055,"{""ortho"": 0.5, ""qlm_delta"": -0.8}",,KEEP,𨀐,giòng,2026-11-20 12:47:44
+"Truyên Vua Quang Trung, Nôm",678,679,"Truyên Vua Quang Trung, Nôm.068.005",1,6,6,𨀐,giòng,1,2,KEEP,𨀐,giòng,-4.0,0.0945,{},x,KEEP,𨀐,giòng,2026-11-20 12:47:44
+"Truyên Vua Quang Trung, Nôm",683,684,"Truyên Vua Quang Trung, Nôm.068.010",1,4,4,迾,lượt,1,1,QN,迾,lướt,-2.5473,0.8104,"{""ortho"": 0.5, ""qlm_delta"": -3.491}",,KEEP,迾,lượt,2026-11-20 12:47:51
+"Truyên Vua Quang Trung, Nôm",683,684,"Truyên Vua Quang Trung, Nôm.068.010",1,4,4,迾,lượt,1,2,KEEP,迾,lượt,-4.0,0.1896,{},x,KEEP,迾,lượt,2026-11-20 12:47:51
+"Truyên Vua Quang Trung, Nôm",684,685,"Truyên Vua Quang Trung, Nôm.069.000",1,2,2,𦣰,năm,2,1,QN,𦣰,nằm,-2.0309,0.8436,"{""ortho"": 0.5, ""qlm_delta"": -1.77}",x,QN,𦣰,nằm,2026-11-20 12:47:58
+"Truyên Vua Quang Trung, Nôm",684,685,"Truyên Vua Quang Trung, Nôm.069.000",1,2,2,𦣰,năm,2,2,KEEP,𦣰,năm,-4.0,0.1177,{},,QN,𦣰,nằm,2026-11-20 12:47:58
+"Truyên Vua Quang Trung, Nôm",684,685,"Truyên Vua Quang Trung, Nôm.069.000",1,2,2,𦣰,năm,2,3,QN,𦣰,nằn,-5.1136,0.0387,"{""ortho"": 1.1, ""qlm_delta"": -6.045}",,QN,𦣰,nằm,2026-11-20 12:47:58
+"Truyên Vua Quang Trung, Nôm",684,685,"Truyên Vua Quang Trung, Nôm.069.000",2,4,4,㮓,càng,1,1,KEEP,㮓,càng,-4.0,0.8475,{},x,KEEP,㮓,càng,2026-11-20 12:48:03
+"Truyên Vua Quang Trung, Nôm",684,685,"Truyên Vua Quang Trung, Nôm.069.000",2,4,4,㮓,càng,1,2,QN,㮓,cắng,-5.7153,0.1525,"{""ortho"": 0.9, ""qlm_delta"": -10.051}",,KEEP,㮓,càng,2026-11-20 12:48:03
+"Truyên Vua Quang Trung, Nôm",685,686,"Truyên Vua Quang Trung, Nôm.069.001",1,1,1,奇,cớ,1,1,QN,奇,cơ,-0.9716,0.9538,"{""ortho"": 0.5, ""qlm_delta"": 1.761}",x,QN,奇,cơ,2026-11-20 12:48:11
+"Truyên Vua Quang Trung, Nôm",685,686,"Truyên Vua Quang Trung, Nôm.069.001",1,1,1,奇,cớ,1,2,KEEP,奇,cớ,-4.0,0.0462,{},,QN,奇,cơ,2026-11-20 12:48:11
+"Truyên Vua Quang Trung, Nôm",685,686,"Truyên Vua Quang Trung, Nôm.069.001",2,2,2,𱜢,sao,1,1,KEEP,𱜢,sao,-4.0,0.5041,{},,QN,𱜢,nao,2026-11-20 12:48:15
+"Truyên Vua Quang Trung, Nôm",685,686,"Truyên Vua Quang Trung, Nôm.069.001",2,2,2,𱜢,sao,1,2,QN,𱜢,nao,-4.0165,0.4959,"{""ortho"": 1.0, ""qlm_delta"": -3.388}",x,QN,𱜢,nao,2026-11-20 12:48:15
+"Truyên Vua Quang Trung, Nôm",685,686,"Truyên Vua Quang Trung, Nôm.069.001",3,5,5,倫,luôn,5,1,NOM,㫻,luôn,-0.3912,0.719,"{""visual_rank"": 1, ""nlm_delta"": 1.297, ""lm_oov"": false}",,KEEP,倫,luôn,2026-11-20 12:48:20
+"Truyên Vua Quang Trung, Nôm",685,686,"Truyên Vua Quang Trung, Nôm.069.001",3,5,5,倫,luôn,5,2,NOM,掄,luôn,-1.7182,0.1908,"{""visual_rank"": 3, ""nlm_delta"": 0.723, ""lm_oov"": false}",,KEEP,倫,luôn,2026-11-20 12:48:20
+"Truyên Vua Quang Trung, Nôm",685,686,"Truyên Vua Quang Trung, Nôm.069.001",3,5,5,倫,luôn,5,3,QN,倫,luồn,-3.0777,0.049,"{""ortho"": 0.5, ""qlm_delta"": -5.259}",,KEEP,倫,luôn,2026-11-20 12:48:20
+"Truyên Vua Quang Trung, Nôm",685,686,"Truyên Vua Quang Trung, Nôm.069.001",3,5,5,倫,luôn,5,4,KEEP,倫,luôn,-4.0,0.0195,{},x,KEEP,倫,luôn,2026-11-20 12:48:20
+"Truyên Vua Quang Trung, Nôm",685,686,"Truyên Vua Quang Trung, Nôm.069.001",3,5,5,倫,luôn,5,5,QN,倫,lôn,-4.3434,0.0138,"{""ortho"": 1.0, ""qlm_delta"": -4.478}",,KEEP,倫,luôn,2026-11-20 12:48:20
+"Truyên Vua Quang Trung, Nôm",685,686,"Truyên Vua Quang Trung, Nôm.069.001",3,5,5,倫,luôn,5,6,QN,倫,luân,-4.8989,0.0079,"{""ortho"": 1.0, ""qlm_delta"": -6.33}",,KEEP,倫,luôn,2026-11-20 12:48:20
+"Truyên Vua Quang Trung, Nôm",686,687,"Truyên Vua Quang Trung, Nôm.069.002",1,6,6,懊,hăng,0,1,KEEP,懊,hăng,-4.0,1.0,{},,UNREVIEWED,懊,hăng,
+"Truyên Vua Quang Trung, Nôm",689,690,"Truyên Vua Quang Trung, Nôm.069.005",1,6,6,𦣰,năm,2,1,QN,𦣰,nằm,-0.454,0.969,"{""ortho"": 0.5, ""qlm_delta"": 3.487}",x,QN,𦣰,nằm,2026-11-20 12:48:30
+"Truyên Vua Quang Trung, Nôm",689,690,"Truyên Vua Quang Trung, Nôm.069.005",1,6,6,𦣰,năm,2,2,KEEP,𦣰,năm,-4.0,0.0279,{},,QN,𦣰,nằm,2026-11-20 12:48:30
+"Truyên Vua Quang Trung, Nôm",689,690,"Truyên Vua Quang Trung, Nôm.069.005",1,6,6,𦣰,năm,2,3,QN,𦣰,nằn,-6.2227,0.003,"{""ortho"": 1.1, ""qlm_delta"": -9.742}",,QN,𦣰,nằm,2026-11-20 12:48:30
+"Truyên Vua Quang Trung, Nôm",690,691,"Truyên Vua Quang Trung, Nôm.069.006",1,5,5,當,dương,2,1,QN,當,đương,0.2545,0.8326,"{""ortho"": 0.4, ""qlm_delta"": 4.848}",,KEEP,當,dương,2026-11-20 12:48:36
+"Truyên Vua Quang Trung, Nôm",690,691,"Truyên Vua Quang Trung, Nôm.069.006",1,5,5,當,dương,2,2,QN,當,đường,-1.4231,0.1556,"{""ortho"": 0.9, ""qlm_delta"": 4.256}",,KEEP,當,dương,2026-11-20 12:48:36
+"Truyên Vua Quang Trung, Nôm",690,691,"Truyên Vua Quang Trung, Nôm.069.006",1,5,5,當,dương,2,3,KEEP,當,dương,-4.0,0.0118,{},x,KEEP,當,dương,2026-11-20 12:48:36
+"Truyên Vua Quang Trung, Nôm",691,692,"Truyên Vua Quang Trung, Nôm.069.007",1,1,1,省,bình,0,1,KEEP,省,bình,-4.0,1.0,{},,UNREVIEWED,省,bình,
+"Truyên Vua Quang Trung, Nôm",692,693,"Truyên Vua Quang Trung, Nôm.069.008",1,6,6,愷,ngơi,1,1,KEEP,愷,ngơi,-4.0,0.9451,{},x,KEEP,愷,ngơi,2026-11-20 12:48:45
+"Truyên Vua Quang Trung, Nôm",692,693,"Truyên Vua Quang Trung, Nôm.069.008",1,6,6,愷,ngơi,1,2,QN,愷,ngai,-6.8466,0.0549,"{""ortho"": 1.0, ""qlm_delta"": -12.822}",,KEEP,愷,ngơi,2026-11-20 12:48:45
+"Truyên Vua Quang Trung, Nôm",694,695,"Truyên Vua Quang Trung, Nôm.069.010",1,5,5,遜,nhún,0,1,KEEP,遜,nhún,-4.0,1.0,{},,UNREVIEWED,遜,nhún,
+"Truyên Vua Quang Trung, Nôm",695,696,"Truyên Vua Quang Trung, Nôm.070.000",1,3,3,毅,nghi,1,1,QN,毅,nghị,-2.2159,0.8562,"{""ortho"": 0.5, ""qlm_delta"": -2.386}",x,QN,毅,nghị,2026-11-20 12:48:52
+"Truyên Vua Quang Trung, Nôm",695,696,"Truyên Vua Quang Trung, Nôm.070.000",1,3,3,毅,nghi,1,2,KEEP,毅,nghi,-4.0,0.1438,{},,QN,毅,nghị,2026-11-20 12:48:52
+"Truyên Vua Quang Trung, Nôm",700,701,"Truyên Vua Quang Trung, Nôm.070.005",1,6,6,踭,nhanh,0,1,KEEP,踭,nhanh,-4.0,1.0,{},,UNREVIEWED,踭,nhanh,
+"Truyên Vua Quang Trung, Nôm",701,702,"Truyên Vua Quang Trung, Nôm.070.006",1,2,2,曖,mồng,0,1,KEEP,曖,mồng,-4.0,1.0,{},,UNREVIEWED,曖,mồng,
+"Truyên Vua Quang Trung, Nôm",703,704,"Truyên Vua Quang Trung, Nôm.070.008",1,1,1,𢸢,chen,1,1,QN,𢸢,chẹn,-2.4905,0.819,"{""ortho"": 0.5, ""qlm_delta"": -3.302}",x,QN,𢸢,chẹn,2026-11-20 12:49:01
+"Truyên Vua Quang Trung, Nôm",703,704,"Truyên Vua Quang Trung, Nôm.070.008",1,1,1,𢸢,chen,1,2,KEEP,𢸢,chen,-4.0,0.181,{},,QN,𢸢,chẹn,2026-11-20 12:49:01
+"Truyên Vua Quang Trung, Nôm",706,707,"Truyên Vua Quang Trung, Nôm.071.000",1,1,1,批,bác,0,1,KEEP,批,bác,-4.0,1.0,{},,UNREVIEWED,批,bác,
+"Truyên Vua Quang Trung, Nôm",709,710,"Truyên Vua Quang Trung, Nôm.071.003",1,8,8,懊,hăng,0,1,KEEP,懊,hăng,-4.0,1.0,{},,UNREVIEWED,懊,hăng,
+"Truyên Vua Quang Trung, Nôm",710,711,"Truyên Vua Quang Trung, Nôm.071.004",1,5,5,無,võ,1,1,QN,無,vô,-0.326,0.9753,"{""ortho"": 0.9, ""qlm_delta"": 7.913}",x,QN,無,vô,2026-11-20 12:49:06
+"Truyên Vua Quang Trung, Nôm",710,711,"Truyên Vua Quang Trung, Nôm.071.004",1,5,5,無,võ,1,2,KEEP,無,võ,-4.0,0.0247,{},,QN,無,vô,2026-11-20 12:49:06
+"Truyên Vua Quang Trung, Nôm",713,714,"Truyên Vua Quang Trung, Nôm.071.007",1,3,3,𱤎,chông,0,1,KEEP,𱤎,chông,-4.0,1.0,{},,UNREVIEWED,𱤎,chông,
+"Truyên Vua Quang Trung, Nôm",713,714,"Truyên Vua Quang Trung, Nôm.071.007",2,8,8,挗,nê,1,1,QN,挗,rê,-1.1101,0.9473,"{""ortho"": 0.6, ""qlm_delta"": 2.3}",x,QN,挗,rê,2026-11-20 12:49:12
+"Truyên Vua Quang Trung, Nôm",713,714,"Truyên Vua Quang Trung, Nôm.071.007",2,8,8,挗,nê,1,2,KEEP,挗,nê,-4.0,0.0527,{},,QN,挗,rê,2026-11-20 12:49:12
+"Truyên Vua Quang Trung, Nôm",714,715,"Truyên Vua Quang Trung, Nôm.071.008",1,3,3,拥,dựng,1,1,QN,拥,dùng,-2.3748,0.8355,"{""ortho"": 0.9, ""qlm_delta"": 1.084}",x,QN,拥,dùng,2026-11-20 12:49:18
+"Truyên Vua Quang Trung, Nôm",714,715,"Truyên Vua Quang Trung, Nôm.071.008",1,3,3,拥,dựng,1,2,KEEP,拥,dựng,-4.0,0.1645,{},,QN,拥,dùng,2026-11-20 12:49:18
+"Truyên Vua Quang Trung, Nôm",714,715,"Truyên Vua Quang Trung, Nôm.071.008",2,5,5,苫,chắn,0,1,KEEP,苫,chắn,-4.0,1.0,{},,UNREVIEWED,苫,chắn,
+"Truyên Vua Quang Trung, Nôm",715,716,"Truyên Vua Quang Trung, Nôm.071.009",1,1,1,刀,giáo,0,1,KEEP,刀,giáo,-4.0,1.0,{},,UNREVIEWED,刀,giáo,
+"Truyên Vua Quang Trung, Nôm",715,716,"Truyên Vua Quang Trung, Nôm.071.009",2,2,2,鈐,găm,0,1,KEEP,鈐,găm,-4.0,1.0,{},,UNREVIEWED,鈐,găm,
+"Truyên Vua Quang Trung, Nôm",715,716,"Truyên Vua Quang Trung, Nôm.071.009",3,5,5,󰟴,bưỡi,1,1,QN,󰟴,lưỡi,-2.023,0.8784,"{""ortho"": 1.0, ""qlm_delta"": 3.257}",x,QN,󰟴,lưỡi,2026-11-20 12:49:25
+"Truyên Vua Quang Trung, Nôm",715,716,"Truyên Vua Quang Trung, Nôm.071.009",3,5,5,󰟴,bưỡi,1,2,KEEP,󰟴,bưỡi,-4.0,0.1216,{},,QN,󰟴,lưỡi,2026-11-20 12:49:25
+"Truyên Vua Quang Trung, Nôm",715,716,"Truyên Vua Quang Trung, Nôm.071.009",4,6,6,黎,lé,3,1,QN,黎,le,-0.6974,0.5861,"{""ortho"": 0.5, ""qlm_delta"": 2.675}",,QN,黎,lê,2026-11-20 12:49:32
+"Truyên Vua Quang Trung, Nôm",715,716,"Truyên Vua Quang Trung, Nôm.071.009",4,6,6,黎,lé,3,2,QN,黎,lệ,-1.6079,0.2358,"{""ortho"": 0.9, ""qlm_delta"": 3.64}",,QN,黎,lê,2026-11-20 12:49:32
+"Truyên Vua Quang Trung, Nôm",715,716,"Truyên Vua Quang Trung, Nôm.071.009",4,6,6,黎,lé,3,3,QN,黎,lê,-2.0179,0.1565,"{""ortho"": 0.9, ""qlm_delta"": 2.274}",x,QN,黎,lê,2026-11-20 12:49:32
+"Truyên Vua Quang Trung, Nôm",715,716,"Truyên Vua Quang Trung, Nôm.071.009",4,6,6,黎,lé,3,4,KEEP,黎,lé,-4.0,0.0216,{},,QN,黎,lê,2026-11-20 12:49:32
+"Truyên Vua Quang Trung, Nôm",715,716,"Truyên Vua Quang Trung, Nôm.071.009",5,7,7,趂,sẵn,4,1,QN,趂,sắn,-1.4455,0.631,"{""ortho"": 0.5, ""qlm_delta"": 0.182}",,QN,趂,sấn,2026-11-20 12:49:38
+"Truyên Vua Quang Trung, Nôm",715,716,"Truyên Vua Quang Trung, Nôm.071.009",5,7,7,趂,sẵn,4,2,QN,趂,sán,-2.6295,0.1931,"{""ortho"": 0.9, ""qlm_delta"": 0.235}",,QN,趂,sấn,2026-11-20 12:49:38
+"Truyên Vua Quang Trung, Nôm",715,716,"Truyên Vua Quang Trung, Nôm.071.009",5,7,7,趂,sẵn,4,3,QN,趂,sấn,-3.5924,0.0737,"{""ortho"": 0.9, ""qlm_delta"": -2.975}",x,QN,趂,sấn,2026-11-20 12:49:38
+"Truyên Vua Quang Trung, Nôm",715,716,"Truyên Vua Quang Trung, Nôm.071.009",5,7,7,趂,sẵn,4,4,QN,趂,xắn,-3.9192,0.0532,"{""ortho"": 1.1, ""qlm_delta"": -2.064}",,QN,趂,sấn,2026-11-20 12:49:38
+"Truyên Vua Quang Trung, Nôm",715,716,"Truyên Vua Quang Trung, Nôm.071.009",5,7,7,趂,sẵn,4,5,KEEP,趂,sẵn,-4.0,0.049,{},,QN,趂,sấn,2026-11-20 12:49:38
+"Truyên Vua Quang Trung, Nôm",720,721,"Truyên Vua Quang Trung, Nôm.072.003",1,4,4,𣋽,sáng,0,1,KEEP,𣋽,sáng,-4.0,1.0,{},,UNREVIEWED,𣋽,sáng,
+"Truyên Vua Quang Trung, Nôm",729,730,"Truyên Vua Quang Trung, Nôm.073.001",1,3,3,圮,giẽ,5,1,NOM,𡉏,giẽ,0.2533,0.7359,"{""visual_rank"": 1, ""nlm_delta"": 2.586, ""lm_oov"": false}",x,NOM,𡉏,giẽ,2026-11-20 12:49:49
+"Truyên Vua Quang Trung, Nôm",729,730,"Truyên Vua Quang Trung, Nôm.073.001",1,3,3,圮,giẽ,5,2,NOM,圯,giẽ,-1.1374,0.1832,"{""visual_rank"": 2, ""nlm_delta"": 1.021, ""lm_oov"": false}",,NOM,𡉏,giẽ,2026-11-20 12:49:49
+"Truyên Vua Quang Trung, Nôm",729,730,"Truyên Vua Quang Trung, Nôm.073.001",1,3,3,圮,giẽ,5,3,NOM,𠖰,giẽ,-2.8305,0.0337,"{""visual_rank"": 6, ""nlm_delta"": 0.177, ""lm_oov"": false}",,NOM,𡉏,giẽ,2026-11-20 12:49:49
+"Truyên Vua Quang Trung, Nôm",729,730,"Truyên Vua Quang Trung, Nôm.073.001",1,3,3,圮,giẽ,5,4,NOM,𠯇,giẽ,-2.9524,0.0298,"{""visual_rank"": 6, ""nlm_delta"": -0.067, ""lm_oov"": false}",,NOM,𡉏,giẽ,2026-11-20 12:49:49
+"Truyên Vua Quang Trung, Nôm",729,730,"Truyên Vua Quang Trung, Nôm.073.001",1,3,3,圮,giẽ,5,5,KEEP,圮,giẽ,-4.0,0.0105,{},,NOM,𡉏,giẽ,2026-11-20 12:49:49
+"Truyên Vua Quang Trung, Nôm",729,730,"Truyên Vua Quang Trung, Nôm.073.001",1,3,3,圮,giẽ,5,6,NOM,𢩵,giẽ,-4.4171,0.0069,"{""visual_rank"": 8, ""nlm_delta"": -2.242, ""lm_oov"": false}",,NOM,𡉏,giẽ,2026-11-20 12:49:49
+"Truyên Vua Quang Trung, Nôm",730,731,"Truyên Vua Quang Trung, Nôm.073.002",1,4,4,𢯢,gẫy,0,1,KEEP,𢯢,gẫy,-4.0,1.0,{},,UNREVIEWED,𢯢,gẫy,
+"Truyên Vua Quang Trung, Nôm",733,734,"Truyên Vua Quang Trung, Nôm.073.005",1,3,3,八,nhập,1,1,NOM,入,nhập,-3.2469,0.6799,"{""visual_rank"": 5, ""nlm_delta"": -1.118, ""lm_oov"": false}",,KEEP,八,nhập,2026-11-20 12:50:00
+"Truyên Vua Quang Trung, Nôm",733,734,"Truyên Vua Quang Trung, Nôm.073.005",1,3,3,八,nhập,1,2,KEEP,八,nhập,-4.0,0.3201,{},x,KEEP,八,nhập,2026-11-20 12:50:00
+"Truyên Vua Quang Trung, Nôm",734,735,"Truyên Vua Quang Trung, Nôm.073.006",1,3,3,𣎀,đem,1,1,QN,𣎀,đêm,-2.6894,0.7876,"{""ortho"": 0.4, ""qlm_delta"": -4.965}",x,QN,𣎀,đêm,2026-11-20 12:50:05
+"Truyên Vua Quang Trung, Nôm",734,735,"Truyên Vua Quang Trung, Nôm.073.006",1,3,3,𣎀,đem,1,2,KEEP,𣎀,đem,-4.0,0.2124,{},,QN,𣎀,đêm,2026-11-20 12:50:05
+"Truyên Vua Quang Trung, Nôm",736,737,"Truyên Vua Quang Trung, Nôm.073.008",1,1,1,曖,mồng,0,1,KEEP,曖,mồng,-4.0,1.0,{},,UNREVIEWED,曖,mồng,
+"Truyên Vua Quang Trung, Nôm",736,737,"Truyên Vua Quang Trung, Nôm.073.008",2,3,3,𡗶,giới,3,1,QN,𡗶,giời,-0.6332,0.8197,"{""ortho"": 0.5, ""qlm_delta"": 2.889}",x,QN,𡗶,giời,2026-11-20 12:50:12
+"Truyên Vua Quang Trung, Nôm",736,737,"Truyên Vua Quang Trung, Nôm.073.008",2,3,3,𡗶,giới,3,2,NOM,芥,giới,-2.37,0.1443,"{""visual_rank"": 6, ""nlm_delta"": 1.098, ""lm_oov"": false}",,QN,𡗶,giời,2026-11-20 12:50:12
+"Truyên Vua Quang Trung, Nôm",736,737,"Truyên Vua Quang Trung, Nôm.073.008",2,3,3,𡗶,giới,3,3,KEEP,𡗶,giới,-4.0,0.0283,{},,QN,𡗶,giời,2026-11-20 12:50:12
+"Truyên Vua Quang Trung, Nôm",736,737,"Truyên Vua Quang Trung, Nôm.073.008",2,3,3,𡗶,giới,3,4,QN,𡗶,giơì,-5.2951,0.0077,"{""ortho"": 0.5, ""qlm_delta"": -12.65}",,QN,𡗶,giời,2026-11-20 12:50:12
+"Truyên Vua Quang Trung, Nôm",736,737,"Truyên Vua Quang Trung, Nôm.073.008",3,5,5,詞,tò,2,1,KEEP,詞,tò,-4.0,0.3802,{},,QN,詞,tờ,2026-11-20 12:50:13
+"Truyên Vua Quang Trung, Nôm",736,737,"Truyên Vua Quang Trung, Nôm.073.008",3,5,5,詞,tò,2,2,QN,詞,từ,-4.0612,0.3577,"{""ortho"": 1.0, ""qlm_delta"": -3.537}",,QN,詞,tờ,2026-11-20 12:50:13
+"Truyên Vua Quang Trung, Nôm",736,737,"Truyên Vua Quang Trung, Nôm.073.008",3,5,5,詞,tò,2,3,QN,詞,tờ,-4.3721,0.2621,"{""ortho"": 0.4, ""qlm_delta"": -10.574}",x,QN,詞,tờ,2026-11-20 12:50:13
+"Truyên Vua Quang Trung, Nôm",740,741,"Truyên Vua Quang Trung, Nôm.074.001",1,1,1,孫,côn,2,1,QN,孫,tôn,-0.8743,0.9388,"{""ortho"": 0.6, ""qlm_delta"": 3.086}",x,QN,孫,tôn,2026-11-20 12:50:23
+"Truyên Vua Quang Trung, Nôm",740,741,"Truyên Vua Quang Trung, Nôm.074.001",1,1,1,孫,côn,2,2,KEEP,孫,côn,-4.0,0.0412,{},,QN,孫,tôn,2026-11-20 12:50:23
+"Truyên Vua Quang Trung, Nôm",740,741,"Truyên Vua Quang Trung, Nôm.074.001",1,1,1,孫,côn,2,3,QN,孫,tốn,-4.725,0.02,"{""ortho"": 1.1, ""qlm_delta"": -4.75}",,QN,孫,tôn,2026-11-20 12:50:23
+"Truyên Vua Quang Trung, Nôm",741,742,"Truyên Vua Quang Trung, Nôm.074.002",1,1,1,脱,choắt,2,1,QN,脱,thoắt,-1.9371,0.6919,"{""ortho"": 0.6, ""qlm_delta"": -0.457}",,QN,脱,thoát,2026-11-20 12:50:34
+"Truyên Vua Quang Trung, Nôm",741,742,"Truyên Vua Quang Trung, Nôm.074.002",1,1,1,脱,choắt,2,2,QN,脱,thoát,-3.0824,0.2201,"{""ortho"": 1.0, ""qlm_delta"": -0.275}",x,QN,脱,thoát,2026-11-20 12:50:34
+"Truyên Vua Quang Trung, Nôm",741,742,"Truyên Vua Quang Trung, Nôm.074.002",1,1,1,脱,choắt,2,3,KEEP,脱,choắt,-4.0,0.0879,{},,QN,脱,thoát,2026-11-20 12:50:34
+"Truyên Vua Quang Trung, Nôm",741,742,"Truyên Vua Quang Trung, Nôm.074.002",2,6,6,洡,rối,4,1,QN,洡,rồi,-2.2572,0.4645,"{""ortho"": 0.5, ""qlm_delta"": -2.524}",,KEEP,洡,rối,2026-11-20 12:50:43
+"Truyên Vua Quang Trung, Nôm",741,742,"Truyên Vua Quang Trung, Nôm.074.002",2,6,6,洡,rối,4,2,QN,洡,rơi,-2.6767,0.3054,"{""ortho"": 0.9, ""qlm_delta"": 0.078}",,KEEP,洡,rối,2026-11-20 12:50:43
+"Truyên Vua Quang Trung, Nôm",741,742,"Truyên Vua Quang Trung, Nôm.074.002",2,6,6,洡,rối,4,3,QN,洡,ròi,-3.9642,0.0843,"{""ortho"": 0.9, ""qlm_delta"": -4.214}",,KEEP,洡,rối,2026-11-20 12:50:43
+"Truyên Vua Quang Trung, Nôm",741,742,"Truyên Vua Quang Trung, Nôm.074.002",2,6,6,洡,rối,4,4,KEEP,洡,rối,-4.0,0.0813,{},x,KEEP,洡,rối,2026-11-20 12:50:43
+"Truyên Vua Quang Trung, Nôm",741,742,"Truyên Vua Quang Trung, Nôm.074.002",2,6,6,洡,rối,4,5,QN,洡,xối,-4.2312,0.0645,"{""ortho"": 1.0, ""qlm_delta"": -4.104}",,KEEP,洡,rối,2026-11-20 12:50:43
+"Truyên Vua Quang Trung, Nôm",744,745,"Truyên Vua Quang Trung, Nôm.074.005",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",744,745,"Truyên Vua Quang Trung, Nôm.074.005",2,5,5,𨄼,rối,0,1,KEEP,𨄼,rối,-4.0,1.0,{},,UNREVIEWED,𨄼,rối,
+"Truyên Vua Quang Trung, Nôm",745,746,"Truyên Vua Quang Trung, Nôm.074.006",1,1,1,寄,buông,0,1,KEEP,寄,buông,-4.0,1.0,{},,UNREVIEWED,寄,buông,
+"Truyên Vua Quang Trung, Nôm",745,746,"Truyên Vua Quang Trung, Nôm.074.006",2,4,4,尒,mấy,3,1,NOM,氽,mấy,3.609,0.9867,"{""visual_rank"": 1, ""nlm_delta"": 9.297, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:50:48
+"Truyên Vua Quang Trung, Nôm",745,746,"Truyên Vua Quang Trung, Nôm.074.006",2,4,4,尒,mấy,3,2,NOM,𠇍,mấy,-0.8731,0.0112,"{""visual_rank"": 1, ""nlm_delta"": 0.333, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:50:48
+"Truyên Vua Quang Trung, Nôm",745,746,"Truyên Vua Quang Trung, Nôm.074.006",2,4,4,尒,mấy,3,3,NOM,汆,mấy,-2.7951,0.0016,"{""visual_rank"": 16, ""nlm_delta"": 2.91, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:50:48
+"Truyên Vua Quang Trung, Nôm",745,746,"Truyên Vua Quang Trung, Nôm.074.006",2,4,4,尒,mấy,3,4,KEEP,尒,mấy,-4.0,0.0005,{},x,KEEP,尒,mấy,2026-11-20 12:50:48
+"Truyên Vua Quang Trung, Nôm",746,747,"Truyên Vua Quang Trung, Nôm.074.007",1,4,4,𱞟,rỡ,0,1,KEEP,𱞟,rỡ,-4.0,1.0,{},,UNREVIEWED,𱞟,rỡ,
+"Truyên Vua Quang Trung, Nôm",746,747,"Truyên Vua Quang Trung, Nôm.074.007",2,6,6,姚,reo,0,1,KEEP,姚,reo,-4.0,1.0,{},,UNREVIEWED,姚,reo,
+"Truyên Vua Quang Trung, Nôm",747,748,"Truyên Vua Quang Trung, Nôm.074.008",1,1,1,𬁑,cửa,0,1,KEEP,𬁑,cửa,-4.0,1.0,{},,UNREVIEWED,𬁑,cửa,
+"Truyên Vua Quang Trung, Nôm",747,748,"Truyên Vua Quang Trung, Nôm.074.008",2,2,2,䑅,mông,2,1,QN,䑅,mống,-1.6493,0.5766,"{""ortho"": 0.5, ""qlm_delta"": -0.498}",,KEEP,䑅,mông,2026-11-20 12:50:58
+"Truyên Vua Quang Trung, Nôm",747,748,"Truyên Vua Quang Trung, Nôm.074.008",2,2,2,䑅,mông,2,2,QN,䑅,mộng,-2.0973,0.3684,"{""ortho"": 0.5, ""qlm_delta"": -1.991}",,KEEP,䑅,mông,2026-11-20 12:50:58
+"Truyên Vua Quang Trung, Nôm",747,748,"Truyên Vua Quang Trung, Nôm.074.008",2,2,2,䑅,mông,2,3,KEEP,䑅,mông,-4.0,0.055,{},x,KEEP,䑅,mông,2026-11-20 12:50:58
+"Truyên Vua Quang Trung, Nôm",752,753,"Truyên Vua Quang Trung, Nôm.075.002",1,4,4,細,rối,0,1,KEEP,細,rối,-4.0,1.0,{},,UNREVIEWED,細,rối,
+"Truyên Vua Quang Trung, Nôm",755,756,"Truyên Vua Quang Trung, Nôm.075.005",1,1,1,惻,biết,0,1,KEEP,惻,biết,-4.0,1.0,{},,UNREVIEWED,惻,biết,
+"Truyên Vua Quang Trung, Nôm",756,757,"Truyên Vua Quang Trung, Nôm.075.006",1,3,3,𣈙,dây,0,1,KEEP,𣈙,dây,-4.0,1.0,{},,UNREVIEWED,𣈙,dây,
+"Truyên Vua Quang Trung, Nôm",756,757,"Truyên Vua Quang Trung, Nôm.075.006",2,4,4,㐌,dả,4,1,QN,㐌,đà,-1.3012,0.3885,"{""ortho"": 0.9, ""qlm_delta"": 4.663}",,QN,㐌,đã,2026-11-20 12:51:06
+"Truyên Vua Quang Trung, Nôm",756,757,"Truyên Vua Quang Trung, Nôm.075.006",2,4,4,㐌,dả,4,2,QN,㐌,đã,-1.586,0.2922,"{""ortho"": 0.9, ""qlm_delta"": 3.713}",x,QN,㐌,đã,2026-11-20 12:51:06
+"Truyên Vua Quang Trung, Nôm",756,757,"Truyên Vua Quang Trung, Nôm.075.006",2,4,4,㐌,dả,4,3,NOM,也,dả,-2.0475,0.1842,"{""visual_rank"": 14, ""nlm_delta"": 4.029, ""lm_oov"": false}",,QN,㐌,đã,2026-11-20 12:51:06
+"Truyên Vua Quang Trung, Nôm",756,757,"Truyên Vua Quang Trung, Nôm.075.006",2,4,4,㐌,dả,4,4,QN,㐌,dã,-2.572,0.109,"{""ortho"": 0.5, ""qlm_delta"": -3.573}",,QN,㐌,đã,2026-11-20 12:51:06
+"Truyên Vua Quang Trung, Nôm",756,757,"Truyên Vua Quang Trung, Nôm.075.006",2,4,4,㐌,dả,4,5,KEEP,㐌,dả,-4.0,0.0261,{},,QN,㐌,đã,2026-11-20 12:51:06
+"Truyên Vua Quang Trung, Nôm",757,758,"Truyên Vua Quang Trung, Nôm.075.007",1,6,6,墱,giàng,0,1,KEEP,墱,giàng,-4.0,1.0,{},,UNREVIEWED,墱,giàng,
+"Truyên Vua Quang Trung, Nôm",758,759,"Truyên Vua Quang Trung, Nôm.075.008",1,3,3,𦊚,vốn,1,1,QN,𦊚,bốn,-3.3108,0.6658,"{""ortho"": 1.0, ""qlm_delta"": -1.036}",,KEEP,𦊚,vốn,2026-11-20 12:51:12
+"Truyên Vua Quang Trung, Nôm",758,759,"Truyên Vua Quang Trung, Nôm.075.008",1,3,3,𦊚,vốn,1,2,KEEP,𦊚,vốn,-4.0,0.3342,{},x,KEEP,𦊚,vốn,2026-11-20 12:51:12
+"Truyên Vua Quang Trung, Nôm",759,760,"Truyên Vua Quang Trung, Nôm.075.009",1,5,5,𮃛,ghê,0,1,KEEP,𮃛,ghê,-4.0,1.0,{},,UNREVIEWED,𮃛,ghê,
+"Truyên Vua Quang Trung, Nôm",760,761,"Truyên Vua Quang Trung, Nôm.075.010",1,6,6,餒,nhôi,3,1,QN,餒,nổi,-0.4083,0.383,"{""ortho"": 1.1, ""qlm_delta"": 9.639}",,KEEP,餒,nhôi,2026-11-20 12:51:20
+"Truyên Vua Quang Trung, Nôm",760,761,"Truyên Vua Quang Trung, Nôm.075.010",1,6,6,餒,nhôi,3,2,QN,餒,nuôi,-0.4808,0.3562,"{""ortho"": 1.0, ""qlm_delta"": 8.397}",,KEEP,餒,nhôi,2026-11-20 12:51:20
+"Truyên Vua Quang Trung, Nôm",760,761,"Truyên Vua Quang Trung, Nôm.075.010",1,6,6,餒,nhôi,3,3,QN,餒,nỗi,-0.8343,0.2502,"{""ortho"": 1.1, ""qlm_delta"": 8.219}",,KEEP,餒,nhôi,2026-11-20 12:51:20
+"Truyên Vua Quang Trung, Nôm",760,761,"Truyên Vua Quang Trung, Nôm.075.010",1,6,6,餒,nhôi,3,4,KEEP,餒,nhôi,-4.0,0.0106,{},x,KEEP,餒,nhôi,2026-11-20 12:51:20
+"Truyên Vua Quang Trung, Nôm",762,763,"Truyên Vua Quang Trung, Nôm.076.001",1,4,4,珅,hợp,0,1,KEEP,珅,hợp,-4.0,1.0,{},,UNREVIEWED,珅,hợp,
+"Truyên Vua Quang Trung, Nôm",765,766,"Truyên Vua Quang Trung, Nôm.076.004",1,1,1,𠸫,cầu,1,1,KEEP,𠸫,cầu,-4.0,0.9257,{},,QN,𠸫,tâu,2026-11-20 12:51:27
+"Truyên Vua Quang Trung, Nôm",765,766,"Truyên Vua Quang Trung, Nôm.076.004",1,1,1,𠸫,cầu,1,2,QN,𠸫,tâu,-6.522,0.0743,"{""ortho"": 1.1, ""qlm_delta"": -10.74}",x,QN,𠸫,tâu,2026-11-20 12:51:27
+"Truyên Vua Quang Trung, Nôm",765,766,"Truyên Vua Quang Trung, Nôm.076.004",2,8,8,色,vào,0,1,KEEP,色,vào,-4.0,1.0,{},,UNREVIEWED,色,vào,
+"Truyên Vua Quang Trung, Nôm",766,767,"Truyên Vua Quang Trung, Nôm.076.005",1,4,4,祸,vạ,1,1,NOM,禍,vạ,-2.7254,0.7815,"{""visual_rank"": 4, ""nlm_delta"": -0.623, ""lm_oov"": false}",,KEEP,祸,vạ,2026-11-20 12:51:37
+"Truyên Vua Quang Trung, Nôm",766,767,"Truyên Vua Quang Trung, Nôm.076.005",1,4,4,祸,vạ,1,2,KEEP,祸,vạ,-4.0,0.2185,{},x,KEEP,祸,vạ,2026-11-20 12:51:37
+"Truyên Vua Quang Trung, Nôm",768,769,"Truyên Vua Quang Trung, Nôm.076.007",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",770,771,"Truyên Vua Quang Trung, Nôm.076.009",1,4,4,覲,cặn,2,1,QN,覲,cận,1.4251,0.9357,"{""ortho"": 0.4, ""qlm_delta"": 8.75}",x,QN,覲,cận,2026-11-20 12:51:47
+"Truyên Vua Quang Trung, Nôm",770,771,"Truyên Vua Quang Trung, Nôm.076.009",1,4,4,覲,cặn,2,2,QN,覲,cẩn,-1.3184,0.0602,"{""ortho"": 0.9, ""qlm_delta"": 4.605}",,QN,覲,cận,2026-11-20 12:51:47
+"Truyên Vua Quang Trung, Nôm",770,771,"Truyên Vua Quang Trung, Nôm.076.009",1,4,4,覲,cặn,2,3,KEEP,覲,cặn,-4.0,0.0041,{},,QN,覲,cận,2026-11-20 12:51:47
+"Truyên Vua Quang Trung, Nôm",773,774,"Truyên Vua Quang Trung, Nôm.077.001",1,7,7,惜,trá,0,1,KEEP,惜,trá,-4.0,1.0,{},,UNREVIEWED,惜,trá,
+"Truyên Vua Quang Trung, Nôm",774,775,"Truyên Vua Quang Trung, Nôm.077.002",1,4,4,惜,trá,0,1,KEEP,惜,trá,-4.0,1.0,{},,UNREVIEWED,惜,trá,
+"Truyên Vua Quang Trung, Nôm",776,777,"Truyên Vua Quang Trung, Nôm.077.004",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",782,783,"Truyên Vua Quang Trung, Nôm.077.010",1,5,5,𤑟,nỗ,3,1,QN,𤑟,rõ,-0.5352,0.5126,"{""ortho"": 1.0, ""qlm_delta"": 8.216}",x,QN,𤑟,rõ,2026-11-20 12:51:55
+"Truyên Vua Quang Trung, Nôm",782,783,"Truyên Vua Quang Trung, Nôm.077.010",1,5,5,𤑟,nỗ,3,2,QN,𤑟,sỗ,-1.0082,0.3194,"{""ortho"": 1.0, ""qlm_delta"": 6.639}",,QN,𤑟,rõ,2026-11-20 12:51:55
+"Truyên Vua Quang Trung, Nôm",782,783,"Truyên Vua Quang Trung, Nôm.077.010",1,5,5,𤑟,nỗ,3,3,QN,𤑟,rỡ,-1.7509,0.152,"{""ortho"": 1.0, ""qlm_delta"": 4.164}",,QN,𤑟,rõ,2026-11-20 12:51:55
+"Truyên Vua Quang Trung, Nôm",782,783,"Truyên Vua Quang Trung, Nôm.077.010",1,5,5,𤑟,nỗ,3,4,KEEP,𤑟,nỗ,-4.0,0.016,{},,QN,𤑟,rõ,2026-11-20 12:51:55
+"Truyên Vua Quang Trung, Nôm",782,783,"Truyên Vua Quang Trung, Nôm.077.010",2,6,6,𤉜,dang,0,1,KEEP,𤉜,dang,-4.0,1.0,{},,UNREVIEWED,𤉜,dang,
+"Truyên Vua Quang Trung, Nôm",784,785,"Truyên Vua Quang Trung, Nôm.078.001",1,4,4,蒼,ở,0,1,KEEP,蒼,ở,-4.0,1.0,{},,UNREVIEWED,蒼,ở,
+"Truyên Vua Quang Trung, Nôm",787,788,"Truyên Vua Quang Trung, Nôm.078.004",1,1,1,埀,thùy,0,1,KEEP,埀,thùy,-4.0,1.0,{},,UNREVIEWED,埀,thùy,
+"Truyên Vua Quang Trung, Nôm",789,790,"Truyên Vua Quang Trung, Nôm.078.006",1,5,5,𬗫,huyện,0,1,KEEP,𬗫,huyện,-4.0,1.0,{},,UNREVIEWED,𬗫,huyện,
+"Truyên Vua Quang Trung, Nôm",795,796,"Truyên Vua Quang Trung, Nôm.079.001",1,6,6,傱,trò,0,1,KEEP,傱,trò,-4.0,1.0,{},,UNREVIEWED,傱,trò,
+"Truyên Vua Quang Trung, Nôm",797,798,"Truyên Vua Quang Trung, Nôm.079.003",1,4,4,撰,mở,0,1,KEEP,撰,mở,-4.0,1.0,{},,UNREVIEWED,撰,mở,
+"Truyên Vua Quang Trung, Nôm",800,801,"Truyên Vua Quang Trung, Nôm.079.006",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",800,801,"Truyên Vua Quang Trung, Nôm.079.006",2,4,4,耀,rượu,0,1,KEEP,耀,rượu,-4.0,1.0,{},,UNREVIEWED,耀,rượu,
+"Truyên Vua Quang Trung, Nôm",802,803,"Truyên Vua Quang Trung, Nôm.079.008",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",807,808,"Truyên Vua Quang Trung, Nôm.080.002",1,7,7,扶,phú,1,1,QN,扶,phù,-1.5389,0.9214,"{""ortho"": 0.5, ""qlm_delta"": -0.13}",x,QN,扶,phù,2026-11-20 12:52:02
+"Truyên Vua Quang Trung, Nôm",807,808,"Truyên Vua Quang Trung, Nôm.080.002",1,7,7,扶,phú,1,2,KEEP,扶,phú,-4.0,0.0786,{},,QN,扶,phù,2026-11-20 12:52:02
+"Truyên Vua Quang Trung, Nôm",808,809,"Truyên Vua Quang Trung, Nôm.080.003",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",811,812,"Truyên Vua Quang Trung, Nôm.080.006",1,3,3,援,ven,6,1,QN,援,vén,-1.2513,0.3646,"{""ortho"": 0.5, ""qlm_delta"": 0.829}",,KEEP,援,ven,2026-11-20 12:52:12
+"Truyên Vua Quang Trung, Nôm",811,812,"Truyên Vua Quang Trung, Nôm.080.006",1,3,3,援,ven,6,2,QN,援,vẹn,-1.4302,0.3049,"{""ortho"": 0.5, ""qlm_delta"": 0.233}",,KEEP,援,ven,2026-11-20 12:52:12
+"Truyên Vua Quang Trung, Nôm",811,812,"Truyên Vua Quang Trung, Nôm.080.006",1,3,3,援,ven,6,3,QN,援,van,-2.4427,0.1108,"{""ortho"": 1.0, ""qlm_delta"": 1.858}",,KEEP,援,ven,2026-11-20 12:52:12
+"Truyên Vua Quang Trung, Nôm",811,812,"Truyên Vua Quang Trung, Nôm.080.006",1,3,3,援,ven,6,4,QN,援,vện,-2.8939,0.0705,"{""ortho"": 0.9, ""qlm_delta"": -0.646}",,KEEP,援,ven,2026-11-20 12:52:12
+"Truyên Vua Quang Trung, Nôm",811,812,"Truyên Vua Quang Trung, Nôm.080.006",1,3,3,援,ven,6,5,QN,援,vẻn,-3.007,0.063,"{""ortho"": 0.5, ""qlm_delta"": -5.023}",,KEEP,援,ven,2026-11-20 12:52:12
+"Truyên Vua Quang Trung, Nôm",811,812,"Truyên Vua Quang Trung, Nôm.080.006",1,3,3,援,ven,6,6,QN,援,vin,-3.0089,0.0629,"{""ortho"": 1.0, ""qlm_delta"": -0.03}",,KEEP,援,ven,2026-11-20 12:52:12
+"Truyên Vua Quang Trung, Nôm",811,812,"Truyên Vua Quang Trung, Nôm.080.006",1,3,3,援,ven,6,7,KEEP,援,ven,-4.0,0.0233,{},x,KEEP,援,ven,2026-11-20 12:52:12
+"Truyên Vua Quang Trung, Nôm",811,812,"Truyên Vua Quang Trung, Nôm.080.006",2,7,7,躆,chẹn,0,1,KEEP,躆,chẹn,-4.0,1.0,{},,UNREVIEWED,躆,chẹn,
+"Truyên Vua Quang Trung, Nôm",812,813,"Truyên Vua Quang Trung, Nôm.080.007",1,6,6,方,phường,1,1,QN,方,phương,-0.8399,0.9593,"{""ortho"": 0.5, ""qlm_delta"": 2.2}",x,QN,方,phương,2026-11-20 12:52:18
+"Truyên Vua Quang Trung, Nôm",812,813,"Truyên Vua Quang Trung, Nôm.080.007",1,6,6,方,phường,1,2,KEEP,方,phường,-4.0,0.0407,{},,QN,方,phương,2026-11-20 12:52:18
+"Truyên Vua Quang Trung, Nôm",816,817,"Truyên Vua Quang Trung, Nôm.081.000",1,6,6,惍,cảm,1,1,QN,惍,căm,-3.8291,0.5426,"{""ortho"": 0.9, ""qlm_delta"": -3.764}",x,QN,惍,căm,2026-11-20 12:52:22
+"Truyên Vua Quang Trung, Nôm",816,817,"Truyên Vua Quang Trung, Nôm.081.000",1,6,6,惍,cảm,1,2,KEEP,惍,cảm,-4.0,0.4574,{},,QN,惍,căm,2026-11-20 12:52:22
+"Truyên Vua Quang Trung, Nôm",817,818,"Truyên Vua Quang Trung, Nôm.081.001",1,1,1,𡬷,tắc,1,1,QN,𡬷,tấc,-3.0646,0.7182,"{""ortho"": 0.4, ""qlm_delta"": -6.215}",x,QN,𡬷,tấc,2026-11-20 12:52:27
+"Truyên Vua Quang Trung, Nôm",817,818,"Truyên Vua Quang Trung, Nôm.081.001",1,1,1,𡬷,tắc,1,2,KEEP,𡬷,tắc,-4.0,0.2818,{},,QN,𡬷,tấc,2026-11-20 12:52:27
+"Truyên Vua Quang Trung, Nôm",824,825,"Truyên Vua Quang Trung, Nôm.081.008",1,3,3,聀,giặc,2,1,QN,聀,giấc,0.1485,0.9844,"{""ortho"": 0.9, ""qlm_delta"": 9.495}",x,QN,聀,giấc,2026-11-20 12:52:31
+"Truyên Vua Quang Trung, Nôm",824,825,"Truyên Vua Quang Trung, Nôm.081.008",1,3,3,聀,giặc,2,2,KEEP,聀,giặc,-4.0,0.0155,{},,QN,聀,giấc,2026-11-20 12:52:31
+"Truyên Vua Quang Trung, Nôm",824,825,"Truyên Vua Quang Trung, Nôm.081.008",1,3,3,聀,giặc,2,3,NOM,戝,giặc,-8.978,0.0001,"{""visual_rank"": 11, ""nlm_delta"": -10.501, ""lm_oov"": false}",,QN,聀,giấc,2026-11-20 12:52:31
+"Truyên Vua Quang Trung, Nôm",825,826,"Truyên Vua Quang Trung, Nôm.081.009",1,2,2,溈,vời,0,1,KEEP,溈,vời,-4.0,1.0,{},,UNREVIEWED,溈,vời,
+"Truyên Vua Quang Trung, Nôm",826,827,"Truyên Vua Quang Trung, Nôm.081.010",1,1,1,擐,chống,0,1,KEEP,擐,chống,-4.0,1.0,{},,UNREVIEWED,擐,chống,
+"Truyên Vua Quang Trung, Nôm",828,829,"Truyên Vua Quang Trung, Nôm.082.001",1,1,1,徐,cứ,2,1,QN,徐,từ,-1.4899,0.707,"{""ortho"": 1.1, ""qlm_delta"": 6.034}",x,QN,徐,từ,2026-11-20 12:52:39
+"Truyên Vua Quang Trung, Nôm",828,829,"Truyên Vua Quang Trung, Nôm.082.001",1,1,1,徐,cứ,2,2,QN,徐,chừ,-2.5892,0.2355,"{""ortho"": 1.1, ""qlm_delta"": 2.369}",,QN,徐,từ,2026-11-20 12:52:39
+"Truyên Vua Quang Trung, Nôm",828,829,"Truyên Vua Quang Trung, Nôm.082.001",1,1,1,徐,cứ,2,3,KEEP,徐,cứ,-4.0,0.0575,{},,QN,徐,từ,2026-11-20 12:52:39
+"Truyên Vua Quang Trung, Nôm",831,832,"Truyên Vua Quang Trung, Nôm.082.004",1,4,4,𧿆,rảy,3,1,QN,𧿆,nhảy,-3.1121,0.3918,"{""ortho"": 1.2, ""qlm_delta"": 1.626}",,KEEP,𧿆,rảy,2026-11-20 12:52:49
+"Truyên Vua Quang Trung, Nôm",831,832,"Truyên Vua Quang Trung, Nôm.082.004",1,4,4,𧿆,rảy,3,2,QN,𧿆,rẫy,-3.4717,0.2735,"{""ortho"": 0.9, ""qlm_delta"": -2.572}",,KEEP,𧿆,rảy,2026-11-20 12:52:49
+"Truyên Vua Quang Trung, Nôm",831,832,"Truyên Vua Quang Trung, Nôm.082.004",1,4,4,𧿆,rảy,3,3,QN,𧿆,dảy,-3.927,0.1735,"{""ortho"": 1.0, ""qlm_delta"": -3.09}",,KEEP,𧿆,rảy,2026-11-20 12:52:49
+"Truyên Vua Quang Trung, Nôm",831,832,"Truyên Vua Quang Trung, Nôm.082.004",1,4,4,𧿆,rảy,3,4,KEEP,𧿆,rảy,-4.0,0.1612,{},x,KEEP,𧿆,rảy,2026-11-20 12:52:49
+"Truyên Vua Quang Trung, Nôm",831,832,"Truyên Vua Quang Trung, Nôm.082.004",2,6,6,縫,vưng,1,1,QN,縫,vùng,-1.7413,0.9054,"{""ortho"": 0.9, ""qlm_delta"": 3.196}",x,QN,縫,vùng,2026-11-20 12:56:17
+"Truyên Vua Quang Trung, Nôm",831,832,"Truyên Vua Quang Trung, Nôm.082.004",2,6,6,縫,vưng,1,2,KEEP,縫,vưng,-4.0,0.0946,{},,QN,縫,vùng,2026-11-20 12:56:17
+"Truyên Vua Quang Trung, Nôm",832,833,"Truyên Vua Quang Trung, Nôm.082.005",1,5,5,滚,còn,1,1,KEEP,滚,còn,-4.0,0.8033,{},,QN,滚,cổn,2026-11-20 12:52:55
+"Truyên Vua Quang Trung, Nôm",832,833,"Truyên Vua Quang Trung, Nôm.082.005",1,5,5,滚,còn,1,2,QN,滚,cổn,-5.4073,0.1967,"{""ortho"": 0.9, ""qlm_delta"": -9.024}",x,QN,滚,cổn,2026-11-20 12:52:55
+"Truyên Vua Quang Trung, Nôm",833,834,"Truyên Vua Quang Trung, Nôm.082.006",1,2,2,憚,toan,0,1,KEEP,憚,toan,-4.0,1.0,{},,UNREVIEWED,憚,toan,
+"Truyên Vua Quang Trung, Nôm",833,834,"Truyên Vua Quang Trung, Nôm.082.006",2,3,3,擐,chống,0,1,KEEP,擐,chống,-4.0,1.0,{},,UNREVIEWED,擐,chống,
+"Truyên Vua Quang Trung, Nôm",833,834,"Truyên Vua Quang Trung, Nôm.082.006",3,4,4,𢵌,chọi,1,1,KEEP,𢵌,chọi,-4.0,0.5776,{},x,KEEP,𢵌,chọi,2026-11-20 12:53:08
+"Truyên Vua Quang Trung, Nôm",833,834,"Truyên Vua Quang Trung, Nôm.082.006",3,4,4,𢵌,chọi,1,2,NOM,𧥃,chọi,-4.3131,0.4224,"{""visual_rank"": 6, ""nlm_delta"": -2.788, ""lm_oov"": false}",,KEEP,𢵌,chọi,2026-11-20 12:53:08
+"Truyên Vua Quang Trung, Nôm",835,836,"Truyên Vua Quang Trung, Nôm.082.008",1,3,3,媄,mở,2,1,QN,媄,mẻ,-3.9891,0.3923,"{""ortho"": 1.0, ""qlm_delta"": -3.297}",,KEEP,媄,mở,2026-11-20 12:53:20
+"Truyên Vua Quang Trung, Nôm",835,836,"Truyên Vua Quang Trung, Nôm.082.008",1,3,3,媄,mở,2,2,KEEP,媄,mở,-4.0,0.3881,{},x,KEEP,媄,mở,2026-11-20 12:53:20
+"Truyên Vua Quang Trung, Nôm",835,836,"Truyên Vua Quang Trung, Nôm.082.008",1,3,3,媄,mở,2,3,QN,媄,mỉ,-4.5693,0.2196,"{""ortho"": 1.0, ""qlm_delta"": -5.231}",,KEEP,媄,mở,2026-11-20 12:53:20
+"Truyên Vua Quang Trung, Nôm",835,836,"Truyên Vua Quang Trung, Nôm.082.008",2,5,5,边,biền,1,1,QN,边,biên,0.1173,0.984,"{""ortho"": 0.5, ""qlm_delta"": 5.391}",x,QN,边,biên,2026-11-20 12:53:22
+"Truyên Vua Quang Trung, Nôm",835,836,"Truyên Vua Quang Trung, Nôm.082.008",2,5,5,边,biền,1,2,KEEP,边,biền,-4.0,0.016,{},,QN,边,biên,2026-11-20 12:53:22
+"Truyên Vua Quang Trung, Nôm",836,837,"Truyên Vua Quang Trung, Nôm.082.009",1,3,3,尒,mấy,3,1,NOM,氽,mấy,1.7135,0.8403,"{""visual_rank"": 1, ""nlm_delta"": 5.506, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:53:26
+"Truyên Vua Quang Trung, Nôm",836,837,"Truyên Vua Quang Trung, Nôm.082.009",1,3,3,尒,mấy,3,2,NOM,𠇍,mấy,-0.2168,0.1219,"{""visual_rank"": 1, ""nlm_delta"": 1.646, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:53:26
+"Truyên Vua Quang Trung, Nôm",836,837,"Truyên Vua Quang Trung, Nôm.082.009",1,3,3,尒,mấy,3,3,NOM,汆,mấy,-1.4665,0.0349,"{""visual_rank"": 16, ""nlm_delta"": 5.567, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:53:26
+"Truyên Vua Quang Trung, Nôm",836,837,"Truyên Vua Quang Trung, Nôm.082.009",1,3,3,尒,mấy,3,4,KEEP,尒,mấy,-4.0,0.0028,{},x,KEEP,尒,mấy,2026-11-20 12:53:26
+"Truyên Vua Quang Trung, Nôm",837,838,"Truyên Vua Quang Trung, Nôm.082.010",1,3,3,崑,cồn,2,1,QN,崑,côn,-1.1721,0.6471,"{""ortho"": 0.5, ""qlm_delta"": 1.093}",x,QN,崑,côn,2026-11-20 12:53:35
+"Truyên Vua Quang Trung, Nôm",837,838,"Truyên Vua Quang Trung, Nôm.082.010",1,3,3,崑,cồn,2,2,QN,崑,cổn,-1.893,0.3147,"{""ortho"": 0.5, ""qlm_delta"": -1.31}",,QN,崑,côn,2026-11-20 12:53:35
+"Truyên Vua Quang Trung, Nôm",837,838,"Truyên Vua Quang Trung, Nôm.082.010",1,3,3,崑,cồn,2,3,KEEP,崑,cồn,-4.0,0.0383,{},,QN,崑,côn,2026-11-20 12:53:35
+"Truyên Vua Quang Trung, Nôm",837,838,"Truyên Vua Quang Trung, Nôm.082.010",2,5,5,柴,sai,3,1,QN,柴,sài,-2.0587,0.7666,"{""ortho"": 0.5, ""qlm_delta"": -1.862}",x,QN,柴,sài,2026-11-20 12:53:38
+"Truyên Vua Quang Trung, Nôm",837,838,"Truyên Vua Quang Trung, Nôm.082.010",2,5,5,柴,sai,3,2,KEEP,柴,sai,-4.0,0.11,{},,QN,柴,sài,2026-11-20 12:53:38
+"Truyên Vua Quang Trung, Nôm",837,838,"Truyên Vua Quang Trung, Nôm.082.010",2,5,5,柴,sai,3,3,QN,柴,si,-4.3251,0.0795,"{""ortho"": 1.0, ""qlm_delta"": -4.417}",,QN,柴,sài,2026-11-20 12:53:38
+"Truyên Vua Quang Trung, Nôm",837,838,"Truyên Vua Quang Trung, Nôm.082.010",2,5,5,柴,sai,3,4,QN,柴,sày,-4.9189,0.0439,"{""ortho"": 0.9, ""qlm_delta"": -7.396}",,QN,柴,sài,2026-11-20 12:53:38
+"Truyên Vua Quang Trung, Nôm",842,843,"Truyên Vua Quang Trung, Nôm.083.004",1,6,6,𫳵,bao,1,1,KEEP,𫳵,bao,-4.0,0.6497,{},,QN,𫳵,sao,2026-11-20 12:53:47
+"Truyên Vua Quang Trung, Nôm",842,843,"Truyên Vua Quang Trung, Nôm.083.004",1,6,6,𫳵,bao,1,2,QN,𫳵,sao,-4.6177,0.3503,"{""ortho"": 1.0, ""qlm_delta"": -5.392}",x,QN,𫳵,sao,2026-11-20 12:53:47
+"Truyên Vua Quang Trung, Nôm",849,850,"Truyên Vua Quang Trung, Nôm.084.000",1,7,7,𠼯,kế,0,1,KEEP,𠼯,kế,-4.0,1.0,{},,UNREVIEWED,𠼯,kế,
+"Truyên Vua Quang Trung, Nôm",851,852,"Truyên Vua Quang Trung, Nôm.084.002",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",853,854,"Truyên Vua Quang Trung, Nôm.084.004",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",857,858,"Truyên Vua Quang Trung, Nôm.084.008",1,3,3,而,nhì,2,1,QN,而,nhi,-1.8982,0.6366,"{""ortho"": 0.5, ""qlm_delta"": -1.327}",,KEEP,而,nhì,2026-11-20 12:53:59
+"Truyên Vua Quang Trung, Nôm",857,858,"Truyên Vua Quang Trung, Nôm.084.008",1,3,3,而,nhì,2,2,QN,而,nhỉ,-2.6998,0.2856,"{""ortho"": 0.5, ""qlm_delta"": -3.999}",,KEEP,而,nhì,2026-11-20 12:53:59
+"Truyên Vua Quang Trung, Nôm",857,858,"Truyên Vua Quang Trung, Nôm.084.008",1,3,3,而,nhì,2,3,KEEP,而,nhì,-4.0,0.0778,{},x,KEEP,而,nhì,2026-11-20 12:53:59
+"Truyên Vua Quang Trung, Nôm",859,860,"Truyên Vua Quang Trung, Nôm.084.010",1,1,1,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",865,866,"Truyên Vua Quang Trung, Nôm.085.005",1,1,1,徐,cứ,2,1,QN,徐,từ,-1.2255,0.7143,"{""ortho"": 1.1, ""qlm_delta"": 6.915}",x,QN,徐,từ,2026-11-20 12:54:09
+"Truyên Vua Quang Trung, Nôm",865,866,"Truyên Vua Quang Trung, Nôm.085.005",1,1,1,徐,cứ,2,2,QN,徐,chừ,-2.3113,0.2412,"{""ortho"": 1.1, ""qlm_delta"": 3.296}",,QN,徐,từ,2026-11-20 12:54:09
+"Truyên Vua Quang Trung, Nôm",865,866,"Truyên Vua Quang Trung, Nôm.085.005",1,1,1,徐,cứ,2,3,KEEP,徐,cứ,-4.0,0.0446,{},,QN,徐,từ,2026-11-20 12:54:09
+"Truyên Vua Quang Trung, Nôm",866,867,"Truyên Vua Quang Trung, Nôm.085.006",1,5,5,祸,rẽ,0,1,KEEP,祸,rẽ,-4.0,1.0,{},,UNREVIEWED,祸,rẽ,
+"Truyên Vua Quang Trung, Nôm",866,867,"Truyên Vua Quang Trung, Nôm.085.006",2,6,6,𤉜,dang,0,1,KEEP,𤉜,dang,-4.0,1.0,{},,UNREVIEWED,𤉜,dang,
+"Truyên Vua Quang Trung, Nôm",868,869,"Truyên Vua Quang Trung, Nôm.085.008",1,5,5,強,cang,2,1,QN,強,càng,0.8291,0.975,"{""ortho"": 0.5, ""qlm_delta"": 7.764}",x,QN,強,càng,2026-11-20 12:54:17
+"Truyên Vua Quang Trung, Nôm",868,869,"Truyên Vua Quang Trung, Nôm.085.008",1,5,5,強,cang,2,2,QN,強,cẵng,-3.211,0.0172,"{""ortho"": 0.9, ""qlm_delta"": -1.703}",,QN,強,càng,2026-11-20 12:54:17
+"Truyên Vua Quang Trung, Nôm",868,869,"Truyên Vua Quang Trung, Nôm.085.008",1,5,5,強,cang,2,3,KEEP,強,cang,-4.0,0.0078,{},,QN,強,càng,2026-11-20 12:54:17
+"Truyên Vua Quang Trung, Nôm",878,879,"Truyên Vua Quang Trung, Nôm.086.007",1,4,4,捻,lượm,0,1,KEEP,捻,lượm,-4.0,1.0,{},,UNREVIEWED,捻,lượm,
+"Truyên Vua Quang Trung, Nôm",879,880,"Truyên Vua Quang Trung, Nôm.086.008",1,7,7,撰,mở,0,1,KEEP,撰,mở,-4.0,1.0,{},,UNREVIEWED,撰,mở,
+"Truyên Vua Quang Trung, Nôm",882,883,"Truyên Vua Quang Trung, Nôm.087.000",1,2,2,襾,tây,3,1,NOM,西,tây,0.3953,0.9835,"{""visual_rank"": 1, ""nlm_delta"": 2.87, ""lm_oov"": false}",x,NOM,西,tây,2026-11-20 12:54:22
+"Truyên Vua Quang Trung, Nôm",882,883,"Truyên Vua Quang Trung, Nôm.087.000",1,2,2,襾,tây,3,2,KEEP,襾,tây,-4.0,0.0121,{},,NOM,西,tây,2026-11-20 12:54:22
+"Truyên Vua Quang Trung, Nôm",882,883,"Truyên Vua Quang Trung, Nôm.087.000",1,2,2,襾,tây,3,3,NOM,恓,tây,-5.5473,0.0026,"{""visual_rank"": 17, ""nlm_delta"": -2.424, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 12:54:22
+"Truyên Vua Quang Trung, Nôm",882,883,"Truyên Vua Quang Trung, Nôm.087.000",1,2,2,襾,tây,3,4,NOM,覀,tây,-5.94,0.0017,"{""visual_rank"": 13, ""nlm_delta"": -3.963, ""lm_oov"": false}",,NOM,西,tây,2026-11-20 12:54:22
+"Truyên Vua Quang Trung, Nôm",890,891,"Truyên Vua Quang Trung, Nôm.087.008",1,5,5,希,vua,0,1,KEEP,希,vua,-4.0,1.0,{},,UNREVIEWED,希,vua,
+"Truyên Vua Quang Trung, Nôm",894,895,"Truyên Vua Quang Trung, Nôm.088.001",1,6,6,𤉜,xăng,0,1,KEEP,𤉜,xăng,-4.0,1.0,{},,UNREVIEWED,𤉜,xăng,
+"Truyên Vua Quang Trung, Nôm",899,900,"Truyên Vua Quang Trung, Nôm.088.006",1,7,7,勢,giết,0,1,KEEP,勢,giết,-4.0,1.0,{},,UNREVIEWED,勢,giết,
+"Truyên Vua Quang Trung, Nôm",899,900,"Truyên Vua Quang Trung, Nôm.088.006",2,8,8,倫,luôn,5,1,NOM,㫻,luôn,-2.4506,0.4719,"{""visual_rank"": 1, ""nlm_delta"": -2.822, ""lm_oov"": false}",,KEEP,倫,luôn,2026-11-20 12:54:33
+"Truyên Vua Quang Trung, Nôm",899,900,"Truyên Vua Quang Trung, Nôm.088.006",2,8,8,倫,luôn,5,2,NOM,掄,luôn,-3.2109,0.2206,"{""visual_rank"": 3, ""nlm_delta"": -2.263, ""lm_oov"": false}",,KEEP,倫,luôn,2026-11-20 12:54:33
+"Truyên Vua Quang Trung, Nôm",899,900,"Truyên Vua Quang Trung, Nôm.088.006",2,8,8,倫,luôn,5,3,QN,倫,luồn,-3.9589,0.1044,"{""ortho"": 0.5, ""qlm_delta"": -8.196}",,KEEP,倫,luôn,2026-11-20 12:54:33
+"Truyên Vua Quang Trung, Nôm",899,900,"Truyên Vua Quang Trung, Nôm.088.006",2,8,8,倫,luôn,5,4,KEEP,倫,luôn,-4.0,0.1002,{},x,KEEP,倫,luôn,2026-11-20 12:54:33
+"Truyên Vua Quang Trung, Nôm",899,900,"Truyên Vua Quang Trung, Nôm.088.006",2,8,8,倫,luôn,5,5,QN,倫,luân,-4.3623,0.0698,"{""ortho"": 1.0, ""qlm_delta"": -4.541}",,KEEP,倫,luôn,2026-11-20 12:54:33
+"Truyên Vua Quang Trung, Nôm",899,900,"Truyên Vua Quang Trung, Nôm.088.006",2,8,8,倫,luôn,5,6,QN,倫,lôn,-5.1057,0.0332,"{""ortho"": 1.0, ""qlm_delta"": -7.019}",,KEEP,倫,luôn,2026-11-20 12:54:33
+"Truyên Vua Quang Trung, Nôm",900,901,"Truyên Vua Quang Trung, Nôm.088.007",1,1,1,𦇒,rồi,2,1,QN,𦇒,rối,-1.7426,0.6957,"{""ortho"": 0.5, ""qlm_delta"": -0.809}",,KEEP,𦇒,rồi,2026-11-20 12:54:47
+"Truyên Vua Quang Trung, Nôm",900,901,"Truyên Vua Quang Trung, Nôm.088.007",1,1,1,𦇒,rồi,2,2,QN,𦇒,nối,-2.8427,0.2315,"{""ortho"": 1.1, ""qlm_delta"": 1.524}",,KEEP,𦇒,rồi,2026-11-20 12:54:47
+"Truyên Vua Quang Trung, Nôm",900,901,"Truyên Vua Quang Trung, Nôm.088.007",1,1,1,𦇒,rồi,2,3,KEEP,𦇒,rồi,-4.0,0.0728,{},x,KEEP,𦇒,rồi,2026-11-20 12:54:47
+"Truyên Vua Quang Trung, Nôm",901,902,"Truyên Vua Quang Trung, Nôm.088.008",1,8,8,溈,vời,0,1,KEEP,溈,vời,-4.0,1.0,{},,UNREVIEWED,溈,vời,
+"Truyên Vua Quang Trung, Nôm",906,907,"Truyên Vua Quang Trung, Nôm.089.002",1,3,3,𦓡,mã,1,1,QN,𦓡,mà,-1.5811,0.9183,"{""ortho"": 0.5, ""qlm_delta"": -0.27}",x,QN,𦓡,mà,2026-11-20 12:54:51
+"Truyên Vua Quang Trung, Nôm",906,907,"Truyên Vua Quang Trung, Nôm.089.002",1,3,3,𦓡,mã,1,2,KEEP,𦓡,mã,-4.0,0.0817,{},,QN,𦓡,mà,2026-11-20 12:54:51
+"Truyên Vua Quang Trung, Nôm",907,908,"Truyên Vua Quang Trung, Nôm.089.003",1,1,1,穷,cũng,1,1,QN,穷,cùng,-3.0324,0.7246,"{""ortho"": 0.5, ""qlm_delta"": -5.108}",x,QN,穷,cùng,2026-11-20 12:55:00
+"Truyên Vua Quang Trung, Nôm",907,908,"Truyên Vua Quang Trung, Nôm.089.003",1,1,1,穷,cũng,1,2,KEEP,穷,cũng,-4.0,0.2754,{},,QN,穷,cùng,2026-11-20 12:55:00
+"Truyên Vua Quang Trung, Nôm",907,908,"Truyên Vua Quang Trung, Nôm.089.003",2,2,2,𠁀,đòi,2,1,QN,𠁀,đời,-1.2684,0.9385,"{""ortho"": 0.4, ""qlm_delta"": -0.228}",x,QN,𠁀,đời,2026-11-20 12:55:09
+"Truyên Vua Quang Trung, Nôm",907,908,"Truyên Vua Quang Trung, Nôm.089.003",2,2,2,𠁀,đòi,2,2,KEEP,𠁀,đòi,-4.0,0.0611,{},,QN,𠁀,đời,2026-11-20 12:55:09
+"Truyên Vua Quang Trung, Nôm",907,908,"Truyên Vua Quang Trung, Nôm.089.003",2,2,2,𠁀,đòi,2,3,QN,𠁀,đờị,-9.0975,0.0004,"{""ortho"": 0.9, ""qlm_delta"": -21.325}",,QN,𠁀,đời,2026-11-20 12:55:09
+"Truyên Vua Quang Trung, Nôm",913,914,"Truyên Vua Quang Trung, Nôm.089.009",1,1,1,尒,mấy,3,1,NOM,氽,mấy,1.7926,0.9316,"{""visual_rank"": 1, ""nlm_delta"": 5.665, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:55:13
+"Truyên Vua Quang Trung, Nôm",913,914,"Truyên Vua Quang Trung, Nôm.089.009",1,1,1,尒,mấy,3,2,NOM,𠇍,mấy,-0.941,0.0605,"{""visual_rank"": 1, ""nlm_delta"": 0.198, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:55:13
+"Truyên Vua Quang Trung, Nôm",913,914,"Truyên Vua Quang Trung, Nôm.089.009",1,1,1,尒,mấy,3,3,NOM,汆,mấy,-3.4275,0.005,"{""visual_rank"": 16, ""nlm_delta"": 1.645, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:55:13
+"Truyên Vua Quang Trung, Nôm",913,914,"Truyên Vua Quang Trung, Nôm.089.009",1,1,1,尒,mấy,3,4,KEEP,尒,mấy,-4.0,0.0028,{},x,KEEP,尒,mấy,2026-11-20 12:55:13
+"Truyên Vua Quang Trung, Nôm",915,916,"Truyên Vua Quang Trung, Nôm.090.000",1,7,7,莪,gẫy,0,1,KEEP,莪,gẫy,-4.0,1.0,{},,UNREVIEWED,莪,gẫy,
+"Truyên Vua Quang Trung, Nôm",920,921,"Truyên Vua Quang Trung, Nôm.090.005",1,1,1,傕,chối,3,1,QN,傕,thôi,-2.8546,0.5978,"{""ortho"": 1.1, ""qlm_delta"": 1.485}",x,QN,傕,thôi,2026-11-20 12:55:18
+"Truyên Vua Quang Trung, Nôm",920,921,"Truyên Vua Quang Trung, Nôm.090.005",1,1,1,傕,chối,3,2,KEEP,傕,chối,-4.0,0.1901,{},,QN,傕,thôi,2026-11-20 12:55:18
+"Truyên Vua Quang Trung, Nôm",920,921,"Truyên Vua Quang Trung, Nôm.090.005",1,1,1,傕,chối,3,3,QN,傕,thội,-4.1353,0.1661,"{""ortho"": 1.1, ""qlm_delta"": -2.784}",,QN,傕,thôi,2026-11-20 12:55:18
+"Truyên Vua Quang Trung, Nôm",920,921,"Truyên Vua Quang Trung, Nôm.090.005",1,1,1,傕,chối,3,4,QN,傕,thôị,-5.4184,0.046,"{""ortho"": 1.1, ""qlm_delta"": -7.061}",,QN,傕,thôi,2026-11-20 12:55:18
+"Truyên Vua Quang Trung, Nôm",924,925,"Truyên Vua Quang Trung, Nôm.090.009",1,5,5,扶,phú,1,1,QN,扶,phù,-1.7643,0.9034,"{""ortho"": 0.5, ""qlm_delta"": -0.881}",,KEEP,扶,phú,2026-11-20 12:55:28
+"Truyên Vua Quang Trung, Nôm",924,925,"Truyên Vua Quang Trung, Nôm.090.009",1,5,5,扶,phú,1,2,KEEP,扶,phú,-4.0,0.0966,{},x,KEEP,扶,phú,2026-11-20 12:55:28
+"Truyên Vua Quang Trung, Nôm",928,929,"Truyên Vua Quang Trung, Nôm.091.002",1,4,4,尒,mấy,3,1,NOM,氽,mấy,1.8097,0.8155,"{""visual_rank"": 1, ""nlm_delta"": 5.699, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:55:31
+"Truyên Vua Quang Trung, Nôm",928,929,"Truyên Vua Quang Trung, Nôm.091.002",1,4,4,尒,mấy,3,2,NOM,𠇍,mấy,0.2621,0.1735,"{""visual_rank"": 1, ""nlm_delta"": 2.604, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:55:31
+"Truyên Vua Quang Trung, Nôm",928,929,"Truyên Vua Quang Trung, Nôm.091.002",1,4,4,尒,mấy,3,3,NOM,汆,mấy,-2.7406,0.0086,"{""visual_rank"": 16, ""nlm_delta"": 3.018, ""lm_oov"": false}",,KEEP,尒,mấy,2026-11-20 12:55:31
+"Truyên Vua Quang Trung, Nôm",928,929,"Truyên Vua Quang Trung, Nôm.091.002",1,4,4,尒,mấy,3,4,KEEP,尒,mấy,-4.0,0.0024,{},x,KEEP,尒,mấy,2026-11-20 12:55:31
+"Truyên Vua Quang Trung, Nôm",930,931,"Truyên Vua Quang Trung, Nôm.091.004",1,1,1,乘,chữa,1,1,QN,乘,thừa,-2.317,0.8433,"{""ortho"": 1.1, ""qlm_delta"": 3.277}",x,QN,乘,thừa,2026-11-20 12:55:37
+"Truyên Vua Quang Trung, Nôm",930,931,"Truyên Vua Quang Trung, Nôm.091.004",1,1,1,乘,chữa,1,2,KEEP,乘,chữa,-4.0,0.1567,{},,QN,乘,thừa,2026-11-20 12:55:37
+"Truyên Vua Quang Trung, Nôm",931,932,"Truyên Vua Quang Trung, Nôm.091.005",1,2,2,𥪝,trung,2,1,QN,𥪝,trong,-3.9024,0.475,"{""ortho"": 1.0, ""qlm_delta"": -3.008}",x,QN,𥪝,trong,2026-11-20 12:55:46
+"Truyên Vua Quang Trung, Nôm",931,932,"Truyên Vua Quang Trung, Nôm.091.005",1,2,2,𥪝,trung,2,2,KEEP,𥪝,trung,-4.0,0.4308,{},,QN,𥪝,trong,2026-11-20 12:55:46
+"Truyên Vua Quang Trung, Nôm",931,932,"Truyên Vua Quang Trung, Nôm.091.005",1,2,2,𥪝,trung,2,3,QN,𥪝,trông,-5.5206,0.0942,"{""ortho"": 1.0, ""qlm_delta"": -8.402}",,QN,𥪝,trong,2026-11-20 12:55:46

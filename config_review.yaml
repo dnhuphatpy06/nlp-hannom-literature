@@ -1,0 +1,16 @@
+# Thiết lập cho phần tô màu, đề xuất sửa lỗi và kết quả ở bước 3 của web (scripts/review_pipeline.py).
+# Chép từ config.yaml của dự án Alignment; bỏ các khoá đường dẫn (paths, dataset) vì web tự lấy dữ liệu từ các hàng dóng hàng của sách đang mở
+# và ghi mọi kết quả vào thư mục của sách (data/<Tên sách>/).
+
+dictionary:
+  dir: resources/dictionaries     # chứa QuocNgu_SinoNom_TongHop3.csv và SinoNom_Similar_Dic_v2.csv (tính từ thư mục gốc dự án)
+  extra_dicts: []                 # file csv từ điển bổ sung (cột QuocNgu, SinoNom). confirmed_keep_pairs.csv trong thư mục sách tự được dùng
+
+models:
+  use_lm: true                    # false: chỉ dùng từ điển, không tải mô hình (nhanh, điểm kém tin cậy hơn)
+  nom_model: btqkhai/SinoNomBERT
+  quocngu_model: Qwen/Qwen2.5-0.5B
+  device: auto                    # auto | cpu | cuda | cuda:0 ...
+
+review:
+  top_k: 5                        # số ứng viên hiển thị cho mỗi cặp lệch
