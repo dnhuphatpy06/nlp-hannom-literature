@@ -63,6 +63,8 @@ nlp-hannom-literature/
 │   ├── postocr.py            <- hậu xử lý, dóng từ Needleman-Wunsch và chấm khớp âm/dị thể
 │   ├── compare_book.py       <- hậu xử lý so sánh Nôm - Quốc ngữ theo sách
 │   ├── align_books.py        <- dóng hàng 1-1 xuất .csv, .xlsx (tô màu đen/đỏ) và align_report.txt
+│   ├── align_rows.py         <- id bbox, ghép Nôm - Việt theo id, dấu miss, dịch âm (bước 3 của web)
+│   ├── align_jobs.py         <- chạy align_books.py ở nền cho nút Xuất file của bước 3
 │   ├── check_submission.py   <- kiểm tra hợp lệ toàn bộ dữ liệu nộp và phiên bản thư viện
 │   ├── page_classifier.py    <- phân loại từng trang vào ch/ vi/ ... (Web UI cũ + dòng lệnh)
 │   ├── pdfslice_split.py     <- tách PDF bằng pdfslice_py (công cụ cũ)
@@ -146,7 +148,7 @@ Tạo `data/<Tên sách>/` rồi bỏ file đúng tên `<Tên sách>.pdf` vào t
 2. **Tách trang**: bấm **Trang** ở dòng của sách để vào màn hình trang, chọn DPI (150 / 200 / 300 / 400, mặc định 300), bấm **Tách trang**. Ảnh JPEG lưu ở `data/<Tên sách>/cache/pages/` (`<Tên sách>.001.jpg`, ...), thanh tiến trình hiện trong lúc chạy. Mặc định bỏ qua trang đã có ảnh hợp lệ; tích **Ghi đè** để tách lại tất cả. Mỗi lúc chỉ tách một sách, bấm thêm sẽ báo bận.
 3. **Xem và gán nhãn trang**: lưới ảnh thu nhỏ của mọi trang, mỗi trang có nhãn hiện tại. Lọc theo nhãn bằng ô **Lọc**. Chọn trang bằng ô tích ở góc ảnh, hoặc gõ khoảng vào ô **Trang** rồi bấm **Chọn** (`1-5, 8, 10-12`; `40-` là từ trang 40 đến hết; `a:b:c` có bước nhảy, ví dụ `2::2` là mọi trang chẵn), hoặc **Chọn tất cả** (theo bộ lọc đang hiển thị) / **Bỏ chọn**. Sau đó bấm **Gán nhãn ▾** và chọn nhãn cho các trang đã chọn. Nút **ⓘ** hiện mô tả từng nhãn. Bấm vào ảnh một trang để xem ảnh đầy đủ (phím **←** **→** chuyển trang đang hiển thị, **Esc** hoặc bấm ra ngoài để đóng).
 4. Nhãn được lưu ngay vào `data/<Tên sách>/cache/phan_loai.json`, không cần bấm Save.
-5. Gán nhãn xong thì sang bước OCR (bấm **2. OCR →**), xem mục [Bước 2: OCR](#bước-2-ocr).
+5. Gán nhãn xong thì sang bước OCR (bấm **2 OCR** ở thanh các bước ở đầu màn hình sách), xem mục [Bước 2: OCR](#bước-2-ocr).
 
 Các nhãn trang: `ch` (Hán Nôm), `vi` (Quốc ngữ), `ch_vi` (cả hai, bố cục T2b), `intro`, `toc`, `ref`, `blank`, `misc`, `unknown` (chưa gán, mặc định).
 
@@ -195,7 +197,7 @@ Không cần bấm nút nào. Khi chạy `python app.py`, khi có PDF mới tron
 
 ### Bước 2: OCR
 
-Sau khi gán nhãn trang xong, bấm **2. OCR →** ở thanh đầu của màn hình sách. Màn hình có mục trạng thái hai mô hình chạy trên máy, **PaddleOCR-VL** và **Vintern-1B**, mỗi mục có nút **Nạp mô hình** (nạp ở nền, dùng chung cho mọi ảnh và mọi sách cho tới khi tắt app). App **không tự nạp** khi vào bước này; khi bạn chạy OCR cần PaddleOCR-VL mà chưa nạp thì app tự nạp rồi chạy (các ảnh đợi nạp xong), còn Vintern tự nạp ở lần đọc chữ đầu. Việc OCR làm **theo từng thư mục** bằng nút **OCR thư mục này** ở bảng cuối màn hình, xem [OCR từng thư mục](#ocr-từng-thư-mục).
+Sau khi gán nhãn trang xong, bấm **2 OCR** ở thanh các bước ở đầu màn hình sách (ba bước: **1 Phân loại trang**, **2 OCR**, **3 Dóng hàng**). Màn hình có mục trạng thái hai mô hình chạy trên máy, **PaddleOCR-VL** và **Vintern-1B**, mỗi mục có nút **Nạp mô hình** (nạp ở nền, dùng chung cho mọi ảnh và mọi sách cho tới khi tắt app). App **không tự nạp** khi vào bước này; khi bạn chạy OCR cần PaddleOCR-VL mà chưa nạp thì app tự nạp rồi chạy (các ảnh đợi nạp xong), còn Vintern tự nạp ở lần đọc chữ đầu. Việc OCR làm **theo từng thư mục** bằng nút **OCR thư mục này** ở bảng cuối màn hình, xem [OCR từng thư mục](#ocr-từng-thư-mục).
 
 Cách làm của từng nguồn theo nhãn trang (chọn trong popup của nút **OCR thư mục này**, xem bên dưới):
 
@@ -339,11 +341,24 @@ Mỗi thư mục `ch/`, `vi/`, `intro/`, `ref/`, `toc/` có nút **Mở PPOCRLab
 Lưu ý: PPOCRLabel coi **mọi ảnh có trong `fileState.txt` là đã hoàn thành** (ghi lại thành `1` khi lưu), kể cả dòng app ghi `0`; chỉ lưu sau khi đã kiểm tra hết ảnh. Kiểm tra định dạng `Label.txt` và bộ dữ liệu bằng `python scripts/check_submission.py`.
 
 
+### Bước 3: Dóng hàng (đối chiếu Hán Nôm và Việt)
+
+Bấm **3 Dóng hàng** ở thanh các bước. Màn hình ghép từng box Nôm (`ch/`) với box Việt (`vi/`) và cho sửa chỗ lệch, mã nguồn ở `scripts/align_rows.py`:
+
+- **Id của bbox** là `<tên văn bản>.<số trang>.<số dòng>`, ví dụ `Nhât Tỉnh Ngâm, Nôm.006.000`. Tên văn bản là tên sách bỏ hậu tố `_Y`, số trang là số trong tên ảnh, số dòng là vị trí box trong dòng nhãn của ảnh đó trong `Label.txt`, đếm từ 0. Id suy ra từ `Label.txt` nên không ghi thêm gì vào file nhãn.
+- **Cách ghép:** sắp id Nôm và id Việt theo (trang, dòng) rồi ghép lần lượt cái thứ i với cái thứ i. Box không có chữ bị bỏ.
+- **Nguồn của hai vế:** mặc định vế Nôm lấy từ `ch/` và vế Việt lấy từ `vi/` của sách đang mở. Hai ô **Nguồn Nôm** và **Nguồn Việt** cho chọn thư mục khác của sách này hoặc của sách khác trong `data/` (ví dụ sách chỉ có Nôm lấy bản Quốc ngữ từ `vi/` của một sách khác); id khi đó mang tên văn bản của sách nguồn. **Về mặc định** trả cả hai vế về `ch/` và `vi/`. Khi một trong hai nguồn không thuộc sách đang mở, màn hình hiện cảnh báo (và hỏi lại khi xuất file); file xuất luôn lưu trong thư mục của sách đang mở.
+- **Cấu trúc file `<Tên sách>.csv`** theo quy định đồ án: `img_id` (tên ảnh trang Nôm, không kèm thư mục), `sentence_id` (`<img_id bỏ đuôi .jpg>.<số thứ tự câu Nôm trong trang, từ 1, đủ 3 chữ số>`, ví dụ `Lorem ipsum.024.001`; ví dụ trong quy định ghi `Lorem ipsum.024.1`, ở đây lưu đủ 3 chữ số cho đồng nhất với id bbox), `SinoNom_Char` (văn bản Hán Nôm), `ChuQN_txt` (văn bản Quốc ngữ). `sentence_id` luôn là của câu Nôm: chỉ hàng có Nôm mới tăng số thứ tự, hàng chỉ có vế Việt (miss nôm) dùng lại `img_id` và `sentence_id` của câu Nôm đứng ngay trước.
+- **Miss vi** (nút trên ô Nôm): ô Nôm này không có dòng Việt. Hàng đó chỉ có vế Nôm, các dòng Việt sau ghép lại với đúng ô Nôm của chúng. **Miss nôm** (nút trên ô Việt) làm ngược lại. Hàng có số chữ Nôm khác số tiếng Việt hiện viền vàng, hàng có dấu miss hiện viền đỏ; ô **Chỉ hàng cần soát** lọc riêng các hàng này.
+- **Lên / xuống:** mỗi box (Nôm lẫn Việt) có hai nút ↑ ↓ đổi chỗ box đó với box kề trước hoặc kề sau trong thứ tự ghép của vế mình, dùng khi thứ tự đọc trong `Label.txt` sai. Id và `Label.txt` không đổi; các lần dời lưu trong `cache/align_rows.json`, bấm lại nút ngược chiều để hoàn tác lần vừa dời, **Bỏ các lần dời** để về thứ tự theo id. Xuất file theo thứ tự đã dời. Nút **Lưu vào Label.txt** ghi thứ tự đã dời vào `Label.txt` của hai nguồn: trong mỗi ảnh các box có chữ được xếp lại đúng thứ tự mới (box không có chữ giữ nguyên chỗ), id đổi theo vị trí mới và dấu miss, ô dịch được đổi sang id mới. Lần dời giữa hai ảnh khác nhau không ghi được vào `Label.txt` nên vẫn giữ trong màn hình này; dấu miss và ô dịch chỉ lưu trong `cache/align_rows.json`. Nếu một nguồn thuộc sách khác thì `Label.txt` của sách đó cũng bị ghi (có hỏi xác nhận).
+- **Dịch âm:** mỗi box Nôm có ô dịch âm do API Kim Hán Nôm (`sinonom-transliteration`, cần `TOKEN` trong `.env`) trả về. Bấm **Dịch âm** ở từng box hoặc **Dịch âm các box còn thiếu** cho cả sách. Kết quả dùng chung cache `cache/translit.json` với phần tô màu của `align_books.py`. Ô dịch sửa tay được; dịch hết hiệu lực nếu chữ Nôm của box đổi.
+- **Lưu ở** `data/<Tên sách>/cache/align_rows.json` (dấu miss và ô dịch, theo id). Nút **Xuất file** ở đầu màn hình chạy `scripts/align_books.py --no-xlsx` trên đúng cách ghép đó và xuất **toàn bộ các trang**, chỉ ra file `.csv` (cùng `align_report.txt`), không tô màu và không xuất `.xlsx`, nên không cần từ điển Unihan. Muốn có `.xlsx` tô màu đen/đỏ thì chạy `scripts/align_books.py` không kèm `--no-xlsx`.
+
 ## Web đối chiếu CH và VI
 
 ### Mở từ app
 
-Chạy `python app.py` trong thư mục chứa `app.py`. Bấm **Đối chiếu CH–VI** ở màn hình danh sách sách hoặc trong bước **2. OCR** để mở web đối chiếu ở tab mới. Bạn cũng có thể mở `http://localhost:8766/review/`. Nếu app dùng cổng khác, thêm `/review/` vào địa chỉ mà app in trong console.
+Chạy `python app.py` trong thư mục chứa `app.py`. Bấm **Đối chiếu CH–VI** ở màn hình danh sách sách hoặc trong bước **2 OCR** để mở web đối chiếu ở tab mới. Bạn cũng có thể mở `http://localhost:8766/review/`. Nếu app dùng cổng khác, thêm `/review/` vào địa chỉ mà app in trong console.
 
 Web dùng chung thư mục dữ liệu với app. Khi chạy `python app.py --data "D:/Du-lieu-OCR"`, web đối chiếu cũng đọc và lưu nhãn trong thư mục đó.
 

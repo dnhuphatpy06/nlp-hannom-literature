@@ -133,7 +133,7 @@ Các file PDF gốc được đặt trong `data/` hoặc `data/<Tên sách>/<Tê
 
 ### 5.2. Tách trang và gán nhãn trang
 
-1. Tại thẻ **1. Nhãn trang**, chọn độ phân giải DPI (mặc định 300) rồi bấm **Tách trang**. Ảnh trang lưu dưới dạng `<Tên sách>.<NNN>.jpg` trong `data/<Tên sách>/cache/pages/`.
+1. Tại bước **1 Phân loại trang** (thanh các bước ở đầu màn hình sách), chọn độ phân giải DPI (mặc định 300) rồi bấm **Tách trang**. Ảnh trang lưu dưới dạng `<Tên sách>.<NNN>.jpg` trong `data/<Tên sách>/cache/pages/`.
 2. Hệ thống tự động phát hiện trang trắng để gán `blank` và gợi ý nhãn ban đầu cho các trang `unknown` theo loại sách đã lưu.
 3. Kiểm tra lại toàn bộ lưới ảnh thu nhỏ. Để sửa nhãn các trang bìa, tựa, mục lục hay trang gán sai: chọn các trang cần sửa, bấm **Gán nhãn ▾** và chọn đúng nhãn (`ch`, `vi`, `ch_vi`, `intro`, `toc`, `ref`, `blank`, `misc`). Với các ảnh chụp hai trang Hán Nôm, có thể đánh dấu thuộc tính **Bản chụp 2 trang** để pipeline sắp xếp thứ tự box đúng quy định (trang trái trước, trang phải sau; cột từ phải sang trái).
 4. Toàn bộ nhãn trang được lưu tức thời vào `data/<Tên sách>/cache/phan_loai.json`.
@@ -142,7 +142,7 @@ Các file PDF gốc được đặt trong `data/` hoặc `data/<Tên sách>/<Tê
 
 ### 6.1. Chạy OCR và mở PPOCRLabel từ giao diện web
 
-1. Bấm **2. OCR →** trên thanh điều hướng của màn hình sách để sang bước OCR. Hệ thống tự đồng bộ ảnh từ `cache/pages/` sang các thư mục `ch/`, `vi/`, `intro/`, `ref/`, `toc/`, `blank/`, `misc/`.
+1. Bấm **2 OCR** trên thanh các bước ở đầu màn hình sách để sang bước OCR. Hệ thống tự đồng bộ ảnh từ `cache/pages/` sang các thư mục `ch/`, `vi/`, `intro/`, `ref/`, `toc/`, `blank/`, `misc/`.
 2. Tại bảng **OCR riêng từng thư mục và kiểm tra bằng PPOCRLabel**, bấm **OCR thư mục này** để chọn engine phù hợp (`Kim Hán Nôm` cho `ch/`; `PaddleOCR-VL` hoặc `row_projection + Vintern-1B` cho `vi/`, `intro/`, `ref/`, `toc/`). Kết quả thô được lưu cache trong `data/<Tên sách>/cache/ocr/` để tránh gọi lại khi không thay đổi ảnh.
 3. Bấm **Mở PPOCRLabel** ở dòng thư mục cần soát (`ch/` hoặc `vi/`). Cửa sổ PPOCRLabel sẽ nạp trực tiếp thư mục ảnh cùng hai file `Label.txt` và `fileState.txt` (cũng có thể mở thủ công bằng lệnh `python scripts/ppocrlabel_boot.py --image_dir "data\<Tên sách>\ch"`).
 
@@ -178,6 +178,8 @@ python review_local.py
 Trên Windows có thể bấm đúp `review-web/Mo-web-doi-chieu.bat`. Web đối chiếu mở tại `http://127.0.0.1:8768/`, hỗ trợ sửa trực tiếp văn bản và lưu vào `Label.txt` mà giữ nguyên toạ độ box và `fileState.txt`. Phím tắt hỗ trợ gồm `←`/`→` (đổi trang), `↑`/`↓` (chọn dòng), `Enter` (phóng to ảnh trang), `R` (tải lại từ đĩa), `Ctrl+S` (lưu chữ) và `?` (xem bảng phím tắt).
 
 ## 7. Dóng hàng song ngữ và xuất kết quả
+
+Trên web, bấm **3 Dóng hàng** ở thanh các bước ở đầu màn hình sách. Mỗi box có id `<tên văn bản>.<trang>.<dòng>`; id Nôm và id Việt được sắp rồi ghép lần lượt. Hai ô **Nguồn Nôm** và **Nguồn Việt** cho lấy mỗi vế từ thư mục khác hoặc từ sách khác. Ô lệch thì bấm **Miss vi** (ô Nôm không có Việt) hoặc **Miss nôm** (ô Việt không có Nôm) để các hàng sau ghép lại đúng; mỗi box Nôm có ô dịch âm lấy từ API Kim Hán Nôm; nút ↑ ↓ trên mỗi box đổi chỗ box với box kề trước hoặc kề sau trong thứ tự ghép. Bấm **Xuất file** ở đầu màn hình (xuất toàn bộ các trang; muốn ghi thứ tự đã dời vào `Label.txt` thì bấm **Lưu vào Label.txt**): web chạy đúng lệnh bên dưới, theo cách ghép và dấu miss đã đặt, chỉ xuất file `.csv` (kèm báo cáo), không xuất `.xlsx`; muốn có `.xlsx` thì chạy lệnh dòng lệnh bên dưới. Web hiện báo cáo và link tải `.csv`. File luôn lưu trong thư mục của sách đang mở; nếu một trong hai nguồn lấy từ sách khác thì web cảnh báo và hỏi lại trước khi xuất. Cần nguồn Nôm và nguồn Việt đều đã có `Label.txt`.
 
 Với sách có cả `ch/Label.txt` và `vi/Label.txt` (như cuốn `KimVânKiềuTânTruyện_金雲翹新傳`), chạy lệnh sau để dóng hàng 1-1 và xuất báo cáo:
 

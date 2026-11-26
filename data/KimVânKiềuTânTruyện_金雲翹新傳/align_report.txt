@@ -1,0 +1,43 @@
+BÁO CÁO DÓNG HÀNG: KimVânKiềuTânTruyện_金雲翹新傳
+
+Kiểu dóng: 1-1 theo thứ tự dòng. Tổng 3255 hàng từ 136 trang.
+
+1. Trang lệch số dòng / thiếu trang
+   - Ghép theo id đã sắp: 3255 box Nôm, 3255 box Việt, 3255 hàng (miss vi: 0, miss nôm: 0).
+
+2. Hàng chỉ có một vế (cần soát tay)
+   (không có)
+
+3. Số chữ Nôm khác số tiếng Quốc ngữ (0/3255 hàng; nghi lỗi OCR hoặc ghép nhầm dòng)
+   (không có)
+
+4. Thống kê tô màu và độ tương đồng (theo quy định đồ án)
+   - Nôm: 22784 chữ (đen: 15176, đỏ: 7608)
+   - Quốc ngữ: 22784 tiếng (đen: 15176, đỏ: 7608)
+   - Độ tương đồng: 66.61% (1 - (7608 + 7608) / (22784 + 22784))
+   - Cache phiên âm đã nạp: 92 ký tự từ cache/translit.json (nếu có).
+   - Một số cặp đỏ xuất hiện nhiều (PUA/khác nghĩa/nghi lỗi OCR):
+     * 娘 <-> nàng: 195 lần
+     * 浪 <-> rằng: 154 lần
+     * 󰑼 <-> là: 148 lần
+     * 拱 <-> cũng: 145 lần
+     * 命 <-> mình: 106 lần
+     * 芇 <-> nào: 92 lần
+     * 𫽄 <-> chẳng: 84 lần
+     * 𧗱 <-> về: 72 lần
+     * 爫 <-> làm: 71 lần
+     * 典 <-> đến: 67 lần
+     * 賖 <-> xa: 56 lần
+     * 㗂 <-> tiếng: 54 lần
+     * 渚 <-> chưa: 54 lần
+     * 牢 <-> sao: 51 lần
+     * 之 <-> gì: 50 lần
+     * 初 <-> xưa: 49 lần
+     * 春 <-> xuân: 48 lần
+     * 貝 <-> với: 43 lần
+     * 𦝄 <-> trăng: 42 lần
+     * 𬂙 <-> trông: 41 lần
+
+Ghi chú
+   - Tô màu đen/đỏ dựa trên đối chiếu Unihan + từ điển Hán-Nôm mở rộng (nom_na_viet.json) + nom_bo_sung.json + cache translit.
+   - Một số ký tự PUA hoặc cặp nghi sai OCR vẫn được giữ nguyên màu đỏ để phản ánh trung thực kết quả kiểm tra.

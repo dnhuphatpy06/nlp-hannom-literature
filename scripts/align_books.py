@@ -2,10 +2,10 @@
 
 Cách dóng (xem docs/Quy_dinh_do_an.md, "Quy định về việc dóng hàng"):
 
-  - Lấy N trang đầu có chữ Nôm (ch/Label.txt) mà vi/Label.txt cũng có.
-  - Mỗi trang: sắp các box theo thứ tự đọc (từ trên xuống, cùng hàng thì từ trái sang), bỏ box rỗng, rồi ghép box thứ i của Nôm
-    với box thứ i của Quốc ngữ (một dòng thơ/một dòng văn tương ứng một dòng).
-  - Trang có số dòng Nôm khác số dòng Quốc ngữ: vẫn ghép theo thứ tự, dòng thừa thành hàng chỉ có một vế và được ghi vào align_report.txt.
+  - Mỗi bbox có id <tên văn bản>.<trang>.<dòng> (ví dụ "Nhât Tỉnh Ngâm, Nôm.006.000", xem scripts/align_rows.py). Sắp id Nôm (ch/Label.txt)
+    và id Việt (vi/Label.txt) theo (trang, dòng), bỏ box rỗng, rồi ghép box thứ i của Nôm với box thứ i của Quốc ngữ.
+  - Dấu miss vi / miss nôm đặt trong bước 3 của web (cache/align_rows.json) cho phép bỏ qua một vế: hàng chỉ có một vế và được ghi vào
+    align_report.txt, các box sau vẫn ghép đúng nhau.
   - Tô màu trong .xlsx bằng từ điển Unihan + từ điển Nôm mở rộng + cache translit (nếu có): đen = khớp âm/dị thể, đỏ = khác âm hoặc thiếu trong từ điển.
 
 Đầu ra (trong data/<Tên sách>/):
@@ -31,7 +31,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from scripts import label_io, library  # noqa: E402
+from scripts import align_rows, label_io, library  # noqa: E402
 from scripts.library import norm  # noqa: E402
 
 COLUMNS = ["img_id", "sentence_id", "SinoNom_Char", "ChuQN_txt"]
@@ -51,7 +51,9 @@ class Pair:
 
     @property
     def sentence_id(self) -> str:
-        return f"{self.img_id[:-4]}.{self.index}" if self.img_id.lower().endswith(".jpg") else f"{self.img_id}.{self.index}"
+        # số thứ tự câu đánh từ 1 và lưu đủ 3 chữ số như số trang trong id bbox: <tên ảnh bỏ .jpg>.016.024
+        stem = self.img_id[:-4] if self.img_id.lower().endswith(".jpg") else self.img_id
+        return f"{stem}.{self.index:03d}"
 
 
 # ---------------------------------------------------------------- đọc dữ liệu
@@ -98,36 +100,33 @@ def load_pages(book: library.Book, folder: str) -> dict[int, tuple[str, list[dic
 
 # ---------------------------------------------------------------- dóng hàng
 def align(book: library.Book, n_pages: int = 0) -> tuple[list[Pair], list[str]]:
-    """Dóng 1-1 N trang đầu (hoặc tất cả nếu n_pages <= 0). Trả về (các cặp, ghi chú cho align_report)."""
-    ch, vi = load_pages(book, "ch"), load_pages(book, "vi")
-    shared = [n for n in sorted(ch) if n in vi]
+    """Dóng hàng theo id: sắp id Nôm và id Việt (trang, dòng) rồi ghép lần lượt, có tính dấu miss vi / miss nôm đặt trong giao diện bước 3
+    (scripts/align_rows.py). `n_pages` > 0: chỉ lấy tới trang Nôm thứ n_pages. Trả về (các cặp, ghi chú cho align_report)."""
+    rows, notes = align_rows.pairs_for_export(book)
     if n_pages > 0:
-        shared = shared[:n_pages]
-    notes: list[str] = []
-
-    if shared:
-        page_pairs = [(ch[n], vi[n]) for n in shared]
-        if n_pages > 0 and len(shared) < n_pages:
-            notes.append(f"Chỉ có {len(shared)}/{n_pages} trang có cả Nôm lẫn Quốc ngữ cùng số.")
-    else:
-        # Sách xen kẽ T2: ghép trang Nôm thứ k với trang Quốc ngữ thứ k
-        ch_list = [ch[n] for n in sorted(ch)]
-        vi_list = [vi[n] for n in sorted(vi)]
-        total_available = min(len(ch_list), len(vi_list))
-        n_match = total_available if n_pages <= 0 else min(total_available, n_pages)
-        page_pairs = [(ch_list[i], vi_list[i]) for i in range(n_match)]
-        notes.append(f"Dóng theo thứ tự trang xen kẽ: {n_match} cặp trang Nôm - Quốc ngữ.")
-
+        pages = sorted({r["nom"]["page"] for r in rows if r["nom"]})
+        if pages:
+            last = pages[min(n_pages, len(pages)) - 1]
+            keep = max((i for i, r in enumerate(rows) if r["nom"] and r["nom"]["page"] <= last), default=-1) + 1
+            rows = rows[:keep]
+            notes.append(f"Chỉ lấy {min(n_pages, len(pages))} trang Nôm đầu ({len(rows)} hàng).")
+    # Quy định file .csv: img_id là tên ảnh trang Nôm (không kèm thư mục); sentence_id là số thứ tự CÂU NÔM trong trang Nôm, đánh từ 1:
+    # <img_id bỏ đuôi .jpg>.<số thứ tự>. Hàng có Nôm lấy sentence_id của chính câu Nôm đó; chỉ hàng có Nôm mới làm tăng số thứ tự.
+    # Hàng chỉ có vế Việt (miss nôm) không có câu Nôm riêng nên dùng lại img_id và sentence_id của câu Nôm đứng ngay trước
+    # (hàng Việt đứng đầu thì lấy của câu Nôm đầu tiên). Không có hàng Nôm nào thì dùng tên ảnh Việt, số thứ tự đếm theo hàng.
+    first_nom = next((r["nom"]["file"] for r in rows if r["nom"]), None)
     pairs: list[Pair] = []
-    for (ch_info, vi_info) in page_pairs:
-        img_id = ch_info[0]
-        nom_lines = [b["text"].replace(" ", "") for b in ch_info[1]]
-        qn_lines = [" ".join(b["text"].split()) for b in vi_info[1]]
-        if len(nom_lines) != len(qn_lines):
-            notes.append(f"Trang {img_id}: {len(nom_lines)} dòng Nôm nhưng {len(qn_lines)} dòng Quốc ngữ; "
-                         f"ghép theo thứ tự, {abs(len(nom_lines) - len(qn_lines))} dòng cuối chỉ có một vế.")
-        for i in range(max(len(nom_lines), len(qn_lines))):
-            pairs.append(Pair(img_id, i + 1, nom_lines[i] if i < len(nom_lines) else "", qn_lines[i] if i < len(qn_lines) else ""))
+    counters: dict[str, int] = {}
+    img_id, index = first_nom, 1
+    for row in rows:
+        nom, vi = row["nom"], row["vi"]
+        if nom:
+            img_id = nom["file"]
+            counters[img_id] = index = counters.get(img_id, 0) + 1
+        elif first_nom is None:
+            img_id = vi["file"]
+            counters[img_id] = index = counters.get(img_id, 0) + 1
+        pairs.append(Pair(img_id, index, nom["text"].replace(" ", "") if nom else "", " ".join(vi["text"].split()) if vi else ""))
     return pairs, notes
 
 
@@ -320,6 +319,8 @@ def main() -> int:
     ap.add_argument("--pages", type=int, default=0, help="Số trang Nôm đầu tiên cần dóng (mặc định 0 = toàn bộ sách)")
     ap.add_argument("--data", type=Path, default=library.DEFAULT_DATA_DIR, help="Thư mục data/")
     ap.add_argument("--out-dir", type=Path, help="Thư mục ghi kết quả (mặc định: thư mục của sách)")
+    ap.add_argument("--no-xlsx", action="store_true",
+                    help="chỉ xuất .csv và align_report.txt, không tô màu và không xuất .xlsx (không cần từ điển Unihan); web dùng cờ này")
     args = ap.parse_args()
 
     data_dir = args.data.resolve()
@@ -334,11 +335,12 @@ def main() -> int:
         print(f"[LỖI] {book.stem}: chưa có Label.txt ở cả ch/ và vi/ (chạy bước OCR trước).")
         return 1
     stem = norm(book.stem)
-    stats = evaluate_pairs(pairs, data_dir=data_dir, book_cache_dir=book.cache_dir)
+    stats = None if args.no_xlsx else evaluate_pairs(pairs, data_dir=data_dir, book_cache_dir=book.cache_dir)
     write_csv(out_dir / f"{book.stem}.csv", pairs)
-    write_xlsx(out_dir / f"{book.stem}.xlsx", pairs, data_dir=data_dir, book_cache_dir=book.cache_dir, stats=stats)
+    if stats is not None:
+        write_xlsx(out_dir / f"{book.stem}.xlsx", pairs, data_dir=data_dir, book_cache_dir=book.cache_dir, stats=stats)
     (out_dir / "align_report.txt").write_text(build_report(book, pairs, notes, stats=stats), encoding="utf-8")
-    sim_info = f", tương đồng={stats['similarity']:.2f}%" if stats["has_dict"] else ""
+    sim_info = f", tương đồng={stats['similarity']:.2f}%" if stats and stats["has_dict"] else ""
     print(f"{stem}: {len(pairs)} hàng từ {len({p.img_id for p in pairs})} trang{sim_info} -> {out_dir}")
     for note in notes:
         print("  !", note)

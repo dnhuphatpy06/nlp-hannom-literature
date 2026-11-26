@@ -1,0 +1,46 @@
+{
+  "sources": {
+    "vi": {
+      "book": "KimVânKiềuTânTruyện_金雲翹新傳",
+      "folder": "vi"
+    }
+  },
+  "marks": {},
+  "dich": {
+    "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳.001.001": {
+      "src": "半世煙花債未償",
+      "text": "bán thế yên hoa trái vị thường",
+      "manual": false
+    },
+    "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳.001.002": {
+      "src": "玊面豈應理水國",
+      "text": "ngọc diện khởi ưng lý thuỷ quốc",
+      "manual": false
+    },
+    "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳.001.000": {
+      "src": "佳人不是到錢塘",
+      "text": "giai nhân bất thị đáo tiền đường",
+      "manual": false
+    },
+    "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳.002.000": {
+      "src": "瀾秋水曰春山",
+      "text": "lan thu thuỷ viết xuân sơn",
+      "manual": false
+    },
+    "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳.001.003": {
+      "src": "氷心自可對金郎",
+      "text": "băng tâm tự khả đối kim lang",
+      "manual": false
+    },
+    "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳.001.004": {
+      "src": "断膓夢裡根縁了",
+      "text": "đoạn trường mộng lý căn duyên liễu",
+      "manual": false
+    },
+    "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳.001.007": {
+      "src": "新聲到底爲誰傷",
+      "text": "tân thanh đáo để vi thuỳ thương",
+      "manual": false
+    }
+  }
+}

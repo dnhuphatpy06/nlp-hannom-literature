@@ -8,7 +8,9 @@ Hiện có các bước:
   4. Bước OCR (sau khi gán nhãn trang): chọn nguồn OCR theo nhãn (Kim Hán Nôm, PaddleOCR-VL, row_projection),
      ghi <Tên sách>/<ch|vi|...>/Label.txt + fileState.txt theo chuẩn PPOCRLabel, rồi mở PPOCRLabel để kiểm tra
      (scripts/ocr_jobs.py). Không OCR trang blank, misc.
-  5. Đối chiếu CH và VI tại /review/ để kiểm tra ảnh và sửa chữ trong Label.txt.
+  5. Bước dóng hàng (scripts/align_rows.py, align_jobs.py): đối chiếu Hán Nôm - Việt theo id bbox, dấu miss vi / miss nôm, ô dịch âm bằng
+     API Kim Hán Nôm; xuất .csv/.xlsx bằng scripts/align_books.py.
+  6. Đối chiếu CH và VI tại /review/ để kiểm tra ảnh và sửa chữ trong Label.txt.
 
 Cấu trúc data/ giống thư mục nộp bài, xem scripts/library.py. Các công cụ hỗ trợ nằm trong scripts/.
 """
@@ -22,7 +24,7 @@ import webbrowser
 from pathlib import Path
 
 from review_local import REVIEW_PATH, review_handler
-from scripts import book_types, library, ocr_engines, ocr_jobs, page_cache, split_jobs
+from scripts import align_jobs, align_rows, book_types, library, ocr_engines, ocr_jobs, page_cache, split_jobs
 from scripts.library import UNKNOWN
 
 if sys.platform == "win32":
@@ -101,11 +103,13 @@ def make_handler(data_dir: Path, type_file: Path):
             self.end_headers()
             self.wfile.write(body)
 
-        def _send_file(self, path: Path, content_type: str, cache_control: str | None = None):
+        def _send_file(self, path: Path, content_type: str, cache_control: str | None = None, download_name: str | None = None):
             try:
                 self.send_response(200)
                 self.send_header("Content-Type", content_type)
                 self.send_header("Content-Length", str(path.stat().st_size))
+                if download_name:   # tải về với tên file (UTF-8, tên sách có dấu)
+                    self.send_header("Content-Disposition", "attachment; filename*=UTF-8''" + urllib.parse.quote(download_name))
                 if cache_control:
                     self.send_header("Cache-Control", cache_control)
                 self.end_headers()
@@ -171,6 +175,47 @@ def make_handler(data_dir: Path, type_file: Path):
                                      "vintern": ocr_engines.VINTERN_WORKER.status(),
                                      "folders": ocr_jobs.folder_status(book),
                                      "ppocrlabel_running": ocr_jobs.ppocrlabel_running()})
+            elif path == "/api/align":
+                book = library.find_book(data_dir, name)
+                if book is None:
+                    self._send_json({"error": f"Không tìm thấy PDF: {name}"}, status=404)
+                else:
+                    self._send_json(align_jobs.status(book))
+            elif path == "/api/align/rows":
+                book = library.find_book(data_dir, name)
+                if book is None:
+                    self._send_json({"error": f"Không tìm thấy PDF: {name}"}, status=404)
+                else:
+                    rows, info = align_rows.build_rows(book)
+                    self._send_json({"info": info, "rows": [align_rows.public_row(r) for r in rows],
+                                     "translit": align_rows.translit_status(book)})
+            elif path == "/api/align/sources":
+                book = library.find_book(data_dir, name)
+                if book is None:
+                    self._send_json({"error": f"Không tìm thấy PDF: {name}"}, status=404)
+                else:
+                    self._send_json({"options": align_rows.list_sources(book), "current": align_rows.source_info(book)})
+            elif path == "/api/align/crop":
+                book = library.find_book(data_dir, name)
+                jpeg = align_rows.crop_jpeg(book, query.get("side", [""])[0], query.get("id", [""])[0]) if book is not None else None
+                if jpeg is None:
+                    self.send_error(404)
+                else:
+                    self.send_response(200)
+                    self.send_header("Content-Type", "image/jpeg")
+                    self.send_header("Content-Length", str(len(jpeg)))
+                    self.send_header("Cache-Control", "private, max-age=600")
+                    self.end_headers()
+                    self.wfile.write(jpeg)
+            elif path == "/api/align/file":
+                book = library.find_book(data_dir, name)
+                target = align_jobs.output_files(book).get(query.get("kind", [""])[0]) if book is not None else None
+                if target is None or not target.is_file():
+                    self.send_error(404)
+                else:
+                    self._send_file(target, "text/plain; charset=utf-8" if target.suffix == ".txt" else
+                                    "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" if target.suffix == ".xlsx"
+                                    else "text/csv; charset=utf-8", download_name=target.name)
             elif path == "/api/thumb":
                 self._send_thumb(name, query.get("page", [""])[0])
             elif path == "/api/page":
@@ -205,7 +250,8 @@ def make_handler(data_dir: Path, type_file: Path):
         def do_POST(self):
             path = urllib.parse.urlparse(self.path).path
             if path not in ("/api/save", "/api/split", "/api/pages/tag", "/api/pages/spread", "/api/ocr/preload",
-                            "/api/ocr/run", "/api/ocr/folder", "/api/ppocrlabel/open"):
+                            "/api/ocr/run", "/api/ocr/folder", "/api/ppocrlabel/open", "/api/align/run",
+                            "/api/align/mark", "/api/align/dich", "/api/align/translit", "/api/align/source", "/api/align/move", "/api/align/save"):
                 self.send_error(404)
                 return
             try:
@@ -251,6 +297,41 @@ def make_handler(data_dir: Path, type_file: Path):
                         self._send_json({"success": True})
                     else:
                         self._send_json({"success": True, **ocr_jobs.open_ppocrlabel(book, str(payload.get("folder", "")))})
+                elif path in ("/api/align/mark", "/api/align/dich", "/api/align/translit", "/api/align/source", "/api/align/move", "/api/align/save"):
+                    book = library.find_book(data_dir, str(payload.get("name", "")))
+                    if book is None:
+                        raise ValueError("Không tìm thấy PDF.")
+                    if path == "/api/align/mark":
+                        align_rows.set_mark(book, str(payload.get("side", "")), str(payload.get("id", "")), bool(payload.get("miss")))
+                        self._send_json({"success": True})
+                    elif path == "/api/align/save":
+                        self._send_json({"success": True, **align_rows.save_order(book)})
+                    elif path == "/api/align/move":
+                        align_rows.move_box(book, str(payload.get("side", "")), str(payload.get("id", "")), str(payload.get("dir", "")))
+                        self._send_json({"success": True})
+                    elif path == "/api/align/source":
+                        align_rows.set_source(book, str(payload.get("role", "")), str(payload.get("book", "")), str(payload.get("folder", "")))
+                        self._send_json({"success": True})
+                    elif path == "/api/align/dich":
+                        box = str(payload.get("id", ""))
+                        target = next((b for b in align_rows.load_role(book, "ch") if b["id"] == box), None)
+                        if target is None:
+                            raise ValueError("Không có box Nôm này.")
+                        align_rows.set_dich(book, box, str(payload.get("text", "")), target["text"], manual=True)
+                        self._send_json({"success": True})
+                    else:
+                        ids = payload.get("ids")
+                        if ids is not None and not isinstance(ids, list):
+                            raise ValueError("Trường 'ids' phải là danh sách id.")
+                        self._send_json({"success": True, "count": align_rows.start_translit(book, [str(i) for i in ids] if ids is not None else None)})
+                elif path == "/api/align/run":
+                    book = library.find_book(data_dir, str(payload.get("name", "")))
+                    if book is None:
+                        raise ValueError("Không tìm thấy PDF.")
+                    if not align_jobs.status(book)["ready"]:
+                        raise ValueError("Sách chưa có Label.txt ở cả ch/ và vi/. Chạy bước OCR trước.")
+                    align_jobs.start(book, int(payload.get("pages") or 0))
+                    self._send_json({"success": True})
                 elif path == "/api/pages/tag":
                     book = library.find_book(data_dir, str(payload.get("name", "")))
                     if book is None:
@@ -275,7 +356,7 @@ def make_handler(data_dir: Path, type_file: Path):
                                            int(payload.get("dpi", split_jobs.DEFAULT_DPI)),
                                            bool(payload.get("force", False)))
                     self._send_json({"success": True})
-            except (split_jobs.SplitBusy, ocr_jobs.OcrBusy) as e:
+            except (split_jobs.SplitBusy, ocr_jobs.OcrBusy, align_jobs.AlignBusy, align_rows.TranslitBusy) as e:
                 self._send_json({"success": False, "error": str(e)}, status=409)
             except Exception as e:  # trả lỗi về UI thay vì làm sập server
                 self._send_json({"success": False, "error": str(e)}, status=400)
