@@ -1,6 +1,87 @@
 {
- "saved_at": "2026-11-26 18:35:40",
+ "saved_at": "2026-11-27 00:57:35",
  "decisions": {
+  "Tư Linh Truyên, Nôm|82|0": {
+   "side": "QN",
+   "nom": "㗩",
+   "qn": "dập",
+   "rank": 1,
+   "orig_nom": "㗩",
+   "orig_qn": "rập",
+   "time": "2026-11-26 21:18:22"
+  },
+  "Tư Linh Truyên, Nôm|230|1": {
+   "side": "NOM",
+   "nom": "麻",
+   "qn": "dàng",
+   "rank": 1,
+   "orig_nom": "𤉜",
+   "orig_qn": "dàng",
+   "time": "2026-11-26 21:24:16"
+  },
+  "Tư Linh Truyên, Nôm|285|5": {
+   "side": "NOM",
+   "nom": "麻",
+   "qn": "dàng",
+   "rank": 1,
+   "orig_nom": "𤉜",
+   "orig_qn": "dàng",
+   "time": "2026-11-26 21:36:01"
+  },
+  "Tư Linh Truyên, Nôm|359|5": {
+   "side": "QN",
+   "nom": "𨄼",
+   "qn": "dời",
+   "rank": 2,
+   "orig_nom": "𨄼",
+   "orig_qn": "rời",
+   "time": "2026-11-26 21:44:18"
+  },
+  "Tư Linh Truyên, Nôm|598|1": {
+   "side": "QN",
+   "nom": "𠽍",
+   "qn": "rầm",
+   "rank": 1,
+   "orig_nom": "𠽍",
+   "orig_qn": "dầm",
+   "time": "2026-11-26 22:10:11"
+  },
+  "Tư Linh Truyên, Nôm|778|7": {
+   "side": "NOM",
+   "nom": "麻",
+   "qn": "dàng",
+   "rank": 1,
+   "orig_nom": "𤉜",
+   "orig_qn": "dàng",
+   "time": "2026-11-26 22:15:04"
+  },
+  "Tư Linh Truyên, Nôm|800|7": {
+   "side": "NOM",
+   "nom": "麻",
+   "qn": "dàng",
+   "rank": 1,
+   "orig_nom": "𤉜",
+   "orig_qn": "dàng",
+   "time": "2026-11-26 22:15:20"
+  },
+  "Tư Linh Truyên, Nôm|868|0": {
+   "side": "QN",
+   "nom": "𨄼",
+   "qn": "dời",
+   "rank": 1,
+   "orig_nom": "𨄼",
+   "orig_qn": "rời",
+   "time": "2026-11-26 22:17:46"
+  },
+  "Tư Linh Truyên, Nôm|887|6": {
+   "side": "QN",
+   "nom": "唯",
+   "qn": "dõi",
+   "rank": 1,
+   "orig_nom": "唯",
+   "orig_qn": "rõi",
+   "time": "2026-11-26 22:17:50"
+  },
   "Tư Linh Truyên, Nôm|0|0": {
    "side": "QN",
    "nom": "四",
@@ -65,13 +146,13 @@
    "time": "2026-11-19 11:42:15"
   },
   "Tư Linh Truyên, Nôm|6|2": {
-   "side": "KEEP",
-   "nom": "产",
+   "side": "NOM",
+   "nom": "産",
    "qn": "sẵn",
    "rank": 2,
    "orig_nom": "产",
    "orig_qn": "sẵn",
-   "time": "2026-11-19 11:43:06"
+   "time": "2026-11-26 23:04:45"
   },
   "Tư Linh Truyên, Nôm|8|3": {
    "side": "QN",
@@ -92,13 +173,13 @@
    "time": "2026-11-19 11:43:33"
   },
   "Tư Linh Truyên, Nôm|9|4": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "唯",
-   "qn": "noi",
-   "rank": 3,
+   "qn": "dõi",
+   "rank": 6,
    "orig_nom": "唯",
    "orig_qn": "noi",
-   "time": "2026-11-19 11:44:19"
+   "time": "2026-11-26 23:05:02"
   },
   "Tư Linh Truyên, Nôm|10|4": {
    "side": "QN",
@@ -227,13 +308,13 @@
    "time": "2026-11-19 11:50:05"
   },
   "Tư Linh Truyên, Nôm|35|0": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "質",
-   "qn": "cắt",
-   "rank": 7,
+   "qn": "chắt",
+   "rank": 1,
    "orig_nom": "質",
    "orig_qn": "cắt",
-   "time": "2026-11-19 11:50:46"
+   "time": "2026-11-26 21:15:59"
   },
   "Tư Linh Truyên, Nôm|37|0": {
    "side": "QN",
@@ -301,11 +382,11 @@
   "Tư Linh Truyên, Nôm|46|4": {
    "side": "QN",
    "nom": "𤑟",
-   "qn": "tỏ",
-   "rank": 1,
+   "qn": "rõ",
+   "rank": 3,
    "orig_nom": "𤑟",
    "orig_qn": "sỏ",
-   "time": "2026-11-19 11:54:02"
+   "time": "2026-11-26 23:27:59"
   },
   "Tư Linh Truyên, Nôm|51|0": {
    "side": "QN",
@@ -451,15 +532,6 @@
    "orig_qn": "năng",
    "time": "2026-11-19 11:58:22"
   },
-  "Tư Linh Truyên, Nôm|82|0": {
-   "side": "KEEP",
-   "nom": "㗩",
-   "qn": "rập",
-   "rank": 4,
-   "orig_nom": "㗩",
-   "orig_qn": "rập",
-   "time": "2026-11-19 11:58:46"
-  },
   "Tư Linh Truyên, Nôm|87|0": {
    "side": "QN",
    "nom": "嚈",
@@ -542,13 +614,13 @@
    "time": "2026-11-19 12:07:41"
   },
   "Tư Linh Truyên, Nôm|117|5": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "匡",
-   "qn": "khương",
-   "rank": 2,
+   "qn": "khuông",
+   "rank": 1,
    "orig_nom": "匡",
    "orig_qn": "khương",
-   "time": "2026-11-19 12:07:49"
+   "time": "2026-11-26 21:19:28"
   },
   "Tư Linh Truyên, Nôm|119|0": {
    "side": "QN",
@@ -722,13 +794,13 @@
    "time": "2026-11-19 12:11:56"
   },
   "Tư Linh Truyên, Nôm|155|3": {
-   "side": "KEEP",
-   "nom": "滝",
+   "side": "NOM",
+   "nom": "𨻫",
    "qn": "luống",
-   "rank": 2,
+   "rank": 3,
    "orig_nom": "滝",
    "orig_qn": "luống",
-   "time": "2026-11-19 12:12:01"
+   "time": "2026-11-26 21:23:21"
   },
   "Tư Linh Truyên, Nôm|156|0": {
    "side": "QN",
@@ -812,13 +884,13 @@
    "time": "2026-11-19 12:12:48"
   },
   "Tư Linh Truyên, Nôm|188|4": {
-   "side": "KEEP",
-   "nom": "滝",
+   "side": "NOM",
+   "nom": "𨻫",
    "qn": "luống",
-   "rank": 1,
+   "rank": 2,
    "orig_nom": "滝",
    "orig_qn": "luống",
-   "time": "2026-11-19 12:12:59"
+   "time": "2026-11-26 21:23:44"
   },
   "Tư Linh Truyên, Nôm|188|5": {
    "side": "QN",
@@ -866,13 +938,13 @@
    "time": "2026-11-19 12:13:33"
   },
   "Tư Linh Truyên, Nôm|219|0": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "神",
-   "qn": "chân",
-   "rank": 1,
+   "qn": "thần",
+   "rank": 2,
    "orig_nom": "神",
    "orig_qn": "chân",
-   "time": "2026-11-19 12:13:45"
+   "time": "2026-11-26 21:24:02"
   },
   "Tư Linh Truyên, Nôm|227|2": {
    "side": "QN",
@@ -882,15 +954,6 @@
    "orig_nom": "誅",
    "orig_qn": "thu",
    "time": "2026-11-19 12:13:50"
-  },
-  "Tư Linh Truyên, Nôm|230|1": {
-   "side": "KEEP",
-   "nom": "𤉜",
-   "qn": "dàng",
-   "rank": 3,
-   "orig_nom": "𤉜",
-   "orig_qn": "dàng",
-   "time": "2026-11-19 12:14:00"
   },
   "Tư Linh Truyên, Nôm|231|0": {
    "side": "QN",
@@ -1073,13 +1136,13 @@
    "time": "2026-11-19 12:15:48"
   },
   "Tư Linh Truyên, Nôm|261|5": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𠻀",
-   "qn": "gió",
-   "rank": 1,
+   "qn": "dò",
+   "rank": 6,
    "orig_nom": "𠻀",
    "orig_qn": "gió",
-   "time": "2026-11-19 12:15:53"
+   "time": "2026-11-26 23:47:27"
   },
   "Tư Linh Truyên, Nôm|269|5": {
    "side": "QN",
@@ -1109,13 +1172,13 @@
    "time": "2026-11-19 12:16:14"
   },
   "Tư Linh Truyên, Nôm|274|4": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "盆",
-   "qn": "bàn",
-   "rank": 4,
+   "qn": "bồn",
+   "rank": 3,
    "orig_nom": "盆",
    "orig_qn": "bàn",
-   "time": "2026-11-19 12:16:20"
+   "time": "2026-11-26 23:48:53"
   },
   "Tư Linh Truyên, Nôm|275|4": {
    "side": "QN",
@@ -1136,13 +1199,13 @@
    "time": "2026-11-19 12:16:35"
   },
   "Tư Linh Truyên, Nôm|278|4": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "待",
-   "qn": "đả",
-   "rank": 1,
+   "qn": "đãi",
+   "rank": 5,
    "orig_nom": "待",
    "orig_qn": "đả",
-   "time": "2026-11-19 12:16:40"
+   "time": "2026-11-26 23:49:34"
   },
   "Tư Linh Truyên, Nôm|279|2": {
    "side": "QN",
@@ -1166,10 +1229,10 @@
    "side": "KEEP",
    "nom": "櫓",
    "qn": "trở",
-   "rank": 2,
+   "rank": 7,
    "orig_nom": "櫓",
    "orig_qn": "trở",
-   "time": "2026-11-19 12:17:15"
+   "time": "2026-11-26 23:50:22"
   },
   "Tư Linh Truyên, Nôm|284|3": {
    "side": "QN",
@@ -1196,15 +1259,6 @@
    "rank": 1,
    "orig_nom": "柴",
    "orig_qn": "thấy",
-   "time": "2026-11-19 12:17:26"
-  },
-  "Tư Linh Truyên, Nôm|285|5": {
-   "side": "KEEP",
-   "nom": "𤉜",
-   "qn": "dàng",
-   "rank": 3,
-   "orig_nom": "𤉜",
-   "orig_qn": "dàng",
    "time": "2026-11-19 12:17:26"
   },
   "Tư Linh Truyên, Nôm|287|1": {
@@ -1253,31 +1307,31 @@
    "time": "2026-11-19 12:17:51"
   },
   "Tư Linh Truyên, Nôm|293|6": {
-   "side": "KEEP",
-   "nom": "吲",
+   "side": "NOM",
+   "nom": "蚓",
    "qn": "giận",
-   "rank": 2,
+   "rank": 3,
    "orig_nom": "吲",
    "orig_qn": "giận",
-   "time": "2026-11-19 12:17:57"
+   "time": "2026-11-26 21:37:40"
   },
   "Tư Linh Truyên, Nôm|295|0": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "傕",
-   "qn": "chời",
-   "rank": 2,
+   "qn": "thời",
+   "rank": 1,
    "orig_nom": "傕",
    "orig_qn": "chời",
-   "time": "2026-11-19 12:18:02"
+   "time": "2026-11-26 21:37:52"
   },
   "Tư Linh Truyên, Nôm|306|5": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𥸷",
-   "qn": "xuôi",
-   "rank": 2,
+   "qn": "xôi",
+   "rank": 1,
    "orig_nom": "𥸷",
    "orig_qn": "xuôi",
-   "time": "2026-11-19 12:18:13"
+   "time": "2026-11-26 21:42:27"
   },
   "Tư Linh Truyên, Nôm|310|5": {
    "side": "QN",
@@ -1298,13 +1352,13 @@
    "time": "2026-11-19 12:18:24"
   },
   "Tư Linh Truyên, Nôm|311|7": {
-   "side": "KEEP",
-   "nom": "䄇",
+   "side": "NOM",
+   "nom": "裎",
    "qn": "trình",
-   "rank": 3,
+   "rank": 1,
    "orig_nom": "䄇",
    "orig_qn": "trình",
-   "time": "2026-11-19 12:18:24"
+   "time": "2026-11-26 21:43:19"
   },
   "Tư Linh Truyên, Nôm|312|0": {
    "side": "QN",
@@ -1441,15 +1495,6 @@
    "orig_qn": "kịp",
    "time": "2026-11-19 12:20:01"
   },
-  "Tư Linh Truyên, Nôm|359|5": {
-   "side": "KEEP",
-   "nom": "𨄼",
-   "qn": "rời",
-   "rank": 1,
-   "orig_nom": "𨄼",
-   "orig_qn": "rời",
-   "time": "2026-11-19 12:20:02"
-  },
   "Tư Linh Truyên, Nôm|363|0": {
    "side": "QN",
    "nom": "𬟥",
@@ -1514,13 +1559,13 @@
    "time": "2026-11-19 12:20:32"
   },
   "Tư Linh Truyên, Nôm|374|1": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𠻀",
-   "qn": "giờ",
-   "rank": 2,
+   "qn": "dò",
+   "rank": 7,
    "orig_nom": "𠻀",
    "orig_qn": "giờ",
-   "time": "2026-11-19 12:20:32"
+   "time": "2026-11-26 23:56:29"
   },
   "Tư Linh Truyên, Nôm|376|0": {
    "side": "QN",
@@ -1559,13 +1604,13 @@
    "time": "2026-11-19 12:20:48"
   },
   "Tư Linh Truyên, Nôm|380|1": {
-   "side": "QN",
-   "nom": "𥉫",
-   "qn": "trông",
-   "rank": 2,
+   "side": "NOM",
+   "nom": "滝",
+   "qn": "trong",
+   "rank": 1,
    "orig_nom": "𥉫",
    "orig_qn": "trong",
-   "time": "2026-11-19 12:20:54"
+   "time": "2026-11-26 21:46:13"
   },
   "Tư Linh Truyên, Nôm|381|1": {
    "side": "QN",
@@ -1667,22 +1712,22 @@
    "time": "2026-11-19 12:21:46"
   },
   "Tư Linh Truyên, Nôm|395|1": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𤈛",
-   "qn": "nhoáng",
+   "qn": "loáng",
    "rank": 2,
    "orig_nom": "𤈛",
    "orig_qn": "nhoáng",
-   "time": "2026-11-19 12:21:53"
+   "time": "2026-11-26 23:59:33"
   },
   "Tư Linh Truyên, Nôm|395|4": {
-   "side": "KEEP",
-   "nom": "霛",
+   "side": "NOM",
+   "nom": "𩆠",
    "qn": "sấm",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "霛",
    "orig_qn": "sấm",
-   "time": "2026-11-19 12:21:53"
+   "time": "2026-11-26 21:50:19"
   },
   "Tư Linh Truyên, Nôm|399|2": {
    "side": "QN",
@@ -1793,13 +1838,13 @@
    "time": "2026-11-19 12:22:57"
   },
   "Tư Linh Truyên, Nôm|422|5": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "寅",
-   "qn": "giãn",
-   "rank": 2,
+   "qn": "giần",
+   "rank": 1,
    "orig_nom": "寅",
    "orig_qn": "giãn",
-   "time": "2026-11-19 12:22:58"
+   "time": "2026-11-26 21:53:02"
   },
   "Tư Linh Truyên, Nôm|425|4": {
    "side": "QN",
@@ -1838,13 +1883,13 @@
    "time": "2026-11-19 12:23:34"
   },
   "Tư Linh Truyên, Nôm|449|7": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𠎩",
-   "qn": "may",
-   "rank": 1,
+   "qn": "bay",
+   "rank": 2,
    "orig_nom": "𠎩",
    "orig_qn": "may",
-   "time": "2026-11-19 12:23:44"
+   "time": "2026-11-26 21:54:12"
   },
   "Tư Linh Truyên, Nôm|459|0": {
    "side": "QN",
@@ -1865,13 +1910,13 @@
    "time": "2026-11-19 12:23:59"
   },
   "Tư Linh Truyên, Nôm|465|6": {
-   "side": "KEEP",
-   "nom": "酥",
+   "side": "NOM",
+   "nom": "𥠭",
    "qn": "giống",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "酥",
    "orig_qn": "giống",
-   "time": "2026-11-19 12:24:19"
+   "time": "2026-11-26 21:54:25"
   },
   "Tư Linh Truyên, Nôm|470|4": {
    "side": "QN",
@@ -1910,13 +1955,13 @@
    "time": "2026-11-19 12:24:50"
   },
   "Tư Linh Truyên, Nôm|484|1": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "碎",
-   "qn": "lỏi",
-   "rank": 4,
+   "qn": "tôi",
+   "rank": 6,
    "orig_nom": "碎",
    "orig_qn": "lỏi",
-   "time": "2026-11-19 12:24:50"
+   "time": "2026-11-27 00:06:12"
   },
   "Tư Linh Truyên, Nôm|484|2": {
    "side": "QN",
@@ -1955,13 +2000,13 @@
    "time": "2026-11-19 12:25:15"
   },
   "Tư Linh Truyên, Nôm|495|2": {
-   "side": "KEEP",
-   "nom": "刃",
+   "side": "NOM",
+   "nom": "月",
    "qn": "lạng",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "刃",
    "orig_qn": "lạng",
-   "time": "2026-11-19 12:25:15"
+   "time": "2026-11-26 21:56:43"
   },
   "Tư Linh Truyên, Nôm|496|0": {
    "side": "QN",
@@ -2018,13 +2063,13 @@
    "time": "2026-11-19 12:25:37"
   },
   "Tư Linh Truyên, Nôm|503|7": {
-   "side": "KEEP",
-   "nom": "墱",
+   "side": "NOM",
+   "nom": "登",
    "qn": "giâng",
-   "rank": 3,
+   "rank": 1,
    "orig_nom": "墱",
    "orig_qn": "giâng",
-   "time": "2026-11-19 12:25:42"
+   "time": "2026-11-26 21:59:19"
   },
   "Tư Linh Truyên, Nôm|504|0": {
    "side": "QN",
@@ -2099,13 +2144,13 @@
    "time": "2026-11-19 12:26:25"
   },
   "Tư Linh Truyên, Nôm|517|6": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "瞯",
-   "qn": "gian",
-   "rank": 1,
+   "qn": "giằn",
+   "rank": 2,
    "orig_nom": "瞯",
    "orig_qn": "gian",
-   "time": "2026-11-19 12:26:32"
+   "time": "2026-11-27 00:10:51"
   },
   "Tư Linh Truyên, Nôm|518|2": {
    "side": "QN",
@@ -2135,31 +2180,31 @@
    "time": "2026-11-19 12:26:38"
   },
   "Tư Linh Truyên, Nôm|524|3": {
-   "side": "KEEP",
-   "nom": "噫",
+   "side": "NOM",
+   "nom": "󱋨",
    "qn": "nức",
-   "rank": 1,
+   "rank": 3,
    "orig_nom": "噫",
    "orig_qn": "nức",
-   "time": "2026-11-19 12:26:49"
+   "time": "2026-11-27 00:11:11"
   },
   "Tư Linh Truyên, Nôm|525|0": {
-   "side": "KEEP",
-   "nom": "霛",
+   "side": "NOM",
+   "nom": "𩆠",
    "qn": "sấm",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "霛",
    "orig_qn": "sấm",
-   "time": "2026-11-19 12:26:55"
+   "time": "2026-11-26 22:07:45"
   },
   "Tư Linh Truyên, Nôm|530|3": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "詩",
-   "qn": "thí",
-   "rank": 2,
+   "qn": "thi",
+   "rank": 1,
    "orig_nom": "詩",
    "orig_qn": "thí",
-   "time": "2026-11-19 12:27:05"
+   "time": "2026-11-26 22:07:54"
   },
   "Tư Linh Truyên, Nôm|532|0": {
    "side": "QN",
@@ -2216,13 +2261,13 @@
    "time": "2026-11-19 12:27:37"
   },
   "Tư Linh Truyên, Nôm|541|2": {
-   "side": "KEEP",
-   "nom": "禎",
+   "side": "NOM",
+   "nom": "𥢆",
    "qn": "riêng",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "禎",
    "orig_qn": "riêng",
-   "time": "2026-11-19 12:27:45"
+   "time": "2026-11-26 22:08:12"
   },
   "Tư Linh Truyên, Nôm|541|5": {
    "side": "QN",
@@ -2243,13 +2288,13 @@
    "time": "2026-11-19 12:27:50"
   },
   "Tư Linh Truyên, Nôm|543|0": {
-   "side": "KEEP",
-   "nom": "𢶸",
+   "side": "NOM",
+   "nom": "揞",
    "qn": "ẵm",
-   "rank": 1,
+   "rank": 3,
    "orig_nom": "𢶸",
    "orig_qn": "ẵm",
-   "time": "2026-11-19 12:28:03"
+   "time": "2026-11-27 00:18:03"
   },
   "Tư Linh Truyên, Nôm|544|0": {
    "side": "QN",
@@ -2261,13 +2306,13 @@
    "time": "2026-11-19 12:28:11"
   },
   "Tư Linh Truyên, Nôm|544|1": {
-   "side": "KEEP",
-   "nom": "纒",
+   "side": "NOM",
+   "nom": "纏",
    "qn": "gìn",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "纒",
    "orig_qn": "gìn",
-   "time": "2026-11-19 12:28:11"
+   "time": "2026-11-26 22:08:33"
   },
   "Tư Linh Truyên, Nôm|552|2": {
    "side": "QN",
@@ -2279,13 +2324,13 @@
    "time": "2026-11-19 12:28:17"
   },
   "Tư Linh Truyên, Nôm|556|3": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𥘷",
-   "qn": "kẻ",
-   "rank": 1,
+   "qn": "trẻ",
+   "rank": 15,
    "orig_nom": "𥘷",
    "orig_qn": "kẻ",
-   "time": "2026-11-19 12:28:36"
+   "time": "2026-11-27 00:18:31"
   },
   "Tư Linh Truyên, Nôm|557|0": {
    "side": "QN",
@@ -2414,13 +2459,13 @@
    "time": "2026-11-19 12:29:38"
   },
   "Tư Linh Truyên, Nôm|577|7": {
-   "side": "KEEP",
-   "nom": "惺",
+   "side": "NOM",
+   "nom": "醒",
    "qn": "tanh",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "惺",
    "orig_qn": "tanh",
-   "time": "2026-11-19 12:29:44"
+   "time": "2026-11-26 22:08:55"
   },
   "Tư Linh Truyên, Nôm|578|0": {
    "side": "QN",
@@ -2459,13 +2504,13 @@
    "time": "2026-11-19 12:30:27"
   },
   "Tư Linh Truyên, Nôm|595|2": {
-   "side": "KEEP",
-   "nom": "塡",
+   "side": "NOM",
+   "nom": "填",
    "qn": "đền",
    "rank": 2,
    "orig_nom": "塡",
    "orig_qn": "đền",
-   "time": "2026-11-19 12:30:34"
+   "time": "2026-11-27 00:21:00"
   },
   "Tư Linh Truyên, Nôm|597|1": {
    "side": "QN",
@@ -2484,15 +2529,6 @@
    "orig_nom": "𠫾",
    "orig_qn": "di",
    "time": "2026-11-19 12:30:40"
-  },
-  "Tư Linh Truyên, Nôm|598|1": {
-   "side": "KEEP",
-   "nom": "𠽍",
-   "qn": "dầm",
-   "rank": 4,
-   "orig_nom": "𠽍",
-   "orig_qn": "dầm",
-   "time": "2026-11-19 12:30:46"
   },
   "Tư Linh Truyên, Nôm|600|1": {
    "side": "QN",
@@ -2585,13 +2621,13 @@
    "time": "2026-11-19 12:31:36"
   },
   "Tư Linh Truyên, Nôm|617|7": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "慛",
-   "qn": "nhôi",
-   "rank": 2,
+   "qn": "thôi",
+   "rank": 1,
    "orig_nom": "慛",
    "orig_qn": "nhôi",
-   "time": "2026-11-19 12:31:50"
+   "time": "2026-11-27 00:23:42"
   },
   "Tư Linh Truyên, Nôm|629|3": {
    "side": "KEEP",
@@ -2720,13 +2756,13 @@
    "time": "2026-11-19 12:33:28"
   },
   "Tư Linh Truyên, Nôm|669|6": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𢶢",
-   "qn": "chứng",
-   "rank": 3,
+   "qn": "chống",
+   "rank": 1,
    "orig_nom": "𢶢",
    "orig_qn": "chứng",
-   "time": "2026-11-19 12:33:34"
+   "time": "2026-11-26 22:13:19"
   },
   "Tư Linh Truyên, Nôm|671|0": {
    "side": "QN",
@@ -2765,13 +2801,13 @@
    "time": "2026-11-19 12:33:56"
   },
   "Tư Linh Truyên, Nôm|684|6": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "當",
-   "qn": "đứng",
-   "rank": 3,
+   "qn": "đương",
+   "rank": 5,
    "orig_nom": "當",
    "orig_qn": "đứng",
-   "time": "2026-11-19 12:34:02"
+   "time": "2026-11-27 00:32:15"
   },
   "Tư Linh Truyên, Nôm|691|1": {
    "side": "QN",
@@ -2801,13 +2837,13 @@
    "time": "2026-11-19 12:34:27"
   },
   "Tư Linh Truyên, Nôm|700|0": {
-   "side": "KEEP",
-   "nom": "㩜",
+   "side": "NOM",
+   "nom": "濫",
    "qn": "trộm",
-   "rank": 3,
+   "rank": 1,
    "orig_nom": "㩜",
    "orig_qn": "trộm",
-   "time": "2026-11-19 12:34:51"
+   "time": "2026-11-26 22:13:46"
   },
   "Tư Linh Truyên, Nôm|700|4": {
    "side": "QN",
@@ -2882,13 +2918,13 @@
    "time": "2026-11-19 12:35:42"
   },
   "Tư Linh Truyên, Nôm|730|3": {
-   "side": "KEEP",
-   "nom": "侍",
+   "side": "NOM",
+   "nom": "𠎬",
    "qn": "đấng",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "侍",
    "orig_qn": "đấng",
-   "time": "2026-11-19 12:36:05"
+   "time": "2026-11-26 22:13:54"
   },
   "Tư Linh Truyên, Nôm|730|5": {
    "side": "QN",
@@ -2990,13 +3026,13 @@
    "time": "2026-11-19 12:37:26"
   },
   "Tư Linh Truyên, Nôm|760|4": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "移",
-   "qn": "với",
-   "rank": 1,
+   "qn": "rời",
+   "rank": 5,
    "orig_nom": "移",
    "orig_qn": "với",
-   "time": "2026-11-19 12:37:33"
+   "time": "2026-11-27 00:38:46"
   },
   "Tư Linh Truyên, Nôm|768|0": {
    "side": "QN",
@@ -3032,15 +3068,6 @@
    "rank": 1,
    "orig_nom": "時",
    "orig_qn": "thí",
-   "time": "2026-11-19 12:38:03"
-  },
-  "Tư Linh Truyên, Nôm|778|7": {
-   "side": "KEEP",
-   "nom": "𤉜",
-   "qn": "dàng",
-   "rank": 3,
-   "orig_nom": "𤉜",
-   "orig_qn": "dàng",
    "time": "2026-11-19 12:38:03"
   },
   "Tư Linh Truyên, Nôm|779|0": {
@@ -3080,13 +3107,13 @@
    "time": "2026-11-19 12:38:24"
   },
   "Tư Linh Truyên, Nôm|792|6": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "娑",
-   "qn": "ba",
-   "rank": 3,
+   "qn": "ta",
+   "rank": 1,
    "orig_nom": "娑",
    "orig_qn": "ba",
-   "time": "2026-11-19 12:38:35"
+   "time": "2026-11-26 22:15:12"
   },
   "Tư Linh Truyên, Nôm|795|0": {
    "side": "QN",
@@ -3114,15 +3141,6 @@
    "orig_nom": "𢵋",
    "orig_qn": "đưa",
    "time": "2026-11-19 12:38:57"
-  },
-  "Tư Linh Truyên, Nôm|800|7": {
-   "side": "KEEP",
-   "nom": "𤉜",
-   "qn": "dàng",
-   "rank": 3,
-   "orig_nom": "𤉜",
-   "orig_qn": "dàng",
-   "time": "2026-11-19 12:39:03"
   },
   "Tư Linh Truyên, Nôm|802|4": {
    "side": "QN",
@@ -3206,13 +3224,13 @@
    "time": "2026-11-19 12:40:21"
   },
   "Tư Linh Truyên, Nôm|826|0": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "都",
-   "qn": "do",
-   "rank": 3,
+   "qn": "đo",
+   "rank": 1,
    "orig_nom": "都",
    "orig_qn": "do",
-   "time": "2026-11-19 12:40:28"
+   "time": "2026-11-26 22:15:31"
   },
   "Tư Linh Truyên, Nôm|829|1": {
    "side": "QN",
@@ -3278,13 +3296,13 @@
    "time": "2026-11-19 12:41:11"
   },
   "Tư Linh Truyên, Nôm|841|2": {
-   "side": "KEEP",
-   "nom": "滝",
+   "side": "NOM",
+   "nom": "𨻫",
    "qn": "luống",
-   "rank": 1,
+   "rank": 3,
    "orig_nom": "滝",
    "orig_qn": "luống",
-   "time": "2026-11-19 12:41:17"
+   "time": "2026-11-26 22:15:42"
   },
   "Tư Linh Truyên, Nôm|842|1": {
    "side": "QN",
@@ -3314,13 +3332,13 @@
    "time": "2026-11-19 12:41:48"
   },
   "Tư Linh Truyên, Nôm|845|4": {
-   "side": "KEEP",
-   "nom": "聀",
+   "side": "NOM",
+   "nom": "戝",
    "qn": "giặc",
-   "rank": 2,
+   "rank": 3,
    "orig_nom": "聀",
    "orig_qn": "giặc",
-   "time": "2026-11-19 12:41:48"
+   "time": "2026-11-26 22:16:55"
   },
   "Tư Linh Truyên, Nôm|845|5": {
    "side": "QN",
@@ -3341,13 +3359,13 @@
    "time": "2026-11-19 12:41:56"
   },
   "Tư Linh Truyên, Nôm|848|2": {
-   "side": "KEEP",
-   "nom": "㩜",
+   "side": "NOM",
+   "nom": "儖",
    "qn": "trộm",
-   "rank": 3,
+   "rank": 2,
    "orig_nom": "㩜",
    "orig_qn": "trộm",
-   "time": "2026-11-19 12:42:03"
+   "time": "2026-11-26 22:17:34"
   },
   "Tư Linh Truyên, Nôm|849|2": {
    "side": "QN",
@@ -3448,15 +3466,6 @@
    "orig_qn": "bây",
    "time": "2026-11-19 12:43:23"
   },
-  "Tư Linh Truyên, Nôm|868|0": {
-   "side": "KEEP",
-   "nom": "𨄼",
-   "qn": "rời",
-   "rank": 2,
-   "orig_nom": "𨄼",
-   "orig_qn": "rời",
-   "time": "2026-11-19 12:43:33"
-  },
   "Tư Linh Truyên, Nôm|874|3": {
    "side": "QN",
    "nom": "絲",
@@ -3465,15 +3474,6 @@
    "orig_nom": "絲",
    "orig_qn": "to",
    "time": "2026-11-19 12:43:41"
-  },
-  "Tư Linh Truyên, Nôm|887|6": {
-   "side": "KEEP",
-   "nom": "唯",
-   "qn": "rõi",
-   "rank": 2,
-   "orig_nom": "唯",
-   "orig_qn": "rõi",
-   "time": "2026-11-19 12:43:57"
   },
   "Tư Linh Truyên, Nôm|893|0": {
    "side": "QN",
@@ -3485,13 +3485,13 @@
    "time": "2026-11-19 12:44:09"
   },
   "Tư Linh Truyên, Nôm|897|1": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𢪀",
-   "qn": "ngỡ",
-   "rank": 2,
+   "qn": "ngờ",
+   "rank": 1,
    "orig_nom": "𢪀",
    "orig_qn": "ngỡ",
-   "time": "2026-11-19 12:44:17"
+   "time": "2026-11-26 22:17:55"
   },
   "Tư Linh Truyên, Nôm|898|0": {
    "side": "QN",
@@ -3512,13 +3512,13 @@
    "time": "2026-11-19 12:44:43"
   },
   "Tư Linh Truyên, Nôm|911|5": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "恬",
-   "qn": "đêm",
-   "rank": 2,
+   "qn": "đềm",
+   "rank": 1,
    "orig_nom": "恬",
    "orig_qn": "đêm",
-   "time": "2026-11-19 12:44:57"
+   "time": "2026-11-26 22:18:13"
   },
   "Tư Linh Truyên, Nôm|915|2": {
    "side": "QN",
@@ -3566,13 +3566,13 @@
    "time": "2026-11-19 12:45:24"
   },
   "Tư Linh Truyên, Nôm|919|2": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "恬",
-   "qn": "đêm",
-   "rank": 2,
+   "qn": "đềm",
+   "rank": 1,
    "orig_nom": "恬",
    "orig_qn": "đêm",
-   "time": "2026-11-19 12:45:31"
+   "time": "2026-11-26 22:18:31"
   },
   "Tư Linh Truyên, Nôm|920|2": {
    "side": "QN",
@@ -3602,13 +3602,13 @@
    "time": "2026-11-19 12:45:51"
   },
   "Tư Linh Truyên, Nôm|931|0": {
-   "side": "KEEP",
-   "nom": "吲",
+   "side": "NOM",
+   "nom": "蚓",
    "qn": "giận",
-   "rank": 2,
+   "rank": 3,
    "orig_nom": "吲",
    "orig_qn": "giận",
-   "time": "2026-11-19 12:45:58"
+   "time": "2026-11-26 22:18:43"
   },
   "Tư Linh Truyên, Nôm|933|0": {
    "side": "QN",
@@ -3647,13 +3647,13 @@
    "time": "2026-11-19 12:46:14"
   },
   "Tư Linh Truyên, Nôm|934|2": {
-   "side": "KEEP",
-   "nom": "吲",
+   "side": "NOM",
+   "nom": "蚓",
    "qn": "giận",
-   "rank": 2,
+   "rank": 3,
    "orig_nom": "吲",
    "orig_qn": "giận",
-   "time": "2026-11-19 12:46:14"
+   "time": "2026-11-26 22:19:21"
   },
   "Tư Linh Truyên, Nôm|934|3": {
    "side": "QN",
@@ -3683,31 +3683,1687 @@
    "time": "2026-11-19 12:46:35"
   },
   "Tư Linh Truyên, Nôm|942|3": {
-   "side": "KEEP",
-   "nom": "侍",
+   "side": "NOM",
+   "nom": "𠎬",
    "qn": "đấng",
-   "rank": 1,
+   "rank": 2,
    "orig_nom": "侍",
    "orig_qn": "đấng",
-   "time": "2026-11-19 12:46:35"
+   "time": "2026-11-26 22:19:31"
   },
   "Tư Linh Truyên, Nôm|944|1": {
-   "side": "KEEP",
-   "nom": "沁",
+   "side": "NOM",
+   "nom": "𤆸",
    "qn": "tâm",
-   "rank": 6,
+   "rank": 1,
    "orig_nom": "沁",
    "orig_qn": "tâm",
-   "time": "2026-11-19 12:46:43"
+   "time": "2026-11-26 22:19:37"
   },
   "Tư Linh Truyên, Nôm|949|2": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "焒",
-   "qn": "nỡ",
-   "rank": 2,
+   "qn": "rỡ",
+   "rank": 1,
    "orig_nom": "焒",
    "orig_qn": "nỡ",
-   "time": "2026-11-19 12:46:53"
+   "time": "2026-11-26 22:20:18"
+  },
+  "Tư Linh Truyên, Nôm|46|5": {
+   "side": "QN",
+   "nom": "𤉜",
+   "qn": "dàng",
+   "rank": 2,
+   "orig_nom": "𤉜",
+   "orig_qn": "dang",
+   "time": "2026-11-26 23:05:50"
+  },
+  "Tư Linh Truyên, Nôm|3|3": {
+   "side": "NOM",
+   "nom": "𣇫",
+   "qn": "thuở",
+   "rank": 10,
+   "orig_nom": "𠵩",
+   "orig_qn": "thuở",
+   "time": "2026-11-26 23:24:07"
+  },
+  "Tư Linh Truyên, Nôm|11|3": {
+   "side": "QN",
+   "nom": "𭁈",
+   "qn": "dữ",
+   "rank": 1,
+   "orig_nom": "𭁈",
+   "orig_qn": "nử",
+   "time": "2026-11-26 23:24:18"
+  },
+  "Tư Linh Truyên, Nôm|23|1": {
+   "side": "KEEP",
+   "nom": "𠳐",
+   "qn": "xin",
+   "rank": 6,
+   "orig_nom": "𠳐",
+   "orig_qn": "xin",
+   "time": "2026-11-26 23:25:11"
+  },
+  "Tư Linh Truyên, Nôm|28|6": {
+   "side": "QN",
+   "nom": "俊",
+   "qn": "tuấn",
+   "rank": 10,
+   "orig_nom": "俊",
+   "orig_qn": "quán",
+   "time": "2026-11-26 23:27:50"
+  },
+  "Tư Linh Truyên, Nôm|47|2": {
+   "side": "NOM",
+   "nom": "󰆄",
+   "qn": "tuổi",
+   "rank": 7,
+   "orig_nom": "穢",
+   "orig_qn": "tuổi",
+   "time": "2026-11-26 23:28:36"
+  },
+  "Tư Linh Truyên, Nôm|48|4": {
+   "side": "KEEP",
+   "nom": "貌",
+   "qn": "rẻ",
+   "rank": 3,
+   "orig_nom": "貌",
+   "orig_qn": "rẻ",
+   "time": "2026-11-26 23:29:43"
+  },
+  "Tư Linh Truyên, Nôm|61|4": {
+   "side": "NOM",
+   "nom": "錆",
+   "qn": "thanh",
+   "rank": 23,
+   "orig_nom": "新",
+   "orig_qn": "thanh",
+   "time": "2026-11-26 23:31:22"
+  },
+  "Tư Linh Truyên, Nôm|61|5": {
+   "side": "NOM",
+   "nom": "津",
+   "qn": "tân",
+   "rank": 4,
+   "orig_nom": "清",
+   "orig_qn": "tân",
+   "time": "2026-11-26 23:31:26"
+  },
+  "Tư Linh Truyên, Nôm|74|6": {
+   "side": "KEEP",
+   "nom": "慴",
+   "qn": "nấp",
+   "rank": 5,
+   "orig_nom": "慴",
+   "orig_qn": "nấp",
+   "time": "2026-11-26 23:32:41"
+  },
+  "Tư Linh Truyên, Nôm|76|3": {
+   "side": "NOM",
+   "nom": "𠲥",
+   "qn": "lể",
+   "rank": 11,
+   "orig_nom": "啂",
+   "orig_qn": "lể",
+   "time": "2026-11-26 23:33:04"
+  },
+  "Tư Linh Truyên, Nôm|88|3": {
+   "side": "NOM",
+   "nom": "課",
+   "qn": "thuở",
+   "rank": 1,
+   "orig_nom": "𠵩",
+   "orig_qn": "thuở",
+   "time": "2026-11-26 23:33:23"
+  },
+  "Tư Linh Truyên, Nôm|97|2": {
+   "side": "NOM",
+   "nom": "姻",
+   "qn": "nhân",
+   "rank": 1,
+   "orig_nom": "𡛸",
+   "orig_qn": "nhân",
+   "time": "2026-11-26 23:33:53"
+  },
+  "Tư Linh Truyên, Nôm|99|4": {
+   "side": "QN",
+   "nom": "錐",
+   "qn": "dùi",
+   "rank": 22,
+   "orig_nom": "錐",
+   "orig_qn": "giữ",
+   "time": "2026-11-26 23:34:11"
+  },
+  "Tư Linh Truyên, Nôm|100|7": {
+   "side": "NOM",
+   "nom": "𥠻",
+   "qn": "ghê",
+   "rank": 2,
+   "orig_nom": "𮃛",
+   "orig_qn": "ghê",
+   "time": "2026-11-26 23:34:30"
+  },
+  "Tư Linh Truyên, Nôm|108|6": {
+   "side": "NOM",
+   "nom": "",
+   "qn": "trần",
+   "rank": 17,
+   "orig_nom": "災",
+   "orig_qn": "trần",
+   "time": "2026-11-26 23:34:46"
+  },
+  "Tư Linh Truyên, Nôm|112|0": {
+   "side": "QN",
+   "nom": "歲",
+   "qn": "tuổi",
+   "rank": 8,
+   "orig_nom": "歲",
+   "orig_qn": "cuốc",
+   "time": "2026-11-26 23:35:21"
+  },
+  "Tư Linh Truyên, Nôm|114|3": {
+   "side": "NOM",
+   "nom": "課",
+   "qn": "thuở",
+   "rank": 2,
+   "orig_nom": "𠵩",
+   "orig_qn": "thuở",
+   "time": "2026-11-26 23:35:30"
+  },
+  "Tư Linh Truyên, Nôm|118|6": {
+   "side": "QN",
+   "nom": "埃",
+   "qn": "ai",
+   "rank": 9,
+   "orig_nom": "埃",
+   "orig_qn": "cư",
+   "time": "2026-11-26 23:35:51"
+  },
+  "Tư Linh Truyên, Nôm|125|5": {
+   "side": "NOM",
+   "nom": "稽",
+   "qn": "ghê",
+   "rank": 2,
+   "orig_nom": "𮃛",
+   "orig_qn": "ghê",
+   "time": "2026-11-26 23:36:02"
+  },
+  "Tư Linh Truyên, Nôm|131|4": {
+   "side": "QN",
+   "nom": "有",
+   "qn": "hữu",
+   "rank": 1,
+   "orig_nom": "有",
+   "orig_qn": "huê",
+   "time": "2026-11-26 23:36:30"
+  },
+  "Tư Linh Truyên, Nôm|134|4": {
+   "side": "NOM",
+   "nom": "呐",
+   "qn": "nói",
+   "rank": 4,
+   "orig_nom": "移",
+   "orig_qn": "nói",
+   "time": "2026-11-26 23:36:45"
+  },
+  "Tư Linh Truyên, Nôm|138|0": {
+   "side": "KEEP",
+   "nom": "憐",
+   "qn": "mải",
+   "rank": 3,
+   "orig_nom": "憐",
+   "orig_qn": "mải",
+   "time": "2026-11-26 23:37:26"
+  },
+  "Tư Linh Truyên, Nôm|144|0": {
+   "side": "KEEP",
+   "nom": "穢",
+   "qn": "cuối",
+   "rank": 10,
+   "orig_nom": "穢",
+   "orig_qn": "cuối",
+   "time": "2026-11-26 23:38:11"
+  },
+  "Tư Linh Truyên, Nôm|146|1": {
+   "side": "NOM",
+   "nom": "念",
+   "qn": "niềm",
+   "rank": 1,
+   "orig_nom": "𫝹",
+   "orig_qn": "niềm",
+   "time": "2026-11-26 23:38:15"
+  },
+  "Tư Linh Truyên, Nôm|147|2": {
+   "side": "NOM",
+   "nom": "扜",
+   "qn": "vò",
+   "rank": 7,
+   "orig_nom": "牸",
+   "orig_qn": "vò",
+   "time": "2026-11-26 23:38:53"
+  },
+  "Tư Linh Truyên, Nôm|147|3": {
+   "side": "KEEP",
+   "nom": "又",
+   "qn": "võ",
+   "rank": 1,
+   "orig_nom": "又",
+   "orig_qn": "võ",
+   "time": "2026-11-26 23:39:27"
+  },
+  "Tư Linh Truyên, Nôm|160|0": {
+   "side": "QN",
+   "nom": "細",
+   "qn": "tới",
+   "rank": 1,
+   "orig_nom": "細",
+   "orig_qn": "cõi",
+   "time": "2026-11-26 23:39:46"
+  },
+  "Tư Linh Truyên, Nôm|161|2": {
+   "side": "NOM",
+   "nom": "渚",
+   "qn": "giở",
+   "rank": 6,
+   "orig_nom": "豬",
+   "orig_qn": "giở",
+   "time": "2026-11-26 23:40:43"
+  },
+  "Tư Linh Truyên, Nôm|162|3": {
+   "side": "KEEP",
+   "nom": "剔",
+   "qn": "rẽ",
+   "rank": 21,
+   "orig_nom": "剔",
+   "orig_qn": "rẽ",
+   "time": "2026-11-26 23:41:09"
+  },
+  "Tư Linh Truyên, Nôm|166|7": {
+   "side": "NOM",
+   "nom": "尼",
+   "qn": "này",
+   "rank": 1,
+   "orig_nom": "心",
+   "orig_qn": "này",
+   "time": "2026-11-26 23:41:26"
+  },
+  "Tư Linh Truyên, Nôm|174|3": {
+   "side": "KEEP",
+   "nom": "剔",
+   "qn": "rẽ",
+   "rank": 18,
+   "orig_nom": "剔",
+   "orig_qn": "rẽ",
+   "time": "2026-11-26 23:41:36"
+  },
+  "Tư Linh Truyên, Nôm|174|1": {
+   "side": "QN",
+   "nom": "𡗶",
+   "qn": "giời",
+   "rank": 22,
+   "orig_nom": "𡗶",
+   "orig_qn": "giữ",
+   "time": "2026-11-26 23:41:49"
+  },
+  "Tư Linh Truyên, Nôm|177|2": {
+   "side": "QN",
+   "nom": "𠳒",
+   "qn": "nhời",
+   "rank": 10,
+   "orig_nom": "𠳒",
+   "orig_qn": "nỗi",
+   "time": "2026-11-26 23:42:01"
+  },
+  "Tư Linh Truyên, Nôm|178|3": {
+   "side": "NOM",
+   "nom": "雉",
+   "qn": "trẻ",
+   "rank": 4,
+   "orig_nom": "薙",
+   "orig_qn": "trẻ",
+   "time": "2026-11-26 23:42:29"
+  },
+  "Tư Linh Truyên, Nôm|195|3": {
+   "side": "NOM",
+   "nom": "負",
+   "qn": "phụ",
+   "rank": 1,
+   "orig_nom": "𧴥",
+   "orig_qn": "phụ",
+   "time": "2026-11-26 23:42:49"
+  },
+  "Tư Linh Truyên, Nôm|211|3": {
+   "side": "KEEP",
+   "nom": "剔",
+   "qn": "rẽ",
+   "rank": 21,
+   "orig_nom": "剔",
+   "orig_qn": "rẽ",
+   "time": "2026-11-26 23:43:11"
+  },
+  "Tư Linh Truyên, Nôm|219|3": {
+   "side": "QN",
+   "nom": "庙",
+   "qn": "miếu",
+   "rank": 16,
+   "orig_nom": "庙",
+   "orig_qn": "mươi",
+   "time": "2026-11-26 23:43:41"
+  },
+  "Tư Linh Truyên, Nôm|222|5": {
+   "side": "NOM",
+   "nom": "撰",
+   "qn": "toan",
+   "rank": 3,
+   "orig_nom": "𥳪",
+   "orig_qn": "toan",
+   "time": "2026-11-26 23:43:57"
+  },
+  "Tư Linh Truyên, Nôm|227|0": {
+   "side": "QN",
+   "nom": "𡗶",
+   "qn": "giời",
+   "rank": 23,
+   "orig_nom": "𡗶",
+   "orig_qn": "giữ",
+   "time": "2026-11-26 23:44:22"
+  },
+  "Tư Linh Truyên, Nôm|237|0": {
+   "side": "QN",
+   "nom": "𠸠",
+   "qn": "ví",
+   "rank": 23,
+   "orig_nom": "𠸠",
+   "orig_qn": "mẻ",
+   "time": "2026-11-26 23:44:36"
+  },
+  "Tư Linh Truyên, Nôm|250|3": {
+   "side": "QN",
+   "nom": "左",
+   "qn": "tưởi",
+   "rank": 3,
+   "orig_nom": "左",
+   "orig_qn": "tuốc",
+   "time": "2026-11-26 23:45:50"
+  },
+  "Tư Linh Truyên, Nôm|252|3": {
+   "side": "KEEP",
+   "nom": "芷",
+   "qn": "chúm",
+   "rank": 2,
+   "orig_nom": "芷",
+   "orig_qn": "chúm",
+   "time": "2026-11-26 23:46:13"
+  },
+  "Tư Linh Truyên, Nôm|254|2": {
+   "side": "QN",
+   "nom": "𣈙",
+   "qn": "dầy",
+   "rank": 7,
+   "orig_nom": "𣈙",
+   "orig_qn": "dãy",
+   "time": "2026-11-26 23:46:23"
+  },
+  "Tư Linh Truyên, Nôm|255|3": {
+   "side": "NOM",
+   "nom": "劍",
+   "qn": "sớm",
+   "rank": 1,
+   "orig_nom": "𣈙",
+   "orig_qn": "sớm",
+   "time": "2026-11-26 23:46:41"
+  },
+  "Tư Linh Truyên, Nôm|267|4": {
+   "side": "NOM",
+   "nom": "攑",
+   "qn": "gỡ",
+   "rank": 2,
+   "orig_nom": "择",
+   "orig_qn": "gỡ",
+   "time": "2026-11-26 23:48:15"
+  },
+  "Tư Linh Truyên, Nôm|271|5": {
+   "side": "QN",
+   "nom": "𣈙",
+   "qn": "dầy",
+   "rank": 1,
+   "orig_nom": "𣈙",
+   "orig_qn": "dẫy",
+   "time": "2026-11-26 23:48:32"
+  },
+  "Tư Linh Truyên, Nôm|275|0": {
+   "side": "QN",
+   "nom": "時",
+   "qn": "thời",
+   "rank": 1,
+   "orig_nom": "時",
+   "orig_qn": "chối",
+   "time": "2026-11-26 23:49:15"
+  },
+  "Tư Linh Truyên, Nôm|275|3": {
+   "side": "KEEP",
+   "nom": "剔",
+   "qn": "rẽ",
+   "rank": 15,
+   "orig_nom": "剔",
+   "orig_qn": "rẽ",
+   "time": "2026-11-26 23:49:18"
+  },
+  "Tư Linh Truyên, Nôm|295|7": {
+   "side": "QN",
+   "nom": "𡳪",
+   "qn": "đuôi",
+   "rank": 7,
+   "orig_nom": "𡳪",
+   "orig_qn": "chòe",
+   "time": "2026-11-26 23:50:47"
+  },
+  "Tư Linh Truyên, Nôm|296|5": {
+   "side": "QN",
+   "nom": "𱰺",
+   "qn": "trai",
+   "rank": 1,
+   "orig_nom": "𱰺",
+   "orig_qn": "giải",
+   "time": "2026-11-26 23:50:54"
+  },
+  "Tư Linh Truyên, Nôm|314|2": {
+   "side": "NOM",
+   "nom": "",
+   "qn": "nghĩa",
+   "rank": 5,
+   "orig_nom": "㕛",
+   "orig_qn": "nghĩa",
+   "time": "2026-11-26 23:51:14"
+  },
+  "Tư Linh Truyên, Nôm|324|0": {
+   "side": "QN",
+   "nom": "咹",
+   "qn": "ăn",
+   "rank": 1,
+   "orig_nom": "咹",
+   "orig_qn": "xin",
+   "time": "2026-11-26 23:52:00"
+  },
+  "Tư Linh Truyên, Nôm|324|2": {
+   "side": "NOM",
+   "nom": "沒",
+   "qn": "một",
+   "rank": 4,
+   "orig_nom": "汶",
+   "orig_qn": "một",
+   "time": "2026-11-26 23:52:14"
+  },
+  "Tư Linh Truyên, Nôm|332|5": {
+   "side": "NOM",
+   "nom": "算",
+   "qn": "toan",
+   "rank": 4,
+   "orig_nom": "𥳪",
+   "orig_qn": "toan",
+   "time": "2026-11-26 23:52:46"
+  },
+  "Tư Linh Truyên, Nôm|334|5": {
+   "side": "NOM",
+   "nom": "󰎡",
+   "qn": "ngỡ",
+   "rank": 6,
+   "orig_nom": "𢗃",
+   "orig_qn": "ngỡ",
+   "time": "2026-11-26 23:53:04"
+  },
+  "Tư Linh Truyên, Nôm|335|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-26 23:53:37"
+  },
+  "Tư Linh Truyên, Nôm|335|6": {
+   "side": "NOM",
+   "nom": "",
+   "qn": "mở",
+   "rank": 7,
+   "orig_nom": "搁",
+   "orig_qn": "mở",
+   "time": "2026-11-26 23:53:55"
+  },
+  "Tư Linh Truyên, Nôm|339|4": {
+   "side": "NOM",
+   "nom": "递",
+   "qn": "đệ",
+   "rank": 14,
+   "orig_nom": "𮞏",
+   "orig_qn": "đệ",
+   "time": "2026-11-26 23:54:30"
+  },
+  "Tư Linh Truyên, Nôm|360|4": {
+   "side": "NOM",
+   "nom": "算",
+   "qn": "toan",
+   "rank": 3,
+   "orig_nom": "𥳪",
+   "orig_qn": "toan",
+   "time": "2026-11-26 23:55:29"
+  },
+  "Tư Linh Truyên, Nôm|362|0": {
+   "side": "QN",
+   "nom": "𠓀",
+   "qn": "trước",
+   "rank": 5,
+   "orig_nom": "𠓀",
+   "orig_qn": "cuộc",
+   "time": "2026-11-26 23:55:44"
+  },
+  "Tư Linh Truyên, Nôm|372|4": {
+   "side": "NOM",
+   "nom": "平",
+   "qn": "bình",
+   "rank": 1,
+   "orig_nom": "千",
+   "orig_qn": "bình",
+   "time": "2026-11-26 23:56:20"
+  },
+  "Tư Linh Truyên, Nôm|375|5": {
+   "side": "KEEP",
+   "nom": "跢",
+   "qn": "rồi",
+   "rank": 1,
+   "orig_nom": "跢",
+   "orig_qn": "rồi",
+   "time": "2026-11-26 23:56:54"
+  },
+  "Tư Linh Truyên, Nôm|379|3": {
+   "side": "QN",
+   "nom": "細",
+   "qn": "tới",
+   "rank": 1,
+   "orig_nom": "細",
+   "orig_qn": "tóc",
+   "time": "2026-11-26 23:57:18"
+  },
+  "Tư Linh Truyên, Nôm|387|5": {
+   "side": "QN",
+   "nom": "𣈙",
+   "qn": "dầy",
+   "rank": 1,
+   "orig_nom": "𣈙",
+   "orig_qn": "dậy",
+   "time": "2026-11-26 23:57:59"
+  },
+  "Tư Linh Truyên, Nôm|388|0": {
+   "side": "NOM",
+   "nom": "顔",
+   "qn": "nhan",
+   "rank": 2,
+   "orig_nom": "𩓲",
+   "orig_qn": "nhan",
+   "time": "2026-11-26 23:58:14"
+  },
+  "Tư Linh Truyên, Nôm|389|2": {
+   "side": "KEEP",
+   "nom": "家",
+   "qn": "công",
+   "rank": 1,
+   "orig_nom": "家",
+   "orig_qn": "công",
+   "time": "2026-11-26 23:58:47"
+  },
+  "Tư Linh Truyên, Nôm|397|0": {
+   "side": "KEEP",
+   "nom": "剔",
+   "qn": "rẽ",
+   "rank": 12,
+   "orig_nom": "剔",
+   "orig_qn": "rẽ",
+   "time": "2026-11-26 23:59:44"
+  },
+  "Tư Linh Truyên, Nôm|398|1": {
+   "side": "KEEP",
+   "nom": "𢪌",
+   "qn": "chung",
+   "rank": 11,
+   "orig_nom": "𢪌",
+   "orig_qn": "chung",
+   "time": "2026-11-27 00:00:00"
+  },
+  "Tư Linh Truyên, Nôm|407|0": {
+   "side": "NOM",
+   "nom": "歲",
+   "qn": "tuổi",
+   "rank": 2,
+   "orig_nom": "穢",
+   "orig_qn": "tuổi",
+   "time": "2026-11-27 00:00:14"
+  },
+  "Tư Linh Truyên, Nôm|408|4": {
+   "side": "QN",
+   "nom": "唯",
+   "qn": "dõi",
+   "rank": 1,
+   "orig_nom": "唯",
+   "orig_qn": "nỗi",
+   "time": "2026-11-27 00:00:54"
+  },
+  "Tư Linh Truyên, Nôm|414|2": {
+   "side": "QN",
+   "nom": "董",
+   "qn": "đủng",
+   "rank": 1,
+   "orig_nom": "董",
+   "orig_qn": "tưng",
+   "time": "2026-11-27 00:01:11"
+  },
+  "Tư Linh Truyên, Nôm|414|4": {
+   "side": "QN",
+   "nom": "塘",
+   "qn": "đường",
+   "rank": 1,
+   "orig_nom": "塘",
+   "orig_qn": "đứng",
+   "time": "2026-11-27 00:01:13"
+  },
+  "Tư Linh Truyên, Nôm|417|4": {
+   "side": "QN",
+   "nom": "𫽄",
+   "qn": "chẳng",
+   "rank": 3,
+   "orig_nom": "𫽄",
+   "orig_qn": "hằng",
+   "time": "2026-11-27 00:01:30"
+  },
+  "Tư Linh Truyên, Nôm|420|3": {
+   "side": "KEEP",
+   "nom": "𠵩",
+   "qn": "thưở",
+   "rank": 1,
+   "orig_nom": "𠵩",
+   "orig_qn": "thưở",
+   "time": "2026-11-27 00:01:38"
+  },
+  "Tư Linh Truyên, Nôm|442|0": {
+   "side": "KEEP",
+   "nom": "𦖻",
+   "qn": "cau",
+   "rank": 17,
+   "orig_nom": "𦖻",
+   "orig_qn": "cau",
+   "time": "2026-11-27 00:02:19"
+  },
+  "Tư Linh Truyên, Nôm|442|2": {
+   "side": "QN",
+   "nom": "𰋝",
+   "qn": "lớn",
+   "rank": 3,
+   "orig_nom": "𰋝",
+   "orig_qn": "lùn",
+   "time": "2026-11-27 00:02:24"
+  },
+  "Tư Linh Truyên, Nôm|443|1": {
+   "side": "NOM",
+   "nom": "𣃱",
+   "qn": "vuông",
+   "rank": 1,
+   "orig_nom": "旄",
+   "orig_qn": "vuông",
+   "time": "2026-11-27 00:02:31"
+  },
+  "Tư Linh Truyên, Nôm|443|6": {
+   "side": "QN",
+   "nom": "𠶣",
+   "qn": "môi",
+   "rank": 9,
+   "orig_nom": "𠶣",
+   "orig_qn": "mũi",
+   "time": "2026-11-27 00:02:41"
+  },
+  "Tư Linh Truyên, Nôm|444|4": {
+   "side": "NOM",
+   "nom": "𣃱",
+   "qn": "vuông",
+   "rank": 1,
+   "orig_nom": "旄",
+   "orig_qn": "vuông",
+   "time": "2026-11-27 00:02:49"
+  },
+  "Tư Linh Truyên, Nôm|448|3": {
+   "side": "KEEP",
+   "nom": "剔",
+   "qn": "rẽ",
+   "rank": 19,
+   "orig_nom": "剔",
+   "orig_qn": "rẽ",
+   "time": "2026-11-27 00:02:57"
+  },
+  "Tư Linh Truyên, Nôm|449|0": {
+   "side": "QN",
+   "nom": "𫯳",
+   "qn": "chồng",
+   "rank": 19,
+   "orig_nom": "𫯳",
+   "orig_qn": "chẳng",
+   "time": "2026-11-27 00:03:08"
+  },
+  "Tư Linh Truyên, Nôm|457|6": {
+   "side": "QN",
+   "nom": "四",
+   "qn": "tứ",
+   "rank": 1,
+   "orig_nom": "四",
+   "orig_qn": "túi",
+   "time": "2026-11-27 00:03:16"
+  },
+  "Tư Linh Truyên, Nôm|462|2": {
+   "side": "QN",
+   "nom": "𠲝",
+   "qn": "dối",
+   "rank": 22,
+   "orig_nom": "𠲝",
+   "orig_qn": "giốc",
+   "time": "2026-11-27 00:03:32"
+  },
+  "Tư Linh Truyên, Nôm|464|0": {
+   "side": "QN",
+   "nom": "𠲝",
+   "qn": "dối",
+   "rank": 25,
+   "orig_nom": "𠲝",
+   "orig_qn": "giới",
+   "time": "2026-11-27 00:03:47"
+  },
+  "Tư Linh Truyên, Nôm|464|2": {
+   "side": "KEEP",
+   "nom": "剔",
+   "qn": "rẽ",
+   "rank": 21,
+   "orig_nom": "剔",
+   "orig_qn": "rẽ",
+   "time": "2026-11-27 00:04:06"
+  },
+  "Tư Linh Truyên, Nôm|464|3": {
+   "side": "QN",
+   "nom": "𠲝",
+   "qn": "dối",
+   "rank": 25,
+   "orig_nom": "𠲝",
+   "orig_qn": "giới",
+   "time": "2026-11-27 00:04:10"
+  },
+  "Tư Linh Truyên, Nôm|467|6": {
+   "side": "NOM",
+   "nom": "𨔾",
+   "qn": "giở",
+   "rank": 4,
+   "orig_nom": "躇",
+   "orig_qn": "giở",
+   "time": "2026-11-27 00:05:20"
+  },
+  "Tư Linh Truyên, Nôm|482|2": {
+   "side": "QN",
+   "nom": "𠰺",
+   "qn": "dậy",
+   "rank": 22,
+   "orig_nom": "𠰺",
+   "orig_qn": "giây",
+   "time": "2026-11-27 00:05:32"
+  },
+  "Tư Linh Truyên, Nôm|483|0": {
+   "side": "QN",
+   "nom": "󰡫",
+   "qn": "thế",
+   "rank": 20,
+   "orig_nom": "󰡫",
+   "orig_qn": "chí",
+   "time": "2026-11-27 00:05:43"
+  },
+  "Tư Linh Truyên, Nôm|483|4": {
+   "side": "QN",
+   "nom": "為",
+   "qn": "vì",
+   "rank": 9,
+   "orig_nom": "為",
+   "orig_qn": "nề",
+   "time": "2026-11-27 00:05:58"
+  },
+  "Tư Linh Truyên, Nôm|484|3": {
+   "side": "QN",
+   "nom": "𠰺",
+   "qn": "dậy",
+   "rank": 24,
+   "orig_nom": "𠰺",
+   "orig_qn": "giấy",
+   "time": "2026-11-27 00:06:26"
+  },
+  "Tư Linh Truyên, Nôm|492|4": {
+   "side": "NOM",
+   "nom": "𨔾",
+   "qn": "giở",
+   "rank": 5,
+   "orig_nom": "躇",
+   "orig_qn": "giở",
+   "time": "2026-11-27 00:07:06"
+  },
+  "Tư Linh Truyên, Nôm|496|4": {
+   "side": "NOM",
+   "nom": "𨄼",
+   "qn": "rời",
+   "rank": 13,
+   "orig_nom": "跢",
+   "orig_qn": "rời",
+   "time": "2026-11-27 00:08:16"
+  },
+  "Tư Linh Truyên, Nôm|500|3": {
+   "side": "QN",
+   "nom": "𠰺",
+   "qn": "dậy",
+   "rank": 26,
+   "orig_nom": "𠰺",
+   "orig_qn": "giày",
+   "time": "2026-11-27 00:08:41"
+  },
+  "Tư Linh Truyên, Nôm|501|0": {
+   "side": "QN",
+   "nom": "𨄼",
+   "qn": "rời",
+   "rank": 1,
+   "orig_nom": "𨄼",
+   "orig_qn": "rồi",
+   "time": "2026-11-27 00:08:54"
+  },
+  "Tư Linh Truyên, Nôm|512|0": {
+   "side": "QN",
+   "nom": "細",
+   "qn": "tới",
+   "rank": 1,
+   "orig_nom": "細",
+   "orig_qn": "cỏi",
+   "time": "2026-11-27 00:10:14"
+  },
+  "Tư Linh Truyên, Nôm|512|5": {
+   "side": "QN",
+   "nom": "𤉜",
+   "qn": "ràng",
+   "rank": 6,
+   "orig_nom": "𤉜",
+   "orig_qn": "dang",
+   "time": "2026-11-27 00:10:26"
+  },
+  "Tư Linh Truyên, Nôm|526|4": {
+   "side": "KEEP",
+   "nom": "家",
+   "qn": "công",
+   "rank": 1,
+   "orig_nom": "家",
+   "orig_qn": "công",
+   "time": "2026-11-27 00:11:41"
+  },
+  "Tư Linh Truyên, Nôm|533|3": {
+   "side": "KEEP",
+   "nom": "剔",
+   "qn": "nỡ",
+   "rank": 9,
+   "orig_nom": "剔",
+   "orig_qn": "nỡ",
+   "time": "2026-11-27 00:12:29"
+  },
+  "Tư Linh Truyên, Nôm|533|6": {
+   "side": "NOM",
+   "nom": "𦓡",
+   "qn": "mà",
+   "rank": 11,
+   "orig_nom": "腐",
+   "orig_qn": "mà",
+   "time": "2026-11-27 00:13:11"
+  },
+  "Tư Linh Truyên, Nôm|533|7": {
+   "side": "NOM",
+   "nom": "撰",
+   "qn": "toan",
+   "rank": 6,
+   "orig_nom": "𥳪",
+   "orig_qn": "toan",
+   "time": "2026-11-27 00:13:50"
+  },
+  "Tư Linh Truyên, Nôm|535|5": {
+   "side": "NOM",
+   "nom": "撰",
+   "qn": "toan",
+   "rank": 9,
+   "orig_nom": "憚",
+   "orig_qn": "toan",
+   "time": "2026-11-27 00:17:28"
+  },
+  "Tư Linh Truyên, Nôm|557|1": {
+   "side": "QN",
+   "nom": "𣈙",
+   "qn": "rầy",
+   "rank": 4,
+   "orig_nom": "𣈙",
+   "orig_qn": "dạy",
+   "time": "2026-11-27 00:18:47"
+  },
+  "Tư Linh Truyên, Nôm|559|6": {
+   "side": "QN",
+   "nom": "調",
+   "qn": "đều",
+   "rank": 7,
+   "orig_nom": "調",
+   "orig_qn": "tên",
+   "time": "2026-11-27 00:19:10"
+  },
+  "Tư Linh Truyên, Nôm|571|1": {
+   "side": "QN",
+   "nom": "𣈙",
+   "qn": "dầy",
+   "rank": 2,
+   "orig_nom": "𣈙",
+   "orig_qn": "dậy",
+   "time": "2026-11-27 00:19:18"
+  },
+  "Tư Linh Truyên, Nôm|572|5": {
+   "side": "QN",
+   "nom": "為",
+   "qn": "ví",
+   "rank": 14,
+   "orig_nom": "為",
+   "orig_qn": "sư",
+   "time": "2026-11-27 00:19:31"
+  },
+  "Tư Linh Truyên, Nôm|578|1": {
+   "side": "NOM",
+   "nom": "娟",
+   "qn": "quyên",
+   "rank": 1,
+   "orig_nom": "姢",
+   "orig_qn": "quyên",
+   "time": "2026-11-27 00:19:59"
+  },
+  "Tư Linh Truyên, Nôm|578|5": {
+   "side": "NOM",
+   "nom": "平",
+   "qn": "bình",
+   "rank": 1,
+   "orig_nom": "千",
+   "orig_qn": "bình",
+   "time": "2026-11-27 00:20:12"
+  },
+  "Tư Linh Truyên, Nôm|591|0": {
+   "side": "QN",
+   "nom": "時",
+   "qn": "thời",
+   "rank": 1,
+   "orig_nom": "時",
+   "orig_qn": "chối",
+   "time": "2026-11-27 00:20:22"
+  },
+  "Tư Linh Truyên, Nôm|593|4": {
+   "side": "QN",
+   "nom": "𤀒",
+   "qn": "nhỏ",
+   "rank": 1,
+   "orig_nom": "𤀒",
+   "orig_qn": "nỡ",
+   "time": "2026-11-27 00:20:42"
+  },
+  "Tư Linh Truyên, Nôm|598|4": {
+   "side": "KEEP",
+   "nom": "呐",
+   "qn": "dư",
+   "rank": 1,
+   "orig_nom": "呐",
+   "orig_qn": "dư",
+   "time": "2026-11-27 00:21:20"
+  },
+  "Tư Linh Truyên, Nôm|598|3": {
+   "side": "QN",
+   "nom": "𠼯",
+   "qn": "khứa",
+   "rank": 2,
+   "orig_nom": "𠼯",
+   "orig_qn": "thúa",
+   "time": "2026-11-27 00:21:32"
+  },
+  "Tư Linh Truyên, Nôm|610|1": {
+   "side": "KEEP",
+   "nom": "真",
+   "qn": "sực",
+   "rank": 1,
+   "orig_nom": "真",
+   "orig_qn": "sực",
+   "time": "2026-11-27 00:23:17"
+  },
+  "Tư Linh Truyên, Nôm|624|0": {
+   "side": "KEEP",
+   "nom": "仍",
+   "qn": "bên",
+   "rank": 1,
+   "orig_nom": "仍",
+   "orig_qn": "bên",
+   "time": "2026-11-27 00:24:32"
+  },
+  "Tư Linh Truyên, Nôm|633|4": {
+   "side": "QN",
+   "nom": "方",
+   "qn": "phương",
+   "rank": 7,
+   "orig_nom": "方",
+   "orig_qn": "đông",
+   "time": "2026-11-27 00:26:00"
+  },
+  "Tư Linh Truyên, Nôm|633|5": {
+   "side": "QN",
+   "nom": "東",
+   "qn": "đông",
+   "rank": 8,
+   "orig_nom": "東",
+   "orig_qn": "phương",
+   "time": "2026-11-27 00:25:58"
+  },
+  "Tư Linh Truyên, Nôm|636|4": {
+   "side": "NOM",
+   "nom": "雉",
+   "qn": "trẻ",
+   "rank": 6,
+   "orig_nom": "難",
+   "orig_qn": "trẻ",
+   "time": "2026-11-27 00:27:03"
+  },
+  "Tư Linh Truyên, Nôm|637|7": {
+   "side": "NOM",
+   "nom": "𨗠",
+   "qn": "mây",
+   "rank": 12,
+   "orig_nom": "遽",
+   "orig_qn": "mây",
+   "time": "2026-11-27 00:27:29"
+  },
+  "Tư Linh Truyên, Nôm|642|0": {
+   "side": "QN",
+   "nom": "隊",
+   "qn": "đòi",
+   "rank": 2,
+   "orig_nom": "隊",
+   "orig_qn": "đoái",
+   "time": "2026-11-27 00:28:04"
+  },
+  "Tư Linh Truyên, Nôm|650|4": {
+   "side": "QN",
+   "nom": "知",
+   "qn": "tri",
+   "rank": 2,
+   "orig_nom": "知",
+   "orig_qn": "tư",
+   "time": "2026-11-27 00:28:16"
+  },
+  "Tư Linh Truyên, Nôm|653|2": {
+   "side": "NOM",
+   "nom": "𨉓",
+   "qn": "mình",
+   "rank": 9,
+   "orig_nom": "又",
+   "orig_qn": "mình",
+   "time": "2026-11-27 00:28:47"
+  },
+  "Tư Linh Truyên, Nôm|656|0": {
+   "side": "QN",
+   "nom": "㹯",
+   "qn": "hươu",
+   "rank": 13,
+   "orig_nom": "㹯",
+   "orig_qn": "hiêu",
+   "time": "2026-11-27 00:29:23"
+  },
+  "Tư Linh Truyên, Nôm|658|5": {
+   "side": "NOM",
+   "nom": "𪀄",
+   "qn": "chim",
+   "rank": 3,
+   "orig_nom": "又",
+   "orig_qn": "chim",
+   "time": "2026-11-27 00:29:37"
+  },
+  "Tư Linh Truyên, Nôm|662|3": {
+   "side": "KEEP",
+   "nom": "𢪀",
+   "qn": "những",
+   "rank": 2,
+   "orig_nom": "𢪀",
+   "orig_qn": "những",
+   "time": "2026-11-27 00:30:47"
+  },
+  "Tư Linh Truyên, Nôm|670|3": {
+   "side": "QN",
+   "nom": "濶",
+   "qn": "khoát",
+   "rank": 2,
+   "orig_nom": "濶",
+   "orig_qn": "khoản",
+   "time": "2026-11-27 00:31:06"
+  },
+  "Tư Linh Truyên, Nôm|676|0": {
+   "side": "QN",
+   "nom": "停",
+   "qn": "dừng",
+   "rank": 4,
+   "orig_nom": "停",
+   "orig_qn": "giùng",
+   "time": "2026-11-27 00:31:13"
+  },
+  "Tư Linh Truyên, Nôm|680|7": {
+   "side": "NOM",
+   "nom": "空",
+   "qn": "không",
+   "rank": 1,
+   "orig_nom": "字",
+   "orig_qn": "không",
+   "time": "2026-11-27 00:32:02"
+  },
+  "Tư Linh Truyên, Nôm|686|4": {
+   "side": "QN",
+   "nom": "停",
+   "qn": "dừng",
+   "rank": 1,
+   "orig_nom": "停",
+   "orig_qn": "giùng",
+   "time": "2026-11-27 00:32:22"
+  },
+  "Tư Linh Truyên, Nôm|689|3": {
+   "side": "KEEP",
+   "nom": "倘",
+   "qn": "tó",
+   "rank": 1,
+   "orig_nom": "倘",
+   "orig_qn": "tó",
+   "time": "2026-11-27 00:32:52"
+  },
+  "Tư Linh Truyên, Nôm|691|0": {
+   "side": "QN",
+   "nom": "𥪝",
+   "qn": "trong",
+   "rank": 7,
+   "orig_nom": "𥪝",
+   "orig_qn": "bung",
+   "time": "2026-11-27 00:33:35"
+  },
+  "Tư Linh Truyên, Nôm|692|4": {
+   "side": "NOM",
+   "nom": "󱎶",
+   "qn": "trẻ",
+   "rank": 5,
+   "orig_nom": "𱚫",
+   "orig_qn": "trẻ",
+   "time": "2026-11-27 00:34:10"
+  },
+  "Tư Linh Truyên, Nôm|696|6": {
+   "side": "QN",
+   "nom": "聀",
+   "qn": "giấc",
+   "rank": 1,
+   "orig_nom": "聀",
+   "orig_qn": "giãi",
+   "time": "2026-11-27 00:34:19"
+  },
+  "Tư Linh Truyên, Nôm|700|3": {
+   "side": "KEEP",
+   "nom": "尒",
+   "qn": "mầy",
+   "rank": 4,
+   "orig_nom": "尒",
+   "orig_qn": "mầy",
+   "time": "2026-11-27 00:34:38"
+  },
+  "Tư Linh Truyên, Nôm|706|6": {
+   "side": "QN",
+   "nom": "侼",
+   "qn": "bụt",
+   "rank": 23,
+   "orig_nom": "侼",
+   "orig_qn": "biết",
+   "time": "2026-11-27 00:35:13"
+  },
+  "Tư Linh Truyên, Nôm|708|6": {
+   "side": "QN",
+   "nom": "𠰺",
+   "qn": "dậy",
+   "rank": 22,
+   "orig_nom": "𠰺",
+   "orig_qn": "giây",
+   "time": "2026-11-27 00:35:34"
+  },
+  "Tư Linh Truyên, Nôm|717|1": {
+   "side": "QN",
+   "nom": "域",
+   "qn": "vực",
+   "rank": 13,
+   "orig_nom": "域",
+   "orig_qn": "việc",
+   "time": "2026-11-27 00:36:20"
+  },
+  "Tư Linh Truyên, Nôm|724|7": {
+   "side": "QN",
+   "nom": "唹",
+   "qn": "ưa",
+   "rank": 6,
+   "orig_nom": "唹",
+   "orig_qn": "vừa",
+   "time": "2026-11-27 00:36:29"
+  },
+  "Tư Linh Truyên, Nôm|726|6": {
+   "side": "NOM",
+   "nom": "聀",
+   "qn": "giấc",
+   "rank": 1,
+   "orig_nom": "賦",
+   "orig_qn": "giấc",
+   "time": "2026-11-27 00:36:37"
+  },
+  "Tư Linh Truyên, Nôm|746|4": {
+   "side": "KEEP",
+   "nom": "傲",
+   "qn": "nợ",
+   "rank": 2,
+   "orig_nom": "傲",
+   "orig_qn": "nợ",
+   "time": "2026-11-27 00:37:16"
+  },
+  "Tư Linh Truyên, Nôm|752|1": {
+   "side": "QN",
+   "nom": "調",
+   "qn": "đều",
+   "rank": 7,
+   "orig_nom": "調",
+   "orig_qn": "kêu",
+   "time": "2026-11-27 00:37:44"
+  },
+  "Tư Linh Truyên, Nôm|758|6": {
+   "side": "QN",
+   "nom": "祥",
+   "qn": "tường",
+   "rank": 1,
+   "orig_nom": "祥",
+   "orig_qn": "trương",
+   "time": "2026-11-27 00:38:09"
+  },
+  "Tư Linh Truyên, Nôm|760|2": {
+   "side": "QN",
+   "nom": "耒",
+   "qn": "rồị",
+   "rank": 51,
+   "orig_nom": "耒",
+   "orig_qn": "mới",
+   "time": "2026-11-27 00:38:33"
+  },
+  "Tư Linh Truyên, Nôm|760|3": {
+   "side": "QN",
+   "nom": "買",
+   "qn": "mới",
+   "rank": 1,
+   "orig_nom": "買",
+   "orig_qn": "mở",
+   "time": "2026-11-27 00:38:44"
+  },
+  "Tư Linh Truyên, Nôm|762|6": {
+   "side": "NOM",
+   "nom": "顔",
+   "qn": "nhan",
+   "rank": 5,
+   "orig_nom": "𩓲",
+   "orig_qn": "nhan",
+   "time": "2026-11-27 00:39:05"
+  },
+  "Tư Linh Truyên, Nôm|771|0": {
+   "side": "QN",
+   "nom": "自",
+   "qn": "tự",
+   "rank": 2,
+   "orig_nom": "自",
+   "orig_qn": "cục",
+   "time": "2026-11-27 00:39:14"
+  },
+  "Tư Linh Truyên, Nôm|772|0": {
+   "side": "QN",
+   "nom": "𠰺",
+   "qn": "dậy",
+   "rank": 26,
+   "orig_nom": "𠰺",
+   "orig_qn": "giày",
+   "time": "2026-11-27 00:39:23"
+  },
+  "Tư Linh Truyên, Nôm|774|7": {
+   "side": "NOM",
+   "nom": "漏",
+   "qn": "làu",
+   "rank": 12,
+   "orig_nom": "又",
+   "orig_qn": "làu",
+   "time": "2026-11-27 00:39:34"
+  },
+  "Tư Linh Truyên, Nôm|782|1": {
+   "side": "KEEP",
+   "nom": "弥",
+   "qn": "bên",
+   "rank": 6,
+   "orig_nom": "弥",
+   "orig_qn": "bên",
+   "time": "2026-11-27 00:40:15"
+  },
+  "Tư Linh Truyên, Nôm|782|4": {
+   "side": "KEEP",
+   "nom": "兜",
+   "qn": "nhủ",
+   "rank": 2,
+   "orig_nom": "兜",
+   "orig_qn": "nhủ",
+   "time": "2026-11-27 00:40:42"
+  },
+  "Tư Linh Truyên, Nôm|787|3": {
+   "side": "NOM",
+   "nom": "焒",
+   "qn": "rỡ",
+   "rank": 3,
+   "orig_nom": "又",
+   "orig_qn": "rỡ",
+   "time": "2026-11-27 00:40:48"
+  },
+  "Tư Linh Truyên, Nôm|788|7": {
+   "side": "NOM",
+   "nom": "󱫳",
+   "qn": "nhì",
+   "rank": 7,
+   "orig_nom": "𱍽",
+   "orig_qn": "nhì",
+   "time": "2026-11-27 00:41:10"
+  },
+  "Tư Linh Truyên, Nôm|800|3": {
+   "side": "NOM",
+   "nom": "𠲥",
+   "qn": "lể",
+   "rank": 10,
+   "orig_nom": "啂",
+   "orig_qn": "lể",
+   "time": "2026-11-27 00:41:36"
+  },
+  "Tư Linh Truyên, Nôm|809|3": {
+   "side": "QN",
+   "nom": "胣",
+   "qn": "giạ",
+   "rank": 7,
+   "orig_nom": "胣",
+   "orig_qn": "giở",
+   "time": "2026-11-27 00:41:53"
+  },
+  "Tư Linh Truyên, Nôm|812|7": {
+   "side": "NOM",
+   "nom": "除",
+   "qn": "giờ",
+   "rank": 1,
+   "orig_nom": "蒢",
+   "orig_qn": "giờ",
+   "time": "2026-11-27 00:42:41"
+  },
+  "Tư Linh Truyên, Nôm|818|0": {
+   "side": "NOM",
+   "nom": "細",
+   "qn": "tới",
+   "rank": 1,
+   "orig_nom": "细",
+   "orig_qn": "tới",
+   "time": "2026-11-27 00:42:51"
+  },
+  "Tư Linh Truyên, Nôm|822|3": {
+   "side": "NOM",
+   "nom": "𬟛",
+   "qn": "cũ",
+   "rank": 14,
+   "orig_nom": "貓",
+   "orig_qn": "cũ",
+   "time": "2026-11-27 00:43:37"
+  },
+  "Tư Linh Truyên, Nôm|824|2": {
+   "side": "QN",
+   "nom": "𣈙",
+   "qn": "dầy",
+   "rank": 3,
+   "orig_nom": "𣈙",
+   "orig_qn": "dãy",
+   "time": "2026-11-27 00:43:58"
+  },
+  "Tư Linh Truyên, Nôm|824|6": {
+   "side": "QN",
+   "nom": "𣈙",
+   "qn": "dầy",
+   "rank": 8,
+   "orig_nom": "𣈙",
+   "orig_qn": "đây",
+   "time": "2026-11-27 00:44:04"
+  },
+  "Tư Linh Truyên, Nôm|836|4": {
+   "side": "KEEP",
+   "nom": "尒",
+   "qn": "mây",
+   "rank": 21,
+   "orig_nom": "尒",
+   "orig_qn": "mây",
+   "time": "2026-11-27 00:44:22"
+  },
+  "Tư Linh Truyên, Nôm|849|0": {
+   "side": "QN",
+   "nom": "當",
+   "qn": "đương",
+   "rank": 5,
+   "orig_nom": "當",
+   "orig_qn": "dừng",
+   "time": "2026-11-27 00:45:00"
+  },
+  "Tư Linh Truyên, Nôm|865|2": {
+   "side": "NOM",
+   "nom": "没",
+   "qn": "một",
+   "rank": 3,
+   "orig_nom": "汶",
+   "orig_qn": "một",
+   "time": "2026-11-27 00:45:55"
+  },
+  "Tư Linh Truyên, Nôm|870|1": {
+   "side": "KEEP",
+   "nom": "屍",
+   "qn": "vẽ",
+   "rank": 3,
+   "orig_nom": "屍",
+   "orig_qn": "vẽ",
+   "time": "2026-11-27 00:46:05"
+  },
+  "Tư Linh Truyên, Nôm|879|5": {
+   "side": "KEEP",
+   "nom": "萊",
+   "qn": "nhài",
+   "rank": 5,
+   "orig_nom": "萊",
+   "orig_qn": "nhài",
+   "time": "2026-11-27 00:46:38"
+  },
+  "Tư Linh Truyên, Nôm|880|3": {
+   "side": "NOM",
+   "nom": "𣇫",
+   "qn": "thuở",
+   "rank": 10,
+   "orig_nom": "𠵩",
+   "orig_qn": "thuở",
+   "time": "2026-11-27 00:47:04"
+  },
+  "Tư Linh Truyên, Nôm|885|5": {
+   "side": "QN",
+   "nom": "𣈙",
+   "qn": "dầy",
+   "rank": 1,
+   "orig_nom": "𣈙",
+   "orig_qn": "đẫy",
+   "time": "2026-11-27 00:47:15"
+  },
+  "Tư Linh Truyên, Nôm|885|7": {
+   "side": "QN",
+   "nom": "𠄻",
+   "qn": "lăm",
+   "rank": 1,
+   "orig_nom": "𠄻",
+   "orig_qn": "nhăm",
+   "time": "2026-11-27 00:47:33"
+  },
+  "Tư Linh Truyên, Nôm|891|5": {
+   "side": "QN",
+   "nom": "𨄼",
+   "qn": "rời",
+   "rank": 1,
+   "orig_nom": "𨄼",
+   "orig_qn": "rõi",
+   "time": "2026-11-27 00:47:52"
+  },
+  "Tư Linh Truyên, Nôm|892|5": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 00:49:08"
+  },
+  "Tư Linh Truyên, Nôm|894|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 5,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 00:48:57"
+  },
+  "Tư Linh Truyên, Nôm|894|2": {
+   "side": "QN",
+   "nom": "𠳒",
+   "qn": "nhời",
+   "rank": 17,
+   "orig_nom": "𠳒",
+   "orig_qn": "nhắc",
+   "time": "2026-11-27 00:49:19"
+  },
+  "Tư Linh Truyên, Nôm|894|5": {
+   "side": "NOM",
+   "nom": "𥹰",
+   "qn": "lâu",
+   "rank": 7,
+   "orig_nom": "又",
+   "orig_qn": "lâu",
+   "time": "2026-11-27 00:49:29"
+  },
+  "Tư Linh Truyên, Nôm|901|0": {
+   "side": "QN",
+   "nom": "祥",
+   "qn": "tường",
+   "rank": 9,
+   "orig_nom": "祥",
+   "orig_qn": "cùng",
+   "time": "2026-11-27 00:50:02"
+  },
+  "Tư Linh Truyên, Nôm|903|5": {
+   "side": "QN",
+   "nom": "𤉜",
+   "qn": "dàng",
+   "rank": 3,
+   "orig_nom": "𤉜",
+   "orig_qn": "dang",
+   "time": "2026-11-27 00:50:10"
+  },
+  "Tư Linh Truyên, Nôm|911|7": {
+   "side": "NOM",
+   "nom": "𧕚",
+   "qn": "trai",
+   "rank": 18,
+   "orig_nom": "𲀀",
+   "orig_qn": "trai",
+   "time": "2026-11-27 00:50:40"
+  },
+  "Tư Linh Truyên, Nôm|913|4": {
+   "side": "QN",
+   "nom": "𦊚",
+   "qn": "bốn",
+   "rank": 5,
+   "orig_nom": "𦊚",
+   "orig_qn": "bồi",
+   "time": "2026-11-27 00:51:09"
+  },
+  "Tư Linh Truyên, Nôm|916|1": {
+   "side": "NOM",
+   "nom": "貼",
+   "qn": "xem",
+   "rank": 11,
+   "orig_nom": "𦕒",
+   "orig_qn": "xem",
+   "time": "2026-11-27 00:51:27"
+  },
+  "Tư Linh Truyên, Nôm|917|7": {
+   "side": "QN",
+   "nom": "𤉜",
+   "qn": "ràng",
+   "rank": 7,
+   "orig_nom": "𤉜",
+   "orig_qn": "dang",
+   "time": "2026-11-27 00:51:32"
+  },
+  "Tư Linh Truyên, Nôm|920|3": {
+   "side": "KEEP",
+   "nom": "侍",
+   "qn": "đắng",
+   "rank": 3,
+   "orig_nom": "侍",
+   "orig_qn": "đắng",
+   "time": "2026-11-27 00:53:01"
+  },
+  "Tư Linh Truyên, Nôm|941|6": {
+   "side": "QN",
+   "nom": "唯",
+   "qn": "dõi",
+   "rank": 5,
+   "orig_nom": "唯",
+   "orig_qn": "nỡ",
+   "time": "2026-11-27 00:53:38"
+  },
+  "Tư Linh Truyên, Nôm|944|0": {
+   "side": "QN",
+   "nom": "㗂",
+   "qn": "tiếng",
+   "rank": 25,
+   "orig_nom": "㗂",
+   "orig_qn": "cùng",
+   "time": "2026-11-27 00:53:54"
+  },
+  "Tư Linh Truyên, Nôm|949|7": {
+   "side": "NOM",
+   "nom": "𡃊",
+   "qn": "ghê",
+   "rank": 6,
+   "orig_nom": "𮃛",
+   "orig_qn": "ghê",
+   "time": "2026-11-27 00:54:12"
+  },
+  "Tư Linh Truyên, Nôm|395|7": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 00:54:41"
+  },
+  "Tư Linh Truyên, Nôm|508|3": {
+   "side": "KEEP",
+   "nom": "躇",
+   "qn": "giở",
+   "rank": 20,
+   "orig_nom": "躇",
+   "orig_qn": "giở",
+   "time": "2026-11-27 00:56:07"
   }
  }
 }

@@ -1,0 +1,306 @@
+{
+  "engine": "row_text",
+  "page": 9,
+  "saved": "2026-11-09T06:40:52.765332",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.009.jpg",
+    "sha256": "84501840174da3b0f42b2aab94f0a6341b1439b1b0efe2031fe38279062599f5",
+    "size": 930667
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "𨀐𤾓陣盎彊揚",
+      "points": [
+        [
+          302,
+          178
+        ],
+        [
+          1589,
+          178
+        ],
+        [
+          1589,
+          300
+        ],
+        [
+          302,
+          300
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "淶光𠇍𠊛尼道路",
+      "points": [
+        [
+          304,
+          386
+        ],
+        [
+          1597,
+          386
+        ],
+        [
+          1597,
+          512
+        ],
+        [
+          304,
+          512
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𩲉江士别兜尋沾举漢天",
+      "points": [
+        [
+          194,
+          594
+        ],
+        [
+          1683,
+          594
+        ],
+        [
+          1683,
+          715
+        ],
+        [
+          194,
+          715
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 9,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "窻𩂟𩙌𠾕𠺙准他邻",
+      "points": [
+        [
+          207,
+          711
+        ],
+        [
+          1675,
+          711
+        ],
+        [
+          1675,
+          842
+        ],
+        [
+          207,
+          842
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𩈘征人坤𤳰吏潭浪辛雅仰十",
+      "points": [
+        [
+          191,
+          1013
+        ],
+        [
+          1715,
+          1013
+        ],
+        [
+          1715,
+          1125
+        ],
+        [
+          191,
+          1125
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 9,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "垃姑𤈛𠖤焒蕩𤐝澄古渡怲",
+      "points": [
+        [
+          197,
+          1121
+        ],
+        [
+          1694,
+          1121
+        ],
+        [
+          1694,
+          1233
+        ],
+        [
+          197,
+          1233
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "喂",
+      "points": [
+        [
+          855,
+          1442
+        ],
+        [
+          1010,
+          1442
+        ],
+        [
+          1010,
+          1542
+        ],
+        [
+          855,
+          1542
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 1,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "汝𢚸忠義技𨍦怨條",
+      "points": [
+        [
+          212,
+          1626
+        ],
+        [
+          1685,
+          1626
+        ],
+        [
+          1685,
+          1755
+        ],
+        [
+          212,
+          1755
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "姅局功名𢺺分令古",
+      "points": [
+        [
+          181,
+          1836
+        ],
+        [
+          1672,
+          1836
+        ],
+        [
+          1672,
+          1960
+        ],
+        [
+          181,
+          1960
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "㨋兑惜昌銅䏧鉄青",
+      "points": [
+        [
+          196,
+          2045
+        ],
+        [
+          1661,
+          2045
+        ],
+        [
+          1661,
+          2166
+        ],
+        [
+          196,
+          2166
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "實劍㐌𤾓鍊曾固𡢻",
+      "points": [
+        [
+          210,
+          2162
+        ],
+        [
+          1675,
+          2162
+        ],
+        [
+          1675,
+          2280
+        ],
+        [
+          210,
+          2280
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    }
+  ]
+}

@@ -4,6 +4,11 @@ Với mỗi cặp lệch (chữ c, âm s) có ba loại giả thuyết:
   KEEP : giữ nguyên (c, s)                                        điểm = keep_score
   NOM  : thay chữ c -> c'   (c' đọc được là s, giống hình với c)   điểm = nom_prior + w_vis·(−log(hạng_hình+1)) + w_nlm·ΔlogP_Nôm
   QN   : thay âm  s -> s'   (s' là âm đọc của c, gần s về chính tả) điểm = qn_prior − w_ortho·khoảng_cách + w_qlm·ΔlogP_Việt
+Ứng viên NOM còn có thể đến từ quan hệ dị thể chữ (giản thể, phồn thể, dị thể theo Unihan, NomVietDict.variant_candidates): chữ c' cùng một chữ với c
+khác dạng viết và đọc được là s. Chữ chỉ do dị thể mới có (không nằm trong danh sách giống hình) được chấm như hạng hình 1 nhưng bị chặn dưới mọi ứng viên NOM/QN
+sẵn có của cặp đó một khoảng VARIANT_MARGIN, nên không làm đổi thứ hạng hay việc nằm trong top-k của ứng viên cũ.
+Ứng viên QN còn gồm dạng viết theo vùng của âm đọc (d <-> r, gi <-> tr, NomVietDict.regional_candidates) và các âm chỉ gần khi tính khoảng cách
+nới lỏng (hỏi / ngã nhầm, bỏ sót i y u o cuối vần, NomVietDict.relaxed_candidates); cả hai chặn dưới mọi ứng viên sẵn có theo cùng cách.
 confidence = softmax(điểm) trên mọi giả thuyết của cặp đó. Ứng viên được sắp giảm dần theo điểm.
 
 Trọng số mặc định được dò bằng random search trên lỗi giả lập (dự án SinoNom-alignment, experiments/tune_weights.py; không nằm trong thư mục này),
@@ -28,9 +33,10 @@ DEFAULT_WEIGHTS = {
     "qn_prior": 0.0,
     "keep_score": -4.0,  # điểm của giả thuyết giữ nguyên
     "max_ortho": 1.2,    # khoảng cách chính tả tối đa để một âm được làm ứng viên
-    "lm_topk": 0,        # số ứng viên Nôm CHỈ do LM đưa ra (không giống hình) được thêm vào; 0 = tắt
+    "lm_topk": 20,       # số ứng viên Nôm CHỈ do LM đưa ra (đọc được âm nhưng không giống hình) được thêm vào, tối đa LM_CANDIDATES_MAX; 0 = tắt
 }
 LM_CANDIDATES_MAX = 20
+VARIANT_MARGIN = 0.01      # ứng viên chỉ do dị thể chữ / dạng vùng luôn thấp hơn mọi ứng viên NOM/QN sẵn có ít nhất từng này điểm
 
 
 @dataclass
@@ -93,8 +99,18 @@ class CandidateScorer:
         for st in sites:
             sent = sentences[st.sent_idx]
             targets = dic.viet_to_nom(st.qn)
-            nom = {c2: {"visual_rank": r} for c2, r in dic.nom_candidates(st.nom, st.qn)}
+            exact = dic.viet_to_nom(st.qn, regional=False)
+            nom = {c2: {"visual_rank": r, **({} if c2 in exact else {"regional_only": True})} for c2, r in dic.nom_candidates(st.nom, st.qn)}
+            for c2 in dic.variant_candidates(st.nom, st.qn):
+                ev = nom.setdefault(c2, {"visual_rank": None, "variant_only": True})   # đã có hạng hình thì giữ hạng đó, chỉ đánh dấu dị thể
+                ev["variant"] = True
             qn = {s2: {"ortho": d} for s2, d in dic.viet_candidates(st.nom, st.qn, W["max_ortho"])}
+            for s2, d in dic.regional_candidates(st.nom, st.qn, W["max_ortho"]):
+                qn.setdefault(s2, {"ortho": d, "regional_only": True})
+            for s2, d in dic.relaxed_candidates(st.nom, st.qn, W["max_ortho"]):
+                qn.setdefault(s2, {"ortho": d, "relaxed_only": True})
+            for s2, d in dic.reading_candidates(st.nom, st.qn):       # các âm đọc còn lại, bất kể khoảng cách: luôn hiện đủ cho người duyệt
+                qn.setdefault(s2, {"ortho": d, "reading_only": True})
             feats.append({"site": st, "sent": sent, "targets": targets, "nom": nom, "qn": qn})
 
         # --- LM chữ Nôm: softmax hạn chế trong {chữ đọc được là s} ∪ {chữ hiện tại}
@@ -113,7 +129,7 @@ class CandidateScorer:
                     ranked = sorted(((v, c2) for c2, v in lm.items()
                                      if v is not None and c2 in f["targets"] and c2 != f["site"].nom), reverse=True)
                     for _, c2 in ranked[: min(W["lm_topk"], LM_CANDIDATES_MAX)]:
-                        f["nom"].setdefault(c2, {"visual_rank": None})
+                        f["nom"].setdefault(c2, {"visual_rank": None, "lm_only": True})
                 for c2, ev in f["nom"].items():
                     new = lm.get(c2)
                     ev["lm_oov"] = new is None
@@ -140,16 +156,39 @@ class CandidateScorer:
             st = f["site"]
             hyps = [{"side": "KEEP", "nom": st.nom, "qn": st.qn, "score": W["keep_score"], "evidence": {}}]
             for c2, ev in f["nom"].items():
-                rank = ev["visual_rank"] if ev["visual_rank"] is not None else W["novis_rank"]
+                rank = ev["visual_rank"]
+                if rank is None:
+                    rank = 1 if ev.get("variant_only") else W["novis_rank"]
                 d = ev.get("nlm_delta", 0.0)
                 sc = W["nom_prior"] + W["w_vis"] * (-math.log(rank + 1)) + W["w_nlm"] * d
-                hyps.append({"side": "NOM", "nom": c2, "qn": st.qn, "score": sc, "evidence": {
-                    "visual_rank": ev["visual_rank"], "nlm_delta": round(d, 3), "lm_oov": ev.get("lm_oov")}})
+                evidence = {"visual_rank": ev["visual_rank"], "nlm_delta": round(d, 3), "lm_oov": ev.get("lm_oov")}
+                if ev.get("variant"):
+                    evidence["variant"] = "only" if ev.get("variant_only") else "also_similar"
+                if ev.get("lm_only"):            # chữ đọc được âm này nhưng không giống hình: chỉ do SinoNomBERT xếp hạng
+                    evidence["lm"] = "only"
+                if ev.get("regional_only"):      # chữ chỉ đọc được âm này qua dạng vùng d <-> r
+                    evidence["regional"] = "only"
+                hyps.append({"side": "NOM", "nom": c2, "qn": st.qn, "score": sc, "evidence": evidence})
             for s2, ev in f["qn"].items():
                 d = ev.get("qlm_delta", 0.0)
                 sc = W["qn_prior"] - W["w_ortho"] * ev["ortho"] + W["w_qlm"] * d
-                hyps.append({"side": "QN", "nom": st.nom, "qn": match_case(s2, st.qn), "score": sc, "evidence": {
-                    "ortho": round(ev["ortho"], 2), "qlm_delta": round(d, 3)}})
+                evidence = {"ortho": round(ev["ortho"], 2), "qlm_delta": round(d, 3)}
+                if ev.get("regional_only"):
+                    evidence["regional"] = "only"
+                if ev.get("relaxed_only"):
+                    evidence["relaxed"] = "only"
+                if ev.get("reading_only"):
+                    evidence["reading"] = "only"
+                hyps.append({"side": "QN", "nom": st.nom, "qn": match_case(s2, st.qn), "score": sc, "evidence": evidence})
+            # ứng viên chỉ do dị thể chữ hoặc dạng vùng mới có không được vượt ứng viên sẵn có; thứ tự giữa chúng với nhau giữ nguyên
+            only = [h for h in hyps if h["evidence"].get("variant") == "only" or h["evidence"].get("regional") == "only"
+                    or h["evidence"].get("relaxed") == "only" or h["evidence"].get("reading") == "only" or h["evidence"].get("lm") == "only"]
+            others = [h["score"] for h in hyps if h["side"] != "KEEP" and h not in only]
+            if only and others:        # thấp hơn mọi ứng viên sẵn có: thứ hạng và việc nằm trong top-k của chúng không đổi
+                over = max(h["score"] for h in only) - (min(others) - VARIANT_MARGIN)
+                if over > 0:
+                    for h in only:
+                        h["score"] -= over
             probs = _softmax([h["score"] for h in hyps])
             for h, p in zip(hyps, probs):
                 h["confidence"] = p

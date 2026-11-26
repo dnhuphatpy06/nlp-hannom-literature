@@ -13,7 +13,7 @@ Các mô-đun:
   session     phiên gán nhãn (lựa chọn, tự lưu, khôi phục)
   export      xuất các file kết quả
 """
-__version__ = "1.0.0"
+__version__ = "1.3.0"   # đổi khi logic sinh ứng viên đổi, để kết quả chấm điểm cũ không còn khớp. 1.1: dị thể chữ, d<->r, dạng vùng; 1.2: r<->s, nh<->l, nới lỏng; 1.3: mọi âm đọc, ứng viên Nôm do LM
 
 from .alignment import AlignedPair, levenshtein_align  # noqa: E402,F401
 from .dictionary import NomVietDict  # noqa: E402,F401

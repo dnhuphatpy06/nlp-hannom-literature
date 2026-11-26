@@ -1,0 +1,280 @@
+{
+  "engine": "row_text",
+  "page": 19,
+  "saved": "2026-11-09T06:40:53.817725",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.019.jpg",
+    "sha256": "c5b147e35cec7e0e24469c3b2cfa5b7779230a4070911a4d42f8e821aab45ff6",
+    "size": 965834
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "樓户畨抌役正间皮",
+      "points": [
+        [
+          276,
+          411
+        ],
+        [
+          1569,
+          411
+        ],
+        [
+          1569,
+          530
+        ],
+        [
+          276,
+          530
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "忠受𣌋𣌉庄稚",
+      "points": [
+        [
+          296,
+          526
+        ],
+        [
+          1585,
+          526
+        ],
+        [
+          1585,
+          645
+        ],
+        [
+          296,
+          645
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 6,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "外𡎝捽𫥨餒志",
+      "points": [
+        [
+          285,
+          824
+        ],
+        [
+          1533,
+          824
+        ],
+        [
+          1533,
+          945
+        ],
+        [
+          285,
+          945
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𥗜仍停𤋵𡬈𠀧軍",
+      "points": [
+        [
+          267,
+          941
+        ],
+        [
+          1525,
+          941
+        ],
+        [
+          1525,
+          1051
+        ],
+        [
+          267,
+          1051
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "忠誠凭胣袍𢗼皮",
+      "points": [
+        [
+          276,
+          1214
+        ],
+        [
+          1543,
+          1214
+        ],
+        [
+          1543,
+          1353
+        ],
+        [
+          276,
+          1353
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "受國㐌透庫妙陛",
+      "points": [
+        [
+          276,
+          1349
+        ],
+        [
+          1577,
+          1349
+        ],
+        [
+          1577,
+          1474
+        ],
+        [
+          276,
+          1474
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "沔边蘭連𢆥𢺹餒賊",
+      "points": [
+        [
+          178,
+          1648
+        ],
+        [
+          1650,
+          1648
+        ],
+        [
+          1650,
+          1765
+        ],
+        [
+          178,
+          1765
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "停碎之堂晉势危可",
+      "points": [
+        [
+          172,
+          1761
+        ],
+        [
+          1646,
+          1761
+        ],
+        [
+          1646,
+          1877
+        ],
+        [
+          172,
+          1877
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𡎝富春没陣𠯦威𡗶",
+      "points": [
+        [
+          155,
+          2053
+        ],
+        [
+          1646,
+          2053
+        ],
+        [
+          1646,
+          2184
+        ],
+        [
+          155,
+          2184
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𥗾役渃沛𥙩粉爫弭",
+      "points": [
+        [
+          139,
+          2180
+        ],
+        [
+          1656,
+          2180
+        ],
+        [
+          1656,
+          2324
+        ],
+        [
+          139,
+          2324
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    }
+  ]
+}

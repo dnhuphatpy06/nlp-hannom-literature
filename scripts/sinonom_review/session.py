@@ -205,7 +205,12 @@ class ReviewSession:
     def save_state(self):
         path = self.output_dir / STATE_FILE
         with self._lock:
-            data = {"saved_at": time.strftime("%Y-%m-%d %H:%M:%S"), "decisions": self.decisions}
+            # giữ lựa chọn của các cặp không thuộc phiên này (ví dụ đã duyệt ở nguồn câu khác của cùng sách), kẻo đổi nguồn rồi lưu sẽ làm mất
+            try:
+                kept = {k: d for k, d in json.loads(path.read_text(encoding="utf-8")).get("decisions", {}).items() if k not in self.site_by_key}
+            except (OSError, ValueError, AttributeError):
+                kept = {}
+            data = {"saved_at": time.strftime("%Y-%m-%d %H:%M:%S"), "decisions": {**kept, **self.decisions}}
             tmp = path.with_suffix(".tmp")
             tmp.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
             tmp.replace(path)

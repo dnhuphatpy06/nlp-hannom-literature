@@ -346,6 +346,7 @@ details li { word-break: break-all; }
         <button id="alignTabBtn_check" role="tab">Kiểm tra</button>
         <button id="alignTabBtn_prop" role="tab">Đề xuất</button>
         <button id="alignTabBtn_res" role="tab" disabled title="Chỉ mở được khi đã duyệt hết các đề xuất">Kết quả</button>
+        <button id="srcToggleBtn" style="display:none; margin-left:auto"></button>
       </div>
     </div>
 
@@ -1231,6 +1232,24 @@ function applyBookKind() {
   $("stepOcrBtn").style.display = k.ocr ? "" : "none";
   $("stepAlignBtn").querySelector(".n").textContent = k.ocr ? "3" : "2";
   $("alignTabBtn_sent").style.display = k.xlsx ? "none" : "";
+  const tg = $("srcToggleBtn");   // chỉ văn bản có input.xlsx mới chọn được nguồn câu Nôm - Việt
+  tg.style.display = k.has_input ? "" : "none";
+  tg.textContent = k.xlsx ? "Dùng OCR và dóng câu" : "Đọc từ input.xlsx";
+  tg.title = k.xlsx ? "Đang đọc câu Nôm - Việt từ input.xlsx. Bấm để quay lại bước OCR và dóng câu theo bbox"
+                    : "Đang dùng kết quả OCR và dóng câu. Bấm để đọc câu Nôm - Việt từ input.xlsx của văn bản này";
+}
+
+async function toggleSource() {
+  const to = isXlsx() ? "bbox" : "xlsx";
+  try { await api("/api/review/source", { name: currentBook.name, source: to }); } catch (e) { alert(e.message); return; }
+  const name = currentBook.name;
+  reviewSum = null; propData = null; alignData = null; alignRows = null; alignSources = null; ocrData = null;
+  alignPage = 0; chkPage = propPage = resPage = 0; propSetupOpen = false;
+  propPageSel = { idx: null, nom: null, vi: null };
+  alignTab = to === "xlsx" ? "check" : "sent";
+  if (to === "xlsx" && step === "ocr") step = "align";
+  await openBook(name, true);
+  toast(to === "xlsx" ? "Đang đọc câu Nôm - Việt từ input.xlsx." : "Đang dùng kết quả OCR và dóng câu.", 4000);
 }
 
 function uploadInput(file) {
@@ -1311,7 +1330,7 @@ function renderProp() {
     const row = el("div", { className: "cand-row" });
     for (const h of c.candidates) {
       const on = !!dec && dec.side === h.side && dec.nom === h.nom && dec.qn === h.qn;
-      const b = el("button", { className: "cand" + (on ? " on" : ""), textContent: `${h.confidence.toFixed(2)} · ${h.change}`, title: `${h.side} · điểm ${h.score}` });
+      const b = el("button", { className: "cand" + (on ? " on" : ""), textContent: `${h.confidence.toFixed(2)} · ${h.change}`, title: `${h.side} · điểm ${h.score}${h.variant ? " · dị thể chữ (giản thể, phồn thể...)" : ""}` });
       b.onclick = () => propDecide(c.key, on ? null : h);
       row.append(b);
     }
@@ -1924,6 +1943,7 @@ $("alignTabBtn_check").onclick = () => showAlignTab("check");
 $("alignTabBtn_prop").onclick = () => showAlignTab("prop");
 $("alignTabBtn_res").onclick = () => showAlignTab("res");
 $("chkSaveCsv").onclick = saveCsv;
+$("srcToggleBtn").onclick = toggleSource;
 $("chkUploadBtn").onclick = () => uploadInput($("chkUploadFile").files[0]);
 $("chkOnly").onchange = () => { chkPage = 0; loadCheck(); };
 $("chkPrev").onclick = () => { chkPage = Math.max(0, chkPage - 1); loadCheck(); };

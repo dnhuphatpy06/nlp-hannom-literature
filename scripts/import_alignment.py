@@ -67,6 +67,8 @@ def import_outputs(alignment_dir: Path, found: dict[str, library.Book], dry_run:
             if book is None:
                 print(f"  ! {label}: chưa có input.xlsx nên bỏ qua")
                 continue
+            if not dry_run:
+                rp.set_source(book, "xlsx")                  # kết quả của Alignment tính trên input.xlsx nên sách đọc từ input.xlsx
             rp._sessions.pop(library.norm(book.stem), None)
             sess = rp.get_session(book)                      # phiên của riêng sách, dựng từ input.xlsx như Alignment
             keys = set(sess.site_by_key)

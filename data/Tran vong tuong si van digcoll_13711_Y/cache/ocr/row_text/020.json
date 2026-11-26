@@ -1,0 +1,280 @@
+{
+  "engine": "row_text",
+  "page": 20,
+  "saved": "2026-11-09T06:40:53.932171",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.020.jpg",
+    "sha256": "856b05f4e1053eb14e91bf16ebbbe350c3b62224b07f2682432edec1d7ce4c68",
+    "size": 919975
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "𢯢襖𤍊𥛉𧗱關",
+      "points": [
+        [
+          150,
+          414
+        ],
+        [
+          1626,
+          414
+        ],
+        [
+          1626,
+          523
+        ],
+        [
+          150,
+          523
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "光明童恾𬌓忠肝",
+      "points": [
+        [
+          164,
+          519
+        ],
+        [
+          1451,
+          519
+        ],
+        [
+          1451,
+          631
+        ],
+        [
+          164,
+          631
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "指𡽫滝𤋵買𨤧城𡃹",
+      "points": [
+        [
+          137,
+          824
+        ],
+        [
+          1606,
+          824
+        ],
+        [
+          1606,
+          936
+        ],
+        [
+          137,
+          936
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "辛苦八唁眜正氣",
+      "points": [
+        [
+          139,
+          934
+        ],
+        [
+          1466,
+          934
+        ],
+        [
+          1466,
+          1050
+        ],
+        [
+          139,
+          1050
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𧯶浪礙汝番天石解",
+      "points": [
+        [
+          136,
+          1241
+        ],
+        [
+          1602,
+          1241
+        ],
+        [
+          1602,
+          1348
+        ],
+        [
+          136,
+          1348
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "重圍庸尋細君王",
+      "points": [
+        [
+          139,
+          1344
+        ],
+        [
+          1452,
+          1344
+        ],
+        [
+          1452,
+          1463
+        ],
+        [
+          139,
+          1463
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𪽝為傷吲命縚",
+      "points": [
+        [
+          136,
+          1652
+        ],
+        [
+          1599,
+          1652
+        ],
+        [
+          1599,
+          1769
+        ],
+        [
+          136,
+          1769
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "一死底朱全將土",
+      "points": [
+        [
+          154,
+          1765
+        ],
+        [
+          1442,
+          1765
+        ],
+        [
+          1442,
+          1875
+        ],
+        [
+          154,
+          1875
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "㗂號令𢠩怯𫏾滝恩",
+      "points": [
+        [
+          142,
+          2057
+        ],
+        [
+          1589,
+          2057
+        ],
+        [
+          1589,
+          2174
+        ],
+        [
+          142,
+          2174
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "信𠸗𠊛部曲傷心",
+      "points": [
+        [
+          125,
+          2170
+        ],
+        [
+          1453,
+          2170
+        ],
+        [
+          1453,
+          2282
+        ],
+        [
+          125,
+          2282
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    }
+  ]
+}

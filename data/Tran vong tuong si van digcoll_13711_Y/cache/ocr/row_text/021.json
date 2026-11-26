@@ -1,0 +1,280 @@
+{
+  "engine": "row_text",
+  "page": 21,
+  "saved": "2026-11-09T06:40:54.037845",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.021.jpg",
+    "sha256": "367cc02e8ee1e55cf8e64a494447386a0932842b18b013109b62074df6071bea",
+    "size": 950813
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "𩄴忠貞湿倘畑威",
+      "points": [
+        [
+          169,
+          403
+        ],
+        [
+          1618,
+          403
+        ],
+        [
+          1618,
+          508
+        ],
+        [
+          169,
+          508
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "儀箭几某朋沔淚",
+      "points": [
+        [
+          153,
+          504
+        ],
+        [
+          1462,
+          504
+        ],
+        [
+          1462,
+          625
+        ],
+        [
+          153,
+          625
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "機落定急迡停限𣇜捽",
+      "points": [
+        [
+          168,
+          794
+        ],
+        [
+          1628,
+          794
+        ],
+        [
+          1628,
+          927
+        ],
+        [
+          168,
+          927
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 9,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "餒將营𫳵永𩈘親勳",
+      "points": [
+        [
+          164,
+          923
+        ],
+        [
+          1663,
+          923
+        ],
+        [
+          1663,
+          1030
+        ],
+        [
+          164,
+          1030
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "分追隨𡬼𡬷拱塘功惜",
+      "points": [
+        [
+          169,
+          1228
+        ],
+        [
+          1624,
+          1228
+        ],
+        [
+          1624,
+          1338
+        ],
+        [
+          169,
+          1338
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 9,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "為戎嘆俸舌𢬣忠智",
+      "points": [
+        [
+          175,
+          1334
+        ],
+        [
+          1640,
+          1334
+        ],
+        [
+          1640,
+          1450
+        ],
+        [
+          175,
+          1450
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𠉞除﨤節秋",
+      "points": [
+        [
+          542,
+          1644
+        ],
+        [
+          1246,
+          1644
+        ],
+        [
+          1246,
+          1756
+        ],
+        [
+          542,
+          1756
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 4,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "排旬除",
+      "points": [
+        [
+          533,
+          1853
+        ],
+        [
+          1255,
+          1853
+        ],
+        [
+          1255,
+          1966
+        ],
+        [
+          533,
+          1966
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 4,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "二𡦂綱常表硯曾",
+      "points": [
+        [
+          253,
+          2062
+        ],
+        [
+          1523,
+          2062
+        ],
+        [
+          1523,
+          2172
+        ],
+        [
+          253,
+          2172
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "袞𡗶拱妥准幽灵",
+      "points": [
+        [
+          255,
+          2168
+        ],
+        [
+          1570,
+          2168
+        ],
+        [
+          1570,
+          2289
+        ],
+        [
+          255,
+          2289
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    }
+  ]
+}

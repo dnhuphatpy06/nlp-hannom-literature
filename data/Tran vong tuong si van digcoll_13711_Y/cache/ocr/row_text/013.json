@@ -1,0 +1,254 @@
+{
+  "engine": "row_text",
+  "page": 13,
+  "saved": "2026-11-09T06:40:53.199018",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.013.jpg",
+    "sha256": "09870f9c316f2a761511da88dbf2387363346d5e7e075b77fd0af7ef80d6b70f",
+    "size": 872769
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "本爵除",
+      "points": [
+        [
+          655,
+          405
+        ],
+        [
+          1170,
+          405
+        ],
+        [
+          1170,
+          518
+        ],
+        [
+          655,
+          518
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 3,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𠳐役邊𣅶",
+      "points": [
+        [
+          553,
+          610
+        ],
+        [
+          1246,
+          610
+        ],
+        [
+          1246,
+          723
+        ],
+        [
+          553,
+          723
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 4,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𣈗遠戍",
+      "points": [
+        [
+          530,
+          803
+        ],
+        [
+          1257,
+          803
+        ],
+        [
+          1257,
+          933
+        ],
+        [
+          530,
+          933
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 4,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "課帳噅味鍾𥘷仕𤉚真",
+      "points": [
+        [
+          263,
+          1022
+        ],
+        [
+          1612,
+          1022
+        ],
+        [
+          1612,
+          1139
+        ],
+        [
+          263,
+          1139
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𢖵欺湥淬頭𡹡",
+      "points": [
+        [
+          270,
+          1135
+        ],
+        [
+          1537,
+          1135
+        ],
+        [
+          1537,
+          1244
+        ],
+        [
+          270,
+          1244
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𥪝茹𨤔襖擲",
+      "points": [
+        [
+          245,
+          1441
+        ],
+        [
+          1542,
+          1441
+        ],
+        [
+          1542,
+          1549
+        ],
+        [
+          245,
+          1549
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "擬課逐𤉚盤𩙌",
+      "points": [
+        [
+          242,
+          1545
+        ],
+        [
+          1554,
+          1545
+        ],
+        [
+          1554,
+          1666
+        ],
+        [
+          242,
+          1666
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "氷燭几屈貝𠊛",
+      "points": [
+        [
+          270,
+          1855
+        ],
+        [
+          1542,
+          1855
+        ],
+        [
+          1542,
+          1974
+        ],
+        [
+          270,
+          1974
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "想像柴長伵妬",
+      "points": [
+        [
+          271,
+          2062
+        ],
+        [
+          1545,
+          2062
+        ],
+        [
+          1545,
+          2184
+        ],
+        [
+          271,
+          2184
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    }
+  ]
+}

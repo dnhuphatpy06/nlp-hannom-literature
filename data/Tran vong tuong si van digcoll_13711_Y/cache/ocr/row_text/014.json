@@ -1,0 +1,280 @@
+{
+  "engine": "row_text",
+  "page": 14,
+  "saved": "2026-11-09T06:40:53.307182",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.014.jpg",
+    "sha256": "f1c75d471fa23cf434c7680f9143138295d408323ac365759c4ef1c7c8034849",
+    "size": 999464
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "沔旗甫定細低𢏑促𤂬浽",
+      "points": [
+        [
+          169,
+          196
+        ],
+        [
+          1696,
+          196
+        ],
+        [
+          1696,
+          310
+        ],
+        [
+          169,
+          310
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "寓𢚸没礼𡃹𥗜𨤵催鐄",
+      "points": [
+        [
+          171,
+          306
+        ],
+        [
+          1658,
+          306
+        ],
+        [
+          1658,
+          426
+        ],
+        [
+          171,
+          426
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𡦂相典同𢖵𡑴吏本工寧",
+      "points": [
+        [
+          153,
+          606
+        ],
+        [
+          1657,
+          606
+        ],
+        [
+          1657,
+          730
+        ],
+        [
+          153,
+          730
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "合𩈘𠀧軍旗鐄𢬣𡽫襖凭桃",
+      "points": [
+        [
+          151,
+          726
+        ],
+        [
+          1670,
+          726
+        ],
+        [
+          1670,
+          845
+        ],
+        [
+          151,
+          845
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "固感通共凭𥿀妬勸𠶆",
+      "points": [
+        [
+          174,
+          1027
+        ],
+        [
+          1653,
+          1027
+        ],
+        [
+          1653,
+          1143
+        ],
+        [
+          174,
+          1143
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "油靈㗂屋拱𠸍𦖑𠳒𠼽杜",
+      "points": [
+        [
+          153,
+          1241
+        ],
+        [
+          1656,
+          1241
+        ],
+        [
+          1656,
+          1361
+        ],
+        [
+          153,
+          1361
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "場征戰成羅冤",
+      "points": [
+        [
+          267,
+          1453
+        ],
+        [
+          1532,
+          1453
+        ],
+        [
+          1532,
+          1559
+        ],
+        [
+          267,
+          1559
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "庄共渚尼几𫏾𠊛",
+      "points": [
+        [
+          266,
+          1561
+        ],
+        [
+          1532,
+          1561
+        ],
+        [
+          1532,
+          1666
+        ],
+        [
+          266,
+          1666
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𡢐行𨕭笠𠁑下𠊛",
+      "points": [
+        [
+          252,
+          1662
+        ],
+        [
+          1515,
+          1662
+        ],
+        [
+          1515,
+          1773
+        ],
+        [
+          252,
+          1773
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 7,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "耒仕奏表揚朱",
+      "points": [
+        [
+          288,
+          1769
+        ],
+        [
+          1375,
+          1769
+        ],
+        [
+          1375,
+          1875
+        ],
+        [
+          288,
+          1875
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 6,
+      "check_v": 3
+    }
+  ]
+}

@@ -28,9 +28,9 @@ ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS = Path(__file__).resolve().parent
 CONFIG_FILE = ROOT / "config_review.yaml"
 DEFAULT_CONFIG = {
-    "dictionary": {"dir": "resources/dictionaries", "extra_dicts": []},
+    "dictionary": {"dir": "resources/dictionaries", "extra_dicts": [], "nom_variants": True},
     "models": {"use_lm": True, "nom_model": "btqkhai/SinoNomBERT", "quocngu_model": "Qwen/Qwen2.5-0.5B", "device": "auto"},
-    "review": {"top_k": 5},
+    "review": {"top_k": 0},
 }
 
 _lock = threading.RLock()
@@ -72,10 +72,11 @@ def _imports():
 def _get_dict(cfg: dict):
     d = cfg["dictionary"]
     extra = tuple(str((ROOT / p) if not Path(p).is_absolute() else p) for p in (d.get("extra_dicts") or []))
-    key = (str(ROOT / d["dir"]), extra, tuple(Path(p).stat().st_mtime if Path(p).exists() else 0 for p in extra))
+    variants = bool(d.get("nom_variants", True))
+    key = (str(ROOT / d["dir"]), extra, tuple(Path(p).stat().st_mtime if Path(p).exists() else 0 for p in extra), variants)
     with _lock:
         if _dict_cache.get("key") != key:
-            _dict_cache["dic"] = _imports()["NomVietDict"].load(ROOT / d["dir"], extra_csvs=extra, use_variants=True)
+            _dict_cache["dic"] = _imports()["NomVietDict"].load(ROOT / d["dir"], extra_csvs=extra, use_variants=True, nom_variants=variants)
             _dict_cache["key"] = key
         return _dict_cache["dic"]
 
@@ -133,11 +134,37 @@ class BookImages:
 
 
 INPUT_NAME = "input.xlsx"
+SOURCE_FILE = "review_source.json"   # nguồn câu Nôm - Việt người dùng chọn cho sách: "bbox" (mặc định) hoặc "xlsx"
+
+
+def has_input(book: library.Book) -> bool:
+    return input_file(book).is_file()
 
 
 def is_xlsx_book(book: library.Book) -> bool:
-    """Chỉ 4 văn bản Kim* có bước OCR và dóng câu theo bbox. Văn bản còn lại chỉ có phân loại trang và dóng hàng, đọc câu Nôm - Việt từ input.xlsx."""
-    return not library.norm(book.stem).casefold().startswith("kim")
+    """Mặc định mọi văn bản đi theo OCR và dóng câu theo bbox. Chỉ khi có input.xlsx và người dùng đã chọn thì câu Nôm - Việt mới đọc từ input.xlsx
+    (khi đó văn bản chỉ có phân loại trang và dóng hàng)."""
+    if not has_input(book):
+        return False
+    try:
+        return json.loads((book.dir / SOURCE_FILE).read_text(encoding="utf-8")).get("source") == "xlsx"
+    except (OSError, ValueError, AttributeError):
+        return False
+
+
+def set_source(book: library.Book, source: str) -> dict:
+    """Chọn nguồn câu Nôm - Việt của sách: "bbox" (OCR và dóng câu) hoặc "xlsx" (đọc input.xlsx, cần file này có sẵn)."""
+    if source not in ("bbox", "xlsx"):
+        raise ValueError("Nguồn không hợp lệ.")
+    if source == "xlsx" and not has_input(book):
+        raise ValueError("Văn bản này chưa có file input.xlsx.")
+    path = book.dir / SOURCE_FILE
+    tmp = path.with_name(SOURCE_FILE + ".tmp")
+    tmp.write_text(json.dumps({"source": source}), encoding="utf-8")
+    tmp.replace(path)
+    with _lock:
+        _sessions.pop(library.norm(book.stem), None)
+    return {"source": source}
 
 
 def input_file(book: library.Book) -> Path:
@@ -322,12 +349,12 @@ def summary(book: library.Book) -> dict:
     try:
         sess = get_session(book)
     except ValueError as e:
-        return {"ready": False, "error": str(e), "mode": "xlsx" if is_xlsx_book(book) else "bbox", "has_input": input_file(book).is_file(),
+        return {"ready": False, "error": str(e), "mode": "xlsx" if is_xlsx_book(book) else "bbox", "has_input": has_input(book),
                 "files": {k: _file_info(p) for k, p in out_files(book).items()}, "job": job_status(book)}
     prog = sess.progress() if sess.candidates else {"pairs": 0, "pairs_done": 0, "pages": 0, "pages_done": 0}
     total = _stats(sess)
     has = bool(sess.candidates)
-    return {"ready": True, "mode": "xlsx" if is_xlsx_book(book) else "bbox", "has_input": input_file(book).is_file(),
+    return {"ready": True, "mode": "xlsx" if is_xlsx_book(book) else "bbox", "has_input": has_input(book),
             "sentences": len(sess.sentences), "sites": len(sess.sites), "stats": total,
             "has_candidates": has, "progress": prog, "all_reviewed": has and prog["pairs_done"] >= prog["pairs"],
             "settings": sess.score_settings, "config": load_config(), "files": {k: _file_info(p) for k, p in out_files(book).items()},
@@ -436,7 +463,8 @@ def start_scoring(book: library.Book, use_lm: bool | None = None) -> None:
 # ---------------------------------------------------------------- tab Đề xuất: duyệt từng câu
 def _cand(h: dict, site) -> dict:
     change = f"{site.nom}→{h['nom']}" if h["side"] == "NOM" else f"{site.qn}→{h['qn']}"
-    return {"side": h["side"], "nom": h["nom"], "qn": h["qn"], "score": h["score"], "confidence": round(h["confidence"], 3), "change": change}
+    return {"side": h["side"], "nom": h["nom"], "qn": h["qn"], "score": h["score"], "confidence": round(h["confidence"], 3), "change": change,
+            "variant": bool((h.get("evidence") or {}).get("variant"))}
 
 
 def review_page(book: library.Book, page: int) -> dict:
@@ -444,7 +472,7 @@ def review_page(book: library.Book, page: int) -> dict:
     sess = get_session(book)
     if not sess.candidates:
         raise ValueError("Chưa chấm điểm đề xuất.")
-    top_k = int(load_config()["review"].get("top_k", 5))
+    top_k = int(load_config()["review"].get("top_k", 0)) or None      # 0 hoặc rỗng: hiện tất cả ứng viên
     pages = sess.pages
     if not pages:
         raise ValueError("Không có cặp lệch nào có ứng viên để duyệt.")

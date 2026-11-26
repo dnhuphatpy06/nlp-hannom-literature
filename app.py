@@ -84,7 +84,8 @@ def build_book(data_dir: Path, type_file: Path, name: str) -> dict:
         "split": split_jobs.split_status(book),
         "cache": page_cache.read_cache(book),
         "rendered": page_cache.rendered_pages(book),
-        "kind": {"ocr": not review_pipeline.is_xlsx_book(book), "xlsx": review_pipeline.is_xlsx_book(book)},
+        "kind": {"ocr": not review_pipeline.is_xlsx_book(book), "xlsx": review_pipeline.is_xlsx_book(book),
+                 "has_input": review_pipeline.has_input(book)},
         "pages_dir": str(book.pages_dir),
         "cache_file": str(book.page_cache_file),
     }
@@ -287,7 +288,7 @@ def make_handler(data_dir: Path, type_file: Path):
                             "/api/ocr/run", "/api/ocr/folder", "/api/ppocrlabel/open", "/api/align/run",
                             "/api/align/mark", "/api/align/dich", "/api/align/translit", "/api/align/source", "/api/align/move", "/api/align/save",
                             "/api/align/text", "/api/align/import", "/api/review/csv", "/api/review/score", "/api/review/decide",
-                            "/api/review/save", "/api/review/export", "/api/align/match", "/api/review/upload"):
+                            "/api/review/save", "/api/review/export", "/api/align/match", "/api/review/upload", "/api/review/source"):
                 self.send_error(404)
                 return
             try:
@@ -361,6 +362,8 @@ def make_handler(data_dir: Path, type_file: Path):
                         except ValueError:
                             raise ValueError("Nội dung file không hợp lệ.")
                         self._send_json({"success": True, **review_pipeline.save_input(book, data)})
+                    elif kind == "source":
+                        self._send_json({"success": True, **review_pipeline.set_source(book, str(payload.get("source", "")))})
                     elif kind == "decide":
                         progress = review_pipeline.decide(book, str(payload.get("key", "")), payload.get("side") or None,
                                                           payload.get("nom"), payload.get("qn"))

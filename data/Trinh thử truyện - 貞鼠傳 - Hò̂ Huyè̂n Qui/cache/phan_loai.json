@@ -1,0 +1,306 @@
+{
+  "book_name": "Trinh thử truyện - 貞鼠傳 - Hò̂ Huyè̂n Qui",
+  "pdf": "Trinh thử truyện - 貞鼠傳 - Hò̂ Huyè̂n Qui.pdf",
+  "layout_code": "Tnom",
+  "dpi": null,
+  "split_complete": false,
+  "notes": "",
+  "total_pages": 26,
+  "pages": {
+    "1": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 65,
+        "active": 0.0995,
+        "ink": 0.0222
+      },
+      "auto": true
+    },
+    "2": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 236,
+        "active": 0.3194,
+        "ink": 0.0659
+      },
+      "auto": true
+    },
+    "3": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 418,
+        "active": 0.6273,
+        "ink": 0.2196
+      },
+      "auto": true
+    },
+    "4": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 440,
+        "active": 0.6181,
+        "ink": 0.2055
+      },
+      "auto": true
+    },
+    "5": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 454,
+        "active": 0.6343,
+        "ink": 0.2151
+      },
+      "auto": true
+    },
+    "6": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 398,
+        "active": 0.6019,
+        "ink": 0.2289
+      },
+      "auto": true
+    },
+    "7": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 429,
+        "active": 0.5764,
+        "ink": 0.2117
+      },
+      "auto": true
+    },
+    "8": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 408,
+        "active": 0.588,
+        "ink": 0.2142
+      },
+      "auto": true
+    },
+    "9": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 412,
+        "active": 0.5926,
+        "ink": 0.2134
+      },
+      "auto": true
+    },
+    "10": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 439,
+        "active": 0.6366,
+        "ink": 0.2135
+      },
+      "auto": true
+    },
+    "11": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 418,
+        "active": 0.625,
+        "ink": 0.2105
+      },
+      "auto": true
+    },
+    "12": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 403,
+        "active": 0.6065,
+        "ink": 0.2038
+      },
+      "auto": true
+    },
+    "13": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 401,
+        "active": 0.6204,
+        "ink": 0.21
+      },
+      "auto": true
+    },
+    "14": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 414,
+        "active": 0.5509,
+        "ink": 0.2064
+      },
+      "auto": true
+    },
+    "15": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 437,
+        "active": 0.6181,
+        "ink": 0.2184
+      },
+      "auto": true
+    },
+    "16": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 411,
+        "active": 0.6319,
+        "ink": 0.2176
+      },
+      "auto": true
+    },
+    "17": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 431,
+        "active": 0.625,
+        "ink": 0.2088
+      },
+      "auto": true
+    },
+    "18": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 401,
+        "active": 0.6181,
+        "ink": 0.2284
+      },
+      "auto": true
+    },
+    "19": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 426,
+        "active": 0.6296,
+        "ink": 0.2231
+      },
+      "auto": true
+    },
+    "20": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 444,
+        "active": 0.6111,
+        "ink": 0.2163
+      },
+      "auto": true
+    },
+    "21": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 136,
+        "active": 0.206,
+        "ink": 0.0476
+      },
+      "auto": true
+    },
+    "22": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 73,
+        "active": 0.1412,
+        "ink": 0.0265
+      },
+      "auto": true
+    },
+    "23": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 37,
+        "active": 0.0648,
+        "ink": 0.012
+      },
+      "auto": true
+    },
+    "24": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 82,
+        "active": 0.1389,
+        "ink": 0.0449
+      },
+      "auto": true
+    },
+    "25": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 111,
+        "active": 0.1551,
+        "ink": 0.0287
+      },
+      "auto": true
+    },
+    "26": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 36,
+        "active": 0.0648,
+        "ink": 0.0078
+      },
+      "auto": true
+    }
+  },
+  "blank_scan": {
+    "at": "2026-11-07T00:44:19.050833",
+    "side": 640
+  },
+  "last_updated": "2026-11-07T00:44:19.084462",
+  "autotag": {
+    "type": "Tnom",
+    "at": "2026-11-07T00:44:19.101554"
+  }
+}

@@ -1,0 +1,280 @@
+{
+  "engine": "row_text",
+  "page": 5,
+  "saved": "2026-11-09T06:40:52.290381",
+  "image": {
+    "name": "Tran vong tuong si van digcoll_13711_Y.005.jpg",
+    "sha256": "9e07d5c59224a0858d354a5103d4909ff7051633c1d66f6acd006462203e00d3",
+    "size": 944010
+  },
+  "params": {
+    "kimhannom": {
+      "epitaph": 0,
+      "lang_type": 2,
+      "ocr_id": 4,
+      "reading_direction": 2
+    }
+  },
+  "boxes": [
+    {
+      "folder": "ch",
+      "text": "噴喂",
+      "points": [
+        [
+          774,
+          199
+        ],
+        [
+          1109,
+          199
+        ],
+        [
+          1109,
+          299
+        ],
+        [
+          774,
+          299
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 2,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "𡗶東帝𨷑𫥨朔塘𣦆",
+      "points": [
+        [
+          212,
+          395
+        ],
+        [
+          1677,
+          395
+        ],
+        [
+          1677,
+          516
+        ],
+        [
+          212,
+          516
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "白畨險難買固𣈜除",
+      "points": [
+        [
+          245,
+          512
+        ],
+        [
+          1692,
+          512
+        ],
+        [
+          1692,
+          623
+        ],
+        [
+          245,
+          623
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "渃濃河沚𡬈良江𢪀",
+      "points": [
+        [
+          223,
+          815
+        ],
+        [
+          1657,
+          815
+        ],
+        [
+          1657,
+          929
+        ],
+        [
+          223,
+          929
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "󰋇几周乡零仍計自月醒怒",
+      "points": [
+        [
+          216,
+          925
+        ],
+        [
+          1662,
+          925
+        ],
+        [
+          1662,
+          1035
+        ],
+        [
+          216,
+          1035
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "㐌能生時寄离死時歸",
+      "points": [
+        [
+          165,
+          1214
+        ],
+        [
+          1729,
+          1214
+        ],
+        [
+          1729,
+          1343
+        ],
+        [
+          165,
+          1343
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 9,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "仍員别命意夭蘼名意壽",
+      "points": [
+        [
+          153,
+          1433
+        ],
+        [
+          1716,
+          1433
+        ],
+        [
+          1716,
+          1558
+        ],
+        [
+          153,
+          1558
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 8,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "感傷埃切",
+      "points": [
+        [
+          495,
+          1636
+        ],
+        [
+          1200,
+          1636
+        ],
+        [
+          1200,
+          1764
+        ],
+        [
+          495,
+          1764
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 4,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "情𠁑轅銊仰仰",
+      "points": [
+        [
+          498,
+          1844
+        ],
+        [
+          1315,
+          1844
+        ],
+        [
+          1315,
+          1964
+        ],
+        [
+          498,
+          1964
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 4,
+      "check_v": 3
+    },
+    {
+      "folder": "ch",
+      "text": "分𥪝介宵",
+      "points": [
+        [
+          507,
+          2064
+        ],
+        [
+          1173,
+          2064
+        ],
+        [
+          1173,
+          2189
+        ],
+        [
+          507,
+          2189
+        ]
+      ],
+      "status": "ok",
+      "source": "import",
+      "proj": 4,
+      "check_v": 3
+    }
+  ]
+}

@@ -1,0 +1,603 @@
+{
+  "book_name": "Tống Trân tân truyện • 宋珍新傳",
+  "pdf": "Tống Trân tân truyện • 宋珍新傳.pdf",
+  "layout_code": "Tnom",
+  "dpi": null,
+  "split_complete": false,
+  "notes": "",
+  "total_pages": 53,
+  "pages": {
+    "1": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 410,
+        "active": 0.5185,
+        "ink": 0.1154
+      },
+      "auto": true
+    },
+    "2": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 559,
+        "active": 0.6389,
+        "ink": 0.1368
+      },
+      "auto": true
+    },
+    "3": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 793,
+        "active": 0.6319,
+        "ink": 0.109
+      },
+      "auto": true
+    },
+    "4": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 538,
+        "active": 0.6389,
+        "ink": 0.1449
+      },
+      "auto": true
+    },
+    "5": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 671,
+        "active": 0.6111,
+        "ink": 0.1163
+      },
+      "auto": true
+    },
+    "6": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 624,
+        "active": 0.6343,
+        "ink": 0.1307
+      },
+      "auto": true
+    },
+    "7": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 495,
+        "active": 0.6065,
+        "ink": 0.1242
+      },
+      "auto": true
+    },
+    "8": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 515,
+        "active": 0.6296,
+        "ink": 0.1159
+      },
+      "auto": true
+    },
+    "9": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 706,
+        "active": 0.6389,
+        "ink": 0.1197
+      },
+      "auto": true
+    },
+    "10": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 625,
+        "active": 0.6551,
+        "ink": 0.1315
+      },
+      "auto": true
+    },
+    "11": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 504,
+        "active": 0.6111,
+        "ink": 0.1508
+      },
+      "auto": true
+    },
+    "12": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 480,
+        "active": 0.6412,
+        "ink": 0.1517
+      },
+      "auto": true
+    },
+    "13": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 578,
+        "active": 0.6088,
+        "ink": 0.1434
+      },
+      "auto": true
+    },
+    "14": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 640,
+        "active": 0.6181,
+        "ink": 0.137
+      },
+      "auto": true
+    },
+    "15": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 733,
+        "active": 0.6505,
+        "ink": 0.1117
+      },
+      "auto": true
+    },
+    "16": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 701,
+        "active": 0.6759,
+        "ink": 0.1222
+      },
+      "auto": true
+    },
+    "17": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 637,
+        "active": 0.6968,
+        "ink": 0.1447
+      },
+      "auto": true
+    },
+    "18": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 569,
+        "active": 0.6435,
+        "ink": 0.1508
+      },
+      "auto": true
+    },
+    "19": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 469,
+        "active": 0.625,
+        "ink": 0.1649
+      },
+      "auto": true
+    },
+    "20": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 689,
+        "active": 0.6829,
+        "ink": 0.1283
+      },
+      "auto": true
+    },
+    "21": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 448,
+        "active": 0.6181,
+        "ink": 0.1632
+      },
+      "auto": true
+    },
+    "22": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 562,
+        "active": 0.6574,
+        "ink": 0.1351
+      },
+      "auto": true
+    },
+    "23": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 581,
+        "active": 0.6551,
+        "ink": 0.1273
+      },
+      "auto": true
+    },
+    "24": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 515,
+        "active": 0.6204,
+        "ink": 0.1329
+      },
+      "auto": true
+    },
+    "25": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 497,
+        "active": 0.5972,
+        "ink": 0.1393
+      },
+      "auto": true
+    },
+    "26": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 520,
+        "active": 0.6181,
+        "ink": 0.1468
+      },
+      "auto": true
+    },
+    "27": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 472,
+        "active": 0.5949,
+        "ink": 0.1436
+      },
+      "auto": true
+    },
+    "28": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 740,
+        "active": 0.6319,
+        "ink": 0.1135
+      },
+      "auto": true
+    },
+    "29": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 454,
+        "active": 0.6065,
+        "ink": 0.1632
+      },
+      "auto": true
+    },
+    "30": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 445,
+        "active": 0.5949,
+        "ink": 0.1772
+      },
+      "auto": true
+    },
+    "31": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 487,
+        "active": 0.6019,
+        "ink": 0.1413
+      },
+      "auto": true
+    },
+    "32": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 580,
+        "active": 0.6088,
+        "ink": 0.1383
+      },
+      "auto": true
+    },
+    "33": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 541,
+        "active": 0.6227,
+        "ink": 0.1569
+      },
+      "auto": true
+    },
+    "34": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 531,
+        "active": 0.6389,
+        "ink": 0.1606
+      },
+      "auto": true
+    },
+    "35": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 547,
+        "active": 0.6343,
+        "ink": 0.149
+      },
+      "auto": true
+    },
+    "36": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 487,
+        "active": 0.625,
+        "ink": 0.1519
+      },
+      "auto": true
+    },
+    "37": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 542,
+        "active": 0.6065,
+        "ink": 0.1465
+      },
+      "auto": true
+    },
+    "38": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 486,
+        "active": 0.5903,
+        "ink": 0.1465
+      },
+      "auto": true
+    },
+    "39": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 612,
+        "active": 0.6343,
+        "ink": 0.1289
+      },
+      "auto": true
+    },
+    "40": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 588,
+        "active": 0.662,
+        "ink": 0.1305
+      },
+      "auto": true
+    },
+    "41": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 512,
+        "active": 0.6204,
+        "ink": 0.1294
+      },
+      "auto": true
+    },
+    "42": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 447,
+        "active": 0.6042,
+        "ink": 0.1441
+      },
+      "auto": true
+    },
+    "43": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 491,
+        "active": 0.6157,
+        "ink": 0.136
+      },
+      "auto": true
+    },
+    "44": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 483,
+        "active": 0.625,
+        "ink": 0.1384
+      },
+      "auto": true
+    },
+    "45": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 444,
+        "active": 0.6343,
+        "ink": 0.1494
+      },
+      "auto": true
+    },
+    "46": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 388,
+        "active": 0.6181,
+        "ink": 0.1567
+      },
+      "auto": true
+    },
+    "47": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 476,
+        "active": 0.6319,
+        "ink": 0.1453
+      },
+      "auto": true
+    },
+    "48": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 529,
+        "active": 0.625,
+        "ink": 0.1406
+      },
+      "auto": true
+    },
+    "49": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 568,
+        "active": 0.625,
+        "ink": 0.127
+      },
+      "auto": true
+    },
+    "50": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 543,
+        "active": 0.5949,
+        "ink": 0.1294
+      },
+      "auto": true
+    },
+    "51": {
+      "tag": "ch",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 403,
+        "active": 0.5116,
+        "ink": 0.1065
+      },
+      "auto": true
+    },
+    "52": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 7,
+        "active": 0.0139,
+        "ink": 0.0022
+      },
+      "auto": true
+    },
+    "53": {
+      "tag": "blank",
+      "rotate": 0,
+      "notes": "",
+      "blank": {
+        "components": 2,
+        "active": 0.0046,
+        "ink": 0.0001
+      },
+      "auto": true
+    }
+  },
+  "blank_scan": {
+    "at": "2026-11-07T00:45:09.456426",
+    "side": 640
+  },
+  "last_updated": "2026-11-07T00:45:09.504085",
+  "autotag": {
+    "type": "Tnom",
+    "at": "2026-11-07T00:45:09.520044"
+  }
+}
