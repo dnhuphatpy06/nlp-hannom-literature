@@ -1,0 +1,4 @@
+# Mô hình ranker: giữ nguyên byte, không để git đổi xuống dòng (LightGBM không đọc được file CRLF)
+resources/ranker/ranker_lgbm.txt -text
+resources/ranker/*.joblib binary
+resources/ranker/*.pkl binary

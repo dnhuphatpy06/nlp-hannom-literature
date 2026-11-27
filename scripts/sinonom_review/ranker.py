@@ -62,7 +62,7 @@ def model_stamp(directory: Path | str = RANKER_DIR) -> str | None:
     h = hashlib.sha1()
     for f in files:
         if f.is_file():
-            h.update(f.read_bytes())
+            h.update(f.read_bytes().replace(b"\r\n", b"\n"))    # git (autocrlf) doi xuong dong khi checkout: khong de no lam cache mat hieu luc
     return h.hexdigest()
 
 
@@ -253,7 +253,9 @@ class Ranker:
         meta = json.loads(meta_file.read_text(encoding="utf-8"))
         cfg_file = directory / "ranker_config.json"
         cfg = json.loads(cfg_file.read_text(encoding="utf-8")) if cfg_file.is_file() else {}
-        booster = lgb.Booster(model_file=str(model_file))
+        # git (autocrlf) có thể đổi file mô hình sang CRLF, LightGBM đọc CRLF bị lỗi "Model format error": chuẩn hóa về LF trước khi nạp
+        text = model_file.read_bytes().replace(b"\r\n", b"\n").decode("utf-8")
+        booster = lgb.Booster(model_str=text)
         glyph = GlyphSimilarity(Path(font_dir), directory / "glyph_pairs.pkl")
         info = {"model": meta.get("best_model"), "features": len(meta["features"]),
                 "temperature": cfg.get("temperature", 1.0), "file": model_file.name}

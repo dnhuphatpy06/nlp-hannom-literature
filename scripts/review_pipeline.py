@@ -584,13 +584,14 @@ def review_page(book: library.Book, page: int) -> dict:
                       "candidates": [_cand(h, st) for h in cands], "decision": sess.decision(st.key)})
     ref = sess.images.lookup(s.image_id)
     unreviewed = [p for p, j in enumerate(pages) if any(st.key not in sess.decisions for st in sess.review_sites(j))]
+    keep_pages = [p for p, j in enumerate(pages) if any((sess.decisions.get(st.key) or {}).get("side") == "KEEP" for st in sess.review_sites(j))]
     layout = None
     if is_xlsx_book(book):
         number = s.image_id.rpartition(".")[0].rpartition(".")[2]
         layout = page_layout(book, int(number)) if number.isdigit() else {"kind": "single", "nom_page": None, "vi_page": None, "total": 0}
     return {"page": page, "pages": len(pages), "idx": i, "sid": s.sid, "id": s.image_id, "line": ref.line_index, "layout": layout,
             "vi_id": getattr(s, "vi_id", None), "vi_line": getattr(s, "vi_line", None), "nom": s.nom, "qn": s.qn,
-            "cells": cells, "cards": cards, "unreviewed_pages": unreviewed, "progress": sess.progress()}
+            "cells": cells, "cards": cards, "unreviewed_pages": unreviewed, "keep_pages": keep_pages, "progress": sess.progress()}
 
 
 def decide(book: library.Book, key: str, side: str | None, nom: str | None = None, qn: str | None = None) -> dict:

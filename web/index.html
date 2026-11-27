@@ -491,6 +491,7 @@ details li { word-break: break-all; }
               <button id="propPrev">‹ Câu trước</button>
               <button id="propNext">Câu tiếp ›</button>
               <button id="propNextOpen">Câu chưa duyệt kế tiếp</button>
+              <button id="propNextKeep" title="Câu có ít nhất một cặp lệch được chọn KEEP (giữ nguyên)">Câu KEEP kế tiếp</button>
               <button id="propRescore" title="Mở lại phần chọn cách chấm điểm">Chấm điểm lại</button>
               <button class="primary" id="propSave" title="Lưu lựa chọn và xuất các file kết quả vào thư mục sách">Lưu</button>
             </div>
@@ -1310,10 +1311,11 @@ function renderProp() {
   const pr = d.progress;
   const st = (reviewSum && reviewSum.settings) || {};     // thứ hạng ứng viên: mô hình ranker (LightGBM) hoặc công thức trọng số
   const how = st.ranker ? " · Xếp hạng: mô hình ranker" : st.ranker_error ? " · Xếp hạng: theo trọng số (ranker không dùng được)" : "";
-  $("propProgress").textContent = `Câu ${d.page + 1}/${d.pages} · Đã duyệt ${pr.pairs_done}/${pr.pairs} cặp lệch · Xong ${pr.pages_done}/${pr.pages} câu${how}`;
+  $("propProgress").textContent = `Câu ${d.page + 1}/${d.pages} · Đã duyệt ${pr.pairs_done}/${pr.pairs} cặp lệch · Xong ${pr.pages_done}/${pr.pages} câu · Câu KEEP ${d.keep_pages.length}/${d.pages}${how}`;
   $("propProgress").title = st.ranker ? `Ứng viên xếp hạng bởi ${st.ranker.model} (${st.ranker.features} đặc trưng); confidence = softmax(điểm / ${st.ranker.temperature})` : (st.ranker_error || "");
   $("propPrev").disabled = d.page === 0; $("propNext").disabled = d.page >= d.pages - 1;
   $("propNextOpen").disabled = !d.unreviewed_pages.length;
+  $("propNextKeep").disabled = !d.keep_pages.length;
   const xl = !!d.layout;     // văn bản đọc từ xlsx: hiện trang ảnh thay cho ảnh cắt bbox
   $("propBboxBox").style.display = xl ? "none" : "";
   $("propPages").style.display = xl ? "" : "none";
@@ -1961,6 +1963,11 @@ $("propNextOpen").onclick = () => {
   const open = propData ? propData.unreviewed_pages : [];
   const next = open.find(p => p > propPage);
   loadPropPage(next !== undefined ? next : open[0] !== undefined ? open[0] : propPage);
+};
+$("propNextKeep").onclick = () => {
+  const keep = propData ? propData.keep_pages : [];
+  const next = keep.find(p => p > propPage);
+  loadPropPage(next !== undefined ? next : keep[0] !== undefined ? keep[0] : propPage);
 };
 $("propSave").onclick = propSave;
 $("resExport").onclick = () => resExport("result");

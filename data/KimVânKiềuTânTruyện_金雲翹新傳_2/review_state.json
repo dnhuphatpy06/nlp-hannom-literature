@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-11-27 21:46:43",
+ "saved_at": "2026-11-27 22:51:44",
  "decisions": {
   "KimVânKiềuTânTruyện_金雲翹新傳_2|31044|3": {
    "side": "KEEP",
@@ -74,13 +74,13 @@
    "time": "2026-11-26 20:49:16"
   },
   "KimVânKiềuTânTruyện_金雲翹新傳_2|2003|4": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "㐌",
-   "qn": "mà",
-   "rank": 2,
+   "qn": "đã",
+   "rank": 3,
    "orig_nom": "㐌",
    "orig_qn": "mà",
-   "time": "2026-11-26 20:49:16"
+   "time": "2026-11-27 22:49:51"
   },
   "KimVânKiềuTânTruyện_金雲翹新傳_2|2007|2": {
    "side": "QN",
@@ -4988,67 +4988,67 @@
    "time": "2026-11-27 21:42:00"
   },
   "KimVânKiềuTânTruyện_金雲翹新傳_2|2005|0": {
-   "side": "KEEP",
-   "nom": "朱",
+   "side": "NOM",
+   "nom": "天",
    "qn": "Trời",
-   "rank": 2,
+   "rank": 7,
    "orig_nom": "朱",
    "orig_qn": "Trời",
-   "time": "2026-11-27 21:42:00"
+   "time": "2026-11-27 22:50:01"
   },
   "KimVânKiềuTânTruyện_金雲翹新傳_2|2005|3": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "買",
-   "qn": "thói",
-   "rank": 3,
+   "qn": "với",
+   "rank": 1,
    "orig_nom": "買",
    "orig_qn": "thói",
-   "time": "2026-11-27 21:42:00"
+   "time": "2026-11-27 22:50:08"
   },
   "KimVânKiềuTânTruyện_金雲翹新傳_2|2005|4": {
-   "side": "KEEP",
-   "nom": "勝",
+   "side": "NOM",
+   "nom": "𦟐",
    "qn": "má",
-   "rank": 1,
+   "rank": 2,
    "orig_nom": "勝",
    "orig_qn": "má",
-   "time": "2026-11-27 21:42:00"
+   "time": "2026-11-27 22:50:16"
   },
   "KimVânKiềuTânTruyện_金雲翹新傳_2|2011|5": {
-   "side": "KEEP",
-   "nom": "伶",
+   "side": "NOM",
+   "nom": "偿",
    "qn": "thường",
-   "rank": 1,
+   "rank": 2,
    "orig_nom": "伶",
    "orig_qn": "thường",
-   "time": "2026-11-27 21:42:00"
+   "time": "2026-11-27 22:50:37"
   },
   "KimVânKiềuTânTruyện_金雲翹新傳_2|2012|4": {
-   "side": "KEEP",
-   "nom": "碎",
+   "side": "NOM",
+   "nom": "椊",
    "qn": "rốt",
-   "rank": 3,
+   "rank": 5,
    "orig_nom": "碎",
    "orig_qn": "rốt",
-   "time": "2026-11-27 21:42:00"
+   "time": "2026-11-27 22:50:54"
   },
   "KimVânKiềuTânTruyện_金雲翹新傳_2|2017|0": {
-   "side": "KEEP",
-   "nom": "没",
+   "side": "NOM",
+   "nom": "浽",
    "qn": "Mỗi",
-   "rank": 1,
+   "rank": 2,
    "orig_nom": "没",
    "orig_qn": "Mỗi",
-   "time": "2026-11-27 21:42:00"
+   "time": "2026-11-27 22:51:01"
   },
   "KimVânKiềuTânTruyện_金雲翹新傳_2|2020|3": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "呐",
-   "qn": "thốt",
-   "rank": 2,
+   "qn": "nói",
+   "rank": 6,
    "orig_nom": "呐",
    "orig_qn": "thốt",
-   "time": "2026-11-27 21:42:00"
+   "time": "2026-11-27 22:51:19"
   },
   "KimVânKiềuTânTruyện_金雲翹新傳_2|21001|5": {
    "side": "KEEP",

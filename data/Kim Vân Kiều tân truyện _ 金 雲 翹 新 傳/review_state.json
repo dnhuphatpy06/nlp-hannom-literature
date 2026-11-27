@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-11-27 22:14:54",
+ "saved_at": "2026-11-27 22:43:12",
  "decisions": {
   "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳|21007|5": {
    "side": "QN",
@@ -155,22 +155,22 @@
    "time": "2026-11-26 21:34:21"
   },
   "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳|3025|5": {
-   "side": "KEEP",
-   "nom": "殘",
+   "side": "NOM",
+   "nom": "錢",
    "qn": "tiền",
-   "rank": 2,
+   "rank": 3,
    "orig_nom": "殘",
    "orig_qn": "tiền",
-   "time": "2026-11-26 21:34:25"
+   "time": "2026-11-27 22:41:16"
   },
   "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳|3027|4": {
-   "side": "KEEP",
-   "nom": "擱",
+   "side": "NOM",
+   "nom": "𢵧",
    "qn": "dan",
-   "rank": 3,
+   "rank": 1,
    "orig_nom": "擱",
    "orig_qn": "dan",
-   "time": "2026-11-26 21:43:29"
+   "time": "2026-11-27 22:41:21"
   },
   "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳|3035|0": {
    "side": "KEEP",
@@ -182,13 +182,13 @@
    "time": "2026-11-26 21:49:50"
   },
   "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳|3041|4": {
-   "side": "KEEP",
-   "nom": "披",
+   "side": "NOM",
+   "nom": "技",
    "qn": "gãy",
-   "rank": 1,
+   "rank": 2,
    "orig_nom": "披",
    "orig_qn": "gãy",
-   "time": "2026-11-26 21:56:35"
+   "time": "2026-11-27 22:42:29"
   },
   "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳|3045|3": {
    "side": "QN",
@@ -13052,40 +13052,40 @@
    "time": "2026-11-27 22:14:02"
   },
   "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳|3028|5": {
-   "side": "KEEP",
-   "nom": "浽",
+   "side": "NOM",
+   "nom": "溪",
    "qn": "khê",
-   "rank": 1,
+   "rank": 2,
    "orig_nom": "浽",
    "orig_qn": "khê",
-   "time": "2026-11-27 21:41:56"
+   "time": "2026-11-27 22:41:25"
   },
   "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳|3032|0": {
-   "side": "KEEP",
-   "nom": "荘",
+   "side": "NOM",
+   "nom": "茌",
    "qn": "Sè",
-   "rank": 1,
+   "rank": 2,
    "orig_nom": "荘",
    "orig_qn": "Sè",
-   "time": "2026-11-27 21:41:56"
+   "time": "2026-11-27 22:41:30"
   },
   "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳|3034|1": {
-   "side": "KEEP",
-   "nom": "𨂚",
+   "side": "NOM",
+   "nom": "𤚧",
    "qn": "Sao",
-   "rank": 1,
+   "rank": 9,
    "orig_nom": "𨂚",
    "orig_qn": "Sao",
-   "time": "2026-11-27 21:41:56"
+   "time": "2026-11-27 22:41:53"
   },
   "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳|3037|7": {
-   "side": "KEEP",
-   "nom": "鬼",
+   "side": "NOM",
+   "nom": "兒",
    "qn": "nhi",
-   "rank": 3,
+   "rank": 2,
    "orig_nom": "鬼",
    "orig_qn": "nhi",
-   "time": "2026-11-27 21:41:56"
+   "time": "2026-11-27 22:42:16"
   },
   "Kim Vân Kiều tân truyện _ 金 雲 翹 新 傳|3044|4": {
    "side": "KEEP",
