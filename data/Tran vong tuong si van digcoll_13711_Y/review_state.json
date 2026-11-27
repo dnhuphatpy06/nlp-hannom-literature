@@ -1,0 +1,2714 @@
+{
+ "saved_at": "2026-11-27 21:47:19",
+ "decisions": {
+  "Tran vong tuong si van digcoll_13711|10001|3": {
+   "side": "KEEP",
+   "nom": "月",
+   "qn": "gan",
+   "rank": 1,
+   "orig_nom": "月",
+   "orig_qn": "gan",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|10001|4": {
+   "side": "KEEP",
+   "nom": "鉄",
+   "qn": "tắt",
+   "rank": 2,
+   "orig_nom": "鉄",
+   "orig_qn": "tắt",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|10002|1": {
+   "side": "KEEP",
+   "nom": "𧷺",
+   "qn": "câu",
+   "rank": 1,
+   "orig_nom": "𧷺",
+   "orig_qn": "câu",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|10002|4": {
+   "side": "KEEP",
+   "nom": "月",
+   "qn": "phích",
+   "rank": 1,
+   "orig_nom": "月",
+   "orig_qn": "phích",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|10002|7": {
+   "side": "KEEP",
+   "nom": "寃",
+   "qn": "thu",
+   "rank": 1,
+   "orig_nom": "寃",
+   "orig_qn": "thu",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|10003|0": {
+   "side": "KEEP",
+   "nom": "𨃐",
+   "qn": "Giầy",
+   "rank": 2,
+   "orig_nom": "𨃐",
+   "orig_qn": "Giầy",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|10003|5": {
+   "side": "KEEP",
+   "nom": "䀡",
+   "qn": "phế",
+   "rank": 1,
+   "orig_nom": "䀡",
+   "orig_qn": "phế",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|10004|0": {
+   "side": "KEEP",
+   "nom": "方",
+   "qn": "Phận",
+   "rank": 1,
+   "orig_nom": "方",
+   "orig_qn": "Phận",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|10004|5": {
+   "side": "KEEP",
+   "nom": "臺",
+   "qn": "đái",
+   "rank": 4,
+   "orig_nom": "臺",
+   "orig_qn": "đái",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|10005|2": {
+   "side": "KEEP",
+   "nom": "𢯞",
+   "qn": "giật",
+   "rank": 1,
+   "orig_nom": "𢯞",
+   "orig_qn": "giật",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|10006|1": {
+   "side": "KEEP",
+   "nom": "閉",
+   "qn": "mấy",
+   "rank": 2,
+   "orig_nom": "閉",
+   "orig_qn": "mấy",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|10006|5": {
+   "side": "KEEP",
+   "nom": "旗",
+   "qn": "cò",
+   "rank": 3,
+   "orig_nom": "旗",
+   "orig_qn": "cò",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|10007|5": {
+   "side": "KEEP",
+   "nom": "樓",
+   "qn": "đêm",
+   "rank": 2,
+   "orig_nom": "樓",
+   "orig_qn": "đêm",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|10007|6": {
+   "side": "KEEP",
+   "nom": "這",
+   "qn": "gia",
+   "rank": 4,
+   "orig_nom": "這",
+   "orig_qn": "gia",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|10008|4": {
+   "side": "KEEP",
+   "nom": "祈",
+   "qn": "bậc",
+   "rank": 1,
+   "orig_nom": "祈",
+   "orig_qn": "bậc",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|10008|5": {
+   "side": "KEEP",
+   "nom": "忠",
+   "qn": "kỳ",
+   "rank": 1,
+   "orig_nom": "忠",
+   "orig_qn": "kỳ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11001|2": {
+   "side": "KEEP",
+   "nom": "淅",
+   "qn": "về",
+   "rank": 1,
+   "orig_nom": "淅",
+   "orig_qn": "về",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11001|5": {
+   "side": "KEEP",
+   "nom": "牢",
+   "qn": "làng",
+   "rank": 1,
+   "orig_nom": "牢",
+   "orig_qn": "làng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11002|2": {
+   "side": "KEEP",
+   "nom": "𠫾",
+   "qn": "nhiều",
+   "rank": 2,
+   "orig_nom": "𠫾",
+   "orig_qn": "nhiều",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11003|2": {
+   "side": "KEEP",
+   "nom": "𣙩",
+   "qn": "địp",
+   "rank": 1,
+   "orig_nom": "𣙩",
+   "orig_qn": "địp",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11003|6": {
+   "side": "KEEP",
+   "nom": "湘",
+   "qn": "ô",
+   "rank": 1,
+   "orig_nom": "湘",
+   "orig_qn": "ô",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11004|1": {
+   "side": "KEEP",
+   "nom": "吹",
+   "qn": "ngát",
+   "rank": 1,
+   "orig_nom": "吹",
+   "orig_qn": "ngát",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11004|4": {
+   "side": "KEEP",
+   "nom": "𣋀",
+   "qn": "ban",
+   "rank": 3,
+   "orig_nom": "𣋀",
+   "orig_qn": "ban",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11004|5": {
+   "side": "KEEP",
+   "nom": "𢞂",
+   "qn": "giãi",
+   "rank": 1,
+   "orig_nom": "𢞂",
+   "orig_qn": "giãi",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11004|6": {
+   "side": "KEEP",
+   "nom": "兒",
+   "qn": "thỏ",
+   "rank": 2,
+   "orig_nom": "兒",
+   "orig_qn": "thỏ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11005|2": {
+   "side": "KEEP",
+   "nom": "魚",
+   "qn": "giá",
+   "rank": 1,
+   "orig_nom": "魚",
+   "orig_qn": "giá",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11005|6": {
+   "side": "KEEP",
+   "nom": "㨋",
+   "qn": "tháng",
+   "rank": 2,
+   "orig_nom": "㨋",
+   "orig_qn": "tháng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11006|5": {
+   "side": "KEEP",
+   "nom": "人",
+   "qn": "Nghệ",
+   "rank": 2,
+   "orig_nom": "人",
+   "orig_qn": "Nghệ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11007|4": {
+   "side": "KEEP",
+   "nom": "咦",
+   "qn": "giậy",
+   "rank": 1,
+   "orig_nom": "咦",
+   "orig_qn": "giậy",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11008|8": {
+   "side": "KEEP",
+   "nom": "臘",
+   "qn": "lớp",
+   "rank": 3,
+   "orig_nom": "臘",
+   "orig_qn": "lớp",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11009|0": {
+   "side": "KEEP",
+   "nom": "情",
+   "qn": "Thưởng",
+   "rank": 1,
+   "orig_nom": "情",
+   "orig_qn": "Thưởng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11009|2": {
+   "side": "KEEP",
+   "nom": "白",
+   "qn": "từ",
+   "rank": 2,
+   "orig_nom": "白",
+   "orig_qn": "từ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11009|3": {
+   "side": "KEEP",
+   "nom": "多",
+   "qn": "tí",
+   "rank": 2,
+   "orig_nom": "多",
+   "orig_qn": "tí",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11009|4": {
+   "side": "KEEP",
+   "nom": "千",
+   "qn": "ngọ",
+   "rank": 2,
+   "orig_nom": "千",
+   "orig_qn": "ngọ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11009|6": {
+   "side": "KEEP",
+   "nom": "高",
+   "qn": "đậu",
+   "rank": 1,
+   "orig_nom": "高",
+   "orig_qn": "đậu",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11010|2": {
+   "side": "KEEP",
+   "nom": "姑",
+   "qn": "tính",
+   "rank": 1,
+   "orig_nom": "姑",
+   "orig_qn": "tính",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11010|5": {
+   "side": "KEEP",
+   "nom": "撩",
+   "qn": "nêu",
+   "rank": 1,
+   "orig_nom": "撩",
+   "orig_qn": "nêu",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|11010|8": {
+   "side": "KEEP",
+   "nom": "終",
+   "qn": "sổ",
+   "rank": 1,
+   "orig_nom": "終",
+   "orig_qn": "sổ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12000|0": {
+   "side": "KEEP",
+   "nom": "𩂁",
+   "qn": "Ngọn",
+   "rank": 1,
+   "orig_nom": "𩂁",
+   "orig_qn": "Ngọn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12000|1": {
+   "side": "KEEP",
+   "nom": "𠿯",
+   "qn": "còi",
+   "rank": 2,
+   "orig_nom": "𠿯",
+   "orig_qn": "còi",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12000|2": {
+   "side": "KEEP",
+   "nom": "促",
+   "qn": "núc",
+   "rank": 3,
+   "orig_nom": "促",
+   "orig_qn": "núc",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12000|5": {
+   "side": "KEEP",
+   "nom": "糟",
+   "qn": "tẻ",
+   "rank": 3,
+   "orig_nom": "糟",
+   "orig_qn": "tẻ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12001|0": {
+   "side": "KEEP",
+   "nom": "欺",
+   "qn": "Dịp",
+   "rank": 1,
+   "orig_nom": "欺",
+   "orig_qn": "Dịp",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12001|2": {
+   "side": "KEEP",
+   "nom": "𢭸",
+   "qn": "giồn",
+   "rank": 1,
+   "orig_nom": "𢭸",
+   "orig_qn": "giồn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12001|6": {
+   "side": "KEEP",
+   "nom": "𢜝",
+   "qn": "chốn",
+   "rank": 1,
+   "orig_nom": "𢜝",
+   "orig_qn": "chốn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12002|5": {
+   "side": "KEEP",
+   "nom": "𣋀",
+   "qn": "băn",
+   "rank": 1,
+   "orig_nom": "𣋀",
+   "orig_qn": "băn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12002|6": {
+   "side": "KEEP",
+   "nom": "霄",
+   "qn": "khoăn",
+   "rank": 1,
+   "orig_nom": "霄",
+   "orig_qn": "khoăn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12003|0": {
+   "side": "KEEP",
+   "nom": "課",
+   "qn": "Dưới",
+   "rank": 1,
+   "orig_nom": "課",
+   "orig_qn": "Dưới",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12003|3": {
+   "side": "KEEP",
+   "nom": "冢",
+   "qn": "dường",
+   "rank": 1,
+   "orig_nom": "冢",
+   "orig_qn": "dường",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12004|6": {
+   "side": "KEEP",
+   "nom": "不",
+   "qn": "chẳng",
+   "rank": 3,
+   "orig_nom": "不",
+   "orig_qn": "chẳng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12005|1": {
+   "side": "KEEP",
+   "nom": "𤾓",
+   "qn": "Muôn",
+   "rank": 1,
+   "orig_nom": "𤾓",
+   "orig_qn": "Muôn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12005|5": {
+   "side": "KEEP",
+   "nom": "𨖲",
+   "qn": "oanh",
+   "rank": 1,
+   "orig_nom": "𨖲",
+   "orig_qn": "oanh",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12005|7": {
+   "side": "KEEP",
+   "nom": "乃",
+   "qn": "cái",
+   "rank": 3,
+   "orig_nom": "乃",
+   "orig_qn": "cái",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12006|2": {
+   "side": "KEEP",
+   "nom": "色",
+   "qn": "cái",
+   "rank": 1,
+   "orig_nom": "色",
+   "orig_qn": "cái",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12006|4": {
+   "side": "KEEP",
+   "nom": "點",
+   "qn": "cũng",
+   "rank": 1,
+   "orig_nom": "點",
+   "orig_qn": "cũng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12008|0": {
+   "side": "KEEP",
+   "nom": "𠊛",
+   "qn": "Nghìn",
+   "rank": 1,
+   "orig_nom": "𠊛",
+   "orig_qn": "Nghìn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12008|4": {
+   "side": "KEEP",
+   "nom": "邅",
+   "qn": "lào",
+   "rank": 1,
+   "orig_nom": "邅",
+   "orig_qn": "lào",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12008|5": {
+   "side": "KEEP",
+   "nom": "進",
+   "qn": "phùng",
+   "rank": 3,
+   "orig_nom": "進",
+   "orig_qn": "phùng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12009|2": {
+   "side": "KEEP",
+   "nom": "冬",
+   "qn": "phận",
+   "rank": 1,
+   "orig_nom": "冬",
+   "orig_qn": "phận",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|12009|4": {
+   "side": "KEEP",
+   "nom": "𫳵",
+   "qn": "bao",
+   "rank": 2,
+   "orig_nom": "𫳵",
+   "orig_qn": "bao",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|13000|2": {
+   "side": "KEEP",
+   "nom": "除",
+   "qn": "nay",
+   "rank": 1,
+   "orig_nom": "除",
+   "orig_qn": "nay",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|13001|3": {
+   "side": "KEEP",
+   "nom": "𣅶",
+   "qn": "phòng",
+   "rank": 3,
+   "orig_nom": "𣅶",
+   "orig_qn": "phòng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|13002|0": {
+   "side": "KEEP",
+   "nom": "𣈗",
+   "qn": "Trạnh",
+   "rank": 2,
+   "orig_nom": "𣈗",
+   "orig_qn": "Trạnh",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|13003|0": {
+   "side": "KEEP",
+   "nom": "課",
+   "qn": "Dưới",
+   "rank": 1,
+   "orig_nom": "課",
+   "orig_qn": "Dưới",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|13003|1": {
+   "side": "KEEP",
+   "nom": "帳",
+   "qn": "cửa",
+   "rank": 1,
+   "orig_nom": "帳",
+   "orig_qn": "cửa",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|13003|2": {
+   "side": "KEEP",
+   "nom": "噅",
+   "qn": "nức",
+   "rank": 1,
+   "orig_nom": "噅",
+   "orig_qn": "nức",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|13003|5": {
+   "side": "KEEP",
+   "nom": "𥘷",
+   "qn": "vạc",
+   "rank": 1,
+   "orig_nom": "𥘷",
+   "orig_qn": "vạc",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|13004|3": {
+   "side": "KEEP",
+   "nom": "𨢇",
+   "qn": "rượi",
+   "rank": 2,
+   "orig_nom": "𨢇",
+   "orig_qn": "rượi",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|13005|2": {
+   "side": "KEEP",
+   "nom": "𨤔",
+   "qn": "rỡ",
+   "rank": 2,
+   "orig_nom": "𨤔",
+   "orig_qn": "rỡ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|13005|3": {
+   "side": "KEEP",
+   "nom": "𦠘",
+   "qn": "vẻ",
+   "rank": 2,
+   "orig_nom": "𦠘",
+   "orig_qn": "vẻ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|13006|2": {
+   "side": "KEEP",
+   "nom": "逐",
+   "qn": "tấm",
+   "rank": 1,
+   "orig_nom": "逐",
+   "orig_qn": "tấm",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|13006|4": {
+   "side": "KEEP",
+   "nom": "𥈰",
+   "qn": "hong",
+   "rank": 3,
+   "orig_nom": "𥈰",
+   "orig_qn": "hong",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|13007|1": {
+   "side": "KEEP",
+   "nom": "燭",
+   "qn": "khuâng",
+   "rank": 2,
+   "orig_nom": "燭",
+   "orig_qn": "khuâng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|13008|4": {
+   "side": "KEEP",
+   "nom": "長",
+   "qn": "thì",
+   "rank": 2,
+   "orig_nom": "長",
+   "orig_qn": "thì",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|14000|5": {
+   "side": "KEEP",
+   "nom": "𢏑",
+   "qn": "còn",
+   "rank": 1,
+   "orig_nom": "𢏑",
+   "orig_qn": "còn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|14001|5": {
+   "side": "KEEP",
+   "nom": "𥗜",
+   "qn": "rượi",
+   "rank": 1,
+   "orig_nom": "𥗜",
+   "orig_qn": "rượi",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|14001|6": {
+   "side": "KEEP",
+   "nom": "𨤵",
+   "qn": "mâm",
+   "rank": 1,
+   "orig_nom": "𨤵",
+   "orig_qn": "mâm",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|14002|6": {
+   "side": "KEEP",
+   "nom": "工",
+   "qn": "đỉnh",
+   "rank": 1,
+   "orig_nom": "工",
+   "orig_qn": "đỉnh",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|14003|7": {
+   "side": "KEEP",
+   "nom": "凭",
+   "qn": "đỏ",
+   "rank": 1,
+   "orig_nom": "凭",
+   "orig_qn": "đỏ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|14004|4": {
+   "side": "KEEP",
+   "nom": "𥿀",
+   "qn": "tới",
+   "rank": 1,
+   "orig_nom": "𥿀",
+   "orig_qn": "tới",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|14005|2": {
+   "side": "KEEP",
+   "nom": "㗂",
+   "qn": "thính",
+   "rank": 3,
+   "orig_nom": "㗂",
+   "orig_qn": "thính",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|14005|4": {
+   "side": "KEEP",
+   "nom": "𠸍",
+   "qn": "nghe",
+   "rank": 1,
+   "orig_nom": "𠸍",
+   "orig_qn": "nghe",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|14005|6": {
+   "side": "KEEP",
+   "nom": "𠼽",
+   "qn": "giặn",
+   "rank": 1,
+   "orig_nom": "𠼽",
+   "orig_qn": "giặn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|14006|3": {
+   "side": "KEEP",
+   "nom": "成",
+   "qn": "hoặc",
+   "rank": 2,
+   "orig_nom": "成",
+   "orig_qn": "hoặc",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|14008|5": {
+   "side": "KEEP",
+   "nom": "下",
+   "qn": "khao",
+   "rank": 1,
+   "orig_nom": "下",
+   "orig_qn": "khao",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|14008|6": {
+   "side": "KEEP",
+   "nom": "𠊛",
+   "qn": "thưởng",
+   "rank": 2,
+   "orig_nom": "𠊛",
+   "orig_qn": "thưởng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15001|1": {
+   "side": "KEEP",
+   "nom": "申",
+   "qn": "dù",
+   "rank": 1,
+   "orig_nom": "申",
+   "orig_qn": "dù",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15001|3": {
+   "side": "KEEP",
+   "nom": "碧",
+   "qn": "còn",
+   "rank": 1,
+   "orig_nom": "碧",
+   "orig_qn": "còn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15001|4": {
+   "side": "KEEP",
+   "nom": "半",
+   "qn": "cha",
+   "rank": 1,
+   "orig_nom": "半",
+   "orig_qn": "cha",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15001|5": {
+   "side": "KEEP",
+   "nom": "无",
+   "qn": "già",
+   "rank": 1,
+   "orig_nom": "无",
+   "orig_qn": "già",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15001|6": {
+   "side": "KEEP",
+   "nom": "丈",
+   "qn": "mẹ",
+   "rank": 1,
+   "orig_nom": "丈",
+   "orig_qn": "mẹ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15003|2": {
+   "side": "KEEP",
+   "nom": "心",
+   "qn": "bạn",
+   "rank": 1,
+   "orig_nom": "心",
+   "orig_qn": "bạn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15003|4": {
+   "side": "KEEP",
+   "nom": "切",
+   "qn": "tuất",
+   "rank": 1,
+   "orig_nom": "切",
+   "orig_qn": "tuất",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15003|5": {
+   "side": "KEEP",
+   "nom": "槾",
+   "qn": "đủ",
+   "rank": 1,
+   "orig_nom": "槾",
+   "orig_qn": "đủ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15004|2": {
+   "side": "KEEP",
+   "nom": "𦄵",
+   "qn": "đâu",
+   "rank": 1,
+   "orig_nom": "𦄵",
+   "orig_qn": "đâu",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15004|6": {
+   "side": "KEEP",
+   "nom": "𦰤",
+   "qn": "Thuấn",
+   "rank": 1,
+   "orig_nom": "𦰤",
+   "orig_qn": "Thuấn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15004|7": {
+   "side": "KEEP",
+   "nom": "秀",
+   "qn": "Nghiêu",
+   "rank": 1,
+   "orig_nom": "秀",
+   "orig_qn": "Nghiêu",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15005|0": {
+   "side": "KEEP",
+   "nom": "鼓",
+   "qn": "Hài",
+   "rank": 3,
+   "orig_nom": "鼓",
+   "orig_qn": "Hài",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15006|5": {
+   "side": "KEEP",
+   "nom": "𠖰",
+   "qn": "trần",
+   "rank": 1,
+   "orig_nom": "𠖰",
+   "orig_qn": "trần",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15007|0": {
+   "side": "KEEP",
+   "nom": "𢢆",
+   "qn": "tỏ",
+   "rank": 1,
+   "orig_nom": "𢢆",
+   "orig_qn": "tỏ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15007|3": {
+   "side": "KEEP",
+   "nom": "𠉟",
+   "qn": "về",
+   "rank": 1,
+   "orig_nom": "𠉟",
+   "orig_qn": "về",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15008|2": {
+   "side": "KEEP",
+   "nom": "兴",
+   "qn": "lửa",
+   "rank": 2,
+   "orig_nom": "兴",
+   "orig_qn": "lửa",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|15009|2": {
+   "side": "KEEP",
+   "nom": "和",
+   "qn": "cửa",
+   "rank": 1,
+   "orig_nom": "和",
+   "orig_qn": "cửa",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|16000|1": {
+   "side": "KEEP",
+   "nom": "身",
+   "qn": "tôn",
+   "rank": 3,
+   "orig_nom": "身",
+   "orig_qn": "tôn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|16000|5": {
+   "side": "KEEP",
+   "nom": "死",
+   "qn": "sinhtừ",
+   "rank": 1,
+   "orig_nom": "死",
+   "orig_qn": "sinhtừ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|16002|2": {
+   "side": "KEEP",
+   "nom": "滝",
+   "qn": "bông",
+   "rank": 7,
+   "orig_nom": "滝",
+   "orig_qn": "bông",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|16002|3": {
+   "side": "KEEP",
+   "nom": "謝",
+   "qn": "trong",
+   "rank": 1,
+   "orig_nom": "謝",
+   "orig_qn": "trong",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|16002|6": {
+   "side": "KEEP",
+   "nom": "艮",
+   "qn": "muôn",
+   "rank": 1,
+   "orig_nom": "艮",
+   "orig_qn": "muôn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|16003|4": {
+   "side": "KEEP",
+   "nom": "作",
+   "qn": "tộ",
+   "rank": 2,
+   "orig_nom": "作",
+   "orig_qn": "tộ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|17000|1": {
+   "side": "KEEP",
+   "nom": "徐",
+   "qn": "tế",
+   "rank": 2,
+   "orig_nom": "徐",
+   "orig_qn": "tế",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|17002|0": {
+   "side": "KEEP",
+   "nom": "𡶀",
+   "qn": "Thượng",
+   "rank": 2,
+   "orig_nom": "𡶀",
+   "orig_qn": "Thượng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|17003|4": {
+   "side": "KEEP",
+   "nom": "超",
+   "qn": "làm",
+   "rank": 1,
+   "orig_nom": "超",
+   "orig_qn": "làm",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|17005|1": {
+   "side": "KEEP",
+   "nom": "身",
+   "qn": "thần",
+   "rank": 6,
+   "orig_nom": "身",
+   "orig_qn": "thần",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|17005|3": {
+   "side": "KEEP",
+   "nom": "點",
+   "qn": "hết",
+   "rank": 1,
+   "orig_nom": "點",
+   "orig_qn": "hết",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|17006|0": {
+   "side": "KEEP",
+   "nom": "槊",
+   "qn": "gian",
+   "rank": 3,
+   "orig_nom": "槊",
+   "orig_qn": "gian",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|17006|1": {
+   "side": "KEEP",
+   "nom": "難",
+   "qn": "nan",
+   "rank": 7,
+   "orig_nom": "難",
+   "orig_qn": "nan",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|17006|2": {
+   "side": "KEEP",
+   "nom": "曾",
+   "qn": "lừng",
+   "rank": 3,
+   "orig_nom": "曾",
+   "orig_qn": "lừng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|17007|1": {
+   "side": "KEEP",
+   "nom": "𦬑",
+   "qn": "anh",
+   "rank": 2,
+   "orig_nom": "𦬑",
+   "orig_qn": "anh",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|17007|3": {
+   "side": "KEEP",
+   "nom": "为",
+   "qn": "vì",
+   "rank": 4,
+   "orig_nom": "为",
+   "orig_qn": "vì",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|17007|6": {
+   "side": "KEEP",
+   "nom": "腦",
+   "qn": "mình",
+   "rank": 1,
+   "orig_nom": "腦",
+   "orig_qn": "mình",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|17008|0": {
+   "side": "KEEP",
+   "nom": "枚",
+   "qn": "bản",
+   "rank": 5,
+   "orig_nom": "枚",
+   "orig_qn": "bản",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|17008|1": {
+   "side": "KEEP",
+   "nom": "落",
+   "qn": "đãng",
+   "rank": 3,
+   "orig_nom": "落",
+   "orig_qn": "đãng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|17008|2": {
+   "side": "KEEP",
+   "nom": "還",
+   "qn": "gián",
+   "rank": 1,
+   "orig_nom": "還",
+   "orig_qn": "gián",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|17008|3": {
+   "side": "KEEP",
+   "nom": "𢬗",
+   "qn": "rời",
+   "rank": 5,
+   "orig_nom": "𢬗",
+   "orig_qn": "rời",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18000|3": {
+   "side": "KEEP",
+   "nom": "麻",
+   "qn": "vẻ",
+   "rank": 3,
+   "orig_nom": "麻",
+   "orig_qn": "vẻ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18000|6": {
+   "side": "KEEP",
+   "nom": "沙",
+   "qn": "phai",
+   "rank": 1,
+   "orig_nom": "沙",
+   "orig_qn": "phai",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18001|0": {
+   "side": "KEEP",
+   "nom": "竹",
+   "qn": "Thúc",
+   "rank": 2,
+   "orig_nom": "竹",
+   "orig_qn": "Thúc",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18001|5": {
+   "side": "KEEP",
+   "nom": "𢏑",
+   "qn": "còn",
+   "rank": 1,
+   "orig_nom": "𢏑",
+   "orig_qn": "còn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18002|1": {
+   "side": "KEEP",
+   "nom": "白",
+   "qn": "hai",
+   "rank": 1,
+   "orig_nom": "白",
+   "orig_qn": "hai",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18002|2": {
+   "side": "KEEP",
+   "nom": "二",
+   "qn": "người",
+   "rank": 1,
+   "orig_nom": "二",
+   "orig_qn": "người",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18003|1": {
+   "side": "KEEP",
+   "nom": "恩",
+   "qn": "lược",
+   "rank": 2,
+   "orig_nom": "恩",
+   "orig_qn": "lược",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18005|3": {
+   "side": "KEEP",
+   "nom": "暖",
+   "qn": "thuở",
+   "rank": 1,
+   "orig_nom": "暖",
+   "orig_qn": "thuở",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18005|4": {
+   "side": "KEEP",
+   "nom": "𡾵",
+   "qn": "ngày",
+   "rank": 2,
+   "orig_nom": "𡾵",
+   "orig_qn": "ngày",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18006|0": {
+   "side": "KEEP",
+   "nom": "儮",
+   "qn": "lệch",
+   "rank": 5,
+   "orig_nom": "儮",
+   "orig_qn": "lệch",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18006|2": {
+   "side": "KEEP",
+   "nom": "𦬑",
+   "qn": "gai",
+   "rank": 1,
+   "orig_nom": "𦬑",
+   "orig_qn": "gai",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18006|3": {
+   "side": "KEEP",
+   "nom": "𨔿",
+   "qn": "đuổi",
+   "rank": 2,
+   "orig_nom": "𨔿",
+   "orig_qn": "đuổi",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18007|0": {
+   "side": "KEEP",
+   "nom": "帆",
+   "qn": "Vượt",
+   "rank": 1,
+   "orig_nom": "帆",
+   "orig_qn": "Vượt",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18009|6": {
+   "side": "KEEP",
+   "nom": "𤍊",
+   "qn": "tía",
+   "rank": 2,
+   "orig_nom": "𤍊",
+   "orig_qn": "tía",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18010|0": {
+   "side": "KEEP",
+   "nom": "浪",
+   "qn": "gian",
+   "rank": 2,
+   "orig_nom": "浪",
+   "orig_qn": "gian",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|18010|1": {
+   "side": "KEEP",
+   "nom": "屯",
+   "qn": "chuân",
+   "rank": 1,
+   "orig_nom": "屯",
+   "orig_qn": "chuân",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19000|0": {
+   "side": "KEEP",
+   "nom": "樓",
+   "qn": "Lễ",
+   "rank": 1,
+   "orig_nom": "樓",
+   "orig_qn": "Lễ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19000|3": {
+   "side": "KEEP",
+   "nom": "抌",
+   "qn": "giúp",
+   "rank": 2,
+   "orig_nom": "抌",
+   "orig_qn": "giúp",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19000|5": {
+   "side": "KEEP",
+   "nom": "正",
+   "qn": "chỉnh",
+   "rank": 3,
+   "orig_nom": "正",
+   "orig_qn": "chỉnh",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19000|6": {
+   "side": "KEEP",
+   "nom": "间",
+   "qn": "khanh",
+   "rank": 1,
+   "orig_nom": "间",
+   "orig_qn": "khanh",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19001|1": {
+   "side": "KEEP",
+   "nom": "受",
+   "qn": "ái",
+   "rank": 3,
+   "orig_nom": "受",
+   "orig_qn": "ái",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19001|5": {
+   "side": "KEEP",
+   "nom": "稚",
+   "qn": "trễ",
+   "rank": 4,
+   "orig_nom": "稚",
+   "orig_qn": "trễ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19002|5": {
+   "side": "KEEP",
+   "nom": "餒",
+   "qn": "sức",
+   "rank": 1,
+   "orig_nom": "餒",
+   "orig_qn": "sức",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19003|0": {
+   "side": "KEEP",
+   "nom": "𥗜",
+   "qn": "tiêm",
+   "rank": 1,
+   "orig_nom": "𥗜",
+   "orig_qn": "tiêm",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19003|1": {
+   "side": "KEEP",
+   "nom": "仍",
+   "qn": "cứu",
+   "rank": 2,
+   "orig_nom": "仍",
+   "orig_qn": "cứu",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19004|4": {
+   "side": "KEEP",
+   "nom": "袍",
+   "qn": "chia",
+   "rank": 1,
+   "orig_nom": "袍",
+   "orig_qn": "chia",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19005|0": {
+   "side": "KEEP",
+   "nom": "受",
+   "qn": "ưu",
+   "rank": 2,
+   "orig_nom": "受",
+   "orig_qn": "ưu",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19005|4": {
+   "side": "KEEP",
+   "nom": "庫",
+   "qn": "trên",
+   "rank": 1,
+   "orig_nom": "庫",
+   "orig_qn": "trên",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19005|5": {
+   "side": "KEEP",
+   "nom": "妙",
+   "qn": "chín",
+   "rank": 1,
+   "orig_nom": "妙",
+   "orig_qn": "chín",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19006|2": {
+   "side": "KEEP",
+   "nom": "蘭",
+   "qn": "khổn",
+   "rank": 1,
+   "orig_nom": "蘭",
+   "orig_qn": "khổn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19006|6": {
+   "side": "KEEP",
+   "nom": "餒",
+   "qn": "sức",
+   "rank": 1,
+   "orig_nom": "餒",
+   "orig_qn": "sức",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19007|1": {
+   "side": "KEEP",
+   "nom": "停",
+   "qn": "đạo",
+   "rank": 1,
+   "orig_nom": "停",
+   "orig_qn": "đạo",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19007|5": {
+   "side": "KEEP",
+   "nom": "晉",
+   "qn": "quản",
+   "rank": 1,
+   "orig_nom": "晉",
+   "orig_qn": "quản",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19007|7": {
+   "side": "KEEP",
+   "nom": "危",
+   "qn": "là",
+   "rank": 1,
+   "orig_nom": "危",
+   "orig_qn": "là",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19007|8": {
+   "side": "KEEP",
+   "nom": "可",
+   "qn": "nguy",
+   "rank": 1,
+   "orig_nom": "可",
+   "orig_qn": "nguy",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19008|5": {
+   "side": "KEEP",
+   "nom": "𠯦",
+   "qn": "thích",
+   "rank": 1,
+   "orig_nom": "𠯦",
+   "orig_qn": "thích",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|19009|5": {
+   "side": "KEEP",
+   "nom": "粉",
+   "qn": "mình",
+   "rank": 1,
+   "orig_nom": "粉",
+   "orig_qn": "mình",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20000|0": {
+   "side": "KEEP",
+   "nom": "𢯢",
+   "qn": "Lửa",
+   "rank": 2,
+   "orig_nom": "𢯢",
+   "orig_qn": "Lửa",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20000|2": {
+   "side": "KEEP",
+   "nom": "𤍊",
+   "qn": "mũ",
+   "rank": 1,
+   "orig_nom": "𤍊",
+   "orig_qn": "mũ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20000|6": {
+   "side": "KEEP",
+   "nom": "關",
+   "qn": "khuyết",
+   "rank": 3,
+   "orig_nom": "關",
+   "orig_qn": "khuyết",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20001|2": {
+   "side": "KEEP",
+   "nom": "童",
+   "qn": "hiền",
+   "rank": 1,
+   "orig_nom": "童",
+   "orig_qn": "hiền",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20001|3": {
+   "side": "KEEP",
+   "nom": "恾",
+   "qn": "ngất",
+   "rank": 1,
+   "orig_nom": "恾",
+   "orig_qn": "ngất",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20002|5": {
+   "side": "KEEP",
+   "nom": "𨤧",
+   "qn": "cô",
+   "rank": 1,
+   "orig_nom": "𨤧",
+   "orig_qn": "cô",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20003|2": {
+   "side": "KEEP",
+   "nom": "八",
+   "qn": "nhắp",
+   "rank": 2,
+   "orig_nom": "八",
+   "orig_qn": "nhắp",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20003|4": {
+   "side": "KEEP",
+   "nom": "眜",
+   "qn": "mùi",
+   "rank": 1,
+   "orig_nom": "眜",
+   "orig_qn": "mùi",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20004|3": {
+   "side": "KEEP",
+   "nom": "汝",
+   "qn": "một",
+   "rank": 1,
+   "orig_nom": "汝",
+   "orig_qn": "một",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20004|5": {
+   "side": "KEEP",
+   "nom": "天",
+   "qn": "thỉ",
+   "rank": 2,
+   "orig_nom": "天",
+   "orig_qn": "thỉ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20005|0": {
+   "side": "KEEP",
+   "nom": "重",
+   "qn": "trung",
+   "rank": 4,
+   "orig_nom": "重",
+   "orig_qn": "trung",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20005|2": {
+   "side": "KEEP",
+   "nom": "庸",
+   "qn": "mà",
+   "rank": 1,
+   "orig_nom": "庸",
+   "orig_qn": "mà",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20006|3": {
+   "side": "KEEP",
+   "nom": "𨷈",
+   "qn": "muốn",
+   "rank": 3,
+   "orig_nom": "𨷈",
+   "orig_qn": "muốn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20007|6": {
+   "side": "KEEP",
+   "nom": "土",
+   "qn": "sỉ",
+   "rank": 1,
+   "orig_nom": "土",
+   "orig_qn": "sỉ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20008|4": {
+   "side": "KEEP",
+   "nom": "怯",
+   "qn": "màng",
+   "rank": 3,
+   "orig_nom": "怯",
+   "orig_qn": "màng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|20008|6": {
+   "side": "KEEP",
+   "nom": "滝",
+   "qn": "gió",
+   "rank": 2,
+   "orig_nom": "滝",
+   "orig_qn": "gió",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21001|1": {
+   "side": "KEEP",
+   "nom": "箭",
+   "qn": "cũ",
+   "rank": 1,
+   "orig_nom": "箭",
+   "orig_qn": "cũ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21001|4": {
+   "side": "KEEP",
+   "nom": "朋",
+   "qn": "liêu",
+   "rank": 1,
+   "orig_nom": "朋",
+   "orig_qn": "liêu",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21001|5": {
+   "side": "KEEP",
+   "nom": "沔",
+   "qn": "sái",
+   "rank": 3,
+   "orig_nom": "沔",
+   "orig_qn": "sái",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21002|1": {
+   "side": "KEEP",
+   "nom": "落",
+   "qn": "đãng",
+   "rank": 2,
+   "orig_nom": "落",
+   "orig_qn": "đãng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21002|5": {
+   "side": "KEEP",
+   "nom": "停",
+   "qn": "sành",
+   "rank": 5,
+   "orig_nom": "停",
+   "orig_qn": "sành",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21002|8": {
+   "side": "KEEP",
+   "nom": "捽",
+   "qn": "tủi",
+   "rank": 1,
+   "orig_nom": "捽",
+   "orig_qn": "tủi",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21004|6": {
+   "side": "KEEP",
+   "nom": "塘",
+   "qn": "đền",
+   "rank": 4,
+   "orig_nom": "塘",
+   "orig_qn": "đền",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21005|2": {
+   "side": "KEEP",
+   "nom": "嘆",
+   "qn": "mạc",
+   "rank": 2,
+   "orig_nom": "嘆",
+   "orig_qn": "mạc",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21006|0": {
+   "side": "KEEP",
+   "nom": "除",
+   "qn": "Nay",
+   "rank": 1,
+   "orig_nom": "除",
+   "orig_qn": "Nay",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21007|2": {
+   "side": "KEEP",
+   "nom": "委",
+   "qn": "úy",
+   "rank": 6,
+   "orig_nom": "委",
+   "orig_qn": "úy",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21007|3": {
+   "side": "KEEP",
+   "nom": "除",
+   "qn": "tế",
+   "rank": 1,
+   "orig_nom": "除",
+   "orig_qn": "tế",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21008|0": {
+   "side": "KEEP",
+   "nom": "二",
+   "qn": "Hai",
+   "rank": 1,
+   "orig_nom": "二",
+   "orig_qn": "Hai",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21008|2": {
+   "side": "KEEP",
+   "nom": "綱",
+   "qn": "cường",
+   "rank": 3,
+   "orig_nom": "綱",
+   "orig_qn": "cường",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21008|4": {
+   "side": "KEEP",
+   "nom": "表",
+   "qn": "nghĩa",
+   "rank": 1,
+   "orig_nom": "表",
+   "orig_qn": "nghĩa",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21008|5": {
+   "side": "KEEP",
+   "nom": "硯",
+   "qn": "nặng",
+   "rank": 1,
+   "orig_nom": "硯",
+   "orig_qn": "nặng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21008|6": {
+   "side": "KEEP",
+   "nom": "曾",
+   "qn": "rõ",
+   "rank": 1,
+   "orig_nom": "曾",
+   "orig_qn": "rõ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|21009|1": {
+   "side": "KEEP",
+   "nom": "𡗶",
+   "qn": "hoa",
+   "rank": 2,
+   "orig_nom": "𡗶",
+   "orig_qn": "hoa",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|22000|3": {
+   "side": "KEEP",
+   "nom": "庄",
+   "qn": "nhạc",
+   "rank": 1,
+   "orig_nom": "庄",
+   "orig_qn": "nhạc",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|22000|4": {
+   "side": "KEEP",
+   "nom": "氣",
+   "qn": "khi",
+   "rank": 2,
+   "orig_nom": "氣",
+   "orig_qn": "khi",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|22000|6": {
+   "side": "KEEP",
+   "nom": "想",
+   "qn": "xếp",
+   "rank": 1,
+   "orig_nom": "想",
+   "orig_qn": "xếp",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|22001|1": {
+   "side": "KEEP",
+   "nom": "銊",
+   "qn": "viết",
+   "rank": 1,
+   "orig_nom": "銊",
+   "orig_qn": "viết",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|22001|2": {
+   "side": "KEEP",
+   "nom": "底",
+   "qn": "đó",
+   "rank": 6,
+   "orig_nom": "底",
+   "orig_qn": "đó",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|22001|6": {
+   "side": "KEEP",
+   "nom": "治",
+   "qn": "tĩnh",
+   "rank": 2,
+   "orig_nom": "治",
+   "orig_qn": "tĩnh",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|4000|1": {
+   "side": "KEEP",
+   "nom": "七",
+   "qn": "vong",
+   "rank": 1,
+   "orig_nom": "七",
+   "orig_qn": "vong",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|4003|1": {
+   "side": "KEEP",
+   "nom": "𦰟",
+   "qn": "Nguyễn",
+   "rank": 2,
+   "orig_nom": "𦰟",
+   "orig_qn": "Nguyễn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|4003|5": {
+   "side": "KEEP",
+   "nom": "察",
+   "qn": "tịch",
+   "rank": 2,
+   "orig_nom": "察",
+   "orig_qn": "tịch",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5000|0": {
+   "side": "KEEP",
+   "nom": "噴",
+   "qn": "Chan",
+   "rank": 1,
+   "orig_nom": "噴",
+   "orig_qn": "Chan",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5001|2": {
+   "side": "KEEP",
+   "nom": "帝",
+   "qn": "phố",
+   "rank": 1,
+   "orig_nom": "帝",
+   "orig_qn": "phố",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5001|6": {
+   "side": "KEEP",
+   "nom": "塘",
+   "qn": "chảnh",
+   "rank": 1,
+   "orig_nom": "塘",
+   "orig_qn": "chảnh",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5002|0": {
+   "side": "KEEP",
+   "nom": "白",
+   "qn": "Bao",
+   "rank": 3,
+   "orig_nom": "白",
+   "orig_qn": "Bao",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5002|1": {
+   "side": "KEEP",
+   "nom": "畨",
+   "qn": "then",
+   "rank": 1,
+   "orig_nom": "畨",
+   "orig_qn": "then",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5002|7": {
+   "side": "KEEP",
+   "nom": "除",
+   "qn": "nay",
+   "rank": 1,
+   "orig_nom": "除",
+   "orig_qn": "nay",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5003|1": {
+   "side": "KEEP",
+   "nom": "濃",
+   "qn": "lư",
+   "rank": 1,
+   "orig_nom": "濃",
+   "orig_qn": "lư",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5004|0": {
+   "side": "KEEP",
+   "nom": "龙",
+   "qn": "mấy",
+   "rank": 1,
+   "orig_nom": "龙",
+   "orig_qn": "mấy",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5004|1": {
+   "side": "KEEP",
+   "nom": "儿",
+   "qn": "kẻ",
+   "rank": 2,
+   "orig_nom": "儿",
+   "orig_qn": "kẻ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5004|2": {
+   "side": "KEEP",
+   "nom": "周",
+   "qn": "điêu",
+   "rank": 1,
+   "orig_nom": "周",
+   "orig_qn": "điêu",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5004|6": {
+   "side": "KEEP",
+   "nom": "計",
+   "qn": "thuở",
+   "rank": 1,
+   "orig_nom": "計",
+   "orig_qn": "thuở",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5005|5": {
+   "side": "KEEP",
+   "nom": "离",
+   "qn": "mà",
+   "rank": 2,
+   "orig_nom": "离",
+   "orig_qn": "mà",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5006|5": {
+   "side": "KEEP",
+   "nom": "蘼",
+   "qn": "mà",
+   "rank": 1,
+   "orig_nom": "蘼",
+   "orig_qn": "mà",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5007|3": {
+   "side": "KEEP",
+   "nom": "切",
+   "qn": "nấy",
+   "rank": 2,
+   "orig_nom": "切",
+   "orig_qn": "nấy",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5008|3": {
+   "side": "KEEP",
+   "nom": "仰",
+   "qn": "huy",
+   "rank": 1,
+   "orig_nom": "仰",
+   "orig_qn": "huy",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|5009|3": {
+   "side": "KEEP",
+   "nom": "宵",
+   "qn": "trụ",
+   "rank": 2,
+   "orig_nom": "宵",
+   "orig_qn": "trụ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6000|2": {
+   "side": "KEEP",
+   "nom": "終",
+   "qn": "góp",
+   "rank": 1,
+   "orig_nom": "終",
+   "orig_qn": "góp",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6001|1": {
+   "side": "KEEP",
+   "nom": "筅",
+   "qn": "tôn",
+   "rank": 2,
+   "orig_nom": "筅",
+   "orig_qn": "tôn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6001|6": {
+   "side": "KEEP",
+   "nom": "兜",
+   "qn": "nhi",
+   "rank": 1,
+   "orig_nom": "兜",
+   "orig_qn": "nhi",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6002|0": {
+   "side": "KEEP",
+   "nom": "色",
+   "qn": "Hai",
+   "rank": 1,
+   "orig_nom": "色",
+   "orig_qn": "Hai",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6003|6": {
+   "side": "KEEP",
+   "nom": "圭",
+   "qn": "chủ",
+   "rank": 3,
+   "orig_nom": "圭",
+   "orig_qn": "chủ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6004|0": {
+   "side": "KEEP",
+   "nom": "仍",
+   "qn": "Nấy",
+   "rank": 2,
+   "orig_nom": "仍",
+   "orig_qn": "Nấy",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6005|3": {
+   "side": "KEEP",
+   "nom": "紫",
+   "qn": "thầy",
+   "rank": 2,
+   "orig_nom": "紫",
+   "orig_qn": "thầy",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6006|0": {
+   "side": "KEEP",
+   "nom": "八",
+   "qn": "Kẻ",
+   "rank": 1,
+   "orig_nom": "八",
+   "orig_qn": "Kẻ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6006|3": {
+   "side": "KEEP",
+   "nom": "囊",
+   "qn": "cơ",
+   "rank": 1,
+   "orig_nom": "囊",
+   "orig_qn": "cơ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6006|4": {
+   "side": "KEEP",
+   "nom": "勃",
+   "qn": "đích",
+   "rank": 1,
+   "orig_nom": "勃",
+   "orig_qn": "đích",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6007|2": {
+   "side": "KEEP",
+   "nom": "歌",
+   "qn": "hăm",
+   "rank": 2,
+   "orig_nom": "歌",
+   "orig_qn": "hăm",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6007|5": {
+   "side": "KEEP",
+   "nom": "𠸜",
+   "qn": "nanh",
+   "rank": 1,
+   "orig_nom": "𠸜",
+   "orig_qn": "nanh",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6007|6": {
+   "side": "KEEP",
+   "nom": "𡓇",
+   "qn": "giữa",
+   "rank": 1,
+   "orig_nom": "𡓇",
+   "orig_qn": "giữa",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6007|7": {
+   "side": "KEEP",
+   "nom": "𣖢",
+   "qn": "vút",
+   "rank": 1,
+   "orig_nom": "𣖢",
+   "orig_qn": "vút",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6009|0": {
+   "side": "KEEP",
+   "nom": "八",
+   "qn": "Kẻ",
+   "rank": 1,
+   "orig_nom": "八",
+   "orig_qn": "Kẻ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6009|2": {
+   "side": "KEEP",
+   "nom": "追",
+   "qn": "trốn",
+   "rank": 2,
+   "orig_nom": "追",
+   "orig_qn": "trốn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6009|3": {
+   "side": "KEEP",
+   "nom": "銊",
+   "qn": "việc",
+   "rank": 2,
+   "orig_nom": "銊",
+   "orig_qn": "việc",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6009|4": {
+   "side": "KEEP",
+   "nom": "𣃱",
+   "qn": "mao",
+   "rank": 1,
+   "orig_nom": "𣃱",
+   "orig_qn": "mao",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6009|5": {
+   "side": "KEEP",
+   "nom": "踷",
+   "qn": "giờ",
+   "rank": 3,
+   "orig_nom": "踷",
+   "orig_qn": "giờ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6010|0": {
+   "side": "KEEP",
+   "nom": "刀",
+   "qn": "Sơ",
+   "rank": 1,
+   "orig_nom": "刀",
+   "orig_qn": "Sơ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6010|3": {
+   "side": "KEEP",
+   "nom": "迢",
+   "qn": "díu",
+   "rank": 3,
+   "orig_nom": "迢",
+   "orig_qn": "díu",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6010|4": {
+   "side": "KEEP",
+   "nom": "𢬣",
+   "qn": "ven",
+   "rank": 1,
+   "orig_nom": "𢬣",
+   "orig_qn": "ven",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6010|6": {
+   "side": "KEEP",
+   "nom": "損",
+   "qn": "vươn",
+   "rank": 1,
+   "orig_nom": "損",
+   "orig_qn": "vươn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|6010|7": {
+   "side": "KEEP",
+   "nom": "𠨪",
+   "qn": "vây",
+   "rank": 2,
+   "orig_nom": "𠨪",
+   "orig_qn": "vây",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7000|2": {
+   "side": "KEEP",
+   "nom": "兆",
+   "qn": "bắc",
+   "rank": 2,
+   "orig_nom": "兆",
+   "orig_qn": "bắc",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7000|7": {
+   "side": "KEEP",
+   "nom": "𡢐",
+   "qn": "cử",
+   "rank": 1,
+   "orig_nom": "𡢐",
+   "orig_qn": "cử",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7001|1": {
+   "side": "KEEP",
+   "nom": "妾",
+   "qn": "gai",
+   "rank": 1,
+   "orig_nom": "妾",
+   "orig_qn": "gai",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7001|3": {
+   "side": "KEEP",
+   "nom": "窖",
+   "qn": "mật",
+   "rank": 1,
+   "orig_nom": "窖",
+   "orig_qn": "mật",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7001|7": {
+   "side": "KEEP",
+   "nom": "佩",
+   "qn": "ưu",
+   "rank": 1,
+   "orig_nom": "佩",
+   "orig_qn": "ưu",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7002|6": {
+   "side": "KEEP",
+   "nom": "𡶀",
+   "qn": "lao",
+   "rank": 1,
+   "orig_nom": "𡶀",
+   "orig_qn": "lao",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7002|7": {
+   "side": "KEEP",
+   "nom": "苦",
+   "qn": "khô",
+   "rank": 3,
+   "orig_nom": "苦",
+   "orig_qn": "khô",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7003|3": {
+   "side": "KEEP",
+   "nom": "逞",
+   "qn": "Tiêm",
+   "rank": 2,
+   "orig_nom": "逞",
+   "orig_qn": "Tiêm",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7003|6": {
+   "side": "KEEP",
+   "nom": "歸",
+   "qn": "mên",
+   "rank": 2,
+   "orig_nom": "歸",
+   "orig_qn": "mên",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7003|7": {
+   "side": "KEEP",
+   "nom": "淅",
+   "qn": "về",
+   "rank": 1,
+   "orig_nom": "淅",
+   "orig_qn": "về",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7004|1": {
+   "side": "KEEP",
+   "nom": "民",
+   "qn": "Gia-định",
+   "rank": 1,
+   "orig_nom": "民",
+   "orig_qn": "Gia-định",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7004|2": {
+   "side": "KEEP",
+   "nom": "闌",
+   "qn": "nói",
+   "rank": 1,
+   "orig_nom": "闌",
+   "orig_qn": "nói",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7004|6": {
+   "side": "KEEP",
+   "nom": "壇",
+   "qn": "Thuận",
+   "rank": 1,
+   "orig_nom": "壇",
+   "orig_qn": "Thuận",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7004|7": {
+   "side": "KEEP",
+   "nom": "本",
+   "qn": "may",
+   "rank": 2,
+   "orig_nom": "本",
+   "orig_qn": "may",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7005|5": {
+   "side": "KEEP",
+   "nom": "皇",
+   "qn": "lễ",
+   "rank": 1,
+   "orig_nom": "皇",
+   "orig_qn": "lễ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7006|2": {
+   "side": "KEEP",
+   "nom": "貉",
+   "qn": "khắp",
+   "rank": 1,
+   "orig_nom": "貉",
+   "orig_qn": "khắp",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7006|4": {
+   "side": "KEEP",
+   "nom": "报",
+   "qn": "gian",
+   "rank": 3,
+   "orig_nom": "报",
+   "orig_qn": "gian",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7007|3": {
+   "side": "KEEP",
+   "nom": "闌",
+   "qn": "Đồ",
+   "rank": 2,
+   "orig_nom": "闌",
+   "orig_qn": "Đồ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7007|4": {
+   "side": "KEEP",
+   "nom": "藥",
+   "qn": "bàn",
+   "rank": 2,
+   "orig_nom": "藥",
+   "orig_qn": "bàn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7007|6": {
+   "side": "KEEP",
+   "nom": "南",
+   "qn": "nghĩa",
+   "rank": 1,
+   "orig_nom": "南",
+   "orig_qn": "nghĩa",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7008|5": {
+   "side": "KEEP",
+   "nom": "𡲤",
+   "qn": "Thăng",
+   "rank": 1,
+   "orig_nom": "𡲤",
+   "orig_qn": "Thăng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7009|2": {
+   "side": "KEEP",
+   "nom": "當",
+   "qn": "vũ",
+   "rank": 1,
+   "orig_nom": "當",
+   "orig_qn": "vũ",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7009|3": {
+   "side": "KEEP",
+   "nom": "雨",
+   "qn": "pháo",
+   "rank": 1,
+   "orig_nom": "雨",
+   "orig_qn": "pháo",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7009|5": {
+   "side": "KEEP",
+   "nom": "楼",
+   "qn": "thê",
+   "rank": 3,
+   "orig_nom": "楼",
+   "orig_qn": "thê",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|7009|7": {
+   "side": "KEEP",
+   "nom": "滝",
+   "qn": "lũng",
+   "rank": 6,
+   "orig_nom": "滝",
+   "orig_qn": "lũng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|8001|2": {
+   "side": "KEEP",
+   "nom": "閉",
+   "qn": "đấu",
+   "rank": 1,
+   "orig_nom": "閉",
+   "orig_qn": "đấu",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|8001|7": {
+   "side": "KEEP",
+   "nom": "裊",
+   "qn": "số",
+   "rank": 1,
+   "orig_nom": "裊",
+   "orig_qn": "số",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|8002|2": {
+   "side": "KEEP",
+   "nom": "漨",
+   "qn": "chen",
+   "rank": 1,
+   "orig_nom": "漨",
+   "orig_qn": "chen",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|8002|3": {
+   "side": "KEEP",
+   "nom": "万",
+   "qn": "chân",
+   "rank": 2,
+   "orig_nom": "万",
+   "orig_qn": "chân",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|8004|6": {
+   "side": "KEEP",
+   "nom": "𩂁",
+   "qn": "tên",
+   "rank": 2,
+   "orig_nom": "𩂁",
+   "orig_qn": "tên",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9000|0": {
+   "side": "KEEP",
+   "nom": "𨇒",
+   "qn": "Ruồi",
+   "rank": 3,
+   "orig_nom": "𨇒",
+   "orig_qn": "Ruồi",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9001|1": {
+   "side": "KEEP",
+   "nom": "光",
+   "qn": "lắt",
+   "rank": 1,
+   "orig_nom": "光",
+   "orig_qn": "lắt",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9001|2": {
+   "side": "KEEP",
+   "nom": "𠇍",
+   "qn": "này",
+   "rank": 2,
+   "orig_nom": "𠇍",
+   "orig_qn": "này",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9002|0": {
+   "side": "KEEP",
+   "nom": "𩲉",
+   "qn": "Hôn",
+   "rank": 2,
+   "orig_nom": "𩲉",
+   "orig_qn": "Hôn",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9002|1": {
+   "side": "KEEP",
+   "nom": "江",
+   "qn": "tráng",
+   "rank": 7,
+   "orig_nom": "江",
+   "orig_qn": "tráng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9002|6": {
+   "side": "KEEP",
+   "nom": "沾",
+   "qn": "miên",
+   "rank": 1,
+   "orig_nom": "沾",
+   "orig_qn": "miên",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9002|7": {
+   "side": "KEEP",
+   "nom": "举",
+   "qn": "mãng",
+   "rank": 1,
+   "orig_nom": "举",
+   "orig_qn": "mãng",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9002|8": {
+   "side": "KEEP",
+   "nom": "漢",
+   "qn": "mạc",
+   "rank": 2,
+   "orig_nom": "漢",
+   "orig_qn": "mạc",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9003|0": {
+   "side": "KEEP",
+   "nom": "窻",
+   "qn": "mịt",
+   "rank": 1,
+   "orig_nom": "窻",
+   "orig_qn": "mịt",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9003|1": {
+   "side": "KEEP",
+   "nom": "𩂟",
+   "qn": "mùi",
+   "rank": 2,
+   "orig_nom": "𩂟",
+   "orig_qn": "mùi",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9003|3": {
+   "side": "KEEP",
+   "nom": "𠾕",
+   "qn": "lốc",
+   "rank": 1,
+   "orig_nom": "𠾕",
+   "orig_qn": "lốc",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9003|7": {
+   "side": "KEEP",
+   "nom": "邻",
+   "qn": "thương",
+   "rank": 1,
+   "orig_nom": "邻",
+   "orig_qn": "thương",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9004|6": {
+   "side": "KEEP",
+   "nom": "潭",
+   "qn": "nét",
+   "rank": 1,
+   "orig_nom": "潭",
+   "orig_qn": "nét",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9004|7": {
+   "side": "KEEP",
+   "nom": "浪",
+   "qn": "gian",
+   "rank": 1,
+   "orig_nom": "浪",
+   "orig_qn": "gian",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9004|8": {
+   "side": "KEEP",
+   "nom": "辛",
+   "qn": "tâm",
+   "rank": 2,
+   "orig_nom": "辛",
+   "orig_qn": "tâm",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9005|3": {
+   "side": "KEEP",
+   "nom": "蕩",
+   "qn": "chói",
+   "rank": 1,
+   "orig_nom": "蕩",
+   "orig_qn": "chói",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9006|0": {
+   "side": "KEEP",
+   "nom": "喂",
+   "qn": "ôc",
+   "rank": 4,
+   "orig_nom": "喂",
+   "orig_qn": "ôc",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9007|0": {
+   "side": "KEEP",
+   "nom": "汝",
+   "qn": "Một",
+   "rank": 1,
+   "orig_nom": "汝",
+   "orig_qn": "Một",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9007|5": {
+   "side": "KEEP",
+   "nom": "𨍦",
+   "qn": "số",
+   "rank": 1,
+   "orig_nom": "𨍦",
+   "orig_qn": "số",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9007|6": {
+   "side": "KEEP",
+   "nom": "怨",
+   "qn": "đoản",
+   "rank": 1,
+   "orig_nom": "怨",
+   "orig_qn": "đoản",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9008|4": {
+   "side": "KEEP",
+   "nom": "𢺺",
+   "qn": "thi",
+   "rank": 2,
+   "orig_nom": "𢺺",
+   "orig_qn": "thi",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9008|5": {
+   "side": "KEEP",
+   "nom": "分",
+   "qn": "thân",
+   "rank": 6,
+   "orig_nom": "分",
+   "orig_qn": "thân",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9008|6": {
+   "side": "KEEP",
+   "nom": "令",
+   "qn": "kim",
+   "rank": 3,
+   "orig_nom": "令",
+   "orig_qn": "kim",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9009|0": {
+   "side": "KEEP",
+   "nom": "㨋",
+   "qn": "Chắc",
+   "rank": 1,
+   "orig_nom": "㨋",
+   "orig_qn": "Chắc",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9009|1": {
+   "side": "KEEP",
+   "nom": "兑",
+   "qn": "là",
+   "rank": 2,
+   "orig_nom": "兑",
+   "orig_qn": "là",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9010|0": {
+   "side": "KEEP",
+   "nom": "實",
+   "qn": "bảo",
+   "rank": 4,
+   "orig_nom": "實",
+   "orig_qn": "bảo",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9010|3": {
+   "side": "KEEP",
+   "nom": "𤾓",
+   "qn": "trắm",
+   "rank": 2,
+   "orig_nom": "𤾓",
+   "orig_qn": "trắm",
+   "time": "2026-11-27 21:42:03"
+  },
+  "Tran vong tuong si van digcoll_13711|9010|5": {
+   "side": "KEEP",
+   "nom": "曾",
+   "qn": "mới",
+   "rank": 1,
+   "orig_nom": "曾",
+   "orig_qn": "mới",
+   "time": "2026-11-27 21:42:03"
+  }
+ }
+}

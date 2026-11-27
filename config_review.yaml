@@ -17,3 +17,5 @@ review:
   top_k: 0                        # số ứng viên tối đa hiển thị cho mỗi cặp lệch; 0 là hiện tất cả
   use_tuned_weights: true         # dùng trọng số chấm điểm đã dò từ nhãn đã duyệt (python -m scripts.tune_review); không có file thì dùng trọng số mặc định
   tuned_weights_file: resources/tuning/tuned_weights.json
+  use_ranker: true                # xếp hạng ứng viên bằng mô hình ranker học máy (LightGBM LambdaRank, python -m scripts.train_ranker); thắng trọng số đã dò; false: dùng công thức trọng số
+  ranker_dir: resources/ranker    # chứa ranker_lgbm.txt, metrics.json, ranker_config.json (python -m scripts.finalize_ranker); thiếu file hoặc thư viện thì tự dùng trọng số

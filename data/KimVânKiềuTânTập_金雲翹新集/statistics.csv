@@ -1,0 +1,3 @@
+﻿book,sentences,sentences_with_mismatch,aligned_pairs,alignment_positions,mismatch_before,pct_before,mismatch_after,pct_after,mismatch_reduced,mismatch_after_unconfirmed,pct_after_unconfirmed,extra_nom,extra_qn,red_incl_gaps_before,pct_red_incl_gaps_before,red_incl_gaps_after,pct_red_incl_gaps_after,mismatch_no_candidate,pairs_to_review,reviewed_pairs,decision_KEEP,decision_NOM,decision_QN,decision_UNREVIEWED
+KimVânKiềuTânTập_金雲翹新集,3247,796,22723,22740,977,4.3,858,3.78,119,0,0.0,6,11,994,4.37,875,3.85,0,977,977,858,22,97,0
+TOTAL,3247,796,22723,22740,977,4.3,858,3.78,119,0,0.0,6,11,994,4.37,875,3.85,0,977,977,858,22,97,0

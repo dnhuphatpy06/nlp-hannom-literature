@@ -1,0 +1,1904 @@
+{
+ "saved_at": "2026-11-27 22:03:54",
+ "decisions": {
+  "Nhât Tỉnh Ngâm, Nôm|72|6": {
+   "side": "KEEP",
+   "nom": "𣈙",
+   "qn": "dầy",
+   "rank": 2,
+   "orig_nom": "𣈙",
+   "orig_qn": "dầy",
+   "time": "2026-11-26 21:11:23"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|274|5": {
+   "side": "QN",
+   "nom": "𠄻",
+   "qn": "rằm",
+   "rank": 1,
+   "orig_nom": "𠄻",
+   "orig_qn": "dằm",
+   "time": "2026-11-27 13:46:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|4|5": {
+   "side": "QN",
+   "nom": "時",
+   "qn": "thời",
+   "rank": 1,
+   "orig_nom": "時",
+   "orig_qn": "thói",
+   "time": "2026-11-26 23:00:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|16|6": {
+   "side": "KEEP",
+   "nom": "塡",
+   "qn": "đền",
+   "rank": 2,
+   "orig_nom": "塡",
+   "orig_qn": "đền",
+   "time": "2026-11-26 21:07:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|17|0": {
+   "side": "QN",
+   "nom": "晨",
+   "qn": "thần",
+   "rank": 1,
+   "orig_nom": "晨",
+   "orig_qn": "chẫn",
+   "time": "2026-11-26 23:00:56"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|18|0": {
+   "side": "QN",
+   "nom": "㐌",
+   "qn": "đã",
+   "rank": 1,
+   "orig_nom": "㐌",
+   "orig_qn": "dạ",
+   "time": "2026-11-26 21:07:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|18|2": {
+   "side": "QN",
+   "nom": "朝",
+   "qn": "chiều",
+   "rank": 1,
+   "orig_nom": "朝",
+   "orig_qn": "chiêu",
+   "time": "2026-11-26 21:07:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|18|6": {
+   "side": "QN",
+   "nom": "朝",
+   "qn": "chiều",
+   "rank": 1,
+   "orig_nom": "朝",
+   "orig_qn": "chiêu",
+   "time": "2026-11-26 21:07:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|26|4": {
+   "side": "KEEP",
+   "nom": "買",
+   "qn": "mày",
+   "rank": 5,
+   "orig_nom": "買",
+   "orig_qn": "mày",
+   "time": "2026-11-26 21:08:07"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|32|2": {
+   "side": "KEEP",
+   "nom": "衾",
+   "qn": "khăm",
+   "rank": 2,
+   "orig_nom": "衾",
+   "orig_qn": "khăm",
+   "time": "2026-11-26 21:08:07"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|34|6": {
+   "side": "QN",
+   "nom": "𦓡",
+   "qn": "mà",
+   "rank": 1,
+   "orig_nom": "𦓡",
+   "orig_qn": "ma",
+   "time": "2026-11-27 13:46:25"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|35|0": {
+   "side": "KEEP",
+   "nom": "蜍",
+   "qn": "chớ",
+   "rank": 4,
+   "orig_nom": "蜍",
+   "orig_qn": "chớ",
+   "time": "2026-11-26 21:08:07"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|39|2": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mảy",
+   "rank": 2,
+   "orig_nom": "买",
+   "orig_qn": "mảy",
+   "time": "2026-11-26 21:08:07"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|39|5": {
+   "side": "QN",
+   "nom": "𦓡",
+   "qn": "mà",
+   "rank": 1,
+   "orig_nom": "𦓡",
+   "orig_qn": "ma",
+   "time": "2026-11-27 13:46:25"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|41|1": {
+   "side": "QN",
+   "nom": "𦓡",
+   "qn": "mà",
+   "rank": 1,
+   "orig_nom": "𦓡",
+   "orig_qn": "ma",
+   "time": "2026-11-27 13:46:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|47|0": {
+   "side": "QN",
+   "nom": "行",
+   "qn": "hàng",
+   "rank": 1,
+   "orig_nom": "行",
+   "orig_qn": "háng",
+   "time": "2026-11-26 21:11:23"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|48|3": {
+   "side": "QN",
+   "nom": "𡨺",
+   "qn": "giữ",
+   "rank": 2,
+   "orig_nom": "𡨺",
+   "orig_qn": "giữu",
+   "time": "2026-11-26 21:11:23"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|60|2": {
+   "side": "KEEP",
+   "nom": "欣",
+   "qn": "hờn",
+   "rank": 2,
+   "orig_nom": "欣",
+   "orig_qn": "hờn",
+   "time": "2026-11-26 21:11:23"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|81|1": {
+   "side": "QN",
+   "nom": "爫",
+   "qn": "làm",
+   "rank": 1,
+   "orig_nom": "爫",
+   "orig_qn": "lầm",
+   "time": "2026-11-26 21:11:23"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|83|6": {
+   "side": "KEEP",
+   "nom": "院",
+   "qn": "vẹn.",
+   "rank": 2,
+   "orig_nom": "院",
+   "orig_qn": "vẹn.",
+   "time": "2026-11-26 21:11:23"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|84|3": {
+   "side": "QN",
+   "nom": "𡗋",
+   "qn": "lắm",
+   "rank": 1,
+   "orig_nom": "𡗋",
+   "orig_qn": "làm",
+   "time": "2026-11-26 21:11:23"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|84|6": {
+   "side": "KEEP",
+   "nom": "安",
+   "qn": "yên.",
+   "rank": 2,
+   "orig_nom": "安",
+   "orig_qn": "yên.",
+   "time": "2026-11-26 21:11:23"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|85|5": {
+   "side": "KEEP",
+   "nom": "縁",
+   "qn": "duyên.",
+   "rank": 2,
+   "orig_nom": "縁",
+   "orig_qn": "duyên.",
+   "time": "2026-11-26 21:11:23"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|86|4": {
+   "side": "KEEP",
+   "nom": "尒",
+   "qn": "mấy",
+   "rank": 4,
+   "orig_nom": "尒",
+   "orig_qn": "mấy",
+   "time": "2026-11-26 21:11:23"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|86|7": {
+   "side": "KEEP",
+   "nom": "鐄",
+   "qn": "vàng.",
+   "rank": 2,
+   "orig_nom": "鐄",
+   "orig_qn": "vàng.",
+   "time": "2026-11-26 21:11:23"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|87|6": {
+   "side": "KEEP",
+   "nom": "𢚁",
+   "qn": "cậy.",
+   "rank": 2,
+   "orig_nom": "𢚁",
+   "orig_qn": "cậy.",
+   "time": "2026-11-26 21:11:23"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|88|6": {
+   "side": "KEEP",
+   "nom": "移",
+   "qn": "dời.",
+   "rank": 2,
+   "orig_nom": "移",
+   "orig_qn": "dời.",
+   "time": "2026-11-26 21:11:23"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|89|0": {
+   "side": "KEEP",
+   "nom": "塘",
+   "qn": "Đừng",
+   "rank": 2,
+   "orig_nom": "塘",
+   "orig_qn": "Đừng",
+   "time": "2026-11-26 21:11:23"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|89|2": {
+   "side": "NOM",
+   "nom": "懙",
+   "qn": "giở",
+   "rank": 1,
+   "orig_nom": "嶼",
+   "orig_qn": "giở",
+   "time": "2026-11-27 13:46:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|89|5": {
+   "side": "KEEP",
+   "nom": "排",
+   "qn": "bời.",
+   "rank": 2,
+   "orig_nom": "排",
+   "orig_qn": "bời.",
+   "time": "2026-11-26 21:11:23"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|90|7": {
+   "side": "KEEP",
+   "nom": "箕",
+   "qn": "kia.",
+   "rank": 2,
+   "orig_nom": "箕",
+   "orig_qn": "kia.",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|91|6": {
+   "side": "KEEP",
+   "nom": "切",
+   "qn": "thiết.",
+   "rank": 2,
+   "orig_nom": "切",
+   "orig_qn": "thiết.",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|92|6": {
+   "side": "KEEP",
+   "nom": "𩜙",
+   "qn": "nhiêu.",
+   "rank": 2,
+   "orig_nom": "𩜙",
+   "orig_qn": "nhiêu.",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|93|5": {
+   "side": "KEEP",
+   "nom": "𱜢",
+   "qn": "nào?",
+   "rank": 2,
+   "orig_nom": "𱜢",
+   "orig_qn": "nào?",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|95|6": {
+   "side": "KEEP",
+   "nom": "寔",
+   "qn": "thực.",
+   "rank": 2,
+   "orig_nom": "寔",
+   "orig_qn": "thực.",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|96|0": {
+   "side": "QN",
+   "nom": "時",
+   "qn": "Thời",
+   "rank": 1,
+   "orig_nom": "時",
+   "orig_qn": "Chơi",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|96|1": {
+   "side": "QN",
+   "nom": "催",
+   "qn": "thôi",
+   "rank": 1,
+   "orig_nom": "催",
+   "orig_qn": "thời",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|96|6": {
+   "side": "KEEP",
+   "nom": "𠊛",
+   "qn": "người.",
+   "rank": 2,
+   "orig_nom": "𠊛",
+   "orig_qn": "người.",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|97|5": {
+   "side": "KEEP",
+   "nom": "𨱽",
+   "qn": "dài.",
+   "rank": 2,
+   "orig_nom": "𨱽",
+   "orig_qn": "dài.",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|98|7": {
+   "side": "KEEP",
+   "nom": "𠒷",
+   "qn": "tin.",
+   "rank": 2,
+   "orig_nom": "𠒷",
+   "orig_qn": "tin.",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|99|6": {
+   "side": "KEEP",
+   "nom": "昧",
+   "qn": "muội.",
+   "rank": 2,
+   "orig_nom": "昧",
+   "orig_qn": "muội.",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|101|0": {
+   "side": "QN",
+   "nom": "催",
+   "qn": "Thôi",
+   "rank": 2,
+   "orig_nom": "催",
+   "orig_qn": "Chơi",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|101|4": {
+   "side": "KEEP",
+   "nom": "尒",
+   "qn": "mấy",
+   "rank": 4,
+   "orig_nom": "尒",
+   "orig_qn": "mấy",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|101|5": {
+   "side": "KEEP",
+   "nom": "𠁀",
+   "qn": "đời.",
+   "rank": 2,
+   "orig_nom": "𠁀",
+   "orig_qn": "đời.",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|102|7": {
+   "side": "KEEP",
+   "nom": "𥹰",
+   "qn": "lâu.",
+   "rank": 2,
+   "orig_nom": "𥹰",
+   "orig_qn": "lâu.",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|111|3": {
+   "side": "QN",
+   "nom": "察",
+   "qn": "xét",
+   "rank": 1,
+   "orig_nom": "察",
+   "orig_qn": "xót",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|118|0": {
+   "side": "KEEP",
+   "nom": "吔",
+   "qn": "chả",
+   "rank": 2,
+   "orig_nom": "吔",
+   "orig_qn": "chả",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|118|4": {
+   "side": "QN",
+   "nom": "𡗋",
+   "qn": "lắm",
+   "rank": 1,
+   "orig_nom": "𡗋",
+   "orig_qn": "làm",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|121|4": {
+   "side": "KEEP",
+   "nom": "湘",
+   "qn": "tượng",
+   "rank": 2,
+   "orig_nom": "湘",
+   "orig_qn": "tượng",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|126|2": {
+   "side": "KEEP",
+   "nom": "𡀍",
+   "qn": "rủa",
+   "rank": 2,
+   "orig_nom": "𡀍",
+   "orig_qn": "rủa",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|132|5": {
+   "side": "QN",
+   "nom": "齊",
+   "qn": "tày",
+   "rank": 1,
+   "orig_nom": "齊",
+   "orig_qn": "tây",
+   "time": "2026-11-26 21:11:24"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|133|5": {
+   "side": "KEEP",
+   "nom": "𨉟",
+   "qn": "mình.",
+   "rank": 2,
+   "orig_nom": "𨉟",
+   "orig_qn": "mình.",
+   "time": "2026-11-26 21:12:03"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|134|7": {
+   "side": "KEEP",
+   "nom": "埃",
+   "qn": "ai.",
+   "rank": 2,
+   "orig_nom": "埃",
+   "orig_qn": "ai.",
+   "time": "2026-11-26 21:12:03"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|135|6": {
+   "side": "KEEP",
+   "nom": "奇",
+   "qn": "cả.",
+   "rank": 2,
+   "orig_nom": "奇",
+   "orig_qn": "cả.",
+   "time": "2026-11-26 21:12:03"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|136|6": {
+   "side": "KEEP",
+   "nom": "伶",
+   "qn": "rành.",
+   "rank": 2,
+   "orig_nom": "伶",
+   "orig_qn": "rành.",
+   "time": "2026-11-26 21:12:03"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|137|5": {
+   "side": "KEEP",
+   "nom": "𫅜",
+   "qn": "lành.",
+   "rank": 2,
+   "orig_nom": "𫅜",
+   "orig_qn": "lành.",
+   "time": "2026-11-26 21:12:03"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|138|2": {
+   "side": "QN",
+   "nom": "𢬄",
+   "qn": "bưng",
+   "rank": 1,
+   "orig_nom": "𢬄",
+   "orig_qn": "bụng",
+   "time": "2026-11-26 21:12:03"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|138|7": {
+   "side": "KEEP",
+   "nom": "衝",
+   "qn": "xong.",
+   "rank": 2,
+   "orig_nom": "衝",
+   "orig_qn": "xong.",
+   "time": "2026-11-26 21:12:03"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|139|6": {
+   "side": "KEEP",
+   "nom": "沛",
+   "qn": "phải.",
+   "rank": 2,
+   "orig_nom": "沛",
+   "orig_qn": "phải.",
+   "time": "2026-11-26 21:12:03"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|140|6": {
+   "side": "KEEP",
+   "nom": "伶",
+   "qn": "rành.",
+   "rank": 2,
+   "orig_nom": "伶",
+   "orig_qn": "rành.",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|141|5": {
+   "side": "KEEP",
+   "nom": "𨉓",
+   "qn": "mình.",
+   "rank": 2,
+   "orig_nom": "𨉓",
+   "orig_qn": "mình.",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|142|0": {
+   "side": "KEEP",
+   "nom": "乘",
+   "qn": "Chữa",
+   "rank": 2,
+   "orig_nom": "乘",
+   "orig_qn": "Chữa",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|142|7": {
+   "side": "KEEP",
+   "nom": "箕",
+   "qn": "kia.",
+   "rank": 2,
+   "orig_nom": "箕",
+   "orig_qn": "kia.",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|149|0": {
+   "side": "QN",
+   "nom": "蜍",
+   "qn": "chờ",
+   "rank": 1,
+   "orig_nom": "蜍",
+   "orig_qn": "chỗ",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|151|0": {
+   "side": "QN",
+   "nom": "𠸜",
+   "qn": "tên",
+   "rank": 1,
+   "orig_nom": "𠸜",
+   "orig_qn": "bên",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|153|3": {
+   "side": "QN",
+   "nom": "抇",
+   "qn": "nhặt",
+   "rank": 1,
+   "orig_nom": "抇",
+   "orig_qn": "nhật",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|153|5": {
+   "side": "KEEP",
+   "nom": "賖",
+   "qn": "xa.",
+   "rank": 2,
+   "orig_nom": "賖",
+   "orig_qn": "xa.",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|154|4": {
+   "side": "QN",
+   "nom": "殘",
+   "qn": "tàn",
+   "rank": 2,
+   "orig_nom": "殘",
+   "orig_qn": "tán",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|154|7": {
+   "side": "KEEP",
+   "nom": "𣳔",
+   "qn": "dòng.",
+   "rank": 2,
+   "orig_nom": "𣳔",
+   "orig_qn": "dòng.",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|155|6": {
+   "side": "KEEP",
+   "nom": "意",
+   "qn": "ấy.",
+   "rank": 2,
+   "orig_nom": "意",
+   "orig_qn": "ấy.",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|156|3": {
+   "side": "QN",
+   "nom": "抇",
+   "qn": "nhặt",
+   "rank": 1,
+   "orig_nom": "抇",
+   "orig_qn": "nhật",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|156|6": {
+   "side": "KEEP",
+   "nom": "𢙇",
+   "qn": "hoài.",
+   "rank": 2,
+   "orig_nom": "𢙇",
+   "orig_qn": "hoài.",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|157|0": {
+   "side": "KEEP",
+   "nom": "尒",
+   "qn": "Bấy",
+   "rank": 2,
+   "orig_nom": "尒",
+   "orig_qn": "Bấy",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|157|5": {
+   "side": "KEEP",
+   "nom": "外",
+   "qn": "ngoài.",
+   "rank": 2,
+   "orig_nom": "外",
+   "orig_qn": "ngoài.",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|158|7": {
+   "side": "KEEP",
+   "nom": "𦝄",
+   "qn": "giăng.",
+   "rank": 2,
+   "orig_nom": "𦝄",
+   "orig_qn": "giăng.",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|159|6": {
+   "side": "KEEP",
+   "nom": "命",
+   "qn": "mệnh.",
+   "rank": 2,
+   "orig_nom": "命",
+   "orig_qn": "mệnh.",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|160|4": {
+   "side": "QN",
+   "nom": "𢤜",
+   "qn": "trạnh",
+   "rank": 2,
+   "orig_nom": "𢤜",
+   "orig_qn": "tránh",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|160|6": {
+   "side": "KEEP",
+   "nom": "伤",
+   "qn": "thương.",
+   "rank": 2,
+   "orig_nom": "伤",
+   "orig_qn": "thương.",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|161|5": {
+   "side": "KEEP",
+   "nom": "強",
+   "qn": "càng.",
+   "rank": 2,
+   "orig_nom": "強",
+   "orig_qn": "càng.",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|162|7": {
+   "side": "KEEP",
+   "nom": "安",
+   "qn": "yên.",
+   "rank": 2,
+   "orig_nom": "安",
+   "orig_qn": "yên.",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|165|0": {
+   "side": "KEEP",
+   "nom": "尒",
+   "qn": "mấy",
+   "rank": 4,
+   "orig_nom": "尒",
+   "orig_qn": "mấy",
+   "time": "2026-11-26 21:12:04"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|168|0": {
+   "side": "KEEP",
+   "nom": "𨔈",
+   "qn": "chớ",
+   "rank": 2,
+   "orig_nom": "𨔈",
+   "orig_qn": "chớ",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|168|3": {
+   "side": "QN",
+   "nom": "𠮩",
+   "qn": "lếu",
+   "rank": 1,
+   "orig_nom": "𠮩",
+   "orig_qn": "lêu",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|177|2": {
+   "side": "QN",
+   "nom": "𪽣",
+   "qn": "ruộng",
+   "rank": 2,
+   "orig_nom": "𪽣",
+   "orig_qn": "rụng",
+   "time": "2026-11-27 13:46:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|178|5": {
+   "side": "KEEP",
+   "nom": "艺",
+   "qn": "nghề",
+   "rank": 2,
+   "orig_nom": "艺",
+   "orig_qn": "nghề",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|183|4": {
+   "side": "NOM",
+   "nom": "纏",
+   "qn": "gìn",
+   "rank": 1,
+   "orig_nom": "缠",
+   "orig_qn": "gìn",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|183|5": {
+   "side": "QN",
+   "nom": "秦",
+   "qn": "tần",
+   "rank": 1,
+   "orig_nom": "秦",
+   "orig_qn": "tân",
+   "time": "2026-11-27 13:46:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|192|6": {
+   "side": "QN",
+   "nom": "低",
+   "qn": "đây",
+   "rank": 1,
+   "orig_nom": "低",
+   "orig_qn": "đầy",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|193|2": {
+   "side": "QN",
+   "nom": "劝",
+   "qn": "khuyến",
+   "rank": 1,
+   "orig_nom": "劝",
+   "orig_qn": "khuyên",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|193|4": {
+   "side": "QN",
+   "nom": "羕",
+   "qn": "dường",
+   "rank": 2,
+   "orig_nom": "羕",
+   "orig_qn": "dương",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|195|3": {
+   "side": "QN",
+   "nom": "強",
+   "qn": "càng",
+   "rank": 1,
+   "orig_nom": "強",
+   "orig_qn": "cang",
+   "time": "2026-11-27 13:46:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|196|1": {
+   "side": "QN",
+   "nom": "之",
+   "qn": "chi",
+   "rank": 2,
+   "orig_nom": "之",
+   "orig_qn": "chí",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|196|6": {
+   "side": "KEEP",
+   "nom": "循",
+   "qn": "tuân",
+   "rank": 2,
+   "orig_nom": "循",
+   "orig_qn": "tuân",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|197|1": {
+   "side": "KEEP",
+   "nom": "为",
+   "qn": "vì",
+   "rank": 2,
+   "orig_nom": "为",
+   "orig_qn": "vì",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|202|2": {
+   "side": "QN",
+   "nom": "𥕄",
+   "qn": "mài",
+   "rank": 1,
+   "orig_nom": "𥕄",
+   "orig_qn": "mai",
+   "time": "2026-11-27 13:46:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|203|6": {
+   "side": "QN",
+   "nom": "部",
+   "qn": "bụa",
+   "rank": 1,
+   "orig_nom": "部",
+   "orig_qn": "bua",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|205|3": {
+   "side": "NOM",
+   "nom": "己",
+   "qn": "kỷ",
+   "rank": 1,
+   "orig_nom": "已",
+   "orig_qn": "kỷ",
+   "time": "2026-11-27 13:46:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|206|2": {
+   "side": "QN",
+   "nom": "時",
+   "qn": "thì",
+   "rank": 1,
+   "orig_nom": "時",
+   "orig_qn": "thí",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|207|0": {
+   "side": "KEEP",
+   "nom": "𧡊",
+   "qn": "chấy",
+   "rank": 2,
+   "orig_nom": "𧡊",
+   "orig_qn": "chấy",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|210|2": {
+   "side": "QN",
+   "nom": "之",
+   "qn": "chi",
+   "rank": 2,
+   "orig_nom": "之",
+   "orig_qn": "chí",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|215|0": {
+   "side": "QN",
+   "nom": "停",
+   "qn": "dừng",
+   "rank": 1,
+   "orig_nom": "停",
+   "orig_qn": "dường",
+   "time": "2026-11-27 13:46:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|225|0": {
+   "side": "QN",
+   "nom": "才",
+   "qn": "tài",
+   "rank": 2,
+   "orig_nom": "才",
+   "orig_qn": "cai",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|226|3": {
+   "side": "QN",
+   "nom": "𡗋",
+   "qn": "lắm",
+   "rank": 1,
+   "orig_nom": "𡗋",
+   "orig_qn": "lăm",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|227|1": {
+   "side": "QN",
+   "nom": "𡗋",
+   "qn": "lắm",
+   "rank": 3,
+   "orig_nom": "𡗋",
+   "orig_qn": "làm",
+   "time": "2026-11-26 21:12:05"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|227|4": {
+   "side": "KEEP",
+   "nom": "为",
+   "qn": "vì",
+   "rank": 3,
+   "orig_nom": "为",
+   "orig_qn": "vì",
+   "time": "2026-11-26 21:12:06"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|228|3": {
+   "side": "KEEP",
+   "nom": "室",
+   "qn": "rút",
+   "rank": 2,
+   "orig_nom": "室",
+   "orig_qn": "rút",
+   "time": "2026-11-26 21:12:06"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|230|4": {
+   "side": "KEEP",
+   "nom": "块",
+   "qn": "khỏi",
+   "rank": 2,
+   "orig_nom": "块",
+   "orig_qn": "khỏi",
+   "time": "2026-11-26 21:12:06"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|230|6": {
+   "side": "QN",
+   "nom": "債",
+   "qn": "trái",
+   "rank": 2,
+   "orig_nom": "債",
+   "orig_qn": "trác",
+   "time": "2026-11-26 21:13:09"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|234|2": {
+   "side": "QN",
+   "nom": "秦",
+   "qn": "tần",
+   "rank": 2,
+   "orig_nom": "秦",
+   "orig_qn": "tẫn",
+   "time": "2026-11-27 13:46:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|237|2": {
+   "side": "QN",
+   "nom": "一",
+   "qn": "nhất",
+   "rank": 1,
+   "orig_nom": "一",
+   "orig_qn": "nhát",
+   "time": "2026-11-26 21:13:09"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|242|2": {
+   "side": "KEEP",
+   "nom": "𣜾",
+   "qn": "đỏ",
+   "rank": 2,
+   "orig_nom": "𣜾",
+   "orig_qn": "đỏ",
+   "time": "2026-11-26 21:13:09"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|254|0": {
+   "side": "QN",
+   "nom": "迻",
+   "qn": "đưa",
+   "rank": 2,
+   "orig_nom": "迻",
+   "orig_qn": "đùa",
+   "time": "2026-11-27 13:46:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|256|3": {
+   "side": "KEEP",
+   "nom": "语",
+   "qn": "ngỡ",
+   "rank": 2,
+   "orig_nom": "语",
+   "orig_qn": "ngỡ",
+   "time": "2026-11-26 21:13:09"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|263|1": {
+   "side": "KEEP",
+   "nom": "𦝄",
+   "qn": "giảng",
+   "rank": 2,
+   "orig_nom": "𦝄",
+   "orig_qn": "giảng",
+   "time": "2026-11-26 21:13:09"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|264|0": {
+   "side": "KEEP",
+   "nom": "趣",
+   "qn": "chú",
+   "rank": 2,
+   "orig_nom": "趣",
+   "orig_qn": "chú",
+   "time": "2026-11-26 21:13:09"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|270|4": {
+   "side": "QN",
+   "nom": "𡗋",
+   "qn": "lắm",
+   "rank": 2,
+   "orig_nom": "𡗋",
+   "orig_qn": "làm",
+   "time": "2026-11-26 21:13:09"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|275|0": {
+   "side": "QN",
+   "nom": "罪",
+   "qn": "tội",
+   "rank": 1,
+   "orig_nom": "罪",
+   "orig_qn": "cội",
+   "time": "2026-11-26 21:13:09"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|278|3": {
+   "side": "QN",
+   "nom": "認",
+   "qn": "nhận",
+   "rank": 1,
+   "orig_nom": "認",
+   "orig_qn": "nhặn",
+   "time": "2026-11-26 21:13:09"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|280|1": {
+   "side": "NOM",
+   "nom": "𦟨",
+   "qn": "mềm",
+   "rank": 1,
+   "orig_nom": "𦝄",
+   "orig_qn": "mềm",
+   "time": "2026-11-27 13:46:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|287|1": {
+   "side": "KEEP",
+   "nom": "彼",
+   "qn": "bẻ",
+   "rank": 8,
+   "orig_nom": "彼",
+   "orig_qn": "bẻ",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|287|5": {
+   "side": "QN",
+   "nom": "𠄽",
+   "qn": "vài",
+   "rank": 1,
+   "orig_nom": "𠄽",
+   "orig_qn": "vai",
+   "time": "2026-11-27 13:46:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|290|5": {
+   "side": "KEEP",
+   "nom": "汝",
+   "qn": "rờ",
+   "rank": 3,
+   "orig_nom": "汝",
+   "orig_qn": "rờ",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|294|4": {
+   "side": "QN",
+   "nom": "時",
+   "qn": "thời",
+   "rank": 1,
+   "orig_nom": "時",
+   "orig_qn": "thói",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|297|0": {
+   "side": "KEEP",
+   "nom": "從",
+   "qn": "cùng",
+   "rank": 6,
+   "orig_nom": "從",
+   "orig_qn": "cùng",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|297|2": {
+   "side": "QN",
+   "nom": "棊",
+   "qn": "cờ",
+   "rank": 1,
+   "orig_nom": "棊",
+   "orig_qn": "có",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|299|4": {
+   "side": "NOM",
+   "nom": "輸",
+   "qn": "thua",
+   "rank": 1,
+   "orig_nom": "输",
+   "orig_qn": "thua",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|303|0": {
+   "side": "QN",
+   "nom": "罪",
+   "qn": "Tội",
+   "rank": 1,
+   "orig_nom": "罪",
+   "orig_qn": "Cội",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|303|5": {
+   "side": "QN",
+   "nom": "徐",
+   "qn": "từ",
+   "rank": 1,
+   "orig_nom": "徐",
+   "orig_qn": "tự",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|303|6": {
+   "side": "KEEP",
+   "nom": "意",
+   "qn": "ấy.",
+   "rank": 2,
+   "orig_nom": "意",
+   "orig_qn": "ấy.",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|304|6": {
+   "side": "KEEP",
+   "nom": "𨔈",
+   "qn": "chơi.",
+   "rank": 2,
+   "orig_nom": "𨔈",
+   "orig_qn": "chơi.",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|305|5": {
+   "side": "KEEP",
+   "nom": "排",
+   "qn": "bời.",
+   "rank": 2,
+   "orig_nom": "排",
+   "orig_qn": "bời.",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|306|0": {
+   "side": "KEEP",
+   "nom": "蹺",
+   "qn": "Cheo",
+   "rank": 3,
+   "orig_nom": "蹺",
+   "orig_qn": "Cheo",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|306|1": {
+   "side": "QN",
+   "nom": "従",
+   "qn": "tuồng",
+   "rank": 2,
+   "orig_nom": "従",
+   "orig_qn": "tường",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|306|4": {
+   "side": "KEEP",
+   "nom": "䋦",
+   "qn": "mới",
+   "rank": 3,
+   "orig_nom": "䋦",
+   "orig_qn": "mới",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|306|7": {
+   "side": "KEEP",
+   "nom": "庭",
+   "qn": "đình.",
+   "rank": 2,
+   "orig_nom": "庭",
+   "orig_qn": "đình.",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|307|6": {
+   "side": "KEEP",
+   "nom": "𧵑",
+   "qn": "của.",
+   "rank": 2,
+   "orig_nom": "𧵑",
+   "orig_qn": "của.",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|308|6": {
+   "side": "KEEP",
+   "nom": "唏",
+   "qn": "hơi.",
+   "rank": 2,
+   "orig_nom": "唏",
+   "orig_qn": "hơi.",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|309|5": {
+   "side": "KEEP",
+   "nom": "𠊛",
+   "qn": "người.",
+   "rank": 2,
+   "orig_nom": "𠊛",
+   "orig_qn": "người.",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|310|7": {
+   "side": "KEEP",
+   "nom": "𠑬",
+   "qn": "nhau.",
+   "rank": 2,
+   "orig_nom": "𠑬",
+   "orig_qn": "nhau.",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|311|6": {
+   "side": "KEEP",
+   "nom": "让",
+   "qn": "nhượng.",
+   "rank": 2,
+   "orig_nom": "让",
+   "orig_qn": "nhượng.",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|312|6": {
+   "side": "KEEP",
+   "nom": "平",
+   "qn": "bình.",
+   "rank": 2,
+   "orig_nom": "平",
+   "orig_qn": "bình.",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|313|2": {
+   "side": "QN",
+   "nom": "懲",
+   "qn": "trừng",
+   "rank": 1,
+   "orig_nom": "懲",
+   "orig_qn": "trúng",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|313|5": {
+   "side": "KEEP",
+   "nom": "明",
+   "qn": "minh.",
+   "rank": 2,
+   "orig_nom": "明",
+   "orig_qn": "minh.",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|314|2": {
+   "side": "KEEP",
+   "nom": "𤑟",
+   "qn": "rổ",
+   "rank": 4,
+   "orig_nom": "𤑟",
+   "orig_qn": "rổ",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|314|7": {
+   "side": "KEEP",
+   "nom": "𦓡",
+   "qn": "mà.",
+   "rank": 2,
+   "orig_nom": "𦓡",
+   "orig_qn": "mà.",
+   "time": "2026-11-26 21:13:10"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|315|6": {
+   "side": "KEEP",
+   "nom": "质",
+   "qn": "chất.",
+   "rank": 2,
+   "orig_nom": "质",
+   "orig_qn": "chất.",
+   "time": "2026-11-26 21:13:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|316|2": {
+   "side": "QN",
+   "nom": "徐",
+   "qn": "từ",
+   "rank": 1,
+   "orig_nom": "徐",
+   "orig_qn": "tự",
+   "time": "2026-11-26 21:13:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|316|6": {
+   "side": "KEEP",
+   "nom": "衡",
+   "qn": "hành.",
+   "rank": 2,
+   "orig_nom": "衡",
+   "orig_qn": "hành.",
+   "time": "2026-11-26 21:13:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|317|5": {
+   "side": "KEEP",
+   "nom": "形",
+   "qn": "hình.",
+   "rank": 2,
+   "orig_nom": "形",
+   "orig_qn": "hình.",
+   "time": "2026-11-26 21:13:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|318|1": {
+   "side": "QN",
+   "nom": "滛",
+   "qn": "dâm",
+   "rank": 2,
+   "orig_nom": "滛",
+   "orig_qn": "dần",
+   "time": "2026-11-26 21:13:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|318|7": {
+   "side": "KEEP",
+   "nom": "差",
+   "qn": "sai.",
+   "rank": 2,
+   "orig_nom": "差",
+   "orig_qn": "sai.",
+   "time": "2026-11-26 21:13:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|319|6": {
+   "side": "KEEP",
+   "nom": "𢷣",
+   "qn": "giở.",
+   "rank": 2,
+   "orig_nom": "𢷣",
+   "orig_qn": "giở.",
+   "time": "2026-11-26 21:13:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|320|6": {
+   "side": "KEEP",
+   "nom": "仁",
+   "qn": "nhân.",
+   "rank": 2,
+   "orig_nom": "仁",
+   "orig_qn": "nhân.",
+   "time": "2026-11-26 21:13:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|321|5": {
+   "side": "KEEP",
+   "nom": "真",
+   "qn": "chân.",
+   "rank": 2,
+   "orig_nom": "真",
+   "orig_qn": "chân.",
+   "time": "2026-11-26 21:13:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|322|7": {
+   "side": "KEEP",
+   "nom": "𢀨",
+   "qn": "sang.",
+   "rank": 2,
+   "orig_nom": "𢀨",
+   "orig_qn": "sang.",
+   "time": "2026-11-26 21:13:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|332|1": {
+   "side": "QN",
+   "nom": "拱",
+   "qn": "cũng",
+   "rank": 1,
+   "orig_nom": "拱",
+   "orig_qn": "cung",
+   "time": "2026-11-26 21:13:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|334|4": {
+   "side": "QN",
+   "nom": "辰",
+   "qn": "thì",
+   "rank": 1,
+   "orig_nom": "辰",
+   "orig_qn": "thí",
+   "time": "2026-11-26 21:13:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|337|3": {
+   "side": "QN",
+   "nom": "孽",
+   "qn": "nghiệt",
+   "rank": 2,
+   "orig_nom": "孽",
+   "orig_qn": "nghiệp",
+   "time": "2026-11-26 21:13:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|339|6": {
+   "side": "QN",
+   "nom": "性",
+   "qn": "tính",
+   "rank": 1,
+   "orig_nom": "性",
+   "orig_qn": "tình",
+   "time": "2026-11-26 21:13:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|340|4": {
+   "side": "QN",
+   "nom": "省",
+   "qn": "tỉnh",
+   "rank": 1,
+   "orig_nom": "省",
+   "orig_qn": "tính",
+   "time": "2026-11-26 21:13:11"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|341|2": {
+   "side": "QN",
+   "nom": "𢬭",
+   "qn": "đổi",
+   "rank": 1,
+   "orig_nom": "𢬭",
+   "orig_qn": "tổi",
+   "time": "2026-11-27 13:46:26"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|100|0": {
+   "side": "KEEP",
+   "nom": "𠲝",
+   "qn": "Giỏi",
+   "rank": 3,
+   "orig_nom": "𠲝",
+   "orig_qn": "Giỏi",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|100|4": {
+   "side": "KEEP",
+   "nom": "𠲝",
+   "qn": "giỏi",
+   "rank": 3,
+   "orig_nom": "𠲝",
+   "orig_qn": "giỏi",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|100|6": {
+   "side": "KEEP",
+   "nom": "𡗶",
+   "qn": "giỏi.",
+   "rank": 1,
+   "orig_nom": "𡗶",
+   "orig_qn": "giỏi.",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|101|3": {
+   "side": "KEEP",
+   "nom": "情",
+   "qn": "bẽo",
+   "rank": 1,
+   "orig_nom": "情",
+   "orig_qn": "bẽo",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|114|0": {
+   "side": "KEEP",
+   "nom": "恕",
+   "qn": "chủ",
+   "rank": 1,
+   "orig_nom": "恕",
+   "orig_qn": "chủ",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|114|2": {
+   "side": "KEEP",
+   "nom": "𦓡",
+   "qn": "mới",
+   "rank": 1,
+   "orig_nom": "𦓡",
+   "orig_qn": "mới",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|118|1": {
+   "side": "KEEP",
+   "nom": "浪",
+   "qn": "sóng",
+   "rank": 1,
+   "orig_nom": "浪",
+   "orig_qn": "sóng",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|124|0": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mấy",
+   "rank": 3,
+   "orig_nom": "买",
+   "orig_qn": "mấy",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|126|4": {
+   "side": "KEEP",
+   "nom": "𧴥",
+   "qn": "phụ",
+   "rank": 2,
+   "orig_nom": "𧴥",
+   "orig_qn": "phụ",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|127|6": {
+   "side": "KEEP",
+   "nom": "𠽆",
+   "qn": "nọt",
+   "rank": 1,
+   "orig_nom": "𠽆",
+   "orig_qn": "nọt",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|128|5": {
+   "side": "KEEP",
+   "nom": "谗",
+   "qn": "gièm",
+   "rank": 1,
+   "orig_nom": "谗",
+   "orig_qn": "gièm",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|134|5": {
+   "side": "KEEP",
+   "nom": "䁎",
+   "qn": "tình",
+   "rank": 1,
+   "orig_nom": "䁎",
+   "orig_qn": "tình",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|139|5": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mới",
+   "rank": 2,
+   "orig_nom": "买",
+   "orig_qn": "mới",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|142|2": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mới",
+   "rank": 3,
+   "orig_nom": "买",
+   "orig_qn": "mới",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|146|5": {
+   "side": "KEEP",
+   "nom": "撝",
+   "qn": "nói",
+   "rank": 1,
+   "orig_nom": "撝",
+   "orig_qn": "nói",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|148|0": {
+   "side": "KEEP",
+   "nom": "𠀲",
+   "qn": "quá",
+   "rank": 2,
+   "orig_nom": "𠀲",
+   "orig_qn": "quá",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|153|0": {
+   "side": "KEEP",
+   "nom": "𣎃",
+   "qn": "Chẳng",
+   "rank": 2,
+   "orig_nom": "𣎃",
+   "orig_qn": "Chẳng",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|173|2": {
+   "side": "KEEP",
+   "nom": "紂",
+   "qn": "nỗi",
+   "rank": 1,
+   "orig_nom": "紂",
+   "orig_qn": "nỗi",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|173|3": {
+   "side": "KEEP",
+   "nom": "𦇒",
+   "qn": "dõi",
+   "rank": 5,
+   "orig_nom": "𦇒",
+   "orig_qn": "dõi",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|177|0": {
+   "side": "KEEP",
+   "nom": "唒",
+   "qn": "râu",
+   "rank": 7,
+   "orig_nom": "唒",
+   "orig_qn": "râu",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|182|7": {
+   "side": "KEEP",
+   "nom": "礥",
+   "qn": "hèn",
+   "rank": 3,
+   "orig_nom": "礥",
+   "orig_qn": "hèn",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|186|6": {
+   "side": "KEEP",
+   "nom": "𮚃",
+   "qn": "tham",
+   "rank": 3,
+   "orig_nom": "𮚃",
+   "orig_qn": "tham",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|199|3": {
+   "side": "KEEP",
+   "nom": "𠹾",
+   "qn": "chực",
+   "rank": 2,
+   "orig_nom": "𠹾",
+   "orig_qn": "chực",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|203|3": {
+   "side": "KEEP",
+   "nom": "名",
+   "qn": "nhỏ",
+   "rank": 1,
+   "orig_nom": "名",
+   "orig_qn": "nhỏ",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|226|2": {
+   "side": "KEEP",
+   "nom": "𮚃",
+   "qn": "tham",
+   "rank": 3,
+   "orig_nom": "𮚃",
+   "orig_qn": "tham",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|237|4": {
+   "side": "KEEP",
+   "nom": "呒",
+   "qn": "vổ",
+   "rank": 1,
+   "orig_nom": "呒",
+   "orig_qn": "vổ",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|238|5": {
+   "side": "KEEP",
+   "nom": "漴",
+   "qn": "toàng",
+   "rank": 1,
+   "orig_nom": "漴",
+   "orig_qn": "toàng",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|242|3": {
+   "side": "KEEP",
+   "nom": "𤋵",
+   "qn": "chóe",
+   "rank": 1,
+   "orig_nom": "𤋵",
+   "orig_qn": "chóe",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|244|0": {
+   "side": "KEEP",
+   "nom": "𮚃",
+   "qn": "tham",
+   "rank": 3,
+   "orig_nom": "𮚃",
+   "orig_qn": "tham",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|254|6": {
+   "side": "KEEP",
+   "nom": "㨓",
+   "qn": "trao",
+   "rank": 5,
+   "orig_nom": "㨓",
+   "orig_qn": "trao",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|262|1": {
+   "side": "KEEP",
+   "nom": "坭",
+   "qn": "núi",
+   "rank": 2,
+   "orig_nom": "坭",
+   "orig_qn": "núi",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|266|0": {
+   "side": "KEEP",
+   "nom": "幀",
+   "qn": "cảnh",
+   "rank": 2,
+   "orig_nom": "幀",
+   "orig_qn": "cảnh",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|268|0": {
+   "side": "KEEP",
+   "nom": "土",
+   "qn": "chớ",
+   "rank": 3,
+   "orig_nom": "土",
+   "orig_qn": "chớ",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|272|0": {
+   "side": "KEEP",
+   "nom": "𥪝",
+   "qn": "cùng",
+   "rank": 1,
+   "orig_nom": "𥪝",
+   "orig_qn": "cùng",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|276|3": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mấy",
+   "rank": 3,
+   "orig_nom": "买",
+   "orig_qn": "mấy",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|286|2": {
+   "side": "KEEP",
+   "nom": "尒",
+   "qn": "mầy",
+   "rank": 1,
+   "orig_nom": "尒",
+   "orig_qn": "mầy",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|296|5": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mấy",
+   "rank": 3,
+   "orig_nom": "买",
+   "orig_qn": "mấy",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|298|3": {
+   "side": "KEEP",
+   "nom": "备",
+   "qn": "bẫy",
+   "rank": 3,
+   "orig_nom": "备",
+   "orig_qn": "bẫy",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|298|6": {
+   "side": "KEEP",
+   "nom": "𮚃",
+   "qn": "tham",
+   "rank": 3,
+   "orig_nom": "𮚃",
+   "orig_qn": "tham",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|324|5": {
+   "side": "KEEP",
+   "nom": "𠵩",
+   "qn": "thuở",
+   "rank": 2,
+   "orig_nom": "𠵩",
+   "orig_qn": "thuở",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|327|5": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mấy",
+   "rank": 3,
+   "orig_nom": "买",
+   "orig_qn": "mấy",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|337|4": {
+   "side": "KEEP",
+   "nom": "𮃛",
+   "qn": "ghê",
+   "rank": 2,
+   "orig_nom": "𮃛",
+   "orig_qn": "ghê",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|37|4": {
+   "side": "KEEP",
+   "nom": "每",
+   "qn": "mực",
+   "rank": 1,
+   "orig_nom": "每",
+   "orig_qn": "mực",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|3|6": {
+   "side": "KEEP",
+   "nom": "啻",
+   "qn": "vẻ",
+   "rank": 3,
+   "orig_nom": "啻",
+   "orig_qn": "vẻ",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|40|1": {
+   "side": "KEEP",
+   "nom": "𡗶",
+   "qn": "giốc",
+   "rank": 2,
+   "orig_nom": "𡗶",
+   "orig_qn": "giốc",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|56|1": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mấy",
+   "rank": 3,
+   "orig_nom": "买",
+   "orig_qn": "mấy",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|69|0": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mấy",
+   "rank": 3,
+   "orig_nom": "买",
+   "orig_qn": "mấy",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|72|4": {
+   "side": "KEEP",
+   "nom": "莪",
+   "qn": "gẫy",
+   "rank": 1,
+   "orig_nom": "莪",
+   "orig_qn": "gẫy",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|76|0": {
+   "side": "KEEP",
+   "nom": "調",
+   "qn": "dẫu",
+   "rank": 1,
+   "orig_nom": "調",
+   "orig_qn": "dẫu",
+   "time": "2026-11-27 22:03:54"
+  },
+  "Nhât Tỉnh Ngâm, Nôm|94|7": {
+   "side": "KEEP",
+   "nom": "撘",
+   "qn": "giông.",
+   "rank": 1,
+   "orig_nom": "撘",
+   "orig_qn": "giông.",
+   "time": "2026-11-27 22:03:54"
+  }
+ }
+}

@@ -9,3 +9,6 @@ tqdm
 gradio>=4.44
 transformers>=4.40
 torch>=2.1
+lightgbm>=4.0       # mô hình ranker xếp hạng ứng viên (scripts/sinonom_review/ranker.py); thiếu thì web dùng trọng số
+scipy
+fonttools>=4.0      # vẽ chữ Nôm để tính độ giống nét chữ cho ranker

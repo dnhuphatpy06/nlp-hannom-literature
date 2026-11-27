@@ -30,7 +30,8 @@ CONFIG_FILE = ROOT / "config_review.yaml"
 DEFAULT_CONFIG = {
     "dictionary": {"dir": "resources/dictionaries", "extra_dicts": [], "nom_variants": True},
     "models": {"use_lm": True, "nom_model": "btqkhai/SinoNomBERT", "quocngu_model": "Qwen/Qwen2.5-0.5B", "device": "auto"},
-    "review": {"top_k": 0, "use_tuned_weights": True, "tuned_weights_file": "resources/tuning/tuned_weights.json"},
+    "review": {"top_k": 0, "use_tuned_weights": True, "tuned_weights_file": "resources/tuning/tuned_weights.json",
+               "use_ranker": True, "ranker_dir": "resources/ranker"},
 }
 
 _lock = threading.RLock()
@@ -74,6 +75,68 @@ def _apply_tuned(sess) -> bool:
     from .sinonom_review.tuning import load_tuned
     rec = load_tuned(path)
     return bool(rec) and sess.rerank(rec["weights"])
+
+
+def ranker_dir(cfg: dict | None = None) -> Path | None:
+    r = (cfg or load_config())["review"]
+    if not r.get("use_ranker", True):
+        return None
+    p = Path(r.get("ranker_dir") or "resources/ranker")
+    return p if p.is_absolute() else ROOT / p
+
+
+_ranker_cache: dict = {}
+
+
+def _get_ranker():
+    """Mô hình ranker (LightGBM) dùng chung cho mọi phiên; nạp lại khi file mô hình đổi. None nếu tắt hoặc không dùng được
+    (thiếu file / thư viện / font): khi đó web giữ xếp hạng theo trọng số, lý do nằm ở _ranker_cache['error'] và hiện ở tab Đề xuất."""
+    d = ranker_dir()
+    if d is None:
+        _ranker_cache.clear()
+        return None
+    model = d / "ranker_lgbm.txt"
+    try:
+        stamp = (model.stat().st_mtime_ns, (d / "ranker_config.json").stat().st_mtime_ns if (d / "ranker_config.json").exists() else 0)
+    except OSError:
+        stamp = None
+    with _lock:
+        if _ranker_cache.get("stamp") != stamp or ("ranker" not in _ranker_cache and "error" not in _ranker_cache):
+            _ranker_cache.clear()
+            _ranker_cache["stamp"] = stamp
+            try:
+                from .sinonom_review.ranker import Ranker, RankerUnavailable
+                _ranker_cache["ranker"] = Ranker.load(d)
+            except Exception as e:       # RankerUnavailable hoặc lỗi nạp mô hình: không làm hỏng phiên duyệt
+                _ranker_cache["error"] = f"{type(e).__name__}: {e}"
+        return _ranker_cache.get("ranker")
+
+
+def _apply_ranking(sess) -> bool:
+    """Thứ hạng ứng viên của phiên: trọng số đã dò (nếu có) rồi mô hình ranker — ranker quyết định thứ tự cuối.
+    Kết quả của ranker được lưu ở <thư mục sách>/ranker_cache.json: còn khớp bằng chứng đầu vào và mô hình thì đọc lại từ file (không cần
+    lightgbm, font hay tính lại); không thì chạy mô hình rồi ghi cache. Không chạy LM; tắt ranker bằng review.use_ranker: false."""
+    _apply_tuned(sess)
+    d = ranker_dir()
+    if d is None or not sess.candidates:
+        return False
+    from .sinonom_review import ranker as rk
+    path = sess.output_dir / rk.CACHE_FILE
+    stamp, digest = rk.model_stamp(d), rk.candidates_digest(sess.candidates)
+    hit = rk.load_ranked(path, sess.candidates, digest, stamp)
+    if hit:
+        return sess.set_ranked(*hit)
+    ranker = _get_ranker()
+    if ranker is None:
+        sess.score_settings = {**sess.score_settings, "ranker_error": _ranker_cache.get("error") or "ranker không dùng được"}
+        return False
+    try:
+        ranked = ranker.rank_all(sess.candidates)
+        rk.save_ranked(path, ranked, digest, stamp, ranker.info)
+        return sess.set_ranked(ranked, ranker.info)
+    except Exception as e:               # lỗi lúc vẽ chữ / dự đoán / ghi cache: giữ nguyên thứ hạng theo trọng số
+        sess.score_settings = {**sess.score_settings, "ranker_error": f"{type(e).__name__}: {e}"}
+        return False
 
 
 def _imports():
@@ -238,6 +301,8 @@ def _stamp(book: library.Book) -> tuple:
             files.append(src.dir / folder / "Label.txt")
     if tuned_weights_path():
         files.append(tuned_weights_path())              # dò lại trọng số thì phiên được dựng lại với thứ hạng mới
+    if ranker_dir():
+        files += [ranker_dir() / "ranker_lgbm.txt", ranker_dir() / "ranker_config.json"]   # huấn luyện lại ranker thì cũng dựng lại
     out = []
     for f in files:
         try:
@@ -300,7 +365,7 @@ def _build_session(book: library.Book):
                          settings.get("nom_context_lines", 1), settings.get("qn_context_lines", 0), verbose=False)
     except (OSError, ValueError):
         pass
-    _apply_tuned(sess)
+    _apply_ranking(sess)
     return sess
 
 
@@ -451,7 +516,7 @@ def _score_run(book: library.Book, use_lm: bool) -> None:
         names = (cfg["nom_model"], cfg["quocngu_model"]) if use_lm else (None, None)
         if sess.cache_matches(*names):          # kết quả chấm điểm đã lưu còn khớp (cùng dữ liệu, từ điển, mô hình): không cần nạp mô hình
             sess.load_cached(*names, verbose=False)
-            _apply_tuned(sess)
+            _apply_ranking(sess)
             with _lock:
                 _jobs[key].update(status="done", finished=time.time(), stage="Dùng lại kết quả đã chấm, không nạp mô hình", reused=True)
             return
@@ -463,7 +528,7 @@ def _score_run(book: library.Book, use_lm: bool) -> None:
             with _lock:
                 _jobs[key].update(stage=f"Chấm điểm {len(sess.sites)} cặp lệch trên {device}", device=device)
         sess.score_candidates(nom_lm, qn_lm, nom_model_name=cfg["nom_model"], qn_model_name=cfg["quocngu_model"], use_cache=True, verbose=False)
-        _apply_tuned(sess)
+        _apply_ranking(sess)
         with _lock:
             _jobs[key].update(status="done", finished=time.time(), stage="Xong")
     except Exception as e:   # lỗi nạp mô hình, thiếu thư viện, hết bộ nhớ ...

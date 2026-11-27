@@ -164,6 +164,18 @@ class ReviewSession:
         self.refresh_pages(verbose)
         return True
 
+    def set_ranked(self, ranked: dict[str, list[dict]], info: dict, verbose=False) -> bool:
+        """Đặt thứ hạng ứng viên theo kết quả của mô hình ranker (ranker.Ranker.rank_all hoặc ranker.load_ranked): score là điểm của mô hình,
+        confidence là softmax đã hiệu chỉnh. Gọi SAU rerank (trọng số đã dò): thứ hạng của ranker thay thứ hạng theo trọng số.
+        Không nạp LM và không ghi candidates_cache.json."""
+        if not ranked or not self.candidates:
+            return False
+        self.candidates = ranked
+        self.score_settings = {**self.score_settings, "reranked": True, "ranker": info}
+        self.score_settings.pop("ranker_error", None)
+        self.refresh_pages(verbose)
+        return True
+
     def review_sites(self, sent_idx: int) -> list[Site]:
         """Các cặp lệch của câu CÓ ít nhất một ứng viên sửa — chỉ những cặp này được hiển thị để duyệt."""
         return [st for st in self.sent_sites.get(sent_idx, []) if self.top_candidates(st.key)]

@@ -1,0 +1,2282 @@
+{
+ "saved_at": "2026-11-27 22:05:59",
+ "decisions": {
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|2|2": {
+   "side": "QN",
+   "nom": "䀡",
+   "qn": "xem",
+   "rank": 1,
+   "orig_nom": "䀡",
+   "orig_qn": "sem",
+   "time": "2026-11-27 22:05:02"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|3|2": {
+   "side": "QN",
+   "nom": "𡢐",
+   "qn": "sau",
+   "rank": 1,
+   "orig_nom": "𡢐",
+   "orig_qn": "sáu",
+   "time": "2026-11-27 13:47:41"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|5|3": {
+   "side": "QN",
+   "nom": "三",
+   "qn": "tam",
+   "rank": 1,
+   "orig_nom": "三",
+   "orig_qn": "cam",
+   "time": "2026-11-26 21:29:51"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|5|8": {
+   "side": "QN",
+   "nom": "秦",
+   "qn": "tằn",
+   "rank": 1,
+   "orig_nom": "秦",
+   "orig_qn": "căn",
+   "time": "2026-11-27 22:05:16"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|7|7": {
+   "side": "QN",
+   "nom": "訾",
+   "qn": "ty",
+   "rank": 1,
+   "orig_nom": "訾",
+   "orig_qn": "sy",
+   "time": "2026-11-27 13:47:41"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|8|0": {
+   "side": "QN",
+   "nom": "昏",
+   "qn": "hôn",
+   "rank": 2,
+   "orig_nom": "昏",
+   "orig_qn": "môn",
+   "time": "2026-11-26 21:06:03"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|9|0": {
+   "side": "QN",
+   "nom": "帝",
+   "qn": "để",
+   "rank": 1,
+   "orig_nom": "帝",
+   "orig_qn": "kể",
+   "time": "2026-11-27 13:47:41"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|9|2": {
+   "side": "QN",
+   "nom": "太",
+   "qn": "thái",
+   "rank": 1,
+   "orig_nom": "太",
+   "orig_qn": "chải",
+   "time": "2026-11-26 21:06:24"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|10|2": {
+   "side": "QN",
+   "nom": "簇",
+   "qn": "thốc",
+   "rank": 1,
+   "orig_nom": "簇",
+   "orig_qn": "chốc",
+   "time": "2026-11-27 13:47:41"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|10|4": {
+   "side": "KEEP",
+   "nom": "𢩽",
+   "qn": "rẻ",
+   "rank": 2,
+   "orig_nom": "𢩽",
+   "orig_qn": "rẻ",
+   "time": "2026-11-26 21:06:24"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|11|6": {
+   "side": "QN",
+   "nom": "徐",
+   "qn": "từ",
+   "rank": 1,
+   "orig_nom": "徐",
+   "orig_qn": "tử",
+   "time": "2026-11-26 21:06:25"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|12|0": {
+   "side": "QN",
+   "nom": "虫",
+   "qn": "trùng",
+   "rank": 1,
+   "orig_nom": "虫",
+   "orig_qn": "trưng",
+   "time": "2026-11-27 13:47:41"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|13|0": {
+   "side": "QN",
+   "nom": "魚",
+   "qn": "ngư",
+   "rank": 2,
+   "orig_nom": "魚",
+   "orig_qn": "ngủ",
+   "time": "2026-11-27 13:47:41"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|13|6": {
+   "side": "QN",
+   "nom": "上",
+   "qn": "thượng",
+   "rank": 2,
+   "orig_nom": "上",
+   "orig_qn": "thưởng",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|14|5": {
+   "side": "KEEP",
+   "nom": "𦝄",
+   "qn": "giảng",
+   "rank": 2,
+   "orig_nom": "𦝄",
+   "orig_qn": "giảng",
+   "time": "2026-11-26 21:06:25"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|20|2": {
+   "side": "QN",
+   "nom": "𧘻",
+   "qn": "kì",
+   "rank": 1,
+   "orig_nom": "𧘻",
+   "orig_qn": "ký",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|21|3": {
+   "side": "QN",
+   "nom": "耜",
+   "qn": "tỉ",
+   "rank": 2,
+   "orig_nom": "耜",
+   "orig_qn": "chỉ",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|22|2": {
+   "side": "QN",
+   "nom": "王",
+   "qn": "vương",
+   "rank": 1,
+   "orig_nom": "王",
+   "orig_qn": "tương",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|24|2": {
+   "side": "QN",
+   "nom": "經",
+   "qn": "kính",
+   "rank": 2,
+   "orig_nom": "經",
+   "orig_qn": "kỉnh",
+   "time": "2026-11-26 21:06:25"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|25|0": {
+   "side": "KEEP",
+   "nom": "兵",
+   "qn": "kỳ",
+   "rank": 2,
+   "orig_nom": "兵",
+   "orig_qn": "kỳ",
+   "time": "2026-11-26 21:06:25"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|26|2": {
+   "side": "QN",
+   "nom": "日",
+   "qn": "nhật",
+   "rank": 1,
+   "orig_nom": "日",
+   "orig_qn": "thật",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|27|6": {
+   "side": "QN",
+   "nom": "降",
+   "qn": "giáng",
+   "rank": 1,
+   "orig_nom": "降",
+   "orig_qn": "giảng",
+   "time": "2026-11-26 21:06:25"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|28|0": {
+   "side": "QN",
+   "nom": "昏",
+   "qn": "hôn",
+   "rank": 2,
+   "orig_nom": "昏",
+   "orig_qn": "hồn",
+   "time": "2026-11-26 21:08:05"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|28|2": {
+   "side": "QN",
+   "nom": "旦",
+   "qn": "đán",
+   "rank": 2,
+   "orig_nom": "旦",
+   "orig_qn": "đàn",
+   "time": "2026-11-26 21:08:05"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|29|5": {
+   "side": "KEEP",
+   "nom": "𦰤",
+   "qn": "lâu",
+   "rank": 2,
+   "orig_nom": "𦰤",
+   "orig_qn": "lâu",
+   "time": "2026-11-26 21:08:05"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|31|1": {
+   "side": "QN",
+   "nom": "𣈗",
+   "qn": "ngày",
+   "rank": 1,
+   "orig_nom": "𣈗",
+   "orig_qn": "ngay",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|33|1": {
+   "side": "KEEP",
+   "nom": "𫀅",
+   "qn": "sem",
+   "rank": 2,
+   "orig_nom": "𫀅",
+   "orig_qn": "sem",
+   "time": "2026-11-26 21:08:06"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|35|3": {
+   "side": "QN",
+   "nom": "獄",
+   "qn": "ngục",
+   "rank": 1,
+   "orig_nom": "獄",
+   "orig_qn": "ngọc",
+   "time": "2026-11-26 21:08:06"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|36|5": {
+   "side": "QN",
+   "nom": "巢",
+   "qn": "sào",
+   "rank": 1,
+   "orig_nom": "巢",
+   "orig_qn": "sao",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|37|0": {
+   "side": "QN",
+   "nom": "𡊨",
+   "qn": "đàn",
+   "rank": 1,
+   "orig_nom": "𡊨",
+   "orig_qn": "đài",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|37|2": {
+   "side": "QN",
+   "nom": "禖",
+   "qn": "môi",
+   "rank": 1,
+   "orig_nom": "禖",
+   "orig_qn": "mỏi",
+   "time": "2026-11-26 21:08:06"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|38|2": {
+   "side": "KEEP",
+   "nom": "㕓",
+   "qn": "rên",
+   "rank": 1,
+   "orig_nom": "㕓",
+   "orig_qn": "rên",
+   "time": "2026-11-26 21:08:06"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|38|3": {
+   "side": "KEEP",
+   "nom": "己",
+   "qn": "rỉ",
+   "rank": 2,
+   "orig_nom": "己",
+   "orig_qn": "rỉ",
+   "time": "2026-11-26 21:08:06"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|41|4": {
+   "side": "QN",
+   "nom": "斗",
+   "qn": "đẩu",
+   "rank": 1,
+   "orig_nom": "斗",
+   "orig_qn": "đầu",
+   "time": "2026-11-26 21:08:06"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|41|5": {
+   "side": "KEEP",
+   "nom": "筩",
+   "qn": "dùng",
+   "rank": 2,
+   "orig_nom": "筩",
+   "orig_qn": "dùng",
+   "time": "2026-11-26 21:08:06"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|42|0": {
+   "side": "QN",
+   "nom": "上",
+   "qn": "thượng",
+   "rank": 1,
+   "orig_nom": "上",
+   "orig_qn": "chượng",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|42|1": {
+   "side": "QN",
+   "nom": "訂",
+   "qn": "đính",
+   "rank": 1,
+   "orig_nom": "訂",
+   "orig_qn": "định",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|43|3": {
+   "side": "QN",
+   "nom": "舞",
+   "qn": "vũ",
+   "rank": 2,
+   "orig_nom": "舞",
+   "orig_qn": "vủ",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|45|2": {
+   "side": "QN",
+   "nom": "以",
+   "qn": "dĩ",
+   "rank": 1,
+   "orig_nom": "以",
+   "orig_qn": "dỉ",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|47|0": {
+   "side": "QN",
+   "nom": "晕",
+   "qn": "vựng",
+   "rank": 1,
+   "orig_nom": "晕",
+   "orig_qn": "vừng",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|47|2": {
+   "side": "KEEP",
+   "nom": "在",
+   "qn": "ổ",
+   "rank": 1,
+   "orig_nom": "在",
+   "orig_qn": "ổ",
+   "time": "2026-11-26 21:08:06"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|48|5": {
+   "side": "QN",
+   "nom": "详",
+   "qn": "tường",
+   "rank": 1,
+   "orig_nom": "详",
+   "orig_qn": "tưỡng",
+   "time": "2026-11-26 21:08:06"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|49|6": {
+   "side": "QN",
+   "nom": "牵",
+   "qn": "khiên",
+   "rank": 2,
+   "orig_nom": "牵",
+   "orig_qn": "thiên",
+   "time": "2026-11-26 21:08:06"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|50|2": {
+   "side": "QN",
+   "nom": "姑",
+   "qn": "cô",
+   "rank": 2,
+   "orig_nom": "姑",
+   "orig_qn": "cỏ",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|51|7": {
+   "side": "QN",
+   "nom": "初",
+   "qn": "sơ",
+   "rank": 1,
+   "orig_nom": "初",
+   "orig_qn": "sỏ",
+   "time": "2026-11-26 21:08:06"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|53|2": {
+   "side": "QN",
+   "nom": "虹",
+   "qn": "hồng",
+   "rank": 1,
+   "orig_nom": "虹",
+   "orig_qn": "nỗng",
+   "time": "2026-11-26 21:08:06"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|53|5": {
+   "side": "QN",
+   "nom": "渠",
+   "qn": "cừ",
+   "rank": 1,
+   "orig_nom": "渠",
+   "orig_qn": "cù",
+   "time": "2026-11-26 21:08:06"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|54|1": {
+   "side": "QN",
+   "nom": "唏",
+   "qn": "hơi",
+   "rank": 4,
+   "orig_nom": "唏",
+   "orig_qn": "hội",
+   "time": "2026-11-27 13:47:43"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|54|2": {
+   "side": "QN",
+   "nom": "陽",
+   "qn": "dương",
+   "rank": 1,
+   "orig_nom": "陽",
+   "orig_qn": "dưỡng",
+   "time": "2026-11-27 13:47:43"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|55|7": {
+   "side": "KEEP",
+   "nom": "洳",
+   "qn": "nhỏ",
+   "rank": 3,
+   "orig_nom": "洳",
+   "orig_qn": "nhỏ",
+   "time": "2026-11-26 21:08:06"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|58|2": {
+   "side": "QN",
+   "nom": "聘",
+   "qn": "sính",
+   "rank": 1,
+   "orig_nom": "聘",
+   "orig_qn": "sinh",
+   "time": "2026-11-26 21:09:14"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|58|3": {
+   "side": "QN",
+   "nom": "士",
+   "qn": "sĩ",
+   "rank": 1,
+   "orig_nom": "士",
+   "orig_qn": "sỉ",
+   "time": "2026-11-27 13:47:43"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|59|2": {
+   "side": "QN",
+   "nom": "修",
+   "qn": "tu",
+   "rank": 1,
+   "orig_nom": "修",
+   "orig_qn": "tư",
+   "time": "2026-11-27 13:47:43"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|59|6": {
+   "side": "QN",
+   "nom": "司",
+   "qn": "tư",
+   "rank": 2,
+   "orig_nom": "司",
+   "orig_qn": "cử",
+   "time": "2026-11-27 13:47:43"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|60|1": {
+   "side": "QN",
+   "nom": "兜",
+   "qn": "đâu",
+   "rank": 1,
+   "orig_nom": "兜",
+   "orig_qn": "đầu",
+   "time": "2026-11-27 13:47:43"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|60|2": {
+   "side": "QN",
+   "nom": "鳩",
+   "qn": "cưu",
+   "rank": 1,
+   "orig_nom": "鳩",
+   "orig_qn": "cừu",
+   "time": "2026-11-26 21:09:14"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|61|7": {
+   "side": "QN",
+   "nom": "筐",
+   "qn": "khuông",
+   "rank": 1,
+   "orig_nom": "筐",
+   "orig_qn": "khương",
+   "time": "2026-11-26 21:09:14"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|62|4": {
+   "side": "KEEP",
+   "nom": "蚕",
+   "qn": "tầm",
+   "rank": 4,
+   "orig_nom": "蚕",
+   "orig_qn": "tầm",
+   "time": "2026-11-26 21:09:14"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|63|0": {
+   "side": "QN",
+   "nom": "称",
+   "qn": "xứng",
+   "rank": 2,
+   "orig_nom": "称",
+   "orig_qn": "súng",
+   "time": "2026-11-27 13:47:43"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|63|1": {
+   "side": "QN",
+   "nom": "丝",
+   "qn": "ti",
+   "rank": 1,
+   "orig_nom": "丝",
+   "orig_qn": "tô",
+   "time": "2026-11-27 13:47:43"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|66|0": {
+   "side": "QN",
+   "nom": "頭",
+   "qn": "đầu",
+   "rank": 1,
+   "orig_nom": "頭",
+   "orig_qn": "dầu",
+   "time": "2026-11-26 21:09:14"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|66|5": {
+   "side": "QN",
+   "nom": "𡑝",
+   "qn": "sân",
+   "rank": 1,
+   "orig_nom": "𡑝",
+   "orig_qn": "săn",
+   "time": "2026-11-26 21:09:14"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|67|0": {
+   "side": "QN",
+   "nom": "毕",
+   "qn": "tất",
+   "rank": 1,
+   "orig_nom": "毕",
+   "orig_qn": "cất",
+   "time": "2026-11-27 13:47:43"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|67|2": {
+   "side": "QN",
+   "nom": "实",
+   "qn": "thực",
+   "rank": 2,
+   "orig_nom": "实",
+   "orig_qn": "chức",
+   "time": "2026-11-26 21:09:14"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|68|1": {
+   "side": "QN",
+   "nom": "昏",
+   "qn": "hôn",
+   "rank": 1,
+   "orig_nom": "昏",
+   "orig_qn": "hồn",
+   "time": "2026-11-26 21:09:14"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|68|4": {
+   "side": "QN",
+   "nom": "旦",
+   "qn": "đán",
+   "rank": 1,
+   "orig_nom": "旦",
+   "orig_qn": "đón",
+   "time": "2026-11-26 21:09:14"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|69|1": {
+   "side": "QN",
+   "nom": "炎",
+   "qn": "viêm",
+   "rank": 2,
+   "orig_nom": "炎",
+   "orig_qn": "tiêm",
+   "time": "2026-11-26 21:09:14"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|72|0": {
+   "side": "QN",
+   "nom": "南",
+   "qn": "nam",
+   "rank": 1,
+   "orig_nom": "南",
+   "orig_qn": "cam",
+   "time": "2026-11-27 13:47:44"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|72|4": {
+   "side": "QN",
+   "nom": "囬",
+   "qn": "hồi",
+   "rank": 1,
+   "orig_nom": "囬",
+   "orig_qn": "hỡi",
+   "time": "2026-11-26 21:09:14"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|73|0": {
+   "side": "QN",
+   "nom": "賞",
+   "qn": "thưởng",
+   "rank": 1,
+   "orig_nom": "賞",
+   "orig_qn": "chưởng",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|75|0": {
+   "side": "QN",
+   "nom": "野",
+   "qn": "dã",
+   "rank": 1,
+   "orig_nom": "野",
+   "orig_qn": "dả",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|77|0": {
+   "side": "QN",
+   "nom": "司",
+   "qn": "tư",
+   "rank": 1,
+   "orig_nom": "司",
+   "orig_qn": "cử",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|77|1": {
+   "side": "QN",
+   "nom": "徒",
+   "qn": "đồ",
+   "rank": 1,
+   "orig_nom": "徒",
+   "orig_qn": "đỗ",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|80|1": {
+   "side": "QN",
+   "nom": "蚕",
+   "qn": "tằm",
+   "rank": 1,
+   "orig_nom": "蚕",
+   "orig_qn": "tăm",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|81|6": {
+   "side": "NOM",
+   "nom": "祖",
+   "qn": "tổ",
+   "rank": 1,
+   "orig_nom": "柤",
+   "orig_qn": "tổ",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|82|2": {
+   "side": "QN",
+   "nom": "𨷈",
+   "qn": "muôn",
+   "rank": 1,
+   "orig_nom": "𨷈",
+   "orig_qn": "muốn",
+   "time": "2026-11-26 21:09:14"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|82|5": {
+   "side": "QN",
+   "nom": "苏",
+   "qn": "tô",
+   "rank": 1,
+   "orig_nom": "苏",
+   "orig_qn": "to",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|83|1": {
+   "side": "QN",
+   "nom": "东",
+   "qn": "đông",
+   "rank": 1,
+   "orig_nom": "东",
+   "orig_qn": "đồng",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|83|5": {
+   "side": "QN",
+   "nom": "烏",
+   "qn": "ở",
+   "rank": 1,
+   "orig_nom": "烏",
+   "orig_qn": "ỗ",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|85|4": {
+   "side": "KEEP",
+   "nom": "寅",
+   "qn": "rãn",
+   "rank": 2,
+   "orig_nom": "寅",
+   "orig_qn": "rãn",
+   "time": "2026-11-26 21:09:15"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|85|5": {
+   "side": "KEEP",
+   "nom": "寅",
+   "qn": "rãn",
+   "rank": 2,
+   "orig_nom": "寅",
+   "orig_qn": "rãn",
+   "time": "2026-11-26 21:09:15"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|86|0": {
+   "side": "QN",
+   "nom": "螳",
+   "qn": "đường",
+   "rank": 1,
+   "orig_nom": "螳",
+   "orig_qn": "dương",
+   "time": "2026-11-26 21:09:15"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|87|4": {
+   "side": "QN",
+   "nom": "無",
+   "qn": "vô",
+   "rank": 1,
+   "orig_nom": "無",
+   "orig_qn": "võ",
+   "time": "2026-11-26 21:09:15"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|89|2": {
+   "side": "KEEP",
+   "nom": "長",
+   "qn": "chưởng",
+   "rank": 2,
+   "orig_nom": "長",
+   "orig_qn": "chưởng",
+   "time": "2026-11-26 21:09:15"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|90|2": {
+   "side": "QN",
+   "nom": "𣹓",
+   "qn": "đầy",
+   "rank": 1,
+   "orig_nom": "𣹓",
+   "orig_qn": "đẫy",
+   "time": "2026-11-26 21:09:15"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|91|0": {
+   "side": "QN",
+   "nom": "蝉",
+   "qn": "thiền",
+   "rank": 1,
+   "orig_nom": "蝉",
+   "orig_qn": "chiến",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|91|3": {
+   "side": "QN",
+   "nom": "土",
+   "qn": "thổ",
+   "rank": 1,
+   "orig_nom": "土",
+   "orig_qn": "thỏ",
+   "time": "2026-11-26 21:09:27"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|92|3": {
+   "side": "QN",
+   "nom": "逺",
+   "qn": "viễn",
+   "rank": 1,
+   "orig_nom": "逺",
+   "orig_qn": "viên",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|93|2": {
+   "side": "KEEP",
+   "nom": "𫀅",
+   "qn": "sem",
+   "rank": 2,
+   "orig_nom": "𫀅",
+   "orig_qn": "sem",
+   "time": "2026-11-26 21:09:27"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|93|3": {
+   "side": "QN",
+   "nom": "㐌",
+   "qn": "đã",
+   "rank": 1,
+   "orig_nom": "㐌",
+   "orig_qn": "đả",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|95|0": {
+   "side": "QN",
+   "nom": "奎",
+   "qn": "khuê",
+   "rank": 1,
+   "orig_nom": "奎",
+   "orig_qn": "khuẽ",
+   "time": "2026-11-26 21:09:27"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|95|2": {
+   "side": "QN",
+   "nom": "㐌",
+   "qn": "đã",
+   "rank": 1,
+   "orig_nom": "㐌",
+   "orig_qn": "đả",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|96|0": {
+   "side": "QN",
+   "nom": "林",
+   "qn": "lâm",
+   "rank": 3,
+   "orig_nom": "林",
+   "orig_qn": "làm",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|97|0": {
+   "side": "QN",
+   "nom": "温",
+   "qn": "ôn",
+   "rank": 3,
+   "orig_nom": "温",
+   "orig_qn": "ỗn",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|98|4": {
+   "side": "KEEP",
+   "nom": "駭",
+   "qn": "hai",
+   "rank": 4,
+   "orig_nom": "駭",
+   "orig_qn": "hai",
+   "time": "2026-11-26 21:09:27"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|99|5": {
+   "side": "QN",
+   "nom": "螢",
+   "qn": "huỳnh",
+   "rank": 1,
+   "orig_nom": "螢",
+   "orig_qn": "huynh",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|99|7": {
+   "side": "KEEP",
+   "nom": "兜",
+   "qn": "đầu",
+   "rank": 4,
+   "orig_nom": "兜",
+   "orig_qn": "đầu",
+   "time": "2026-11-26 21:09:27"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|100|0": {
+   "side": "KEEP",
+   "nom": "土",
+   "qn": "chỉ",
+   "rank": 1,
+   "orig_nom": "土",
+   "orig_qn": "chỉ",
+   "time": "2026-11-26 21:09:27"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|105|1": {
+   "side": "QN",
+   "nom": "星",
+   "qn": "tinh",
+   "rank": 1,
+   "orig_nom": "星",
+   "orig_qn": "tình",
+   "time": "2026-11-26 21:09:27"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|105|2": {
+   "side": "QN",
+   "nom": "㝄",
+   "qn": "thuần",
+   "rank": 1,
+   "orig_nom": "㝄",
+   "orig_qn": "chuẩn",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|105|6": {
+   "side": "QN",
+   "nom": "曦",
+   "qn": "hy",
+   "rank": 1,
+   "orig_nom": "曦",
+   "orig_qn": "hỹ",
+   "time": "2026-11-26 21:09:27"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|106|1": {
+   "side": "QN",
+   "nom": "昏",
+   "qn": "hôn",
+   "rank": 2,
+   "orig_nom": "昏",
+   "orig_qn": "hờn",
+   "time": "2026-11-26 21:09:27"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|106|2": {
+   "side": "QN",
+   "nom": "畢",
+   "qn": "tất",
+   "rank": 1,
+   "orig_nom": "畢",
+   "orig_qn": "cất",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|106|4": {
+   "side": "QN",
+   "nom": "计",
+   "qn": "kế",
+   "rank": 1,
+   "orig_nom": "计",
+   "orig_qn": "kẻ",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|107|2": {
+   "side": "QN",
+   "nom": "少",
+   "qn": "thiếu",
+   "rank": 1,
+   "orig_nom": "少",
+   "orig_qn": "chiếu",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|109|0": {
+   "side": "QN",
+   "nom": "㐌",
+   "qn": "đã",
+   "rank": 3,
+   "orig_nom": "㐌",
+   "orig_qn": "dả",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|109|1": {
+   "side": "QN",
+   "nom": "旬",
+   "qn": "tuần",
+   "rank": 2,
+   "orig_nom": "旬",
+   "orig_qn": "tuân",
+   "time": "2026-11-27 13:47:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|109|5": {
+   "side": "QN",
+   "nom": "務",
+   "qn": "mùa",
+   "rank": 1,
+   "orig_nom": "務",
+   "orig_qn": "mua",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|109|6": {
+   "side": "QN",
+   "nom": "凉",
+   "qn": "lương",
+   "rank": 1,
+   "orig_nom": "凉",
+   "orig_qn": "hương",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|110|1": {
+   "side": "QN",
+   "nom": "蝉",
+   "qn": "thiền",
+   "rank": 1,
+   "orig_nom": "蝉",
+   "orig_qn": "thiên",
+   "time": "2026-11-26 21:09:28"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|112|0": {
+   "side": "QN",
+   "nom": "西",
+   "qn": "tây",
+   "rank": 1,
+   "orig_nom": "西",
+   "orig_qn": "cây",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|115|0": {
+   "side": "QN",
+   "nom": "将",
+   "qn": "tướng",
+   "rank": 2,
+   "orig_nom": "将",
+   "orig_qn": "cưỡng",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|116|4": {
+   "side": "QN",
+   "nom": "省",
+   "qn": "tỉnh",
+   "rank": 2,
+   "orig_nom": "省",
+   "orig_qn": "tinh",
+   "time": "2026-11-26 21:09:59"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|117|1": {
+   "side": "QN",
+   "nom": "平",
+   "qn": "bình",
+   "rank": 1,
+   "orig_nom": "平",
+   "orig_qn": "binh",
+   "time": "2026-11-26 21:09:59"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|118|0": {
+   "side": "QN",
+   "nom": "三",
+   "qn": "tam",
+   "rank": 1,
+   "orig_nom": "三",
+   "orig_qn": "cam",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|118|2": {
+   "side": "QN",
+   "nom": "登",
+   "qn": "đáng",
+   "rank": 2,
+   "orig_nom": "登",
+   "orig_qn": "đảng",
+   "time": "2026-11-26 21:09:59"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|119|0": {
+   "side": "KEEP",
+   "nom": "礼",
+   "qn": "sẽ",
+   "rank": 3,
+   "orig_nom": "礼",
+   "orig_qn": "sẽ",
+   "time": "2026-11-26 21:09:59"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|119|4": {
+   "side": "QN",
+   "nom": "𤼸",
+   "qn": "dưng",
+   "rank": 1,
+   "orig_nom": "𤼸",
+   "orig_qn": "dửng",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|121|2": {
+   "side": "QN",
+   "nom": "城",
+   "qn": "thành",
+   "rank": 1,
+   "orig_nom": "城",
+   "orig_qn": "thanh",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|123|5": {
+   "side": "QN",
+   "nom": "澜",
+   "qn": "lan",
+   "rank": 1,
+   "orig_nom": "澜",
+   "orig_qn": "lân",
+   "time": "2026-11-26 21:09:59"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|124|2": {
+   "side": "QN",
+   "nom": "昏",
+   "qn": "hôn",
+   "rank": 2,
+   "orig_nom": "昏",
+   "orig_qn": "thôn",
+   "time": "2026-11-26 21:09:59"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|124|3": {
+   "side": "QN",
+   "nom": "旦",
+   "qn": "dán",
+   "rank": 1,
+   "orig_nom": "旦",
+   "orig_qn": "dân",
+   "time": "2026-11-26 21:09:59"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|125|0": {
+   "side": "QN",
+   "nom": "牽",
+   "qn": "khiên",
+   "rank": 1,
+   "orig_nom": "牽",
+   "orig_qn": "khiến",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|131|0": {
+   "side": "QN",
+   "nom": "雷",
+   "qn": "lôi",
+   "rank": 2,
+   "orig_nom": "雷",
+   "orig_qn": "lối",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|131|4": {
+   "side": "QN",
+   "nom": "蟲",
+   "qn": "trùng",
+   "rank": 1,
+   "orig_nom": "蟲",
+   "orig_qn": "trung",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|132|2": {
+   "side": "KEEP",
+   "nom": "曰",
+   "qn": "nhật",
+   "rank": 2,
+   "orig_nom": "曰",
+   "orig_qn": "nhật",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|133|6": {
+   "side": "QN",
+   "nom": "𤑟",
+   "qn": "rõ",
+   "rank": 1,
+   "orig_nom": "𤑟",
+   "orig_qn": "rỏ",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|133|7": {
+   "side": "QN",
+   "nom": "𤉜",
+   "qn": "ràng",
+   "rank": 1,
+   "orig_nom": "𤉜",
+   "orig_qn": "rạng",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|135|3": {
+   "side": "QN",
+   "nom": "射",
+   "qn": "xạ",
+   "rank": 1,
+   "orig_nom": "射",
+   "orig_qn": "sạ",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|137|0": {
+   "side": "QN",
+   "nom": "雀",
+   "qn": "tước",
+   "rank": 1,
+   "orig_nom": "雀",
+   "orig_qn": "cước",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|140|1": {
+   "side": "QN",
+   "nom": "豺",
+   "qn": "sài",
+   "rank": 1,
+   "orig_nom": "豺",
+   "orig_qn": "sai",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|141|1": {
+   "side": "QN",
+   "nom": "初",
+   "qn": "sơ",
+   "rank": 1,
+   "orig_nom": "初",
+   "orig_qn": "sở",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|144|0": {
+   "side": "QN",
+   "nom": "先",
+   "qn": "tiên",
+   "rank": 1,
+   "orig_nom": "先",
+   "orig_qn": "tiền",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|144|5": {
+   "side": "QN",
+   "nom": "蒐",
+   "qn": "sưu",
+   "rank": 1,
+   "orig_nom": "蒐",
+   "orig_qn": "siu",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|145|0": {
+   "side": "QN",
+   "nom": "習",
+   "qn": "tập",
+   "rank": 1,
+   "orig_nom": "習",
+   "orig_qn": "cặp",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|148|0": {
+   "side": "QN",
+   "nom": "昏",
+   "qn": "hôn",
+   "rank": 1,
+   "orig_nom": "昏",
+   "orig_qn": "hồn",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|149|5": {
+   "side": "QN",
+   "nom": "冥",
+   "qn": "minh",
+   "rank": 1,
+   "orig_nom": "冥",
+   "orig_qn": "mình",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|150|4": {
+   "side": "QN",
+   "nom": "拱",
+   "qn": "củng",
+   "rank": 4,
+   "orig_nom": "拱",
+   "orig_qn": "cung",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|151|0": {
+   "side": "QN",
+   "nom": "坦",
+   "qn": "đất",
+   "rank": 2,
+   "orig_nom": "坦",
+   "orig_qn": "dắt",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|151|2": {
+   "side": "QN",
+   "nom": "唏",
+   "qn": "hơi",
+   "rank": 2,
+   "orig_nom": "唏",
+   "orig_qn": "hởi",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|151|5": {
+   "side": "QN",
+   "nom": "寅",
+   "qn": "dần",
+   "rank": 1,
+   "orig_nom": "寅",
+   "orig_qn": "dẫn",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|155|3": {
+   "side": "QN",
+   "nom": "事",
+   "qn": "sự",
+   "rank": 1,
+   "orig_nom": "事",
+   "orig_qn": "cự",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|155|4": {
+   "side": "QN",
+   "nom": "𩆍",
+   "qn": "dâm",
+   "rank": 1,
+   "orig_nom": "𩆍",
+   "orig_qn": "dẫm",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|157|5": {
+   "side": "QN",
+   "nom": "祠",
+   "qn": "từ",
+   "rank": 1,
+   "orig_nom": "祠",
+   "orig_qn": "tữ",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|157|6": {
+   "side": "QN",
+   "nom": "祈",
+   "qn": "kỳ",
+   "rank": 1,
+   "orig_nom": "祈",
+   "orig_qn": "kỹ",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|158|5": {
+   "side": "QN",
+   "nom": "躔",
+   "qn": "chiền",
+   "rank": 1,
+   "orig_nom": "躔",
+   "orig_qn": "chiên",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|159|5": {
+   "side": "QN",
+   "nom": "连",
+   "qn": "liên",
+   "rank": 1,
+   "orig_nom": "连",
+   "orig_qn": "liền",
+   "time": "2026-11-26 21:10:00"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|159|6": {
+   "side": "QN",
+   "nom": "丒",
+   "qn": "sửu",
+   "rank": 2,
+   "orig_nom": "丒",
+   "orig_qn": "sử",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|160|3": {
+   "side": "QN",
+   "nom": "軫",
+   "qn": "chẩn",
+   "rank": 1,
+   "orig_nom": "軫",
+   "orig_qn": "chẳn",
+   "time": "2026-11-26 21:10:01"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|161|6": {
+   "side": "QN",
+   "nom": "寅",
+   "qn": "dần",
+   "rank": 1,
+   "orig_nom": "寅",
+   "orig_qn": "dẫn",
+   "time": "2026-11-26 21:10:01"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|161|7": {
+   "side": "QN",
+   "nom": "寅",
+   "qn": "dần",
+   "rank": 1,
+   "orig_nom": "寅",
+   "orig_qn": "dẫn",
+   "time": "2026-11-26 21:10:01"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|162|5": {
+   "side": "QN",
+   "nom": "汶",
+   "qn": "vấn",
+   "rank": 1,
+   "orig_nom": "汶",
+   "orig_qn": "vàn",
+   "time": "2026-11-26 21:10:01"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|163|5": {
+   "side": "QN",
+   "nom": "輪",
+   "qn": "luân",
+   "rank": 1,
+   "orig_nom": "輪",
+   "orig_qn": "luẫn",
+   "time": "2026-11-26 21:10:01"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|163|6": {
+   "side": "QN",
+   "nom": "㐌",
+   "qn": "đã",
+   "rank": 1,
+   "orig_nom": "㐌",
+   "orig_qn": "đả",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|164|0": {
+   "side": "QN",
+   "nom": "玄",
+   "qn": "huyền",
+   "rank": 1,
+   "orig_nom": "玄",
+   "orig_qn": "huyện",
+   "time": "2026-11-26 21:10:01"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|164|1": {
+   "side": "QN",
+   "nom": "枵",
+   "qn": "hiều",
+   "rank": 2,
+   "orig_nom": "枵",
+   "orig_qn": "kiều",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|165|1": {
+   "side": "QN",
+   "nom": "箕",
+   "qn": "kia",
+   "rank": 1,
+   "orig_nom": "箕",
+   "orig_qn": "ria",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|167|6": {
+   "side": "QN",
+   "nom": "鵲",
+   "qn": "thước",
+   "rank": 1,
+   "orig_nom": "鵲",
+   "orig_qn": "thuốc",
+   "time": "2026-11-26 21:10:01"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|167|7": {
+   "side": "QN",
+   "nom": "巢",
+   "qn": "sào",
+   "rank": 1,
+   "orig_nom": "巢",
+   "orig_qn": "sao",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|169|4": {
+   "side": "QN",
+   "nom": "东",
+   "qn": "đông",
+   "rank": 1,
+   "orig_nom": "东",
+   "orig_qn": "đồng",
+   "time": "2026-11-26 21:10:01"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|170|1": {
+   "side": "KEEP",
+   "nom": "汇",
+   "qn": "vừng",
+   "rank": 2,
+   "orig_nom": "汇",
+   "orig_qn": "vừng",
+   "time": "2026-11-26 21:10:01"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|18|1": {
+   "side": "QN",
+   "nom": "和",
+   "qn": "hoà",
+   "rank": 2,
+   "orig_nom": "和",
+   "orig_qn": "hóa",
+   "time": "2026-11-26 21:10:47"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|21|2": {
+   "side": "QN",
+   "nom": "耒",
+   "qn": "lỗi",
+   "rank": 1,
+   "orig_nom": "耒",
+   "orig_qn": "lối",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|36|4": {
+   "side": "NOM",
+   "nom": "來",
+   "qn": "lại",
+   "rank": 1,
+   "orig_nom": "来",
+   "orig_qn": "lại",
+   "time": "2026-11-26 21:10:47"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|43|5": {
+   "side": "QN",
+   "nom": "亭",
+   "qn": "đình",
+   "rank": 1,
+   "orig_nom": "亭",
+   "orig_qn": "đinh",
+   "time": "2026-11-27 13:47:42"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|44|5": {
+   "side": "QN",
+   "nom": "旬",
+   "qn": "tuần",
+   "rank": 1,
+   "orig_nom": "旬",
+   "orig_qn": "tuãn",
+   "time": "2026-11-26 21:10:47"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|51|1": {
+   "side": "QN",
+   "nom": "同",
+   "qn": "đồng",
+   "rank": 1,
+   "orig_nom": "同",
+   "orig_qn": "đông",
+   "time": "2026-11-26 21:10:47"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|66|4": {
+   "side": "QN",
+   "nom": "篭",
+   "qn": "lồng",
+   "rank": 1,
+   "orig_nom": "篭",
+   "orig_qn": "lòng",
+   "time": "2026-11-26 21:10:47"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|71|6": {
+   "side": "QN",
+   "nom": "期",
+   "qn": "kỳ",
+   "rank": 1,
+   "orig_nom": "期",
+   "orig_qn": "ký",
+   "time": "2026-11-26 21:10:47"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|78|4": {
+   "side": "QN",
+   "nom": "尝",
+   "qn": "thường",
+   "rank": 1,
+   "orig_nom": "尝",
+   "orig_qn": "thưởng",
+   "time": "2026-11-26 21:10:47"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|88|2": {
+   "side": "QN",
+   "nom": "祈",
+   "qn": "kỳ",
+   "rank": 1,
+   "orig_nom": "祈",
+   "orig_qn": "kỹ",
+   "time": "2026-11-26 21:10:47"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|94|0": {
+   "side": "QN",
+   "nom": "桞",
+   "qn": "liễu",
+   "rank": 1,
+   "orig_nom": "桞",
+   "orig_qn": "liệu",
+   "time": "2026-11-26 21:10:47"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|95|3": {
+   "side": "KEEP",
+   "nom": "𣋚",
+   "qn": "sớm",
+   "rank": 2,
+   "orig_nom": "𣋚",
+   "orig_qn": "sớm",
+   "time": "2026-11-26 21:10:47"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|97|5": {
+   "side": "KEEP",
+   "nom": "嚣",
+   "qn": "hiu",
+   "rank": 2,
+   "orig_nom": "嚣",
+   "orig_qn": "hiu",
+   "time": "2026-11-26 21:10:47"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|111|0": {
+   "side": "QN",
+   "nom": "鹰",
+   "qn": "ưng",
+   "rank": 1,
+   "orig_nom": "鹰",
+   "orig_qn": "ung",
+   "time": "2026-11-26 21:10:47"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|114|0": {
+   "side": "QN",
+   "nom": "厉",
+   "qn": "lệ",
+   "rank": 1,
+   "orig_nom": "厉",
+   "orig_qn": "lễ",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|149|1": {
+   "side": "QN",
+   "nom": "颛",
+   "qn": "chuyên",
+   "rank": 2,
+   "orig_nom": "颛",
+   "orig_qn": "chuyện",
+   "time": "2026-11-27 13:47:46"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|162|1": {
+   "side": "QN",
+   "nom": "泉",
+   "qn": "tuyền",
+   "rank": 1,
+   "orig_nom": "泉",
+   "orig_qn": "tuyên",
+   "time": "2026-11-26 21:10:47"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|8|4": {
+   "side": "QN",
+   "nom": "隨",
+   "qn": "tuỳ",
+   "rank": 1,
+   "orig_nom": "隨",
+   "orig_qn": "tuy",
+   "time": "2026-11-26 21:33:51"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|100|4": {
+   "side": "KEEP",
+   "nom": "于",
+   "qn": "ở",
+   "rank": 1,
+   "orig_nom": "于",
+   "orig_qn": "ở",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|102|2": {
+   "side": "KEEP",
+   "nom": "共",
+   "qn": "đúc",
+   "rank": 1,
+   "orig_nom": "共",
+   "orig_qn": "đúc",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|103|5": {
+   "side": "KEEP",
+   "nom": "希",
+   "qn": "vua",
+   "rank": 3,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|104|5": {
+   "side": "KEEP",
+   "nom": "髙",
+   "qn": "thường",
+   "rank": 1,
+   "orig_nom": "髙",
+   "orig_qn": "thường",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|105|0": {
+   "side": "KEEP",
+   "nom": "翼",
+   "qn": "giục",
+   "rank": 3,
+   "orig_nom": "翼",
+   "orig_qn": "giục",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|107|1": {
+   "side": "KEEP",
+   "nom": "希",
+   "qn": "vua",
+   "rank": 3,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|107|3": {
+   "side": "KEEP",
+   "nom": "昊",
+   "qn": "hiệu",
+   "rank": 1,
+   "orig_nom": "昊",
+   "orig_qn": "hiệu",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|107|6": {
+   "side": "KEEP",
+   "nom": "蓐",
+   "qn": "trục",
+   "rank": 1,
+   "orig_nom": "蓐",
+   "orig_qn": "trục",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|108|1": {
+   "side": "KEEP",
+   "nom": "啇",
+   "qn": "thưởng",
+   "rank": 1,
+   "orig_nom": "啇",
+   "orig_qn": "thưởng",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|112|3": {
+   "side": "KEEP",
+   "nom": "趿",
+   "qn": "giở",
+   "rank": 2,
+   "orig_nom": "趿",
+   "orig_qn": "giở",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|119|3": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mới",
+   "rank": 3,
+   "orig_nom": "买",
+   "orig_qn": "mới",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|11|7": {
+   "side": "KEEP",
+   "nom": "𣈙",
+   "qn": "giầy",
+   "rank": 1,
+   "orig_nom": "𣈙",
+   "orig_qn": "giầy",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|121|5": {
+   "side": "KEEP",
+   "nom": "墙",
+   "qn": "hưởng",
+   "rank": 1,
+   "orig_nom": "墙",
+   "orig_qn": "hưởng",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|122|5": {
+   "side": "KEEP",
+   "nom": "圑",
+   "qn": "đoan",
+   "rank": 2,
+   "orig_nom": "圑",
+   "orig_qn": "đoan",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|123|0": {
+   "side": "KEEP",
+   "nom": "于",
+   "qn": "ở",
+   "rank": 3,
+   "orig_nom": "于",
+   "orig_qn": "ở",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|126|4": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mới",
+   "rank": 2,
+   "orig_nom": "买",
+   "orig_qn": "mới",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|130|2": {
+   "side": "KEEP",
+   "nom": "𨱽",
+   "qn": "giai",
+   "rank": 1,
+   "orig_nom": "𨱽",
+   "orig_qn": "giai",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|136|3": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mới",
+   "rank": 2,
+   "orig_nom": "买",
+   "orig_qn": "mới",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|136|4": {
+   "side": "KEEP",
+   "nom": "细",
+   "qn": "tới",
+   "rank": 2,
+   "orig_nom": "细",
+   "orig_qn": "tới",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|137|5": {
+   "side": "KEEP",
+   "nom": "𡎢",
+   "qn": "ngoài",
+   "rank": 1,
+   "orig_nom": "𡎢",
+   "orig_qn": "ngoài",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|141|0": {
+   "side": "KEEP",
+   "nom": "𥘿",
+   "qn": "căn",
+   "rank": 2,
+   "orig_nom": "𥘿",
+   "orig_qn": "căn",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|141|3": {
+   "side": "KEEP",
+   "nom": "亥",
+   "qn": "thời",
+   "rank": 1,
+   "orig_nom": "亥",
+   "orig_qn": "thời",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|141|5": {
+   "side": "KEEP",
+   "nom": "期",
+   "qn": "thời",
+   "rank": 2,
+   "orig_nom": "期",
+   "orig_qn": "thời",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|146|2": {
+   "side": "KEEP",
+   "nom": "擂",
+   "qn": "chuỗi",
+   "rank": 1,
+   "orig_nom": "擂",
+   "orig_qn": "chuỗi",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|148|1": {
+   "side": "KEEP",
+   "nom": "苨",
+   "qn": "ngụy",
+   "rank": 1,
+   "orig_nom": "苨",
+   "orig_qn": "ngụy",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|148|2": {
+   "side": "KEEP",
+   "nom": "中",
+   "qn": "chung",
+   "rank": 3,
+   "orig_nom": "中",
+   "orig_qn": "chung",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|14|0": {
+   "side": "KEEP",
+   "nom": "獭",
+   "qn": "giái",
+   "rank": 1,
+   "orig_nom": "獭",
+   "orig_qn": "giái",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|154|0": {
+   "side": "KEEP",
+   "nom": "迎",
+   "qn": "sang",
+   "rank": 1,
+   "orig_nom": "迎",
+   "orig_qn": "sang",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|154|3": {
+   "side": "KEEP",
+   "nom": "于",
+   "qn": "ở",
+   "rank": 2,
+   "orig_nom": "于",
+   "orig_qn": "ở",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|155|5": {
+   "side": "KEEP",
+   "nom": "𡮍",
+   "qn": "dẫm",
+   "rank": 1,
+   "orig_nom": "𡮍",
+   "orig_qn": "dẫm",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|160|1": {
+   "side": "KEEP",
+   "nom": "粦",
+   "qn": "địch",
+   "rank": 1,
+   "orig_nom": "粦",
+   "orig_qn": "địch",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|161|2": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mới",
+   "rank": 3,
+   "orig_nom": "买",
+   "orig_qn": "mới",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|162|2": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mới",
+   "rank": 3,
+   "orig_nom": "买",
+   "orig_qn": "mới",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|165|0": {
+   "side": "KEEP",
+   "nom": "𡝤",
+   "qn": "lâu",
+   "rank": 3,
+   "orig_nom": "𡝤",
+   "orig_qn": "lâu",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|16|4": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mới",
+   "rank": 2,
+   "orig_nom": "买",
+   "orig_qn": "mới",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|170|5": {
+   "side": "KEEP",
+   "nom": "饶",
+   "qn": "nhau",
+   "rank": 1,
+   "orig_nom": "饶",
+   "orig_qn": "nhau",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|173|3": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mới",
+   "rank": 3,
+   "orig_nom": "买",
+   "orig_qn": "mới",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|174|0": {
+   "side": "KEEP",
+   "nom": "向",
+   "qn": "dở",
+   "rank": 2,
+   "orig_nom": "向",
+   "orig_qn": "dở",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|174|1": {
+   "side": "KEEP",
+   "nom": "上",
+   "qn": "lên",
+   "rank": 1,
+   "orig_nom": "上",
+   "orig_qn": "lên",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|17|7": {
+   "side": "KEEP",
+   "nom": "鄕",
+   "qn": "khanh",
+   "rank": 2,
+   "orig_nom": "鄕",
+   "orig_qn": "khanh",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|21|0": {
+   "side": "KEEP",
+   "nom": "希",
+   "qn": "vua",
+   "rank": 2,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|23|0": {
+   "side": "KEEP",
+   "nom": "氏",
+   "qn": "dân",
+   "rank": 2,
+   "orig_nom": "氏",
+   "orig_qn": "dân",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|29|4": {
+   "side": "KEEP",
+   "nom": "烣",
+   "qn": "gió",
+   "rank": 1,
+   "orig_nom": "烣",
+   "orig_qn": "gió",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|30|4": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mới",
+   "rank": 3,
+   "orig_nom": "买",
+   "orig_qn": "mới",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|32|2": {
+   "side": "KEEP",
+   "nom": "𡎢",
+   "qn": "ngoài",
+   "rank": 1,
+   "orig_nom": "𡎢",
+   "orig_qn": "ngoài",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|35|0": {
+   "side": "KEEP",
+   "nom": "买",
+   "qn": "mới",
+   "rank": 3,
+   "orig_nom": "买",
+   "orig_qn": "mới",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|38|4": {
+   "side": "KEEP",
+   "nom": "于",
+   "qn": "ở",
+   "rank": 1,
+   "orig_nom": "于",
+   "orig_qn": "ở",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|39|7": {
+   "side": "KEEP",
+   "nom": "忠",
+   "qn": "chung",
+   "rank": 2,
+   "orig_nom": "忠",
+   "orig_qn": "chung",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|40|2": {
+   "side": "KEEP",
+   "nom": "䗅",
+   "qn": "giai",
+   "rank": 2,
+   "orig_nom": "䗅",
+   "orig_qn": "giai",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|40|5": {
+   "side": "KEEP",
+   "nom": "中",
+   "qn": "chung",
+   "rank": 3,
+   "orig_nom": "中",
+   "orig_qn": "chung",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|43|8": {
+   "side": "KEEP",
+   "nom": "芹",
+   "qn": "thả",
+   "rank": 1,
+   "orig_nom": "芹",
+   "orig_qn": "thả",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|44|4": {
+   "side": "KEEP",
+   "nom": "中",
+   "qn": "chung",
+   "rank": 2,
+   "orig_nom": "中",
+   "orig_qn": "chung",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|47|3": {
+   "side": "KEEP",
+   "nom": "胄",
+   "qn": "tỵ",
+   "rank": 1,
+   "orig_nom": "胄",
+   "orig_qn": "tỵ",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|51|3": {
+   "side": "KEEP",
+   "nom": "𡚶",
+   "qn": "nở",
+   "rank": 2,
+   "orig_nom": "𡚶",
+   "orig_qn": "nở",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|51|4": {
+   "side": "KEEP",
+   "nom": "奴",
+   "qn": "như",
+   "rank": 2,
+   "orig_nom": "奴",
+   "orig_qn": "như",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|60|5": {
+   "side": "KEEP",
+   "nom": "翹",
+   "qn": "lòng",
+   "rank": 2,
+   "orig_nom": "翹",
+   "orig_qn": "lòng",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|62|0": {
+   "side": "KEEP",
+   "nom": "客",
+   "qn": "cùng",
+   "rank": 1,
+   "orig_nom": "客",
+   "orig_qn": "cùng",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|62|1": {
+   "side": "KEEP",
+   "nom": "中",
+   "qn": "chung",
+   "rank": 2,
+   "orig_nom": "中",
+   "orig_qn": "chung",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|65|1": {
+   "side": "KEEP",
+   "nom": "客",
+   "qn": "cùng",
+   "rank": 3,
+   "orig_nom": "客",
+   "orig_qn": "cùng",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|67|4": {
+   "side": "KEEP",
+   "nom": "于",
+   "qn": "ở",
+   "rank": 1,
+   "orig_nom": "于",
+   "orig_qn": "ở",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|67|5": {
+   "side": "KEEP",
+   "nom": "申",
+   "qn": "trần",
+   "rank": 3,
+   "orig_nom": "申",
+   "orig_qn": "trần",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|68|0": {
+   "side": "KEEP",
+   "nom": "翼",
+   "qn": "giục",
+   "rank": 1,
+   "orig_nom": "翼",
+   "orig_qn": "giục",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|68|2": {
+   "side": "KEEP",
+   "nom": "中",
+   "qn": "chung",
+   "rank": 2,
+   "orig_nom": "中",
+   "orig_qn": "chung",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|68|5": {
+   "side": "KEEP",
+   "nom": "中",
+   "qn": "chung",
+   "rank": 2,
+   "orig_nom": "中",
+   "orig_qn": "chung",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|70|2": {
+   "side": "KEEP",
+   "nom": "中",
+   "qn": "chung",
+   "rank": 1,
+   "orig_nom": "中",
+   "orig_qn": "chung",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|7|6": {
+   "side": "KEEP",
+   "nom": "奴",
+   "qn": "su",
+   "rank": 2,
+   "orig_nom": "奴",
+   "orig_qn": "su",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|82|0": {
+   "side": "KEEP",
+   "nom": "𠦂",
+   "qn": "bản",
+   "rank": 3,
+   "orig_nom": "𠦂",
+   "orig_qn": "bản",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|83|0": {
+   "side": "KEEP",
+   "nom": "井",
+   "qn": "cảnh",
+   "rank": 1,
+   "orig_nom": "井",
+   "orig_qn": "cảnh",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|84|4": {
+   "side": "KEEP",
+   "nom": "甤",
+   "qn": "di",
+   "rank": 1,
+   "orig_nom": "甤",
+   "orig_qn": "di",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|87|3": {
+   "side": "KEEP",
+   "nom": "赙",
+   "qn": "quách",
+   "rank": 1,
+   "orig_nom": "赙",
+   "orig_qn": "quách",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|88|0": {
+   "side": "KEEP",
+   "nom": "𥙊",
+   "qn": "cố",
+   "rank": 1,
+   "orig_nom": "𥙊",
+   "orig_qn": "cố",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|88|1": {
+   "side": "KEEP",
+   "nom": "雩",
+   "qn": "thu",
+   "rank": 2,
+   "orig_nom": "雩",
+   "orig_qn": "thu",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|90|1": {
+   "side": "KEEP",
+   "nom": "貅",
+   "qn": "hiêu",
+   "rank": 2,
+   "orig_nom": "貅",
+   "orig_qn": "hiêu",
+   "time": "2026-11-27 22:01:45"
+  },
+  "Nguyêt Lịnh Quôc Âm Ca, Nôm|94|2": {
+   "side": "KEEP",
+   "nom": "鹑",
+   "qn": "chuẵn",
+   "rank": 2,
+   "orig_nom": "鹑",
+   "orig_qn": "chuẵn",
+   "time": "2026-11-27 22:01:45"
+  }
+ }
+}

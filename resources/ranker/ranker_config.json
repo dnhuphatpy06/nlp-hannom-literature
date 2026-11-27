@@ -1,0 +1,6 @@
+{
+  "temperature": 0.8773,
+  "model": "lgbm-lambdarank [raw+rel]",
+  "nll_oof": 1.2019,
+  "nll_oof_T1": 1.2135
+}

@@ -1,0 +1,772 @@
+{
+  "best_model": "lgbm-lambdarank [raw+rel]",
+  "feature_set": "raw+rel",
+  "features": [
+    "is_nom",
+    "is_viet",
+    "is_keep",
+    "has_nom_visual_rank",
+    "nom_visual_neglog_rank",
+    "has_nom_glyph_rank",
+    "nom_glyph_neglog_rank",
+    "viet_distance",
+    "nom_new_semantic_delta_logp",
+    "viet_new_semantic_delta_logp",
+    "n_cand",
+    "score_semantic",
+    "nom_glyph_neglog_rank__rank",
+    "nom_glyph_neglog_rank__gap",
+    "viet_distance__rank",
+    "viet_distance__gap",
+    "nom_new_semantic_delta_logp__rank",
+    "nom_new_semantic_delta_logp__gap",
+    "viet_new_semantic_delta_logp__rank",
+    "viet_new_semantic_delta_logp__gap",
+    "score_semantic__rank",
+    "score_semantic__gap"
+  ],
+  "params": {
+    "learning_rate": 0.05,
+    "min_data_in_leaf": 30,
+    "n_estimators": 300,
+    "num_leaves": 15
+  },
+  "lobo_params": {
+    "raw": {
+      "Trinh Thư Truyên, Nôm": {
+        "num_leaves": 7,
+        "min_data_in_leaf": 20,
+        "learning_rate": 0.05,
+        "n_estimators": 200
+      },
+      "Truyên Vua Quang Trung, Nôm": {
+        "num_leaves": 7,
+        "min_data_in_leaf": 20,
+        "learning_rate": 0.05,
+        "n_estimators": 200
+      },
+      "Tư Linh Truyên, Nôm": {
+        "num_leaves": 7,
+        "min_data_in_leaf": 20,
+        "learning_rate": 0.05,
+        "n_estimators": 200
+      },
+      "truyen vua Le Thai To digcoll_10996": {
+        "num_leaves": 7,
+        "min_data_in_leaf": 20,
+        "learning_rate": 0.05,
+        "n_estimators": 200
+      }
+    },
+    "raw+rel": {
+      "Trinh Thư Truyên, Nôm": {
+        "num_leaves": 15,
+        "min_data_in_leaf": 30,
+        "learning_rate": 0.05,
+        "n_estimators": 300
+      },
+      "Truyên Vua Quang Trung, Nôm": {
+        "num_leaves": 15,
+        "min_data_in_leaf": 30,
+        "learning_rate": 0.05,
+        "n_estimators": 300
+      },
+      "Tư Linh Truyên, Nôm": {
+        "num_leaves": 15,
+        "min_data_in_leaf": 30,
+        "learning_rate": 0.05,
+        "n_estimators": 300
+      },
+      "truyen vua Le Thai To digcoll_10996": {
+        "num_leaves": 15,
+        "min_data_in_leaf": 30,
+        "learning_rate": 0.05,
+        "n_estimators": 300
+      }
+    },
+    "raw+rel+baseline_rank": {
+      "Trinh Thư Truyên, Nôm": {
+        "num_leaves": 31,
+        "min_data_in_leaf": 40,
+        "learning_rate": 0.03,
+        "n_estimators": 400
+      },
+      "Truyên Vua Quang Trung, Nôm": {
+        "num_leaves": 31,
+        "min_data_in_leaf": 40,
+        "learning_rate": 0.03,
+        "n_estimators": 400
+      },
+      "Tư Linh Truyên, Nôm": {
+        "num_leaves": 15,
+        "min_data_in_leaf": 30,
+        "learning_rate": 0.05,
+        "n_estimators": 300
+      },
+      "truyen vua Le Thai To digcoll_10996": {
+        "num_leaves": 15,
+        "min_data_in_leaf": 30,
+        "learning_rate": 0.05,
+        "n_estimators": 300
+      }
+    }
+  },
+  "results": {
+    "random": {
+      "per_book": {
+        "Trinh Thư Truyên, Nôm": {
+          "n_sites": 607,
+          "top1": 0.06754530477759473,
+          "top3": 0.1812191103789127,
+          "top5": 0.29654036243822074,
+          "mrr": 0.2055837905233588,
+          "ndcg@5": 0.18151674085642291,
+          "mean_rank": 10.542009884678748,
+          "top1_gold_nom": 0.06532663316582915,
+          "n_gold_nom": 199,
+          "top1_gold_viet": 0.06748466257668712,
+          "n_gold_viet": 326,
+          "top1_gold_keep": 0.07317073170731707,
+          "n_gold_keep": 82
+        },
+        "Truyên Vua Quang Trung, Nôm": {
+          "n_sites": 477,
+          "top1": 0.05660377358490566,
+          "top3": 0.16771488469601678,
+          "top5": 0.24737945492662475,
+          "mrr": 0.18562416331007034,
+          "ndcg@5": 0.15213678047205517,
+          "mean_rank": 11.178197064989519,
+          "top1_gold_nom": 0.055248618784530384,
+          "n_gold_nom": 181,
+          "top1_gold_viet": 0.06310679611650485,
+          "n_gold_viet": 206,
+          "top1_gold_keep": 0.044444444444444446,
+          "n_gold_keep": 90
+        },
+        "Tư Linh Truyên, Nôm": {
+          "n_sites": 587,
+          "top1": 0.05792163543441227,
+          "top3": 0.17206132879045996,
+          "top5": 0.2606473594548552,
+          "mrr": 0.18565799617335926,
+          "ndcg@5": 0.15878506579299959,
+          "mean_rank": 11.880749574105621,
+          "top1_gold_nom": 0.05263157894736842,
+          "n_gold_nom": 114,
+          "top1_gold_viet": 0.060324825986078884,
+          "n_gold_viet": 431,
+          "top1_gold_keep": 0.047619047619047616,
+          "n_gold_keep": 42
+        },
+        "truyen vua Le Thai To digcoll_10996": {
+          "n_sites": 612,
+          "top1": 0.0457516339869281,
+          "top3": 0.16176470588235295,
+          "top5": 0.2908496732026144,
+          "mrr": 0.18524586855731937,
+          "ndcg@5": 0.16361751744289338,
+          "mean_rank": 10.679738562091503,
+          "top1_gold_nom": 0.02702702702702703,
+          "n_gold_nom": 222,
+          "top1_gold_viet": 0.04067796610169491,
+          "n_gold_viet": 295,
+          "top1_gold_keep": 0.10526315789473684,
+          "n_gold_keep": 95
+        }
+      },
+      "pooled": {
+        "n_sites": 2283,
+        "top1": 0.05694261936049058,
+        "top3": 0.17082785808147175,
+        "top5": 0.27551467367498905,
+        "mrr": 0.19083828386220925,
+        "ndcg@5": 0.16473528702608872,
+        "mean_rank": 11.056066579062637,
+        "top1_gold_nom": 0.04888268156424581,
+        "n_gold_nom": 716,
+        "top1_gold_viet": 0.05802861685214626,
+        "n_gold_viet": 1258,
+        "top1_gold_keep": 0.07119741100323625,
+        "n_gold_keep": 309
+      }
+    },
+    "baseline_rank (old scorer)": {
+      "per_book": {
+        "Trinh Thư Truyên, Nôm": {
+          "n_sites": 607,
+          "top1": 0.5271828665568369,
+          "top3": 0.742998352553542,
+          "top5": 0.8171334431630972,
+          "mrr": 0.6574360392394049,
+          "ndcg@5": 0.6844138779357931,
+          "mean_rank": 3.685337726523888,
+          "top1_gold_nom": 0.4321608040201005,
+          "n_gold_nom": 199,
+          "top1_gold_viet": 0.647239263803681,
+          "n_gold_viet": 326,
+          "top1_gold_keep": 0.2804878048780488,
+          "n_gold_keep": 82
+        },
+        "Truyên Vua Quang Trung, Nôm": {
+          "n_sites": 477,
+          "top1": 0.42348008385744235,
+          "top3": 0.5870020964360587,
+          "top5": 0.6687631027253669,
+          "mrr": 0.5504824894692836,
+          "ndcg@5": 0.5519752335874066,
+          "mean_rank": 4.719077568134172,
+          "top1_gold_nom": 0.2430939226519337,
+          "n_gold_nom": 181,
+          "top1_gold_viet": 0.7087378640776699,
+          "n_gold_viet": 206,
+          "top1_gold_keep": 0.13333333333333333,
+          "n_gold_keep": 90
+        },
+        "Tư Linh Truyên, Nôm": {
+          "n_sites": 587,
+          "top1": 0.6183986371379898,
+          "top3": 0.7904599659284497,
+          "top5": 0.8432708688245315,
+          "mrr": 0.7213028428104934,
+          "ndcg@5": 0.7404027317174778,
+          "mean_rank": 3.3373083475298126,
+          "top1_gold_nom": 0.4298245614035088,
+          "n_gold_nom": 114,
+          "top1_gold_viet": 0.7076566125290024,
+          "n_gold_viet": 431,
+          "top1_gold_keep": 0.21428571428571427,
+          "n_gold_keep": 42
+        },
+        "truyen vua Le Thai To digcoll_10996": {
+          "n_sites": 612,
+          "top1": 0.5294117647058824,
+          "top3": 0.6944444444444444,
+          "top5": 0.7810457516339869,
+          "mrr": 0.6445132234025127,
+          "ndcg@5": 0.6614842243312762,
+          "mean_rank": 3.9379084967320264,
+          "top1_gold_nom": 0.3918918918918919,
+          "n_gold_nom": 222,
+          "top1_gold_viet": 0.752542372881356,
+          "n_gold_viet": 295,
+          "top1_gold_keep": 0.15789473684210525,
+          "n_gold_keep": 95
+        }
+      },
+      "pooled": {
+        "n_sites": 2283,
+        "top1": 0.5295663600525624,
+        "top3": 0.709592641261498,
+        "top5": 0.783180026281209,
+        "mrr": 0.6480467300688849,
+        "ndcg@5": 0.6649917473224353,
+        "mean_rank": 3.8795444590451162,
+        "top1_gold_nom": 0.3715083798882682,
+        "n_gold_nom": 716,
+        "top1_gold_viet": 0.7027027027027027,
+        "n_gold_viet": 1258,
+        "top1_gold_keep": 0.19093851132686085,
+        "n_gold_keep": 309
+      }
+    },
+    "logreg [raw]": {
+      "per_book": {
+        "Trinh Thư Truyên, Nôm": {
+          "n_sites": 607,
+          "top1": 0.5733113673805601,
+          "top3": 0.8336079077429983,
+          "top5": 0.9176276771004942,
+          "mrr": 0.7200881960737311,
+          "ndcg@5": 0.7627925936573351,
+          "mean_rank": 2.367380560131796,
+          "top1_gold_nom": 0.40703517587939697,
+          "n_gold_nom": 199,
+          "top1_gold_viet": 0.656441717791411,
+          "n_gold_viet": 326,
+          "top1_gold_keep": 0.6463414634146342,
+          "n_gold_keep": 82
+        },
+        "Truyên Vua Quang Trung, Nôm": {
+          "n_sites": 477,
+          "top1": 0.4612159329140461,
+          "top3": 0.7945492662473794,
+          "top5": 0.8909853249475891,
+          "mrr": 0.6269201436167795,
+          "ndcg@5": 0.6850542319314017,
+          "mean_rank": 3.0712788259958073,
+          "top1_gold_nom": 0.2265193370165746,
+          "n_gold_nom": 181,
+          "top1_gold_viet": 0.7281553398058253,
+          "n_gold_viet": 206,
+          "top1_gold_keep": 0.32222222222222224,
+          "n_gold_keep": 90
+        },
+        "Tư Linh Truyên, Nôm": {
+          "n_sites": 587,
+          "top1": 0.6201022146507666,
+          "top3": 0.868824531516184,
+          "top5": 0.9267461669505963,
+          "mrr": 0.7518005196425531,
+          "ndcg@5": 0.7895533169540715,
+          "mean_rank": 2.2640545144804087,
+          "top1_gold_nom": 0.35964912280701755,
+          "n_gold_nom": 114,
+          "top1_gold_viet": 0.6774941995359629,
+          "n_gold_viet": 431,
+          "top1_gold_keep": 0.7380952380952381,
+          "n_gold_keep": 42
+        },
+        "truyen vua Le Thai To digcoll_10996": {
+          "n_sites": 612,
+          "top1": 0.5637254901960784,
+          "top3": 0.8594771241830066,
+          "top5": 0.9183006535947712,
+          "mrr": 0.7130675762947378,
+          "ndcg@5": 0.7581106114370768,
+          "mean_rank": 2.423202614379085,
+          "top1_gold_nom": 0.31981981981981983,
+          "n_gold_nom": 222,
+          "top1_gold_viet": 0.7830508474576271,
+          "n_gold_viet": 295,
+          "top1_gold_keep": 0.45263157894736844,
+          "n_gold_keep": 95
+        }
+      },
+      "pooled": {
+        "n_sites": 2283,
+        "top1": 0.5593517301795883,
+        "top3": 0.8414367060884801,
+        "top5": 0.9145860709592641,
+        "mrr": 0.706893870015119,
+        "ndcg@5": 0.752175849423045,
+        "mean_rank": 2.5028471309680245,
+        "top1_gold_nom": 0.3268156424581006,
+        "n_gold_nom": 716,
+        "top1_gold_viet": 0.705087440381558,
+        "n_gold_viet": 1258,
+        "top1_gold_keep": 0.5048543689320388,
+        "n_gold_keep": 309
+      }
+    },
+    "lgbm-lambdarank [raw]": {
+      "per_book": {
+        "Trinh Thư Truyên, Nôm": {
+          "n_sites": 607,
+          "top1": 0.5963756177924218,
+          "top3": 0.85667215815486,
+          "top5": 0.9225700164744646,
+          "mrr": 0.7363267945610941,
+          "ndcg@5": 0.7763247795465127,
+          "mean_rank": 2.258649093904448,
+          "top1_gold_nom": 0.4020100502512563,
+          "n_gold_nom": 199,
+          "top1_gold_viet": 0.7116564417177914,
+          "n_gold_viet": 326,
+          "top1_gold_keep": 0.6097560975609756,
+          "n_gold_keep": 82
+        },
+        "Truyên Vua Quang Trung, Nôm": {
+          "n_sites": 477,
+          "top1": 0.5513626834381551,
+          "top3": 0.80083857442348,
+          "top5": 0.8763102725366876,
+          "mrr": 0.6923520959002978,
+          "ndcg@5": 0.7284559698150748,
+          "mean_rank": 2.729559748427673,
+          "top1_gold_nom": 0.4143646408839779,
+          "n_gold_nom": 181,
+          "top1_gold_viet": 0.7524271844660194,
+          "n_gold_viet": 206,
+          "top1_gold_keep": 0.36666666666666664,
+          "n_gold_keep": 90
+        },
+        "Tư Linh Truyên, Nôm": {
+          "n_sites": 587,
+          "top1": 0.6609880749574105,
+          "top3": 0.8739352640545145,
+          "top5": 0.9369676320272572,
+          "mrr": 0.7783309087153344,
+          "ndcg@5": 0.8131904207024102,
+          "mean_rank": 2.2146507666098807,
+          "top1_gold_nom": 0.45614035087719296,
+          "n_gold_nom": 114,
+          "top1_gold_viet": 0.7146171693735499,
+          "n_gold_viet": 431,
+          "top1_gold_keep": 0.6666666666666666,
+          "n_gold_keep": 42
+        },
+        "truyen vua Le Thai To digcoll_10996": {
+          "n_sites": 612,
+          "top1": 0.6339869281045751,
+          "top3": 0.8545751633986928,
+          "top5": 0.923202614379085,
+          "mrr": 0.756317219072637,
+          "ndcg@5": 0.7913748467945613,
+          "mean_rank": 2.2320261437908497,
+          "top1_gold_nom": 0.5315315315315315,
+          "n_gold_nom": 222,
+          "top1_gold_viet": 0.7898305084745763,
+          "n_gold_viet": 295,
+          "top1_gold_keep": 0.3894736842105263,
+          "n_gold_keep": 95
+        }
+      },
+      "pooled": {
+        "n_sites": 2283,
+        "top1": 0.6136662286465178,
+        "top3": 0.8488830486202366,
+        "top5": 0.9167761717038984,
+        "mrr": 0.7432977203378806,
+        "ndcg@5": 0.7798365405068376,
+        "mean_rank": 2.3385895751204555,
+        "top1_gold_nom": 0.45391061452513964,
+        "n_gold_nom": 716,
+        "top1_gold_viet": 0.7376788553259142,
+        "n_gold_viet": 1258,
+        "top1_gold_keep": 0.47896440129449835,
+        "n_gold_keep": 309
+      }
+    },
+    "logreg [raw+rel]": {
+      "per_book": {
+        "Trinh Thư Truyên, Nôm": {
+          "n_sites": 607,
+          "top1": 0.57166392092257,
+          "top3": 0.8220757825370676,
+          "top5": 0.9093904448105437,
+          "mrr": 0.7165456726477276,
+          "ndcg@5": 0.7572626387312111,
+          "mean_rank": 2.4332784184514002,
+          "top1_gold_nom": 0.4623115577889447,
+          "n_gold_nom": 199,
+          "top1_gold_viet": 0.6411042944785276,
+          "n_gold_viet": 326,
+          "top1_gold_keep": 0.5609756097560976,
+          "n_gold_keep": 82
+        },
+        "Truyên Vua Quang Trung, Nôm": {
+          "n_sites": 477,
+          "top1": 0.469601677148847,
+          "top3": 0.7547169811320755,
+          "top5": 0.8721174004192872,
+          "mrr": 0.6256380822245748,
+          "ndcg@5": 0.6768047787031921,
+          "mean_rank": 3.1174004192872116,
+          "top1_gold_nom": 0.22099447513812154,
+          "n_gold_nom": 181,
+          "top1_gold_viet": 0.7378640776699029,
+          "n_gold_viet": 206,
+          "top1_gold_keep": 0.35555555555555557,
+          "n_gold_keep": 90
+        },
+        "Tư Linh Truyên, Nôm": {
+          "n_sites": 587,
+          "top1": 0.6405451448040886,
+          "top3": 0.8620102214650767,
+          "top5": 0.9318568994889267,
+          "mrr": 0.7639682944698869,
+          "ndcg@5": 0.8004628755392424,
+          "mean_rank": 2.2282793867120954,
+          "top1_gold_nom": 0.41228070175438597,
+          "n_gold_nom": 114,
+          "top1_gold_viet": 0.6960556844547564,
+          "n_gold_viet": 431,
+          "top1_gold_keep": 0.6904761904761905,
+          "n_gold_keep": 42
+        },
+        "truyen vua Le Thai To digcoll_10996": {
+          "n_sites": 612,
+          "top1": 0.5669934640522876,
+          "top3": 0.8545751633986928,
+          "top5": 0.9199346405228758,
+          "mrr": 0.7137516839956305,
+          "ndcg@5": 0.7593959622862361,
+          "mean_rank": 2.447712418300654,
+          "top1_gold_nom": 0.35585585585585583,
+          "n_gold_nom": 222,
+          "top1_gold_viet": 0.7728813559322034,
+          "n_gold_viet": 295,
+          "top1_gold_keep": 0.42105263157894735,
+          "n_gold_keep": 95
+        }
+      },
+      "pooled": {
+        "n_sites": 2283,
+        "top1": 0.5667980727113447,
+        "top3": 0.826982041173894,
+        "top5": 0.9102058694699956,
+        "mrr": 0.7089960613129402,
+        "ndcg@5": 0.7521315541007356,
+        "mean_rank": 2.5273762593079283,
+        "top1_gold_nom": 0.36033519553072624,
+        "n_gold_nom": 716,
+        "top1_gold_viet": 0.7066772655007949,
+        "n_gold_viet": 1258,
+        "top1_gold_keep": 0.47572815533980584,
+        "n_gold_keep": 309
+      }
+    },
+    "lgbm-lambdarank [raw+rel]": {
+      "per_book": {
+        "Trinh Thư Truyên, Nôm": {
+          "n_sites": 607,
+          "top1": 0.5947281713344317,
+          "top3": 0.8682042833607908,
+          "top5": 0.9242174629324547,
+          "mrr": 0.7374351005940791,
+          "ndcg@5": 0.7778024054326689,
+          "mean_rank": 2.202635914332784,
+          "top1_gold_nom": 0.47738693467336685,
+          "n_gold_nom": 199,
+          "top1_gold_viet": 0.6901840490797546,
+          "n_gold_viet": 326,
+          "top1_gold_keep": 0.5,
+          "n_gold_keep": 82
+        },
+        "Truyên Vua Quang Trung, Nôm": {
+          "n_sites": 477,
+          "top1": 0.6226415094339622,
+          "top3": 0.8155136268343816,
+          "top5": 0.9056603773584906,
+          "mrr": 0.7353642975106456,
+          "ndcg@5": 0.7698792178424434,
+          "mean_rank": 2.480083857442348,
+          "top1_gold_nom": 0.6132596685082873,
+          "n_gold_nom": 181,
+          "top1_gold_viet": 0.7718446601941747,
+          "n_gold_viet": 206,
+          "top1_gold_keep": 0.3,
+          "n_gold_keep": 90
+        },
+        "Tư Linh Truyên, Nôm": {
+          "n_sites": 587,
+          "top1": 0.6507666098807495,
+          "top3": 0.8671209540034072,
+          "top5": 0.9182282793867121,
+          "mrr": 0.771261698017385,
+          "ndcg@5": 0.8013238561690086,
+          "mean_rank": 2.233390119250426,
+          "top1_gold_nom": 0.45614035087719296,
+          "n_gold_nom": 114,
+          "top1_gold_viet": 0.7006960556844548,
+          "n_gold_viet": 431,
+          "top1_gold_keep": 0.6666666666666666,
+          "n_gold_keep": 42
+        },
+        "truyen vua Le Thai To digcoll_10996": {
+          "n_sites": 612,
+          "top1": 0.6552287581699346,
+          "top3": 0.8888888888888888,
+          "top5": 0.9313725490196079,
+          "mrr": 0.7773857388789019,
+          "ndcg@5": 0.81039228855702,
+          "mean_rank": 2.0833333333333335,
+          "top1_gold_nom": 0.5720720720720721,
+          "n_gold_nom": 222,
+          "top1_gold_viet": 0.7728813559322034,
+          "n_gold_viet": 295,
+          "top1_gold_keep": 0.4842105263157895,
+          "n_gold_keep": 95
+        }
+      },
+      "pooled": {
+        "n_sites": 2283,
+        "top1": 0.6311870346035917,
+        "top3": 0.8624616732369689,
+        "top5": 0.92071835304424,
+        "mrr": 0.7564093582581152,
+        "ndcg@5": 0.790931069284529,
+        "mean_rank": 2.2365308804204993,
+        "top1_gold_nom": 0.5377094972067039,
+        "n_gold_nom": 716,
+        "top1_gold_viet": 0.7265500794912559,
+        "n_gold_viet": 1258,
+        "top1_gold_keep": 0.459546925566343,
+        "n_gold_keep": 309
+      }
+    },
+    "logreg [raw+rel+baseline_rank]": {
+      "per_book": {
+        "Trinh Thư Truyên, Nôm": {
+          "n_sites": 607,
+          "top1": 0.5601317957166392,
+          "top3": 0.8303130148270181,
+          "top5": 0.9110378912685337,
+          "mrr": 0.7114119961452552,
+          "ndcg@5": 0.7539278220696007,
+          "mean_rank": 2.3920922570016474,
+          "top1_gold_nom": 0.3869346733668342,
+          "n_gold_nom": 199,
+          "top1_gold_viet": 0.6717791411042945,
+          "n_gold_viet": 326,
+          "top1_gold_keep": 0.5365853658536586,
+          "n_gold_keep": 82
+        },
+        "Truyên Vua Quang Trung, Nôm": {
+          "n_sites": 477,
+          "top1": 0.46750524109014674,
+          "top3": 0.7526205450733753,
+          "top5": 0.8721174004192872,
+          "mrr": 0.6265252177016883,
+          "ndcg@5": 0.6781734749108553,
+          "mean_rank": 3.1551362683438153,
+          "top1_gold_nom": 0.2154696132596685,
+          "n_gold_nom": 181,
+          "top1_gold_viet": 0.7427184466019418,
+          "n_gold_viet": 206,
+          "top1_gold_keep": 0.34444444444444444,
+          "n_gold_keep": 90
+        },
+        "Tư Linh Truyên, Nôm": {
+          "n_sites": 587,
+          "top1": 0.6524701873935264,
+          "top3": 0.8671209540034072,
+          "top5": 0.9369676320272572,
+          "mrr": 0.7695290538035302,
+          "ndcg@5": 0.8065253793089592,
+          "mean_rank": 2.1976149914821126,
+          "top1_gold_nom": 0.37719298245614036,
+          "n_gold_nom": 114,
+          "top1_gold_viet": 0.7192575406032483,
+          "n_gold_viet": 431,
+          "top1_gold_keep": 0.7142857142857143,
+          "n_gold_keep": 42
+        },
+        "truyen vua Le Thai To digcoll_10996": {
+          "n_sites": 612,
+          "top1": 0.576797385620915,
+          "top3": 0.8382352941176471,
+          "top5": 0.9084967320261438,
+          "mrr": 0.7153536178452704,
+          "ndcg@5": 0.7563853179119155,
+          "mean_rank": 2.4950980392156863,
+          "top1_gold_nom": 0.35585585585585583,
+          "n_gold_nom": 222,
+          "top1_gold_viet": 0.7796610169491526,
+          "n_gold_viet": 295,
+          "top1_gold_keep": 0.4631578947368421,
+          "n_gold_keep": 95
+        }
+      },
+      "pooled": {
+        "n_sites": 2283,
+        "top1": 0.568988173455979,
+        "top3": 0.8256679807271134,
+        "top5": 0.9088918090232151,
+        "mrr": 0.7096756807743552,
+        "ndcg@5": 0.7522825877114222,
+        "mean_rank": 2.5291283399036355,
+        "top1_gold_nom": 0.3324022346368715,
+        "n_gold_nom": 716,
+        "top1_gold_viet": 0.724960254372019,
+        "n_gold_viet": 1258,
+        "top1_gold_keep": 0.48220064724919093,
+        "n_gold_keep": 309
+      }
+    },
+    "lgbm-lambdarank [raw+rel+baseline_rank]": {
+      "per_book": {
+        "Trinh Thư Truyên, Nôm": {
+          "n_sites": 607,
+          "top1": 0.6408566721581549,
+          "top3": 0.8599670510708401,
+          "top5": 0.9324546952224053,
+          "mrr": 0.7629586113737341,
+          "ndcg@5": 0.8002493988755076,
+          "mean_rank": 2.2108731466227347,
+          "top1_gold_nom": 0.5477386934673367,
+          "n_gold_nom": 199,
+          "top1_gold_viet": 0.7361963190184049,
+          "n_gold_viet": 326,
+          "top1_gold_keep": 0.4878048780487805,
+          "n_gold_keep": 82
+        },
+        "Truyên Vua Quang Trung, Nôm": {
+          "n_sites": 477,
+          "top1": 0.6247379454926625,
+          "top3": 0.8301886792452831,
+          "top5": 0.9119496855345912,
+          "mrr": 0.7432031481579889,
+          "ndcg@5": 0.7778576456361861,
+          "mean_rank": 2.3878406708595388,
+          "top1_gold_nom": 0.6132596685082873,
+          "n_gold_nom": 181,
+          "top1_gold_viet": 0.7815533980582524,
+          "n_gold_viet": 206,
+          "top1_gold_keep": 0.28888888888888886,
+          "n_gold_keep": 90
+        },
+        "Tư Linh Truyên, Nôm": {
+          "n_sites": 587,
+          "top1": 0.7001703577512777,
+          "top3": 0.879045996592845,
+          "top5": 0.9165247018739353,
+          "mrr": 0.799004690245045,
+          "ndcg@5": 0.8212853812264779,
+          "mean_rank": 2.10221465076661,
+          "top1_gold_nom": 0.5087719298245614,
+          "n_gold_nom": 114,
+          "top1_gold_viet": 0.7540603248259861,
+          "n_gold_viet": 431,
+          "top1_gold_keep": 0.6666666666666666,
+          "n_gold_keep": 42
+        },
+        "truyen vua Le Thai To digcoll_10996": {
+          "n_sites": 612,
+          "top1": 0.6764705882352942,
+          "top3": 0.8774509803921569,
+          "top5": 0.9297385620915033,
+          "mrr": 0.7849431856355175,
+          "ndcg@5": 0.8151653261832082,
+          "mean_rank": 2.0915032679738563,
+          "top1_gold_nom": 0.6081081081081081,
+          "n_gold_nom": 222,
+          "top1_gold_viet": 0.8,
+          "n_gold_viet": 295,
+          "top1_gold_keep": 0.45263157894736844,
+          "n_gold_keep": 95
+        }
+      },
+      "pooled": {
+        "n_sites": 2283,
+        "top1": 0.6622864651773982,
+        "top3": 0.8633377135348226,
+        "top5": 0.9233464739378011,
+        "mrr": 0.7739924492150659,
+        "ndcg@5": 0.8049781780507927,
+        "mean_rank": 2.187910643889619,
+        "top1_gold_nom": 0.5768156424581006,
+        "n_gold_nom": 716,
+        "top1_gold_viet": 0.7647058823529411,
+        "n_gold_viet": 1258,
+        "top1_gold_keep": 0.44336569579288027,
+        "n_gold_keep": 309
+      }
+    }
+  },
+  "feature_importance_gain": {
+    "nom_glyph_neglog_rank": 0.3198,
+    "viet_distance": 0.1919,
+    "nom_glyph_neglog_rank__rank": 0.0781,
+    "has_nom_visual_rank": 0.0538,
+    "is_viet": 0.0509,
+    "viet_distance__gap": 0.0444,
+    "score_semantic__rank": 0.0374,
+    "viet_new_semantic_delta_logp__rank": 0.0304,
+    "viet_distance__rank": 0.028,
+    "score_semantic__gap": 0.0276,
+    "viet_new_semantic_delta_logp__gap": 0.0265,
+    "score_semantic": 0.0169,
+    "nom_new_semantic_delta_logp__rank": 0.0169,
+    "nom_new_semantic_delta_logp__gap": 0.0145,
+    "n_cand": 0.0141,
+    "nom_new_semantic_delta_logp": 0.0138,
+    "nom_glyph_neglog_rank__gap": 0.0128,
+    "nom_visual_neglog_rank": 0.0118,
+    "viet_new_semantic_delta_logp": 0.0085,
+    "is_nom": 0.0012,
+    "is_keep": 0.0006,
+    "has_nom_glyph_rank": 0.0003
+  }
+}
