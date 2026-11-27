@@ -1,6 +1,42 @@
 {
- "saved_at": "2026-11-26 18:37:08",
+ "saved_at": "2026-11-27 11:11:51",
  "decisions": {
+  "Truyên Vua Quang Trung, Nôm|141|4": {
+   "side": "QN",
+   "nom": "張",
+   "qn": "trương",
+   "rank": 1,
+   "orig_nom": "張",
+   "orig_qn": "trường",
+   "time": "2026-11-20 11:57:34"
+  },
+  "Truyên Vua Quang Trung, Nôm|367|7": {
+   "side": "KEEP",
+   "nom": "𤉜",
+   "qn": "dàng",
+   "rank": 3,
+   "orig_nom": "𤉜",
+   "orig_qn": "dàng",
+   "time": "2026-11-20 12:36:27"
+  },
+  "Truyên Vua Quang Trung, Nôm|416|5": {
+   "side": "KEEP",
+   "nom": "𣈙",
+   "qn": "dầy",
+   "rank": 2,
+   "orig_nom": "𣈙",
+   "orig_qn": "dầy",
+   "time": "2026-11-20 12:38:14"
+  },
+  "Truyên Vua Quang Trung, Nôm|831|3": {
+   "side": "KEEP",
+   "nom": "𧿆",
+   "qn": "rảy",
+   "rank": 4,
+   "orig_nom": "𧿆",
+   "orig_qn": "rảy",
+   "time": "2026-11-20 12:52:49"
+  },
   "Truyên Vua Quang Trung, Nôm|13|6": {
    "side": "QN",
    "nom": "太",
@@ -29,13 +65,13 @@
    "time": "2026-11-20 11:49:22"
   },
   "Truyên Vua Quang Trung, Nôm|52|2": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𠄻",
-   "qn": "nhằm",
-   "rank": 1,
+   "qn": "lăm",
+   "rank": 3,
    "orig_nom": "𠄻",
    "orig_qn": "nhằm",
-   "time": "2026-11-20 11:49:36"
+   "time": "2026-11-27 01:23:22"
   },
   "Truyên Vua Quang Trung, Nôm|54|6": {
    "side": "NOM",
@@ -92,13 +128,13 @@
    "time": "2026-11-20 11:50:32"
   },
   "Truyên Vua Quang Trung, Nôm|107|3": {
-   "side": "KEEP",
-   "nom": "𤂬",
+   "side": "NOM",
+   "nom": "㩡",
    "qn": "ruổi",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "𤂬",
    "orig_qn": "ruổi",
-   "time": "2026-11-20 11:51:01"
+   "time": "2026-11-27 01:27:35"
   },
   "Truyên Vua Quang Trung, Nôm|113|4": {
    "side": "NOM",
@@ -208,15 +244,6 @@
    "orig_qn": "trung",
    "time": "2026-11-20 11:57:28"
   },
-  "Truyên Vua Quang Trung, Nôm|141|4": {
-   "side": "QN",
-   "nom": "張",
-   "qn": "trương",
-   "rank": 1,
-   "orig_nom": "張",
-   "orig_qn": "trường",
-   "time": "2026-11-20 11:57:34"
-  },
   "Truyên Vua Quang Trung, Nôm|148|5": {
    "side": "NOM",
    "nom": "西",
@@ -245,13 +272,13 @@
    "time": "2026-11-20 11:58:01"
   },
   "Truyên Vua Quang Trung, Nôm|158|0": {
-   "side": "KEEP",
-   "nom": "阮",
+   "side": "NOM",
+   "nom": "沅",
    "qn": "nguyên",
-   "rank": 2,
+   "rank": 15,
    "orig_nom": "阮",
    "orig_qn": "nguyên",
-   "time": "2026-11-20 11:58:15"
+   "time": "2026-11-27 01:30:27"
   },
   "Truyên Vua Quang Trung, Nôm|158|1": {
    "side": "QN",
@@ -272,13 +299,13 @@
    "time": "2026-11-20 11:58:21"
   },
   "Truyên Vua Quang Trung, Nôm|176|4": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "當",
-   "qn": "đứng",
-   "rank": 1,
+   "qn": "đương",
+   "rank": 7,
    "orig_nom": "當",
    "orig_qn": "đứng",
-   "time": "2026-11-20 11:58:31"
+   "time": "2026-11-27 01:33:57"
   },
   "Truyên Vua Quang Trung, Nôm|178|0": {
    "side": "QN",
@@ -479,13 +506,13 @@
    "time": "2026-11-20 12:01:02"
   },
   "Truyên Vua Quang Trung, Nôm|246|0": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "卞",
-   "qn": "bên",
-   "rank": 3,
+   "qn": "bèn",
+   "rank": 4,
    "orig_nom": "卞",
    "orig_qn": "bên",
-   "time": "2026-11-20 12:02:01"
+   "time": "2026-11-27 01:39:37"
   },
   "Truyên Vua Quang Trung, Nôm|249|0": {
    "side": "QN",
@@ -497,22 +524,22 @@
    "time": "2026-11-20 12:02:10"
   },
   "Truyên Vua Quang Trung, Nôm|255|5": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "厨",
-   "qn": "chua",
-   "rank": 2,
+   "qn": "chùa",
+   "rank": 1,
    "orig_nom": "厨",
    "orig_qn": "chua",
-   "time": "2026-11-20 12:02:16"
+   "time": "2026-11-27 01:41:37"
   },
   "Truyên Vua Quang Trung, Nôm|260|3": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "烈",
-   "qn": "biệt",
-   "rank": 1,
+   "qn": "liệt",
+   "rank": 2,
    "orig_nom": "烈",
    "orig_qn": "biệt",
-   "time": "2026-11-20 12:02:26"
+   "time": "2026-11-27 01:42:05"
   },
   "Truyên Vua Quang Trung, Nôm|263|0": {
    "side": "NOM",
@@ -641,13 +668,13 @@
    "time": "2026-11-20 12:33:30"
   },
   "Truyên Vua Quang Trung, Nôm|321|6": {
-   "side": "KEEP",
-   "nom": "祿",
+   "side": "NOM",
+   "nom": "𤐠",
    "qn": "luộc",
-   "rank": 5,
+   "rank": 11,
    "orig_nom": "祿",
    "orig_qn": "luộc",
-   "time": "2026-11-20 12:33:34"
+   "time": "2026-11-27 01:47:41"
   },
   "Truyên Vua Quang Trung, Nôm|322|0": {
    "side": "QN",
@@ -713,13 +740,13 @@
    "time": "2026-11-20 12:34:29"
   },
   "Truyên Vua Quang Trung, Nôm|331|7": {
-   "side": "KEEP",
-   "nom": "踚",
+   "side": "NOM",
+   "nom": "㫻",
    "qn": "luôn",
-   "rank": 5,
+   "rank": 2,
    "orig_nom": "踚",
    "orig_qn": "luôn",
-   "time": "2026-11-20 12:34:41"
+   "time": "2026-11-27 01:49:28"
   },
   "Truyên Vua Quang Trung, Nôm|332|0": {
    "side": "QN",
@@ -866,22 +893,13 @@
    "time": "2026-11-20 12:36:13"
   },
   "Truyên Vua Quang Trung, Nôm|367|0": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "边",
-   "qn": "ben",
-   "rank": 4,
+   "qn": "bên",
+   "rank": 1,
    "orig_nom": "边",
    "orig_qn": "ben",
-   "time": "2026-11-20 12:36:22"
-  },
-  "Truyên Vua Quang Trung, Nôm|367|7": {
-   "side": "KEEP",
-   "nom": "𤉜",
-   "qn": "dàng",
-   "rank": 3,
-   "orig_nom": "𤉜",
-   "orig_qn": "dàng",
-   "time": "2026-11-20 12:36:27"
+   "time": "2026-11-27 10:01:22"
   },
   "Truyên Vua Quang Trung, Nôm|370|0": {
    "side": "QN",
@@ -982,23 +1000,14 @@
    "orig_qn": "giất",
    "time": "2026-11-20 12:38:07"
   },
-  "Truyên Vua Quang Trung, Nôm|416|5": {
-   "side": "KEEP",
-   "nom": "𣈙",
-   "qn": "dầy",
-   "rank": 2,
-   "orig_nom": "𣈙",
-   "orig_qn": "dầy",
-   "time": "2026-11-20 12:38:14"
-  },
   "Truyên Vua Quang Trung, Nôm|423|4": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 12:38:19"
+   "time": "2026-11-27 10:06:13"
   },
   "Truyên Vua Quang Trung, Nôm|423|7": {
    "side": "QN",
@@ -1262,13 +1271,13 @@
    "time": "2026-11-20 12:42:22"
   },
   "Truyên Vua Quang Trung, Nôm|527|7": {
-   "side": "KEEP",
-   "nom": "倫",
+   "side": "NOM",
+   "nom": "掄",
    "qn": "luôn",
-   "rank": 5,
+   "rank": 2,
    "orig_nom": "倫",
    "orig_qn": "luôn",
-   "time": "2026-11-20 12:42:34"
+   "time": "2026-11-27 10:21:21"
   },
   "Truyên Vua Quang Trung, Nôm|543|0": {
    "side": "QN",
@@ -1415,13 +1424,13 @@
    "time": "2026-11-20 12:44:28"
   },
   "Truyên Vua Quang Trung, Nôm|579|4": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 3,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 12:44:32"
+   "time": "2026-11-27 10:27:22"
   },
   "Truyên Vua Quang Trung, Nôm|579|5": {
    "side": "QN",
@@ -1649,22 +1658,22 @@
    "time": "2026-11-20 12:47:06"
   },
   "Truyên Vua Quang Trung, Nôm|662|5": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "滇",
-   "qn": "trận",
-   "rank": 1,
+   "qn": "tràn",
+   "rank": 2,
    "orig_nom": "滇",
    "orig_qn": "trận",
-   "time": "2026-11-20 12:47:20"
+   "time": "2026-11-27 10:39:07"
   },
   "Truyên Vua Quang Trung, Nôm|674|5": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "呡",
-   "qn": "ran",
-   "rank": 2,
+   "qn": "răn",
+   "rank": 1,
    "orig_nom": "呡",
    "orig_qn": "ran",
-   "time": "2026-11-20 12:47:27"
+   "time": "2026-11-27 10:40:53"
   },
   "Truyên Vua Quang Trung, Nôm|677|0": {
    "side": "QN",
@@ -1748,22 +1757,22 @@
    "time": "2026-11-20 12:48:30"
   },
   "Truyên Vua Quang Trung, Nôm|690|4": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "當",
-   "qn": "dương",
-   "rank": 3,
+   "qn": "đương",
+   "rank": 1,
    "orig_nom": "當",
    "orig_qn": "dương",
-   "time": "2026-11-20 12:48:36"
+   "time": "2026-11-27 10:42:01"
   },
   "Truyên Vua Quang Trung, Nôm|692|5": {
-   "side": "KEEP",
-   "nom": "愷",
+   "side": "NOM",
+   "nom": "𢯕",
    "qn": "ngơi",
-   "rank": 1,
+   "rank": 8,
    "orig_nom": "愷",
    "orig_qn": "ngơi",
-   "time": "2026-11-20 12:48:45"
+   "time": "2026-11-27 10:43:03"
   },
   "Truyên Vua Quang Trung, Nôm|695|2": {
    "side": "QN",
@@ -1847,13 +1856,13 @@
    "time": "2026-11-20 12:49:49"
   },
   "Truyên Vua Quang Trung, Nôm|733|2": {
-   "side": "KEEP",
-   "nom": "八",
+   "side": "NOM",
+   "nom": "入",
    "qn": "nhập",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "八",
    "orig_qn": "nhập",
-   "time": "2026-11-20 12:50:00"
+   "time": "2026-11-27 10:48:41"
   },
   "Truyên Vua Quang Trung, Nôm|734|2": {
    "side": "QN",
@@ -1910,13 +1919,13 @@
    "time": "2026-11-20 12:50:43"
   },
   "Truyên Vua Quang Trung, Nôm|745|3": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 12:50:48"
+   "time": "2026-11-27 10:49:22"
   },
   "Truyên Vua Quang Trung, Nôm|747|1": {
    "side": "KEEP",
@@ -1946,13 +1955,13 @@
    "time": "2026-11-20 12:51:12"
   },
   "Truyên Vua Quang Trung, Nôm|760|5": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "餒",
-   "qn": "nhôi",
-   "rank": 4,
+   "qn": "nổi",
+   "rank": 1,
    "orig_nom": "餒",
    "orig_qn": "nhôi",
-   "time": "2026-11-20 12:51:20"
+   "time": "2026-11-27 10:55:23"
   },
   "Truyên Vua Quang Trung, Nôm|765|0": {
    "side": "QN",
@@ -1964,13 +1973,13 @@
    "time": "2026-11-20 12:51:27"
   },
   "Truyên Vua Quang Trung, Nôm|766|3": {
-   "side": "KEEP",
-   "nom": "祸",
+   "side": "NOM",
+   "nom": "禍",
    "qn": "vạ",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "祸",
    "orig_qn": "vạ",
-   "time": "2026-11-20 12:51:37"
+   "time": "2026-11-27 10:56:51"
   },
   "Truyên Vua Quang Trung, Nôm|770|3": {
    "side": "QN",
@@ -2053,15 +2062,6 @@
    "orig_qn": "cứ",
    "time": "2026-11-20 12:52:39"
   },
-  "Truyên Vua Quang Trung, Nôm|831|3": {
-   "side": "KEEP",
-   "nom": "𧿆",
-   "qn": "rảy",
-   "rank": 4,
-   "orig_nom": "𧿆",
-   "orig_qn": "rảy",
-   "time": "2026-11-20 12:52:49"
-  },
   "Truyên Vua Quang Trung, Nôm|832|4": {
    "side": "QN",
    "nom": "滚",
@@ -2072,22 +2072,22 @@
    "time": "2026-11-20 12:52:55"
   },
   "Truyên Vua Quang Trung, Nôm|833|3": {
-   "side": "KEEP",
-   "nom": "𢵌",
+   "side": "NOM",
+   "nom": "𧥃",
    "qn": "chọi",
-   "rank": 1,
+   "rank": 2,
    "orig_nom": "𢵌",
    "orig_qn": "chọi",
-   "time": "2026-11-20 12:53:08"
+   "time": "2026-11-27 11:04:50"
   },
   "Truyên Vua Quang Trung, Nôm|835|2": {
-   "side": "KEEP",
-   "nom": "媄",
+   "side": "NOM",
+   "nom": "𫘑",
    "qn": "mở",
-   "rank": 2,
+   "rank": 12,
    "orig_nom": "媄",
    "orig_qn": "mở",
-   "time": "2026-11-20 12:53:20"
+   "time": "2026-11-27 11:05:32"
   },
   "Truyên Vua Quang Trung, Nôm|835|4": {
    "side": "QN",
@@ -2099,13 +2099,13 @@
    "time": "2026-11-20 12:53:22"
   },
   "Truyên Vua Quang Trung, Nôm|836|2": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 12:53:26"
+   "time": "2026-11-27 11:05:44"
   },
   "Truyên Vua Quang Trung, Nôm|837|2": {
    "side": "QN",
@@ -2135,13 +2135,13 @@
    "time": "2026-11-20 12:53:47"
   },
   "Truyên Vua Quang Trung, Nôm|857|2": {
-   "side": "KEEP",
-   "nom": "而",
+   "side": "NOM",
+   "nom": "󱫳",
    "qn": "nhì",
-   "rank": 3,
+   "rank": 10,
    "orig_nom": "而",
    "orig_qn": "nhì",
-   "time": "2026-11-20 12:53:59"
+   "time": "2026-11-27 11:06:39"
   },
   "Truyên Vua Quang Trung, Nôm|865|0": {
    "side": "QN",
@@ -2171,13 +2171,13 @@
    "time": "2026-11-20 12:54:22"
   },
   "Truyên Vua Quang Trung, Nôm|899|7": {
-   "side": "KEEP",
-   "nom": "倫",
+   "side": "NOM",
+   "nom": "掄",
    "qn": "luôn",
-   "rank": 4,
+   "rank": 2,
    "orig_nom": "倫",
    "orig_qn": "luôn",
-   "time": "2026-11-20 12:54:33"
+   "time": "2026-11-27 11:09:16"
   },
   "Truyên Vua Quang Trung, Nôm|900|0": {
    "side": "KEEP",
@@ -2216,13 +2216,13 @@
    "time": "2026-11-20 12:55:09"
   },
   "Truyên Vua Quang Trung, Nôm|913|0": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 12:55:13"
+   "time": "2026-11-27 11:10:49"
   },
   "Truyên Vua Quang Trung, Nôm|920|0": {
    "side": "QN",
@@ -2234,13 +2234,13 @@
    "time": "2026-11-20 12:55:18"
   },
   "Truyên Vua Quang Trung, Nôm|924|4": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "扶",
-   "qn": "phú",
-   "rank": 2,
+   "qn": "phù",
+   "rank": 1,
    "orig_nom": "扶",
    "orig_qn": "phú",
-   "time": "2026-11-20 12:55:28"
+   "time": "2026-11-27 11:11:09"
   },
   "Truyên Vua Quang Trung, Nôm|928|3": {
    "side": "KEEP",
@@ -2270,13 +2270,13 @@
    "time": "2026-11-20 12:55:46"
   },
   "Truyên Vua Quang Trung, Nôm|509|7": {
-   "side": "KEEP",
-   "nom": "𥉫",
+   "side": "NOM",
+   "nom": "𥪝",
    "qn": "trong",
-   "rank": 3,
+   "rank": 10,
    "orig_nom": "𥉫",
    "orig_qn": "trong",
-   "time": "2026-11-20 12:55:57"
+   "time": "2026-11-27 10:19:18"
   },
   "Truyên Vua Quang Trung, Nôm|651|6": {
    "side": "QN",
@@ -2295,6 +2295,2040 @@
    "orig_nom": "縫",
    "orig_qn": "vưng",
    "time": "2026-11-20 12:56:17"
+  },
+  "Truyên Vua Quang Trung, Nôm|0|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 6,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:02:36"
+  },
+  "Truyên Vua Quang Trung, Nôm|4|2": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 6,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:02:40"
+  },
+  "Truyên Vua Quang Trung, Nôm|8|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 8,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:02:47"
+  },
+  "Truyên Vua Quang Trung, Nôm|12|6": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:03:38"
+  },
+  "Truyên Vua Quang Trung, Nôm|13|4": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 9,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:03:45"
+  },
+  "Truyên Vua Quang Trung, Nôm|14|2": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 6,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:21:08"
+  },
+  "Truyên Vua Quang Trung, Nôm|15|1": {
+   "side": "NOM",
+   "nom": "𢶢",
+   "qn": "chống",
+   "rank": 7,
+   "orig_nom": "擐",
+   "orig_qn": "chống",
+   "time": "2026-11-27 01:21:25"
+  },
+  "Truyên Vua Quang Trung, Nôm|20|4": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:23:05"
+  },
+  "Truyên Vua Quang Trung, Nôm|21|3": {
+   "side": "NOM",
+   "nom": "𢶢",
+   "qn": "chống",
+   "rank": 7,
+   "orig_nom": "擐",
+   "orig_qn": "chống",
+   "time": "2026-11-27 01:21:41"
+  },
+  "Truyên Vua Quang Trung, Nôm|25|2": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 6,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:21:44"
+  },
+  "Truyên Vua Quang Trung, Nôm|25|5": {
+   "side": "NOM",
+   "nom": "𢶢",
+   "qn": "chống",
+   "rank": 5,
+   "orig_nom": "擐",
+   "orig_qn": "chống",
+   "time": "2026-11-27 01:21:54"
+  },
+  "Truyên Vua Quang Trung, Nôm|31|2": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:22:59"
+  },
+  "Truyên Vua Quang Trung, Nôm|37|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:22:01"
+  },
+  "Truyên Vua Quang Trung, Nôm|43|6": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:22:51"
+  },
+  "Truyên Vua Quang Trung, Nôm|45|0": {
+   "side": "KEEP",
+   "nom": "鈐",
+   "qn": "găm",
+   "rank": 3,
+   "orig_nom": "鈐",
+   "orig_qn": "găm",
+   "time": "2026-11-27 01:22:27"
+  },
+  "Truyên Vua Quang Trung, Nôm|49|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:22:44"
+  },
+  "Truyên Vua Quang Trung, Nôm|59|3": {
+   "side": "NOM",
+   "nom": "濛",
+   "qn": "giùng",
+   "rank": 16,
+   "orig_nom": "搈",
+   "orig_qn": "giùng",
+   "time": "2026-11-27 01:23:51"
+  },
+  "Truyên Vua Quang Trung, Nôm|60|5": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:23:59"
+  },
+  "Truyên Vua Quang Trung, Nôm|63|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:24:02"
+  },
+  "Truyên Vua Quang Trung, Nôm|71|4": {
+   "side": "KEEP",
+   "nom": "豬",
+   "qn": "giở",
+   "rank": 23,
+   "orig_nom": "豬",
+   "orig_qn": "giở",
+   "time": "2026-11-27 01:25:06"
+  },
+  "Truyên Vua Quang Trung, Nôm|73|5": {
+   "side": "QN",
+   "nom": "傮",
+   "qn": "tàu",
+   "rank": 1,
+   "orig_nom": "傮",
+   "orig_qn": "cấu",
+   "time": "2026-11-27 01:25:29"
+  },
+  "Truyên Vua Quang Trung, Nôm|87|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 8,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:25:36"
+  },
+  "Truyên Vua Quang Trung, Nôm|92|1": {
+   "side": "QN",
+   "nom": "詩",
+   "qn": "thơ",
+   "rank": 24,
+   "orig_nom": "詩",
+   "orig_qn": "rằng",
+   "time": "2026-11-27 01:25:55"
+  },
+  "Truyên Vua Quang Trung, Nôm|92|0": {
+   "side": "KEEP",
+   "nom": "詠",
+   "qn": "thơ",
+   "rank": 1,
+   "orig_nom": "詠",
+   "orig_qn": "thơ",
+   "time": "2026-11-27 01:26:10"
+  },
+  "Truyên Vua Quang Trung, Nôm|107|4": {
+   "side": "QN",
+   "nom": "𠎣",
+   "qn": "tiên",
+   "rank": 22,
+   "orig_nom": "𠎣",
+   "orig_qn": "biển",
+   "time": "2026-11-27 01:27:43"
+  },
+  "Truyên Vua Quang Trung, Nôm|118|5": {
+   "side": "NOM",
+   "nom": "潙",
+   "qn": "vời",
+   "rank": 1,
+   "orig_nom": "溈",
+   "orig_qn": "vời",
+   "time": "2026-11-27 01:27:57"
+  },
+  "Truyên Vua Quang Trung, Nôm|135|6": {
+   "side": "NOM",
+   "nom": "𪫧",
+   "qn": "hả",
+   "rank": 12,
+   "orig_nom": "忊",
+   "orig_qn": "hả",
+   "time": "2026-11-27 01:28:25"
+  },
+  "Truyên Vua Quang Trung, Nôm|136|0": {
+   "side": "QN",
+   "nom": "錢",
+   "qn": "tiền",
+   "rank": 1,
+   "orig_nom": "錢",
+   "orig_qn": "biển",
+   "time": "2026-11-27 01:28:34"
+  },
+  "Truyên Vua Quang Trung, Nôm|140|4": {
+   "side": "NOM",
+   "nom": "多",
+   "qn": "đa",
+   "rank": 1,
+   "orig_nom": "夛",
+   "orig_qn": "đa",
+   "time": "2026-11-27 01:28:44"
+  },
+  "Truyên Vua Quang Trung, Nôm|147|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:28:48"
+  },
+  "Truyên Vua Quang Trung, Nôm|148|3": {
+   "side": "NOM",
+   "nom": "𦡥",
+   "qn": "nách",
+   "rank": 1,
+   "orig_nom": "嫋",
+   "orig_qn": "nách",
+   "time": "2026-11-27 01:28:58"
+  },
+  "Truyên Vua Quang Trung, Nôm|149|1": {
+   "side": "NOM",
+   "nom": "鑽",
+   "qn": "toan",
+   "rank": 2,
+   "orig_nom": "𥳪",
+   "orig_qn": "toan",
+   "time": "2026-11-27 01:29:12"
+  },
+  "Truyên Vua Quang Trung, Nôm|154|1": {
+   "side": "NOM",
+   "nom": "掉",
+   "qn": "trao",
+   "rank": 9,
+   "orig_nom": "㨓",
+   "orig_qn": "trao",
+   "time": "2026-11-27 01:29:37"
+  },
+  "Truyên Vua Quang Trung, Nôm|162|0": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 6,
+   "orig_nom": "勢",
+   "orig_qn": "giết",
+   "time": "2026-11-27 01:30:48"
+  },
+  "Truyên Vua Quang Trung, Nôm|170|0": {
+   "side": "NOM",
+   "nom": "山",
+   "qn": "sơn",
+   "rank": 1,
+   "orig_nom": "襾",
+   "orig_qn": "sơn",
+   "time": "2026-11-27 01:31:53"
+  },
+  "Truyên Vua Quang Trung, Nôm|170|1": {
+   "side": "NOM",
+   "nom": "西",
+   "qn": "tây",
+   "rank": 1,
+   "orig_nom": "丐",
+   "orig_qn": "tây",
+   "time": "2026-11-27 01:31:43"
+  },
+  "Truyên Vua Quang Trung, Nôm|171|6": {
+   "side": "NOM",
+   "nom": "𠢞",
+   "qn": "giúp",
+   "rank": 9,
+   "orig_nom": "勢",
+   "orig_qn": "giúp",
+   "time": "2026-11-27 01:32:36"
+  },
+  "Truyên Vua Quang Trung, Nôm|173|7": {
+   "side": "NOM",
+   "nom": "䁠",
+   "qn": "gườm",
+   "rank": 1,
+   "orig_nom": "慊",
+   "orig_qn": "gườm",
+   "time": "2026-11-27 01:32:47"
+  },
+  "Truyên Vua Quang Trung, Nôm|175|1": {
+   "side": "KEEP",
+   "nom": "伴",
+   "qn": "mượn",
+   "rank": 2,
+   "orig_nom": "伴",
+   "orig_qn": "mượn",
+   "time": "2026-11-27 01:33:32"
+  },
+  "Truyên Vua Quang Trung, Nôm|175|4": {
+   "side": "NOM",
+   "nom": "撰",
+   "qn": "toan",
+   "rank": 2,
+   "orig_nom": "憚",
+   "orig_qn": "toan",
+   "time": "2026-11-27 01:33:46"
+  },
+  "Truyên Vua Quang Trung, Nôm|184|4": {
+   "side": "QN",
+   "nom": "𢜠",
+   "qn": "mừng",
+   "rank": 2,
+   "orig_nom": "𢜠",
+   "orig_qn": "miễng",
+   "time": "2026-11-27 01:34:11"
+  },
+  "Truyên Vua Quang Trung, Nôm|188|3": {
+   "side": "KEEP",
+   "nom": "󱷷",
+   "qn": "giữ",
+   "rank": 22,
+   "orig_nom": "󱷷",
+   "orig_qn": "giữ",
+   "time": "2026-11-27 01:35:20"
+  },
+  "Truyên Vua Quang Trung, Nôm|226|5": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 8,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:35:35"
+  },
+  "Truyên Vua Quang Trung, Nôm|229|3": {
+   "side": "KEEP",
+   "nom": "𠹾",
+   "qn": "thẹo",
+   "rank": 2,
+   "orig_nom": "𠹾",
+   "orig_qn": "thẹo",
+   "time": "2026-11-27 01:36:22"
+  },
+  "Truyên Vua Quang Trung, Nôm|229|6": {
+   "side": "KEEP",
+   "nom": "寄",
+   "qn": "xứng",
+   "rank": 2,
+   "orig_nom": "寄",
+   "orig_qn": "xứng",
+   "time": "2026-11-27 01:36:37"
+  },
+  "Truyên Vua Quang Trung, Nôm|231|0": {
+   "side": "QN",
+   "nom": "𧘇",
+   "qn": "ấy",
+   "rank": 2,
+   "orig_nom": "𧘇",
+   "orig_qn": "cậy",
+   "time": "2026-11-27 01:36:57"
+  },
+  "Truyên Vua Quang Trung, Nôm|234|3": {
+   "side": "NOM",
+   "nom": "𬋰",
+   "qn": "vuốt",
+   "rank": 11,
+   "orig_nom": "𤬄",
+   "orig_qn": "vuốt",
+   "time": "2026-11-27 01:38:06"
+  },
+  "Truyên Vua Quang Trung, Nôm|235|5": {
+   "side": "NOM",
+   "nom": "平",
+   "qn": "bình",
+   "rank": 1,
+   "orig_nom": "乎",
+   "orig_qn": "bình",
+   "time": "2026-11-27 01:38:21"
+  },
+  "Truyên Vua Quang Trung, Nôm|241|0": {
+   "side": "KEEP",
+   "nom": "𦕅",
+   "qn": "ngửa",
+   "rank": 2,
+   "orig_nom": "𦕅",
+   "orig_qn": "ngửa",
+   "time": "2026-11-27 01:39:21"
+  },
+  "Truyên Vua Quang Trung, Nôm|246|5": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:39:42"
+  },
+  "Truyên Vua Quang Trung, Nôm|253|0": {
+   "side": "KEEP",
+   "nom": "𢰗",
+   "qn": "gượng",
+   "rank": 3,
+   "orig_nom": "𢰗",
+   "orig_qn": "gượng",
+   "time": "2026-11-27 01:40:55"
+  },
+  "Truyên Vua Quang Trung, Nôm|253|2": {
+   "side": "NOM",
+   "nom": "𢂜",
+   "qn": "vua",
+   "rank": 20,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:41:05"
+  },
+  "Truyên Vua Quang Trung, Nôm|254|5": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 12,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 01:41:18"
+  },
+  "Truyên Vua Quang Trung, Nôm|285|4": {
+   "side": "KEEP",
+   "nom": "䠔",
+   "qn": "chặn",
+   "rank": 6,
+   "orig_nom": "䠔",
+   "orig_qn": "chặn",
+   "time": "2026-11-27 01:42:46"
+  },
+  "Truyên Vua Quang Trung, Nôm|291|0": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 3,
+   "orig_nom": "勢",
+   "orig_qn": "giết",
+   "time": "2026-11-27 01:43:11"
+  },
+  "Truyên Vua Quang Trung, Nôm|295|7": {
+   "side": "KEEP",
+   "nom": "跛",
+   "qn": "bừa",
+   "rank": 6,
+   "orig_nom": "跛",
+   "orig_qn": "bừa",
+   "time": "2026-11-27 01:43:41"
+  },
+  "Truyên Vua Quang Trung, Nôm|301|7": {
+   "side": "QN",
+   "nom": "𡗶",
+   "qn": "giời",
+   "rank": 22,
+   "orig_nom": "𡗶",
+   "orig_qn": "giẽ",
+   "time": "2026-11-27 01:44:11"
+  },
+  "Truyên Vua Quang Trung, Nôm|303|1": {
+   "side": "KEEP",
+   "nom": "網",
+   "qn": "cường",
+   "rank": 4,
+   "orig_nom": "網",
+   "orig_qn": "cường",
+   "time": "2026-11-27 01:44:39"
+  },
+  "Truyên Vua Quang Trung, Nôm|320|0": {
+   "side": "QN",
+   "nom": "水",
+   "qn": "thuỷ",
+   "rank": 22,
+   "orig_nom": "水",
+   "orig_qn": "dịch",
+   "time": "2026-11-27 01:45:12"
+  },
+  "Truyên Vua Quang Trung, Nôm|320|2": {
+   "side": "QN",
+   "nom": "整",
+   "qn": "chỉnh",
+   "rank": 16,
+   "orig_nom": "整",
+   "orig_qn": "đổ",
+   "time": "2026-11-27 01:45:30"
+  },
+  "Truyên Vua Quang Trung, Nôm|320|4": {
+   "side": "QN",
+   "nom": "渭",
+   "qn": "vị",
+   "rank": 23,
+   "orig_nom": "渭",
+   "orig_qn": "giáp",
+   "time": "2026-11-27 01:45:38"
+  },
+  "Truyên Vua Quang Trung, Nôm|320|5": {
+   "side": "QN",
+   "nom": "潢",
+   "qn": "hoàng",
+   "rank": 16,
+   "orig_nom": "潢",
+   "orig_qn": "công",
+   "time": "2026-11-27 01:45:40"
+  },
+  "Truyên Vua Quang Trung, Nôm|321|4": {
+   "side": "KEEP",
+   "nom": "隊",
+   "qn": "chặn",
+   "rank": 1,
+   "orig_nom": "隊",
+   "orig_qn": "chặn",
+   "time": "2026-11-27 01:47:44"
+  },
+  "Truyên Vua Quang Trung, Nôm|324|3": {
+   "side": "KEEP",
+   "nom": "𠯪",
+   "qn": "kín",
+   "rank": 7,
+   "orig_nom": "𠯪",
+   "orig_qn": "kín",
+   "time": "2026-11-27 01:48:22"
+  },
+  "Truyên Vua Quang Trung, Nôm|331|4": {
+   "side": "KEEP",
+   "nom": "弥",
+   "qn": "bên",
+   "rank": 4,
+   "orig_nom": "弥",
+   "orig_qn": "bên",
+   "time": "2026-11-27 01:49:47"
+  },
+  "Truyên Vua Quang Trung, Nôm|334|0": {
+   "side": "QN",
+   "nom": "敵",
+   "qn": "địch",
+   "rank": 22,
+   "orig_nom": "敵",
+   "orig_qn": "chủy",
+   "time": "2026-11-27 01:50:28"
+  },
+  "Truyên Vua Quang Trung, Nôm|334|4": {
+   "side": "QN",
+   "nom": "夾",
+   "qn": "giáp",
+   "rank": 25,
+   "orig_nom": "夾",
+   "orig_qn": "vị",
+   "time": "2026-11-27 01:50:59"
+  },
+  "Truyên Vua Quang Trung, Nôm|334|5": {
+   "side": "QN",
+   "nom": "攻",
+   "qn": "công",
+   "rank": 3,
+   "orig_nom": "攻",
+   "orig_qn": "hoàng",
+   "time": "2026-11-27 01:51:01"
+  },
+  "Truyên Vua Quang Trung, Nôm|334|2": {
+   "side": "KEEP",
+   "nom": "諸",
+   "qn": "chỉnh",
+   "rank": 1,
+   "orig_nom": "諸",
+   "orig_qn": "chỉnh",
+   "time": "2026-11-27 01:51:20"
+  },
+  "Truyên Vua Quang Trung, Nôm|340|2": {
+   "side": "NOM",
+   "nom": "体",
+   "qn": "thấy",
+   "rank": 1,
+   "orig_nom": "傑",
+   "orig_qn": "thấy",
+   "time": "2026-11-27 01:52:21"
+  },
+  "Truyên Vua Quang Trung, Nôm|344|5": {
+   "side": "NOM",
+   "nom": "蹎",
+   "qn": "chân",
+   "rank": 3,
+   "orig_nom": "踈",
+   "orig_qn": "chân",
+   "time": "2026-11-27 01:52:49"
+  },
+  "Truyên Vua Quang Trung, Nôm|345|1": {
+   "side": "NOM",
+   "nom": "撰",
+   "qn": "toan",
+   "rank": 8,
+   "orig_nom": "𥳪",
+   "orig_qn": "toan",
+   "time": "2026-11-27 01:53:41"
+  },
+  "Truyên Vua Quang Trung, Nôm|348|3": {
+   "side": "NOM",
+   "nom": "把",
+   "qn": "vã",
+   "rank": 4,
+   "orig_nom": "地",
+   "orig_qn": "vã",
+   "time": "2026-11-27 09:58:25"
+  },
+  "Truyên Vua Quang Trung, Nôm|349|0": {
+   "side": "NOM",
+   "nom": "󱝼",
+   "qn": "phía",
+   "rank": 5,
+   "orig_nom": "𱘃",
+   "orig_qn": "phía",
+   "time": "2026-11-27 09:58:41"
+  },
+  "Truyên Vua Quang Trung, Nôm|352|1": {
+   "side": "NOM",
+   "nom": "徒",
+   "qn": "trò",
+   "rank": 1,
+   "orig_nom": "傱",
+   "orig_qn": "trò",
+   "time": "2026-11-27 09:59:06"
+  },
+  "Truyên Vua Quang Trung, Nôm|357|0": {
+   "side": "NOM",
+   "nom": "",
+   "qn": "thấy",
+   "rank": 7,
+   "orig_nom": "傑",
+   "orig_qn": "thấy",
+   "time": "2026-11-27 09:59:37"
+  },
+  "Truyên Vua Quang Trung, Nôm|362|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 09:59:54"
+  },
+  "Truyên Vua Quang Trung, Nôm|365|4": {
+   "side": "QN",
+   "nom": "登",
+   "qn": "dâng",
+   "rank": 1,
+   "orig_nom": "登",
+   "orig_qn": "giảng",
+   "time": "2026-11-27 10:00:48"
+  },
+  "Truyên Vua Quang Trung, Nôm|365|5": {
+   "side": "NOM",
+   "nom": "撩",
+   "qn": "trao",
+   "rank": 7,
+   "orig_nom": "㨓",
+   "orig_qn": "trao",
+   "time": "2026-11-27 10:01:02"
+  },
+  "Truyên Vua Quang Trung, Nôm|373|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 15,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:01:37"
+  },
+  "Truyên Vua Quang Trung, Nôm|374|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 10,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:01:41"
+  },
+  "Truyên Vua Quang Trung, Nôm|375|0": {
+   "side": "QN",
+   "nom": "埃",
+   "qn": "ai",
+   "rank": 9,
+   "orig_nom": "埃",
+   "orig_qn": "cúi",
+   "time": "2026-11-27 10:02:10"
+  },
+  "Truyên Vua Quang Trung, Nôm|376|2": {
+   "side": "QN",
+   "nom": "璨",
+   "qn": "xán",
+   "rank": 22,
+   "orig_nom": "璨",
+   "orig_qn": "toản",
+   "time": "2026-11-27 10:02:21"
+  },
+  "Truyên Vua Quang Trung, Nôm|379|3": {
+   "side": "QN",
+   "nom": "璨",
+   "qn": "xán",
+   "rank": 23,
+   "orig_nom": "璨",
+   "orig_qn": "toản",
+   "time": "2026-11-27 10:03:01"
+  },
+  "Truyên Vua Quang Trung, Nôm|380|2": {
+   "side": "QN",
+   "nom": "󰎓",
+   "qn": "dâng",
+   "rank": 3,
+   "orig_nom": "󰎓",
+   "orig_qn": "giảng",
+   "time": "2026-11-27 10:03:10"
+  },
+  "Truyên Vua Quang Trung, Nôm|382|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:03:16"
+  },
+  "Truyên Vua Quang Trung, Nôm|394|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:03:24"
+  },
+  "Truyên Vua Quang Trung, Nôm|396|0": {
+   "side": "NOM",
+   "nom": "輂",
+   "qn": "cúc",
+   "rank": 22,
+   "orig_nom": "𫔳",
+   "orig_qn": "cúc",
+   "time": "2026-11-27 10:03:54"
+  },
+  "Truyên Vua Quang Trung, Nôm|399|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 13,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:04:15"
+  },
+  "Truyên Vua Quang Trung, Nôm|404|3": {
+   "side": "KEEP",
+   "nom": "剔",
+   "qn": "nể",
+   "rank": 10,
+   "orig_nom": "剔",
+   "orig_qn": "nể",
+   "time": "2026-11-27 10:04:31"
+  },
+  "Truyên Vua Quang Trung, Nôm|405|0": {
+   "side": "KEEP",
+   "nom": "𦙃",
+   "qn": "cởi",
+   "rank": 3,
+   "orig_nom": "𦙃",
+   "orig_qn": "cởi",
+   "time": "2026-11-27 10:04:58"
+  },
+  "Truyên Vua Quang Trung, Nôm|406|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:05:05"
+  },
+  "Truyên Vua Quang Trung, Nôm|408|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 8,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:05:10"
+  },
+  "Truyên Vua Quang Trung, Nôm|409|7": {
+   "side": "QN",
+   "nom": "涞",
+   "qn": "rơi",
+   "rank": 4,
+   "orig_nom": "涞",
+   "orig_qn": "róc",
+   "time": "2026-11-27 10:05:20"
+  },
+  "Truyên Vua Quang Trung, Nôm|418|2": {
+   "side": "KEEP",
+   "nom": "蹥",
+   "qn": "thốc",
+   "rank": 6,
+   "orig_nom": "蹥",
+   "orig_qn": "thốc",
+   "time": "2026-11-27 10:06:00"
+  },
+  "Truyên Vua Quang Trung, Nôm|419|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 11,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:06:05"
+  },
+  "Truyên Vua Quang Trung, Nôm|423|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:06:11"
+  },
+  "Truyên Vua Quang Trung, Nôm|424|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 12,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:06:21"
+  },
+  "Truyên Vua Quang Trung, Nôm|424|1": {
+   "side": "NOM",
+   "nom": "𡀜",
+   "qn": "toan",
+   "rank": 2,
+   "orig_nom": "憚",
+   "orig_qn": "toan",
+   "time": "2026-11-27 10:07:13"
+  },
+  "Truyên Vua Quang Trung, Nôm|426|0": {
+   "side": "KEEP",
+   "nom": "僻",
+   "qn": "cõi",
+   "rank": 5,
+   "orig_nom": "僻",
+   "orig_qn": "cõi",
+   "time": "2026-11-27 10:07:43"
+  },
+  "Truyên Vua Quang Trung, Nôm|429|2": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:07:51"
+  },
+  "Truyên Vua Quang Trung, Nôm|429|4": {
+   "side": "QN",
+   "nom": "𨑮",
+   "qn": "mười",
+   "rank": 15,
+   "orig_nom": "𨑮",
+   "orig_qn": "nuôi",
+   "time": "2026-11-27 10:08:56"
+  },
+  "Truyên Vua Quang Trung, Nôm|432|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:09:03"
+  },
+  "Truyên Vua Quang Trung, Nôm|434|5": {
+   "side": "KEEP",
+   "nom": "慊",
+   "qn": "rưng",
+   "rank": 14,
+   "orig_nom": "慊",
+   "orig_qn": "rưng",
+   "time": "2026-11-27 10:09:52"
+  },
+  "Truyên Vua Quang Trung, Nôm|434|4": {
+   "side": "KEEP",
+   "nom": "懩",
+   "qn": "rưng",
+   "rank": 10,
+   "orig_nom": "懩",
+   "orig_qn": "rưng",
+   "time": "2026-11-27 10:09:58"
+  },
+  "Truyên Vua Quang Trung, Nôm|435|5": {
+   "side": "KEEP",
+   "nom": "掤",
+   "qn": "thằng",
+   "rank": 6,
+   "orig_nom": "掤",
+   "orig_qn": "thằng",
+   "time": "2026-11-27 10:11:13"
+  },
+  "Truyên Vua Quang Trung, Nôm|443|3": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 3,
+   "orig_nom": "勢",
+   "orig_qn": "giết",
+   "time": "2026-11-27 10:11:25"
+  },
+  "Truyên Vua Quang Trung, Nôm|443|6": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 4,
+   "orig_nom": "勢",
+   "orig_qn": "giết",
+   "time": "2026-11-27 10:11:29"
+  },
+  "Truyên Vua Quang Trung, Nôm|445|0": {
+   "side": "QN",
+   "nom": "騎",
+   "qn": "cưỡi",
+   "rank": 1,
+   "orig_nom": "騎",
+   "orig_qn": "cuối",
+   "time": "2026-11-27 10:11:44"
+  },
+  "Truyên Vua Quang Trung, Nôm|445|3": {
+   "side": "KEEP",
+   "nom": "觔",
+   "qn": "miết",
+   "rank": 5,
+   "orig_nom": "觔",
+   "orig_qn": "miết",
+   "time": "2026-11-27 10:12:17"
+  },
+  "Truyên Vua Quang Trung, Nôm|446|5": {
+   "side": "NOM",
+   "nom": "󱉲",
+   "qn": "nghèo",
+   "rank": 7,
+   "orig_nom": "饒",
+   "orig_qn": "nghèo",
+   "time": "2026-11-27 10:13:33"
+  },
+  "Truyên Vua Quang Trung, Nôm|454|1": {
+   "side": "NOM",
+   "nom": "𡀜",
+   "qn": "toan",
+   "rank": 3,
+   "orig_nom": "憚",
+   "orig_qn": "toan",
+   "time": "2026-11-27 10:13:45"
+  },
+  "Truyên Vua Quang Trung, Nôm|455|1": {
+   "side": "QN",
+   "nom": "為",
+   "qn": "vì",
+   "rank": 7,
+   "orig_nom": "為",
+   "orig_qn": "rũ",
+   "time": "2026-11-27 10:13:58"
+  },
+  "Truyên Vua Quang Trung, Nôm|456|1": {
+   "side": "KEEP",
+   "nom": "弥",
+   "qn": "bên",
+   "rank": 6,
+   "orig_nom": "弥",
+   "orig_qn": "bên",
+   "time": "2026-11-27 10:14:13"
+  },
+  "Truyên Vua Quang Trung, Nôm|456|2": {
+   "side": "KEEP",
+   "nom": "酻",
+   "qn": "gây",
+   "rank": 21,
+   "orig_nom": "酻",
+   "orig_qn": "gây",
+   "time": "2026-11-27 10:14:28"
+  },
+  "Truyên Vua Quang Trung, Nôm|459|6": {
+   "side": "NOM",
+   "nom": "竭",
+   "qn": "hết",
+   "rank": 12,
+   "orig_nom": "𱛀",
+   "orig_qn": "hết",
+   "time": "2026-11-27 10:15:12"
+  },
+  "Truyên Vua Quang Trung, Nôm|460|3": {
+   "side": "KEEP",
+   "nom": "𣵾",
+   "qn": "ứa",
+   "rank": 3,
+   "orig_nom": "𣵾",
+   "orig_qn": "ứa",
+   "time": "2026-11-27 10:15:42"
+  },
+  "Truyên Vua Quang Trung, Nôm|468|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:15:47"
+  },
+  "Truyên Vua Quang Trung, Nôm|471|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:15:50"
+  },
+  "Truyên Vua Quang Trung, Nôm|471|6": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:15:53"
+  },
+  "Truyên Vua Quang Trung, Nôm|472|4": {
+   "side": "KEEP",
+   "nom": "豬",
+   "qn": "giở",
+   "rank": 23,
+   "orig_nom": "豬",
+   "orig_qn": "giở",
+   "time": "2026-11-27 10:16:25"
+  },
+  "Truyên Vua Quang Trung, Nôm|476|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 8,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:16:44"
+  },
+  "Truyên Vua Quang Trung, Nôm|477|5": {
+   "side": "NOM",
+   "nom": "𡀜",
+   "qn": "toan",
+   "rank": 6,
+   "orig_nom": "憚",
+   "orig_qn": "toan",
+   "time": "2026-11-27 10:16:59"
+  },
+  "Truyên Vua Quang Trung, Nôm|479|7": {
+   "side": "NOM",
+   "nom": "平",
+   "qn": "bằng",
+   "rank": 1,
+   "orig_nom": "千",
+   "orig_qn": "bằng",
+   "time": "2026-11-27 10:17:11"
+  },
+  "Truyên Vua Quang Trung, Nôm|491|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:17:27"
+  },
+  "Truyên Vua Quang Trung, Nôm|491|3": {
+   "side": "NOM",
+   "nom": "𢶢",
+   "qn": "chống",
+   "rank": 7,
+   "orig_nom": "擐",
+   "orig_qn": "chống",
+   "time": "2026-11-27 10:18:02"
+  },
+  "Truyên Vua Quang Trung, Nôm|491|5": {
+   "side": "KEEP",
+   "nom": "弥",
+   "qn": "bên",
+   "rank": 7,
+   "orig_nom": "弥",
+   "orig_qn": "bên",
+   "time": "2026-11-27 10:18:18"
+  },
+  "Truyên Vua Quang Trung, Nôm|495|7": {
+   "side": "NOM",
+   "nom": "沁",
+   "qn": "tăm",
+   "rank": 4,
+   "orig_nom": "𠅎",
+   "orig_qn": "tăm",
+   "time": "2026-11-27 10:18:38"
+  },
+  "Truyên Vua Quang Trung, Nôm|503|6": {
+   "side": "QN",
+   "nom": "捽",
+   "qn": "rút",
+   "rank": 1,
+   "orig_nom": "捽",
+   "orig_qn": "rích",
+   "time": "2026-11-27 10:18:53"
+  },
+  "Truyên Vua Quang Trung, Nôm|509|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:18:58"
+  },
+  "Truyên Vua Quang Trung, Nôm|522|3": {
+   "side": "NOM",
+   "nom": "𡂳",
+   "qn": "giỏi",
+   "rank": 11,
+   "orig_nom": "𢤡",
+   "orig_qn": "giỏi",
+   "time": "2026-11-27 10:20:50"
+  },
+  "Truyên Vua Quang Trung, Nôm|535|3": {
+   "side": "NOM",
+   "nom": "𣩁",
+   "qn": "giết",
+   "rank": 15,
+   "orig_nom": "勢",
+   "orig_qn": "giết",
+   "time": "2026-11-27 10:22:35"
+  },
+  "Truyên Vua Quang Trung, Nôm|543|5": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:23:05"
+  },
+  "Truyên Vua Quang Trung, Nôm|546|3": {
+   "side": "NOM",
+   "nom": "把",
+   "qn": "vã",
+   "rank": 1,
+   "orig_nom": "地",
+   "orig_qn": "vã",
+   "time": "2026-11-27 10:23:51"
+  },
+  "Truyên Vua Quang Trung, Nôm|547|7": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:23:55"
+  },
+  "Truyên Vua Quang Trung, Nôm|550|1": {
+   "side": "NOM",
+   "nom": "𡀜",
+   "qn": "toan",
+   "rank": 4,
+   "orig_nom": "𥳪",
+   "orig_qn": "toan",
+   "time": "2026-11-27 10:24:17"
+  },
+  "Truyên Vua Quang Trung, Nôm|550|2": {
+   "side": "KEEP",
+   "nom": "𠺵",
+   "qn": "rắp",
+   "rank": 6,
+   "orig_nom": "𠺵",
+   "orig_qn": "rắp",
+   "time": "2026-11-27 10:25:54"
+  },
+  "Truyên Vua Quang Trung, Nôm|552|5": {
+   "side": "NOM",
+   "nom": "平",
+   "qn": "bình",
+   "rank": 1,
+   "orig_nom": "乎",
+   "orig_qn": "bình",
+   "time": "2026-11-27 10:26:00"
+  },
+  "Truyên Vua Quang Trung, Nôm|553|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 6,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:26:07"
+  },
+  "Truyên Vua Quang Trung, Nôm|563|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:26:12"
+  },
+  "Truyên Vua Quang Trung, Nôm|573|2": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 7,
+   "orig_nom": "勢",
+   "orig_qn": "giết",
+   "time": "2026-11-27 10:26:46"
+  },
+  "Truyên Vua Quang Trung, Nôm|578|5": {
+   "side": "KEEP",
+   "nom": "偈",
+   "qn": "may",
+   "rank": 1,
+   "orig_nom": "偈",
+   "orig_qn": "may",
+   "time": "2026-11-27 10:27:05"
+  },
+  "Truyên Vua Quang Trung, Nôm|580|4": {
+   "side": "NOM",
+   "nom": "楣",
+   "qn": "máy",
+   "rank": 5,
+   "orig_nom": "偈",
+   "orig_qn": "máy",
+   "time": "2026-11-27 10:27:53"
+  },
+  "Truyên Vua Quang Trung, Nôm|582|1": {
+   "side": "NOM",
+   "nom": "𡀜",
+   "qn": "toan",
+   "rank": 3,
+   "orig_nom": "𥳪",
+   "orig_qn": "toan",
+   "time": "2026-11-27 10:28:09"
+  },
+  "Truyên Vua Quang Trung, Nôm|589|6": {
+   "side": "KEEP",
+   "nom": "豬",
+   "qn": "giở",
+   "rank": 23,
+   "orig_nom": "豬",
+   "orig_qn": "giở",
+   "time": "2026-11-27 10:29:58"
+  },
+  "Truyên Vua Quang Trung, Nôm|591|6": {
+   "side": "NOM",
+   "nom": "𥠒",
+   "qn": "gié",
+   "rank": 2,
+   "orig_nom": "䗖",
+   "orig_qn": "gié",
+   "time": "2026-11-27 10:30:30"
+  },
+  "Truyên Vua Quang Trung, Nôm|597|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:30:35"
+  },
+  "Truyên Vua Quang Trung, Nôm|597|2": {
+   "side": "QN",
+   "nom": "登",
+   "qn": "dâng",
+   "rank": 2,
+   "orig_nom": "登",
+   "orig_qn": "giăng",
+   "time": "2026-11-27 10:30:41"
+  },
+  "Truyên Vua Quang Trung, Nôm|598|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 8,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:30:49"
+  },
+  "Truyên Vua Quang Trung, Nôm|603|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:30:56"
+  },
+  "Truyên Vua Quang Trung, Nôm|605|2": {
+   "side": "NOM",
+   "nom": "𢶢",
+   "qn": "chống",
+   "rank": 7,
+   "orig_nom": "擐",
+   "orig_qn": "chống",
+   "time": "2026-11-27 10:31:13"
+  },
+  "Truyên Vua Quang Trung, Nôm|608|5": {
+   "side": "NOM",
+   "nom": "𫾄",
+   "qn": "lường",
+   "rank": 3,
+   "orig_nom": "幢",
+   "orig_qn": "lường",
+   "time": "2026-11-27 10:31:35"
+  },
+  "Truyên Vua Quang Trung, Nôm|610|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 17,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:32:06"
+  },
+  "Truyên Vua Quang Trung, Nôm|612|1": {
+   "side": "NOM",
+   "nom": "撩",
+   "qn": "trao",
+   "rank": 13,
+   "orig_nom": "㨓",
+   "orig_qn": "trao",
+   "time": "2026-11-27 10:32:36"
+  },
+  "Truyên Vua Quang Trung, Nôm|614|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:32:40"
+  },
+  "Truyên Vua Quang Trung, Nôm|615|3": {
+   "side": "NOM",
+   "nom": "󰳯",
+   "qn": "khí",
+   "rank": 14,
+   "orig_nom": "",
+   "orig_qn": "khí",
+   "time": "2026-11-27 10:34:21"
+  },
+  "Truyên Vua Quang Trung, Nôm|616|3": {
+   "side": "NOM",
+   "nom": "𢶢",
+   "qn": "chống",
+   "rank": 7,
+   "orig_nom": "擐",
+   "orig_qn": "chống",
+   "time": "2026-11-27 10:34:34"
+  },
+  "Truyên Vua Quang Trung, Nôm|626|5": {
+   "side": "NOM",
+   "nom": "潙",
+   "qn": "vời",
+   "rank": 1,
+   "orig_nom": "溈",
+   "orig_qn": "vời",
+   "time": "2026-11-27 10:35:14"
+  },
+  "Truyên Vua Quang Trung, Nôm|631|5": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:35:32"
+  },
+  "Truyên Vua Quang Trung, Nôm|637|2": {
+   "side": "NOM",
+   "nom": "設",
+   "qn": "thiết",
+   "rank": 1,
+   "orig_nom": "説",
+   "orig_qn": "thiết",
+   "time": "2026-11-27 10:36:06"
+  },
+  "Truyên Vua Quang Trung, Nôm|638|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:36:15"
+  },
+  "Truyên Vua Quang Trung, Nôm|653|2": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 5,
+   "orig_nom": "勢",
+   "orig_qn": "giết",
+   "time": "2026-11-27 10:37:05"
+  },
+  "Truyên Vua Quang Trung, Nôm|655|1": {
+   "side": "QN",
+   "nom": "𠄻",
+   "qn": "lăm",
+   "rank": 1,
+   "orig_nom": "𠄻",
+   "orig_qn": "nhăm",
+   "time": "2026-11-27 10:37:08"
+  },
+  "Truyên Vua Quang Trung, Nôm|656|0": {
+   "side": "QN",
+   "nom": "𥩯",
+   "qn": "dựng",
+   "rank": 22,
+   "orig_nom": "𥩯",
+   "orig_qn": "giương",
+   "time": "2026-11-27 10:37:32"
+  },
+  "Truyên Vua Quang Trung, Nôm|657|2": {
+   "side": "QN",
+   "nom": "𠄩",
+   "qn": "hai",
+   "rank": 23,
+   "orig_nom": "𠄩",
+   "orig_qn": "hiệu",
+   "time": "2026-11-27 10:38:24"
+  },
+  "Truyên Vua Quang Trung, Nôm|666|0": {
+   "side": "QN",
+   "nom": "箕",
+   "qn": "kìa",
+   "rank": 12,
+   "orig_nom": "箕",
+   "orig_qn": "khá",
+   "time": "2026-11-27 10:39:24"
+  },
+  "Truyên Vua Quang Trung, Nôm|670|0": {
+   "side": "QN",
+   "nom": "𠳒",
+   "qn": "nhời",
+   "rank": 6,
+   "orig_nom": "𠳒",
+   "orig_qn": "nhớ",
+   "time": "2026-11-27 10:40:12"
+  },
+  "Truyên Vua Quang Trung, Nôm|686|5": {
+   "side": "NOM",
+   "nom": "𡁝",
+   "qn": "hăng",
+   "rank": 4,
+   "orig_nom": "懊",
+   "orig_qn": "hăng",
+   "time": "2026-11-27 10:41:47"
+  },
+  "Truyên Vua Quang Trung, Nôm|691|0": {
+   "side": "QN",
+   "nom": "省",
+   "qn": "tỉnh",
+   "rank": 15,
+   "orig_nom": "省",
+   "orig_qn": "bình",
+   "time": "2026-11-27 10:42:14"
+  },
+  "Truyên Vua Quang Trung, Nôm|694|4": {
+   "side": "KEEP",
+   "nom": "遜",
+   "qn": "nhún",
+   "rank": 2,
+   "orig_nom": "遜",
+   "orig_qn": "nhún",
+   "time": "2026-11-27 10:43:31"
+  },
+  "Truyên Vua Quang Trung, Nôm|700|5": {
+   "side": "KEEP",
+   "nom": "踭",
+   "qn": "nhanh",
+   "rank": 2,
+   "orig_nom": "踭",
+   "orig_qn": "nhanh",
+   "time": "2026-11-27 10:44:47"
+  },
+  "Truyên Vua Quang Trung, Nôm|701|1": {
+   "side": "NOM",
+   "nom": "矇",
+   "qn": "mồng",
+   "rank": 3,
+   "orig_nom": "曖",
+   "orig_qn": "mồng",
+   "time": "2026-11-27 10:45:05"
+  },
+  "Truyên Vua Quang Trung, Nôm|706|0": {
+   "side": "NOM",
+   "nom": "北",
+   "qn": "bác",
+   "rank": 2,
+   "orig_nom": "批",
+   "orig_qn": "bác",
+   "time": "2026-11-27 10:45:33"
+  },
+  "Truyên Vua Quang Trung, Nôm|709|7": {
+   "side": "NOM",
+   "nom": "𡁝",
+   "qn": "hăng",
+   "rank": 4,
+   "orig_nom": "懊",
+   "orig_qn": "hăng",
+   "time": "2026-11-27 10:46:03"
+  },
+  "Truyên Vua Quang Trung, Nôm|713|2": {
+   "side": "NOM",
+   "nom": "󱕖",
+   "qn": "chông",
+   "rank": 5,
+   "orig_nom": "𱤎",
+   "orig_qn": "chông",
+   "time": "2026-11-27 10:46:42"
+  },
+  "Truyên Vua Quang Trung, Nôm|714|4": {
+   "side": "KEEP",
+   "nom": "苫",
+   "qn": "chắn",
+   "rank": 4,
+   "orig_nom": "苫",
+   "orig_qn": "chắn",
+   "time": "2026-11-27 10:47:33"
+  },
+  "Truyên Vua Quang Trung, Nôm|715|0": {
+   "side": "QN",
+   "nom": "刀",
+   "qn": "giao",
+   "rank": 1,
+   "orig_nom": "刀",
+   "orig_qn": "giáo",
+   "time": "2026-11-27 10:47:40"
+  },
+  "Truyên Vua Quang Trung, Nôm|715|1": {
+   "side": "KEEP",
+   "nom": "鈐",
+   "qn": "găm",
+   "rank": 3,
+   "orig_nom": "鈐",
+   "orig_qn": "găm",
+   "time": "2026-11-27 10:47:50"
+  },
+  "Truyên Vua Quang Trung, Nôm|720|3": {
+   "side": "NOM",
+   "nom": "𣋃",
+   "qn": "sáng",
+   "rank": 13,
+   "orig_nom": "𣋽",
+   "orig_qn": "sáng",
+   "time": "2026-11-27 10:48:20"
+  },
+  "Truyên Vua Quang Trung, Nôm|730|3": {
+   "side": "NOM",
+   "nom": "𢭮",
+   "qn": "gẫy",
+   "rank": 3,
+   "orig_nom": "𢯢",
+   "orig_qn": "gẫy",
+   "time": "2026-11-27 10:48:37"
+  },
+  "Truyên Vua Quang Trung, Nôm|736|0": {
+   "side": "NOM",
+   "nom": "矇",
+   "qn": "mồng",
+   "rank": 2,
+   "orig_nom": "曖",
+   "orig_qn": "mồng",
+   "time": "2026-11-27 10:48:54"
+  },
+  "Truyên Vua Quang Trung, Nôm|744|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 8,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:49:01"
+  },
+  "Truyên Vua Quang Trung, Nôm|744|4": {
+   "side": "QN",
+   "nom": "𨄼",
+   "qn": "rời",
+   "rank": 1,
+   "orig_nom": "𨄼",
+   "orig_qn": "rối",
+   "time": "2026-11-27 10:49:18"
+  },
+  "Truyên Vua Quang Trung, Nôm|745|0": {
+   "side": "KEEP",
+   "nom": "寄",
+   "qn": "buông",
+   "rank": 5,
+   "orig_nom": "寄",
+   "orig_qn": "buông",
+   "time": "2026-11-27 10:49:38"
+  },
+  "Truyên Vua Quang Trung, Nôm|746|3": {
+   "side": "NOM",
+   "nom": "𤊪",
+   "qn": "rỡ",
+   "rank": 14,
+   "orig_nom": "𱞟",
+   "orig_qn": "rỡ",
+   "time": "2026-11-27 10:50:25"
+  },
+  "Truyên Vua Quang Trung, Nôm|746|5": {
+   "side": "NOM",
+   "nom": "咷",
+   "qn": "reo",
+   "rank": 9,
+   "orig_nom": "姚",
+   "orig_qn": "reo",
+   "time": "2026-11-27 10:51:11"
+  },
+  "Truyên Vua Quang Trung, Nôm|747|0": {
+   "side": "QN",
+   "nom": "𬁑",
+   "qn": "trưa",
+   "rank": 22,
+   "orig_nom": "𬁑",
+   "orig_qn": "cửa",
+   "time": "2026-11-27 10:51:23"
+  },
+  "Truyên Vua Quang Trung, Nôm|752|3": {
+   "side": "QN",
+   "nom": "細",
+   "qn": "tới",
+   "rank": 1,
+   "orig_nom": "細",
+   "orig_qn": "rối",
+   "time": "2026-11-27 10:52:29"
+  },
+  "Truyên Vua Quang Trung, Nôm|755|0": {
+   "side": "NOM",
+   "nom": "捌",
+   "qn": "biết",
+   "rank": 8,
+   "orig_nom": "惻",
+   "orig_qn": "biết",
+   "time": "2026-11-27 10:53:27"
+  },
+  "Truyên Vua Quang Trung, Nôm|756|2": {
+   "side": "QN",
+   "nom": "𣈙",
+   "qn": "dầy",
+   "rank": 4,
+   "orig_nom": "𣈙",
+   "orig_qn": "dây",
+   "time": "2026-11-27 10:53:48"
+  },
+  "Truyên Vua Quang Trung, Nôm|757|5": {
+   "side": "KEEP",
+   "nom": "墱",
+   "qn": "giàng",
+   "rank": 21,
+   "orig_nom": "墱",
+   "orig_qn": "giàng",
+   "time": "2026-11-27 10:54:08"
+  },
+  "Truyên Vua Quang Trung, Nôm|759|4": {
+   "side": "NOM",
+   "nom": "𥠻",
+   "qn": "ghê",
+   "rank": 2,
+   "orig_nom": "𮃛",
+   "orig_qn": "ghê",
+   "time": "2026-11-27 10:54:55"
+  },
+  "Truyên Vua Quang Trung, Nôm|762|3": {
+   "side": "KEEP",
+   "nom": "珅",
+   "qn": "hợp",
+   "rank": 3,
+   "orig_nom": "珅",
+   "orig_qn": "hợp",
+   "time": "2026-11-27 10:56:04"
+  },
+  "Truyên Vua Quang Trung, Nôm|765|7": {
+   "side": "NOM",
+   "nom": "包",
+   "qn": "vào",
+   "rank": 6,
+   "orig_nom": "色",
+   "orig_qn": "vào",
+   "time": "2026-11-27 10:56:21"
+  },
+  "Truyên Vua Quang Trung, Nôm|768|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 9,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:56:56"
+  },
+  "Truyên Vua Quang Trung, Nôm|773|6": {
+   "side": "NOM",
+   "nom": "假",
+   "qn": "trá",
+   "rank": 1,
+   "orig_nom": "惜",
+   "orig_qn": "trá",
+   "time": "2026-11-27 10:58:03"
+  },
+  "Truyên Vua Quang Trung, Nôm|774|3": {
+   "side": "NOM",
+   "nom": "假",
+   "qn": "trá",
+   "rank": 1,
+   "orig_nom": "惜",
+   "orig_qn": "trá",
+   "time": "2026-11-27 10:58:07"
+  },
+  "Truyên Vua Quang Trung, Nôm|776|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 17,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 10:58:14"
+  },
+  "Truyên Vua Quang Trung, Nôm|782|5": {
+   "side": "QN",
+   "nom": "𤉜",
+   "qn": "ràng",
+   "rank": 11,
+   "orig_nom": "𤉜",
+   "orig_qn": "dang",
+   "time": "2026-11-27 10:58:24"
+  },
+  "Truyên Vua Quang Trung, Nôm|784|3": {
+   "side": "NOM",
+   "nom": "󰛢",
+   "qn": "ở",
+   "rank": 7,
+   "orig_nom": "蒼",
+   "orig_qn": "ở",
+   "time": "2026-11-27 10:58:52"
+  },
+  "Truyên Vua Quang Trung, Nôm|787|0": {
+   "side": "NOM",
+   "nom": "垂",
+   "qn": "thùy",
+   "rank": 7,
+   "orig_nom": "埀",
+   "orig_qn": "thùy",
+   "time": "2026-11-27 10:59:49"
+  },
+  "Truyên Vua Quang Trung, Nôm|789|4": {
+   "side": "NOM",
+   "nom": "縣",
+   "qn": "huyện",
+   "rank": 1,
+   "orig_nom": "𬗫",
+   "orig_qn": "huyện",
+   "time": "2026-11-27 10:59:53"
+  },
+  "Truyên Vua Quang Trung, Nôm|795|5": {
+   "side": "NOM",
+   "nom": "儔",
+   "qn": "trò",
+   "rank": 12,
+   "orig_nom": "傱",
+   "orig_qn": "trò",
+   "time": "2026-11-27 11:00:21"
+  },
+  "Truyên Vua Quang Trung, Nôm|797|3": {
+   "side": "NOM",
+   "nom": "𢱖",
+   "qn": "mở",
+   "rank": 17,
+   "orig_nom": "撰",
+   "orig_qn": "mở",
+   "time": "2026-11-27 11:00:49"
+  },
+  "Truyên Vua Quang Trung, Nôm|800|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 6,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 11:01:25"
+  },
+  "Truyên Vua Quang Trung, Nôm|800|3": {
+   "side": "NOM",
+   "nom": "𤄍",
+   "qn": "rượu",
+   "rank": 7,
+   "orig_nom": "耀",
+   "orig_qn": "rượu",
+   "time": "2026-11-27 11:01:59"
+  },
+  "Truyên Vua Quang Trung, Nôm|802|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 11:02:08"
+  },
+  "Truyên Vua Quang Trung, Nôm|808|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 9,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 11:02:14"
+  },
+  "Truyên Vua Quang Trung, Nôm|811|6": {
+   "side": "NOM",
+   "nom": "𧂁",
+   "qn": "chẹn",
+   "rank": 1,
+   "orig_nom": "躆",
+   "orig_qn": "chẹn",
+   "time": "2026-11-27 11:02:58"
+  },
+  "Truyên Vua Quang Trung, Nôm|825|1": {
+   "side": "NOM",
+   "nom": "潙",
+   "qn": "vời",
+   "rank": 1,
+   "orig_nom": "溈",
+   "orig_qn": "vời",
+   "time": "2026-11-27 11:03:14"
+  },
+  "Truyên Vua Quang Trung, Nôm|826|0": {
+   "side": "NOM",
+   "nom": "𢶢",
+   "qn": "chống",
+   "rank": 5,
+   "orig_nom": "擐",
+   "orig_qn": "chống",
+   "time": "2026-11-27 11:03:44"
+  },
+  "Truyên Vua Quang Trung, Nôm|833|1": {
+   "side": "NOM",
+   "nom": "𡀜",
+   "qn": "toan",
+   "rank": 5,
+   "orig_nom": "憚",
+   "orig_qn": "toan",
+   "time": "2026-11-27 11:04:34"
+  },
+  "Truyên Vua Quang Trung, Nôm|833|2": {
+   "side": "NOM",
+   "nom": "𢶢",
+   "qn": "chống",
+   "rank": 6,
+   "orig_nom": "擐",
+   "orig_qn": "chống",
+   "time": "2026-11-27 11:04:41"
+  },
+  "Truyên Vua Quang Trung, Nôm|849|6": {
+   "side": "NOM",
+   "nom": "計",
+   "qn": "kế",
+   "rank": 1,
+   "orig_nom": "𠼯",
+   "orig_qn": "kế",
+   "time": "2026-11-27 11:06:05"
+  },
+  "Truyên Vua Quang Trung, Nôm|851|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 8,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 11:06:11"
+  },
+  "Truyên Vua Quang Trung, Nôm|853|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 8,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 11:06:15"
+  },
+  "Truyên Vua Quang Trung, Nôm|859|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 11:06:59"
+  },
+  "Truyên Vua Quang Trung, Nôm|866|4": {
+   "side": "KEEP",
+   "nom": "祸",
+   "qn": "rẽ",
+   "rank": 6,
+   "orig_nom": "祸",
+   "orig_qn": "rẽ",
+   "time": "2026-11-27 11:07:15"
+  },
+  "Truyên Vua Quang Trung, Nôm|866|5": {
+   "side": "QN",
+   "nom": "𤉜",
+   "qn": "dàng",
+   "rank": 6,
+   "orig_nom": "𤉜",
+   "orig_qn": "dang",
+   "time": "2026-11-27 11:07:24"
+  },
+  "Truyên Vua Quang Trung, Nôm|878|3": {
+   "side": "KEEP",
+   "nom": "捻",
+   "qn": "lượm",
+   "rank": 1,
+   "orig_nom": "捻",
+   "orig_qn": "lượm",
+   "time": "2026-11-27 11:07:54"
+  },
+  "Truyên Vua Quang Trung, Nôm|879|6": {
+   "side": "NOM",
+   "nom": "𢱖",
+   "qn": "mở",
+   "rank": 17,
+   "orig_nom": "撰",
+   "orig_qn": "mở",
+   "time": "2026-11-27 11:08:29"
+  },
+  "Truyên Vua Quang Trung, Nôm|890|4": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 11:08:43"
+  },
+  "Truyên Vua Quang Trung, Nôm|899|6": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 4,
+   "orig_nom": "勢",
+   "orig_qn": "giết",
+   "time": "2026-11-27 11:09:07"
+  },
+  "Truyên Vua Quang Trung, Nôm|901|7": {
+   "side": "NOM",
+   "nom": "潙",
+   "qn": "vời",
+   "rank": 1,
+   "orig_nom": "溈",
+   "orig_qn": "vời",
+   "time": "2026-11-27 11:10:30"
+  },
+  "Truyên Vua Quang Trung, Nôm|915|6": {
+   "side": "NOM",
+   "nom": "𢭮",
+   "qn": "gẫy",
+   "rank": 3,
+   "orig_nom": "莪",
+   "orig_qn": "gẫy",
+   "time": "2026-11-27 11:10:58"
+  },
+  "Truyên Vua Quang Trung, Nôm|894|5": {
+   "side": "KEEP",
+   "nom": "𤉜",
+   "qn": "xăng",
+   "rank": 4,
+   "orig_nom": "𤉜",
+   "orig_qn": "xăng",
+   "time": "2026-11-27 11:11:35"
   }
  }
 }

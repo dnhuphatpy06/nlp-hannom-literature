@@ -1,5 +1,5 @@
 {
- "saved_at": "2026-11-27 00:57:35",
+ "saved_at": "2026-11-27 17:55:33",
  "decisions": {
   "Tư Linh Truyên, Nôm|82|0": {
    "side": "QN",
@@ -683,7 +683,7 @@
    "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-19 12:08:42"
+   "time": "2026-11-27 17:54:08"
   },
   "Tư Linh Truyên, Nôm|138|5": {
    "side": "QN",
@@ -3899,13 +3899,13 @@
    "time": "2026-11-26 23:36:30"
   },
   "Tư Linh Truyên, Nôm|134|4": {
-   "side": "NOM",
-   "nom": "呐",
+   "side": "KEEP",
+   "nom": "移",
    "qn": "nói",
-   "rank": 4,
+   "rank": 3,
    "orig_nom": "移",
    "orig_qn": "nói",
-   "time": "2026-11-26 23:36:45"
+   "time": "2026-11-27 17:55:30"
   },
   "Tư Linh Truyên, Nôm|138|0": {
    "side": "KEEP",

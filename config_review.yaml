@@ -15,3 +15,5 @@ models:
 
 review:
   top_k: 0                        # số ứng viên tối đa hiển thị cho mỗi cặp lệch; 0 là hiện tất cả
+  use_tuned_weights: true         # dùng trọng số chấm điểm đã dò từ nhãn đã duyệt (python -m scripts.tune_review); không có file thì dùng trọng số mặc định
+  tuned_weights_file: resources/tuning/tuned_weights.json

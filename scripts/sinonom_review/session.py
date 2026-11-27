@@ -12,6 +12,7 @@ from .alignment import MATCH, MISMATCH, AlignedPair, levenshtein_align
 from .data import ImageIndex, Sentence, load_sentences
 from .dictionary import NomVietDict
 from .scoring import DEFAULT_WEIGHTS, CandidateScorer, Site
+from .scoring import rerank as rerank_hyps
 
 STATE_FILE = "review_state.json"
 CACHE_FILE = "candidates_cache.json"
@@ -152,6 +153,16 @@ class ReviewSession:
             print(f"  xong sau {time.time() - t:.1f}s")
         self.refresh_pages(verbose)
         return self.candidates
+
+    def rerank(self, weights: dict | None, verbose=False) -> bool:
+        """Xếp hạng lại ứng viên đã chấm theo trọng số khác (ví dụ bộ đã dò bởi tuning.py) từ bằng chứng thô trong self.candidates, không nạp LM
+        và không ghi candidates_cache.json (cache vẫn khớp với trọng số mặc định). Gọi lại sau mỗi lần load_cached / score_candidates."""
+        if not weights or not self.candidates:
+            return False
+        self.candidates = {k: rerank_hyps(h, weights) for k, h in self.candidates.items()}
+        self.score_settings = {**self.score_settings, "weights": {**DEFAULT_WEIGHTS, **weights}, "reranked": True}
+        self.refresh_pages(verbose)
+        return True
 
     def review_sites(self, sent_idx: int) -> list[Site]:
         """Các cặp lệch của câu CÓ ít nhất một ứng viên sửa — chỉ những cặp này được hiển thị để duyệt."""

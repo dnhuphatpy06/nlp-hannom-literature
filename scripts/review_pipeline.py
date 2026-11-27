@@ -30,7 +30,7 @@ CONFIG_FILE = ROOT / "config_review.yaml"
 DEFAULT_CONFIG = {
     "dictionary": {"dir": "resources/dictionaries", "extra_dicts": [], "nom_variants": True},
     "models": {"use_lm": True, "nom_model": "btqkhai/SinoNomBERT", "quocngu_model": "Qwen/Qwen2.5-0.5B", "device": "auto"},
-    "review": {"top_k": 0},
+    "review": {"top_k": 0, "use_tuned_weights": True, "tuned_weights_file": "resources/tuning/tuned_weights.json"},
 }
 
 _lock = threading.RLock()
@@ -55,6 +55,25 @@ def load_config() -> dict:
         if isinstance(values, dict) and isinstance(cfg.get(section), dict):
             cfg[section].update(values)
     return cfg
+
+
+def tuned_weights_path(cfg: dict | None = None) -> Path | None:
+    r = (cfg or load_config())["review"]
+    if not r.get("use_tuned_weights", True) or not r.get("tuned_weights_file"):
+        return None
+    p = Path(r["tuned_weights_file"])
+    return p if p.is_absolute() else ROOT / p
+
+
+def _apply_tuned(sess) -> bool:
+    """Xếp hạng lại ứng viên của phiên theo trọng số đã dò (resources/tuning/tuned_weights.json, do scripts/tune_review.py ghi) nếu file có và đã
+    được chọn tự động. Không chạy LM; tắt bằng review.use_tuned_weights: false."""
+    path = tuned_weights_path()
+    if path is None:
+        return False
+    from .sinonom_review.tuning import load_tuned
+    rec = load_tuned(path)
+    return bool(rec) and sess.rerank(rec["weights"])
 
 
 def _imports():
@@ -217,6 +236,8 @@ def _stamp(book: library.Book) -> tuple:
         for role in align_rows.SIDES:
             src, folder = align_rows.source_of(book, role, state)
             files.append(src.dir / folder / "Label.txt")
+    if tuned_weights_path():
+        files.append(tuned_weights_path())              # dò lại trọng số thì phiên được dựng lại với thứ hạng mới
     out = []
     for f in files:
         try:
@@ -279,6 +300,7 @@ def _build_session(book: library.Book):
                          settings.get("nom_context_lines", 1), settings.get("qn_context_lines", 0), verbose=False)
     except (OSError, ValueError):
         pass
+    _apply_tuned(sess)
     return sess
 
 
@@ -429,6 +451,7 @@ def _score_run(book: library.Book, use_lm: bool) -> None:
         names = (cfg["nom_model"], cfg["quocngu_model"]) if use_lm else (None, None)
         if sess.cache_matches(*names):          # kết quả chấm điểm đã lưu còn khớp (cùng dữ liệu, từ điển, mô hình): không cần nạp mô hình
             sess.load_cached(*names, verbose=False)
+            _apply_tuned(sess)
             with _lock:
                 _jobs[key].update(status="done", finished=time.time(), stage="Dùng lại kết quả đã chấm, không nạp mô hình", reused=True)
             return
@@ -440,6 +463,7 @@ def _score_run(book: library.Book, use_lm: bool) -> None:
             with _lock:
                 _jobs[key].update(stage=f"Chấm điểm {len(sess.sites)} cặp lệch trên {device}", device=device)
         sess.score_candidates(nom_lm, qn_lm, nom_model_name=cfg["nom_model"], qn_model_name=cfg["quocngu_model"], use_cache=True, verbose=False)
+        _apply_tuned(sess)
         with _lock:
             _jobs[key].update(status="done", finished=time.time(), stage="Xong")
     except Exception as e:   # lỗi nạp mô hình, thiếu thư viện, hết bộ nhớ ...

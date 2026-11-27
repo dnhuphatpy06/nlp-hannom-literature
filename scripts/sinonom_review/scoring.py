@@ -58,6 +58,99 @@ def _softmax(xs):
     return [v / z for v in e]
 
 
+# Tham số xếp hạng chỉ có ở bước tinh chỉnh (tuning.py). Cố ý KHÔNG nằm trong DEFAULT_WEIGHTS: DEFAULT_WEIGHTS đi vào chữ ký của
+# candidates_cache.json, thêm khoá vào đó sẽ làm mọi kết quả chấm điểm đã lưu (tốn công nạp LM) không còn khớp. Mặc định = hành vi cũ.
+RANK_DEFAULTS = {
+    "bias_variant": 0.0,   # cộng vào điểm ứng viên NOM là dị thể chữ
+    "bias_regional": 0.0,  # ... NOM/QN chỉ có nhờ dạng vùng d <-> r ...
+    "bias_relaxed": 0.0,   # ... QN chỉ có khi nới lỏng khoảng cách
+    "bias_reading": 0.0,   # ... QN chỉ là âm đọc còn lại của chữ
+    "bias_lm": 0.0,        # ... NOM chỉ do LM đưa ra
+    "cap_only": True,      # True: ứng viên "chỉ do ..." luôn thấp hơn mọi ứng viên sẵn có (hành vi cũ); False: để điểm tự quyết
+}
+ONLY_FLAGS = ("variant", "regional", "relaxed", "reading", "lm")
+
+
+def rank_hypotheses(keep_nom: str, keep_qn: str, nom: dict, qn: dict, weights: dict) -> list[dict]:
+    """Điểm, confidence và thứ hạng của mọi giả thuyết của MỘT cặp lệch, từ đặc trưng thô.
+
+    nom: {chữ c': {visual_rank, nlm_delta, lm_oov, variant, variant_only, lm_only, regional_only}}
+    qn : {âm s': {ortho, qlm_delta, regional_only, relaxed_only, reading_only}}
+    Dùng chung cho chấm điểm lần đầu (CandidateScorer.score) và chấm lại từ cache (rerank / tuning.py) nên hai đường luôn cho cùng kết quả."""
+    W = {**RANK_DEFAULTS, **weights}
+    hyps = [{"side": "KEEP", "nom": keep_nom, "qn": keep_qn, "score": W["keep_score"], "evidence": {}}]
+    for c2, ev in nom.items():
+        rank = ev["visual_rank"]
+        if rank is None:
+            rank = 1 if ev.get("variant_only") else W["novis_rank"]
+        d = ev.get("nlm_delta", 0.0)
+        sc = W["nom_prior"] + W["w_vis"] * (-math.log(rank + 1)) + W["w_nlm"] * d
+        evidence = {"visual_rank": ev["visual_rank"], "nlm_delta": round(d, 3), "lm_oov": ev.get("lm_oov")}
+        if ev.get("variant"):
+            evidence["variant"] = "only" if ev.get("variant_only") else "also_similar"
+            sc += W["bias_variant"]
+        if ev.get("lm_only"):            # chữ đọc được âm này nhưng không giống hình: chỉ do SinoNomBERT xếp hạng
+            evidence["lm"] = "only"
+            sc += W["bias_lm"]
+        if ev.get("regional_only"):      # chữ chỉ đọc được âm này qua dạng vùng d <-> r
+            evidence["regional"] = "only"
+            sc += W["bias_regional"]
+        hyps.append({"side": "NOM", "nom": c2, "qn": keep_qn, "score": sc, "evidence": evidence})
+    for s2, ev in qn.items():
+        d = ev.get("qlm_delta", 0.0)
+        sc = W["qn_prior"] - W["w_ortho"] * ev["ortho"] + W["w_qlm"] * d
+        evidence = {"ortho": round(ev["ortho"], 2), "qlm_delta": round(d, 3)}
+        if ev.get("regional_only"):
+            evidence["regional"] = "only"
+            sc += W["bias_regional"]
+        if ev.get("relaxed_only"):
+            evidence["relaxed"] = "only"
+            sc += W["bias_relaxed"]
+        if ev.get("reading_only"):
+            evidence["reading"] = "only"
+            sc += W["bias_reading"]
+        hyps.append({"side": "QN", "nom": keep_nom, "qn": match_case(s2, keep_qn), "score": sc, "evidence": evidence})
+    # ứng viên chỉ do dị thể chữ hoặc dạng vùng mới có không được vượt ứng viên sẵn có; thứ tự giữa chúng với nhau giữ nguyên
+    only = [h for h in hyps if h["evidence"].get("variant") == "only" or h["evidence"].get("regional") == "only"
+            or h["evidence"].get("relaxed") == "only" or h["evidence"].get("reading") == "only" or h["evidence"].get("lm") == "only"]
+    others = [h["score"] for h in hyps if h["side"] != "KEEP" and h not in only]
+    if W["cap_only"] and only and others:        # thấp hơn mọi ứng viên sẵn có: thứ hạng và việc nằm trong top-k của chúng không đổi
+        over = max(h["score"] for h in only) - (min(others) - VARIANT_MARGIN)
+        if over > 0:
+            for h in only:
+                h["score"] -= over
+    probs = _softmax([h["score"] for h in hyps])
+    for h, p in zip(hyps, probs):
+        h["confidence"] = p
+        h["score"] = round(h["score"], 4)
+    hyps.sort(key=lambda h: (-h["score"], h["side"], h["nom"], h["qn"]))
+    for r, h in enumerate(hyps, 1):
+        h["rank"] = r
+    return hyps
+
+
+def features_from_hyps(hyps: list[dict]) -> tuple[str, str, dict, dict]:
+    """Ngược của rank_hypotheses: dựng lại (keep_nom, keep_qn, nom, qn) từ danh sách giả thuyết đã lưu trong candidates_cache.json
+    (evidence đã làm tròn: nlm_delta 3 chữ số, ortho 2 chữ số). Không cần nạp mô hình."""
+    keep = next(h for h in hyps if h["side"] == "KEEP")
+    nom, qn = {}, {}
+    for h in hyps:
+        e = h["evidence"]
+        if h["side"] == "NOM":
+            nom[h["nom"]] = {"visual_rank": e.get("visual_rank"), "nlm_delta": e.get("nlm_delta", 0.0), "lm_oov": e.get("lm_oov"),
+                             "variant": "variant" in e, "variant_only": e.get("variant") == "only",
+                             "lm_only": e.get("lm") == "only", "regional_only": e.get("regional") == "only"}
+        elif h["side"] == "QN":
+            qn[h["qn"]] = {"ortho": e["ortho"], "qlm_delta": e.get("qlm_delta", 0.0), "regional_only": e.get("regional") == "only",
+                           "relaxed_only": e.get("relaxed") == "only", "reading_only": e.get("reading") == "only"}
+    return keep["nom"], keep["qn"], nom, qn
+
+
+def rerank(hyps: list[dict], weights: dict) -> list[dict]:
+    """Xếp hạng lại danh sách giả thuyết đã lưu của một cặp theo trọng số khác, không chạy lại LM."""
+    return rank_hypotheses(*features_from_hyps(hyps), {**DEFAULT_WEIGHTS, **weights})
+
+
 class CandidateScorer:
     def __init__(self, dic: NomVietDict, nom_lm=None, qn_lm=None, weights: dict | None = None,
                  nom_context_lines: int = 1, qn_context_lines: int = 0):
@@ -151,50 +244,4 @@ class CandidateScorer:
                     for s2, ev in f["qn"].items():
                         ev["qlm_delta"] = lp[self._qn_text(books, f["sent"], st.qn_pos, s2)] - base
 
-        out: dict[str, list[dict]] = {}
-        for f in feats:
-            st = f["site"]
-            hyps = [{"side": "KEEP", "nom": st.nom, "qn": st.qn, "score": W["keep_score"], "evidence": {}}]
-            for c2, ev in f["nom"].items():
-                rank = ev["visual_rank"]
-                if rank is None:
-                    rank = 1 if ev.get("variant_only") else W["novis_rank"]
-                d = ev.get("nlm_delta", 0.0)
-                sc = W["nom_prior"] + W["w_vis"] * (-math.log(rank + 1)) + W["w_nlm"] * d
-                evidence = {"visual_rank": ev["visual_rank"], "nlm_delta": round(d, 3), "lm_oov": ev.get("lm_oov")}
-                if ev.get("variant"):
-                    evidence["variant"] = "only" if ev.get("variant_only") else "also_similar"
-                if ev.get("lm_only"):            # chữ đọc được âm này nhưng không giống hình: chỉ do SinoNomBERT xếp hạng
-                    evidence["lm"] = "only"
-                if ev.get("regional_only"):      # chữ chỉ đọc được âm này qua dạng vùng d <-> r
-                    evidence["regional"] = "only"
-                hyps.append({"side": "NOM", "nom": c2, "qn": st.qn, "score": sc, "evidence": evidence})
-            for s2, ev in f["qn"].items():
-                d = ev.get("qlm_delta", 0.0)
-                sc = W["qn_prior"] - W["w_ortho"] * ev["ortho"] + W["w_qlm"] * d
-                evidence = {"ortho": round(ev["ortho"], 2), "qlm_delta": round(d, 3)}
-                if ev.get("regional_only"):
-                    evidence["regional"] = "only"
-                if ev.get("relaxed_only"):
-                    evidence["relaxed"] = "only"
-                if ev.get("reading_only"):
-                    evidence["reading"] = "only"
-                hyps.append({"side": "QN", "nom": st.nom, "qn": match_case(s2, st.qn), "score": sc, "evidence": evidence})
-            # ứng viên chỉ do dị thể chữ hoặc dạng vùng mới có không được vượt ứng viên sẵn có; thứ tự giữa chúng với nhau giữ nguyên
-            only = [h for h in hyps if h["evidence"].get("variant") == "only" or h["evidence"].get("regional") == "only"
-                    or h["evidence"].get("relaxed") == "only" or h["evidence"].get("reading") == "only" or h["evidence"].get("lm") == "only"]
-            others = [h["score"] for h in hyps if h["side"] != "KEEP" and h not in only]
-            if only and others:        # thấp hơn mọi ứng viên sẵn có: thứ hạng và việc nằm trong top-k của chúng không đổi
-                over = max(h["score"] for h in only) - (min(others) - VARIANT_MARGIN)
-                if over > 0:
-                    for h in only:
-                        h["score"] -= over
-            probs = _softmax([h["score"] for h in hyps])
-            for h, p in zip(hyps, probs):
-                h["confidence"] = p
-                h["score"] = round(h["score"], 4)
-            hyps.sort(key=lambda h: (-h["score"], h["side"], h["nom"], h["qn"]))
-            for r, h in enumerate(hyps, 1):
-                h["rank"] = r
-            out[st.key] = hyps
-        return out
+        return {f["site"].key: rank_hypotheses(f["site"].nom, f["site"].qn, f["nom"], f["qn"], W) for f in feats}

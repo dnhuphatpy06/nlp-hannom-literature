@@ -1,6 +1,78 @@
 {
- "saved_at": "2026-11-26 18:37:27",
+ "saved_at": "2026-11-27 16:38:13",
  "decisions": {
+  "truyen vua Le Thai To digcoll_10996|83|2": {
+   "side": "KEEP",
+   "nom": "愈",
+   "qn": "dủ",
+   "rank": 6,
+   "orig_nom": "愈",
+   "orig_qn": "dủ",
+   "time": "2026-11-20 10:04:54"
+  },
+  "truyen vua Le Thai To digcoll_10996|129|7": {
+   "side": "KEEP",
+   "nom": "𣈙",
+   "qn": "dầy",
+   "rank": 2,
+   "orig_nom": "𣈙",
+   "orig_qn": "dầy",
+   "time": "2026-11-20 10:21:03"
+  },
+  "truyen vua Le Thai To digcoll_10996|358|3": {
+   "side": "NOM",
+   "nom": "鎮",
+   "qn": "giấn",
+   "rank": 1,
+   "orig_nom": "鎭",
+   "orig_qn": "giấn",
+   "time": "2026-11-20 10:40:48"
+  },
+  "truyen vua Le Thai To digcoll_10996|545|3": {
+   "side": "NOM",
+   "nom": "鎮",
+   "qn": "giấn",
+   "rank": 1,
+   "orig_nom": "鎭",
+   "orig_qn": "giấn",
+   "time": "2026-11-20 11:05:03"
+  },
+  "truyen vua Le Thai To digcoll_10996|632|1": {
+   "side": "KEEP",
+   "nom": "𤉜",
+   "qn": "dàng",
+   "rank": 3,
+   "orig_nom": "𤉜",
+   "orig_qn": "dàng",
+   "time": "2026-11-20 11:15:59"
+  },
+  "truyen vua Le Thai To digcoll_10996|858|7": {
+   "side": "KEEP",
+   "nom": "𤉜",
+   "qn": "dàng",
+   "rank": 3,
+   "orig_nom": "𤉜",
+   "orig_qn": "dàng",
+   "time": "2026-11-20 11:37:50"
+  },
+  "truyen vua Le Thai To digcoll_10996|868|7": {
+   "side": "KEEP",
+   "nom": "呡",
+   "qn": "dăn",
+   "rank": 2,
+   "orig_nom": "呡",
+   "orig_qn": "dăn",
+   "time": "2026-11-20 11:37:56"
+  },
+  "truyen vua Le Thai To digcoll_10996|1026|1": {
+   "side": "KEEP",
+   "nom": "𤉜",
+   "qn": "dàng",
+   "rank": 3,
+   "orig_nom": "𤉜",
+   "orig_qn": "dàng",
+   "time": "2026-11-20 11:46:33"
+  },
   "truyen vua Le Thai To digcoll_10996|0|3": {
    "side": "QN",
    "nom": "太",
@@ -47,13 +119,13 @@
    "time": "2026-11-20 09:51:18"
   },
   "truyen vua Le Thai To digcoll_10996|15|2": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "屯",
-   "qn": "chuân",
-   "rank": 1,
+   "qn": "truân",
+   "rank": 3,
    "orig_nom": "屯",
    "orig_qn": "chuân",
-   "time": "2026-11-20 09:52:08"
+   "time": "2026-11-27 14:47:25"
   },
   "truyen vua Le Thai To digcoll_10996|16|2": {
    "side": "NOM",
@@ -110,13 +182,13 @@
    "time": "2026-11-20 10:01:27"
   },
   "truyen vua Le Thai To digcoll_10996|34|0": {
-   "side": "KEEP",
-   "nom": "栋",
+   "side": "NOM",
+   "nom": "棟",
    "qn": "đúng",
-   "rank": 1,
+   "rank": 3,
    "orig_nom": "栋",
    "orig_qn": "đúng",
-   "time": "2026-11-20 10:01:30"
+   "time": "2026-11-27 14:48:36"
   },
   "truyen vua Le Thai To digcoll_10996|35|0": {
    "side": "QN",
@@ -164,13 +236,13 @@
    "time": "2026-11-20 10:02:19"
   },
   "truyen vua Le Thai To digcoll_10996|51|1": {
-   "side": "KEEP",
-   "nom": "馁",
+   "side": "NOM",
+   "nom": "餒",
    "qn": "nuôi",
    "rank": 3,
    "orig_nom": "馁",
    "orig_qn": "nuôi",
-   "time": "2026-11-20 10:03:22"
+   "time": "2026-11-27 14:50:50"
   },
   "truyen vua Le Thai To digcoll_10996|53|0": {
    "side": "QN",
@@ -235,15 +307,6 @@
    "orig_qn": "lảng",
    "time": "2026-11-20 10:04:29"
   },
-  "truyen vua Le Thai To digcoll_10996|83|2": {
-   "side": "KEEP",
-   "nom": "愈",
-   "qn": "dủ",
-   "rank": 6,
-   "orig_nom": "愈",
-   "orig_qn": "dủ",
-   "time": "2026-11-20 10:04:54"
-  },
   "truyen vua Le Thai To digcoll_10996|83|6": {
    "side": "NOM",
    "nom": "蓮",
@@ -254,13 +317,13 @@
    "time": "2026-11-20 10:04:57"
   },
   "truyen vua Le Thai To digcoll_10996|84|5": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "愷",
-   "qn": "ngôi",
-   "rank": 2,
+   "qn": "ngai",
+   "rank": 1,
    "orig_nom": "愷",
    "orig_qn": "ngôi",
-   "time": "2026-11-20 10:05:57"
+   "time": "2026-11-27 14:52:28"
   },
   "truyen vua Le Thai To digcoll_10996|89|7": {
    "side": "QN",
@@ -317,13 +380,13 @@
    "time": "2026-11-20 10:07:38"
   },
   "truyen vua Le Thai To digcoll_10996|100|4": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𨇒",
-   "qn": "mỏi",
-   "rank": 2,
+   "qn": "duỗi",
+   "rank": 22,
    "orig_nom": "𨇒",
    "orig_qn": "mỏi",
-   "time": "2026-11-20 10:18:04"
+   "time": "2026-11-27 14:54:11"
   },
   "truyen vua Le Thai To digcoll_10996|101|4": {
    "side": "QN",
@@ -335,13 +398,13 @@
    "time": "2026-11-20 10:18:17"
   },
   "truyen vua Le Thai To digcoll_10996|107|0": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𠻀",
-   "qn": "giở",
-   "rank": 1,
+   "qn": "dò",
+   "rank": 26,
    "orig_nom": "𠻀",
    "orig_qn": "giở",
-   "time": "2026-11-20 10:18:43"
+   "time": "2026-11-27 14:54:38"
   },
   "truyen vua Le Thai To digcoll_10996|109|1": {
    "side": "QN",
@@ -353,13 +416,13 @@
    "time": "2026-11-20 10:18:54"
   },
   "truyen vua Le Thai To digcoll_10996|110|3": {
-   "side": "KEEP",
-   "nom": "圯",
+   "side": "NOM",
+   "nom": "𢩽",
    "qn": "rẫy",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "圯",
    "orig_qn": "rẫy",
-   "time": "2026-11-20 10:19:16"
+   "time": "2026-11-27 15:04:25"
   },
   "truyen vua Le Thai To digcoll_10996|113|5": {
    "side": "QN",
@@ -380,13 +443,13 @@
    "time": "2026-11-20 10:19:38"
   },
   "truyen vua Le Thai To digcoll_10996|116|0": {
-   "side": "KEEP",
-   "nom": "产",
+   "side": "NOM",
+   "nom": "産",
    "qn": "sẵn",
-   "rank": 1,
+   "rank": 3,
    "orig_nom": "产",
    "orig_qn": "sẵn",
-   "time": "2026-11-20 10:19:49"
+   "time": "2026-11-27 15:04:56"
   },
   "truyen vua Le Thai To digcoll_10996|119|2": {
    "side": "NOM",
@@ -415,59 +478,50 @@
    "orig_qn": "côi",
    "time": "2026-11-20 10:20:54"
   },
-  "truyen vua Le Thai To digcoll_10996|129|7": {
-   "side": "KEEP",
-   "nom": "𣈙",
-   "qn": "dầy",
-   "rank": 2,
-   "orig_nom": "𣈙",
-   "orig_qn": "dầy",
-   "time": "2026-11-20 10:21:03"
-  },
   "truyen vua Le Thai To digcoll_10996|132|3": {
-   "side": "KEEP",
-   "nom": "产",
+   "side": "NOM",
+   "nom": "産",
    "qn": "sẵn",
    "rank": 2,
    "orig_nom": "产",
    "orig_qn": "sẵn",
-   "time": "2026-11-20 10:21:10"
+   "time": "2026-11-27 15:06:25"
   },
   "truyen vua Le Thai To digcoll_10996|134|3": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "廌",
-   "qn": "chãi",
-   "rank": 3,
+   "qn": "chải",
+   "rank": 1,
    "orig_nom": "廌",
    "orig_qn": "chãi",
-   "time": "2026-11-20 10:21:23"
+   "time": "2026-11-27 15:06:32"
   },
   "truyen vua Le Thai To digcoll_10996|138|3": {
-   "side": "KEEP",
-   "nom": "揲",
+   "side": "NOM",
+   "nom": "擛",
    "qn": "dịp",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "揲",
    "orig_qn": "dịp",
-   "time": "2026-11-20 10:21:52"
+   "time": "2026-11-27 15:06:35"
   },
   "truyen vua Le Thai To digcoll_10996|143|7": {
-   "side": "KEEP",
-   "nom": "壬",
+   "side": "NOM",
+   "nom": "王",
    "qn": "vương",
-   "rank": 3,
+   "rank": 1,
    "orig_nom": "壬",
    "orig_qn": "vương",
-   "time": "2026-11-20 10:22:10"
+   "time": "2026-11-27 15:06:44"
   },
   "truyen vua Le Thai To digcoll_10996|147|2": {
-   "side": "KEEP",
-   "nom": "连",
+   "side": "NOM",
+   "nom": "連",
    "qn": "liền",
    "rank": 2,
    "orig_nom": "连",
    "orig_qn": "liền",
-   "time": "2026-11-20 10:22:19"
+   "time": "2026-11-27 15:07:01"
   },
   "truyen vua Le Thai To digcoll_10996|151|2": {
    "side": "QN",
@@ -488,13 +542,13 @@
    "time": "2026-11-20 10:22:57"
   },
   "truyen vua Le Thai To digcoll_10996|155|2": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𨁮",
-   "qn": "lẫn",
-   "rank": 6,
+   "qn": "lần",
+   "rank": 3,
    "orig_nom": "𨁮",
    "orig_qn": "lẫn",
-   "time": "2026-11-20 10:23:36"
+   "time": "2026-11-27 15:07:10"
   },
   "truyen vua Le Thai To digcoll_10996|159|3": {
    "side": "QN",
@@ -522,15 +576,6 @@
    "orig_nom": "敵",
    "orig_qn": "dịch",
    "time": "2026-11-20 10:24:24"
-  },
-  "truyen vua Le Thai To digcoll_10996|161|4": {
-   "side": "KEEP",
-   "nom": "蟳",
-   "qn": "tìm",
-   "rank": 3,
-   "orig_nom": "蟳",
-   "orig_qn": "tìm",
-   "time": "2026-11-20 10:24:34"
   },
   "truyen vua Le Thai To digcoll_10996|163|5": {
    "side": "QN",
@@ -605,22 +650,22 @@
    "time": "2026-11-20 10:26:13"
   },
   "truyen vua Le Thai To digcoll_10996|186|3": {
-   "side": "KEEP",
-   "nom": "楪",
+   "side": "NOM",
+   "nom": "𣜿",
    "qn": "dịp",
-   "rank": 3,
+   "rank": 1,
    "orig_nom": "楪",
    "orig_qn": "dịp",
-   "time": "2026-11-20 10:26:36"
+   "time": "2026-11-27 15:08:49"
   },
   "truyen vua Le Thai To digcoll_10996|186|5": {
-   "side": "KEEP",
-   "nom": "愷",
+   "side": "NOM",
+   "nom": "𢯕",
    "qn": "ngơi",
-   "rank": 1,
+   "rank": 6,
    "orig_nom": "愷",
    "orig_qn": "ngơi",
-   "time": "2026-11-20 10:26:39"
+   "time": "2026-11-27 15:09:06"
   },
   "truyen vua Le Thai To digcoll_10996|191|0": {
    "side": "QN",
@@ -650,13 +695,13 @@
    "time": "2026-11-20 10:26:59"
   },
   "truyen vua Le Thai To digcoll_10996|197|0": {
-   "side": "KEEP",
-   "nom": "𤂬",
+   "side": "NOM",
+   "nom": "𦇒",
    "qn": "lỗi",
-   "rank": 3,
+   "rank": 4,
    "orig_nom": "𤂬",
    "orig_qn": "lỗi",
-   "time": "2026-11-20 10:27:10"
+   "time": "2026-11-27 15:10:05"
   },
   "truyen vua Le Thai To digcoll_10996|198|1": {
    "side": "QN",
@@ -668,13 +713,13 @@
    "time": "2026-11-20 10:27:24"
   },
   "truyen vua Le Thai To digcoll_10996|207|2": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 10:28:06"
+   "time": "2026-11-27 15:10:58"
   },
   "truyen vua Le Thai To digcoll_10996|212|1": {
    "side": "QN",
@@ -704,13 +749,13 @@
    "time": "2026-11-20 10:29:05"
   },
   "truyen vua Le Thai To digcoll_10996|215|3": {
-   "side": "KEEP",
-   "nom": "磈",
+   "side": "NOM",
+   "nom": "瑰",
    "qn": "khối",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "磈",
    "orig_qn": "khối",
-   "time": "2026-11-20 10:29:23"
+   "time": "2026-11-27 15:11:45"
   },
   "truyen vua Le Thai To digcoll_10996|215|6": {
    "side": "KEEP",
@@ -722,13 +767,13 @@
    "time": "2026-11-20 10:29:26"
   },
   "truyen vua Le Thai To digcoll_10996|216|3": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 10:29:36"
+   "time": "2026-11-27 15:12:21"
   },
   "truyen vua Le Thai To digcoll_10996|216|4": {
    "side": "QN",
@@ -767,13 +812,13 @@
    "time": "2026-11-20 10:30:08"
   },
   "truyen vua Le Thai To digcoll_10996|224|3": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 10:30:14"
+   "time": "2026-11-27 15:13:08"
   },
   "truyen vua Le Thai To digcoll_10996|230|5": {
    "side": "KEEP",
@@ -803,13 +848,13 @@
    "time": "2026-11-20 10:30:47"
   },
   "truyen vua Le Thai To digcoll_10996|237|3": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 3,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 10:30:56"
+   "time": "2026-11-27 15:13:52"
   },
   "truyen vua Le Thai To digcoll_10996|237|4": {
    "side": "QN",
@@ -884,13 +929,13 @@
    "time": "2026-11-20 10:32:03"
   },
   "truyen vua Le Thai To digcoll_10996|268|4": {
-   "side": "KEEP",
-   "nom": "媄",
+   "side": "NOM",
+   "nom": "𢱖",
    "qn": "mở",
-   "rank": 1,
+   "rank": 24,
    "orig_nom": "媄",
    "orig_qn": "mở",
-   "time": "2026-11-20 10:32:11"
+   "time": "2026-11-27 15:15:38"
   },
   "truyen vua Le Thai To digcoll_10996|275|6": {
    "side": "QN",
@@ -902,40 +947,40 @@
    "time": "2026-11-20 10:32:20"
   },
   "truyen vua Le Thai To digcoll_10996|283|3": {
-   "side": "KEEP",
-   "nom": "迾",
+   "side": "NOM",
+   "nom": "列",
    "qn": "lượt",
-   "rank": 1,
+   "rank": 3,
    "orig_nom": "迾",
    "orig_qn": "lượt",
-   "time": "2026-11-20 10:32:29"
+   "time": "2026-11-27 15:15:55"
   },
   "truyen vua Le Thai To digcoll_10996|292|1": {
-   "side": "KEEP",
-   "nom": "输",
+   "side": "NOM",
+   "nom": "輸",
    "qn": "thua",
-   "rank": 3,
+   "rank": 1,
    "orig_nom": "输",
    "orig_qn": "thua",
-   "time": "2026-11-20 10:32:42"
+   "time": "2026-11-27 15:16:31"
   },
   "truyen vua Le Thai To digcoll_10996|296|3": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 10:32:46"
+   "time": "2026-11-27 15:16:52"
   },
   "truyen vua Le Thai To digcoll_10996|299|1": {
-   "side": "KEEP",
-   "nom": "倫",
+   "side": "NOM",
+   "nom": "掄",
    "qn": "luôn",
-   "rank": 5,
+   "rank": 1,
    "orig_nom": "倫",
    "orig_qn": "luôn",
-   "time": "2026-11-20 10:32:59"
+   "time": "2026-11-27 15:16:59"
   },
   "truyen vua Le Thai To digcoll_10996|300|1": {
    "side": "NOM",
@@ -1115,7 +1160,7 @@
    "rank": 1,
    "orig_nom": "输",
    "orig_qn": "thua",
-   "time": "2026-11-20 10:38:44"
+   "time": "2026-11-27 15:21:11"
   },
   "truyen vua Le Thai To digcoll_10996|331|0": {
    "side": "QN",
@@ -1199,13 +1244,13 @@
    "time": "2026-11-20 10:39:40"
   },
   "truyen vua Le Thai To digcoll_10996|345|3": {
-   "side": "KEEP",
-   "nom": "𤂬",
+   "side": "NOM",
+   "nom": "𦇒",
    "qn": "lỗi",
-   "rank": 3,
+   "rank": 4,
    "orig_nom": "𤂬",
    "orig_qn": "lỗi",
-   "time": "2026-11-20 10:39:54"
+   "time": "2026-11-27 15:24:28"
   },
   "truyen vua Le Thai To digcoll_10996|347|4": {
    "side": "QN",
@@ -1217,22 +1262,13 @@
    "time": "2026-11-20 10:40:06"
   },
   "truyen vua Le Thai To digcoll_10996|357|3": {
-   "side": "KEEP",
-   "nom": "啫",
+   "side": "NOM",
+   "nom": "著",
    "qn": "giữ",
-   "rank": 2,
+   "rank": 5,
    "orig_nom": "啫",
    "orig_qn": "giữ",
-   "time": "2026-11-20 10:40:18"
-  },
-  "truyen vua Le Thai To digcoll_10996|358|3": {
-   "side": "NOM",
-   "nom": "鎮",
-   "qn": "giấn",
-   "rank": 1,
-   "orig_nom": "鎭",
-   "orig_qn": "giấn",
-   "time": "2026-11-20 10:40:48"
+   "time": "2026-11-27 15:25:56"
   },
   "truyen vua Le Thai To digcoll_10996|363|4": {
    "side": "QN",
@@ -1244,22 +1280,22 @@
    "time": "2026-11-20 10:40:56"
   },
   "truyen vua Le Thai To digcoll_10996|365|4": {
-   "side": "KEEP",
-   "nom": "产",
+   "side": "NOM",
+   "nom": "産",
    "qn": "sẵn",
-   "rank": 1,
+   "rank": 3,
    "orig_nom": "产",
    "orig_qn": "sẵn",
-   "time": "2026-11-20 10:41:04"
+   "time": "2026-11-27 15:26:08"
   },
   "truyen vua Le Thai To digcoll_10996|368|3": {
-   "side": "KEEP",
-   "nom": "啫",
+   "side": "NOM",
+   "nom": "著",
    "qn": "giữ",
-   "rank": 1,
+   "rank": 6,
    "orig_nom": "啫",
    "orig_qn": "giữ",
-   "time": "2026-11-20 10:41:16"
+   "time": "2026-11-27 15:27:24"
   },
   "truyen vua Le Thai To digcoll_10996|370|2": {
    "side": "QN",
@@ -1271,13 +1307,13 @@
    "time": "2026-11-20 10:54:15"
   },
   "truyen vua Le Thai To digcoll_10996|379|1": {
-   "side": "KEEP",
-   "nom": "崒",
+   "side": "NOM",
+   "nom": "萃",
    "qn": "thuý",
-   "rank": 1,
+   "rank": 5,
    "orig_nom": "崒",
    "orig_qn": "thuý",
-   "time": "2026-11-20 10:54:26"
+   "time": "2026-11-27 15:27:59"
   },
   "truyen vua Le Thai To digcoll_10996|386|0": {
    "side": "QN",
@@ -1298,22 +1334,22 @@
    "time": "2026-11-20 10:55:33"
   },
   "truyen vua Le Thai To digcoll_10996|388|5": {
-   "side": "KEEP",
-   "nom": "莲",
+   "side": "NOM",
+   "nom": "𨖲",
    "qn": "lên",
-   "rank": 3,
+   "rank": 1,
    "orig_nom": "莲",
    "orig_qn": "lên",
-   "time": "2026-11-20 10:55:48"
+   "time": "2026-11-27 15:28:18"
   },
   "truyen vua Le Thai To digcoll_10996|400|2": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 10:55:53"
+   "time": "2026-11-27 15:29:02"
   },
   "truyen vua Le Thai To digcoll_10996|402|4": {
    "side": "KEEP",
@@ -1334,22 +1370,22 @@
    "time": "2026-11-20 10:56:18"
   },
   "truyen vua Le Thai To digcoll_10996|406|7": {
-   "side": "KEEP",
-   "nom": "连",
+   "side": "NOM",
+   "nom": "連",
    "qn": "liền",
    "rank": 2,
    "orig_nom": "连",
    "orig_qn": "liền",
-   "time": "2026-11-20 10:56:31"
+   "time": "2026-11-27 15:29:49"
   },
   "truyen vua Le Thai To digcoll_10996|407|0": {
-   "side": "KEEP",
-   "nom": "𤂬",
+   "side": "NOM",
+   "nom": "𦇒",
    "qn": "lỗi",
-   "rank": 3,
+   "rank": 4,
    "orig_nom": "𤂬",
    "orig_qn": "lỗi",
-   "time": "2026-11-20 10:56:41"
+   "time": "2026-11-27 15:30:00"
   },
   "truyen vua Le Thai To digcoll_10996|412|2": {
    "side": "QN",
@@ -1379,13 +1415,13 @@
    "time": "2026-11-20 10:57:13"
   },
   "truyen vua Le Thai To digcoll_10996|431|1": {
-   "side": "KEEP",
-   "nom": "暠",
+   "side": "NOM",
+   "nom": "高",
    "qn": "cao",
-   "rank": 1,
+   "rank": 4,
    "orig_nom": "暠",
    "orig_qn": "cao",
-   "time": "2026-11-20 10:57:23"
+   "time": "2026-11-27 15:31:36"
   },
   "truyen vua Le Thai To digcoll_10996|438|4": {
    "side": "QN",
@@ -1550,13 +1586,13 @@
    "time": "2026-11-20 11:00:21"
   },
   "truyen vua Le Thai To digcoll_10996|487|5": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "彊",
-   "qn": "cứng",
+   "qn": "cường",
    "rank": 2,
    "orig_nom": "彊",
    "orig_qn": "cứng",
-   "time": "2026-11-20 11:00:36"
+   "time": "2026-11-27 15:34:49"
   },
   "truyen vua Le Thai To digcoll_10996|489|1": {
    "side": "QN",
@@ -1568,13 +1604,13 @@
    "time": "2026-11-20 11:00:46"
   },
   "truyen vua Le Thai To digcoll_10996|489|3": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 11:00:53"
+   "time": "2026-11-27 15:34:52"
   },
   "truyen vua Le Thai To digcoll_10996|490|0": {
    "side": "QN",
@@ -1640,13 +1676,13 @@
    "time": "2026-11-20 11:02:15"
   },
   "truyen vua Le Thai To digcoll_10996|512|6": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 11:02:24"
+   "time": "2026-11-27 15:38:12"
   },
   "truyen vua Le Thai To digcoll_10996|515|4": {
    "side": "QN",
@@ -1657,23 +1693,14 @@
    "orig_qn": "tữ",
    "time": "2026-11-20 11:02:31"
   },
-  "truyen vua Le Thai To digcoll_10996|517|1": {
-   "side": "KEEP",
-   "nom": "閍",
-   "qn": "nhàn",
-   "rank": 2,
-   "orig_nom": "閍",
-   "orig_qn": "nhàn",
-   "time": "2026-11-20 11:02:43"
-  },
   "truyen vua Le Thai To digcoll_10996|521|3": {
-   "side": "KEEP",
-   "nom": "塁",
+   "side": "NOM",
+   "nom": "壘",
    "qn": "luỹ",
    "rank": 2,
    "orig_nom": "塁",
    "orig_qn": "luỹ",
-   "time": "2026-11-20 11:03:00"
+   "time": "2026-11-27 15:39:03"
   },
   "truyen vua Le Thai To digcoll_10996|525|4": {
    "side": "QN",
@@ -1685,31 +1712,31 @@
    "time": "2026-11-20 11:03:11"
   },
   "truyen vua Le Thai To digcoll_10996|526|0": {
-   "side": "KEEP",
-   "nom": "被",
+   "side": "NOM",
+   "nom": "𣃣",
    "qn": "vừa",
-   "rank": 1,
+   "rank": 2,
    "orig_nom": "被",
    "orig_qn": "vừa",
-   "time": "2026-11-20 11:03:19"
+   "time": "2026-11-27 15:39:14"
   },
   "truyen vua Le Thai To digcoll_10996|528|7": {
-   "side": "KEEP",
-   "nom": "连",
+   "side": "NOM",
+   "nom": "連",
    "qn": "liền",
    "rank": 2,
    "orig_nom": "连",
    "orig_qn": "liền",
-   "time": "2026-11-20 11:03:30"
+   "time": "2026-11-27 15:40:33"
   },
   "truyen vua Le Thai To digcoll_10996|530|2": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 11:03:33"
+   "time": "2026-11-27 15:40:36"
   },
   "truyen vua Le Thai To digcoll_10996|532|0": {
    "side": "QN",
@@ -1721,22 +1748,22 @@
    "time": "2026-11-20 11:03:40"
   },
   "truyen vua Le Thai To digcoll_10996|534|7": {
-   "side": "KEEP",
-   "nom": "撝",
+   "side": "NOM",
+   "nom": "蟡",
    "qn": "vờ",
-   "rank": 8,
+   "rank": 6,
    "orig_nom": "撝",
    "orig_qn": "vờ",
-   "time": "2026-11-20 11:03:52"
+   "time": "2026-11-27 15:41:22"
   },
   "truyen vua Le Thai To digcoll_10996|537|5": {
-   "side": "KEEP",
-   "nom": "连",
+   "side": "NOM",
+   "nom": "連",
    "qn": "liền",
    "rank": 2,
    "orig_nom": "连",
    "orig_qn": "liền",
-   "time": "2026-11-20 11:04:02"
+   "time": "2026-11-27 15:42:16"
   },
   "truyen vua Le Thai To digcoll_10996|540|5": {
    "side": "QN",
@@ -1774,15 +1801,6 @@
    "orig_qn": "rồi",
    "time": "2026-11-20 11:04:51"
   },
-  "truyen vua Le Thai To digcoll_10996|545|3": {
-   "side": "NOM",
-   "nom": "鎮",
-   "qn": "giấn",
-   "rank": 1,
-   "orig_nom": "鎭",
-   "orig_qn": "giấn",
-   "time": "2026-11-20 11:05:03"
-  },
   "truyen vua Le Thai To digcoll_10996|548|4": {
    "side": "QN",
    "nom": "催",
@@ -1793,13 +1811,13 @@
    "time": "2026-11-20 11:05:18"
   },
   "truyen vua Le Thai To digcoll_10996|564|1": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "桃",
-   "qn": "đáo",
-   "rank": 2,
+   "qn": "đào",
+   "rank": 1,
    "orig_nom": "桃",
    "orig_qn": "đáo",
-   "time": "2026-11-20 11:05:31"
+   "time": "2026-11-27 15:45:30"
   },
   "truyen vua Le Thai To digcoll_10996|566|7": {
    "side": "QN",
@@ -1818,15 +1836,6 @@
    "orig_nom": "芹",
    "orig_qn": "cẵn",
    "time": "2026-11-20 11:05:39"
-  },
-  "truyen vua Le Thai To digcoll_10996|572|4": {
-   "side": "KEEP",
-   "nom": "細",
-   "qn": "tóe",
-   "rank": 2,
-   "orig_nom": "細",
-   "orig_qn": "tóe",
-   "time": "2026-11-20 11:05:53"
   },
   "truyen vua Le Thai To digcoll_10996|573|0": {
    "side": "NOM",
@@ -1856,13 +1865,13 @@
    "time": "2026-11-20 11:06:16"
   },
   "truyen vua Le Thai To digcoll_10996|577|2": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𥊛",
-   "qn": "trong",
-   "rank": 2,
+   "qn": "trông",
+   "rank": 1,
    "orig_nom": "𥊛",
    "orig_qn": "trong",
-   "time": "2026-11-20 11:06:27"
+   "time": "2026-11-27 15:46:25"
   },
   "truyen vua Le Thai To digcoll_10996|579|5": {
    "side": "KEEP",
@@ -1874,13 +1883,13 @@
    "time": "2026-11-20 11:06:39"
   },
   "truyen vua Le Thai To digcoll_10996|580|6": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 11:06:45"
+   "time": "2026-11-27 15:46:44"
   },
   "truyen vua Le Thai To digcoll_10996|584|7": {
    "side": "QN",
@@ -1982,13 +1991,13 @@
    "time": "2026-11-20 11:14:39"
   },
   "truyen vua Le Thai To digcoll_10996|611|3": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "廌",
-   "qn": "chãi",
-   "rank": 3,
+   "qn": "chải",
+   "rank": 1,
    "orig_nom": "廌",
    "orig_qn": "chãi",
-   "time": "2026-11-20 11:14:52"
+   "time": "2026-11-27 15:49:24"
   },
   "truyen vua Le Thai To digcoll_10996|620|0": {
    "side": "QN",
@@ -2018,13 +2027,13 @@
    "time": "2026-11-20 11:15:24"
   },
   "truyen vua Le Thai To digcoll_10996|626|6": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 11:15:31"
+   "time": "2026-11-27 15:49:32"
   },
   "truyen vua Le Thai To digcoll_10996|631|4": {
    "side": "QN",
@@ -2034,15 +2043,6 @@
    "orig_nom": "徐",
    "orig_qn": "tự",
    "time": "2026-11-20 11:15:39"
-  },
-  "truyen vua Le Thai To digcoll_10996|632|1": {
-   "side": "KEEP",
-   "nom": "𤉜",
-   "qn": "dàng",
-   "rank": 3,
-   "orig_nom": "𤉜",
-   "orig_qn": "dàng",
-   "time": "2026-11-20 11:15:59"
   },
   "truyen vua Le Thai To digcoll_10996|632|3": {
    "side": "QN",
@@ -2054,13 +2054,13 @@
    "time": "2026-11-20 11:16:02"
   },
   "truyen vua Le Thai To digcoll_10996|632|6": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 11:16:05"
+   "time": "2026-11-27 15:49:44"
   },
   "truyen vua Le Thai To digcoll_10996|639|5": {
    "side": "QN",
@@ -2081,31 +2081,31 @@
    "time": "2026-11-20 11:16:20"
   },
   "truyen vua Le Thai To digcoll_10996|641|1": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𡗶",
-   "qn": "giới",
-   "rank": 3,
+   "qn": "trời",
+   "rank": 25,
    "orig_nom": "𡗶",
    "orig_qn": "giới",
-   "time": "2026-11-20 11:16:38"
+   "time": "2026-11-27 15:51:09"
   },
   "truyen vua Le Thai To digcoll_10996|643|0": {
-   "side": "KEEP",
-   "nom": "倫",
-   "qn": "luôn",
-   "rank": 6,
-   "orig_nom": "倫",
-   "orig_qn": "luôn",
-   "time": "2026-11-20 11:16:48"
-  },
-  "truyen vua Le Thai To digcoll_10996|643|1": {
-   "side": "KEEP",
-   "nom": "倫",
+   "side": "NOM",
+   "nom": "掄",
    "qn": "luôn",
    "rank": 3,
    "orig_nom": "倫",
    "orig_qn": "luôn",
-   "time": "2026-11-20 11:16:50"
+   "time": "2026-11-27 15:52:09"
+  },
+  "truyen vua Le Thai To digcoll_10996|643|1": {
+   "side": "NOM",
+   "nom": "掄",
+   "qn": "luôn",
+   "rank": 5,
+   "orig_nom": "倫",
+   "orig_qn": "luôn",
+   "time": "2026-11-27 15:52:12"
   },
   "truyen vua Le Thai To digcoll_10996|644|6": {
    "side": "QN",
@@ -2135,13 +2135,13 @@
    "time": "2026-11-20 11:17:45"
   },
   "truyen vua Le Thai To digcoll_10996|649|3": {
-   "side": "KEEP",
-   "nom": "謀",
+   "side": "NOM",
+   "nom": "𨪀",
    "qn": "mỏ",
-   "rank": 3,
+   "rank": 1,
    "orig_nom": "謀",
    "orig_qn": "mỏ",
-   "time": "2026-11-20 11:18:08"
+   "time": "2026-11-27 15:53:10"
   },
   "truyen vua Le Thai To digcoll_10996|651|3": {
    "side": "KEEP",
@@ -2189,13 +2189,13 @@
    "time": "2026-11-20 11:19:19"
   },
   "truyen vua Le Thai To digcoll_10996|666|5": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "頺",
-   "qn": "đời",
-   "rank": 3,
+   "qn": "đồi",
+   "rank": 2,
    "orig_nom": "頺",
    "orig_qn": "đời",
-   "time": "2026-11-20 11:19:27"
+   "time": "2026-11-27 15:57:14"
   },
   "truyen vua Le Thai To digcoll_10996|668|0": {
    "side": "QN",
@@ -2234,13 +2234,13 @@
    "time": "2026-11-20 11:19:54"
   },
   "truyen vua Le Thai To digcoll_10996|673|3": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 11:20:01"
+   "time": "2026-11-27 15:57:58"
   },
   "truyen vua Le Thai To digcoll_10996|675|0": {
    "side": "QN",
@@ -2261,13 +2261,13 @@
    "time": "2026-11-20 11:20:12"
   },
   "truyen vua Le Thai To digcoll_10996|679|5": {
-   "side": "KEEP",
-   "nom": "𢲗",
+   "side": "NOM",
+   "nom": "標",
    "qn": "xiêu",
-   "rank": 2,
+   "rank": 5,
    "orig_nom": "𢲗",
    "orig_qn": "xiêu",
-   "time": "2026-11-20 11:23:18"
+   "time": "2026-11-27 15:58:39"
   },
   "truyen vua Le Thai To digcoll_10996|685|2": {
    "side": "KEEP",
@@ -2315,13 +2315,13 @@
    "time": "2026-11-20 11:28:10"
   },
   "truyen vua Le Thai To digcoll_10996|703|4": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 11:28:15"
+   "time": "2026-11-27 16:00:57"
   },
   "truyen vua Le Thai To digcoll_10996|708|5": {
    "side": "KEEP",
@@ -2441,13 +2441,13 @@
    "time": "2026-11-20 11:29:54"
   },
   "truyen vua Le Thai To digcoll_10996|733|3": {
-   "side": "KEEP",
-   "nom": "祸",
+   "side": "NOM",
+   "nom": "禍",
    "qn": "vạ",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "祸",
    "orig_qn": "vạ",
-   "time": "2026-11-20 11:30:05"
+   "time": "2026-11-27 16:07:22"
   },
   "truyen vua Le Thai To digcoll_10996|735|2": {
    "side": "QN",
@@ -2486,22 +2486,22 @@
    "time": "2026-11-20 11:30:35"
   },
   "truyen vua Le Thai To digcoll_10996|739|0": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𢆥",
-   "qn": "nam",
-   "rank": 3,
+   "qn": "năm",
+   "rank": 1,
    "orig_nom": "𢆥",
    "orig_qn": "nam",
-   "time": "2026-11-20 11:30:43"
+   "time": "2026-11-27 16:07:45"
   },
   "truyen vua Le Thai To digcoll_10996|742|4": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "穷",
-   "qn": "cũng",
-   "rank": 2,
+   "qn": "cùng",
+   "rank": 1,
    "orig_nom": "穷",
    "orig_qn": "cũng",
-   "time": "2026-11-20 11:30:54"
+   "time": "2026-11-27 16:08:24"
   },
   "truyen vua Le Thai To digcoll_10996|743|4": {
    "side": "KEEP",
@@ -2513,13 +2513,13 @@
    "time": "2026-11-20 11:31:04"
   },
   "truyen vua Le Thai To digcoll_10996|746|3": {
-   "side": "KEEP",
-   "nom": "啫",
+   "side": "NOM",
+   "nom": "渚",
    "qn": "giữ",
-   "rank": 2,
+   "rank": 19,
    "orig_nom": "啫",
    "orig_qn": "giữ",
-   "time": "2026-11-20 11:31:20"
+   "time": "2026-11-27 16:09:14"
   },
   "truyen vua Le Thai To digcoll_10996|765|2": {
    "side": "KEEP",
@@ -2576,13 +2576,13 @@
    "time": "2026-11-20 11:31:56"
   },
   "truyen vua Le Thai To digcoll_10996|776|7": {
-   "side": "KEEP",
-   "nom": "倫",
+   "side": "NOM",
+   "nom": "掄",
    "qn": "luôn",
-   "rank": 4,
+   "rank": 5,
    "orig_nom": "倫",
    "orig_qn": "luôn",
-   "time": "2026-11-20 11:32:03"
+   "time": "2026-11-27 16:13:01"
   },
   "truyen vua Le Thai To digcoll_10996|778|6": {
    "side": "QN",
@@ -2657,22 +2657,22 @@
    "time": "2026-11-20 11:32:54"
   },
   "truyen vua Le Thai To digcoll_10996|795|4": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "𧼌",
-   "qn": "chậy",
-   "rank": 2,
+   "qn": "chạy",
+   "rank": 1,
    "orig_nom": "𧼌",
    "orig_qn": "chậy",
-   "time": "2026-11-20 11:33:03"
+   "time": "2026-11-27 16:14:25"
   },
   "truyen vua Le Thai To digcoll_10996|796|2": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "和",
-   "qn": "hoa",
-   "rank": 6,
+   "qn": "hòa",
+   "rank": 1,
    "orig_nom": "和",
    "orig_qn": "hoa",
-   "time": "2026-11-20 11:33:44"
+   "time": "2026-11-27 16:14:38"
   },
   "truyen vua Le Thai To digcoll_10996|796|4": {
    "side": "QN",
@@ -2684,31 +2684,31 @@
    "time": "2026-11-20 11:33:46"
   },
   "truyen vua Le Thai To digcoll_10996|798|1": {
-   "side": "KEEP",
-   "nom": "谊",
+   "side": "NOM",
+   "nom": "誼",
    "qn": "ngợi",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "谊",
    "orig_qn": "ngợi",
-   "time": "2026-11-20 11:33:55"
+   "time": "2026-11-27 16:14:47"
   },
   "truyen vua Le Thai To digcoll_10996|798|3": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 11:34:01"
+   "time": "2026-11-27 16:14:43"
   },
   "truyen vua Le Thai To digcoll_10996|804|3": {
-   "side": "KEEP",
-   "nom": "皃",
+   "side": "NOM",
+   "nom": "兎",
    "qn": "thỏ",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "皃",
    "orig_qn": "thỏ",
-   "time": "2026-11-20 11:34:18"
+   "time": "2026-11-27 16:15:12"
   },
   "truyen vua Le Thai To digcoll_10996|804|4": {
    "side": "QN",
@@ -2738,13 +2738,13 @@
    "time": "2026-11-20 11:34:40"
   },
   "truyen vua Le Thai To digcoll_10996|813|0": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 11:34:45"
+   "time": "2026-11-27 16:16:34"
   },
   "truyen vua Le Thai To digcoll_10996|819|4": {
    "side": "QN",
@@ -2873,13 +2873,13 @@
    "time": "2026-11-20 11:36:25"
   },
   "truyen vua Le Thai To digcoll_10996|826|6": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 11:36:29"
+   "time": "2026-11-27 16:16:51"
   },
   "truyen vua Le Thai To digcoll_10996|827|4": {
    "side": "QN",
@@ -2918,13 +2918,13 @@
    "time": "2026-11-20 11:36:57"
   },
   "truyen vua Le Thai To digcoll_10996|834|4": {
-   "side": "KEEP",
-   "nom": "产",
+   "side": "NOM",
+   "nom": "産",
    "qn": "sẵn",
    "rank": 2,
    "orig_nom": "产",
    "orig_qn": "sẵn",
-   "time": "2026-11-20 11:37:11"
+   "time": "2026-11-27 16:17:25"
   },
   "truyen vua Le Thai To digcoll_10996|836|0": {
    "side": "QN",
@@ -2936,13 +2936,13 @@
    "time": "2026-11-20 11:37:18"
   },
   "truyen vua Le Thai To digcoll_10996|848|0": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "廌",
-   "qn": "chai",
-   "rank": 3,
+   "qn": "chải",
+   "rank": 1,
    "orig_nom": "廌",
    "orig_qn": "chai",
-   "time": "2026-11-20 11:37:27"
+   "time": "2026-11-27 16:17:36"
   },
   "truyen vua Le Thai To digcoll_10996|851|4": {
    "side": "NOM",
@@ -2971,41 +2971,23 @@
    "orig_qn": "quán",
    "time": "2026-11-20 11:37:45"
   },
-  "truyen vua Le Thai To digcoll_10996|858|7": {
-   "side": "KEEP",
-   "nom": "𤉜",
-   "qn": "dàng",
-   "rank": 3,
-   "orig_nom": "𤉜",
-   "orig_qn": "dàng",
-   "time": "2026-11-20 11:37:50"
-  },
-  "truyen vua Le Thai To digcoll_10996|868|7": {
-   "side": "KEEP",
-   "nom": "呡",
-   "qn": "dăn",
-   "rank": 2,
-   "orig_nom": "呡",
-   "orig_qn": "dăn",
-   "time": "2026-11-20 11:37:56"
-  },
   "truyen vua Le Thai To digcoll_10996|870|6": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "擴",
-   "qn": "khuyếch",
-   "rank": 2,
+   "qn": "khuếch",
+   "rank": 1,
    "orig_nom": "擴",
    "orig_qn": "khuyếch",
-   "time": "2026-11-20 11:38:05"
+   "time": "2026-11-27 16:17:46"
   },
   "truyen vua Le Thai To digcoll_10996|872|6": {
-   "side": "KEEP",
-   "nom": "媄",
+   "side": "NOM",
+   "nom": "𢱖",
    "qn": "mở",
-   "rank": 1,
+   "rank": 25,
    "orig_nom": "媄",
    "orig_qn": "mở",
-   "time": "2026-11-20 11:38:11"
+   "time": "2026-11-27 16:18:13"
   },
   "truyen vua Le Thai To digcoll_10996|873|1": {
    "side": "QN",
@@ -3026,13 +3008,13 @@
    "time": "2026-11-20 11:38:22"
   },
   "truyen vua Le Thai To digcoll_10996|890|3": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 11:38:32"
+   "time": "2026-11-27 16:19:14"
   },
   "truyen vua Le Thai To digcoll_10996|890|2": {
    "side": "QN",
@@ -3053,13 +3035,13 @@
    "time": "2026-11-20 11:38:39"
   },
   "truyen vua Le Thai To digcoll_10996|892|3": {
-   "side": "KEEP",
-   "nom": "贼",
+   "side": "NOM",
+   "nom": "賊",
    "qn": "giặc",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "贼",
    "orig_qn": "giặc",
-   "time": "2026-11-20 11:38:42"
+   "time": "2026-11-27 16:19:39"
   },
   "truyen vua Le Thai To digcoll_10996|896|0": {
    "side": "QN",
@@ -3080,13 +3062,13 @@
    "time": "2026-11-20 11:39:00"
   },
   "truyen vua Le Thai To digcoll_10996|911|1": {
-   "side": "KEEP",
-   "nom": "閍",
+   "side": "NOM",
+   "nom": "閒",
    "qn": "nhàn",
    "rank": 2,
    "orig_nom": "閍",
    "orig_qn": "nhàn",
-   "time": "2026-11-20 11:39:13"
+   "time": "2026-11-27 16:22:47"
   },
   "truyen vua Le Thai To digcoll_10996|912|3": {
    "side": "QN",
@@ -3098,22 +3080,22 @@
    "time": "2026-11-20 11:39:26"
   },
   "truyen vua Le Thai To digcoll_10996|920|1": {
-   "side": "KEEP",
-   "nom": "𢲠",
+   "side": "NOM",
+   "nom": "𨄁",
    "qn": "đâm",
-   "rank": 3,
+   "rank": 1,
    "orig_nom": "𢲠",
    "orig_qn": "đâm",
-   "time": "2026-11-20 11:39:45"
+   "time": "2026-11-27 16:23:48"
   },
   "truyen vua Le Thai To digcoll_10996|920|6": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 11:39:48"
+   "time": "2026-11-27 16:23:51"
   },
   "truyen vua Le Thai To digcoll_10996|921|0": {
    "side": "QN",
@@ -3143,13 +3125,13 @@
    "time": "2026-11-20 11:40:00"
   },
   "truyen vua Le Thai To digcoll_10996|932|6": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "唯",
-   "qn": "nối",
-   "rank": 1,
+   "qn": "dõi",
+   "rank": 18,
    "orig_nom": "唯",
    "orig_qn": "nối",
-   "time": "2026-11-20 11:40:10"
+   "time": "2026-11-27 16:25:22"
   },
   "truyen vua Le Thai To digcoll_10996|939|3": {
    "side": "NOM",
@@ -3170,13 +3152,13 @@
    "time": "2026-11-20 11:41:07"
   },
   "truyen vua Le Thai To digcoll_10996|949|4": {
-   "side": "KEEP",
-   "nom": "连",
+   "side": "NOM",
+   "nom": "連",
    "qn": "liền",
    "rank": 2,
    "orig_nom": "连",
    "orig_qn": "liền",
-   "time": "2026-11-20 11:41:18"
+   "time": "2026-11-27 16:26:49"
   },
   "truyen vua Le Thai To digcoll_10996|950|3": {
    "side": "QN",
@@ -3188,13 +3170,13 @@
    "time": "2026-11-20 11:41:24"
   },
   "truyen vua Le Thai To digcoll_10996|950|5": {
-   "side": "KEEP",
-   "nom": "啝",
+   "side": "NOM",
+   "nom": "和",
    "qn": "hùa",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "啝",
    "orig_qn": "hùa",
-   "time": "2026-11-20 11:41:33"
+   "time": "2026-11-27 16:27:02"
   },
   "truyen vua Le Thai To digcoll_10996|954|4": {
    "side": "QN",
@@ -3206,22 +3188,22 @@
    "time": "2026-11-20 11:41:39"
   },
   "truyen vua Le Thai To digcoll_10996|955|0": {
-   "side": "KEEP",
-   "nom": "馁",
+   "side": "NOM",
+   "nom": "浽",
    "qn": "nuôi",
-   "rank": 3,
+   "rank": 1,
    "orig_nom": "馁",
    "orig_qn": "nuôi",
-   "time": "2026-11-20 11:42:01"
+   "time": "2026-11-27 16:27:36"
   },
   "truyen vua Le Thai To digcoll_10996|957|3": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "廌",
-   "qn": "chãi",
-   "rank": 3,
+   "qn": "chải",
+   "rank": 2,
    "orig_nom": "廌",
    "orig_qn": "chãi",
-   "time": "2026-11-20 11:42:07"
+   "time": "2026-11-27 16:27:40"
   },
   "truyen vua Le Thai To digcoll_10996|958|0": {
    "side": "QN",
@@ -3278,13 +3260,13 @@
    "time": "2026-11-20 11:43:23"
   },
   "truyen vua Le Thai To digcoll_10996|971|6": {
-   "side": "KEEP",
-   "nom": "挂",
+   "side": "NOM",
+   "nom": "掛",
    "qn": "quấy",
    "rank": 4,
    "orig_nom": "挂",
    "orig_qn": "quấy",
-   "time": "2026-11-20 11:43:36"
+   "time": "2026-11-27 16:29:22"
   },
   "truyen vua Le Thai To digcoll_10996|973|1": {
    "side": "KEEP",
@@ -3296,13 +3278,13 @@
    "time": "2026-11-20 11:43:49"
   },
   "truyen vua Le Thai To digcoll_10996|973|6": {
-   "side": "KEEP",
-   "nom": "磈",
+   "side": "NOM",
+   "nom": "瑰",
    "qn": "côi",
-   "rank": 2,
+   "rank": 1,
    "orig_nom": "磈",
    "orig_qn": "côi",
-   "time": "2026-11-20 11:43:57"
+   "time": "2026-11-27 16:30:11"
   },
   "truyen vua Le Thai To digcoll_10996|974|1": {
    "side": "QN",
@@ -3359,13 +3341,13 @@
    "time": "2026-11-20 11:45:16"
   },
   "truyen vua Le Thai To digcoll_10996|1007|4": {
-   "side": "KEEP",
-   "nom": "蟳",
+   "side": "NOM",
+   "nom": "尋",
    "qn": "tìm",
    "rank": 3,
    "orig_nom": "蟳",
    "orig_qn": "tìm",
-   "time": "2026-11-20 11:45:21"
+   "time": "2026-11-27 16:34:20"
   },
   "truyen vua Le Thai To digcoll_10996|1012|1": {
    "side": "QN",
@@ -3422,22 +3404,13 @@
    "time": "2026-11-20 11:46:13"
   },
   "truyen vua Le Thai To digcoll_10996|1021|2": {
-   "side": "KEEP",
-   "nom": "媄",
+   "side": "NOM",
+   "nom": "𢱖",
    "qn": "mở",
-   "rank": 1,
+   "rank": 23,
    "orig_nom": "媄",
    "orig_qn": "mở",
-   "time": "2026-11-20 11:46:26"
-  },
-  "truyen vua Le Thai To digcoll_10996|1026|1": {
-   "side": "KEEP",
-   "nom": "𤉜",
-   "qn": "dàng",
-   "rank": 3,
-   "orig_nom": "𤉜",
-   "orig_qn": "dàng",
-   "time": "2026-11-20 11:46:33"
+   "time": "2026-11-27 16:36:08"
   },
   "truyen vua Le Thai To digcoll_10996|1027|7": {
    "side": "QN",
@@ -3476,31 +3449,31 @@
    "time": "2026-11-20 11:47:04"
   },
   "truyen vua Le Thai To digcoll_10996|1036|1": {
-   "side": "KEEP",
+   "side": "QN",
    "nom": "淶",
-   "qn": "rói",
-   "rank": 6,
+   "qn": "rơi",
+   "rank": 1,
    "orig_nom": "淶",
    "orig_qn": "rói",
-   "time": "2026-11-20 11:47:08"
+   "time": "2026-11-27 16:36:28"
   },
   "truyen vua Le Thai To digcoll_10996|1037|4": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 11:47:17"
+   "time": "2026-11-27 16:36:54"
   },
   "truyen vua Le Thai To digcoll_10996|1039|4": {
-   "side": "KEEP",
-   "nom": "尒",
+   "side": "NOM",
+   "nom": "氽",
    "qn": "mấy",
-   "rank": 4,
+   "rank": 1,
    "orig_nom": "尒",
    "orig_qn": "mấy",
-   "time": "2026-11-20 11:47:25"
+   "time": "2026-11-27 16:36:58"
   },
   "truyen vua Le Thai To digcoll_10996|1039|5": {
    "side": "QN",
@@ -3528,6 +3501,2085 @@
    "orig_nom": "廌",
    "orig_qn": "chai",
    "time": "2026-11-20 11:47:52"
+  },
+  "truyen vua Le Thai To digcoll_10996|0|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 6,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 14:46:27"
+  },
+  "truyen vua Le Thai To digcoll_10996|2|6": {
+   "side": "KEEP",
+   "nom": "浣",
+   "qn": "hãn",
+   "rank": 3,
+   "orig_nom": "浣",
+   "orig_qn": "hãn",
+   "time": "2026-11-27 14:46:56"
+  },
+  "truyen vua Le Thai To digcoll_10996|33|5": {
+   "side": "QN",
+   "nom": "𤉜",
+   "qn": "ràng",
+   "rank": 8,
+   "orig_nom": "𤉜",
+   "orig_qn": "dang",
+   "time": "2026-11-27 14:48:10"
+  },
+  "truyen vua Le Thai To digcoll_10996|41|4": {
+   "side": "QN",
+   "nom": "逸",
+   "qn": "dặt",
+   "rank": 10,
+   "orig_nom": "逸",
+   "orig_qn": "dạch",
+   "time": "2026-11-27 14:48:51"
+  },
+  "truyen vua Le Thai To digcoll_10996|41|6": {
+   "side": "NOM",
+   "nom": "貪",
+   "qn": "tham",
+   "rank": 2,
+   "orig_nom": "𮚃",
+   "orig_qn": "tham",
+   "time": "2026-11-27 14:48:54"
+  },
+  "truyen vua Le Thai To digcoll_10996|43|7": {
+   "side": "NOM",
+   "nom": "認",
+   "qn": "nhìn",
+   "rank": 4,
+   "orig_nom": "聪",
+   "orig_qn": "nhìn",
+   "time": "2026-11-27 14:49:33"
+  },
+  "truyen vua Le Thai To digcoll_10996|45|4": {
+   "side": "NOM",
+   "nom": "掉",
+   "qn": "trao",
+   "rank": 9,
+   "orig_nom": "㨓",
+   "orig_qn": "trao",
+   "time": "2026-11-27 14:49:51"
+  },
+  "truyen vua Le Thai To digcoll_10996|47|6": {
+   "side": "NOM",
+   "nom": "󰛢",
+   "qn": "ở",
+   "rank": 7,
+   "orig_nom": "奏",
+   "orig_qn": "ở",
+   "time": "2026-11-27 14:50:35"
+  },
+  "truyen vua Le Thai To digcoll_10996|59|5": {
+   "side": "NOM",
+   "nom": "󱍺",
+   "qn": "nòi",
+   "rank": 15,
+   "orig_nom": "𱙸",
+   "orig_qn": "nòi",
+   "time": "2026-11-27 14:51:28"
+  },
+  "truyen vua Le Thai To digcoll_10996|62|0": {
+   "side": "QN",
+   "nom": "𣦮",
+   "qn": "tuổi",
+   "rank": 3,
+   "orig_nom": "𣦮",
+   "orig_qn": "cưỡi",
+   "time": "2026-11-27 14:51:36"
+  },
+  "truyen vua Le Thai To digcoll_10996|75|4": {
+   "side": "NOM",
+   "nom": "渚",
+   "qn": "giở",
+   "rank": 1,
+   "orig_nom": "豬",
+   "orig_qn": "giở",
+   "time": "2026-11-27 14:51:51"
+  },
+  "truyen vua Le Thai To digcoll_10996|79|5": {
+   "side": "NOM",
+   "nom": "󱍺",
+   "qn": "nòi",
+   "rank": 15,
+   "orig_nom": "𱙸",
+   "orig_qn": "nòi",
+   "time": "2026-11-27 14:52:06"
+  },
+  "truyen vua Le Thai To digcoll_10996|85|0": {
+   "side": "KEEP",
+   "nom": "僻",
+   "qn": "cõi",
+   "rank": 5,
+   "orig_nom": "僻",
+   "orig_qn": "cõi",
+   "time": "2026-11-27 14:52:52"
+  },
+  "truyen vua Le Thai To digcoll_10996|89|2": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 14:52:56"
+  },
+  "truyen vua Le Thai To digcoll_10996|89|3": {
+   "side": "QN",
+   "nom": "廌",
+   "qn": "chải",
+   "rank": 2,
+   "orig_nom": "廌",
+   "orig_qn": "chẩu",
+   "time": "2026-11-27 14:53:07"
+  },
+  "truyen vua Le Thai To digcoll_10996|89|5": {
+   "side": "NOM",
+   "nom": "碎",
+   "qn": "tôi",
+   "rank": 1,
+   "orig_nom": "僻",
+   "orig_qn": "tôi",
+   "time": "2026-11-27 14:53:09"
+  },
+  "truyen vua Le Thai To digcoll_10996|91|7": {
+   "side": "NOM",
+   "nom": "推",
+   "qn": "tòi",
+   "rank": 2,
+   "orig_nom": "踓",
+   "orig_qn": "tòi",
+   "time": "2026-11-27 14:53:38"
+  },
+  "truyen vua Le Thai To digcoll_10996|107|7": {
+   "side": "NOM",
+   "nom": "",
+   "qn": "nào",
+   "rank": 10,
+   "orig_nom": "吊",
+   "orig_qn": "nào",
+   "time": "2026-11-27 14:54:45"
+  },
+  "truyen vua Le Thai To digcoll_10996|108|2": {
+   "side": "NOM",
+   "nom": "𢱖",
+   "qn": "mở",
+   "rank": 17,
+   "orig_nom": "撰",
+   "orig_qn": "mở",
+   "time": "2026-11-27 15:04:09"
+  },
+  "truyen vua Le Thai To digcoll_10996|109|0": {
+   "side": "KEEP",
+   "nom": "増",
+   "qn": "chờ",
+   "rank": 12,
+   "orig_nom": "増",
+   "orig_qn": "chờ",
+   "time": "2026-11-27 15:04:19"
+  },
+  "truyen vua Le Thai To digcoll_10996|118|5": {
+   "side": "NOM",
+   "nom": "棦",
+   "qn": "danh",
+   "rank": 16,
+   "orig_nom": "焞",
+   "orig_qn": "danh",
+   "time": "2026-11-27 15:05:43"
+  },
+  "truyen vua Le Thai To digcoll_10996|121|5": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 15:05:51"
+  },
+  "truyen vua Le Thai To digcoll_10996|123|0": {
+   "side": "NOM",
+   "nom": "撰",
+   "qn": "toan",
+   "rank": 5,
+   "orig_nom": "𥳪",
+   "orig_qn": "toan",
+   "time": "2026-11-27 15:05:55"
+  },
+  "truyen vua Le Thai To digcoll_10996|123|4": {
+   "side": "KEEP",
+   "nom": "𠘃",
+   "qn": "lát",
+   "rank": 2,
+   "orig_nom": "𠘃",
+   "orig_qn": "lát",
+   "time": "2026-11-27 15:06:19"
+  },
+  "truyen vua Le Thai To digcoll_10996|145|3": {
+   "side": "KEEP",
+   "nom": "笈",
+   "qn": "nắp",
+   "rank": 4,
+   "orig_nom": "笈",
+   "orig_qn": "nắp",
+   "time": "2026-11-27 15:06:53"
+  },
+  "truyen vua Le Thai To digcoll_10996|161|4": {
+   "side": "NOM",
+   "nom": "樳",
+   "qn": "tìm",
+   "rank": 10,
+   "orig_nom": "蟳",
+   "orig_qn": "tìm",
+   "time": "2026-11-27 15:08:02"
+  },
+  "truyen vua Le Thai To digcoll_10996|169|4": {
+   "side": "QN",
+   "nom": "𣉹",
+   "qn": "giờ",
+   "rank": 22,
+   "orig_nom": "𣉹",
+   "orig_qn": "giữ",
+   "time": "2026-11-27 15:08:15"
+  },
+  "truyen vua Le Thai To digcoll_10996|180|0": {
+   "side": "QN",
+   "nom": "箕",
+   "qn": "kìa",
+   "rank": 11,
+   "orig_nom": "箕",
+   "orig_qn": "thía",
+   "time": "2026-11-27 15:08:31"
+  },
+  "truyen vua Le Thai To digcoll_10996|192|5": {
+   "side": "QN",
+   "nom": "𥹰",
+   "qn": "lâu",
+   "rank": 4,
+   "orig_nom": "𥹰",
+   "orig_qn": "lòa",
+   "time": "2026-11-27 15:09:25"
+  },
+  "truyen vua Le Thai To digcoll_10996|195|0": {
+   "side": "KEEP",
+   "nom": "𢖽",
+   "qn": "chí",
+   "rank": 16,
+   "orig_nom": "𢖽",
+   "orig_qn": "chí",
+   "time": "2026-11-27 15:09:43"
+  },
+  "truyen vua Le Thai To digcoll_10996|197|3": {
+   "side": "KEEP",
+   "nom": "𪷤",
+   "qn": "lãm",
+   "rank": 13,
+   "orig_nom": "𪷤",
+   "orig_qn": "lãm",
+   "time": "2026-11-27 15:10:24"
+  },
+  "truyen vua Le Thai To digcoll_10996|200|3": {
+   "side": "KEEP",
+   "nom": "𪷤",
+   "qn": "lãm",
+   "rank": 11,
+   "orig_nom": "𪷤",
+   "orig_qn": "lãm",
+   "time": "2026-11-27 15:10:46"
+  },
+  "truyen vua Le Thai To digcoll_10996|203|6": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 7,
+   "orig_nom": "勢",
+   "orig_qn": "giết",
+   "time": "2026-11-27 15:10:54"
+  },
+  "truyen vua Le Thai To digcoll_10996|211|7": {
+   "side": "NOM",
+   "nom": "存",
+   "qn": "chuồn",
+   "rank": 2,
+   "orig_nom": "侟",
+   "orig_qn": "chuồn",
+   "time": "2026-11-27 15:11:04"
+  },
+  "truyen vua Le Thai To digcoll_10996|213|2": {
+   "side": "KEEP",
+   "nom": "𪷤",
+   "qn": "lâm",
+   "rank": 11,
+   "orig_nom": "𪷤",
+   "orig_qn": "lâm",
+   "time": "2026-11-27 15:11:31"
+  },
+  "truyen vua Le Thai To digcoll_10996|226|2": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 2,
+   "orig_nom": "剪",
+   "orig_qn": "giết",
+   "time": "2026-11-27 15:13:14"
+  },
+  "truyen vua Le Thai To digcoll_10996|226|4": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 5,
+   "orig_nom": "势",
+   "orig_qn": "giết",
+   "time": "2026-11-27 15:13:17"
+  },
+  "truyen vua Le Thai To digcoll_10996|229|0": {
+   "side": "NOM",
+   "nom": "嬏",
+   "qn": "vợ",
+   "rank": 5,
+   "orig_nom": "𱙡",
+   "orig_qn": "vợ",
+   "time": "2026-11-27 15:13:33"
+  },
+  "truyen vua Le Thai To digcoll_10996|231|0": {
+   "side": "QN",
+   "nom": "哀",
+   "qn": "ai",
+   "rank": 22,
+   "orig_nom": "哀",
+   "orig_qn": "cù",
+   "time": "2026-11-27 15:13:45"
+  },
+  "truyen vua Le Thai To digcoll_10996|248|3": {
+   "side": "QN",
+   "nom": "𢴑",
+   "qn": "dứt",
+   "rank": 25,
+   "orig_nom": "𢴑",
+   "orig_qn": "giữ",
+   "time": "2026-11-27 15:14:22"
+  },
+  "truyen vua Le Thai To digcoll_10996|256|0": {
+   "side": "NOM",
+   "nom": "侞",
+   "qn": "nhờ",
+   "rank": 8,
+   "orig_nom": "怓",
+   "orig_qn": "nhờ",
+   "time": "2026-11-27 15:15:06"
+  },
+  "truyen vua Le Thai To digcoll_10996|256|4": {
+   "side": "KEEP",
+   "nom": "䢖",
+   "qn": "liền",
+   "rank": 3,
+   "orig_nom": "䢖",
+   "orig_qn": "liền",
+   "time": "2026-11-27 15:15:21"
+  },
+  "truyen vua Le Thai To digcoll_10996|294|0": {
+   "side": "KEEP",
+   "nom": "勝",
+   "qn": "mùa",
+   "rank": 2,
+   "orig_nom": "勝",
+   "orig_qn": "mùa",
+   "time": "2026-11-27 15:16:49"
+  },
+  "truyen vua Le Thai To digcoll_10996|300|0": {
+   "side": "KEEP",
+   "nom": "沔",
+   "qn": "biển",
+   "rank": 2,
+   "orig_nom": "沔",
+   "orig_qn": "biển",
+   "time": "2026-11-27 15:17:16"
+  },
+  "truyen vua Le Thai To digcoll_10996|307|5": {
+   "side": "KEEP",
+   "nom": "焞",
+   "qn": "danh",
+   "rank": 21,
+   "orig_nom": "焞",
+   "orig_qn": "danh",
+   "time": "2026-11-27 15:18:10"
+  },
+  "truyen vua Le Thai To digcoll_10996|313|7": {
+   "side": "KEEP",
+   "nom": "軍",
+   "qn": "binh",
+   "rank": 1,
+   "orig_nom": "軍",
+   "orig_qn": "binh",
+   "time": "2026-11-27 15:18:58"
+  },
+  "truyen vua Le Thai To digcoll_10996|318|3": {
+   "side": "KEEP",
+   "nom": "篆",
+   "qn": "truyện",
+   "rank": 2,
+   "orig_nom": "篆",
+   "orig_qn": "truyện",
+   "time": "2026-11-27 15:20:28"
+  },
+  "truyen vua Le Thai To digcoll_10996|322|0": {
+   "side": "KEEP",
+   "nom": "篆",
+   "qn": "truyện",
+   "rank": 1,
+   "orig_nom": "篆",
+   "orig_qn": "truyện",
+   "time": "2026-11-27 15:20:30"
+  },
+  "truyen vua Le Thai To digcoll_10996|325|0": {
+   "side": "KEEP",
+   "nom": "㭁",
+   "qn": "bên",
+   "rank": 7,
+   "orig_nom": "㭁",
+   "orig_qn": "bên",
+   "time": "2026-11-27 15:20:44"
+  },
+  "truyen vua Le Thai To digcoll_10996|327|0": {
+   "side": "KEEP",
+   "nom": "篆",
+   "qn": "truyện",
+   "rank": 1,
+   "orig_nom": "篆",
+   "orig_qn": "truyện",
+   "time": "2026-11-27 15:21:07"
+  },
+  "truyen vua Le Thai To digcoll_10996|329|2": {
+   "side": "KEEP",
+   "nom": "篆",
+   "qn": "truyện",
+   "rank": 2,
+   "orig_nom": "篆",
+   "orig_qn": "truyện",
+   "time": "2026-11-27 15:21:14"
+  },
+  "truyen vua Le Thai To digcoll_10996|334|2": {
+   "side": "NOM",
+   "nom": "𢶢",
+   "qn": "chống",
+   "rank": 6,
+   "orig_nom": "擐",
+   "orig_qn": "chống",
+   "time": "2026-11-27 15:21:38"
+  },
+  "truyen vua Le Thai To digcoll_10996|336|5": {
+   "side": "NOM",
+   "nom": "忙",
+   "qn": "mang",
+   "rank": 1,
+   "orig_nom": "托",
+   "orig_qn": "mang",
+   "time": "2026-11-27 15:22:23"
+  },
+  "truyen vua Le Thai To digcoll_10996|336|7": {
+   "side": "KEEP",
+   "nom": "粥",
+   "qn": "về",
+   "rank": 15,
+   "orig_nom": "粥",
+   "orig_qn": "về",
+   "time": "2026-11-27 15:23:20"
+  },
+  "truyen vua Le Thai To digcoll_10996|338|5": {
+   "side": "KEEP",
+   "nom": "𨃉",
+   "qn": "về",
+   "rank": 17,
+   "orig_nom": "𨃉",
+   "orig_qn": "về",
+   "time": "2026-11-27 15:23:22"
+  },
+  "truyen vua Le Thai To digcoll_10996|345|1": {
+   "side": "KEEP",
+   "nom": "粥",
+   "qn": "về",
+   "rank": 4,
+   "orig_nom": "粥",
+   "orig_qn": "về",
+   "time": "2026-11-27 15:24:12"
+  },
+  "truyen vua Le Thai To digcoll_10996|362|1": {
+   "side": "KEEP",
+   "nom": "𨃉",
+   "qn": "về",
+   "rank": 17,
+   "orig_nom": "𨃉",
+   "orig_qn": "về",
+   "time": "2026-11-27 15:26:02"
+  },
+  "truyen vua Le Thai To digcoll_10996|366|1": {
+   "side": "KEEP",
+   "nom": "悭",
+   "qn": "kên",
+   "rank": 2,
+   "orig_nom": "悭",
+   "orig_qn": "kên",
+   "time": "2026-11-27 15:26:22"
+  },
+  "truyen vua Le Thai To digcoll_10996|366|7": {
+   "side": "KEEP",
+   "nom": "粧",
+   "qn": "giăng",
+   "rank": 10,
+   "orig_nom": "粧",
+   "orig_qn": "giăng",
+   "time": "2026-11-27 15:26:40"
+  },
+  "truyen vua Le Thai To digcoll_10996|367|5": {
+   "side": "NOM",
+   "nom": "𡁝",
+   "qn": "hăng",
+   "rank": 4,
+   "orig_nom": "懊",
+   "orig_qn": "hăng",
+   "time": "2026-11-27 15:27:08"
+  },
+  "truyen vua Le Thai To digcoll_10996|372|2": {
+   "side": "QN",
+   "nom": "為",
+   "qn": "ví",
+   "rank": 20,
+   "orig_nom": "為",
+   "orig_qn": "rũ",
+   "time": "2026-11-27 15:27:41"
+  },
+  "truyen vua Le Thai To digcoll_10996|373|3": {
+   "side": "KEEP",
+   "nom": "篆",
+   "qn": "truyện",
+   "rank": 1,
+   "orig_nom": "篆",
+   "orig_qn": "truyện",
+   "time": "2026-11-27 15:27:44"
+  },
+  "truyen vua Le Thai To digcoll_10996|378|3": {
+   "side": "KEEP",
+   "nom": "篆",
+   "qn": "truyện",
+   "rank": 1,
+   "orig_nom": "篆",
+   "orig_qn": "truyện",
+   "time": "2026-11-27 15:27:46"
+  },
+  "truyen vua Le Thai To digcoll_10996|391|2": {
+   "side": "KEEP",
+   "nom": "崒",
+   "qn": "chúy",
+   "rank": 1,
+   "orig_nom": "崒",
+   "orig_qn": "chúy",
+   "time": "2026-11-27 15:28:42"
+  },
+  "truyen vua Le Thai To digcoll_10996|395|3": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 4,
+   "orig_nom": "勢",
+   "orig_qn": "giết",
+   "time": "2026-11-27 15:28:46"
+  },
+  "truyen vua Le Thai To digcoll_10996|397|5": {
+   "side": "QN",
+   "nom": "傕",
+   "qn": "thôi",
+   "rank": 23,
+   "orig_nom": "傕",
+   "orig_qn": "thúc",
+   "time": "2026-11-27 15:29:00"
+  },
+  "truyen vua Le Thai To digcoll_10996|413|3": {
+   "side": "QN",
+   "nom": "傑",
+   "qn": "kiệt",
+   "rank": 1,
+   "orig_nom": "傑",
+   "orig_qn": "kiếp",
+   "time": "2026-11-27 15:30:23"
+  },
+  "truyen vua Le Thai To digcoll_10996|419|2": {
+   "side": "QN",
+   "nom": "𡗶",
+   "qn": "giời",
+   "rank": 22,
+   "orig_nom": "𡗶",
+   "orig_qn": "giặc",
+   "time": "2026-11-27 15:30:36"
+  },
+  "truyen vua Le Thai To digcoll_10996|420|2": {
+   "side": "NOM",
+   "nom": "揕",
+   "qn": "chấm",
+   "rank": 4,
+   "orig_nom": "𢸙",
+   "orig_qn": "chấm",
+   "time": "2026-11-27 15:31:00"
+  },
+  "truyen vua Le Thai To digcoll_10996|431|3": {
+   "side": "NOM",
+   "nom": "撻",
+   "qn": "đặt",
+   "rank": 1,
+   "orig_nom": "挞",
+   "orig_qn": "đặt",
+   "time": "2026-11-27 15:31:46"
+  },
+  "truyen vua Le Thai To digcoll_10996|438|7": {
+   "side": "KEEP",
+   "nom": "𨃉",
+   "qn": "về",
+   "rank": 17,
+   "orig_nom": "𨃉",
+   "orig_qn": "về",
+   "time": "2026-11-27 15:32:18"
+  },
+  "truyen vua Le Thai To digcoll_10996|442|5": {
+   "side": "QN",
+   "nom": "𬲞",
+   "qn": "mồi",
+   "rank": 11,
+   "orig_nom": "𬲞",
+   "orig_qn": "mưu",
+   "time": "2026-11-27 15:32:44"
+  },
+  "truyen vua Le Thai To digcoll_10996|445|5": {
+   "side": "NOM",
+   "nom": "迻",
+   "qn": "nhiều",
+   "rank": 1,
+   "orig_nom": "𠫾",
+   "orig_qn": "nhiều",
+   "time": "2026-11-27 15:33:06"
+  },
+  "truyen vua Le Thai To digcoll_10996|446|3": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 5,
+   "orig_nom": "勢",
+   "orig_qn": "giết",
+   "time": "2026-11-27 15:33:10"
+  },
+  "truyen vua Le Thai To digcoll_10996|446|5": {
+   "side": "KEEP",
+   "nom": "兜",
+   "qn": "nhĩ",
+   "rank": 1,
+   "orig_nom": "兜",
+   "orig_qn": "nhĩ",
+   "time": "2026-11-27 15:33:20"
+  },
+  "truyen vua Le Thai To digcoll_10996|461|2": {
+   "side": "KEEP",
+   "nom": "篆",
+   "qn": "truyện",
+   "rank": 1,
+   "orig_nom": "篆",
+   "orig_qn": "truyện",
+   "time": "2026-11-27 15:33:28"
+  },
+  "truyen vua Le Thai To digcoll_10996|472|1": {
+   "side": "NOM",
+   "nom": "",
+   "qn": "nghiêm",
+   "rank": 5,
+   "orig_nom": "𫿞",
+   "orig_qn": "nghiêm",
+   "time": "2026-11-27 15:33:59"
+  },
+  "truyen vua Le Thai To digcoll_10996|483|3": {
+   "side": "NOM",
+   "nom": "揷",
+   "qn": "sắp",
+   "rank": 19,
+   "orig_nom": "掙",
+   "orig_qn": "sắp",
+   "time": "2026-11-27 15:34:36"
+  },
+  "truyen vua Le Thai To digcoll_10996|491|2": {
+   "side": "NOM",
+   "nom": "焠",
+   "qn": "sốt",
+   "rank": 2,
+   "orig_nom": "㤾",
+   "orig_qn": "sốt",
+   "time": "2026-11-27 15:35:13"
+  },
+  "truyen vua Le Thai To digcoll_10996|498|6": {
+   "side": "KEEP",
+   "nom": "𢴑",
+   "qn": "giữ",
+   "rank": 11,
+   "orig_nom": "𢴑",
+   "orig_qn": "giữ",
+   "time": "2026-11-27 15:35:54"
+  },
+  "truyen vua Le Thai To digcoll_10996|503|0": {
+   "side": "NOM",
+   "nom": "",
+   "qn": "nghiêm",
+   "rank": 7,
+   "orig_nom": "𫿞",
+   "orig_qn": "nghiêm",
+   "time": "2026-11-27 15:36:21"
+  },
+  "truyen vua Le Thai To digcoll_10996|506|4": {
+   "side": "KEEP",
+   "nom": "踭",
+   "qn": "nhanh",
+   "rank": 2,
+   "orig_nom": "踭",
+   "orig_qn": "nhanh",
+   "time": "2026-11-27 15:38:07"
+  },
+  "truyen vua Le Thai To digcoll_10996|510|1": {
+   "side": "NOM",
+   "nom": "貪",
+   "qn": "tham",
+   "rank": 1,
+   "orig_nom": "𮚃",
+   "orig_qn": "tham",
+   "time": "2026-11-27 15:38:09"
+  },
+  "truyen vua Le Thai To digcoll_10996|516|2": {
+   "side": "NOM",
+   "nom": "対",
+   "qn": "đuối",
+   "rank": 2,
+   "orig_nom": "㳔",
+   "orig_qn": "đuối",
+   "time": "2026-11-27 15:38:23"
+  },
+  "truyen vua Le Thai To digcoll_10996|517|1": {
+   "side": "NOM",
+   "nom": "閒",
+   "qn": "nhàn",
+   "rank": 4,
+   "orig_nom": "閍",
+   "orig_qn": "nhàn",
+   "time": "2026-11-27 15:38:34"
+  },
+  "truyen vua Le Thai To digcoll_10996|524|3": {
+   "side": "QN",
+   "nom": "捽",
+   "qn": "rút",
+   "rank": 1,
+   "orig_nom": "捽",
+   "orig_qn": "dứt",
+   "time": "2026-11-27 15:39:08"
+  },
+  "truyen vua Le Thai To digcoll_10996|526|4": {
+   "side": "KEEP",
+   "nom": "𤤪",
+   "qn": "giừng",
+   "rank": 12,
+   "orig_nom": "𤤪",
+   "orig_qn": "giừng",
+   "time": "2026-11-27 15:39:35"
+  },
+  "truyen vua Le Thai To digcoll_10996|526|5": {
+   "side": "KEEP",
+   "nom": "䜹",
+   "qn": "giằng",
+   "rank": 10,
+   "orig_nom": "䜹",
+   "orig_qn": "giằng",
+   "time": "2026-11-27 15:40:15"
+  },
+  "truyen vua Le Thai To digcoll_10996|534|6": {
+   "side": "NOM",
+   "nom": "𧻭",
+   "qn": "chạy",
+   "rank": 11,
+   "orig_nom": "𨱽",
+   "orig_qn": "chạy",
+   "time": "2026-11-27 15:40:52"
+  },
+  "truyen vua Le Thai To digcoll_10996|535|0": {
+   "side": "NOM",
+   "nom": "柳",
+   "qn": "liễu",
+   "rank": 1,
+   "orig_nom": "昇",
+   "orig_qn": "liễu",
+   "time": "2026-11-27 15:41:33"
+  },
+  "truyen vua Le Thai To digcoll_10996|535|1": {
+   "side": "KEEP",
+   "nom": "柳",
+   "qn": "chăng",
+   "rank": 2,
+   "orig_nom": "柳",
+   "orig_qn": "chăng",
+   "time": "2026-11-27 15:41:42"
+  },
+  "truyen vua Le Thai To digcoll_10996|536|5": {
+   "side": "KEEP",
+   "nom": "跛",
+   "qn": "bừa",
+   "rank": 10,
+   "orig_nom": "跛",
+   "orig_qn": "bừa",
+   "time": "2026-11-27 15:42:10"
+  },
+  "truyen vua Le Thai To digcoll_10996|538|2": {
+   "side": "KEEP",
+   "nom": "湯",
+   "qn": "dảy",
+   "rank": 4,
+   "orig_nom": "湯",
+   "orig_qn": "dảy",
+   "time": "2026-11-27 15:42:30"
+  },
+  "truyen vua Le Thai To digcoll_10996|550|0": {
+   "side": "QN",
+   "nom": "昌",
+   "qn": "xương",
+   "rank": 11,
+   "orig_nom": "昌",
+   "orig_qn": "trường",
+   "time": "2026-11-27 15:43:12"
+  },
+  "truyen vua Le Thai To digcoll_10996|550|2": {
+   "side": "KEEP",
+   "nom": "䠋",
+   "qn": "rảo",
+   "rank": 4,
+   "orig_nom": "䠋",
+   "orig_qn": "rảo",
+   "time": "2026-11-27 15:43:45"
+  },
+  "truyen vua Le Thai To digcoll_10996|552|5": {
+   "side": "NOM",
+   "nom": "撰",
+   "qn": "toan",
+   "rank": 6,
+   "orig_nom": "𥳪",
+   "orig_qn": "toan",
+   "time": "2026-11-27 15:43:54"
+  },
+  "truyen vua Le Thai To digcoll_10996|554|4": {
+   "side": "NOM",
+   "nom": "󱘴",
+   "qn": "một",
+   "rank": 18,
+   "orig_nom": "汶",
+   "orig_qn": "một",
+   "time": "2026-11-27 15:44:25"
+  },
+  "truyen vua Le Thai To digcoll_10996|570|0": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 5,
+   "orig_nom": "势",
+   "orig_qn": "giết",
+   "time": "2026-11-27 15:45:38"
+  },
+  "truyen vua Le Thai To digcoll_10996|572|4": {
+   "side": "KEEP",
+   "nom": "細",
+   "qn": "tóe",
+   "rank": 4,
+   "orig_nom": "細",
+   "orig_qn": "tóe",
+   "time": "2026-11-27 15:46:10"
+  },
+  "truyen vua Le Thai To digcoll_10996|586|2": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 4,
+   "orig_nom": "勢",
+   "orig_qn": "giết",
+   "time": "2026-11-27 15:46:51"
+  },
+  "truyen vua Le Thai To digcoll_10996|589|0": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 5,
+   "orig_nom": "勢",
+   "orig_qn": "giết",
+   "time": "2026-11-27 15:46:54"
+  },
+  "truyen vua Le Thai To digcoll_10996|591|4": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 3,
+   "orig_nom": "勢",
+   "orig_qn": "giết",
+   "time": "2026-11-27 15:46:58"
+  },
+  "truyen vua Le Thai To digcoll_10996|592|0": {
+   "side": "NOM",
+   "nom": "𧘇",
+   "qn": "ấy",
+   "rank": 3,
+   "orig_nom": "火",
+   "orig_qn": "ấy",
+   "time": "2026-11-27 15:47:02"
+  },
+  "truyen vua Le Thai To digcoll_10996|593|2": {
+   "side": "NOM",
+   "nom": "𪫧",
+   "qn": "hả",
+   "rank": 12,
+   "orig_nom": "忊",
+   "orig_qn": "hả",
+   "time": "2026-11-27 15:47:16"
+  },
+  "truyen vua Le Thai To digcoll_10996|594|1": {
+   "side": "KEEP",
+   "nom": "䧏",
+   "qn": "sang",
+   "rank": 7,
+   "orig_nom": "䧏",
+   "orig_qn": "sang",
+   "time": "2026-11-27 15:47:25"
+  },
+  "truyen vua Le Thai To digcoll_10996|596|2": {
+   "side": "NOM",
+   "nom": "譖",
+   "qn": "chấm",
+   "rank": 13,
+   "orig_nom": "譛",
+   "orig_qn": "chấm",
+   "time": "2026-11-27 15:47:51"
+  },
+  "truyen vua Le Thai To digcoll_10996|597|1": {
+   "side": "KEEP",
+   "nom": "㭁",
+   "qn": "bên",
+   "rank": 7,
+   "orig_nom": "㭁",
+   "orig_qn": "bên",
+   "time": "2026-11-27 15:48:29"
+  },
+  "truyen vua Le Thai To digcoll_10996|601|2": {
+   "side": "QN",
+   "nom": "耒",
+   "qn": "rồi",
+   "rank": 9,
+   "orig_nom": "耒",
+   "orig_qn": "rước",
+   "time": "2026-11-27 15:48:45"
+  },
+  "truyen vua Le Thai To digcoll_10996|602|0": {
+   "side": "KEEP",
+   "nom": "了",
+   "qn": "dinh",
+   "rank": 2,
+   "orig_nom": "了",
+   "orig_qn": "dinh",
+   "time": "2026-11-27 15:48:55"
+  },
+  "truyen vua Le Thai To digcoll_10996|610|2": {
+   "side": "QN",
+   "nom": "𤎕",
+   "qn": "tắt",
+   "rank": 16,
+   "orig_nom": "𤎕",
+   "orig_qn": "tản",
+   "time": "2026-11-27 15:49:09"
+  },
+  "truyen vua Le Thai To digcoll_10996|613|0": {
+   "side": "QN",
+   "nom": "𠳒",
+   "qn": "nhời",
+   "rank": 6,
+   "orig_nom": "𠳒",
+   "orig_qn": "nhớ",
+   "time": "2026-11-27 15:49:28"
+  },
+  "truyen vua Le Thai To digcoll_10996|628|2": {
+   "side": "NOM",
+   "nom": "貪",
+   "qn": "tham",
+   "rank": 1,
+   "orig_nom": "𮚃",
+   "orig_qn": "tham",
+   "time": "2026-11-27 15:49:38"
+  },
+  "truyen vua Le Thai To digcoll_10996|630|1": {
+   "side": "NOM",
+   "nom": "兒",
+   "qn": "nhi",
+   "rank": 1,
+   "orig_nom": "兜",
+   "orig_qn": "nhi",
+   "time": "2026-11-27 15:49:41"
+  },
+  "truyen vua Le Thai To digcoll_10996|640|3": {
+   "side": "NOM",
+   "nom": "虎",
+   "qn": "hố",
+   "rank": 1,
+   "orig_nom": "㙈",
+   "orig_qn": "hố",
+   "time": "2026-11-27 15:50:05"
+  },
+  "truyen vua Le Thai To digcoll_10996|641|0": {
+   "side": "QN",
+   "nom": "𠲝",
+   "qn": "trối",
+   "rank": 30,
+   "orig_nom": "𠲝",
+   "orig_qn": "giới",
+   "time": "2026-11-27 15:50:57"
+  },
+  "truyen vua Le Thai To digcoll_10996|641|2": {
+   "side": "QN",
+   "nom": "𠲝",
+   "qn": "trối",
+   "rank": 31,
+   "orig_nom": "𠲝",
+   "orig_qn": "giới",
+   "time": "2026-11-27 15:51:03"
+  },
+  "truyen vua Le Thai To digcoll_10996|642|0": {
+   "side": "QN",
+   "nom": "用",
+   "qn": "dùng",
+   "rank": 15,
+   "orig_nom": "用",
+   "orig_qn": "dương",
+   "time": "2026-11-27 15:51:59"
+  },
+  "truyen vua Le Thai To digcoll_10996|648|6": {
+   "side": "NOM",
+   "nom": "󱨢",
+   "qn": "sót",
+   "rank": 6,
+   "orig_nom": "𤄯",
+   "orig_qn": "sót",
+   "time": "2026-11-27 15:52:44"
+  },
+  "truyen vua Le Thai To digcoll_10996|649|2": {
+   "side": "NOM",
+   "nom": "開",
+   "qn": "khai",
+   "rank": 1,
+   "orig_nom": "䦕",
+   "orig_qn": "khai",
+   "time": "2026-11-27 15:52:56"
+  },
+  "truyen vua Le Thai To digcoll_10996|649|5": {
+   "side": "NOM",
+   "nom": "󰬥",
+   "qn": "nhiều",
+   "rank": 13,
+   "orig_nom": "𠫾",
+   "orig_qn": "nhiều",
+   "time": "2026-11-27 15:53:48"
+  },
+  "truyen vua Le Thai To digcoll_10996|651|0": {
+   "side": "KEEP",
+   "nom": "曷",
+   "qn": "cật",
+   "rank": 1,
+   "orig_nom": "曷",
+   "orig_qn": "cật",
+   "time": "2026-11-27 15:54:08"
+  },
+  "truyen vua Le Thai To digcoll_10996|652|1": {
+   "side": "QN",
+   "nom": "𨉞",
+   "qn": "lưng",
+   "rank": 1,
+   "orig_nom": "𨉞",
+   "orig_qn": "bừng",
+   "time": "2026-11-27 15:54:47"
+  },
+  "truyen vua Le Thai To digcoll_10996|652|5": {
+   "side": "NOM",
+   "nom": "驚",
+   "qn": "kinh",
+   "rank": 5,
+   "orig_nom": "𮬩",
+   "orig_qn": "kinh",
+   "time": "2026-11-27 15:55:02"
+  },
+  "truyen vua Le Thai To digcoll_10996|652|6": {
+   "side": "NOM",
+   "nom": "蛹",
+   "qn": "thuồng",
+   "rank": 4,
+   "orig_nom": "䗖",
+   "orig_qn": "thuồng",
+   "time": "2026-11-27 15:55:33"
+  },
+  "truyen vua Le Thai To digcoll_10996|654|3": {
+   "side": "NOM",
+   "nom": "翥",
+   "qn": "trả",
+   "rank": 1,
+   "orig_nom": "鶏",
+   "orig_qn": "trả",
+   "time": "2026-11-27 15:55:45"
+  },
+  "truyen vua Le Thai To digcoll_10996|654|7": {
+   "side": "QN",
+   "nom": "㹯",
+   "qn": "hươu",
+   "rank": 21,
+   "orig_nom": "㹯",
+   "orig_qn": "hiêu",
+   "time": "2026-11-27 15:56:05"
+  },
+  "truyen vua Le Thai To digcoll_10996|656|0": {
+   "side": "NOM",
+   "nom": "󱎶",
+   "qn": "trẻ",
+   "rank": 5,
+   "orig_nom": "薙",
+   "orig_qn": "trẻ",
+   "time": "2026-11-27 15:56:17"
+  },
+  "truyen vua Le Thai To digcoll_10996|658|7": {
+   "side": "KEEP",
+   "nom": "崙",
+   "qn": "lươn",
+   "rank": 2,
+   "orig_nom": "崙",
+   "orig_qn": "lươn",
+   "time": "2026-11-27 15:56:36"
+  },
+  "truyen vua Le Thai To digcoll_10996|662|3": {
+   "side": "KEEP",
+   "nom": "𦀻",
+   "qn": "gủi",
+   "rank": 3,
+   "orig_nom": "𦀻",
+   "orig_qn": "gủi",
+   "time": "2026-11-27 15:56:48"
+  },
+  "truyen vua Le Thai To digcoll_10996|664|1": {
+   "side": "KEEP",
+   "nom": "𤀵",
+   "qn": "khởi",
+   "rank": 7,
+   "orig_nom": "𤀵",
+   "orig_qn": "khởi",
+   "time": "2026-11-27 15:56:59"
+  },
+  "truyen vua Le Thai To digcoll_10996|666|3": {
+   "side": "QN",
+   "nom": "𢭱",
+   "qn": "đẵn",
+   "rank": 2,
+   "orig_nom": "𢭱",
+   "orig_qn": "dẩn",
+   "time": "2026-11-27 15:57:12"
+  },
+  "truyen vua Le Thai To digcoll_10996|668|7": {
+   "side": "KEEP",
+   "nom": "哴",
+   "qn": "nuông",
+   "rank": 1,
+   "orig_nom": "哴",
+   "orig_qn": "nuông",
+   "time": "2026-11-27 15:57:30"
+  },
+  "truyen vua Le Thai To digcoll_10996|670|3": {
+   "side": "NOM",
+   "nom": "捽",
+   "qn": "vuốt",
+   "rank": 1,
+   "orig_nom": "𡮇",
+   "orig_qn": "vuốt",
+   "time": "2026-11-27 15:57:53"
+  },
+  "truyen vua Le Thai To digcoll_10996|674|2": {
+   "side": "KEEP",
+   "nom": "𠾿",
+   "qn": "ngậm",
+   "rank": 2,
+   "orig_nom": "𠾿",
+   "orig_qn": "ngậm",
+   "time": "2026-11-27 15:58:14"
+  },
+  "truyen vua Le Thai To digcoll_10996|680|2": {
+   "side": "NOM",
+   "nom": "聀",
+   "qn": "giấc",
+   "rank": 1,
+   "orig_nom": "賦",
+   "orig_qn": "giấc",
+   "time": "2026-11-27 15:58:56"
+  },
+  "truyen vua Le Thai To digcoll_10996|685|4": {
+   "side": "NOM",
+   "nom": "少",
+   "qn": "thiếu",
+   "rank": 1,
+   "orig_nom": "𣥂",
+   "orig_qn": "thiếu",
+   "time": "2026-11-27 15:59:27"
+  },
+  "truyen vua Le Thai To digcoll_10996|688|0": {
+   "side": "QN",
+   "nom": "耽",
+   "qn": "đăm",
+   "rank": 3,
+   "orig_nom": "耽",
+   "orig_qn": "nhăm",
+   "time": "2026-11-27 15:59:37"
+  },
+  "truyen vua Le Thai To digcoll_10996|688|1": {
+   "side": "QN",
+   "nom": "耽",
+   "qn": "đâm",
+   "rank": 3,
+   "orig_nom": "耽",
+   "orig_qn": "nhăm",
+   "time": "2026-11-27 15:59:39"
+  },
+  "truyen vua Le Thai To digcoll_10996|696|0": {
+   "side": "KEEP",
+   "nom": "磈",
+   "qn": "cõi",
+   "rank": 6,
+   "orig_nom": "磈",
+   "orig_qn": "cõi",
+   "time": "2026-11-27 16:00:45"
+  },
+  "truyen vua Le Thai To digcoll_10996|697|0": {
+   "side": "QN",
+   "nom": "𡗶",
+   "qn": "giời",
+   "rank": 22,
+   "orig_nom": "𡗶",
+   "orig_qn": "giữ",
+   "time": "2026-11-27 16:00:52"
+  },
+  "truyen vua Le Thai To digcoll_10996|706|3": {
+   "side": "NOM",
+   "nom": "対",
+   "qn": "đuối",
+   "rank": 1,
+   "orig_nom": "㳔",
+   "orig_qn": "đuối",
+   "time": "2026-11-27 16:01:13"
+  },
+  "truyen vua Le Thai To digcoll_10996|707|2": {
+   "side": "QN",
+   "nom": "説",
+   "qn": "thuyết",
+   "rank": 1,
+   "orig_nom": "説",
+   "orig_qn": "thiết",
+   "time": "2026-11-27 16:01:21"
+  },
+  "truyen vua Le Thai To digcoll_10996|712|4": {
+   "side": "NOM",
+   "nom": "󰌑",
+   "qn": "gio",
+   "rank": 2,
+   "orig_nom": "炪",
+   "orig_qn": "gio",
+   "time": "2026-11-27 16:01:49"
+  },
+  "truyen vua Le Thai To digcoll_10996|713|2": {
+   "side": "KEEP",
+   "nom": "懊",
+   "qn": "hàng",
+   "rank": 9,
+   "orig_nom": "懊",
+   "orig_qn": "hàng",
+   "time": "2026-11-27 16:02:11"
+  },
+  "truyen vua Le Thai To digcoll_10996|713|5": {
+   "side": "NOM",
+   "nom": "潙",
+   "qn": "vời",
+   "rank": 1,
+   "orig_nom": "溈",
+   "orig_qn": "vời",
+   "time": "2026-11-27 16:02:16"
+  },
+  "truyen vua Le Thai To digcoll_10996|717|5": {
+   "side": "KEEP",
+   "nom": "濺",
+   "qn": "tràn",
+   "rank": 17,
+   "orig_nom": "濺",
+   "orig_qn": "tràn",
+   "time": "2026-11-27 16:05:50"
+  },
+  "truyen vua Le Thai To digcoll_10996|722|3": {
+   "side": "KEEP",
+   "nom": "崒",
+   "qn": "chúy",
+   "rank": 3,
+   "orig_nom": "崒",
+   "orig_qn": "chúy",
+   "time": "2026-11-27 16:05:59"
+  },
+  "truyen vua Le Thai To digcoll_10996|727|5": {
+   "side": "NOM",
+   "nom": "潺",
+   "qn": "sờn",
+   "rank": 4,
+   "orig_nom": "㿖",
+   "orig_qn": "sờn",
+   "time": "2026-11-27 16:06:20"
+  },
+  "truyen vua Le Thai To digcoll_10996|731|5": {
+   "side": "NOM",
+   "nom": "𫾄",
+   "qn": "lường",
+   "rank": 3,
+   "orig_nom": "慢",
+   "orig_qn": "lường",
+   "time": "2026-11-27 16:06:31"
+  },
+  "truyen vua Le Thai To digcoll_10996|734|1": {
+   "side": "NOM",
+   "nom": "貪",
+   "qn": "tham",
+   "rank": 1,
+   "orig_nom": "𮚃",
+   "orig_qn": "tham",
+   "time": "2026-11-27 16:07:28"
+  },
+  "truyen vua Le Thai To digcoll_10996|740|4": {
+   "side": "KEEP",
+   "nom": "姚",
+   "qn": "reo",
+   "rank": 6,
+   "orig_nom": "姚",
+   "orig_qn": "reo",
+   "time": "2026-11-27 16:08:18"
+  },
+  "truyen vua Le Thai To digcoll_10996|749|1": {
+   "side": "QN",
+   "nom": "𠄻",
+   "qn": "lăm",
+   "rank": 1,
+   "orig_nom": "𠄻",
+   "orig_qn": "nhăm",
+   "time": "2026-11-27 16:09:19"
+  },
+  "truyen vua Le Thai To digcoll_10996|750|0": {
+   "side": "NOM",
+   "nom": "梁",
+   "qn": "lương",
+   "rank": 4,
+   "orig_nom": "鿄",
+   "orig_qn": "lương",
+   "time": "2026-11-27 16:09:44"
+  },
+  "truyen vua Le Thai To digcoll_10996|751|2": {
+   "side": "QN",
+   "nom": "刀",
+   "qn": "giao",
+   "rank": 1,
+   "orig_nom": "刀",
+   "orig_qn": "giáo",
+   "time": "2026-11-27 16:09:50"
+  },
+  "truyen vua Le Thai To digcoll_10996|751|5": {
+   "side": "KEEP",
+   "nom": "踭",
+   "qn": "nhanh",
+   "rank": 1,
+   "orig_nom": "踭",
+   "orig_qn": "nhanh",
+   "time": "2026-11-27 16:10:11"
+  },
+  "truyen vua Le Thai To digcoll_10996|758|4": {
+   "side": "QN",
+   "nom": "㹯",
+   "qn": "hươu",
+   "rank": 20,
+   "orig_nom": "㹯",
+   "orig_qn": "hiêu",
+   "time": "2026-11-27 16:10:20"
+  },
+  "truyen vua Le Thai To digcoll_10996|765|3": {
+   "side": "KEEP",
+   "nom": "𢬭",
+   "qn": "dáng",
+   "rank": 15,
+   "orig_nom": "𢬭",
+   "orig_qn": "dáng",
+   "time": "2026-11-27 16:11:48"
+  },
+  "truyen vua Le Thai To digcoll_10996|773|1": {
+   "side": "QN",
+   "nom": "辰",
+   "qn": "thì",
+   "rank": 1,
+   "orig_nom": "辰",
+   "orig_qn": "thứ",
+   "time": "2026-11-27 16:12:07"
+  },
+  "truyen vua Le Thai To digcoll_10996|773|3": {
+   "side": "KEEP",
+   "nom": "廩",
+   "qn": "giảm",
+   "rank": 5,
+   "orig_nom": "廩",
+   "orig_qn": "giảm",
+   "time": "2026-11-27 16:12:47"
+  },
+  "truyen vua Le Thai To digcoll_10996|778|5": {
+   "side": "KEEP",
+   "nom": "𧧿",
+   "qn": "ngọn",
+   "rank": 3,
+   "orig_nom": "𧧿",
+   "orig_qn": "ngọn",
+   "time": "2026-11-27 16:13:30"
+  },
+  "truyen vua Le Thai To digcoll_10996|783|5": {
+   "side": "KEEP",
+   "nom": "𦀾",
+   "qn": "xiềng",
+   "rank": 5,
+   "orig_nom": "𦀾",
+   "orig_qn": "xiềng",
+   "time": "2026-11-27 16:13:46"
+  },
+  "truyen vua Le Thai To digcoll_10996|786|5": {
+   "side": "QN",
+   "nom": "𡗶",
+   "qn": "giời",
+   "rank": 22,
+   "orig_nom": "𡗶",
+   "orig_qn": "giữ",
+   "time": "2026-11-27 16:14:17"
+  },
+  "truyen vua Le Thai To digcoll_10996|804|5": {
+   "side": "QN",
+   "nom": "𣈙",
+   "qn": "dầy",
+   "rank": 10,
+   "orig_nom": "𣈙",
+   "orig_qn": "đây",
+   "time": "2026-11-27 16:15:20"
+  },
+  "truyen vua Le Thai To digcoll_10996|806|2": {
+   "side": "NOM",
+   "nom": "瀉",
+   "qn": "rửa",
+   "rank": 8,
+   "orig_nom": "澳",
+   "orig_qn": "rửa",
+   "time": "2026-11-27 16:15:41"
+  },
+  "truyen vua Le Thai To digcoll_10996|809|2": {
+   "side": "KEEP",
+   "nom": "󰜋",
+   "qn": "miệt",
+   "rank": 15,
+   "orig_nom": "󰜋",
+   "orig_qn": "miệt",
+   "time": "2026-11-27 16:16:25"
+  },
+  "truyen vua Le Thai To digcoll_10996|812|3": {
+   "side": "NOM",
+   "nom": "氽",
+   "qn": "mấy",
+   "rank": 3,
+   "orig_nom": "尔",
+   "orig_qn": "mấy",
+   "time": "2026-11-27 16:16:31"
+  },
+  "truyen vua Le Thai To digcoll_10996|826|2": {
+   "side": "QN",
+   "nom": "𬟥",
+   "qn": "thuốc",
+   "rank": 3,
+   "orig_nom": "𬟥",
+   "orig_qn": "thuế",
+   "time": "2026-11-27 16:16:50"
+  },
+  "truyen vua Le Thai To digcoll_10996|831|2": {
+   "side": "KEEP",
+   "nom": "考",
+   "qn": "kỹ",
+   "rank": 2,
+   "orig_nom": "考",
+   "orig_qn": "kỹ",
+   "time": "2026-11-27 16:17:18"
+  },
+  "truyen vua Le Thai To digcoll_10996|836|7": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:17:32"
+  },
+  "truyen vua Le Thai To digcoll_10996|880|3": {
+   "side": "QN",
+   "nom": "𠲝",
+   "qn": "dối",
+   "rank": 24,
+   "orig_nom": "𠲝",
+   "orig_qn": "giới",
+   "time": "2026-11-27 16:18:32"
+  },
+  "truyen vua Le Thai To digcoll_10996|880|7": {
+   "side": "NOM",
+   "nom": "貪",
+   "qn": "tham",
+   "rank": 3,
+   "orig_nom": "𮚃",
+   "orig_qn": "tham",
+   "time": "2026-11-27 16:18:36"
+  },
+  "truyen vua Le Thai To digcoll_10996|887|4": {
+   "side": "KEEP",
+   "nom": "𬌓",
+   "qn": "tươm",
+   "rank": 6,
+   "orig_nom": "𬌓",
+   "orig_qn": "tươm",
+   "time": "2026-11-27 16:19:04"
+  },
+  "truyen vua Le Thai To digcoll_10996|888|6": {
+   "side": "NOM",
+   "nom": "捌",
+   "qn": "biết",
+   "rank": 8,
+   "orig_nom": "惻",
+   "orig_qn": "biết",
+   "time": "2026-11-27 16:19:09"
+  },
+  "truyen vua Le Thai To digcoll_10996|890|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:19:12"
+  },
+  "truyen vua Le Thai To digcoll_10996|892|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:19:21"
+  },
+  "truyen vua Le Thai To digcoll_10996|895|2": {
+   "side": "NOM",
+   "nom": "開",
+   "qn": "khai",
+   "rank": 1,
+   "orig_nom": "䦕",
+   "orig_qn": "khai",
+   "time": "2026-11-27 16:20:29"
+  },
+  "truyen vua Le Thai To digcoll_10996|897|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:21:08"
+  },
+  "truyen vua Le Thai To digcoll_10996|900|4": {
+   "side": "NOM",
+   "nom": "撰",
+   "qn": "toan",
+   "rank": 2,
+   "orig_nom": "𥳪",
+   "orig_qn": "toan",
+   "time": "2026-11-27 16:21:13"
+  },
+  "truyen vua Le Thai To digcoll_10996|901|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 8,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:21:17"
+  },
+  "truyen vua Le Thai To digcoll_10996|904|3": {
+   "side": "NOM",
+   "nom": "攑",
+   "qn": "gỡ",
+   "rank": 4,
+   "orig_nom": "撑",
+   "orig_qn": "gỡ",
+   "time": "2026-11-27 16:21:55"
+  },
+  "truyen vua Le Thai To digcoll_10996|907|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 10,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:22:02"
+  },
+  "truyen vua Le Thai To digcoll_10996|908|2": {
+   "side": "KEEP",
+   "nom": "棋",
+   "qn": "mỏ",
+   "rank": 2,
+   "orig_nom": "棋",
+   "orig_qn": "mỏ",
+   "time": "2026-11-27 16:22:29"
+  },
+  "truyen vua Le Thai To digcoll_10996|911|0": {
+   "side": "QN",
+   "nom": "乞",
+   "qn": "khất",
+   "rank": 27,
+   "orig_nom": "乞",
+   "orig_qn": "khải",
+   "time": "2026-11-27 16:22:43"
+  },
+  "truyen vua Le Thai To digcoll_10996|914|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 9,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:22:55"
+  },
+  "truyen vua Le Thai To digcoll_10996|917|5": {
+   "side": "KEEP",
+   "nom": "𡂐",
+   "qn": "gièm",
+   "rank": 5,
+   "orig_nom": "𡂐",
+   "orig_qn": "gièm",
+   "time": "2026-11-27 16:23:23"
+  },
+  "truyen vua Le Thai To digcoll_10996|918|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 8,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:23:28"
+  },
+  "truyen vua Le Thai To digcoll_10996|924|6": {
+   "side": "KEEP",
+   "nom": "𠾿",
+   "qn": "ngậm",
+   "rank": 2,
+   "orig_nom": "𠾿",
+   "orig_qn": "ngậm",
+   "time": "2026-11-27 16:24:04"
+  },
+  "truyen vua Le Thai To digcoll_10996|925|2": {
+   "side": "NOM",
+   "nom": "志",
+   "qn": "chí",
+   "rank": 1,
+   "orig_nom": "𢖽",
+   "orig_qn": "chí",
+   "time": "2026-11-27 16:24:25"
+  },
+  "truyen vua Le Thai To digcoll_10996|927|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 8,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:24:30"
+  },
+  "truyen vua Le Thai To digcoll_10996|928|5": {
+   "side": "QN",
+   "nom": "傮",
+   "qn": "tàu",
+   "rank": 10,
+   "orig_nom": "傮",
+   "orig_qn": "câu",
+   "time": "2026-11-27 16:24:48"
+  },
+  "truyen vua Le Thai To digcoll_10996|930|3": {
+   "side": "NOM",
+   "nom": "歲",
+   "qn": "tuổi",
+   "rank": 1,
+   "orig_nom": "穢",
+   "orig_qn": "tuổi",
+   "time": "2026-11-27 16:25:03"
+  },
+  "truyen vua Le Thai To digcoll_10996|935|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:25:26"
+  },
+  "truyen vua Le Thai To digcoll_10996|942|2": {
+   "side": "NOM",
+   "nom": "𢁨",
+   "qn": "vua",
+   "rank": 12,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:25:38"
+  },
+  "truyen vua Le Thai To digcoll_10996|942|4": {
+   "side": "NOM",
+   "nom": "𠐞",
+   "qn": "giỏi",
+   "rank": 4,
+   "orig_nom": "𢤡",
+   "orig_qn": "giỏi",
+   "time": "2026-11-27 16:25:54"
+  },
+  "truyen vua Le Thai To digcoll_10996|945|2": {
+   "side": "NOM",
+   "nom": "𢶢",
+   "qn": "chống",
+   "rank": 6,
+   "orig_nom": "擐",
+   "orig_qn": "chống",
+   "time": "2026-11-27 16:26:23"
+  },
+  "truyen vua Le Thai To digcoll_10996|946|2": {
+   "side": "NOM",
+   "nom": "𢶢",
+   "qn": "chống",
+   "rank": 8,
+   "orig_nom": "擐",
+   "orig_qn": "chống",
+   "time": "2026-11-27 16:26:35"
+  },
+  "truyen vua Le Thai To digcoll_10996|947|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:26:39"
+  },
+  "truyen vua Le Thai To digcoll_10996|951|5": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:27:06"
+  },
+  "truyen vua Le Thai To digcoll_10996|953|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 16,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:27:15"
+  },
+  "truyen vua Le Thai To digcoll_10996|953|3": {
+   "side": "NOM",
+   "nom": "捌",
+   "qn": "biết",
+   "rank": 9,
+   "orig_nom": "惻",
+   "orig_qn": "biết",
+   "time": "2026-11-27 16:27:29"
+  },
+  "truyen vua Le Thai To digcoll_10996|954|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 8,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:27:34"
+  },
+  "truyen vua Le Thai To digcoll_10996|959|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:27:45"
+  },
+  "truyen vua Le Thai To digcoll_10996|959|6": {
+   "side": "QN",
+   "nom": "滅",
+   "qn": "diệt",
+   "rank": 2,
+   "orig_nom": "滅",
+   "orig_qn": "duyệt",
+   "time": "2026-11-27 16:27:57"
+  },
+  "truyen vua Le Thai To digcoll_10996|960|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 9,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:28:02"
+  },
+  "truyen vua Le Thai To digcoll_10996|965|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:28:06"
+  },
+  "truyen vua Le Thai To digcoll_10996|965|2": {
+   "side": "QN",
+   "nom": "𢬭",
+   "qn": "đổi",
+   "rank": 3,
+   "orig_nom": "𢬭",
+   "orig_qn": "lởi",
+   "time": "2026-11-27 16:28:15"
+  },
+  "truyen vua Le Thai To digcoll_10996|966|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:28:20"
+  },
+  "truyen vua Le Thai To digcoll_10996|966|5": {
+   "side": "KEEP",
+   "nom": "猇",
+   "qn": "beo",
+   "rank": 6,
+   "orig_nom": "猇",
+   "orig_qn": "beo",
+   "time": "2026-11-27 16:28:33"
+  },
+  "truyen vua Le Thai To digcoll_10996|969|2": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:29:11"
+  },
+  "truyen vua Le Thai To digcoll_10996|971|7": {
+   "side": "QN",
+   "nom": "𣈙",
+   "qn": "rầy",
+   "rank": 1,
+   "orig_nom": "𣈙",
+   "orig_qn": "dấy",
+   "time": "2026-11-27 16:29:27"
+  },
+  "truyen vua Le Thai To digcoll_10996|972|2": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:29:33"
+  },
+  "truyen vua Le Thai To digcoll_10996|975|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:30:21"
+  },
+  "truyen vua Le Thai To digcoll_10996|980|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 6,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:30:24"
+  },
+  "truyen vua Le Thai To digcoll_10996|981|2": {
+   "side": "NOM",
+   "nom": "󱣽",
+   "qn": "giết",
+   "rank": 4,
+   "orig_nom": "勢",
+   "orig_qn": "giết",
+   "time": "2026-11-27 16:30:36"
+  },
+  "truyen vua Le Thai To digcoll_10996|981|3": {
+   "side": "KEEP",
+   "nom": "𠼯",
+   "qn": "kẻ",
+   "rank": 13,
+   "orig_nom": "𠼯",
+   "orig_qn": "kẻ",
+   "time": "2026-11-27 16:31:00"
+  },
+  "truyen vua Le Thai To digcoll_10996|984|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 8,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:31:04"
+  },
+  "truyen vua Le Thai To digcoll_10996|987|7": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:32:33"
+  },
+  "truyen vua Le Thai To digcoll_10996|989|2": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:32:36"
+  },
+  "truyen vua Le Thai To digcoll_10996|994|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:32:40"
+  },
+  "truyen vua Le Thai To digcoll_10996|1006|3": {
+   "side": "NOM",
+   "nom": "捌",
+   "qn": "biết",
+   "rank": 19,
+   "orig_nom": "惻",
+   "orig_qn": "biết",
+   "time": "2026-11-27 16:33:44"
+  },
+  "truyen vua Le Thai To digcoll_10996|1008|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 9,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:34:29"
+  },
+  "truyen vua Le Thai To digcoll_10996|1008|2": {
+   "side": "NOM",
+   "nom": "㨳",
+   "qn": "kỹ",
+   "rank": 4,
+   "orig_nom": "考",
+   "orig_qn": "kỹ",
+   "time": "2026-11-27 16:35:13"
+  },
+  "truyen vua Le Thai To digcoll_10996|1010|0": {
+   "side": "NOM",
+   "nom": "捌",
+   "qn": "biết",
+   "rank": 12,
+   "orig_nom": "惻",
+   "orig_qn": "biết",
+   "time": "2026-11-27 16:35:24"
+  },
+  "truyen vua Le Thai To digcoll_10996|1010|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 6,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:35:43"
+  },
+  "truyen vua Le Thai To digcoll_10996|1013|1": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:35:50"
+  },
+  "truyen vua Le Thai To digcoll_10996|1015|0": {
+   "side": "NOM",
+   "nom": "𤤰",
+   "qn": "vua",
+   "rank": 7,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:35:53"
+  },
+  "truyen vua Le Thai To digcoll_10996|1030|0": {
+   "side": "NOM",
+   "nom": "捌",
+   "qn": "biết",
+   "rank": 8,
+   "orig_nom": "惻",
+   "orig_qn": "biết",
+   "time": "2026-11-27 16:36:13"
+  },
+  "truyen vua Le Thai To digcoll_10996|1037|2": {
+   "side": "KEEP",
+   "nom": "髫",
+   "qn": "mày",
+   "rank": 19,
+   "orig_nom": "髫",
+   "orig_qn": "mày",
+   "time": "2026-11-27 16:36:53"
+  },
+  "truyen vua Le Thai To digcoll_10996|1040|4": {
+   "side": "NOM",
+   "nom": "𢁨",
+   "qn": "vua",
+   "rank": 10,
+   "orig_nom": "希",
+   "orig_qn": "vua",
+   "time": "2026-11-27 16:37:03"
+  },
+  "truyen vua Le Thai To digcoll_10996|1044|3": {
+   "side": "NOM",
+   "nom": "氽",
+   "qn": "mấy",
+   "rank": 9,
+   "orig_nom": "尔",
+   "orig_qn": "mấy",
+   "time": "2026-11-27 16:37:24"
+  },
+  "truyen vua Le Thai To digcoll_10996|1049|5": {
+   "side": "NOM",
+   "nom": "庞",
+   "qn": "bàng",
+   "rank": 5,
+   "orig_nom": "𠩇",
+   "orig_qn": "bàng",
+   "time": "2026-11-27 16:37:44"
   }
  }
 }
