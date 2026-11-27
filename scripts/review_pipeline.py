@@ -443,7 +443,7 @@ def summary(book: library.Book) -> dict:
     has = bool(sess.candidates)
     return {"ready": True, "mode": "xlsx" if is_xlsx_book(book) else "bbox", "has_input": has_input(book),
             "sentences": len(sess.sentences), "sites": len(sess.sites), "stats": total,
-            "has_candidates": has, "progress": prog, "all_reviewed": has and prog["pairs_done"] >= prog["pairs"],
+            "has_candidates": has, "progress": prog, "all_reviewed": has and prog["pairs_done"] >= prog["pairs"], "pairs_open": prog["pairs"] - prog["pairs_done"],
             "settings": sess.score_settings, "config": load_config(), "files": {k: _file_info(p) for k, p in out_files(book).items()},
             "job": job_status(book)}
 
@@ -632,12 +632,10 @@ def results_page(book: library.Book, page: int, size: int = 25) -> dict:
     return {"page": page, "pages": pages, "total": len(changed), "sentences": changed[page * size:(page + 1) * size], "stats": _stats(sess)}
 
 
-def _require_all_reviewed(sess) -> None:
+def _require_scored(sess) -> None:
+    """Xuất kết quả không đòi duyệt hết: cặp chưa duyệt và cặp KEEP đều còn lệch từ điển nên được tô đỏ trong file."""
     if not sess.candidates:
         raise ValueError("Chưa chấm điểm đề xuất.")
-    prog = sess.progress()
-    if prog["pairs_done"] < prog["pairs"]:
-        raise ValueError(f"Còn {prog['pairs'] - prog['pairs_done']} cặp lệch chưa duyệt.")
 
 
 def export_result(book: library.Book) -> dict:
@@ -648,7 +646,7 @@ def export_result(book: library.Book) -> dict:
 
     m = _imports()
     sess = get_session(book)
-    _require_all_reviewed(sess)
+    _require_scored(sess)
     path = out_files(book)["result"]
     with Workbook(str(path), {"strings_to_formulas": False, "strings_to_urls": False}) as wb:
         default = wb.add_format({})
@@ -691,7 +689,7 @@ def export_result(book: library.Book) -> dict:
 def export_compare(book: library.Book) -> dict:
     """Ghi <Tên>_SO_SANH.xlsx (5 sheet: tổng quan, bản cũ, bản mới, thay đổi Quốc ngữ, thay đổi SinoNom OCR) bằng make_report.py của Alignment."""
     sess = get_session(book)
-    _require_all_reviewed(sess)
+    _require_scored(sess)
     sess.save_all(verbose=False)           # make_report đọc mismatch_before/after.xlsx, candidates_review.csv, statistics.json do save_all vừa ghi
     if str(SCRIPTS) not in sys.path:
         sys.path.insert(0, str(SCRIPTS))

@@ -1117,15 +1117,15 @@ async function loadReviewSummary() {
   if (!currentBook) return null;
   try { reviewSum = await api(reviewUrl("summary")); }
   catch (e) { showError("Không tải được số liệu kiểm tra: " + e.message); return null; }
-  const ok = !!reviewSum.all_reviewed;
+  const ok = !!reviewSum.has_candidates;      // xem và xuất kết quả không cần duyệt hết: cặp chưa duyệt và cặp KEEP được tô đỏ
   $("alignTabBtn_res").disabled = !ok;
-  $("alignTabBtn_res").title = ok ? "" : "Chỉ mở được khi đã duyệt hết các đề xuất";
+  $("alignTabBtn_res").title = ok ? "" : "Chỉ mở được khi đã chấm điểm đề xuất";
   return reviewSum;
 }
 
 async function showAlignTab(tab) {
   if (tab === "sent" && isXlsx()) tab = "check";
-  if (tab === "res" && reviewSum && !reviewSum.all_reviewed) tab = "prop";
+  if (tab === "res" && reviewSum && !reviewSum.has_candidates) tab = "prop";
   alignTab = tab;
   for (const t of ALIGN_TABS) {
     $("alignPane_" + t).style.display = t === tab ? "" : "none";
@@ -1368,12 +1368,14 @@ async function loadRes() {
   $("resExport").textContent = `Xuất ${stem}.xlsx`;
   $("resCompare").textContent = `Lưu ${stem}_SO_SANH.xlsx`;
   const warn = $("resWarn");
-  if (!sum.ready || !sum.all_reviewed) {
-    warn.style.display = ""; warn.textContent = sum.ready ? "Còn cặp lệch chưa duyệt: duyệt hết ở tab Đề xuất rồi quay lại." : sum.error;
+  if (!sum.ready || !sum.has_candidates) {
+    warn.style.display = ""; warn.textContent = sum.ready ? "Chưa chấm điểm đề xuất: chấm điểm ở tab Đề xuất rồi quay lại." : sum.error;
     $("resExport").disabled = $("resCompare").disabled = true;
     $("resList").replaceChildren(); $("resStats").replaceChildren(); return;
   }
-  warn.style.display = "none"; $("resExport").disabled = $("resCompare").disabled = false;
+  if (sum.pairs_open > 0) { warn.style.display = ""; warn.textContent = `Còn ${sum.pairs_open} cặp lệch chưa duyệt: khi xuất, cặp chưa duyệt và cặp KEEP đều được tô đỏ.`; }
+  else warn.style.display = "none";
+  $("resExport").disabled = $("resCompare").disabled = false;
   const files = $("resFiles"); files.replaceChildren();
   for (const [kind, label] of [["result", "Kết quả"], ["compare", "So sánh"]]) {
     const info = sum.files[kind];
